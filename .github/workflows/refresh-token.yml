@@ -1,0 +1,54 @@
+name: Refresh Instagram Token
+
+# Instagram long-lived tokens last 60 days and extend 60 more each refresh.
+# Running weekly keeps the poster alive forever with no manual re-auth.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * 1"   # Mondays 09:00 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install --quiet pynacl
+
+      - name: Refresh IG token
+        id: refresh
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python refresh_token.py
+
+      - name: Update IG_ACCESS_TOKEN secret
+        if: steps.refresh.outputs.new_token != ''
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          NEW_TOKEN: ${{ steps.refresh.outputs.new_token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python - <<'PY'
+          import os, json, base64, urllib.request
+          from nacl import encoding, public
+          pat, repo, new = os.environ["GH_PAT"], os.environ["REPO"], os.environ["NEW_TOKEN"]
+          def api(path, method="GET", data=None):
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{repo}/{path}",
+                  data=(json.dumps(data).encode() if data else None), method=method,
+                  headers={"Authorization": f"token {pat}", "Accept": "application/vnd.github+json"})
+              with urllib.request.urlopen(req) as r:
+                  return json.loads(r.read().decode() or "{}")
+          key = api("actions/secrets/public-key")
+          sealed = public.SealedBox(public.PublicKey(key["key"].encode(), encoding.Base64Encoder())).encrypt(new.encode())
+          api("actions/secrets/IG_ACCESS_TOKEN", method="PUT",
+              data={"encrypted_value": base64.b64encode(sealed).decode(), "key_id": key["key_id"]})
+          print("IG_ACCESS_TOKEN secret updated.")
+          PY

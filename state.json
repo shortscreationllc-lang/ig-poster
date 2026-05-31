@@ -1,24 +1,6 @@
 {
-  "next_index": 3,
-  "history": [
-    {
-      "at": "manual",
-      "index": 0,
-      "note": "manual test post DZA9FMHlGcE"
-    },
-    {
-      "at": "20260531-200228",
-      "index": 1,
-      "post_id": "17943286437209543",
-      "image": "generated/20260531-200228-1.jpg",
-      "slot": "pm"
-    },
-    {
-      "at": "20260531-201649",
-      "index": 2,
-      "post_id": "17992467200967295",
-      "image": "generated/20260531-201649-2.jpg",
-      "slot": "pm"
-    }
-  ]
+  "single_index": 3,
+  "carousel_index": 0,
+  "seq": 0,
+  "history": []
 }

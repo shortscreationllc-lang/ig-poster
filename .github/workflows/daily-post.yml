@@ -1,20 +1,19 @@
 name: Daily Instagram Post
 
 on:
-  workflow_dispatch:        # run on demand to test
+  workflow_dispatch:
     inputs:
       slot:
-        description: "Force slot (am=dark, pm=light). Blank = time-based."
+        description: "Force slot: am (single, dark) or pm (carousel, light). Blank = time-based."
         required: false
         default: ""
       dry_run:
-        description: "If 'yes', render + push image but DO NOT post."
+        description: "If 'yes', render + queue but DO NOT post."
         required: false
         default: "no"
   schedule:
-    # GitHub cron is UTC with no DST. Schedule the UTC hours that map to
-    # 8AM / 8PM America/New_York in BOTH EDT (UTC-4) and EST (UTC-5); the gate
-    # below ensures exactly one AM and one PM actually post per day.
+    # UTC, no DST. Cover 8AM/8PM ET in both EDT(-4) and EST(-5); the gate
+    # below ensures exactly one am + one pm run actually post per day.
     - cron: "0 12 * * *"   # 8AM EDT
     - cron: "0 13 * * *"   # 8AM EST
     - cron: "0 0 * * *"    # 8PM EDT
@@ -32,11 +31,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install deps
         run: pip install --quiet pillow
 
@@ -54,19 +51,19 @@ jobs:
           elif [ "$HOUR" = "20" ]; then echo "slot=pm" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT";
           else echo "Not 8AM/8PM NY; skipping."; echo "run=no" >> "$GITHUB_OUTPUT"; fi
 
-      - name: Render card
+      - name: Render + queue (buffer)
         if: steps.slot.outputs.run == 'yes'
         env:
           SLOT: ${{ steps.slot.outputs.slot }}
         run: python daily_run.py --render-only
 
-      - name: Commit + push image (so the raw URL exists)
+      - name: Commit queue + images (raw URLs must exist before posting)
         if: steps.slot.outputs.run == 'yes'
         run: |
           git config user.name "ig-poster-bot"
           git config user.email "actions@github.com"
-          git add generated/
-          git commit -m "render card $(date -u +%FT%TZ)" || echo "nothing to commit"
+          git add queue/ state.json
+          git commit -m "queue refill $(date -u +%FT%TZ)" || echo "nothing to commit"
           git push
 
       - name: Publish to Instagram
@@ -76,19 +73,19 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python daily_run.py --publish-only
 
-      - name: Dry-run URL check (no post)
+      - name: Dry-run reachability check (no post)
         if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run == 'yes'
         run: |
-          REL=$(python -c "import json;print(json.load(open('.pending.json'))['rel'])")
-          IMG="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF_NAME}/${REL}"
-          echo "Would post: $IMG"
+          ID=$(python -c "import json;print(json.load(open('.pending.json'))['id'])")
+          REL=$(python -c "import json;m=json.load(open('queue/manifest.json'));print([i for i in m['items'] if i['id']=='$ID'][0]['images'][0])")
+          IMG="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF_NAME}/${REL// /%20}"
+          echo "Would post id=$ID first image: $IMG"
           code=$(curl -s -o /dev/null -w "%{http_code}" "$IMG")
-          echo "Raw URL HTTP status: $code"
-          test "$code" = "200" && echo "DRY RUN OK — image is publicly reachable" || (echo "URL not reachable"; exit 1)
+          echo "HTTP $code"; test "$code" = "200" && echo "DRY RUN OK" || (echo "unreachable"; exit 1)
 
-      - name: Persist rotation state
+      - name: Persist posted state + refilled queue
         if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
         run: |
-          git add state.json || true
-          git commit -m "advance rotation state" || echo "no state change"
+          git add queue/ state.json .pending.json 2>/dev/null || true
+          git commit -m "posted + refill $(date -u +%FT%TZ)" || echo "no change"
           git push || true
