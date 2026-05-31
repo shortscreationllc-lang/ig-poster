@@ -88,6 +88,20 @@ PALETTES = {
         "panel": (255, 255, 255), "panel_line": (210, 205, 198),
         "kicker_text": (255, 255, 255), "glow_a": 60,
     },
+    # second dark look — deep navy/blue-black, cooler than 'dark'
+    "midnight": {
+        "bg_top": (9, 12, 20), "bg_bottom": (15, 21, 34),
+        "head": (240, 243, 250), "sub": (240, 243, 250), "muted": (150, 158, 175),
+        "panel": (16, 21, 32), "panel_line": (44, 52, 72),
+        "kicker_text": (12, 12, 12), "glow_a": 54,
+    },
+    # second light look — warmer cream/paper, softer than 'light'
+    "bone": {
+        "bg_top": (245, 241, 233), "bg_bottom": (229, 222, 209),
+        "head": (26, 22, 18), "sub": (34, 29, 24), "muted": (120, 112, 100),
+        "panel": (255, 253, 248), "panel_line": (208, 200, 186),
+        "kicker_text": (255, 255, 255), "glow_a": 64,
+    },
 }
 
 

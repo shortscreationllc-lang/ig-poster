@@ -46,6 +46,12 @@ GRAPH = "https://graph.instagram.com/v25.0"
 
 QUEUE_DEPTH = 14   # keep this many ready items per slot at all times
 
+# Design variety: AM (singles) cycle the dark family, PM (carousels) the light
+# family — so every day is one dark + one light, and no two consecutive posts
+# in the feed share the exact same look.
+AM_STYLES = ["dark", "midnight"]
+PM_STYLES = ["light", "bone"]
+
 
 # ---------- helpers ----------
 def load_env_file():
@@ -66,6 +72,8 @@ def read_state():
     s.setdefault("single_index", 0)
     s.setdefault("carousel_index", 0)
     s.setdefault("seq", 0)
+    s.setdefault("am_style_i", 0)
+    s.setdefault("pm_style_i", 0)
     s.setdefault("history", [])
     return s
 
@@ -138,7 +146,9 @@ def refill():
         state["seq"] += 1
         uid = f"single-{state['seq']:05d}"
         rel = f"queue/{uid}.jpg"
-        render_card.draw_card(item, ROOT / rel, style="dark")
+        style = item.get("style") or AM_STYLES[state["am_style_i"] % len(AM_STYLES)]
+        state["am_style_i"] += 1
+        render_card.draw_card(item, ROOT / rel, style=style)
         manifest["items"].append({
             "id": uid, "slot": "am", "type": "single",
             "images": [rel], "caption": item["caption"],
@@ -154,7 +164,9 @@ def refill():
         entry = carousels[idx]
         state["seq"] += 1
         uid = f"carousel-{state['seq']:05d}"
-        paths = render_card.render_carousel(entry, QUEUE_DIR, uid, style="light")
+        style = entry.get("style") or PM_STYLES[state["pm_style_i"] % len(PM_STYLES)]
+        state["pm_style_i"] += 1
+        paths = render_card.render_carousel(entry, QUEUE_DIR, uid, style=style)
         rels = [str(Path(p).relative_to(ROOT)) for p in paths]
         manifest["items"].append({
             "id": uid, "slot": "pm", "type": "carousel",
