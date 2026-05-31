@@ -1,18 +1,6 @@
 {
   "items": [
     {
-      "id": "single-002",
-      "slot": "am",
-      "type": "single",
-      "images": [
-        "queue/single-002.jpg"
-      ],
-      "caption": "Most SMMA gurus selling courses have fewer clients than the people watching them.\n\nI run 7. Real ones. With churn, late payments, revisions, the whole thing.\n\nThe guy selling you a $2K course on autopilot? Most of them have 2 clients and a slide deck.\n\nFollow @josephborroto \u2014 real agency, real numbers, every day.\n\n#smma #agencyowner #realtalk #businessadvice #videoagency #josephborroto",
-      "alt": "Dark card: most gurus have fewer clients than their followers. I run 7, real ones.",
-      "posted": false,
-      "source_index": 2
-    },
-    {
       "id": "single-003",
       "slot": "am",
       "type": "single",
@@ -167,6 +155,18 @@
       "alt": "Dark card: agencies die from cash flow, not no clients. Build the 60-day buffer.",
       "posted": false,
       "source_index": 15
+    },
+    {
+      "id": "single-016",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-016.jpg"
+      ],
+      "caption": "Why I started Shorts Creation. Spoiler: it wasn't the money.\n\nThere was a job, a moment, and a lot of doubt. The leap wasn't brave \u2014 it was uncomfortable and I did it anyway.\n\nNo hero arc here. Just the real version of how this started.\n\nFollow @josephborroto for the build, start to now.\n\n#originstory #entrepreneur #smma #buildinpublic #josephborroto",
+      "alt": "Dark card: why I started Shorts Creation. Spoiler, it wasn't the money.",
+      "posted": false,
+      "source_index": 16
     },
     {
       "id": "carousel-000",
