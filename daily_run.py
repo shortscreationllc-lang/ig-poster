@@ -65,6 +65,7 @@ def read_state():
         s = {}
     s.setdefault("single_index", 0)
     s.setdefault("carousel_index", 0)
+    s.setdefault("seq", 0)
     s.setdefault("history", [])
     return s
 
@@ -134,7 +135,8 @@ def refill():
     while _count_unposted(manifest, "am") < QUEUE_DEPTH:
         idx = state["single_index"] % len(singles)
         item = singles[idx]
-        uid = f"single-{idx:03d}"
+        state["seq"] += 1
+        uid = f"single-{state['seq']:05d}"
         rel = f"queue/{uid}.jpg"
         render_card.draw_card(item, ROOT / rel, style="dark")
         manifest["items"].append({
@@ -150,7 +152,8 @@ def refill():
     while _count_unposted(manifest, "pm") < QUEUE_DEPTH:
         idx = state["carousel_index"] % len(carousels)
         entry = carousels[idx]
-        uid = f"carousel-{idx:03d}"
+        state["seq"] += 1
+        uid = f"carousel-{state['seq']:05d}"
         paths = render_card.render_carousel(entry, QUEUE_DIR, uid, style="light")
         rels = [str(Path(p).relative_to(ROOT)) for p in paths]
         manifest["items"].append({
