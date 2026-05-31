@@ -1,1 +1,17 @@
-{"next_index":1,"history":[{"at":"manual","index":0,"note":"manual test post DZA9FMHlGcE"}]}
+{
+  "next_index": 2,
+  "history": [
+    {
+      "at": "manual",
+      "index": 0,
+      "note": "manual test post DZA9FMHlGcE"
+    },
+    {
+      "at": "20260531-200228",
+      "index": 1,
+      "post_id": "17943286437209543",
+      "image": "generated/20260531-200228-1.jpg",
+      "slot": "pm"
+    }
+  ]
+}
