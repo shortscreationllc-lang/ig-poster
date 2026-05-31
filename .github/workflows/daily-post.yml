@@ -1,0 +1,94 @@
+name: Daily Instagram Post
+
+on:
+  workflow_dispatch:        # run on demand to test
+    inputs:
+      slot:
+        description: "Force slot (am=dark, pm=light). Blank = time-based."
+        required: false
+        default: ""
+      dry_run:
+        description: "If 'yes', render + push image but DO NOT post."
+        required: false
+        default: "no"
+  schedule:
+    # GitHub cron is UTC with no DST. Schedule the UTC hours that map to
+    # 8AM / 8PM America/New_York in BOTH EDT (UTC-4) and EST (UTC-5); the gate
+    # below ensures exactly one AM and one PM actually post per day.
+    - cron: "0 12 * * *"   # 8AM EDT
+    - cron: "0 13 * * *"   # 8AM EST
+    - cron: "0 0 * * *"    # 8PM EDT
+    - cron: "0 1 * * *"    # 8PM EST
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install --quiet pillow
+
+      - name: Decide slot (DST-proof)
+        id: slot
+        run: |
+          FORCED="${{ github.event.inputs.slot }}"
+          if [ -n "$FORCED" ]; then
+            echo "slot=$FORCED" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT"
+            echo "Forced slot: $FORCED"; exit 0
+          fi
+          HOUR=$(TZ="America/New_York" date +%H)
+          echo "New York hour: $HOUR"
+          if [ "$HOUR" = "08" ]; then echo "slot=am" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT";
+          elif [ "$HOUR" = "20" ]; then echo "slot=pm" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT";
+          else echo "Not 8AM/8PM NY; skipping."; echo "run=no" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Render card
+        if: steps.slot.outputs.run == 'yes'
+        env:
+          SLOT: ${{ steps.slot.outputs.slot }}
+        run: python daily_run.py --render-only
+
+      - name: Commit + push image (so the raw URL exists)
+        if: steps.slot.outputs.run == 'yes'
+        run: |
+          git config user.name "ig-poster-bot"
+          git config user.email "actions@github.com"
+          git add generated/
+          git commit -m "render card $(date -u +%FT%TZ)" || echo "nothing to commit"
+          git push
+
+      - name: Publish to Instagram
+        if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python daily_run.py --publish-only
+
+      - name: Dry-run URL check (no post)
+        if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run == 'yes'
+        run: |
+          REL=$(python -c "import json;print(json.load(open('.pending.json'))['rel'])")
+          IMG="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF_NAME}/${REL}"
+          echo "Would post: $IMG"
+          code=$(curl -s -o /dev/null -w "%{http_code}" "$IMG")
+          echo "Raw URL HTTP status: $code"
+          test "$code" = "200" && echo "DRY RUN OK — image is publicly reachable" || (echo "URL not reachable"; exit 1)
+
+      - name: Persist rotation state
+        if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+        run: |
+          git add state.json || true
+          git commit -m "advance rotation state" || echo "no state change"
+          git push || true
