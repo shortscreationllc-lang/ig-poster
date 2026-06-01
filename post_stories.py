@@ -30,6 +30,15 @@ STORY_BANK = ROOT / "story_bank.json"
 GRAPH = "https://graph.instagram.com/v25.0"
 HOOK_STYLES = ["dark", "midnight"]
 
+# Each time-of-day gets its own visual signature so morning/afternoon/evening
+# stories never look like the same thing reposted. Same brand (orange + League
+# Spartan), different palette per slot.
+SLOT_PALETTE = {
+    "morning":   "bone",      # warm cream — bright, "good morning" energy
+    "afternoon": "midnight",  # cool navy — midday contrast
+    "evening":   "dark",      # deep black — night vibe
+}
+
 
 def load_env_file():
     env = ROOT / ".env"
@@ -118,13 +127,17 @@ def render_only():
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     (ROOT / "queue").mkdir(exist_ok=True)
 
+    # time-of-day palette: morning/afternoon/evening each look distinct
+    slot_kind = os.getenv("SLOT_KIND", "morning").strip().lower()
+    slot_style = SLOT_PALETTE.get(slot_kind, "dark")
+
     ordered = []  # list of rel paths, in posting order
 
     if "series" in seq:
         # multi-part: intro slide + one numbered slide per item (single brand style
-        # for visual consistency across the run)
+        # for visual consistency across the run) — keyed to time of day
         s = seq["series"]
-        style = HOOK_STYLES[base % len(HOOK_STYLES)]
+        style = slot_style
         intro = dict(s["intro"])
         rel0 = f"queue/story-{seq['id']}-intro-{stamp}.jpg"
         render_story.draw_hook(intro, ROOT / rel0, style=style)
@@ -138,7 +151,10 @@ def render_only():
     else:
         slides = seq["slides"]
         for n, slide in enumerate(slides):
-            style = HOOK_STYLES[(base + n) % len(HOOK_STYLES)]
+            # within a hook->fix pair, nudge the shade slightly for separation
+            # but stay anchored to the time-of-day palette
+            style = slot_style if n == 0 else (
+                "midnight" if slot_style != "midnight" else "dark")
             rel = f"queue/story-{seq['id']}-{n}-{stamp}.jpg"
             _render_slide(slide, ROOT / rel, style)
             ordered.append(rel)

@@ -158,6 +158,8 @@ jobs:
 
       - name: Render stories
         if: steps.feed.outputs.do_story == 'yes' && github.event.inputs.dry_run != 'yes'
+        env:
+          SLOT_KIND: ${{ steps.slot.outputs.kind }}
         run: python post_stories.py --render-only
 
       - name: Commit story images
