@@ -1,0 +1,44 @@
+{
+  "hooks": [
+    {
+      "kicker": "WATCH THIS",
+      "headline": "Your first 2 seconds decide everything.",
+      "subheadline": "Most people waste them.",
+      "nudge": "Tap through — here's the fix →"
+    },
+    {
+      "kicker": "REAL TALK",
+      "headline": "The reason your videos flop isn't the algorithm.",
+      "subheadline": "It's the first line.",
+      "nudge": "Keep watching →"
+    },
+    {
+      "kicker": "QUICK TIP",
+      "headline": "Stop posting at the wrong time.",
+      "subheadline": "It matters less than you think.",
+      "nudge": "Here's what actually matters →"
+    },
+    {
+      "kicker": "HOT TAKE",
+      "headline": "Cheap editing is the most expensive mistake you can make.",
+      "subheadline": "Here's why.",
+      "nudge": "Tap to see →"
+    },
+    {
+      "kicker": "WATCH THIS",
+      "headline": "One change doubled the watch time on these videos.",
+      "subheadline": "It takes 5 seconds to do.",
+      "nudge": "Swipe up your game →"
+    }
+  ],
+  "promos": [
+    {
+      "headline": "New one's up.",
+      "subheadline": "Today's post might be the one you needed."
+    },
+    {
+      "headline": "Just posted.",
+      "subheadline": "Tap to see today's breakdown on my feed."
+    }
+  ]
+}
