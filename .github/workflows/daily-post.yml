@@ -35,9 +35,9 @@ on:
     # Daily plan (America/New_York), around Joseph's 4 videos (9:30a/1:30p/5:30p/9:30p):
     #   ~8a  morning   : feed post (mixed format) + morning story
     #   ~12p midday    : feed post (mixed format)
-    #   ~4p  afternoon : afternoon story only
+    #   ~4p  afternoon : (nothing; cron doubles as a midday-feed catch-up sweep)
     #   ~7p  evening   : carousel feed post (no story)
-    # Stories run twice a day (morning + afternoon); evening is feed-only.
+    # One story a day (morning); midday/evening feed-only, afternoon quiet.
     # A cross-channel de-dup guard (content_dedup.py) ensures a story and a feed
     # post never show the same line.
     # morning ~8a ET

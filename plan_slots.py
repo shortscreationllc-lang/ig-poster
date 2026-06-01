@@ -47,11 +47,13 @@ ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "state.json"
 
 # kind, NY start hour, feed slot (am/pm/None), has a time-of-day story.
-# Stories run twice a day — morning + afternoon. Evening is feed-only (carousel).
+# One story a day — morning only. midday/evening are feed-only; the afternoon
+# slot has neither a feed post nor a story now (its cron still serves as a
+# midday-feed catch-up sweep).
 SLOTS = [
     ("morning",    8, "am", True),
     ("midday",    12, "am", False),
-    ("afternoon", 16, None, True),
+    ("afternoon", 16, None, False),
     ("evening",   19, "pm", False),
 ]
 # A slot's LIVE window is [start, start + WINDOW_SPAN] hours — slack so a cron
