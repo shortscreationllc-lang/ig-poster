@@ -1,11 +1,19 @@
 {
-  "single_index": 14,
+  "single_index": 15,
   "carousel_index": 2,
-  "seq": 28,
-  "am_style_i": 14,
+  "seq": 29,
+  "am_style_i": 15,
   "pm_style_i": 14,
-  "history": [],
+  "history": [
+    {
+      "at": "20260601T122301Z",
+      "id": "single-00001",
+      "slot": "am",
+      "type": "single",
+      "post_id": "18086117405095480"
+    }
+  ],
   "story_hook_i": 1,
-  "story_style_i": 1,
-  "story_seq_i": 1
+  "story_style_i": 2,
+  "story_seq_i": 2
 }
