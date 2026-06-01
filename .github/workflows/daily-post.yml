@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       slot:
-        description: "Force slot: am (single, dark) or pm (carousel, light). Blank = time-based."
+        description: "Force a slot: morning | midday | afternoon | evening. Blank = time-based."
         required: false
         default: ""
       dry_run:
@@ -12,12 +12,25 @@ on:
         required: false
         default: "no"
   schedule:
-    # UTC, no DST. Cover 8AM/8PM ET in both EDT(-4) and EST(-5); the gate
-    # below ensures exactly one am + one pm run actually post per day.
-    - cron: "0 12 * * *"   # 8AM EDT
-    - cron: "0 13 * * *"   # 8AM EST
-    - cron: "0 0 * * *"    # 8PM EDT
-    - cron: "0 1 * * *"    # 8PM EST
+    # GitHub cron is UTC, no DST, and fires APPROXIMATELY (often a few min late —
+    # which helps it feel human, not robotic). We cover each NY target hour in
+    # both EDT(-4) and EST(-5); the gate below maps NY-local hour -> a slot so
+    # exactly one action runs per target window per day.
+    #
+    # Daily plan (America/New_York), staggered around Joseph's 4 videos
+    # (videos at 9:30a, 1:30p, 5:30p, 9:30p — untouched):
+    #   ~8a  morning   : post #1 (mixed format) + morning story sequence
+    #   ~12p midday    : post #2 (mixed format)
+    #   ~4p  afternoon : afternoon story sequence
+    #   ~7p  evening   : post #3 (carousel) + evening story sequence
+    - cron: "0 12 * * *"   # 8a EDT
+    - cron: "0 13 * * *"   # 8a EST
+    - cron: "0 16 * * *"   # 12p EDT
+    - cron: "0 17 * * *"   # 12p EST
+    - cron: "0 20 * * *"   # 4p EDT
+    - cron: "0 21 * * *"   # 4p EST
+    - cron: "0 23 * * *"   # 7p EDT
+    - cron: "0 0 * * *"    # 7p EST
 
 permissions:
   contents: write
@@ -37,81 +50,101 @@ jobs:
       - name: Install deps
         run: pip install --quiet pillow
 
-      - name: Decide slot (DST-proof)
+      - name: Decide slot (DST-proof, maps NY hour -> action)
         id: slot
         run: |
           FORCED="${{ github.event.inputs.slot }}"
           if [ -n "$FORCED" ]; then
-            echo "slot=$FORCED" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT"
+            echo "kind=$FORCED" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT"
             echo "Forced slot: $FORCED"; exit 0
           fi
           HOUR=$(TZ="America/New_York" date +%H)
           echo "New York hour: $HOUR"
-          if [ "$HOUR" = "08" ]; then echo "slot=am" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT";
-          elif [ "$HOUR" = "20" ]; then echo "slot=pm" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT";
-          else echo "Not 8AM/8PM NY; skipping."; echo "run=no" >> "$GITHUB_OUTPUT"; fi
+          case "$HOUR" in
+            08) echo "kind=morning"   >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT";;
+            12) echo "kind=midday"    >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT";;
+            16) echo "kind=afternoon" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT";;
+            19) echo "kind=evening"   >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT";;
+            *)  echo "Outside post windows; skipping."; echo "run=no" >> "$GITHUB_OUTPUT";;
+          esac
 
-      - name: Render + queue (buffer)
+      # Feed slot: morning + midday = single (mixed format); evening = carousel.
+      - name: Pick feed slot for daily_run
+        id: feed
         if: steps.slot.outputs.run == 'yes'
+        run: |
+          K="${{ steps.slot.outputs.kind }}"
+          if [ "$K" = "morning" ] || [ "$K" = "midday" ]; then echo "slot=am" >> "$GITHUB_OUTPUT"; echo "do_feed=yes" >> "$GITHUB_OUTPUT";
+          elif [ "$K" = "evening" ]; then echo "slot=pm" >> "$GITHUB_OUTPUT"; echo "do_feed=yes" >> "$GITHUB_OUTPUT";
+          else echo "do_feed=no" >> "$GITHUB_OUTPUT"; fi
+          # stories run in morning, afternoon, evening (2-3 moments/day)
+          if [ "$K" = "midday" ]; then echo "do_story=no" >> "$GITHUB_OUTPUT"; else echo "do_story=yes" >> "$GITHUB_OUTPUT"; fi
+
+      # ---------------- FEED POST ----------------
+      - name: Render + queue feed
+        if: steps.feed.outputs.do_feed == 'yes'
         env:
-          SLOT: ${{ steps.slot.outputs.slot }}
+          SLOT: ${{ steps.feed.outputs.slot }}
         run: python daily_run.py --render-only
 
-      - name: Commit queue + images (raw URLs must exist before posting)
-        if: steps.slot.outputs.run == 'yes'
+      - name: Commit feed image
+        if: steps.feed.outputs.do_feed == 'yes'
         run: |
           git config user.name "ig-poster-bot"
           git config user.email "actions@github.com"
           git add queue/ state.json
-          git commit -m "queue refill $(date -u +%FT%TZ)" || echo "nothing to commit"
+          git commit -m "queue $(date -u +%FT%TZ)" || echo "nothing to commit"
           git push
 
-      - name: Publish to Instagram
-        if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+      - name: Publish feed post
+        if: steps.feed.outputs.do_feed == 'yes' && github.event.inputs.dry_run != 'yes'
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python daily_run.py --publish-only
 
-      - name: Dry-run reachability check (no post)
-        if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run == 'yes'
-        run: |
-          ID=$(python -c "import json;print(json.load(open('.pending.json'))['id'])")
-          REL=$(python -c "import json;m=json.load(open('queue/manifest.json'));print([i for i in m['items'] if i['id']=='$ID'][0]['images'][0])")
-          IMG="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF_NAME}/${REL// /%20}"
-          echo "Would post id=$ID first image: $IMG"
-          code=$(curl -s -o /dev/null -w "%{http_code}" "$IMG")
-          echo "HTTP $code"; test "$code" = "200" && echo "DRY RUN OK" || (echo "unreachable"; exit 1)
-
-      - name: Persist posted state + refilled queue
-        if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+      - name: Persist feed state
+        if: steps.feed.outputs.do_feed == 'yes' && github.event.inputs.dry_run != 'yes'
         run: |
           git add queue/ state.json .pending.json 2>/dev/null || true
-          git commit -m "posted + refill $(date -u +%FT%TZ)" || echo "no change"
+          git commit -m "posted feed $(date -u +%FT%TZ)" || echo "no change"
           git push || true
 
-      # --- MORNING STORIES (AM slot only): hook story + reshare of the feed card ---
-      - name: Render stories (AM only)
-        if: steps.slot.outputs.slot == 'am' && steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+      # ---------------- STORIES (morning / afternoon / evening) ----------------
+      - name: Natural stagger before stories (feel human, not a bot)
+        if: steps.feed.outputs.do_story == 'yes' && steps.feed.outputs.do_feed == 'yes' && github.event.inputs.dry_run != 'yes'
+        run: |
+          # wait a randomized 3-7 minutes so the story doesn't fire the same
+          # second as the feed post — reads like a person, not automation.
+          DELAY=$(( (RANDOM % 240) + 180 ))
+          echo "Sleeping ${DELAY}s before stories..."
+          sleep "$DELAY"
+
+      - name: Render stories
+        if: steps.feed.outputs.do_story == 'yes' && github.event.inputs.dry_run != 'yes'
         run: python post_stories.py --render-only
 
-      - name: Commit story images (raw URLs must exist before posting)
-        if: steps.slot.outputs.slot == 'am' && steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+      - name: Commit story images
+        if: steps.feed.outputs.do_story == 'yes' && github.event.inputs.dry_run != 'yes'
         run: |
           git add queue/ state.json
           git commit -m "render stories $(date -u +%FT%TZ)" || echo "nothing to commit"
           git push
 
-      - name: Publish stories to Instagram
-        if: steps.slot.outputs.slot == 'am' && steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+      - name: Publish stories
+        if: steps.feed.outputs.do_story == 'yes' && github.event.inputs.dry_run != 'yes'
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python post_stories.py --publish-only
 
       - name: Persist story state
-        if: steps.slot.outputs.slot == 'am' && steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+        if: steps.feed.outputs.do_story == 'yes' && github.event.inputs.dry_run != 'yes'
         run: |
           git add state.json .stories_pending.json 2>/dev/null || true
           git commit -m "stories posted $(date -u +%FT%TZ)" || echo "no change"
           git push || true
+
+      - name: Dry-run note
+        if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run == 'yes'
+        run: echo "DRY RUN — slot=${{ steps.slot.outputs.kind }}, feed=${{ steps.feed.outputs.do_feed }}, story=${{ steps.feed.outputs.do_story }} (nothing posted)"

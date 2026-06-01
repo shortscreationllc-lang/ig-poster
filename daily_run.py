@@ -131,23 +131,28 @@ def _count_unposted(manifest, slot):
 
 
 CONTENT_BANK = ROOT / "content_bank.json"
+QUOTE_BANK = ROOT / "quote_bank.json"
 
 
 def _build_am_pool():
-    """Interleave the plain tip-cards with the typed content cards so the AM
-    slot cycles through formats (tip, quote, myth, versus, value, …) instead of
-    only single tips. Each entry keeps its own 'type' for the renderer."""
+    """Round-robin tips + typed value cards + verified quotes so the feed cycles
+    through formats (tip, quote, myth, versus, value, …). Each entry keeps its
+    own 'type' for the renderer. Quotes are interleaved so they show up often."""
     tips = json.loads(SINGLE_BANK.read_text())
     for t in tips:
         t.setdefault("type", "single")
     typed = json.loads(CONTENT_BANK.read_text()) if CONTENT_BANK.exists() else []
-    pool, i, j = [], 0, 0
-    # roughly 1 typed card for every tip card, alternating, so formats vary daily
-    while i < len(tips) or j < len(typed):
+    quotes = json.loads(QUOTE_BANK.read_text()) if QUOTE_BANK.exists() else []
+    pool = []
+    i = j = k = 0
+    # pattern: tip, quote, typed, repeat — keeps quotes & value frequent
+    while i < len(tips) or j < len(quotes) or k < len(typed):
         if i < len(tips):
             pool.append(tips[i]); i += 1
-        if j < len(typed):
-            pool.append(typed[j]); j += 1
+        if j < len(quotes):
+            pool.append(quotes[j]); j += 1
+        if k < len(typed):
+            pool.append(typed[k]); k += 1
     return pool
 
 
