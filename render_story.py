@@ -111,6 +111,36 @@ def draw_promo(item, out_path, style="light"):
     return out_path
 
 
+def draw_reshare(feed_image_path, out_path, style="light"):
+    """Put the actual feed-post card image into a 9:16 story with a 'just posted' nudge."""
+    img, d, p = _bg(style)
+    # kicker
+    kf = rc.f_brand(32)
+    kick = "JUST POSTED"
+    d.rounded_rectangle((M, 150, M + d.textlength(kick, font=kf) + 60, 214), radius=10, fill=rc.ORANGE)
+    d.text((M + 30, 164), kick, font=kf, fill=p["kicker_text"])
+    # paste the feed card (1080x1350) scaled to fit width, with a rounded frame look
+    card = Image.open(feed_image_path).convert("RGBA")
+    target_w = SW - 2 * M
+    scale = target_w / card.width
+    card = card.resize((target_w, int(card.height * scale)))
+    cx, cy = M, 290
+    # subtle orange border behind the card
+    d.rounded_rectangle((cx - 8, cy - 8, cx + card.width + 8, cy + card.height + 8),
+                        radius=28, outline=rc.ORANGE, width=6)
+    img.alpha_composite(card, (cx, cy))
+    # nudge under the card
+    ny = cy + card.height + 70
+    nf = rc.f_sys(46, bold=True)
+    for ln in _wrap(d, "Today's post is up — tap my profile to see it.", nf, SW - 2 * M):
+        d.text((M, ny), ln, font=nf, fill=p["head"]); ny += 56
+    af = rc.f_sys(38, bold=True)
+    d.text((M, SH - 300), "See it on my feed →", font=af, fill=rc.ORANGE)
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--kind", choices=["hook", "promo"], default="hook")

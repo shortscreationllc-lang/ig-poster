@@ -89,3 +89,29 @@ jobs:
           git add queue/ state.json .pending.json 2>/dev/null || true
           git commit -m "posted + refill $(date -u +%FT%TZ)" || echo "no change"
           git push || true
+
+      # --- MORNING STORIES (AM slot only): hook story + reshare of the feed card ---
+      - name: Render stories (AM only)
+        if: steps.slot.outputs.slot == 'am' && steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+        run: python post_stories.py --render-only
+
+      - name: Commit story images (raw URLs must exist before posting)
+        if: steps.slot.outputs.slot == 'am' && steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+        run: |
+          git add queue/ state.json
+          git commit -m "render stories $(date -u +%FT%TZ)" || echo "nothing to commit"
+          git push
+
+      - name: Publish stories to Instagram
+        if: steps.slot.outputs.slot == 'am' && steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python post_stories.py --publish-only
+
+      - name: Persist story state
+        if: steps.slot.outputs.slot == 'am' && steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run != 'yes'
+        run: |
+          git add state.json .stories_pending.json 2>/dev/null || true
+          git commit -m "stories posted $(date -u +%FT%TZ)" || echo "no change"
+          git push || true
