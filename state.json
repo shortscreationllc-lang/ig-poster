@@ -2,6 +2,11 @@
   "single_index": 14,
   "carousel_index": 2,
   "seq": 28,
+  "daily": {
+    "20260601": {
+      "morning": true
+    }
+  },
   "am_style_i": 14,
   "pm_style_i": 14,
   "history": [

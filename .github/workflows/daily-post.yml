@@ -4,49 +4,50 @@ on:
   workflow_dispatch:
     inputs:
       slot:
-        description: "Force a slot: morning | midday | afternoon | evening. Blank = time-based."
+        description: "Force a slot: morning | midday | afternoon | evening. Blank = catch-up plan (posts current + any earlier feed slot missed today)."
         required: false
         default: ""
       dry_run:
-        description: "If 'yes', render + queue but DO NOT post."
+        description: "If 'yes', render + commit but DO NOT post."
         required: false
         default: "no"
   schedule:
-    # GitHub cron is UTC, no DST, and fires APPROXIMATELY (often a few min late —
-    # which helps it feel human, not robotic). We cover each NY target hour in
-    # both EDT(-4) and EST(-5); the gate below maps NY-local hour -> a slot so
-    # exactly one action runs per target window per day.
+    # GitHub cron is UTC, no DST, and BEST-EFFORT (often late, sometimes dropped
+    # entirely). We fire each NY target window at off-peak minutes AND twice (a
+    # primary + a backup), covering both EDT(-4) and EST(-5). But the real
+    # safety net is plan_slots.py: every run posts the current slot PLUS any
+    # earlier *feed* slot that was missed today, so a dropped cron is recovered
+    # by the next one instead of being lost. Once-per-day is tracked in
+    # state.json (state["daily"]), not in committed guard files.
     #
-    # Daily plan (America/New_York), staggered around Joseph's 4 videos
-    # (videos at 9:30a, 1:30p, 5:30p, 9:30p — untouched):
-    #   ~8a  morning   : post #1 (mixed format) + morning story sequence
-    #   ~12p midday    : post #2 (mixed format)
-    #   ~4p  afternoon : afternoon story sequence
-    #   ~7p  evening   : post #3 (carousel) + evening story sequence
-    # NOTE: GitHub frequently DELAYS or DROPS crons scheduled at :00 (busiest
-    # minute globally). So we fire each window at off-peak minutes AND twice
-    # (a primary + a backup ~25 min later). The day-stamp guard in the gate
-    # ensures each slot still posts only ONCE per day even if both fire.
+    # Daily plan (America/New_York), around Joseph's 4 videos (9:30a/1:30p/5:30p/9:30p):
+    #   ~8a  morning   : feed post (mixed format) + morning story
+    #   ~12p midday    : feed post (mixed format)
+    #   ~4p  afternoon : afternoon story only
+    #   ~7p  evening   : carousel feed post + evening story
     # morning ~8a ET
     - cron: "37 12 * * *"  # 8:37a EDT
-    - cron: "2 13 * * *"   # 8:02a EST + backup for EDT
-    - cron: "37 13 * * *"  # 8:37a EST
+    - cron: "2 13 * * *"   # 8:02a EST / backup
     # midday ~12p ET
     - cron: "37 16 * * *"  # 12:37p EDT
-    - cron: "2 17 * * *"   # 12:02p EST + backup
-    - cron: "37 17 * * *"  # 12:37p EST
+    - cron: "2 17 * * *"   # 12:02p EST / backup
     # afternoon ~4p ET
     - cron: "37 20 * * *"  # 4:37p EDT
-    - cron: "2 21 * * *"   # 4:02p EST + backup
-    - cron: "37 21 * * *"  # 4:37p EST
+    - cron: "2 21 * * *"   # 4:02p EST / backup
     # evening ~7p ET
     - cron: "37 23 * * *"  # 7:37p EDT
-    - cron: "2 0 * * *"    # 7:02p EST + backup
-    - cron: "37 0 * * *"   # 7:37p EST
+    - cron: "2 0 * * *"    # 7:02p EST / backup
+    # extra catch-up sweeps later in the day so a fully-dropped window still
+    # recovers (these only act on slots not yet done — see plan_slots.py)
+    - cron: "17 18 * * *"  # ~1-2p ET sweep
+    - cron: "17 22 * * *"  # ~5-6p ET sweep
+    - cron: "17 1 * * *"   # ~8-9p ET sweep
 
 permissions:
   contents: write
 
+# Serialize runs so two crons in the same window can't double-post: the second
+# waits for the first to finish, then re-syncs state and sees the slot done.
 concurrency:
   group: daily-post
   cancel-in-progress: false
@@ -60,129 +61,85 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install deps
-        run: pip install --quiet pillow
+        run: pip install --quiet pillow tzdata
 
-      - name: Decide slot (DST-proof; tolerant of GitHub cron delay; once-per-day)
-        id: slot
-        run: |
-          FORCED="${{ github.event.inputs.slot }}"
-          if [ -n "$FORCED" ]; then
-            echo "kind=$FORCED" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT"
-            echo "Forced slot: $FORCED"; exit 0
-          fi
-          # Map NY-local hour to a slot. We accept the target hour AND the next
-          # hour, so a delayed cron (e.g. fires 8:50 instead of 8:37, or slips
-          # into the 9 o'clock hour) still lands in the right slot.
-          HOUR=$(TZ="America/New_York" date +%H)
-          DAY=$(TZ="America/New_York" date +%Y%m%d)
-          echo "New York hour: $HOUR (day $DAY)"
-          KIND=""
-          case "$HOUR" in
-            08|09) KIND="morning";;
-            12|13) KIND="midday";;
-            16|17) KIND="afternoon";;
-            19|20) KIND="evening";;
-            *) echo "Outside post windows; skipping."; echo "run=no" >> "$GITHUB_OUTPUT"; exit 0;;
-          esac
-          # Once-per-day-per-slot guard: a committed stamp file in .slotguard/.
-          GUARD=".slotguard/${DAY}-${KIND}"
-          git pull -q origin main || true
-          if [ -f "$GUARD" ]; then
-            echo "Slot $KIND already done today ($DAY). Skipping duplicate."
-            echo "run=no" >> "$GITHUB_OUTPUT"; exit 0
-          fi
-          mkdir -p .slotguard
-          # prune old guard files (keep dir tidy)
-          find .slotguard -type f -mtime +3 -delete 2>/dev/null || true
-          echo "done" > "$GUARD"
-          git config user.name "ig-poster-bot"
-          git config user.email "actions@github.com"
-          git add "$GUARD"
-          git commit -m "slot guard $DAY $KIND" -q || true
-          # push the guard immediately to claim the slot (prevents the backup
-          # cron from racing in); retry once on conflict
-          git push -q origin main || (git pull -q --rebase origin main && git push -q origin main) || true
-          echo "kind=$KIND" >> "$GITHUB_OUTPUT"; echo "run=yes" >> "$GITHUB_OUTPUT"
-
-      # Feed slot: morning + midday = single (mixed format); evening = carousel.
-      - name: Pick feed slot for daily_run
-        id: feed
-        if: steps.slot.outputs.run == 'yes'
-        run: |
-          K="${{ steps.slot.outputs.kind }}"
-          if [ "$K" = "morning" ] || [ "$K" = "midday" ]; then echo "slot=am" >> "$GITHUB_OUTPUT"; echo "do_feed=yes" >> "$GITHUB_OUTPUT";
-          elif [ "$K" = "evening" ]; then echo "slot=pm" >> "$GITHUB_OUTPUT"; echo "do_feed=yes" >> "$GITHUB_OUTPUT";
-          else echo "do_feed=no" >> "$GITHUB_OUTPUT"; fi
-          # stories run in morning, afternoon, evening (2-3 moments/day)
-          if [ "$K" = "midday" ]; then echo "do_story=no" >> "$GITHUB_OUTPUT"; else echo "do_story=yes" >> "$GITHUB_OUTPUT"; fi
-
-      # ---------------- FEED POST ----------------
-      - name: Render + queue feed
-        if: steps.feed.outputs.do_feed == 'yes'
-        env:
-          SLOT: ${{ steps.feed.outputs.slot }}
-        run: python daily_run.py --render-only
-
-      - name: Commit feed image
-        if: steps.feed.outputs.do_feed == 'yes'
-        run: |
-          git config user.name "ig-poster-bot"
-          git config user.email "actions@github.com"
-          git add queue/ state.json
-          git commit -m "queue $(date -u +%FT%TZ)" || echo "nothing to commit"
-          git push
-
-      - name: Publish feed post
-        if: steps.feed.outputs.do_feed == 'yes' && github.event.inputs.dry_run != 'yes'
+      - name: Post due slots (catch-up plan; once-per-day via state.json)
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-        run: python daily_run.py --publish-only
-
-      - name: Persist feed state
-        if: steps.feed.outputs.do_feed == 'yes' && github.event.inputs.dry_run != 'yes'
+          FORCE_SLOT: ${{ github.event.inputs.slot }}
+          DRY: ${{ github.event.inputs.dry_run }}
         run: |
-          git add queue/ state.json .pending.json 2>/dev/null || true
-          git commit -m "posted feed $(date -u +%FT%TZ)" || echo "no change"
-          git push || true
+          set -euo pipefail
+          REF="${GITHUB_REF_NAME:-main}"
+          git config user.name "ig-poster-bot"
+          git config user.email "actions@github.com"
 
-      # ---------------- STORIES (morning / afternoon / evening) ----------------
-      - name: Natural stagger before stories (feel human, not a bot)
-        if: steps.feed.outputs.do_story == 'yes' && steps.feed.outputs.do_feed == 'yes' && github.event.inputs.dry_run != 'yes'
-        run: |
-          # wait a randomized 3-7 minutes so the story doesn't fire the same
-          # second as the feed post — reads like a person, not automation.
-          DELAY=$(( (RANDOM % 240) + 180 ))
-          echo "Sleeping ${DELAY}s before stories..."
-          sleep "$DELAY"
+          # push current commits to the ref we're running on (main on schedule;
+          # the chosen branch on workflow_dispatch). retry w/ rebase on conflict.
+          gp() {
+            for i in 1 2 3 4; do
+              if git push origin "HEAD:$REF"; then return 0; fi
+              git pull --rebase origin "$REF" || true
+              sleep $((i * 2))
+            done
+            echo "WARN: push failed after retries" >&2
+          }
 
-      - name: Render stories
-        if: steps.feed.outputs.do_story == 'yes' && github.event.inputs.dry_run != 'yes'
-        env:
-          SLOT_KIND: ${{ steps.slot.outputs.kind }}
-        run: python post_stories.py --render-only
+          # sync to the freshest state before planning so a just-finished run's
+          # "slot done" marks (and queue images) are visible — prevents dupes.
+          git pull --rebase origin "$REF" || git pull origin "$REF" || true
 
-      - name: Commit story images
-        if: steps.feed.outputs.do_story == 'yes' && github.event.inputs.dry_run != 'yes'
-        run: |
-          git add queue/ state.json
-          git commit -m "render stories $(date -u +%FT%TZ)" || echo "nothing to commit"
-          git push
+          python plan_slots.py --plan > /tmp/plan.txt
+          echo "Plan ($(TZ=America/New_York date)):"; cat /tmp/plan.txt
+          if [ ! -s /tmp/plan.txt ]; then echo "No slots due — nothing to do."; exit 0; fi
 
-      - name: Publish stories
-        if: steps.feed.outputs.do_story == 'yes' && github.event.inputs.dry_run != 'yes'
-        env:
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-        run: python post_stories.py --publish-only
+          while IFS='|' read -r KIND FEED STORY; do
+            [ -z "$KIND" ] && continue
+            echo "===== slot: $KIND (feed=$FEED story=$STORY dry=${DRY:-no}) ====="
+            FEED_OK=0
 
-      - name: Persist story state
-        if: steps.feed.outputs.do_story == 'yes' && github.event.inputs.dry_run != 'yes'
-        run: |
-          git add state.json .stories_pending.json 2>/dev/null || true
-          git commit -m "stories posted $(date -u +%FT%TZ)" || echo "no change"
-          git push || true
+            # ---- FEED ----
+            if [ "$FEED" != "-" ]; then
+              SLOT="$FEED" python daily_run.py --render-only
+              git add queue/ state.json
+              git commit -q -m "render feed $KIND $(date -u +%FT%TZ)" || true
+              gp   # publish needs the image live at raw.githubusercontent first
+              if [ "${DRY:-no}" != "yes" ]; then
+                if SLOT="$FEED" python daily_run.py --publish-only; then FEED_OK=1; fi
+                git add queue/ state.json
+                git commit -q -m "posted feed $KIND $(date -u +%FT%TZ)" || true
+                gp
+              fi
+            fi
 
-      - name: Dry-run note
-        if: steps.slot.outputs.run == 'yes' && github.event.inputs.dry_run == 'yes'
-        run: echo "DRY RUN — slot=${{ steps.slot.outputs.kind }}, feed=${{ steps.feed.outputs.do_feed }}, story=${{ steps.feed.outputs.do_story }} (nothing posted)"
+            # ---- STORY (live windows only) ----
+            if [ "$STORY" = "1" ] && [ "${DRY:-no}" != "yes" ]; then
+              # short human stagger so the story doesn't fire the same second
+              sleep $(( (RANDOM % 180) + 120 ))
+              SLOT_KIND="$KIND" python post_stories.py --render-only
+              git add queue/ state.json
+              git commit -q -m "render stories $KIND $(date -u +%FT%TZ)" || true
+              gp
+              SLOT_KIND="$KIND" python post_stories.py --publish-only || echo "stories failed (non-fatal)"
+              git add state.json
+              git commit -q -m "stories posted $KIND $(date -u +%FT%TZ)" || true
+              gp
+            fi
+
+            # ---- MARK DONE ---- only after a real post, so a failure retries
+            # next run. Feed slots: mark when the feed published. Story-only
+            # slots (afternoon): mark after the story attempt.
+            if [ "${DRY:-no}" != "yes" ]; then
+              if [ "$FEED" != "-" ]; then
+                [ "$FEED_OK" = "1" ] && python plan_slots.py --mark "$KIND"
+              else
+                python plan_slots.py --mark "$KIND"
+              fi
+              git add state.json
+              git commit -q -m "slot $KIND done $(date -u +%FT%TZ)" || true
+              gp
+            fi
+          done < /tmp/plan.txt
+
+          echo "Done."

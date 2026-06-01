@@ -182,6 +182,16 @@ def refill():
     QUEUE_DIR.mkdir(exist_ok=True)
     state = read_state()
     manifest = read_manifest()
+
+    # Self-heal: any item already recorded in state history is posted, even if
+    # the manifest says otherwise. The manifest and history can diverge when a
+    # run commits state.json but not the manifest (e.g. an interrupted or manual
+    # run) — without this, the queue head would re-post an already-posted item.
+    posted_ids = {h.get("id") for h in state.get("history", [])}
+    for it in manifest["items"]:
+        if it["id"] in posted_ids and not it.get("posted"):
+            it["posted"] = True
+
     am_pool = _build_am_pool()
     carousels = json.loads(CAROUSEL_BANK.read_text())
 

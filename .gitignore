@@ -3,3 +3,4 @@
 __pycache__/
 *.pyc
 .pending.json
+.stories_pending.json
