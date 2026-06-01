@@ -89,34 +89,57 @@ def _latest_am_feed_image():
     return None
 
 
+def _render_slide(slide, out_path, style):
+    """Route a story slide to the right renderer by its role."""
+    role = slide.get("role", "hook")
+    if role == "fix":
+        render_story.draw_fix(slide, out_path, style=style)
+    elif role == "value":
+        render_story.draw_fix(slide, out_path, style=style)  # value = heading+bullets, same layout
+    else:  # hook or single (big statement)
+        render_story.draw_hook(slide, out_path, style=style)
+
+
 def render_only():
+    """Render the next story SEQUENCE (1 or 2 slides) + a reshare of the AM feed card.
+
+    A sequence with 2 slides is a hook→fix pair (the fix answers the hook).
+    A 1-slide sequence is a standalone statement/value story.
+    The reshare of the day's feed post is always appended last.
+    """
     state = read_state()
     bank = json.loads(STORY_BANK.read_text())
-    hooks = bank["hooks"]
+    seqs = bank["sequences"]
 
-    hi = state.get("story_hook_i", 0)
-    hook = hooks[hi % len(hooks)]
-    hook_style = HOOK_STYLES[state.get("story_style_i", 0) % len(HOOK_STYLES)]
+    si = state.get("story_seq_i", 0)
+    seq = seqs[si % len(seqs)]
+    slides = seq["slides"]
+    # alternate the dark family across days; within a hook→fix pair use two shades
+    base = state.get("story_style_i", 0)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
-
     (ROOT / "queue").mkdir(exist_ok=True)
-    hook_rel = f"queue/story-hook-{stamp}.jpg"
-    render_story.draw_hook(hook, ROOT / hook_rel, style=hook_style)
 
-    pend = {"hook": hook_rel}
+    ordered = []  # list of rel paths, in posting order
+    for n, slide in enumerate(slides):
+        style = HOOK_STYLES[(base + n) % len(HOOK_STYLES)]
+        rel = f"queue/story-{seq['id']}-{n}-{stamp}.jpg"
+        _render_slide(slide, ROOT / rel, style)
+        ordered.append(rel)
+
+    # always append the reshare of the day's feed post as the final story
     feed_img = _latest_am_feed_image()
     if feed_img and (ROOT / feed_img).exists():
         reshare_rel = f"queue/story-reshare-{stamp}.jpg"
         render_story.draw_reshare(ROOT / feed_img, ROOT / reshare_rel, style="light")
-        pend["reshare"] = reshare_rel
+        ordered.append(reshare_rel)
     else:
-        print("WARN: no feed image found to reshare; hook only", file=sys.stderr)
+        print("WARN: no feed image to reshare", file=sys.stderr)
 
-    PENDING.write_text(json.dumps(pend) + "\n")
-    state["story_hook_i"] = (hi + 1) % len(hooks)
-    state["story_style_i"] = state.get("story_style_i", 0) + 1
+    PENDING.write_text(json.dumps({"slides": ordered, "seq_id": seq["id"]}) + "\n")
+    state["story_seq_i"] = (si + 1) % len(seqs)
+    state["story_style_i"] = base + len(slides)
     write_state(state)
-    print(f"Story render: hook={hook_rel} reshare={pend.get('reshare','(none)')}")
+    print(f"Story sequence '{seq['id']}': {len(slides)} slide(s) + reshare = {len(ordered)} stories")
     return 0
 
 
@@ -154,17 +177,17 @@ def publish_only():
         return 2
     pend = json.loads(PENDING.read_text())
 
-    order = [k for k in ("hook", "reshare") if k in pend]
+    slides = pend.get("slides", [])
     posted = []
-    for k in order:
-        url = f"{base}/{urllib.parse.quote(pend[k])}"
-        print(f"Posting story [{k}]: {url}")
+    for n, rel in enumerate(slides):
+        url = f"{base}/{urllib.parse.quote(rel)}"
+        print(f"Posting story [{n+1}/{len(slides)}]: {url}")
         try:
             pub = _post_story(user_id, token, url)
             print(f"  published: {json.dumps(pub)}")
-            posted.append({"kind": k, "id": pub.get("id")})
+            posted.append({"slide": n, "id": pub.get("id")})
         except Exception as e:
-            print(f"  STORY FAILED [{k}]: {e}", file=sys.stderr)
+            print(f"  STORY FAILED [{n}]: {e}", file=sys.stderr)
 
     state = read_state()
     state.setdefault("story_history", []).append(

@@ -1,44 +1,149 @@
 {
-  "hooks": [
+  "sequences": [
     {
-      "kicker": "WATCH THIS",
-      "headline": "Your first 2 seconds decide everything.",
-      "subheadline": "Most people waste them.",
-      "nudge": "Tap through — here's the fix →"
+      "id": "first-2-seconds",
+      "slides": [
+        {
+          "role": "hook",
+          "kicker": "WATCH THIS",
+          "headline": "Your first 2 seconds decide everything.",
+          "subheadline": "Most people waste them.",
+          "nudge": "Tap through — here's the fix →"
+        },
+        {
+          "role": "fix",
+          "kicker": "THE FIX",
+          "headline": "Open on motion — never a static face.",
+          "bullets": [
+            "Start mid-action, skip the \"hey guys\"",
+            "Put the boldest word on screen at 0:00",
+            "Cut the intro entirely — get to the point"
+          ],
+          "nudge": "Save this for your next edit →"
+        }
+      ]
     },
     {
-      "kicker": "REAL TALK",
-      "headline": "The reason your videos flop isn't the algorithm.",
-      "subheadline": "It's the first line.",
-      "nudge": "Keep watching →"
+      "id": "algorithm-blame",
+      "slides": [
+        {
+          "role": "hook",
+          "kicker": "REAL TALK",
+          "headline": "It's not the algorithm holding your videos back.",
+          "subheadline": "It's the first line.",
+          "nudge": "Tap to see what to fix →"
+        },
+        {
+          "role": "fix",
+          "kicker": "THE FIX",
+          "headline": "Rewrite your hook as a statement, not a setup.",
+          "bullets": [
+            "Bad: \"Today I'll show you how to edit\"",
+            "Good: \"Your edits are losing people in 3 seconds\"",
+            "Name the problem. Make it theirs."
+          ],
+          "nudge": "Steal this format →"
+        }
+      ]
     },
     {
-      "kicker": "QUICK TIP",
-      "headline": "Stop posting at the wrong time.",
-      "subheadline": "It matters less than you think.",
-      "nudge": "Here's what actually matters →"
+      "id": "captions-cost",
+      "slides": [
+        {
+          "role": "hook",
+          "kicker": "QUICK TIP",
+          "headline": "AI captions are quietly killing your retention.",
+          "subheadline": "Here's why.",
+          "nudge": "Tap for the fix →"
+        },
+        {
+          "role": "fix",
+          "kicker": "THE FIX",
+          "headline": "Hand-place your captions on the beat.",
+          "bullets": [
+            "Time text to the cut, not the sentence",
+            "One strong word on screen at a time",
+            "Keep it out of the bottom UI zone"
+          ],
+          "nudge": "Save this →"
+        }
+      ]
     },
     {
-      "kicker": "HOT TAKE",
-      "headline": "Cheap editing is the most expensive mistake you can make.",
-      "subheadline": "Here's why.",
-      "nudge": "Tap to see →"
+      "id": "quote-consistency",
+      "slides": [
+        {
+          "role": "single",
+          "kicker": "ON CONTENT",
+          "headline": "Content is king, but consistency is the kingdom.",
+          "subheadline": "Build the engine, then feed it.",
+          "nudge": ""
+        }
+      ]
     },
     {
-      "kicker": "WATCH THIS",
-      "headline": "One change doubled the watch time on these videos.",
-      "subheadline": "It takes 5 seconds to do.",
-      "nudge": "Swipe up your game →"
+      "id": "quote-discipline",
+      "slides": [
+        {
+          "role": "single",
+          "kicker": "REAL TALK",
+          "headline": "Discipline ships content. Motivation just talks about it.",
+          "subheadline": "Decide the schedule once. Stop negotiating.",
+          "nudge": ""
+        }
+      ]
+    },
+    {
+      "id": "video-idea-local",
+      "slides": [
+        {
+          "role": "value",
+          "kicker": "VIDEO IDEA",
+          "headline": "Film this today:",
+          "bullets": [
+            "The #1 question your customers always ask",
+            "Answer it in 30 seconds, on camera",
+            "No script — just the question and your honest answer"
+          ],
+          "nudge": "Tap save, film it this week →"
+        }
+      ]
+    },
+    {
+      "id": "single-tip-move",
+      "slides": [
+        {
+          "role": "single",
+          "kicker": "QUICK TIP",
+          "headline": "Switch your location every line.",
+          "subheadline": "It reads as energy, even with the same script.",
+          "nudge": ""
+        }
+      ]
+    },
+    {
+      "id": "myth-timing",
+      "slides": [
+        {
+          "role": "hook",
+          "kicker": "MYTH",
+          "headline": "\"Post at the perfect time or it flops.\"",
+          "subheadline": "Almost everyone believes this.",
+          "nudge": "Tap for the truth →"
+        },
+        {
+          "role": "fix",
+          "kicker": "THE TRUTH",
+          "headline": "Good content travels for days.",
+          "bullets": [
+            "The algorithm keeps testing strong videos",
+            "Timing is a rounding error vs. the hook",
+            "Fix the first 2 seconds, not the clock"
+          ],
+          "nudge": "Save this →"
+        }
+      ]
     }
   ],
-  "promos": [
-    {
-      "headline": "New one's up.",
-      "subheadline": "Today's post might be the one you needed."
-    },
-    {
-      "headline": "Just posted.",
-      "subheadline": "Tap to see today's breakdown on my feed."
-    }
-  ]
+  "hooks": []
 }

@@ -111,6 +111,47 @@ def draw_promo(item, out_path, style="light"):
     return out_path
 
 
+def draw_fix(item, out_path, style="dark"):
+    """The 'answer' story — delivers the payoff the hook promised. Heading + bullets."""
+    img, d, p = _bg(style)
+    kf = rc.f_brand(32)
+    kick = item.get("kicker", "THE FIX").upper()
+    d.rounded_rectangle((M, 300, M + d.textlength(kick, font=kf) + 60, 364), radius=10, fill=rc.ORANGE)
+    d.text((M + 30, 314), kick, font=kf, fill=p["kicker_text"])
+    # heading
+    top, maxh = 460, 360
+    lines, lh, hf = None, 0, None
+    for size in range(96, 52, -4):
+        f = rc.f_brand(size)
+        ls = _wrap(d, item["headline"], f, SW - 2 * M)
+        h = int(size * 1.08)
+        if len(ls) * h <= maxh:
+            lines, lh, hf = ls, h, f
+            break
+    if lines is None:
+        hf = rc.f_brand(56); lines = _wrap(d, item["headline"], hf, SW - 2 * M); lh = 62
+    y = top
+    for ln in lines:
+        d.text((M, y), ln, font=hf, fill=p["head"]); y += lh
+    y += 24
+    d.rounded_rectangle((M, y, M + 240, y + 10), radius=5, fill=rc.ORANGE)
+    y += 70
+    # bullets
+    bf = rc.f_sys(46)
+    for b in item.get("bullets", [])[:4]:
+        d.ellipse((M, y + 18, M + 18, y + 36), fill=rc.ORANGE)
+        bx = M + 48
+        for j, ln in enumerate(_wrap(d, b, bf, SW - bx - M)):
+            d.text((bx, y), ln, font=bf, fill=p["head"] if j == 0 else p["sub"]); y += 58
+        y += 26
+    if item.get("nudge"):
+        nf = rc.f_sys(36, bold=True)
+        d.text((M, SH - 320), item["nudge"], font=nf, fill=rc.ORANGE)
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
 def draw_reshare(feed_image_path, out_path, style="light"):
     """Put the actual feed-post card image into a 9:16 story with a 'just posted' nudge."""
     img, d, p = _bg(style)
