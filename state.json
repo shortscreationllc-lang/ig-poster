@@ -1,13 +1,13 @@
 {
-  "single_index": 15,
+  "single_index": 16,
   "carousel_index": 2,
-  "seq": 29,
+  "seq": 30,
   "daily": {
     "20260601": {
       "morning": true
     }
   },
-  "am_style_i": 15,
+  "am_style_i": 16,
   "pm_style_i": 14,
   "history": [
     {
@@ -16,6 +16,13 @@
       "slot": "am",
       "type": "single",
       "post_id": "18086117405095480"
+    },
+    {
+      "at": "20260601T182412Z",
+      "id": "single-00002",
+      "slot": "am",
+      "type": "quote",
+      "post_id": "18342680644171743"
     }
   ],
   "story_hook_i": 1,
@@ -39,5 +46,9 @@
         }
       ]
     }
+  ],
+  "recent_texts": [
+    "if you confuse, you lose.",
+    "\u2014 donald miller, storybrand"
   ]
 }

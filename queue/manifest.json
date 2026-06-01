@@ -27,12 +27,14 @@
       ],
       "caption": "\"If you confuse, you lose.\" \u2014 Donald Miller\n\nThe StoryBrand principle that breaks most content: if people have to work to understand your message, they're gone. Clarity beats clever every single time.\n\nSay one thing. Say it simply. Then say it again.\n\nFollow @josephborroto for messaging that actually lands.\n\n#donaldmiller #storybrand #marketing #messaging #contentstrategy #josephborroto",
       "alt": "Quote card with Donald Miller quote: if you confuse, you lose.",
-      "posted": false,
+      "posted": true,
       "source_index": 1,
       "fp": [
         "if you confuse, you lose.",
         "\u2014 donald miller, storybrand"
-      ]
+      ],
+      "posted_at": "20260601T182412Z",
+      "post_id": "18342680644171743"
     },
     {
       "id": "single-00003",
@@ -699,6 +701,23 @@
         "bust a common myth in your niche",
         "save this for your next batch.",
         "share the mistake you made starting out"
+      ]
+    },
+    {
+      "id": "single-00030",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00030.jpg"
+      ],
+      "caption": "Every short-form video that pops has 3 acts:\n\n1. Hook (0 to 1.5s) \u2014 state the problem sharp\n2. Tension (4 to 12s) \u2014 give a reason to stay\n3. Payoff (13s to end) \u2014 deliver, then one clear close\n\nMost people film all hook or all payoff. The tension in the middle is what holds people.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
+      "alt": "Card: every viral video has 3 acts, most people only film one.",
+      "posted": false,
+      "source_index": 15,
+      "fp": [
+        "every viral video has 3 acts.",
+        "hook, then tension, then payoff. skip the middle and retention dies.",
+        "most people only film one."
       ]
     }
   ]
