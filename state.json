@@ -46,10 +46,28 @@
           "id": "18102685241084727"
         }
       ]
+    },
+    {
+      "at": "20260601T205042Z",
+      "posted": [
+        {
+          "slide": 0,
+          "id": "17942367327039702"
+        },
+        {
+          "slide": 1,
+          "id": "18100784777329843"
+        }
+      ]
     }
   ],
   "recent_texts": [
     "if you confuse, you lose.",
-    "\u2014 donald miller, storybrand"
+    "\u2014 donald miller, storybrand",
+    "ai captions are quietly killing your retention.",
+    "hand-place your captions on the beat.",
+    "keep it out of the bottom ui zone",
+    "one strong word on screen at a time",
+    "time text to the cut, not the sentence"
   ]
 }
