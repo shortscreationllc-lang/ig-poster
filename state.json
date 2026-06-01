@@ -4,7 +4,8 @@
   "seq": 30,
   "daily": {
     "20260601": {
-      "morning": true
+      "morning": true,
+      "midday": true
     }
   },
   "am_style_i": 16,
