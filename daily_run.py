@@ -131,6 +131,13 @@ def _count_unposted(manifest, slot):
     return sum(1 for it in manifest["items"] if it["slot"] == slot and not it.get("posted"))
 
 
+def _unposted_sources(manifest, slot):
+    """source_index values currently sitting unposted in the queue for a slot —
+    used to avoid queuing the same bank entry twice (which would post a double)."""
+    return {it.get("source_index") for it in manifest["items"]
+            if it["slot"] == slot and not it.get("posted")}
+
+
 CONTENT_BANK = ROOT / "content_bank.json"
 QUOTE_BANK = ROOT / "quote_bank.json"
 
@@ -207,6 +214,22 @@ def refill():
             except Exception:
                 it["fp"] = []
 
+    # Drop duplicate unposted items (same slot + source_index) so one bank entry
+    # can't sit in the queue twice and post a double — e.g. when QUEUE_DEPTH (14)
+    # exceeds the number of carousels (12), the queue previously held indices
+    # 0 and 1 twice. Keep the first occurrence; posted items are untouched.
+    seen = {"am": set(), "pm": set()}
+    deduped = []
+    for it in manifest["items"]:
+        slot = it.get("slot")
+        if not it.get("posted") and slot in seen:
+            si = it.get("source_index")
+            if si in seen[slot]:
+                continue
+            seen[slot].add(si)
+        deduped.append(it)
+    manifest["items"] = deduped
+
     made = 0
     # AM singles — mixed formats (tip / quote / myth / versus / value).
     # Rendering is fault-tolerant: a bank item the renderer chokes on is skipped
@@ -218,6 +241,8 @@ def refill():
         attempts += 1
         idx = state["single_index"] % len(am_pool)
         state["single_index"] = (idx + 1) % len(am_pool)  # advance regardless of outcome
+        if idx in _unposted_sources(manifest, "am"):
+            continue  # this bank entry is already queued — don't double it
         item = am_pool[idx]
         uid = f"single-{state['seq'] + 1:05d}"
         rel = f"queue/{uid}.jpg"
@@ -244,6 +269,8 @@ def refill():
         attempts += 1
         idx = state["carousel_index"] % len(carousels)
         state["carousel_index"] = (idx + 1) % len(carousels)
+        if idx in _unposted_sources(manifest, "pm"):
+            continue  # this carousel is already queued — don't double it
         entry = carousels[idx]
         uid = f"carousel-{state['seq'] + 1:05d}"
         style = entry.get("style") or PM_STYLES[state["pm_style_i"] % len(PM_STYLES)]
