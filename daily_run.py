@@ -35,6 +35,7 @@ from pathlib import Path
 
 import content_dedup
 import render_card
+import threads_post
 
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "state.json"
@@ -379,6 +380,18 @@ def publish_only():
         print(f"PUBLISH FAILED: {e}", file=sys.stderr)
         return 1
     print("Published:", json.dumps(pub))
+
+    # Also cross-post the same feed item to Threads, if configured. Non-fatal:
+    # a Threads problem must never break or roll back the Instagram post.
+    try:
+        if threads_post.configured():
+            tp = threads_post.cross_post(urls, item["caption"])
+            if tp:
+                print("Cross-posted to Threads:", json.dumps(tp))
+        else:
+            print("Threads not configured (set THREADS_USER_ID/THREADS_ACCESS_TOKEN to enable) — skipping.")
+    except Exception as e:
+        print(f"Threads cross-post FAILED (non-fatal): {e}", file=sys.stderr)
 
     item["posted"] = True
     item["posted_at"] = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
