@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Morning Stories runner — posts 2 stories: a hook + a reshare of the AM feed card.
+"""Morning Stories runner — posts a story sequence (hook/fix, series, or quote).
 
 Two phases (same public-URL reason as feed posts):
-  --render-only   render hook + reshare story images into queue/, record .stories_pending.json
-  --publish-only  post both as STORIES via the IG API
+  --render-only   render the day's story sequence into queue/, record .stories_pending.json
+  --publish-only  post each slide as a STORY via the IG API
 
-The reshare uses the image of the most recent AM feed post (from state.json history),
-falling back to the next queued single if history isn't available.
+Stories stand on their own (hook->fix pair, multi-part series, or a quote).
+No feed-post reshare (removed 2026-06-01 — it was redundant/mismatched).
 
 Env: IG_USER_ID, IG_ACCESS_TOKEN, GITHUB_REPOSITORY, GITHUB_REF_NAME (or IMAGE_BASE_OVERRIDE)
 """
@@ -101,11 +101,12 @@ def _render_slide(slide, out_path, style):
 
 
 def render_only():
-    """Render the next story SEQUENCE (1 or 2 slides) + a reshare of the AM feed card.
+    """Render the next story SEQUENCE.
 
     A sequence with 2 slides is a hook→fix pair (the fix answers the hook).
     A 1-slide sequence is a standalone statement/value story.
-    The reshare of the day's feed post is always appended last.
+    A 'series' sequence expands to intro + one slide per item.
+    No feed reshare — stories stand alone.
     """
     state = read_state()
     bank = json.loads(STORY_BANK.read_text())
@@ -142,20 +143,15 @@ def render_only():
             _render_slide(slide, ROOT / rel, style)
             ordered.append(rel)
 
-    # always append the reshare of the day's feed post as the final story
-    feed_img = _latest_am_feed_image()
-    if feed_img and (ROOT / feed_img).exists():
-        reshare_rel = f"queue/story-reshare-{stamp}.jpg"
-        render_story.draw_reshare(ROOT / feed_img, ROOT / reshare_rel, style="light")
-        ordered.append(reshare_rel)
-    else:
-        print("WARN: no feed image to reshare", file=sys.stderr)
+    # NOTE: the feed-post "reshare" story was removed (2026-06-01) — re-posting
+    # the day's feed image as a story was redundant and could grab a mismatched
+    # image. Stories now stand on their own (hook/fix/series/quote only).
 
     PENDING.write_text(json.dumps({"slides": ordered, "seq_id": seq["id"]}) + "\n")
     state["story_seq_i"] = (si + 1) % len(seqs)
     state["story_style_i"] = base + 1
     write_state(state)
-    print(f"Story sequence '{seq['id']}': {len(ordered)} stories total (incl. reshare)")
+    print(f"Story sequence '{seq['id']}': {len(ordered)} stories")
     return 0
 
 
