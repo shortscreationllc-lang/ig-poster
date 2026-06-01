@@ -1,13 +1,13 @@
 {
-  "single_index": 14,
+  "single_index": 15,
   "carousel_index": 2,
-  "seq": 28,
+  "seq": 29,
   "daily": {
     "20260601": {
       "morning": true
     }
   },
-  "am_style_i": 14,
+  "am_style_i": 15,
   "pm_style_i": 14,
   "history": [
     {
