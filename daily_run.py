@@ -209,16 +209,27 @@ def refill():
                 it["fp"] = []
 
     made = 0
-    # AM singles — mixed formats (tip / quote / myth / versus / value)
-    while _count_unposted(manifest, "am") < QUEUE_DEPTH:
+    # AM singles — mixed formats (tip / quote / myth / versus / value).
+    # Rendering is fault-tolerant: a bank item the renderer chokes on is skipped
+    # (we advance past it) instead of crashing the whole run, so the existing
+    # pre-rendered stockpile can always still post. A bounded attempt count
+    # prevents an infinite loop if many items fail.
+    attempts, max_attempts = 0, len(am_pool) + QUEUE_DEPTH
+    while _count_unposted(manifest, "am") < QUEUE_DEPTH and attempts < max_attempts:
+        attempts += 1
         idx = state["single_index"] % len(am_pool)
+        state["single_index"] = (idx + 1) % len(am_pool)  # advance regardless of outcome
         item = am_pool[idx]
-        state["seq"] += 1
-        uid = f"single-{state['seq']:05d}"
+        uid = f"single-{state['seq'] + 1:05d}"
         rel = f"queue/{uid}.jpg"
         style = item.get("style") or AM_STYLES[state["am_style_i"] % len(AM_STYLES)]
+        try:
+            _render_am_item(item, ROOT / rel, style)
+        except Exception as e:
+            print(f"WARN: skipping unrenderable am item idx={idx}: {e}", file=sys.stderr)
+            continue
+        state["seq"] += 1
         state["am_style_i"] += 1
-        _render_am_item(item, ROOT / rel, style)
         manifest["items"].append({
             "id": uid, "slot": "am", "type": item.get("type", "single"),
             "images": [rel], "caption": item["caption"],
@@ -226,18 +237,24 @@ def refill():
             "source_index": idx,
             "fp": sorted(content_dedup.fingerprint(item)),
         })
-        state["single_index"] = (idx + 1) % len(am_pool)
         made += 1
 
-    # PM carousels (light)
-    while _count_unposted(manifest, "pm") < QUEUE_DEPTH:
+    # PM carousels (light) — same fault-tolerant rendering.
+    attempts, max_attempts = 0, len(carousels) + QUEUE_DEPTH
+    while _count_unposted(manifest, "pm") < QUEUE_DEPTH and attempts < max_attempts:
+        attempts += 1
         idx = state["carousel_index"] % len(carousels)
+        state["carousel_index"] = (idx + 1) % len(carousels)
         entry = carousels[idx]
-        state["seq"] += 1
-        uid = f"carousel-{state['seq']:05d}"
+        uid = f"carousel-{state['seq'] + 1:05d}"
         style = entry.get("style") or PM_STYLES[state["pm_style_i"] % len(PM_STYLES)]
+        try:
+            paths = render_card.render_carousel(entry, QUEUE_DIR, uid, style=style)
+        except Exception as e:
+            print(f"WARN: skipping unrenderable carousel idx={idx}: {e}", file=sys.stderr)
+            continue
+        state["seq"] += 1
         state["pm_style_i"] += 1
-        paths = render_card.render_carousel(entry, QUEUE_DIR, uid, style=style)
         rels = [str(Path(p).relative_to(ROOT)) for p in paths]
         manifest["items"].append({
             "id": uid, "slot": "pm", "type": "carousel",
@@ -246,7 +263,6 @@ def refill():
             "source_index": idx,
             "fp": sorted(content_dedup.fingerprint(entry)),
         })
-        state["carousel_index"] = (idx + 1) % len(carousels)
         made += 1
 
     # trim posted history in the manifest (keep last 60 posted for traceability)
