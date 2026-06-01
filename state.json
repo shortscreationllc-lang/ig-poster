@@ -1,7 +1,7 @@
 {
   "single_index": 16,
-  "carousel_index": 2,
-  "seq": 30,
+  "carousel_index": 3,
+  "seq": 31,
   "daily": {
     "20260601": {
       "morning": true,
@@ -10,7 +10,7 @@
     }
   },
   "am_style_i": 16,
-  "pm_style_i": 14,
+  "pm_style_i": 15,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -25,6 +25,13 @@
       "slot": "am",
       "type": "quote",
       "post_id": "18342680644171743"
+    },
+    {
+      "at": "20260601T230403Z",
+      "id": "carousel-00015",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18128637400615062"
     }
   ],
   "story_hook_i": 1,
@@ -69,6 +76,18 @@
     "hand-place your captions on the beat.",
     "keep it out of the bottom ui zone",
     "one strong word on screen at a time",
-    "time text to the cut, not the sentence"
+    "time text to the cut, not the sentence",
+    "5 hook formulas that work in any niche.",
+    "[number] things i learned about [x].",
+    "a curiosity gap. implies you have the inside answer.",
+    "calls out a specific person. they can't scroll past themselves.",
+    "here's the truth about [x].",
+    "i tried / quit / lost...",
+    "if you're [x], stop doing [y].",
+    "most people don't know...",
+    "personal stakes. people stay to see what happened.",
+    "positions you as the one cutting through the noise.",
+    "promises a list. the brain wants to finish what it starts.",
+    "steal these for your next 5 videos."
   ]
 }

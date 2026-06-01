@@ -37,6 +37,40 @@
       "post_id": "18342680644171743"
     },
     {
+      "id": "carousel-00015",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00015-0.jpg",
+        "queue/carousel-00015-1.jpg",
+        "queue/carousel-00015-2.jpg",
+        "queue/carousel-00015-3.jpg",
+        "queue/carousel-00015-4.jpg",
+        "queue/carousel-00015-5.jpg",
+        "queue/carousel-00015-6.jpg"
+      ],
+      "caption": "5 hook formulas that work in any niche:\n\n1. \"I tried / quit / lost...\"\n2. \"Most people don't know...\"\n3. \"If you're [X], stop doing [Y].\"\n4. \"Here's the truth about [X].\"\n5. \"[Number] things I learned about [X].\"\n\nSave it for your next batch of scripts.\n\nFollow @josephborroto for a breakdown like this every few days.\n\n#hookwriting #shortformvideo #contentcreator #copywriting #reelstips #josephborroto",
+      "alt": "Carousel: 5 hook formulas that work in any niche.",
+      "posted": true,
+      "source_index": 0,
+      "fp": [
+        "5 hook formulas that work in any niche.",
+        "[number] things i learned about [x].",
+        "a curiosity gap. implies you have the inside answer.",
+        "calls out a specific person. they can't scroll past themselves.",
+        "here's the truth about [x].",
+        "i tried / quit / lost...",
+        "if you're [x], stop doing [y].",
+        "most people don't know...",
+        "personal stakes. people stay to see what happened.",
+        "positions you as the one cutting through the noise.",
+        "promises a list. the brain wants to finish what it starts.",
+        "steal these for your next 5 videos."
+      ],
+      "posted_at": "20260601T230403Z",
+      "post_id": "18128637400615062"
+    },
+    {
       "id": "single-00003",
       "slot": "am",
       "type": "quote",
@@ -233,38 +267,6 @@
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
-      "id": "carousel-00015",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00015-0.jpg",
-        "queue/carousel-00015-1.jpg",
-        "queue/carousel-00015-2.jpg",
-        "queue/carousel-00015-3.jpg",
-        "queue/carousel-00015-4.jpg",
-        "queue/carousel-00015-5.jpg",
-        "queue/carousel-00015-6.jpg"
-      ],
-      "caption": "5 hook formulas that work in any niche:\n\n1. \"I tried / quit / lost...\"\n2. \"Most people don't know...\"\n3. \"If you're [X], stop doing [Y].\"\n4. \"Here's the truth about [X].\"\n5. \"[Number] things I learned about [X].\"\n\nSave it for your next batch of scripts.\n\nFollow @josephborroto for a breakdown like this every few days.\n\n#hookwriting #shortformvideo #contentcreator #copywriting #reelstips #josephborroto",
-      "alt": "Carousel: 5 hook formulas that work in any niche.",
-      "posted": false,
-      "source_index": 0,
-      "fp": [
-        "5 hook formulas that work in any niche.",
-        "[number] things i learned about [x].",
-        "a curiosity gap. implies you have the inside answer.",
-        "calls out a specific person. they can't scroll past themselves.",
-        "here's the truth about [x].",
-        "i tried / quit / lost...",
-        "if you're [x], stop doing [y].",
-        "most people don't know...",
-        "personal stakes. people stay to see what happened.",
-        "positions you as the one cutting through the noise.",
-        "promises a list. the brain wants to finish what it starts.",
-        "steal these for your next 5 videos."
       ]
     },
     {
@@ -718,6 +720,38 @@
         "every viral video has 3 acts.",
         "hook, then tension, then payoff. skip the middle and retention dies.",
         "most people only film one."
+      ]
+    },
+    {
+      "id": "carousel-00031",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00031-0.jpg",
+        "queue/carousel-00031-1.jpg",
+        "queue/carousel-00031-2.jpg",
+        "queue/carousel-00031-3.jpg",
+        "queue/carousel-00031-4.jpg",
+        "queue/carousel-00031-5.jpg",
+        "queue/carousel-00031-6.jpg"
+      ],
+      "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 caption mistakes killing your retention.",
+      "posted": false,
+      "source_index": 2,
+      "fp": [
+        "1. too small",
+        "2. off the beat",
+        "3. buried at the bottom",
+        "4. wrong font",
+        "5 caption mistakes killing your retention.",
+        "5. paced too slow",
+        "captions should feel a touch faster than the video itself.",
+        "if it's hard to read on a phone, it's costing you watch time.",
+        "most people make all 5.",
+        "text should hit on the cut, not lag behind the sentence.",
+        "the app ui covers it. keep key words in the safe zone.",
+        "white, modern, sans-serif. no heavy drop shadow."
       ]
     }
   ]
