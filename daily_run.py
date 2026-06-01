@@ -130,32 +130,68 @@ def _count_unposted(manifest, slot):
     return sum(1 for it in manifest["items"] if it["slot"] == slot and not it.get("posted"))
 
 
+CONTENT_BANK = ROOT / "content_bank.json"
+
+
+def _build_am_pool():
+    """Interleave the plain tip-cards with the typed content cards so the AM
+    slot cycles through formats (tip, quote, myth, versus, value, …) instead of
+    only single tips. Each entry keeps its own 'type' for the renderer."""
+    tips = json.loads(SINGLE_BANK.read_text())
+    for t in tips:
+        t.setdefault("type", "single")
+    typed = json.loads(CONTENT_BANK.read_text()) if CONTENT_BANK.exists() else []
+    pool, i, j = [], 0, 0
+    # roughly 1 typed card for every tip card, alternating, so formats vary daily
+    while i < len(tips) or j < len(typed):
+        if i < len(tips):
+            pool.append(tips[i]); i += 1
+        if j < len(typed):
+            pool.append(typed[j]); j += 1
+    return pool
+
+
+def _render_am_item(item, out_path, style):
+    """Route an AM pool item to the right card renderer by its type."""
+    t = item.get("type", "single")
+    if t == "quote":
+        render_card.draw_quote(item, out_path, style=style)
+    elif t in ("myth", "versus"):
+        render_card.draw_versus(item, out_path, style=style)
+    elif t == "value":
+        render_card.draw_value(item, out_path, style=style)
+    elif t == "testimonial":
+        render_card.draw_testimonial(item, out_path, style=style)
+    else:
+        render_card.draw_card(item, out_path, style=style)
+
+
 def refill():
     """Top up both slot queues to QUEUE_DEPTH, rendering images ahead of time."""
     QUEUE_DIR.mkdir(exist_ok=True)
     state = read_state()
     manifest = read_manifest()
-    singles = json.loads(SINGLE_BANK.read_text())
+    am_pool = _build_am_pool()
     carousels = json.loads(CAROUSEL_BANK.read_text())
 
     made = 0
-    # AM singles (dark)
+    # AM singles — mixed formats (tip / quote / myth / versus / value)
     while _count_unposted(manifest, "am") < QUEUE_DEPTH:
-        idx = state["single_index"] % len(singles)
-        item = singles[idx]
+        idx = state["single_index"] % len(am_pool)
+        item = am_pool[idx]
         state["seq"] += 1
         uid = f"single-{state['seq']:05d}"
         rel = f"queue/{uid}.jpg"
         style = item.get("style") or AM_STYLES[state["am_style_i"] % len(AM_STYLES)]
         state["am_style_i"] += 1
-        render_card.draw_card(item, ROOT / rel, style=style)
+        _render_am_item(item, ROOT / rel, style)
         manifest["items"].append({
-            "id": uid, "slot": "am", "type": "single",
+            "id": uid, "slot": "am", "type": item.get("type", "single"),
             "images": [rel], "caption": item["caption"],
             "alt": item.get("alt_text", ""), "posted": False,
             "source_index": idx,
         })
-        state["single_index"] = (idx + 1) % len(singles)
+        state["single_index"] = (idx + 1) % len(am_pool)
         made += 1
 
     # PM carousels (light)

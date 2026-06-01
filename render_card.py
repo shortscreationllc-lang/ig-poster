@@ -207,6 +207,127 @@ def _footer(d, p):
     d.text((M + 72, fy + 46), "@josephborroto", font=hf2, fill=p["muted"])
 
 
+def _fit_lines(d, text, max_w, max_h, start, floor, lh_mult=1.06):
+    """Return (font, lines, line_height) for the biggest brand size that fits."""
+    for size in range(start, floor - 1, -4):
+        f = f_brand(size)
+        ls = wrap(d, text, f, max_w)
+        lh = int(size * lh_mult)
+        if len(ls) * lh <= max_h:
+            return f, ls, lh
+    f = f_brand(floor)
+    return f, wrap(d, text, f, max_w), int(floor * lh_mult)
+
+
+def _new_img(style):
+    p = PALETTES.get(style, PALETTES["dark"])
+    img = Image.new("RGBA", (W, H), p["bg_top"] + (255,))
+    bg(img, p)
+    return img, ImageDraw.Draw(img), p
+
+
+def draw_quote(item, out_path, style="midnight"):
+    """Big centered quotation — for things Joseph has said."""
+    img, d, p = _new_img(style)
+    _kicker(d, item.get("kicker", "ON CONTENT"), p)
+    # giant orange quote mark
+    d.text((M - 10, 250), "“", font=f_brand(220), fill=ORANGE)
+    f, lines, lh = _fit_lines(d, item["headline"], W - 2 * M, 560, 92, 52)
+    y = 470
+    for ln in lines:
+        d.text((M, y), ln, font=f, fill=p["head"]); y += lh
+    y += 30
+    d.rounded_rectangle((M, y, M + 230, y + 9), radius=4, fill=ORANGE)
+    if item.get("subheadline"):
+        y += 56
+        sf = f_sys(44)
+        for ln in wrap(d, item["subheadline"], sf, W - 2 * M):
+            d.text((M, y), ln, font=sf, fill=p["muted"]); y += 54
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
+def draw_versus(item, out_path, style="dark"):
+    """Two-panel layout for Myth/Truth or This/That comparisons."""
+    img, d, p = _new_img(style)
+    _kicker(d, item.get("kicker", "MYTH VS TRUTH"), p)
+    top_label = item.get("top_label", "MYTH")
+    bot_label = item.get("bottom_label", "TRUTH")
+    # Panel A (problem) — muted/red-ish outline
+    ax, ay, aw, ah = M, 270, W - 2 * M, 380
+    d.rounded_rectangle((ax, ay, ax + aw, ay + ah), radius=24, fill=p["panel"], outline=p["panel_line"], width=2)
+    lf = f_brand(34)
+    d.text((ax + 36, ay + 30), top_label.upper(), font=lf, fill=p["muted"])
+    tf, tl, tlh = _fit_lines(d, item["top"], aw - 72, ah - 130, 60, 36)
+    ty = ay + 100
+    for ln in tl:
+        d.text((ax + 36, ty), ln, font=tf, fill=p["head"]); ty += tlh
+    # Panel B (answer) — orange highlight
+    by = ay + ah + 40
+    d.rounded_rectangle((ax, by, ax + aw, by + ah), radius=24, fill=ORANGE)
+    d.text((ax + 36, by + 30), bot_label.upper(), font=lf, fill=(20, 14, 6))
+    bf, bl, blh = _fit_lines(d, item["bottom"], aw - 72, ah - 130, 60, 36)
+    bly = by + 100
+    for ln in bl:
+        d.text((ax + 36, bly), ln, font=bf, fill=(20, 14, 6)); bly += blh
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
+def draw_value(item, out_path, style="dark"):
+    """Generic value card with a heading + up to ~5 bullet lines.
+
+    Used for: video ideas, written news, behind-the-process, safe results.
+    item: {kicker, headline, bullets:[...], footer_note?}
+    """
+    img, d, p = _new_img(style)
+    _kicker(d, item.get("kicker", "VALUE"), p)
+    f, lines, lh = _fit_lines(d, item["headline"], W - 2 * M, 360, 88, 48)
+    y = 250
+    for ln in lines:
+        d.text((M, y), ln, font=f, fill=p["head"]); y += lh
+    y += 24
+    d.rounded_rectangle((M, y, M + 230, y + 9), radius=4, fill=ORANGE)
+    y += 60
+    bf = f_sys(42)
+    bullets = item.get("bullets", [])[:5]
+    for b in bullets:
+        # orange dot + wrapped text
+        d.ellipse((M, y + 16, M + 16, y + 32), fill=ORANGE)
+        bx = M + 44
+        wrapped = wrap(d, b, bf, W - bx - M)
+        for j, ln in enumerate(wrapped):
+            d.text((bx, y), ln, font=bf, fill=p["head"] if j == 0 else p["sub"]); y += 52
+        y += 22
+    if item.get("footer_note"):
+        nf = f_sys(34)
+        d.text((M, H - 240), item["footer_note"], font=nf, fill=p["muted"])
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
+def draw_testimonial(item, out_path, style="bone"):
+    """Anonymized client testimonial card. Requires a REAL quote in item['quote']."""
+    img, d, p = _new_img(style)
+    _kicker(d, "CLIENT WIN", p)
+    d.text((M - 10, 250), "“", font=f_brand(220), fill=ORANGE)
+    f, lines, lh = _fit_lines(d, item["quote"], W - 2 * M, 560, 80, 44)
+    y = 480
+    for ln in lines:
+        d.text((M, y), ln, font=f, fill=p["head"]); y += lh
+    y += 30
+    d.rounded_rectangle((M, y, M + 180, y + 9), radius=4, fill=ORANGE)
+    y += 50
+    af = f_sys(40, bold=True)
+    d.text((M, y), "— " + item.get("attribution", "a Shorts Creation client"), font=af, fill=p["muted"])
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
 def _kicker(d, text, p):
     kf = f_brand(30)
     d.rounded_rectangle((M, 150, M + d.textlength(text.upper(), font=kf) + 56, 206),
