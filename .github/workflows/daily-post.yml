@@ -1,6 +1,18 @@
 name: Daily Instagram Post
 
 on:
+  # A push to main triggers a real run on GitHub's runner (push events are
+  # processed reliably, unlike best-effort cron). The catch-up plan + once-per-
+  # day state guard mean this only posts slots that are due and not yet done —
+  # so it never double-posts. paths-ignore excludes the files the bot itself
+  # commits (queue images, state) so the bot's own pushes can't re-trigger it.
+  push:
+    branches: [main]
+    paths-ignore:
+      - "queue/**"
+      - "state.json"
+      - ".slotguard/**"
+      - "**/*.md"
   workflow_dispatch:
     inputs:
       slot:
