@@ -20,6 +20,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+import content_dedup
 import render_story
 
 ROOT = Path(__file__).resolve().parent
@@ -121,8 +122,19 @@ def render_only():
     bank = json.loads(STORY_BANK.read_text())
     seqs = bank["sequences"]
 
+    # Pick the next sequence, but skip any whose content was recently posted on
+    # EITHER channel so a story never repeats a feed post (shared quote, list,
+    # series, etc.). If everything collides (unlikely) we fall back to the next.
     si = state.get("story_seq_i", 0)
-    seq = seqs[si % len(seqs)]
+    seq = None
+    for _ in range(len(seqs)):
+        cand = seqs[si % len(seqs)]
+        if not content_dedup.collides(content_dedup.fingerprint(cand), state):
+            seq = cand
+            break
+        si += 1
+    if seq is None:
+        seq = seqs[si % len(seqs)]
     base = state.get("story_style_i", 0)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     (ROOT / "queue").mkdir(exist_ok=True)
@@ -163,7 +175,10 @@ def render_only():
     # the day's feed image as a story was redundant and could grab a mismatched
     # image. Stories now stand on their own (hook/fix/series/quote only).
 
-    PENDING.write_text(json.dumps({"slides": ordered, "seq_id": seq["id"]}) + "\n")
+    PENDING.write_text(json.dumps({
+        "slides": ordered, "seq_id": seq["id"],
+        "fp": sorted(content_dedup.fingerprint(seq)),
+    }) + "\n")
     state["story_seq_i"] = (si + 1) % len(seqs)
     state["story_style_i"] = base + 1
     write_state(state)
@@ -221,6 +236,8 @@ def publish_only():
     state.setdefault("story_history", []).append(
         {"at": datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"), "posted": posted})
     state["story_history"] = state["story_history"][-120:]
+    if posted:
+        content_dedup.remember(state, pend.get("fp", []))  # so feed won't repeat it
     write_state(state)
     PENDING.unlink(missing_ok=True)
     return 0 if posted else 1

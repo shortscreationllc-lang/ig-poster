@@ -46,12 +46,13 @@ except Exception:  # pragma: no cover - fallback if tz database missing
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "state.json"
 
-# kind, NY start hour, feed slot (am/pm/None), has a time-of-day story
+# kind, NY start hour, feed slot (am/pm/None), has a time-of-day story.
+# Stories run twice a day — morning + afternoon. Evening is feed-only (carousel).
 SLOTS = [
     ("morning",    8, "am", True),
     ("midday",    12, "am", False),
     ("afternoon", 16, None, True),
-    ("evening",   19, "pm", True),
+    ("evening",   19, "pm", False),
 ]
 # A slot's LIVE window is [start, start + WINDOW_SPAN] hours — slack so a cron
 # that fires late (or slips into the next hour) still counts as "in window".

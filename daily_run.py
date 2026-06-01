@@ -33,6 +33,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+import content_dedup
 import render_card
 
 ROOT = Path(__file__).resolve().parent
@@ -195,6 +196,17 @@ def refill():
     am_pool = _build_am_pool()
     carousels = json.loads(CAROUSEL_BANK.read_text())
 
+    # Backfill content fingerprints onto items queued before the de-dup guard
+    # existed, so feed->story de-dup is active immediately (not only once the
+    # queue rotates). source_index maps back to the originating bank entry.
+    for it in manifest["items"]:
+        if "fp" not in it and "source_index" in it:
+            pool = am_pool if it["slot"] == "am" else carousels
+            try:
+                it["fp"] = sorted(content_dedup.fingerprint(pool[it["source_index"] % len(pool)]))
+            except Exception:
+                it["fp"] = []
+
     made = 0
     # AM singles — mixed formats (tip / quote / myth / versus / value)
     while _count_unposted(manifest, "am") < QUEUE_DEPTH:
@@ -211,6 +223,7 @@ def refill():
             "images": [rel], "caption": item["caption"],
             "alt": item.get("alt_text", ""), "posted": False,
             "source_index": idx,
+            "fp": sorted(content_dedup.fingerprint(item)),
         })
         state["single_index"] = (idx + 1) % len(am_pool)
         made += 1
@@ -230,6 +243,7 @@ def refill():
             "images": rels, "caption": entry["caption"],
             "alt": entry.get("alt_text", ""), "posted": False,
             "source_index": idx,
+            "fp": sorted(content_dedup.fingerprint(entry)),
         })
         state["carousel_index"] = (idx + 1) % len(carousels)
         made += 1
@@ -248,11 +262,32 @@ def refill():
 def render_only():
     slot = os.getenv("SLOT", "am").strip().lower()
     refill()
+    state = read_state()
     manifest = read_manifest()
-    head = _next_unposted(manifest, slot)
+
+    # Skip any queued item whose content was recently posted on EITHER channel
+    # (e.g. a story already used this quote/list) so a feed post never repeats a
+    # story. Skipped items are marked done so the queue advances past them; a
+    # collision is rare, and we never skip the last candidate (always post).
+    head = None
+    skipped = []
+    candidates = [it for it in manifest["items"] if it["slot"] == slot and not it.get("posted")]
+    for i, it in enumerate(candidates):
+        if i < len(candidates) - 1 and content_dedup.collides(it.get("fp", []), state):
+            it["posted"] = True
+            it["skipped"] = True
+            skipped.append(it["id"])
+            continue
+        head = it
+        break
+
     if not head:
         print(f"ERROR: queue empty for slot {slot}", file=sys.stderr)
         return 2
+    if skipped:
+        print(f"Skipped {len(skipped)} duplicate-content item(s): {', '.join(skipped)}")
+        write_manifest(manifest)
+        refill()  # top the queue back up after skipping
     PENDING.write_text(json.dumps({"slot": slot, "id": head["id"]}) + "\n")
     print(f"Pending {slot}: {head['id']} ({head['type']}, {len(head['images'])} image(s))")
     return 0
@@ -354,6 +389,7 @@ def publish_only():
                              "slot": item["slot"], "type": item["type"],
                              "post_id": pub.get("id")})
     state["history"] = state["history"][-200:]
+    content_dedup.remember(state, item.get("fp", []))  # so stories won't repeat it
     write_state(state)
     PENDING.unlink(missing_ok=True)
     refill()  # immediately top the queue back up

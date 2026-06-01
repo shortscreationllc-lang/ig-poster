@@ -24,7 +24,10 @@ on:
     #   ~8a  morning   : feed post (mixed format) + morning story
     #   ~12p midday    : feed post (mixed format)
     #   ~4p  afternoon : afternoon story only
-    #   ~7p  evening   : carousel feed post + evening story
+    #   ~7p  evening   : carousel feed post (no story)
+    # Stories run twice a day (morning + afternoon); evening is feed-only.
+    # A cross-channel de-dup guard (content_dedup.py) ensures a story and a feed
+    # post never show the same line.
     # morning ~8a ET
     - cron: "37 12 * * *"  # 8:37a EDT
     - cron: "2 13 * * *"   # 8:02a EST / backup
