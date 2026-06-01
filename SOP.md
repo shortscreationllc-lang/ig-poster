@@ -45,6 +45,15 @@ Never put client-identifying info in posts: no client/editor counts, no client n
 - `GH_PAT` — **no-expiry** fine-grained token named "IG Post" (scoped to ig-poster, Secrets + Contents). Keeps refresh self-sustaining.
 - Old classic setup token (`ghp_…`) is unused — delete at github.com/settings/tokens → "Tokens (classic)". Must be done in the browser; cannot be revoked via API.
 
+## 7b. Stories (LIVE since 2026-06-01)
+Every morning, alongside the 8 AM feed post, it posts **2 stories**:
+1. **Hook story** — a bold attention-grabber (from `story_bank.json` → `hooks`) to pull people into your stories. Rotates daily, alternates dark/navy.
+2. **Reshare story** — the actual feed card of the day, framed in a 9:16 story with "Just posted → see it on my feed."
+
+Files: `render_story.py` (draws the 9:16 stories), `post_stories.py` (posts them), `story_bank.json` (the hook lines — edit/add freely).
+Limits (Instagram, not us): API stories are image or single video only — **no tappable post-link sticker, no polls, no music/trending audio**. The reshare drives people to your profile, just not auto-linked.
+Add hooks: edit `story_bank.json` → `hooks` array, commit + push.
+
 ## 8. Roadmap — FUTURE: video posts
 Currently images + carousels only. Next phase = **video / Reels** (possibly from the Dropbox video inventory). Notes for later:
 - IG API posts video via `media_type=REELS` + a public `video_url` (same "must be a public link" rule — host the file, then publish).
