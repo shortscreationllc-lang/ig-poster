@@ -167,6 +167,12 @@ def _render_am_item(item, out_path, style):
         render_card.draw_value(item, out_path, style=style)
     elif t == "testimonial":
         render_card.draw_testimonial(item, out_path, style=style)
+    elif t == "stat":
+        render_card.draw_stat(item, out_path, style=style)
+    elif t == "checklist":
+        render_card.draw_checklist(item, out_path, style=style)
+    elif t == "statement":
+        render_card.draw_statement(item, out_path, style=style)
     else:
         render_card.draw_card(item, out_path, style=style)
 

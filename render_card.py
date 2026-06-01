@@ -328,6 +328,78 @@ def draw_testimonial(item, out_path, style="bone"):
     return out_path
 
 
+def draw_stat(item, out_path, style="midnight"):
+    """Big-number / stat card. item: {kicker, stat, headline, subheadline?}
+    The stat is huge and orange (e.g. '3s', '2x', '90%')."""
+    img, d, p = _new_img(style)
+    _kicker(d, item.get("kicker", "THE NUMBER"), p)
+    # giant stat
+    sf = f_brand(360)
+    stat = str(item["stat"])
+    # shrink if very wide
+    while d.textlength(stat, font=sf) > (W - 2 * M) and sf.size > 120:
+        sf = f_brand(sf.size - 20)
+    d.text((M - 8, 250), stat, font=sf, fill=ORANGE)
+    y = 250 + int(sf.size * 1.05)
+    f, lines, lh = _fit_lines(d, item["headline"], W - 2 * M, 300, 80, 44)
+    for ln in lines:
+        d.text((M, y), ln, font=f, fill=p["head"]); y += lh
+    if item.get("subheadline"):
+        y += 20
+        subf = f_sys(42)
+        for ln in wrap(d, item["subheadline"], subf, W - 2 * M):
+            d.text((M, y), ln, font=subf, fill=p["muted"]); y += 50
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
+def draw_checklist(item, out_path, style="dark"):
+    """Checklist card — orange ✓ marks instead of dots. item: {kicker, headline, bullets}"""
+    img, d, p = _new_img(style)
+    _kicker(d, item.get("kicker", "CHECKLIST"), p)
+    f, lines, lh = _fit_lines(d, item["headline"], W - 2 * M, 320, 84, 48)
+    y = 250
+    for ln in lines:
+        d.text((M, y), ln, font=f, fill=p["head"]); y += lh
+    y += 24
+    d.rounded_rectangle((M, y, M + 230, y + 9), radius=4, fill=ORANGE)
+    y += 56
+    bf = f_sys(42)
+    for b in item.get("bullets", [])[:6]:
+        # orange rounded check box with a checkmark
+        box = (M, y + 4, M + 40, y + 44)
+        d.rounded_rectangle(box, radius=8, fill=ORANGE)
+        d.line([(M + 9, y + 24), (M + 18, y + 34)], fill=(20, 14, 6), width=5)
+        d.line([(M + 18, y + 34), (M + 33, y + 13)], fill=(20, 14, 6), width=5)
+        bx = M + 64
+        for j, ln in enumerate(wrap(d, b, bf, W - bx - M)):
+            d.text((bx, y), ln, font=bf, fill=p["head"] if j == 0 else p["sub"]); y += 50
+        y += 22
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
+def draw_statement(item, out_path, style="dark"):
+    """Bold statement — huge centered text, minimal. item: {kicker?, headline}"""
+    img, d, p = _new_img(style)
+    if item.get("kicker"):
+        _kicker(d, item["kicker"], p)
+    # large headline, vertically centered
+    f, lines, lh = _fit_lines(d, item["headline"], W - 2 * M, 760, 120, 60)
+    block_h = len(lines) * lh
+    y = (H - block_h) // 2 - 40
+    for ln in lines:
+        w = d.textlength(ln, font=f)
+        d.text(((W - w) / 2, y), ln, font=f, fill=p["head"]); y += lh
+    # centered orange underline
+    d.rounded_rectangle(((W - 200) / 2, y + 16, (W + 200) / 2, y + 26), radius=5, fill=ORANGE)
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
 def _kicker(d, text, p):
     kf = f_brand(30)
     d.rounded_rectangle((M, 150, M + d.textlength(text.upper(), font=kf) + 56, 206),
