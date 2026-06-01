@@ -15,5 +15,24 @@
   ],
   "story_hook_i": 1,
   "story_style_i": 2,
-  "story_seq_i": 2
+  "story_seq_i": 2,
+  "story_history": [
+    {
+      "at": "20260601T122353Z",
+      "posted": [
+        {
+          "slide": 0,
+          "id": "18081801992171016"
+        },
+        {
+          "slide": 1,
+          "id": "18432080029122357"
+        },
+        {
+          "slide": 2,
+          "id": "18102685241084727"
+        }
+      ]
+    }
+  ]
 }
