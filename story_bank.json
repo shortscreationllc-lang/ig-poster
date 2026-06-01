@@ -143,7 +143,46 @@
           "nudge": "Save this →"
         }
       ]
+    },
+    {
+      "id": "series-hook-formulas",
+      "series": {
+        "label": "Hook Formula",
+        "intro": {
+          "role": "hook",
+          "kicker": "SAVE THIS",
+          "headline": "5 hook formulas that work in any niche.",
+          "subheadline": "One per story — tap through.",
+          "nudge": "Let's go →"
+        },
+        "items": [
+          {"title": "\"I tried / quit / lost...\"", "body": "Personal stakes. People stay to see what happened."},
+          {"title": "\"Most people don't know...\"", "body": "A curiosity gap. Implies you have the inside answer."},
+          {"title": "\"If you're [X], stop doing [Y].\"", "body": "Calls out a person. They can't scroll past themselves."},
+          {"title": "\"Here's the truth about [X].\"", "body": "Positions you as the one cutting through the noise."},
+          {"title": "\"[Number] things I learned about [X].\"", "body": "Promises a list. The brain wants to finish it."}
+        ]
+      }
+    },
+    {
+      "id": "series-shoot-checklist",
+      "series": {
+        "label": "Before You Film",
+        "intro": {
+          "role": "hook",
+          "kicker": "SAVE THIS",
+          "headline": "5 things to check before every shoot.",
+          "subheadline": "Number 4 is the one everyone skips.",
+          "nudge": "Tap through →"
+        },
+        "items": [
+          {"title": "Shoot 4K at 60fps", "body": "The one camera setting that actually matters."},
+          {"title": "Test the mic, then play it back", "body": "Don't trust the meter. Listen to 5 seconds."},
+          {"title": "Write the hook first", "body": "1.5 seconds, memorized before you record."},
+          {"title": "Scout your spots", "body": "Switch location every line. This is the skipped one."},
+          {"title": "Leave headroom", "body": "Space above your head so the title never covers your face."}
+        ]
+      }
     }
-  ],
-  "hooks": []
+  ]
 }

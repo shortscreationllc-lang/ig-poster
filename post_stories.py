@@ -113,18 +113,34 @@ def render_only():
 
     si = state.get("story_seq_i", 0)
     seq = seqs[si % len(seqs)]
-    slides = seq["slides"]
-    # alternate the dark family across days; within a hook→fix pair use two shades
     base = state.get("story_style_i", 0)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     (ROOT / "queue").mkdir(exist_ok=True)
 
     ordered = []  # list of rel paths, in posting order
-    for n, slide in enumerate(slides):
-        style = HOOK_STYLES[(base + n) % len(HOOK_STYLES)]
-        rel = f"queue/story-{seq['id']}-{n}-{stamp}.jpg"
-        _render_slide(slide, ROOT / rel, style)
-        ordered.append(rel)
+
+    if "series" in seq:
+        # multi-part: intro slide + one numbered slide per item (single brand style
+        # for visual consistency across the run)
+        s = seq["series"]
+        style = HOOK_STYLES[base % len(HOOK_STYLES)]
+        intro = dict(s["intro"])
+        rel0 = f"queue/story-{seq['id']}-intro-{stamp}.jpg"
+        render_story.draw_hook(intro, ROOT / rel0, style=style)
+        ordered.append(rel0)
+        total = len(s["items"])
+        for n, it in enumerate(s["items"], start=1):
+            slide = dict(it); slide["series_label"] = s.get("label", "")
+            rel = f"queue/story-{seq['id']}-{n}-{stamp}.jpg"
+            render_story.draw_series_slide(slide, n, total, ROOT / rel, style=style)
+            ordered.append(rel)
+    else:
+        slides = seq["slides"]
+        for n, slide in enumerate(slides):
+            style = HOOK_STYLES[(base + n) % len(HOOK_STYLES)]
+            rel = f"queue/story-{seq['id']}-{n}-{stamp}.jpg"
+            _render_slide(slide, ROOT / rel, style)
+            ordered.append(rel)
 
     # always append the reshare of the day's feed post as the final story
     feed_img = _latest_am_feed_image()
@@ -137,9 +153,9 @@ def render_only():
 
     PENDING.write_text(json.dumps({"slides": ordered, "seq_id": seq["id"]}) + "\n")
     state["story_seq_i"] = (si + 1) % len(seqs)
-    state["story_style_i"] = base + len(slides)
+    state["story_style_i"] = base + 1
     write_state(state)
-    print(f"Story sequence '{seq['id']}': {len(slides)} slide(s) + reshare = {len(ordered)} stories")
+    print(f"Story sequence '{seq['id']}': {len(ordered)} stories total (incl. reshare)")
     return 0
 
 

@@ -152,6 +152,58 @@ def draw_fix(item, out_path, style="dark"):
     return out_path
 
 
+def draw_series_slide(slide, idx, total, out_path, style="dark"):
+    """One slide of a multi-part story series (e.g. 5 hook formulas, one per story).
+
+    Distinct look: progress dots up top, giant number, title, supporting line.
+    slide: {title, body}
+    """
+    img, d, p = _bg(style)
+    # progress dots across the top (story-style segmented bar)
+    seg_w = (SW - 2 * M - (total - 1) * 12) / total
+    bx = M
+    for i in range(total):
+        on = i < idx
+        d.rounded_rectangle((bx, 120, bx + seg_w, 132), radius=6,
+                            fill=rc.ORANGE if on else p["panel_line"])
+        bx += seg_w + 12
+    # series label
+    lf = rc.f_brand(30)
+    label = slide.get("series_label", "")
+    if label:
+        d.text((M, 190), label.upper(), font=lf, fill=p["muted"])
+    # giant number
+    nf = rc.f_brand(280)
+    d.text((M - 12, 250), str(idx), font=nf, fill=rc.ORANGE)
+    # title
+    y = 640
+    tf, tl, tlh = None, None, 0
+    for size in range(104, 56, -4):
+        f = rc.f_brand(size)
+        ls = _wrap(d, slide["title"], f, SW - 2 * M)
+        h = int(size * 1.06)
+        if len(ls) * h <= 420:
+            tf, tl, tlh = f, ls, h; break
+    if tf is None:
+        tf = rc.f_brand(60); tl = _wrap(d, slide["title"], tf, SW - 2 * M); tlh = 66
+    for ln in tl:
+        d.text((M, y), ln, font=tf, fill=p["head"]); y += tlh
+    y += 24
+    d.rounded_rectangle((M, y, M + 200, y + 10), radius=5, fill=rc.ORANGE)
+    y += 60
+    if slide.get("body"):
+        bf = rc.f_sys(46)
+        for ln in _wrap(d, slide["body"], bf, SW - 2 * M):
+            d.text((M, y), ln, font=bf, fill=p["sub"]); y += 56
+    # next nudge unless last
+    if idx < total:
+        nf2 = rc.f_sys(34, bold=True)
+        d.text((M, SH - 320), "Keep tapping →", font=nf2, fill=rc.ORANGE)
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
 def draw_reshare(feed_image_path, out_path, style="light"):
     """Put the actual feed-post card image into a 9:16 story with a 'just posted' nudge."""
     img, d, p = _bg(style)
