@@ -183,6 +183,68 @@
           {"title": "Leave headroom", "body": "Space above your head so the title never covers your face."}
         ]
       }
+    },
+    {
+      "id": "series-3-acts",
+      "series": {
+        "label": "The 3 Acts",
+        "intro": {
+          "role": "hook",
+          "kicker": "SAVE THIS",
+          "headline": "Every viral video has 3 acts.",
+          "subheadline": "Most people only film one.",
+          "nudge": "Tap through →"
+        },
+        "items": [
+          {"title": "Act 1: The hook", "body": "0 to 1.5s. State the problem sharp. Stop the thumb."},
+          {"title": "Act 2: The tension", "body": "4 to 12s. Give a reason to keep watching."},
+          {"title": "Act 3: The payoff", "body": "13s+. Deliver, then one clean close. Don't trail off."}
+        ]
+      }
+    },
+    {
+      "id": "series-grow-fix",
+      "series": {
+        "label": "Why You're Stuck",
+        "intro": {
+          "role": "hook",
+          "kicker": "REAL TALK",
+          "headline": "5 reasons your videos aren't growing.",
+          "subheadline": "It's rarely the algorithm.",
+          "nudge": "Tap through →"
+        },
+        "items": [
+          {"title": "Weak first second", "body": "A slow open kills it before the hook lands."},
+          {"title": "Too many ideas", "body": "One video, one point. Cramming means nothing sticks."},
+          {"title": "No reason to finish", "body": "If there's no payoff coming, people leave early."},
+          {"title": "Inconsistent posting", "body": "The algorithm rewards reliability. Show up."},
+          {"title": "No clear next step", "body": "Give one action: follow for more."}
+        ]
+      }
+    },
+    {
+      "id": "quote-ogilvy-story",
+      "slides": [
+        {
+          "role": "single",
+          "kicker": "DAVID OGILVY",
+          "headline": "\"If it doesn't sell, it isn't creative.\"",
+          "subheadline": "Pretty means nothing if it doesn't work.",
+          "nudge": ""
+        }
+      ]
+    },
+    {
+      "id": "quote-garyvee-story",
+      "slides": [
+        {
+          "role": "single",
+          "kicker": "GARY VAYNERCHUK",
+          "headline": "\"Macro patience, micro speed.\"",
+          "subheadline": "Move fast today. Be patient for years.",
+          "nudge": ""
+        }
+      ]
     }
   ]
 }
