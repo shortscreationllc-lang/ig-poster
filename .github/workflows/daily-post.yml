@@ -23,6 +23,13 @@ on:
         description: "If 'yes', render + commit but DO NOT post."
         required: false
         default: "no"
+  repository_dispatch:
+    # PRIMARY on-time trigger. An external punctual scheduler (cron-job.org)
+    # POSTs to GitHub's dispatches API at the exact target minute. Unlike
+    # best-effort `schedule`, a repository_dispatch run starts within seconds —
+    # so posts actually fire on time. Optional client_payload: { "slot": "...",
+    # "dry_run": "yes" }; blank payload = normal catch-up plan (recommended).
+    types: [post]
   schedule:
     # GitHub cron is UTC, no DST, and BEST-EFFORT (often late, sometimes dropped
     # entirely). We fire each NY target window at off-peak minutes AND twice (a
@@ -86,8 +93,9 @@ jobs:
           # (Threads has no stories). Needs its own token, NOT the IG one.
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-          FORCE_SLOT: ${{ github.event.inputs.slot }}
-          DRY: ${{ github.event.inputs.dry_run }}
+          # Read from workflow_dispatch inputs OR repository_dispatch payload.
+          FORCE_SLOT: ${{ github.event.inputs.slot || github.event.client_payload.slot }}
+          DRY: ${{ github.event.inputs.dry_run || github.event.client_payload.dry_run }}
         run: |
           set -euo pipefail
           REF="${GITHUB_REF_NAME:-main}"
