@@ -23,6 +23,13 @@ on:
         description: "If 'yes', render + commit but DO NOT post."
         required: false
         default: "no"
+  repository_dispatch:
+    # PRIMARY on-time trigger. An external punctual scheduler (cron-job.org)
+    # POSTs to GitHub's dispatches API at the exact target minute. Unlike
+    # best-effort `schedule`, a repository_dispatch run starts within seconds —
+    # so posts actually fire on time. Optional client_payload: { "slot": "...",
+    # "dry_run": "yes" }; blank payload = normal catch-up plan (recommended).
+    types: [post]
   schedule:
     # GitHub cron is UTC, no DST, and BEST-EFFORT (often late, sometimes dropped
     # entirely). We fire each NY target window at off-peak minutes AND twice (a
@@ -40,20 +47,26 @@ on:
     # One story a day (morning); midday/evening feed-only, afternoon quiet.
     # A cross-channel de-dup guard (content_dedup.py) ensures a story and a feed
     # post never show the same line.
-    # morning ~8a ET
+    # morning ~8a ET — primary + in-window retries. The morning STORY only posts
+    # inside its 8-9a window, so we retry every ~15 min there to beat slipped crons.
     - cron: "37 12 * * *"  # 8:37a EDT
-    - cron: "2 13 * * *"   # 8:02a EST / backup
-    # midday ~12p ET
+    - cron: "52 12 * * *"  # 8:52a EDT retry
+    - cron: "7 13 * * *"   # 9:07a EDT retry
+    - cron: "37 13 * * *"  # 8:37a EST
+    - cron: "52 13 * * *"  # 8:52a EST retry
+    - cron: "7 14 * * *"   # 9:07a EST retry
+    # midday ~12p ET — primary + retry
     - cron: "37 16 * * *"  # 12:37p EDT
-    - cron: "2 17 * * *"   # 12:02p EST / backup
-    # afternoon ~4p ET
-    - cron: "37 20 * * *"  # 4:37p EDT
-    - cron: "2 21 * * *"   # 4:02p EST / backup
-    # evening ~7p ET
+    - cron: "57 16 * * *"  # 12:57p EDT retry
+    - cron: "37 17 * * *"  # 12:37p EST
+    - cron: "57 17 * * *"  # 12:57p EST retry
+    # evening ~7p ET — primary + retry
     - cron: "37 23 * * *"  # 7:37p EDT
-    - cron: "2 0 * * *"    # 7:02p EST / backup
-    # extra catch-up sweeps later in the day so a fully-dropped window still
-    # recovers (these only act on slots not yet done — see plan_slots.py)
+    - cron: "57 23 * * *"  # 7:57p EDT retry
+    - cron: "37 0 * * *"   # 7:37p EST
+    - cron: "57 0 * * *"   # 7:57p EST retry
+    # extra catch-up sweeps so a fully-dropped feed window still recovers later
+    # (these only act on slots not yet done — see plan_slots.py)
     - cron: "17 18 * * *"  # ~1-2p ET sweep
     - cron: "17 22 * * *"  # ~5-6p ET sweep
     - cron: "17 1 * * *"   # ~8-9p ET sweep
@@ -82,8 +95,13 @@ jobs:
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          FORCE_SLOT: ${{ github.event.inputs.slot }}
-          DRY: ${{ github.event.inputs.dry_run }}
+          # Optional Threads cross-post — leave unset to disable. Feed posts only
+          # (Threads has no stories). Needs its own token, NOT the IG one.
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          # Read from workflow_dispatch inputs OR repository_dispatch payload.
+          FORCE_SLOT: ${{ github.event.inputs.slot || github.event.client_payload.slot }}
+          DRY: ${{ github.event.inputs.dry_run || github.event.client_payload.dry_run }}
         run: |
           set -euo pipefail
           REF="${GITHUB_REF_NAME:-main}"
