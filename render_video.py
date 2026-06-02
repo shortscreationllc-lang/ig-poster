@@ -259,6 +259,78 @@ def _mk_left(text, font, fill):
     return s
 
 
+def _scene_card(scene, p):
+    """One full-frame scene for a carousel-style Reel (returns RGBA)."""
+    img = _bg(p); img.alpha_composite(_glow(p)); d = ImageDraw.Draw(img)
+    if scene.get("kicker"):
+        img.alpha_composite(_kicker_sprite(scene["kicker"], p), (M, 250))
+    if scene.get("n"):
+        d.text((M - 6, 350), str(scene["n"]), font=f_brand(150), fill=ORANGE)
+        hy = 560
+    else:
+        hy = 400
+    # headline (auto-fit)
+    size = scene.get("hsize", 92)
+    while size > 50:
+        hf = f_brand(size); hl = wrap(d, scene["headline"], hf, VW - 2 * M)
+        if len(hl) <= 4:
+            break
+        size -= 6
+    hf = f_brand(size); lh = int(size * 1.05); y = hy
+    for ln in hl:
+        d.text((M, y), ln, font=hf, fill=p["head"]); y += lh
+    y += 16
+    d.rounded_rectangle((M, y, M + 200, y + 10), 5, fill=ORANGE); y += 50
+    if scene.get("body"):
+        bf = f_sys(46)
+        for ln in wrap(d, scene["body"], bf, VW - 2 * M):
+            d.text((M, y), ln, font=bf, fill=p["sub"]); y += 58
+    if scene.get("swipe"):
+        sf = f_brand(34); d.text((M, VH - 250), "SWIPE", font=sf, fill=ORANGE)
+        sw = d.textlength("SWIPE", font=sf)
+        d.polygon([(M + sw + 22, VH - 246), (M + sw + 22, VH - 214), (M + sw + 52, VH - 230)], fill=ORANGE)
+    hf2 = f_brand(40); h = "@josephborroto"; hw = d.textlength(h, font=hf2)
+    d.text(((VW - hw) / 2, VH - 150), h, font=hf2, fill=p.get("muted", (170, 170, 170)))
+    return img
+
+
+def video_sequence(scenes, out, style="dark", hold=2.1, trans=0.5):
+    """Carousel-style Reel: scenes swipe past horizontally (push transition),
+    with dot indicators — 'feels like a carousel passing by'."""
+    p = PALETTES.get(style, PALETTES["dark"])
+    n = len(scenes)
+
+    def dots(im, active):
+        dd = ImageDraw.Draw(im); r, gap = 9, 36
+        x0 = (VW - (n - 1) * gap) // 2
+        for i in range(n):
+            c = ORANGE if i == active else (110, 110, 110)
+            dd.ellipse((x0 + i * gap - r, 120 - r, x0 + i * gap + r, 120 + r), fill=c)
+
+    cards = []
+    for s in scenes:
+        c = _scene_card(s, p).convert("RGB"); dots(c, scenes.index(s)); cards.append(c)
+
+    w = imageio.get_writer(out, fps=FPS, codec="libx264", quality=8,
+                           macro_block_size=8, ffmpeg_log_level="error",
+                           output_params=["-pix_fmt", "yuv420p"])
+    hf, tf = int(hold * FPS), int(trans * FPS)
+    bare = [_scene_card(s, p).convert("RGB") for s in scenes]  # without dots, for sliding
+    for i in range(n):
+        arr = np.array(cards[i])
+        for _ in range(hf):
+            w.append_data(arr)
+        if i < n - 1:
+            for t in range(tf):
+                pr = ease(t / tf); off = int(pr * VW)
+                cv = Image.new("RGB", (VW, VH))
+                cv.paste(bare[i], (-off, 0)); cv.paste(bare[i + 1], (VW - off, 0))
+                dots(cv, i if pr < 0.5 else i + 1)
+                w.append_data(np.array(cv))
+    w.close(); _add_silent_audio(out)
+    return out
+
+
 def render_video(item, out, style="dark"):
     """Dispatch a content item to the right animated Reel by its type."""
     t = item.get("type", "single")
