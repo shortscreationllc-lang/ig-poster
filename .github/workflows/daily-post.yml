@@ -60,6 +60,10 @@ on:
     - cron: "57 16 * * *"  # 12:57p EDT retry
     - cron: "37 17 * * *"  # 12:37p EST
     - cron: "57 17 * * *"  # 12:57p EST retry
+    # afternoon ~4p ET — the one image post (cron-job.org hour 16 makes it punctual)
+    - cron: "37 20 * * *"  # 4:37p EDT
+    - cron: "57 20 * * *"  # 4:57p EDT retry
+    - cron: "37 21 * * *"  # 4:37p EST
     # evening ~7p ET — primary + retry
     - cron: "37 23 * * *"  # 7:37p EDT
     - cron: "57 23 * * *"  # 7:57p EDT retry
@@ -89,7 +93,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install deps
-        run: pip install --quiet pillow tzdata
+        run: pip install --quiet pillow tzdata numpy imageio imageio-ffmpeg
 
       - name: Post due slots (catch-up plan; once-per-day via state.json)
         env:
@@ -127,19 +131,34 @@ jobs:
           echo "Plan ($(TZ=America/New_York date)):"; cat /tmp/plan.txt
           if [ ! -s /tmp/plan.txt ]; then echo "No slots due — nothing to do."; exit 0; fi
 
-          while IFS='|' read -r KIND FEED STORY; do
+          while IFS='|' read -r KIND MEDIA FEED STORY; do
             [ -z "$KIND" ] && continue
-            echo "===== slot: $KIND (feed=$FEED story=$STORY dry=${DRY:-no}) ====="
-            FEED_OK=0
+            echo "===== slot: $KIND (media=$MEDIA feed=$FEED story=$STORY dry=${DRY:-no}) ====="
+            MEDIA_OK=0
 
-            # ---- FEED ----
-            if [ "$FEED" != "-" ]; then
+            # ---- REEL (animated video) ----
+            if [ "$MEDIA" = "reel" ] && [ "${DRY:-no}" != "yes" ]; then
+              if python post_reel.py --render --kind auto; then
+                git add queue/ state.json
+                git commit -q -m "render reel $KIND $(date -u +%FT%TZ)" || true
+                gp   # video must be live at raw.githubusercontent before publishing
+                if python post_reel.py --publish; then MEDIA_OK=1; fi
+                git add queue/ state.json
+                git commit -q -m "posted reel $KIND $(date -u +%FT%TZ)" || true
+                gp
+              else
+                echo "reel render failed (non-fatal)"
+              fi
+            fi
+
+            # ---- POST (image card / carousel) ----
+            if [ "$MEDIA" = "post" ] && [ "$FEED" != "-" ]; then
               SLOT="$FEED" python daily_run.py --render-only
               git add queue/ state.json
               git commit -q -m "render feed $KIND $(date -u +%FT%TZ)" || true
               gp   # publish needs the image live at raw.githubusercontent first
               if [ "${DRY:-no}" != "yes" ]; then
-                if SLOT="$FEED" python daily_run.py --publish-only; then FEED_OK=1; fi
+                if SLOT="$FEED" python daily_run.py --publish-only; then MEDIA_OK=1; fi
                 git add queue/ state.json
                 git commit -q -m "posted feed $KIND $(date -u +%FT%TZ)" || true
                 gp
@@ -161,13 +180,13 @@ jobs:
             fi
 
             # ---- MARK DONE ---- only after a real post, so a failure retries
-            # next run. Feed slots: mark when the feed published. Story-only
-            # slots (afternoon): mark after the story attempt.
+            # next run. Slots with media mark when that media published; a
+            # story-only slot (none today) marks after the story attempt.
             if [ "${DRY:-no}" != "yes" ]; then
-              if [ "$FEED" != "-" ]; then
-                [ "$FEED_OK" = "1" ] && python plan_slots.py --mark "$KIND"
-              else
+              if [ "$MEDIA" = "-" ]; then
                 python plan_slots.py --mark "$KIND"
+              else
+                [ "$MEDIA_OK" = "1" ] && python plan_slots.py --mark "$KIND"
               fi
               git add state.json
               git commit -q -m "slot $KIND done $(date -u +%FT%TZ)" || true

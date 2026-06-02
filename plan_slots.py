@@ -20,9 +20,10 @@ never backfilled (a 9pm "good morning" story makes no sense, and stories expire
 in 24h anyway). Feed posts ARE backfilled because their content is evergreen.
 
 Usage:
-  plan_slots.py --plan       emit one line per slot to run, "KIND|FEED|STORY":
-                               FEED  = am | pm | -     (feed slot, - = none)
-                               STORY = 1 | 0           (post the story?)
+  plan_slots.py --plan       emit one line per slot, "KIND|MEDIA|FEED|STORY":
+                               MEDIA = reel | post | -
+                               FEED  = am | pm | -   (only when MEDIA == post)
+                               STORY = 1 | 0         (post the story?)
   plan_slots.py --mark KIND  record today's KIND slot as done in state.json
 
 Env overrides:
@@ -46,15 +47,20 @@ except Exception:  # pragma: no cover - fallback if tz database missing
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "state.json"
 
-# kind, NY start hour, feed slot (am/pm/None), has a time-of-day story.
-# One story a day — morning only. midday/evening are feed-only; the afternoon
-# slot has neither a feed post nor a story now (its cron still serves as a
-# midday-feed catch-up sweep).
+# kind, NY start hour, media, feed-slot, story.
+#   media : "reel" (animated video) | "post" (image) | None
+#   feed  : am | pm | "auto" | None  (only used when media == "post")
+#   story : post the morning story this slot?
+# Daily lineup = 3 Reels + 1 image post + 1 story:
+#   morning  ~8:37a : Reel + story
+#   midday   ~12:37p: Reel
+#   afternoon~4:37p : image post (auto-alternates single card / carousel by day)
+#   evening  ~7:37p : Reel
 SLOTS = [
-    ("morning",    8, "am", True),
-    ("midday",    12, "am", False),
-    ("afternoon", 16, None, False),
-    ("evening",   19, "pm", False),
+    ("morning",    8, "reel", None,   True),
+    ("midday",    12, "reel", None,   False),
+    ("afternoon", 16, "post", "auto", False),
+    ("evening",   19, "reel", None,   False),
 ]
 # A slot's LIVE window is [start, start + WINDOW_SPAN] hours — slack so a cron
 # that fires late (or slips into the next hour) still counts as "in window".
@@ -82,26 +88,36 @@ def _done_today(state, day):
 
 
 def plan():
+    """Emit one line per slot to run: "KIND|MEDIA|FEED|STORY".
+      MEDIA = reel | post | -
+      FEED  = am | pm | -   (only meaningful when MEDIA == post)
+      STORY = 1 | 0
+    Reels and posts catch up if missed earlier today; stories are window-only."""
     day, hour = _now()
     done = _done_today(read_state(), day)
     forced = (os.getenv("FORCE_SLOT") or "").strip().lower()
     lines = []
-    for kind, start, feed, story in SLOTS:
+    for kind, start, media, feed, story in SLOTS:
         if forced:
             if kind != forced:
                 continue
-            do_feed, do_story = feed, story
+            do_media, do_feed, do_story = media, feed, story
         else:
             if hour < start:            # not due yet
                 continue
             if done.get(kind):          # already posted today
                 continue
             in_window = start <= hour <= start + WINDOW_SPAN
-            do_feed = feed              # feed posts catch up any time after due
+            do_media = media            # reels/posts catch up any time after due
+            do_feed = feed
             do_story = story and in_window   # stories are live-only, never backfilled
-            if not do_feed and not do_story:
-                continue                # e.g. a missed story-only slot — let it lapse
-        lines.append(f"{kind}|{do_feed or '-'}|{1 if do_story else 0}")
+            if not do_media and not do_story:
+                continue                # a missed story-only slot — let it lapse
+        # resolve the auto feed (alternate single card / carousel by day parity)
+        if do_media == "post" and do_feed == "auto":
+            do_feed = "pm" if int(day) % 2 == 0 else "am"
+        feed_out = do_feed if (do_media == "post" and do_feed) else "-"
+        lines.append(f"{kind}|{do_media or '-'}|{feed_out}|{1 if do_story else 0}")
     return lines
 
 
