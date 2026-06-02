@@ -59,6 +59,13 @@
       "slot": "pm",
       "type": "carousel",
       "post_id": "18319599976272531"
+    },
+    {
+      "at": "20260602T232736Z",
+      "id": "queue/reel-1780442809.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18093737948226565"
     }
   ],
   "story_hook_i": 1,
@@ -148,5 +155,6 @@
     "switch location every line. this is the one people skip.",
     "the only camera setting that really matters. set it once.",
     "two of everything. a dead battery ends the day."
-  ]
+  ],
+  "reel_i": 1
 }
