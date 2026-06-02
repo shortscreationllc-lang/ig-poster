@@ -11,15 +11,12 @@ import argparse, json, os, sys, time, urllib.request, urllib.parse
 from pathlib import Path
 
 import render_video
+import render_audio
+import captions
 from daily_run import (graph_post, wait_ready, load_env_file, _public_base,
                        read_state, write_state, QUEUE_DIR, ROOT)
 
 PENDING = ROOT / ".pending_reel.json"
-
-HASHTAGS = ("#contentcreation #shortformvideo #videoediting #reels "
-            "#reelsinstagram #contentstrategy #socialmediatips #videocontent "
-            "#editingtips #contentcreator #growyourinstagram #hookwriting "
-            "#videomarketing #instagramreels #digitalmarketing")
 
 # Curated, privacy-safe content per type. (item, caption-hook, style)
 CONTENT = {
@@ -55,21 +52,26 @@ def _pick(kind):
     bucket = CONTENT.get(kind) or CONTENT["stat"]
     st = read_state()
     i = st.get("reel_i", 0)
+    cap_i = st.get("reel_cap_i", 0)
+    aud_i = st.get("reel_audio_i", 0)
     item, hook, style = bucket[i % len(bucket)]
     st["reel_i"] = i + 1
+    st["reel_cap_i"] = cap_i + 1       # rotate caption style
+    st["reel_audio_i"] = aud_i + 1     # rotate beat
     write_state(st)
-    caption = f"{hook}\n\nFollow @josephborroto for more.\n\n{HASHTAGS}"
-    return item, caption, style
+    caption = captions.caption_for(hook, cap_i)   # SEO-rotating caption
+    return item, caption, style, aud_i
 
 
 def render(kind):
     QUEUE_DIR.mkdir(exist_ok=True)
-    item, caption, style = _pick(kind)
+    item, caption, style, aud_i = _pick(kind)
     rel = f"queue/reel-{int(time.time())}.mp4"
     render_video.render_video(item, str(ROOT / rel), style=style)
-    PENDING.write_text(json.dumps({"rel": rel, "caption": caption,
-                                   "type": item["type"], "style": style}) + "\n")
-    print(f"rendered reel -> {rel} (type={item['type']} style={style})")
+    beat = render_audio.add_beat(str(ROOT / rel), aud_i)   # rotating copyright-safe beat
+    PENDING.write_text(json.dumps({"rel": rel, "caption": caption, "type": item["type"],
+                                   "style": style, "beat": beat}) + "\n")
+    print(f"rendered reel -> {rel} (type={item['type']} style={style} beat={beat})")
 
 
 def _wait_raw(url, timeout=120):
