@@ -51,8 +51,12 @@ QUEUE_DEPTH = 14   # keep this many ready items per slot at all times
 # Design variety: AM (singles) cycle the dark family, PM (carousels) the light
 # family — so every day is one dark + one light, and no two consecutive posts
 # in the feed share the exact same look.
-AM_STYLES = ["dark", "midnight"]
-PM_STYLES = ["light", "bone"]
+# Feed posts rotate through brand-color FORMS so consecutive posts never look
+# alike. AM (morning/midday singles) = dark grounds; PM (evening carousels) =
+# light grounds. "blackout"/"navyorange"/"creamorange" move the orange into the
+# headline — same company colors, new forms.
+AM_STYLES = ["dark", "midnight", "blackout", "navyorange"]
+PM_STYLES = ["light", "bone", "creamorange"]
 
 
 # ---------- helpers ----------
