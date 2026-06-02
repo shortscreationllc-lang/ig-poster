@@ -649,44 +649,6 @@
       ]
     },
     {
-      "id": "carousel-00028",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00028-0.jpg",
-        "queue/carousel-00028-1.jpg",
-        "queue/carousel-00028-2.jpg",
-        "queue/carousel-00028-3.jpg",
-        "queue/carousel-00028-4.jpg",
-        "queue/carousel-00028-5.jpg",
-        "queue/carousel-00028-6.jpg",
-        "queue/carousel-00028-7.jpg",
-        "queue/carousel-00028-8.jpg"
-      ],
-      "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
-      "alt": "Carousel: 7 things to check before every shoot.",
-      "posted": false,
-      "source_index": 1,
-      "fp": [
-        "1. 4k at 60fps",
-        "1.5 seconds, memorized. never improvise the first line.",
-        "2. mic test and playback",
-        "3. hook pre-written",
-        "4. scout your spots",
-        "5. batteries and storage",
-        "6. backup device",
-        "7 things to check before every shoot.",
-        "7. frame for the title",
-        "leave headroom so the overlay never covers your face.",
-        "number 4 is the one everyone skips.",
-        "one failure shouldn't cancel the whole shoot.",
-        "record 5 seconds and listen back. don't trust the meter alone.",
-        "switch location every line. this is the one people skip.",
-        "the only camera setting that really matters. set it once.",
-        "two of everything. a dead battery ends the day."
-      ]
-    },
-    {
       "id": "single-00029",
       "slot": "am",
       "type": "value",
@@ -720,38 +682,6 @@
         "every viral video has 3 acts.",
         "hook, then tension, then payoff. skip the middle and retention dies.",
         "most people only film one."
-      ]
-    },
-    {
-      "id": "carousel-00031",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00031-0.jpg",
-        "queue/carousel-00031-1.jpg",
-        "queue/carousel-00031-2.jpg",
-        "queue/carousel-00031-3.jpg",
-        "queue/carousel-00031-4.jpg",
-        "queue/carousel-00031-5.jpg",
-        "queue/carousel-00031-6.jpg"
-      ],
-      "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
-      "alt": "Carousel: 5 caption mistakes killing your retention.",
-      "posted": false,
-      "source_index": 2,
-      "fp": [
-        "1. too small",
-        "2. off the beat",
-        "3. buried at the bottom",
-        "4. wrong font",
-        "5 caption mistakes killing your retention.",
-        "5. paced too slow",
-        "captions should feel a touch faster than the video itself.",
-        "if it's hard to read on a phone, it's costing you watch time.",
-        "most people make all 5.",
-        "text should hit on the cut, not lag behind the sentence.",
-        "the app ui covers it. keep key words in the safe zone.",
-        "white, modern, sans-serif. no heavy drop shadow."
       ]
     }
   ]
