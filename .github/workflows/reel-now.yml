@@ -1,0 +1,68 @@
+name: Post Reel Now
+
+# Manual, isolated Reel poster. Renders ONE animated Reel, pushes the MP4 so it's
+# live at raw.githubusercontent, then posts it to Instagram as a REEL. Shares the
+# "daily-post" concurrency group so it can never run at the same time as the main
+# poster (no races / no doubles).
+on:
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "Content type: stat | statement | quote | checklist"
+        required: false
+        default: "stat"
+      mark_evening:
+        description: "Mark the evening slot done so tonight's carousel is skipped? yes/no"
+        required: false
+        default: "yes"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps (pillow + ffmpeg via imageio-ffmpeg)
+        run: pip install --quiet pillow tzdata numpy imageio imageio-ffmpeg
+      - name: Render + post one Reel
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          KIND: ${{ github.event.inputs.kind }}
+        run: |
+          set -euo pipefail
+          git config user.name "ig-poster-bot"
+          git config user.email "actions@github.com"
+          gp() { for i in 1 2 3 4; do git push origin HEAD:main && return 0; git pull --rebase origin main || true; sleep $((i*2)); done; echo "push failed" >&2; }
+
+          git pull --rebase origin main || true
+
+          # 1) render the MP4 and commit it so raw.githubusercontent serves it
+          python post_reel.py --render --kind "${KIND:-stat}"
+          git add queue/
+          git commit -q -m "render reel $(date -u +%FT%TZ)" || true
+          gp
+
+          # 2) post it as a Reel (waits for IG to process the video)
+          python post_reel.py --publish
+          git add state.json queue/
+          git commit -q -m "posted reel $(date -u +%FT%TZ)" || true
+          gp
+
+          # 3) optionally mark the evening slot done so the carousel is skipped
+          if [ "${{ github.event.inputs.mark_evening }}" = "yes" ]; then
+            python plan_slots.py --mark evening || true
+            git add state.json
+            git commit -q -m "evening done via reel $(date -u +%FT%TZ)" || true
+            gp
+          fi
+          echo "Reel done."
