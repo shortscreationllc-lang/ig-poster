@@ -20,6 +20,20 @@ def ease(p):
     p = max(0.0, min(1.0, p)); return 1 - (1 - p) ** 3
 
 
+def _smooth(p):  # smoothstep (ease in-out) — for silky transitions
+    p = max(0.0, min(1.0, p)); return p * p * (3 - 2 * p)
+
+
+def _zoom(img, s):
+    """Scale by s (>=1.0) and center-crop back to frame — for ken-burns / zoom."""
+    if s <= 1.0005:
+        return img
+    w2, h2 = int(VW * s), int(VH * s)
+    big = img.resize((w2, h2), Image.BILINEAR)
+    x, y = (w2 - VW) // 2, (h2 - VH) // 2
+    return big.crop((x, y, x + VW, y + VH))
+
+
 def _bg(p):
     top = np.array(p["bg_top"], float); bot = np.array(p["bg_bottom"], float)
     t = np.linspace(0, 1, VH)[:, None]
@@ -315,18 +329,22 @@ def video_sequence(scenes, out, style="dark", hold=2.1, trans=0.5):
                            macro_block_size=8, ffmpeg_log_level="error",
                            output_params=["-pix_fmt", "yuv420p"])
     hf, tf = int(hold * FPS), int(trans * FPS)
-    bare = [_scene_card(s, p).convert("RGB") for s in scenes]  # without dots, for sliding
+    bare = [_scene_card(s, p).convert("RGB") for s in scenes]  # without dots
+
+    def emit(img, active):
+        im = img.copy(); dots(im, active); w.append_data(np.array(im))
+
     for i in range(n):
-        arr = np.array(cards[i])
-        for _ in range(hf):
-            w.append_data(arr)
+        # hold: gentle "ken-burns" zoom so the scene feels alive, not frozen
+        for k in range(hf):
+            emit(_zoom(bare[i], 1.0 + 0.03 * (k / max(1, hf))), i)
+        # transition: smooth crossfade + both scenes easing through a soft zoom
         if i < n - 1:
             for t in range(tf):
-                pr = ease(t / tf); off = int(pr * VW)
-                cv = Image.new("RGB", (VW, VH))
-                cv.paste(bare[i], (-off, 0)); cv.paste(bare[i + 1], (VW - off, 0))
-                dots(cv, i if pr < 0.5 else i + 1)
-                w.append_data(np.array(cv))
+                a = _smooth(t / tf)
+                fa = _zoom(bare[i], 1.03 + 0.06 * a)        # outgoing drifts in
+                fb = _zoom(bare[i + 1], 1.08 - 0.06 * a)    # incoming settles
+                emit(Image.blend(fa, fb, a), i if a < 0.5 else i + 1)
     w.close(); _add_silent_audio(out)
     return out
 
