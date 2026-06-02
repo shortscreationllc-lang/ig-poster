@@ -102,6 +102,28 @@ PALETTES = {
         "panel": (255, 253, 248), "panel_line": (208, 200, 186),
         "kicker_text": (255, 255, 255), "glow_a": 64,
     },
+    # NEW FORMS of the same brand colors — orange moved into the HEADLINE.
+    # blackout: near-black bg with an orange headline (high-contrast brand).
+    "blackout": {
+        "bg_top": (12, 12, 13), "bg_bottom": (20, 17, 14),
+        "head": ORANGE, "sub": (235, 235, 235), "muted": (150, 150, 150),
+        "panel": (20, 20, 21), "panel_line": (60, 56, 52),
+        "kicker_text": (12, 12, 12), "glow_a": 40,
+    },
+    # navy bg with an orange headline (two brand colors together).
+    "navyorange": {
+        "bg_top": (9, 12, 20), "bg_bottom": (15, 21, 34),
+        "head": ORANGE, "sub": (220, 225, 235), "muted": (150, 158, 175),
+        "panel": (16, 21, 32), "panel_line": (44, 52, 72),
+        "kicker_text": (12, 12, 12), "glow_a": 50,
+    },
+    # warm cream with an orange headline (a light form that still reads loud).
+    "creamorange": {
+        "bg_top": (245, 241, 233), "bg_bottom": (229, 222, 209),
+        "head": ORANGE, "sub": (40, 34, 28), "muted": (120, 112, 100),
+        "panel": (255, 253, 248), "panel_line": (208, 200, 186),
+        "kicker_text": (255, 255, 255), "glow_a": 50,
+    },
 }
 
 
