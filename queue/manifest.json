@@ -79,12 +79,14 @@
       ],
       "caption": "Content is king, but consistency is the kingdom.\n\nOne great video is a moment. A system that ships every day is a brand. The creators who win aren't the most talented \u2014 they're the most consistent.\n\nBuild the engine, then feed it.\n\nFollow @josephborroto for more on building a content machine.\n\n#contentstrategy #consistency #personalbrand #shortformvideo #contentcreator #josephborroto",
       "alt": "Quote card: content is king, but consistency is the kingdom.",
-      "posted": false,
+      "posted": true,
       "source_index": 2,
       "fp": [
         "content is king, but consistency is the kingdom.",
         "we automate both."
-      ]
+      ],
+      "posted_at": "20260602T132901Z",
+      "post_id": "18065028377424293"
     },
     {
       "id": "single-00004",
@@ -682,6 +684,22 @@
         "every viral video has 3 acts.",
         "hook, then tension, then payoff. skip the middle and retention dies.",
         "most people only film one."
+      ]
+    },
+    {
+      "id": "single-00032",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00032.jpg"
+      ],
+      "caption": "People think it's all about going viral. It's not.\n\nReels bring new people to the page. Posts and stories keep the people who already found you warm, engaged, and ready to buy.\n\nYou need both \u2014 discovery and retention.\n\nFollow @josephborroto for the full content system.\n\n#contentstrategy #instagramtips #shortformvideo #audiencegrowth #josephborroto",
+      "alt": "Quote card: posts and stories keep your current audience warm.",
+      "posted": false,
+      "source_index": 16,
+      "fp": [
+        "posts and stories keep your current audience warm.",
+        "reels bring the new ones in."
       ]
     }
   ]

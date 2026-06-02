@@ -1,7 +1,7 @@
 {
-  "single_index": 16,
-  "carousel_index": 5,
-  "seq": 31,
+  "single_index": 17,
+  "carousel_index": 7,
+  "seq": 32,
   "daily": {
     "20260601": {
       "morning": true,
@@ -10,7 +10,7 @@
       "evening": true
     }
   },
-  "am_style_i": 16,
+  "am_style_i": 17,
   "pm_style_i": 15,
   "history": [
     {
@@ -33,6 +33,13 @@
       "slot": "pm",
       "type": "carousel",
       "post_id": "18128637400615062"
+    },
+    {
+      "at": "20260602T132901Z",
+      "id": "single-00003",
+      "slot": "am",
+      "type": "quote",
+      "post_id": "18065028377424293"
     }
   ],
   "story_hook_i": 1,
@@ -89,6 +96,8 @@
     "personal stakes. people stay to see what happened.",
     "positions you as the one cutting through the noise.",
     "promises a list. the brain wants to finish what it starts.",
-    "steal these for your next 5 videos."
+    "steal these for your next 5 videos.",
+    "content is king, but consistency is the kingdom.",
+    "we automate both."
   ]
 }
