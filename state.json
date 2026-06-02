@@ -1,7 +1,7 @@
 {
   "single_index": 18,
-  "carousel_index": 1,
-  "seq": 33,
+  "carousel_index": 3,
+  "seq": 34,
   "daily": {
     "20260601": {
       "morning": true,
@@ -15,7 +15,7 @@
     }
   },
   "am_style_i": 18,
-  "pm_style_i": 15,
+  "pm_style_i": 16,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -51,6 +51,13 @@
       "slot": "am",
       "type": "single",
       "post_id": "18206821777341761"
+    },
+    {
+      "at": "20260602T230839Z",
+      "id": "carousel-00016",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18319599976272531"
     }
   ],
   "story_hook_i": 1,
@@ -123,6 +130,22 @@
     "discipline ships content. motivation just talks about it.",
     "auto-captions miss the timing, the emphasis, the joke. hand-place words on the beat.",
     "stop using ai captions.",
-    "they're quietly costing you views."
+    "they're quietly costing you views.",
+    "1. 4k at 60fps",
+    "1.5 seconds, memorized. never improvise the first line.",
+    "2. mic test and playback",
+    "3. hook pre-written",
+    "4. scout your spots",
+    "5. batteries and storage",
+    "6. backup device",
+    "7 things to check before every shoot.",
+    "7. frame for the title",
+    "leave headroom so the overlay never covers your face.",
+    "number 4 is the one everyone skips.",
+    "one failure shouldn't cancel the whole shoot.",
+    "record 5 seconds and listen back. don't trust the meter alone.",
+    "switch location every line. this is the one people skip.",
+    "the only camera setting that really matters. set it once.",
+    "two of everything. a dead battery ends the day."
   ]
 }

@@ -108,6 +108,46 @@
       "post_id": "18206821777341761"
     },
     {
+      "id": "carousel-00016",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00016-0.jpg",
+        "queue/carousel-00016-1.jpg",
+        "queue/carousel-00016-2.jpg",
+        "queue/carousel-00016-3.jpg",
+        "queue/carousel-00016-4.jpg",
+        "queue/carousel-00016-5.jpg",
+        "queue/carousel-00016-6.jpg",
+        "queue/carousel-00016-7.jpg",
+        "queue/carousel-00016-8.jpg"
+      ],
+      "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: 7 things to check before every shoot.",
+      "posted": true,
+      "source_index": 1,
+      "fp": [
+        "1. 4k at 60fps",
+        "1.5 seconds, memorized. never improvise the first line.",
+        "2. mic test and playback",
+        "3. hook pre-written",
+        "4. scout your spots",
+        "5. batteries and storage",
+        "6. backup device",
+        "7 things to check before every shoot.",
+        "7. frame for the title",
+        "leave headroom so the overlay never covers your face.",
+        "number 4 is the one everyone skips.",
+        "one failure shouldn't cancel the whole shoot.",
+        "record 5 seconds and listen back. don't trust the meter alone.",
+        "switch location every line. this is the one people skip.",
+        "the only camera setting that really matters. set it once.",
+        "two of everything. a dead battery ends the day."
+      ],
+      "posted_at": "20260602T230839Z",
+      "post_id": "18319599976272531"
+    },
+    {
       "id": "single-00005",
       "slot": "am",
       "type": "quote",
@@ -271,44 +311,6 @@
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
-      "id": "carousel-00016",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00016-0.jpg",
-        "queue/carousel-00016-1.jpg",
-        "queue/carousel-00016-2.jpg",
-        "queue/carousel-00016-3.jpg",
-        "queue/carousel-00016-4.jpg",
-        "queue/carousel-00016-5.jpg",
-        "queue/carousel-00016-6.jpg",
-        "queue/carousel-00016-7.jpg",
-        "queue/carousel-00016-8.jpg"
-      ],
-      "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
-      "alt": "Carousel: 7 things to check before every shoot.",
-      "posted": false,
-      "source_index": 1,
-      "fp": [
-        "1. 4k at 60fps",
-        "1.5 seconds, memorized. never improvise the first line.",
-        "2. mic test and playback",
-        "3. hook pre-written",
-        "4. scout your spots",
-        "5. batteries and storage",
-        "6. backup device",
-        "7 things to check before every shoot.",
-        "7. frame for the title",
-        "leave headroom so the overlay never covers your face.",
-        "number 4 is the one everyone skips.",
-        "one failure shouldn't cancel the whole shoot.",
-        "record 5 seconds and listen back. don't trust the meter alone.",
-        "switch location every line. this is the one people skip.",
-        "the only camera setting that really matters. set it once.",
-        "two of everything. a dead battery ends the day."
       ]
     },
     {
@@ -723,6 +725,44 @@
         "this is the system, simplified.",
         "turn each topic into 10 angles",
         "write only the hooks first"
+      ]
+    },
+    {
+      "id": "carousel-00034",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00034-0.jpg",
+        "queue/carousel-00034-1.jpg",
+        "queue/carousel-00034-2.jpg",
+        "queue/carousel-00034-3.jpg",
+        "queue/carousel-00034-4.jpg",
+        "queue/carousel-00034-5.jpg",
+        "queue/carousel-00034-6.jpg",
+        "queue/carousel-00034-7.jpg",
+        "queue/carousel-00034-8.jpg"
+      ],
+      "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: 7 things to check before every shoot.",
+      "posted": false,
+      "source_index": 1,
+      "fp": [
+        "1. 4k at 60fps",
+        "1.5 seconds, memorized. never improvise the first line.",
+        "2. mic test and playback",
+        "3. hook pre-written",
+        "4. scout your spots",
+        "5. batteries and storage",
+        "6. backup device",
+        "7 things to check before every shoot.",
+        "7. frame for the title",
+        "leave headroom so the overlay never covers your face.",
+        "number 4 is the one everyone skips.",
+        "one failure shouldn't cancel the whole shoot.",
+        "record 5 seconds and listen back. don't trust the meter alone.",
+        "switch location every line. this is the one people skip.",
+        "the only camera setting that really matters. set it once.",
+        "two of everything. a dead battery ends the day."
       ]
     }
   ]
