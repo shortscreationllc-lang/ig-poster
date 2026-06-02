@@ -48,13 +48,61 @@ CONTENT = {
 }
 
 
+# AUTO rotation — every reel pulls the next recipe so format + style vary post to
+# post (and the caption + beat rotate independently). Mix of single-message reels
+# and multi-scene "carousel" sequence reels. Value-based, privacy-safe.
+ROTATION = [
+    {"type": "stat", "kicker": "THE NUMBER", "stat": "90%", "style": "blackout",
+     "headline": "decide whether to keep watching in the first 3 seconds",
+     "hook": "90% of viewers decide whether to keep watching in the first 3 seconds."},
+    {"type": "statement", "headline": "THE HOOK IS 90% OF THE POST.", "style": "navyorange",
+     "hook": "Your hook is 90% of the post — the first line does almost all the work."},
+    {"type": "quote", "style": "dark",
+     "headline": "If they don't stop scrolling, nothing else you made even matters.",
+     "hook": "If they don't stop scrolling, nothing else you made even matters."},
+    {"type": "checklist", "headline": "Post-ready checklist", "style": "blackout",
+     "bullets": ["Hook in the first line", "One idea per post", "Caption adds context", "Clear reason to follow"],
+     "hook": "The short-form posting checklist — run every video through this before you publish."},
+    {"type": "sequence", "style": "blackout",
+     "hook": "3 edits that keep people watching your short-form videos to the end.",
+     "scenes": [{"kicker": "PLAYBOOK", "headline": "3 edits that keep people watching", "swipe": True},
+                {"n": 1, "headline": "Cut the dead air", "body": "Tighten every pause between words — momentum holds attention."},
+                {"n": 2, "headline": "Add a cut every 2-3 sec", "body": "Fresh motion resets the eye and stops the scroll."},
+                {"n": 3, "headline": "End on a reason to rewatch", "body": "A loop or payoff quietly doubles your watch time."},
+                {"kicker": "YOUR MOVE", "headline": "Follow for one of these every few days.", "body": "@josephborroto"}]},
+    {"type": "stat", "kicker": "THE NUMBER", "stat": "3 SEC", "style": "navyorange",
+     "headline": "is all you get before they scroll past you",
+     "hook": "You get about 3 seconds before someone scrolls past your video."},
+    {"type": "statement", "headline": "POST LESS. EDIT HARDER.", "style": "dark",
+     "hook": "Post less, edit harder — one tight short-form video beats five lazy ones."},
+    {"type": "sequence", "style": "navyorange",
+     "hook": "3 ways to stop the scroll on short-form video.",
+     "scenes": [{"kicker": "PLAYBOOK", "headline": "3 ways to stop the scroll", "swipe": True},
+                {"n": 1, "headline": "Open on motion", "body": "Start mid-action, not on a static face."},
+                {"n": 2, "headline": "Cut the intro", "body": "Delete every second before the actual point."},
+                {"n": 3, "headline": "Say the payoff first", "body": "Lead with the result, then explain how."},
+                {"kicker": "YOUR MOVE", "headline": "Follow for more short-form tips.", "body": "@josephborroto"}]},
+]
+
+
+def _prune_old_reels(keep=5):
+    reels = sorted(QUEUE_DIR.glob("reel-*.mp4"))
+    for old in reels[:-keep]:
+        try:
+            old.unlink()
+        except Exception:
+            pass
+
+
 def _pick(kind):
-    bucket = CONTENT.get(kind) or CONTENT["stat"]
     st = read_state()
-    i = st.get("reel_i", 0)
-    cap_i = st.get("reel_cap_i", 0)
-    aud_i = st.get("reel_audio_i", 0)
-    item, hook, style = bucket[i % len(bucket)]
+    i = st.get("reel_i", 0); cap_i = st.get("reel_cap_i", 0); aud_i = st.get("reel_audio_i", 0)
+    if kind == "auto":
+        spec = ROTATION[i % len(ROTATION)]
+        item, hook, style = spec, spec["hook"], spec.get("style", "blackout")
+    else:
+        bucket = CONTENT.get(kind) or CONTENT["stat"]
+        it, hk, style = bucket[i % len(bucket)]; item, hook = it, hk
     st["reel_i"] = i + 1
     st["reel_cap_i"] = cap_i + 1       # rotate caption style
     st["reel_audio_i"] = aud_i + 1     # rotate beat
@@ -65,13 +113,17 @@ def _pick(kind):
 
 def render(kind):
     QUEUE_DIR.mkdir(exist_ok=True)
+    _prune_old_reels()
     item, caption, style, aud_i = _pick(kind)
-    rel = f"queue/reel-{int(time.time())}.mp4"
-    render_video.render_video(item, str(ROOT / rel), style=style)
-    beat = render_audio.add_beat(str(ROOT / rel), aud_i)   # rotating copyright-safe beat
-    PENDING.write_text(json.dumps({"rel": rel, "caption": caption, "type": item["type"],
+    rel = f"queue/reel-{int(time.time())}.mp4"; out = str(ROOT / rel)
+    if item.get("type") == "sequence":
+        render_video.video_sequence(item["scenes"], out, style=style)
+    else:
+        render_video.render_video(item, out, style=style)
+    beat = render_audio.add_beat(out, aud_i)   # rotating copyright-safe beat
+    PENDING.write_text(json.dumps({"rel": rel, "caption": caption, "type": item.get("type"),
                                    "style": style, "beat": beat}) + "\n")
-    print(f"rendered reel -> {rel} (type={item['type']} style={style} beat={beat})")
+    print(f"rendered reel -> {rel} (type={item.get('type')} style={style} beat={beat})")
 
 
 def _wait_raw(url, timeout=120):
