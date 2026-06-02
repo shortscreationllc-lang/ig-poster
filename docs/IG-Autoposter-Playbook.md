@@ -142,6 +142,29 @@ fully anonymized. When in doubt, leave it out.
 
 ---
 
+## 6b. On-time firing — cron-job.org trigger (free)
+
+GitHub `schedule` (cron) is best-effort and often late. The fix: a free, punctual
+external scheduler (**cron-job.org**) calls GitHub's API at the exact minute —
+`workflow_dispatch` runs start within seconds (unlike `schedule`). GitHub's own crons
+stay as a silent fallback.
+
+**1. Fine-grained PAT (least privilege):** GitHub → Settings → Developer settings →
+Fine-grained tokens. Resource owner `shortscreationllc-lang`; repo access **only
+`ig-poster`**; permission **Actions: Read and write** (only that). Copy `github_pat_…`.
+
+**2. cron-job.org job (free account):**
+- URL: `https://api.github.com/repos/shortscreationllc-lang/ig-poster/actions/workflows/daily-post.yml/dispatches`
+- Method: `POST`
+- Headers: `Accept: application/vnd.github+json` · `Authorization: Bearer github_pat_…`
+  · `X-GitHub-Api-Version: 2022-11-28` · `User-Agent: ig-poster-cron`
+- Body: `{"ref":"main"}`
+- **Schedule (the magic):** Timezone **America/New_York**, Minute **37**, Hours **8, 12, 19**,
+  every day → fires 8:37a / 12:37p / 7:37p ET, auto-handling EDT/EST. One schedule, no UTC math.
+- Test run → expect **HTTP 204** + a run appears in GitHub Actions. Enable failure emails.
+
+The morning story rides the 8:37 trigger automatically (plan logic attaches it).
+
 ## 7. Known gotchas & lessons
 
 - **GitHub cron is unreliable** — never depend on it alone. Catch-up + the push trigger are
