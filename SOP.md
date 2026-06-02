@@ -1,14 +1,19 @@
 # Instagram Auto-Poster — SOP
 
-> Automated daily Instagram poster for **@josephborroto**. Renders on-brand image cards + carousels and posts them on a schedule, zero daily effort. **Live and self-sustaining since 2026-05-31.** Runs entirely in the cloud — your computer does NOT need to be on.
+> Automated daily Instagram poster for **@josephborroto**. Renders on-brand image cards + carousels + stories and posts them on a schedule, zero daily effort. **Live and self-sustaining since 2026-05-31.** Runs entirely in the cloud — your computer does NOT need to be on.
+>
+> 📘 **Full system + reusable client playbook:** [`docs/IG-Autoposter-Playbook.md`](docs/IG-Autoposter-Playbook.md) (also saved to Obsidian/Drive for future clients).
 
 ---
 
 ## 1. What it does
-- Auto-posts twice a day to **@josephborroto**: **8 AM ET** = single image card, **8 PM ET** = multi-slide carousel.
-- Designs auto-rotate across **4 looks** (warm-black, navy, white, cream) so nothing repeats back-to-back.
+- **Feed: 3 posts/day (ET)** — ~8:37 AM single card (mixed format), ~12:37 PM single card, ~7:37 PM carousel.
+- **Stories: 1/day** — ~8:40 AM, a few minutes after the morning feed post.
+- Single cards rotate **mixed formats** (tip / quote / myth / versus / value / stat / checklist / statement).
+- Designs auto-rotate across **4 looks** (dark / midnight / light / cream) so nothing repeats back-to-back.
 - All CTAs are **follow-based** ("Follow @josephborroto for…") — never comment/DM, so no inbound to service.
-- Keeps a **14-deep buffer** of pre-rendered posts per slot — never misses a day.
+- Keeps a **14-deep buffer** of pre-rendered posts per slot — never misses a day; auto-recovers a dropped cron (catch-up).
+- A **cross-channel de-dup guard** ensures a story and a feed post never show the same content.
 - Instagram token **refreshes itself weekly** — nothing expires.
 
 ## 2. Does my computer need to be on?
@@ -45,14 +50,19 @@ Never put client-identifying info in posts: no client/editor counts, no client n
 - `GH_PAT` — **no-expiry** fine-grained token named "IG Post" (scoped to ig-poster, Secrets + Contents). Keeps refresh self-sustaining.
 - Old classic setup token (`ghp_…`) is unused — delete at github.com/settings/tokens → "Tokens (classic)". Must be done in the browser; cannot be revoked via API.
 
-## 7b. Stories (LIVE since 2026-06-01)
-Every morning, alongside the 8 AM feed post, it posts **2 stories**:
-1. **Hook story** — a bold attention-grabber (from `story_bank.json` → `hooks`) to pull people into your stories. Rotates daily, alternates dark/navy.
-2. **Reshare story** — the actual feed card of the day, framed in a 9:16 story with "Just posted → see it on my feed."
+## 7b. Stories (LIVE since 2026-06-01; reworked to 1/day)
+**One story a day**, ~8:40 AM (a few minutes after the morning feed post). It posts a
+**story sequence** from `story_bank.json` → `sequences` (a hook→fix pair, a multi-slide
+series, or a single statement/quote). Rotates daily; morning uses the cream "bone" palette.
+- Stories are **live-only** — posted only in their window, never back-filled.
+- The cross-channel de-dup guard means a story never repeats that day's feed content.
+- The old "reshare the feed card" story was **removed** (redundant / could grab a mismatch).
 
-Files: `render_story.py` (draws the 9:16 stories), `post_stories.py` (posts them), `story_bank.json` (the hook lines — edit/add freely).
-Limits (Instagram, not us): API stories are image or single video only — **no tappable post-link sticker, no polls, no music/trending audio**. The reshare drives people to your profile, just not auto-linked.
-Add hooks: edit `story_bank.json` → `hooks` array, commit + push.
+Files: `render_story.py` (draws the 9:16 stories), `post_stories.py` (posts them),
+`story_bank.json` (the sequences — edit/add freely).
+Limits (Instagram, not us): API stories are image or single video only — **no tappable
+post-link sticker, no polls, no music/trending audio**.
+Add/edit: change `story_bank.json` → `sequences`, commit + push.
 
 ## 8. Roadmap — FUTURE: video posts
 Currently images + carousels only. Next phase = **video / Reels** (possibly from the Dropbox video inventory). Notes for later:
