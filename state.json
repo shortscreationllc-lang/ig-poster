@@ -86,6 +86,13 @@
       "slot": "am",
       "type": "quote",
       "post_id": "18217478770321218"
+    },
+    {
+      "at": "20260603T163853Z",
+      "id": "queue/reel-1780504665.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17892213909481704"
     }
   ],
   "story_hook_i": 1,
