@@ -166,6 +166,40 @@
       "post_id": "18217478770321218"
     },
     {
+      "id": "carousel-00017",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00017-0.jpg",
+        "queue/carousel-00017-1.jpg",
+        "queue/carousel-00017-2.jpg",
+        "queue/carousel-00017-3.jpg",
+        "queue/carousel-00017-4.jpg",
+        "queue/carousel-00017-5.jpg",
+        "queue/carousel-00017-6.jpg"
+      ],
+      "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 caption mistakes killing your retention.",
+      "posted": true,
+      "source_index": 2,
+      "fp": [
+        "1. too small",
+        "2. off the beat",
+        "3. buried at the bottom",
+        "4. wrong font",
+        "5 caption mistakes killing your retention.",
+        "5. paced too slow",
+        "captions should feel a touch faster than the video itself.",
+        "if it's hard to read on a phone, it's costing you watch time.",
+        "most people make all 5.",
+        "text should hit on the cut, not lag behind the sentence.",
+        "the app ui covers it. keep key words in the safe zone.",
+        "white, modern, sans-serif. no heavy drop shadow."
+      ],
+      "posted_at": "20260603T200512Z",
+      "post_id": "18105732016786634"
+    },
+    {
       "id": "single-00006",
       "slot": "am",
       "type": "myth",
@@ -313,38 +347,6 @@
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
-      "id": "carousel-00017",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00017-0.jpg",
-        "queue/carousel-00017-1.jpg",
-        "queue/carousel-00017-2.jpg",
-        "queue/carousel-00017-3.jpg",
-        "queue/carousel-00017-4.jpg",
-        "queue/carousel-00017-5.jpg",
-        "queue/carousel-00017-6.jpg"
-      ],
-      "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
-      "alt": "Carousel: 5 caption mistakes killing your retention.",
-      "posted": false,
-      "source_index": 2,
-      "fp": [
-        "1. too small",
-        "2. off the beat",
-        "3. buried at the bottom",
-        "4. wrong font",
-        "5 caption mistakes killing your retention.",
-        "5. paced too slow",
-        "captions should feel a touch faster than the video itself.",
-        "if it's hard to read on a phone, it's costing you watch time.",
-        "most people make all 5.",
-        "text should hit on the cut, not lag behind the sentence.",
-        "the app ui covers it. keep key words in the safe zone.",
-        "white, modern, sans-serif. no heavy drop shadow."
       ]
     },
     {
@@ -782,6 +784,38 @@
         "verbs show the action. nouns show the detail, close and isolated. detail wins.",
         "you're filming verbs, not nouns.",
         "your b-roll is boring."
+      ]
+    },
+    {
+      "id": "carousel-00036",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00036-0.jpg",
+        "queue/carousel-00036-1.jpg",
+        "queue/carousel-00036-2.jpg",
+        "queue/carousel-00036-3.jpg",
+        "queue/carousel-00036-4.jpg",
+        "queue/carousel-00036-5.jpg",
+        "queue/carousel-00036-6.jpg"
+      ],
+      "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 caption mistakes killing your retention.",
+      "posted": false,
+      "source_index": 2,
+      "fp": [
+        "1. too small",
+        "2. off the beat",
+        "3. buried at the bottom",
+        "4. wrong font",
+        "5 caption mistakes killing your retention.",
+        "5. paced too slow",
+        "captions should feel a touch faster than the video itself.",
+        "if it's hard to read on a phone, it's costing you watch time.",
+        "most people make all 5.",
+        "text should hit on the cut, not lag behind the sentence.",
+        "the app ui covers it. keep key words in the safe zone.",
+        "white, modern, sans-serif. no heavy drop shadow."
       ]
     }
   ]

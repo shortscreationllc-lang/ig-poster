@@ -1,7 +1,7 @@
 {
   "single_index": 19,
-  "carousel_index": 9,
-  "seq": 35,
+  "carousel_index": 11,
+  "seq": 36,
   "daily": {
     "20260601": {
       "morning": true,
@@ -23,7 +23,7 @@
     }
   },
   "am_style_i": 19,
-  "pm_style_i": 16,
+  "pm_style_i": 17,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -94,6 +94,13 @@
       "type": "reel",
       "slot": "video",
       "post_id": "17892213909481704"
+    },
+    {
+      "at": "20260603T200512Z",
+      "id": "carousel-00017",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18105732016786634"
     }
   ],
   "story_hook_i": 1,
@@ -197,7 +204,19 @@
     "no script \u2014 just the question and your honest answer",
     "the #1 question your customers always ask",
     "reels bring new people in. posts and stories keep them.",
-    "you need both halves."
+    "you need both halves.",
+    "1. too small",
+    "2. off the beat",
+    "3. buried at the bottom",
+    "4. wrong font",
+    "5 caption mistakes killing your retention.",
+    "5. paced too slow",
+    "captions should feel a touch faster than the video itself.",
+    "if it's hard to read on a phone, it's costing you watch time.",
+    "most people make all 5.",
+    "text should hit on the cut, not lag behind the sentence.",
+    "the app ui covers it. keep key words in the safe zone.",
+    "white, modern, sans-serif. no heavy drop shadow."
   ],
   "reel_i": 3,
   "reel_cap_i": 2,
