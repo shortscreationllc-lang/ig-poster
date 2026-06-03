@@ -156,12 +156,14 @@
       ],
       "caption": "Reels bring new people to the page. Posts and stories keep your current audience warm.\n\nGrowth without retention is a leaky bucket. Retention without growth is a slow death. The brands that win run both at the same time.\n\nFollow @josephborroto for the full content system.\n\n#contentstrategy #instagramgrowth #shortformvideo #audienceretention #josephborroto",
       "alt": "",
-      "posted": false,
+      "posted": true,
       "source_index": 4,
       "fp": [
         "reels bring new people in. posts and stories keep them.",
         "you need both halves."
-      ]
+      ],
+      "posted_at": "20260603T163742Z",
+      "post_id": "18217478770321218"
     },
     {
       "id": "single-00006",
@@ -763,6 +765,23 @@
         "switch location every line. this is the one people skip.",
         "the only camera setting that really matters. set it once.",
         "two of everything. a dead battery ends the day."
+      ]
+    },
+    {
+      "id": "single-00035",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00035.jpg"
+      ],
+      "caption": "Your B-roll is boring because you film the action instead of the thing.\n\nVerbs: someone doing the task, wide and busy.\nNouns: the object itself, close-up, isolated, lit.\n\nB-roll wins on detail, not motion. Get tight on the noun.\n\nFollow @josephborroto for the small stuff that makes content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
+      "alt": "Card: your B-roll is boring, you're filming verbs not nouns.",
+      "posted": false,
+      "source_index": 18,
+      "fp": [
+        "verbs show the action. nouns show the detail, close and isolated. detail wins.",
+        "you're filming verbs, not nouns.",
+        "your b-roll is boring."
       ]
     }
   ]
