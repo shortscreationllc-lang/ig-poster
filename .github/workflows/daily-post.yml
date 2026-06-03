@@ -55,6 +55,10 @@ on:
     - cron: "37 13 * * *"  # 8:37a EST
     - cron: "52 13 * * *"  # 8:52a EST retry
     - cron: "7 14 * * *"   # 9:07a EST retry
+    # midmorning ~10a ET — image post #1 (single card)
+    - cron: "37 14 * * *"  # 10:37a EDT
+    - cron: "57 14 * * *"  # 10:57a EDT retry
+    - cron: "37 15 * * *"  # 10:37a EST
     # midday ~12p ET — primary + retry
     - cron: "37 16 * * *"  # 12:37p EDT
     - cron: "57 16 * * *"  # 12:57p EDT retry
