@@ -158,5 +158,7 @@
     "the only camera setting that really matters. set it once.",
     "two of everything. a dead battery ends the day."
   ],
-  "reel_i": 1
+  "reel_i": 2,
+  "reel_cap_i": 1,
+  "reel_audio_i": 1
 }
