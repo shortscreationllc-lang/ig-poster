@@ -102,6 +102,13 @@
       "slot": "pm",
       "type": "carousel",
       "post_id": "18105732016786634"
+    },
+    {
+      "at": "20260603T230459Z",
+      "id": "queue/reel-1780527845.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18330497518270411"
     }
   ],
   "story_hook_i": 1,
