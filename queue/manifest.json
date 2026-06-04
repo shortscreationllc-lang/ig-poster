@@ -208,12 +208,14 @@
       ],
       "caption": "Myth: there's a magic posting time.\nTruth: strong content gets pushed for days \u2014 the algorithm keeps testing it long after you post.\n\nStop obsessing over the clock. Obsess over the first 2 seconds.\n\nFollow @josephborroto for content myths, busted.\n\n#contentstrategy #socialmediatips #algorithm #shortformvideo #reelstips #josephborroto",
       "alt": "Myth vs truth card about posting times.",
-      "posted": false,
+      "posted": true,
       "source_index": 5,
       "fp": [
         "good content travels for days. timing is a rounding error.",
         "you need to post at the perfect time of day."
-      ]
+      ],
+      "posted_at": "20260604T160359Z",
+      "post_id": "18093013724244230"
     },
     {
       "id": "single-00007",
@@ -816,6 +818,22 @@
         "text should hit on the cut, not lag behind the sentence.",
         "the app ui covers it. keep key words in the safe zone.",
         "white, modern, sans-serif. no heavy drop shadow."
+      ]
+    },
+    {
+      "id": "single-00037",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00037.jpg"
+      ],
+      "caption": "\"The consumer isn't a moron; she is your wife.\" \u2014 David Ogilvy\n\nThe father of advertising said it decades ago and it's never been more true. Don't talk down to your audience. Don't use empty hype. Respect their intelligence and they'll reward you with attention.\n\nGood content treats people like they're smart.\n\nFollow @josephborroto for marketing principles that still hold up.\n\n#davidogilvy #marketing #copywriting #advertising #contentstrategy #josephborroto",
+      "alt": "Quote card with David Ogilvy quote about respecting the consumer.",
+      "posted": false,
+      "source_index": 19,
+      "fp": [
+        "the consumer isn't a moron. she is your wife.",
+        "\u2014 david ogilvy"
       ]
     }
   ]
