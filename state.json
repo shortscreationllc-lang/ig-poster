@@ -144,6 +144,13 @@
       "slot": "pm",
       "type": "carousel",
       "post_id": "18133879627497860"
+    },
+    {
+      "at": "20260604T233819Z",
+      "id": "queue/reel-1780616252.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17893702494471934"
     }
   ],
   "story_hook_i": 1,
