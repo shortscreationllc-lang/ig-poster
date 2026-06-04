@@ -26,7 +26,8 @@
     "20260604": {
       "morning": true,
       "midmorning": true,
-      "midday": true
+      "midday": true,
+      "afternoon": true
     }
   },
   "am_style_i": 20,
