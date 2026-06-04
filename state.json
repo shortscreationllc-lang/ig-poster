@@ -1,7 +1,7 @@
 {
   "single_index": 20,
-  "carousel_index": 5,
-  "seq": 37,
+  "carousel_index": 7,
+  "seq": 38,
   "daily": {
     "20260601": {
       "morning": true,
@@ -30,7 +30,7 @@
     }
   },
   "am_style_i": 20,
-  "pm_style_i": 17,
+  "pm_style_i": 18,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -136,6 +136,13 @@
       "type": "reel",
       "slot": "video",
       "post_id": "18164064907447841"
+    },
+    {
+      "at": "20260604T202729Z",
+      "id": "carousel-00018",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18133879627497860"
     }
   ],
   "story_hook_i": 1,
@@ -264,7 +271,17 @@
     "it reads as energy, even with the same script.",
     "switch your location every line.",
     "good content travels for days. timing is a rounding error.",
-    "you need to post at the perfect time of day."
+    "you need to post at the perfect time of day.",
+    "act 1 \u2014 hook (0 to 1.5s)",
+    "act 2 \u2014 tension (4 to 12s)",
+    "act 3 \u2014 payoff (13s to end)",
+    "build the gap. give a reason to keep watching past second 4.",
+    "deliver the answer, then one clean close. don't trail off.",
+    "every viral video has 3 acts.",
+    "most people only film one.",
+    "state the problem sharp. no intro, no setup. stop the thumb.",
+    "they film all hook or all payoff. the tension in the middle is what holds people.",
+    "why most fail"
   ],
   "reel_i": 7,
   "reel_cap_i": 6,
