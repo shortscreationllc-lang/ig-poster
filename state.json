@@ -113,8 +113,8 @@
     }
   ],
   "story_hook_i": 1,
-  "story_style_i": 10,
-  "story_seq_i": 6,
+  "story_style_i": 11,
+  "story_seq_i": 7,
   "story_history": [
     {
       "at": "20260601T122353Z",
@@ -227,7 +227,7 @@
     "the app ui covers it. keep key words in the safe zone.",
     "white, modern, sans-serif. no heavy drop shadow."
   ],
-  "reel_i": 4,
-  "reel_cap_i": 3,
-  "reel_audio_i": 3
+  "reel_i": 5,
+  "reel_cap_i": 4,
+  "reel_audio_i": 4
 }
