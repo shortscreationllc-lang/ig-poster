@@ -10,6 +10,7 @@ with SEO captions + hashtags.
 import argparse, json, os, sys, time, urllib.request, urllib.parse
 from pathlib import Path
 
+import re
 import render_video
 import render_audio
 import captions
@@ -82,6 +83,27 @@ ROTATION = [
                 {"n": 2, "headline": "Cut the intro", "body": "Delete every second before the actual point."},
                 {"n": 3, "headline": "Say the payoff first", "body": "Lead with the result, then explain how."},
                 {"kicker": "YOUR MOVE", "headline": "Follow for more short-form tips.", "body": "@josephborroto"}]},
+    {"type": "statement", "headline": "STOP MAKING FORGETTABLE CONTENT.", "style": "navyorange",
+     "hook": "Most short-form content isn't bad — it's forgettable. Make one thing memorable."},
+    {"type": "stat", "kicker": "THE NUMBER", "stat": "2X", "style": "blackout",
+     "headline": "more watch time when you cut the first 2 seconds",
+     "hook": "Cutting the first 2 seconds of your video can double your watch time."},
+    {"type": "quote", "style": "dark",
+     "headline": "Your content doesn't have a reach problem. It has a hook problem.",
+     "hook": "Your content doesn't have a reach problem — it has a hook problem."},
+    {"type": "statement", "headline": "CONSISTENCY BEATS GOING VIRAL.", "style": "blackout",
+     "hook": "Consistency beats going viral once — show up and the algorithm follows."},
+    {"type": "checklist", "headline": "Before you hit post", "style": "navyorange",
+     "bullets": ["Does the first line stop the scroll?", "Is there one clear idea?",
+                 "Would you send it to a friend?", "Is there a reason to follow?"],
+     "hook": "The 4-question check every short-form video should pass before you post it."},
+    {"type": "sequence", "style": "blackout",
+     "hook": "3 hooks that work in any niche for short-form video.",
+     "scenes": [{"kicker": "PLAYBOOK", "headline": "3 hooks that work in any niche", "swipe": True},
+                {"n": 1, "headline": "The mistake hook", "body": "\"Stop doing this if you want more views.\""},
+                {"n": 2, "headline": "The number hook", "body": "\"3 things I'd change about your content.\""},
+                {"n": 3, "headline": "The result hook", "body": "\"This got 1M views — here's why.\""},
+                {"kicker": "YOUR MOVE", "headline": "Follow for more hooks like these.", "body": "@josephborroto"}]},
 ]
 
 
@@ -94,12 +116,24 @@ def _prune_old_reels(keep=5):
             pass
 
 
+def _reel_key(spec):
+    h = spec.get("hook") or spec.get("headline") or ""
+    return re.sub(r"[^a-z0-9]+", " ", str(h).lower()).strip()[:60]
+
+
 def _pick(kind):
     st = read_state()
     i = st.get("reel_i", 0); cap_i = st.get("reel_cap_i", 0); aud_i = st.get("reel_audio_i", 0)
     if kind == "auto":
-        spec = ROTATION[i % len(ROTATION)]
+        # Skip any item posted in the last several reels so nothing repeats soon.
+        recent = st.get("reel_recent", [])
+        n = len(ROTATION); spec = ROTATION[i % n]
+        for step in range(n):
+            cand = ROTATION[(i + step) % n]
+            if _reel_key(cand) not in recent:
+                spec = cand; i = i + step; break
         item, hook, style = spec, spec["hook"], spec.get("style", "blackout")
+        st["reel_recent"] = (recent + [_reel_key(spec)])[-7:]
     else:
         bucket = CONTENT.get(kind) or CONTENT["stat"]
         it, hk, style = bucket[i % len(bucket)]; item, hook = it, hk
