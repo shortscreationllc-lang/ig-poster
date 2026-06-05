@@ -186,6 +186,13 @@
       "slot": "pm",
       "type": "carousel",
       "post_id": "18099026828140990"
+    },
+    {
+      "at": "20260605T233800Z",
+      "id": "queue/reel-1780702637.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18089675702372602"
     }
   ],
   "story_hook_i": 1,
