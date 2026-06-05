@@ -170,6 +170,13 @@
       "slot": "am",
       "type": "single",
       "post_id": "18091059158622659"
+    },
+    {
+      "at": "20260605T160627Z",
+      "id": "queue/reel-1780675541.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18086850494545810"
     }
   ],
   "story_hook_i": 1,
