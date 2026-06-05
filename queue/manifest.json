@@ -268,6 +268,39 @@
       "post_id": "18091059158622659"
     },
     {
+      "id": "carousel-00019",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00019-0.jpg",
+        "queue/carousel-00019-1.jpg",
+        "queue/carousel-00019-2.jpg",
+        "queue/carousel-00019-3.jpg",
+        "queue/carousel-00019-4.jpg",
+        "queue/carousel-00019-5.jpg",
+        "queue/carousel-00019-6.jpg"
+      ],
+      "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
+      "alt": "Carousel: 5 rules behind every video that lands.",
+      "posted": true,
+      "source_index": 4,
+      "fp": [
+        "1. 4k at 60fps",
+        "2. 1.5-second hook, written",
+        "3. switch location every line",
+        "4. one idea per video",
+        "5 rules behind every video that lands.",
+        "5. music quieter than feels right",
+        "memorized before you hit record. never improvised.",
+        "simple, repeatable, no fancy gear.",
+        "specific beats broad. one clear point gets saved and shared.",
+        "trim ruthlessly. the voice leads, the music supports.",
+        "two lines in one spot? move. movement reads as energy.",
+        "you don't need a cinema camera. you need the right settings."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00008",
       "slot": "am",
       "type": "quote",
@@ -382,38 +415,6 @@
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
-      "id": "carousel-00019",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00019-0.jpg",
-        "queue/carousel-00019-1.jpg",
-        "queue/carousel-00019-2.jpg",
-        "queue/carousel-00019-3.jpg",
-        "queue/carousel-00019-4.jpg",
-        "queue/carousel-00019-5.jpg",
-        "queue/carousel-00019-6.jpg"
-      ],
-      "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
-      "alt": "Carousel: 5 rules behind every video that lands.",
-      "posted": false,
-      "source_index": 4,
-      "fp": [
-        "1. 4k at 60fps",
-        "2. 1.5-second hook, written",
-        "3. switch location every line",
-        "4. one idea per video",
-        "5 rules behind every video that lands.",
-        "5. music quieter than feels right",
-        "memorized before you hit record. never improvised.",
-        "simple, repeatable, no fancy gear.",
-        "specific beats broad. one clear point gets saved and shared.",
-        "trim ruthlessly. the voice leads, the music supports.",
-        "two lines in one spot? move. movement reads as energy.",
-        "you don't need a cinema camera. you need the right settings."
       ]
     },
     {
@@ -883,6 +884,38 @@
       "fp": [
         "more posting always means more growth.",
         "retention beats volume. one great video outperforms ten rushed ones."
+      ]
+    },
+    {
+      "id": "carousel-00040",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00040-0.jpg",
+        "queue/carousel-00040-1.jpg",
+        "queue/carousel-00040-2.jpg",
+        "queue/carousel-00040-3.jpg",
+        "queue/carousel-00040-4.jpg",
+        "queue/carousel-00040-5.jpg",
+        "queue/carousel-00040-6.jpg"
+      ],
+      "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
+      "alt": "Carousel: 5 rules behind every video that lands.",
+      "posted": false,
+      "source_index": 4,
+      "fp": [
+        "1. 4k at 60fps",
+        "2. 1.5-second hook, written",
+        "3. switch location every line",
+        "4. one idea per video",
+        "5 rules behind every video that lands.",
+        "5. music quieter than feels right",
+        "memorized before you hit record. never improvised.",
+        "simple, repeatable, no fancy gear.",
+        "specific beats broad. one clear point gets saved and shared.",
+        "trim ruthlessly. the voice leads, the music supports.",
+        "two lines in one spot? move. movement reads as energy.",
+        "you don't need a cinema camera. you need the right settings."
       ]
     }
   ]
