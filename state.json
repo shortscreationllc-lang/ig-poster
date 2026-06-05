@@ -1,7 +1,7 @@
 {
-  "single_index": 20,
-  "carousel_index": 9,
-  "seq": 38,
+  "single_index": 21,
+  "carousel_index": 11,
+  "seq": 39,
   "daily": {
     "20260601": {
       "morning": true,
@@ -34,7 +34,7 @@
       "morning": true
     }
   },
-  "am_style_i": 20,
+  "am_style_i": 21,
   "pm_style_i": 18,
   "history": [
     {
@@ -162,6 +162,13 @@
       "type": "reel",
       "slot": "video",
       "post_id": "18101526812035949"
+    },
+    {
+      "at": "20260605T153806Z",
+      "id": "single-00007",
+      "slot": "am",
+      "type": "single",
+      "post_id": "18091059158622659"
     }
   ],
   "story_hook_i": 1,
@@ -240,9 +247,6 @@
     }
   ],
   "recent_texts": [
-    "if you confuse, you lose.",
-    "\u2014 donald miller, storybrand",
-    "ai captions are quietly killing your retention.",
     "hand-place your captions on the beat.",
     "keep it out of the bottom ui zone",
     "one strong word on screen at a time",
@@ -319,7 +323,10 @@
     "good content travels for days.",
     "post at the perfect time or it flops.",
     "the algorithm keeps testing strong videos",
-    "timing is a rounding error vs. the hook"
+    "timing is a rounding error vs. the hook",
+    "if your hook is over 1.5 seconds, you lost.",
+    "say the problem in the first beat. teaching starts at second 4, not second 1.",
+    "the algorithm already buried you."
   ],
   "reel_i": 10,
   "reel_cap_i": 9,

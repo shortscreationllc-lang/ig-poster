@@ -257,13 +257,15 @@
       ],
       "caption": "If your hook runs longer than 1.5 seconds, the scroll already won.\n\nThe first beat is for the problem, stated sharp. No \"hey guys.\" No setup. No throat-clearing.\n\nTeaching starts at second 4. Second 1 is only for stopping the thumb.\n\nFollow @josephborroto for daily short-form breakdowns.\n\n#hookwriting #shortformvideo #reelstips #contentcreator #videoediting #josephborroto",
       "alt": "Card: if your hook is over 1.5 seconds, you lost.",
-      "posted": false,
+      "posted": true,
       "source_index": 6,
       "fp": [
         "if your hook is over 1.5 seconds, you lost.",
         "say the problem in the first beat. teaching starts at second 4, not second 1.",
         "the algorithm already buried you."
-      ]
+      ],
+      "posted_at": "20260605T153806Z",
+      "post_id": "18091059158622659"
     },
     {
       "id": "single-00008",
@@ -865,6 +867,22 @@
         "state the problem sharp. no intro, no setup. stop the thumb.",
         "they film all hook or all payoff. the tension in the middle is what holds people.",
         "why most fail"
+      ]
+    },
+    {
+      "id": "single-00039",
+      "slot": "am",
+      "type": "myth",
+      "images": [
+        "queue/single-00039.jpg"
+      ],
+      "caption": "Myth: just post more and you'll grow.\nTruth: the algorithm rewards videos people finish \u2014 not how often you show up with weak content.\n\nQuality and retention beat raw volume every time.\n\nFollow @josephborroto for content myths, busted.\n\n#contentstrategy #algorithm #shortformvideo #reelstips #videoediting #josephborroto",
+      "alt": "Myth vs truth card about posting volume vs retention.",
+      "posted": false,
+      "source_index": 20,
+      "fp": [
+        "more posting always means more growth.",
+        "retention beats volume. one great video outperforms ten rushed ones."
       ]
     }
   ]
