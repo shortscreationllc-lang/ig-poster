@@ -110,11 +110,16 @@ def plan():
             if done.get(kind):          # already posted today
                 continue
             in_window = start <= hour <= start + WINDOW_SPAN
-            do_media = media            # reels/posts catch up any time after due
+            do_media = media
             do_feed = feed
+            # REELS are live-window-only — never back-filled. A missed reel lapses
+            # instead of posting late right next to the next one (no double burst).
+            # Image POSTS still catch up (they're evergreen and less spammy batched).
+            if media == "reel" and not in_window:
+                do_media = None
             do_story = story and in_window   # stories are live-only, never backfilled
             if not do_media and not do_story:
-                continue                # a missed story-only slot — let it lapse
+                continue                # a missed reel/story slot — let it lapse
         # resolve the auto feed (alternate single card / carousel by day parity)
         if do_media == "post" and do_feed == "auto":
             do_feed = "pm" if int(day) % 2 == 0 else "am"
