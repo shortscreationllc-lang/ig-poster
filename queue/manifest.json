@@ -301,6 +301,36 @@
       "skipped": true
     },
     {
+      "id": "carousel-00020",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00020-0.jpg",
+        "queue/carousel-00020-1.jpg",
+        "queue/carousel-00020-2.jpg",
+        "queue/carousel-00020-3.jpg",
+        "queue/carousel-00020-4.jpg",
+        "queue/carousel-00020-5.jpg",
+        "queue/carousel-00020-6.jpg"
+      ],
+      "caption": "Everyone underestimates what a genuinely good Reel takes.\n\nResearch. Hooks. Filming. Editing. Revisions.\n\nIt's hours of skilled work, which is exactly why rock-bottom pricing never produces rock-solid video.\n\nFollow @josephborroto for the real economics of content.\n\n#videoproduction #pricingstrategy #contentmarketing #shortformvideo #videoediting #josephborroto",
+      "alt": "Carousel: what a good Reel actually costs to make.",
+      "posted": true,
+      "source_index": 5,
+      "fp": [
+        "cutting, hand-placed captions, music, pacing. hours, not minutes.",
+        "quality video is hours of skilled work. that's why cheap pricing collapses.",
+        "research and hooks",
+        "setup, multiple takes, location changes, lighting, audio.",
+        "studying what works and writing a hook worth stopping for.",
+        "the part nobody breaks down.",
+        "the pass that turns good into actually-postable.",
+        "what a good reel actually costs to make."
+      ],
+      "posted_at": "20260605T201835Z",
+      "post_id": "18099026828140990"
+    },
+    {
       "id": "single-00008",
       "slot": "am",
       "type": "quote",
@@ -415,34 +445,6 @@
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
-      "id": "carousel-00020",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00020-0.jpg",
-        "queue/carousel-00020-1.jpg",
-        "queue/carousel-00020-2.jpg",
-        "queue/carousel-00020-3.jpg",
-        "queue/carousel-00020-4.jpg",
-        "queue/carousel-00020-5.jpg",
-        "queue/carousel-00020-6.jpg"
-      ],
-      "caption": "Everyone underestimates what a genuinely good Reel takes.\n\nResearch. Hooks. Filming. Editing. Revisions.\n\nIt's hours of skilled work, which is exactly why rock-bottom pricing never produces rock-solid video.\n\nFollow @josephborroto for the real economics of content.\n\n#videoproduction #pricingstrategy #contentmarketing #shortformvideo #videoediting #josephborroto",
-      "alt": "Carousel: what a good Reel actually costs to make.",
-      "posted": false,
-      "source_index": 5,
-      "fp": [
-        "cutting, hand-placed captions, music, pacing. hours, not minutes.",
-        "quality video is hours of skilled work. that's why cheap pricing collapses.",
-        "research and hooks",
-        "setup, multiple takes, location changes, lighting, audio.",
-        "studying what works and writing a hook worth stopping for.",
-        "the part nobody breaks down.",
-        "the pass that turns good into actually-postable.",
-        "what a good reel actually costs to make."
       ]
     },
     {
@@ -916,6 +918,34 @@
         "trim ruthlessly. the voice leads, the music supports.",
         "two lines in one spot? move. movement reads as energy.",
         "you don't need a cinema camera. you need the right settings."
+      ]
+    },
+    {
+      "id": "carousel-00041",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00041-0.jpg",
+        "queue/carousel-00041-1.jpg",
+        "queue/carousel-00041-2.jpg",
+        "queue/carousel-00041-3.jpg",
+        "queue/carousel-00041-4.jpg",
+        "queue/carousel-00041-5.jpg",
+        "queue/carousel-00041-6.jpg"
+      ],
+      "caption": "Everyone underestimates what a genuinely good Reel takes.\n\nResearch. Hooks. Filming. Editing. Revisions.\n\nIt's hours of skilled work, which is exactly why rock-bottom pricing never produces rock-solid video.\n\nFollow @josephborroto for the real economics of content.\n\n#videoproduction #pricingstrategy #contentmarketing #shortformvideo #videoediting #josephborroto",
+      "alt": "Carousel: what a good Reel actually costs to make.",
+      "posted": false,
+      "source_index": 5,
+      "fp": [
+        "cutting, hand-placed captions, music, pacing. hours, not minutes.",
+        "quality video is hours of skilled work. that's why cheap pricing collapses.",
+        "research and hooks",
+        "setup, multiple takes, location changes, lighting, audio.",
+        "studying what works and writing a hook worth stopping for.",
+        "the part nobody breaks down.",
+        "the pass that turns good into actually-postable.",
+        "what a good reel actually costs to make."
       ]
     }
   ]
