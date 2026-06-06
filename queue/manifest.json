@@ -339,12 +339,14 @@
       ],
       "caption": "Small filming choices make batch content feel fresher.\n\nChange your shirt. Switch the wall. Move outside for two. Shoot ten videos in an hour and they'll look like ten separate days \u2014 if you sweat the small stuff.\n\nBatch smart, not lazy.\n\nFollow @josephborroto for the production tricks that scale.\n\n#batching #contentcreation #reelstips #videoproduction #josephborroto",
       "alt": "",
-      "posted": false,
+      "posted": true,
       "source_index": 7,
       "fp": [
         "same day, ten different days.",
         "small filming choices make batch content feel fresh."
-      ]
+      ],
+      "posted_at": "20260606T141828Z",
+      "post_id": "17950110639000754"
     },
     {
       "id": "single-00009",
@@ -946,6 +948,23 @@
         "the part nobody breaks down.",
         "the pass that turns good into actually-postable.",
         "what a good reel actually costs to make."
+      ]
+    },
+    {
+      "id": "single-00042",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00042.jpg"
+      ],
+      "caption": "If you can clearly hear the music, it's too loud.\n\nThe voice leads. The music supports. Pull the track way lower than feels right, then a touch lower.\n\nClean audio is the difference between amateur and watchable, and most people get it backwards.\n\nFollow @josephborroto for the production basics nobody teaches.\n\n#audiomixing #videoediting #musictips #editingtips #shortformvideo #josephborroto",
+      "alt": "Card: your music is too loud, here's the volume that works.",
+      "posted": false,
+      "source_index": 21,
+      "fp": [
+        "here's the volume that actually works.",
+        "music sits low under the voice. if you notice the track, it's already too loud.",
+        "your music is too loud."
       ]
     }
   ]
