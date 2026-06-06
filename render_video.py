@@ -153,11 +153,15 @@ def video_stat(item, out, style="blackout", secs=9):
     hsprites = [_text_sprite(ln, hf, p["head"])[0] for ln in hlines]
     footer = _footer_sprite(p)
     cnt_s, cnt_d = 0.4, 1.6  # count-up window
+    head_h = len(hlines) * 84
+    block = 56 + 40 + nf.size + 24 + head_h
+    top = (VH - block) // 2          # vertically center kicker + number + headline
+    ky = top; numy = top + 96; heady = numy + nf.size + 24
 
     def frame(i):
         t = i / FPS; fr = bg.copy()
         fr.alpha_composite(glow, (0, int(36 * np.sin(t * 0.8))))
-        fr.alpha_composite(_alpha(kick, ease((t - 0.1) / 0.5)), (M, 250))
+        fr.alpha_composite(_alpha(kick, ease((t - 0.1) / 0.5)), (M, ky))
         # counting number
         if target is not None:
             pr = ease((t - cnt_s) / cnt_d)
@@ -170,9 +174,9 @@ def video_stat(item, out, style="blackout", secs=9):
         d2 = ImageDraw.Draw(spr)  # already drawn centered; redo left
         spr2 = Image.new("RGBA", (VW, nf.getmetrics()[0] + nf.getmetrics()[1] + 20), (0, 0, 0, 0))
         ImageDraw.Draw(spr2).text((M - 8, 0), disp, font=nf, fill=ORANGE)
-        fr.alpha_composite(spr2, (0, 470))
+        fr.alpha_composite(spr2, (0, numy))
         # headline reveal after count
-        y = 470 + int(nf.size * 1.0)
+        y = heady
         for k, hs in enumerate(hsprites):
             pr = ease((t - (cnt_s + cnt_d + 0.1 + k * 0.3)) / 0.5)
             if pr > 0:
@@ -204,7 +208,10 @@ def video_quote(item, out, style="navyorange", secs=10):
     attr = Image.new("RGBA", (VW, 70), (0, 0, 0, 0))
     ImageDraw.Draw(attr).text((M, 0), "— Joseph Borroto", font=af, fill=ORANGE)
     footer = _footer_sprite(p)
-    y0 = 540; n = len(sprites)
+    n = len(sprites)
+    text_h = n * lh
+    y0 = (VH - text_h - 120) // 2 + 30       # vertically center quote + attribution
+    qy = max(120, y0 - 240)
     ls, ld, stag = 0.7, 0.5, 0.4
     last = ls + (n - 1) * stag + ld
 
@@ -215,7 +222,7 @@ def video_quote(item, out, style="navyorange", secs=10):
         if qa > 0:
             qs = Image.new("RGBA", (VW, 320), (0, 0, 0, 0))
             ImageDraw.Draw(qs).text((M - 12, 0), '"', font=qf, fill=ORANGE)
-            fr.alpha_composite(_alpha(qs, qa), (0, 180))
+            fr.alpha_composite(_alpha(qs, qa), (0, qy))
         for k, spr in enumerate(sprites):
             pr = ease((t - (ls + k * stag)) / ld)
             if pr > 0:
@@ -236,7 +243,10 @@ def video_checklist(item, out, style="dark", secs=12):
     itf = f_sys(46, bold=True)
     bullets = item.get("bullets", [])[:5]
     footer = _footer_sprite(p)
-    ty = 260 + len(title_lines) * 78
+    title_h = len(title_lines) * 78
+    rows_h = len(bullets) * 130
+    top = (VH - (title_h + 50 + rows_h)) // 2     # vertically center the whole block
+    rows_top = top + title_h + 50
 
     def frame(i):
         t = i / FPS; fr = bg.copy()
@@ -244,8 +254,8 @@ def video_checklist(item, out, style="dark", secs=12):
         for k, ts in enumerate(title_sprites):
             pr = ease((t - (0.3 + k * 0.2)) / 0.5)
             if pr > 0:
-                fr.alpha_composite(_alpha(ts, pr), (0, 230 + k * 78 + int((1 - pr) * 26)))
-        y = ty
+                fr.alpha_composite(_alpha(ts, pr), (0, top + k * 78 + int((1 - pr) * 26)))
+        y = rows_top
         for bi, b in enumerate(bullets):
             st = 1.0 + bi * 0.9
             pr = ease((t - st) / 0.5)
@@ -277,12 +287,7 @@ def _scene_card(scene, p):
     """One full-frame scene for a carousel-style Reel (returns RGBA)."""
     img = _bg(p); img.alpha_composite(_glow(p)); d = ImageDraw.Draw(img)
     if scene.get("kicker"):
-        img.alpha_composite(_kicker_sprite(scene["kicker"], p), (M, 250))
-    if scene.get("n"):
-        d.text((M - 6, 350), str(scene["n"]), font=f_brand(150), fill=ORANGE)
-        hy = 560
-    else:
-        hy = 400
+        img.alpha_composite(_kicker_sprite(scene["kicker"], p), (M, 230))
     # headline (auto-fit)
     size = scene.get("hsize", 92)
     while size > 50:
@@ -290,15 +295,20 @@ def _scene_card(scene, p):
         if len(hl) <= 4:
             break
         size -= 6
-    hf = f_brand(size); lh = int(size * 1.05); y = hy
+    hf = f_brand(size); lh = int(size * 1.05)
+    body_lines = wrap(d, scene["body"], f_sys(46), VW - 2 * M) if scene.get("body") else []
+    num_h = 170 if scene.get("n") else 0
+    block = num_h + len(hl) * lh + 66 + len(body_lines) * 58
+    y = (VH - block) // 2            # vertically center number + headline + body
+    if scene.get("n"):
+        d.text((M - 6, y), str(scene["n"]), font=f_brand(150), fill=ORANGE); y += num_h
     for ln in hl:
         d.text((M, y), ln, font=hf, fill=p["head"]); y += lh
     y += 16
     d.rounded_rectangle((M, y, M + 200, y + 10), 5, fill=ORANGE); y += 50
-    if scene.get("body"):
-        bf = f_sys(46)
-        for ln in wrap(d, scene["body"], bf, VW - 2 * M):
-            d.text((M, y), ln, font=bf, fill=p["sub"]); y += 58
+    bf = f_sys(46)
+    for ln in body_lines:
+        d.text((M, y), ln, font=bf, fill=p["sub"]); y += 58
     if scene.get("swipe"):
         sf = f_brand(34); d.text((M, VH - 250), "SWIPE", font=sf, fill=ORANGE)
         sw = d.textlength("SWIPE", font=sf)
