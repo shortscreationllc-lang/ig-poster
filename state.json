@@ -1,7 +1,7 @@
 {
   "single_index": 22,
-  "carousel_index": 11,
-  "seq": 42,
+  "carousel_index": 1,
+  "seq": 43,
   "daily": {
     "20260602": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 22,
-  "pm_style_i": 20,
+  "pm_style_i": 21,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -214,6 +214,13 @@
       "type": "reel",
       "slot": "video",
       "post_id": "18091880687199318"
+    },
+    {
+      "at": "20260606T203820Z",
+      "id": "carousel-00021",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18105586957989929"
     }
   ],
   "story_hook_i": 1,
@@ -321,18 +328,6 @@
     }
   ],
   "recent_texts": [
-    "they're quietly costing you views.",
-    "1. 4k at 60fps",
-    "1.5 seconds, memorized. never improvise the first line.",
-    "2. mic test and playback",
-    "3. hook pre-written",
-    "4. scout your spots",
-    "5. batteries and storage",
-    "6. backup device",
-    "7 things to check before every shoot.",
-    "7. frame for the title",
-    "leave headroom so the overlay never covers your face.",
-    "number 4 is the one everyone skips.",
     "one failure shouldn't cancel the whole shoot.",
     "record 5 seconds and listen back. don't trust the meter alone.",
     "switch location every line. this is the one people skip.",
@@ -400,7 +395,19 @@
     "too many ideas",
     "weak first second",
     "same day, ten different days.",
-    "small filming choices make batch content feel fresh."
+    "small filming choices make batch content feel fresh.",
+    "1. open on motion",
+    "2. patch second 4",
+    "3. cut the dead air",
+    "4. switch the frame",
+    "5 ways to fix your retention curve.",
+    "5. pay off the hook",
+    "a static first frame loses people before you speak.",
+    "deliver what you promised before they lose patience.",
+    "drop a number or contradiction right where attention dips.",
+    "new angle or location keeps the eye from settling.",
+    "remove the breath before every sentence. pace is retention.",
+    "where people drop, and why."
   ],
   "reel_i": 15,
   "reel_cap_i": 14,
