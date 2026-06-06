@@ -169,17 +169,12 @@ jobs:
               fi
             fi
 
-            # ---- STORY (live windows only) ----
+            # ---- STORY: reshare the SAME reel we just posted (consistent with the feed) ----
             if [ "$STORY" = "1" ] && [ "${DRY:-no}" != "yes" ]; then
-              # short human stagger so the story doesn't fire the same second
-              sleep $(( (RANDOM % 180) + 120 ))
-              SLOT_KIND="$KIND" python post_stories.py --render-only
-              git add queue/ state.json
-              git commit -q -m "render stories $KIND $(date -u +%FT%TZ)" || true
-              gp
-              SLOT_KIND="$KIND" python post_stories.py --publish-only || echo "stories failed (non-fatal)"
+              sleep $(( (RANDOM % 120) + 60 ))   # small stagger after the feed post
+              python post_reel.py --publish-story || echo "story reshare failed (non-fatal)"
               git add state.json
-              git commit -q -m "stories posted $KIND $(date -u +%FT%TZ)" || true
+              git commit -q -m "story reshare $KIND $(date -u +%FT%TZ)" || true
               gp
             fi
 

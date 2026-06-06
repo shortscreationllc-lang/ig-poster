@@ -221,14 +221,57 @@ def publish():
     return 0
 
 
+def publish_reel_as_story(user_id, token, video_url):
+    created = graph_post(f"{user_id}/media", {
+        "media_type": "STORIES", "video_url": video_url, "access_token": token})
+    cid = created.get("id")
+    if not cid:
+        raise RuntimeError(f"story container failed: {json.dumps(created)}")
+    st = wait_ready(cid, token, timeout=600)
+    if st.get("status_code") not in {"FINISHED", None}:
+        raise RuntimeError(f"story not ready: {json.dumps(st)}")
+    return graph_post(f"{user_id}/media_publish", {"creation_id": cid, "access_token": token})
+
+
+def publish_story():
+    """Reshare the SAME thing we just posted to the feed, as the story — so the
+    story always matches the day's post (consistent, not different content)."""
+    load_env_file()
+    user_id = os.getenv("IG_USER_ID", "").strip()
+    token = os.getenv("IG_ACCESS_TOKEN", "").strip()
+    if not user_id or not token:
+        print("ERROR: IG creds not set", file=sys.stderr); return 2
+    if not PENDING.exists():
+        print("No pending reel to reshare as story — skipping."); return 0
+    base = _public_base()
+    pend = json.loads(PENDING.read_text())
+    url = f"{base}/{urllib.parse.quote(pend['rel'])}"
+    print(f"Resharing the day's reel to the story (same content): {url}")
+    _wait_raw(url)
+    try:
+        pub = publish_reel_as_story(user_id, token, url)
+    except Exception as e:
+        print(f"STORY RESHARE FAILED: {e}", file=sys.stderr); return 1
+    print("Story posted:", json.dumps(pub))
+    st = read_state()
+    st.setdefault("story_history", []).append({
+        "at": time.strftime("%Y%m%dT%H%M%SZ", time.gmtime()),
+        "reshare_of": pend["rel"], "posted": [{"id": pub.get("id")}]})
+    write_state(st)
+    return 0
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--render", action="store_true")
     ap.add_argument("--publish", action="store_true")
-    ap.add_argument("--kind", default=os.getenv("KIND", "stat"))
+    ap.add_argument("--publish-story", dest="publish_story", action="store_true")
+    ap.add_argument("--kind", default=os.getenv("KIND", "auto"))
     a = ap.parse_args()
     if a.render:
         render(a.kind); sys.exit(0)
     if a.publish:
         sys.exit(publish())
-    print("specify --render or --publish", file=sys.stderr); sys.exit(2)
+    if a.publish_story:
+        sys.exit(publish_story())
+    print("specify --render | --publish | --publish-story", file=sys.stderr); sys.exit(2)
