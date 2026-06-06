@@ -307,20 +307,21 @@ def draw_value(item, out_path, style="dark"):
     img, d, p = _new_img(style)
     _kicker(d, item.get("kicker", "VALUE"), p)
     f, lines, lh = _fit_lines(d, item["headline"], W - 2 * M, 360, 88, 48)
-    y = 250
+    bf = f_sys(42)
+    bullets = item.get("bullets", [])[:5]
+    rows = [wrap(d, b, bf, W - (M + 44) - M) for b in bullets]
+    total = len(lines) * lh + 24 + 9 + 60 + sum(len(wl) * 52 + 22 for wl in rows)
+    y = max(260, (H - total) // 2)        # vertically center the block (below the kicker)
     for ln in lines:
         d.text((M, y), ln, font=f, fill=p["head"]); y += lh
     y += 24
     d.rounded_rectangle((M, y, M + 230, y + 9), radius=4, fill=ORANGE)
     y += 60
-    bf = f_sys(42)
-    bullets = item.get("bullets", [])[:5]
-    for b in bullets:
+    for wl in rows:
         # orange dot + wrapped text
         d.ellipse((M, y + 16, M + 16, y + 32), fill=ORANGE)
         bx = M + 44
-        wrapped = wrap(d, b, bf, W - bx - M)
-        for j, ln in enumerate(wrapped):
+        for j, ln in enumerate(wl):
             d.text((bx, y), ln, font=bf, fill=p["head"] if j == 0 else p["sub"]); y += 52
         y += 22
     if item.get("footer_note"):
@@ -381,21 +382,21 @@ def draw_checklist(item, out_path, style="dark"):
     img, d, p = _new_img(style)
     _kicker(d, item.get("kicker", "CHECKLIST"), p)
     f, lines, lh = _fit_lines(d, item["headline"], W - 2 * M, 320, 84, 48)
-    y = 250
+    bf = f_sys(42)
+    rows = [wrap(d, b, bf, W - (M + 64) - M) for b in item.get("bullets", [])[:6]]
+    total = len(lines) * lh + 24 + 9 + 56 + sum(len(wl) * 50 + 22 for wl in rows)
+    y = max(260, (H - total) // 2)        # vertically center the block (below the kicker)
     for ln in lines:
         d.text((M, y), ln, font=f, fill=p["head"]); y += lh
     y += 24
     d.rounded_rectangle((M, y, M + 230, y + 9), radius=4, fill=ORANGE)
     y += 56
-    bf = f_sys(42)
-    for b in item.get("bullets", [])[:6]:
-        # orange rounded check box with a checkmark
-        box = (M, y + 4, M + 40, y + 44)
-        d.rounded_rectangle(box, radius=8, fill=ORANGE)
+    for wl in rows:
+        d.rounded_rectangle((M, y + 4, M + 40, y + 44), radius=8, fill=ORANGE)
         d.line([(M + 9, y + 24), (M + 18, y + 34)], fill=(20, 14, 6), width=5)
         d.line([(M + 18, y + 34), (M + 33, y + 13)], fill=(20, 14, 6), width=5)
         bx = M + 64
-        for j, ln in enumerate(wrap(d, b, bf, W - bx - M)):
+        for j, ln in enumerate(wl):
             d.text((bx, y), ln, font=bf, fill=p["head"] if j == 0 else p["sub"]); y += 50
         y += 22
     _footer(d, p)
