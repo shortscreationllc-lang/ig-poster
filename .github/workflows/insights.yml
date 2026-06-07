@@ -1,11 +1,15 @@
 name: Instagram Insights
 
-# Pulls per-post performance (reach, views, watch time, saves, shares) and writes
-# insights_report.md + insights.json. Manual + weekly. Runs on GitHub (token + net).
+# Pulls per-post performance (reach, views, watch time, saves, shares) for the
+# bot's posts AND your organic posts, rebuilds weights.json (the learning loop),
+# and writes insights_report.md + insights.json. Runs on GitHub (token + net).
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 14 * * 1"   # weekly, Mondays ~10am ET (best-effort)
+    # DAILY — fresh numbers every morning so the weights keep sharpening.
+    # GitHub cron is best-effort; fire twice to beat slipped/dropped runs.
+    - cron: "0 13 * * *"   # ~9a ET — after the prior day's posts have matured
+    - cron: "30 13 * * *"  # backup ~9:30a ET
 
 permissions:
   contents: write
@@ -31,6 +35,6 @@ jobs:
           git config user.name "ig-poster-bot"
           git config user.email "actions@github.com"
           python insights.py
-          git add insights_report.md insights.json || true
+          git add insights_report.md insights.json weights.json || true
           git commit -q -m "insights $(date -u +%FT%TZ)" || true
           for i in 1 2 3 4; do git push origin HEAD:main && break || { git pull --rebase origin main; sleep $((i*2)); }; done

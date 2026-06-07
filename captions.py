@@ -37,9 +37,12 @@ FOLLOW_CTAS = [
 ]
 
 
-def caption_for(hook, idx, value=""):
+def caption_for(hook, idx, value="", style=None):
     """Build a caption. `hook` = keyword-rich first line (always SEO-leading).
-    `idx` rotates the style (pass a per-post counter). `value` = optional 2nd line.
+    `idx` rotates the wording (pass a per-post counter). `value` = optional 2nd
+    line. `style` (0-5) forces a specific caption shape — when the weighting loop
+    has learned which CTA shape earns the most saves/sends, it pins that one;
+    leave None to rotate by `idx`.
     """
     tags = TAG_SETS[idx % len(TAG_SETS)]
     q = QUESTIONS[idx % len(QUESTIONS)]
@@ -47,7 +50,7 @@ def caption_for(hook, idx, value=""):
     save = SAVE_CTAS[idx % len(SAVE_CTAS)]
     follow = FOLLOW_CTAS[idx % len(FOLLOW_CTAS)]
     body = f"{hook}\n\n{value}".strip()
-    style = idx % 6
+    style = (idx % 6) if style is None else (style % 6)
     if style == 0:   # hook + value + SAVE CTA + 4 tags (drives saves)
         return f"{body}\n\n{save}\n\n{tags}"
     if style == 1:   # pure SEO caption — no hashtags, no CTA
