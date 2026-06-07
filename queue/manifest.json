@@ -391,12 +391,14 @@
       ],
       "caption": "Same video. Two openings. Completely different results.\n\nThe weak hook explains. The strong hook accuses, intrigues, and creates tension. People can't scroll past a problem that sounds like theirs.\n\nRewrite your next first line.\n\nFollow @josephborroto for hook breakdowns.\n\n#hookwriting #shortformvideo #copywriting #reelstips #contentcreator #josephborroto",
       "alt": "This vs that card comparing a weak hook and a strong hook.",
-      "posted": false,
+      "posted": true,
       "source_index": 8,
       "fp": [
         "in this video i'm going to show you how to edit.",
         "your edits are boring people in the first 3 seconds."
-      ]
+      ],
+      "posted_at": "20260607T140244Z",
+      "post_id": "18078477206647466"
     },
     {
       "id": "single-00010",
@@ -999,6 +1001,22 @@
         "new angle or location keeps the eye from settling.",
         "remove the breath before every sentence. pace is retention.",
         "where people drop, and why."
+      ]
+    },
+    {
+      "id": "single-00044",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00044.jpg"
+      ],
+      "caption": "\"If it doesn't sell, it isn't creative.\" \u2014 David Ogilvy\n\nPretty edits and clever ideas mean nothing if they don't move someone to act. Creativity in marketing has a job: results.\n\nMake content that's beautiful AND that works.\n\nFollow @josephborroto for the difference between art and marketing.\n\n#davidogilvy #marketing #creativity #advertising #contentstrategy #josephborroto",
+      "alt": "Quote card with David Ogilvy quote: if it doesn't sell, it isn't creative.",
+      "posted": false,
+      "source_index": 22,
+      "fp": [
+        "if it doesn't sell, it isn't creative.",
+        "\u2014 david ogilvy"
       ]
     }
   ]

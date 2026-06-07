@@ -1,7 +1,7 @@
 {
-  "single_index": 22,
-  "carousel_index": 3,
-  "seq": 43,
+  "single_index": 23,
+  "carousel_index": 5,
+  "seq": 44,
   "daily": {
     "20260603": {
       "morning": true,
@@ -35,7 +35,7 @@
       "morning": true
     }
   },
-  "am_style_i": 22,
+  "am_style_i": 23,
   "pm_style_i": 21,
   "history": [
     {
@@ -233,6 +233,13 @@
       "type": "reel",
       "slot": "video",
       "post_id": "18089688149346713"
+    },
+    {
+      "at": "20260607T140244Z",
+      "id": "single-00009",
+      "slot": "am",
+      "type": "versus",
+      "post_id": "18078477206647466"
     }
   ],
   "story_hook_i": 1,
@@ -349,8 +356,6 @@
     }
   ],
   "recent_texts": [
-    "one failure shouldn't cancel the whole shoot.",
-    "record 5 seconds and listen back. don't trust the meter alone.",
     "switch location every line. this is the one people skip.",
     "the only camera setting that really matters. set it once.",
     "two of everything. a dead battery ends the day.",
@@ -428,7 +433,9 @@
     "drop a number or contradiction right where attention dips.",
     "new angle or location keeps the eye from settling.",
     "remove the breath before every sentence. pace is retention.",
-    "where people drop, and why."
+    "where people drop, and why.",
+    "in this video i'm going to show you how to edit.",
+    "your edits are boring people in the first 3 seconds."
   ],
   "reel_i": 17,
   "reel_cap_i": 16,
