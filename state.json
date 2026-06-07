@@ -1,7 +1,7 @@
 {
   "single_index": 23,
-  "carousel_index": 9,
-  "seq": 45,
+  "carousel_index": 11,
+  "seq": 46,
   "daily": {
     "20260603": {
       "morning": true,
@@ -37,7 +37,7 @@
     }
   },
   "am_style_i": 23,
-  "pm_style_i": 22,
+  "pm_style_i": 23,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -241,6 +241,19 @@
       "slot": "am",
       "type": "versus",
       "post_id": "18078477206647466"
+    },
+    {
+      "at": "20260607T215341Z",
+      "id": "carousel-00023",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18154965025482132",
+      "tags": {
+        "fmt": "carousel",
+        "style": null,
+        "pillar": "editing",
+        "source_index": 8
+      }
     }
   ],
   "story_hook_i": 1,
@@ -357,18 +370,6 @@
     }
   ],
   "recent_texts": [
-    "switch location every line. this is the one people skip.",
-    "the only camera setting that really matters. set it once.",
-    "two of everything. a dead battery ends the day.",
-    "answer it in 30 seconds, on camera",
-    "film this today:",
-    "no script \u2014 just the question and your honest answer",
-    "the #1 question your customers always ask",
-    "reels bring new people in. posts and stories keep them.",
-    "you need both halves.",
-    "1. too small",
-    "2. off the beat",
-    "3. buried at the bottom",
     "4. wrong font",
     "5 caption mistakes killing your retention.",
     "5. paced too slow",
@@ -436,7 +437,19 @@
     "remove the breath before every sentence. pace is retention.",
     "where people drop, and why.",
     "in this video i'm going to show you how to edit.",
-    "your edits are boring people in the first 3 seconds."
+    "your edits are boring people in the first 3 seconds.",
+    "1. film nouns, not verbs",
+    "2. get uncomfortably close",
+    "3. move the camera",
+    "4. match the light",
+    "5 rules for b-roll that isn't boring.",
+    "5. overshoot",
+    "a slow push or pan adds life a locked shot can't.",
+    "capture 3x what you need. you'll thank yourself in the edit.",
+    "consistent lighting makes cuts feel seamless.",
+    "detail reads as intentional. distance reads as filler.",
+    "most people film the wrong thing.",
+    "the object close-up beats the wide action shot."
   ],
   "reel_i": 17,
   "reel_cap_i": 16,
