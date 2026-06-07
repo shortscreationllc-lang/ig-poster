@@ -401,6 +401,39 @@
       "post_id": "18078477206647466"
     },
     {
+      "id": "carousel-00022",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00022-0.jpg",
+        "queue/carousel-00022-1.jpg",
+        "queue/carousel-00022-2.jpg",
+        "queue/carousel-00022-3.jpg",
+        "queue/carousel-00022-4.jpg",
+        "queue/carousel-00022-5.jpg",
+        "queue/carousel-00022-6.jpg"
+      ],
+      "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
+      "alt": "Carousel: 5 algorithm myths to stop believing.",
+      "posted": true,
+      "source_index": 7,
+      "fp": [
+        "1. \"hashtags are dead",
+        "2. \"post at the perfect time",
+        "3. \"you need to go viral",
+        "4. \"more posting always wins",
+        "5 algorithm myths to stop believing.",
+        "5. \"the algorithm hates links",
+        "consistent reach beats one spike that fades in a week.",
+        "good content travels for days. timing is a rounding error.",
+        "it rewards watch time. make something worth finishing.",
+        "quality and retention beat raw volume every time.",
+        "these are costing you reach.",
+        "they still help categorize. they're just not the whole game."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00010",
       "slot": "am",
       "type": "single",
@@ -483,38 +516,6 @@
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
-      "id": "carousel-00022",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00022-0.jpg",
-        "queue/carousel-00022-1.jpg",
-        "queue/carousel-00022-2.jpg",
-        "queue/carousel-00022-3.jpg",
-        "queue/carousel-00022-4.jpg",
-        "queue/carousel-00022-5.jpg",
-        "queue/carousel-00022-6.jpg"
-      ],
-      "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
-      "alt": "Carousel: 5 algorithm myths to stop believing.",
-      "posted": false,
-      "source_index": 7,
-      "fp": [
-        "1. \"hashtags are dead",
-        "2. \"post at the perfect time",
-        "3. \"you need to go viral",
-        "4. \"more posting always wins",
-        "5 algorithm myths to stop believing.",
-        "5. \"the algorithm hates links",
-        "consistent reach beats one spike that fades in a week.",
-        "good content travels for days. timing is a rounding error.",
-        "it rewards watch time. make something worth finishing.",
-        "quality and retention beat raw volume every time.",
-        "these are costing you reach.",
-        "they still help categorize. they're just not the whole game."
       ]
     },
     {
@@ -1017,6 +1018,39 @@
       "fp": [
         "if it doesn't sell, it isn't creative.",
         "\u2014 david ogilvy"
+      ]
+    },
+    {
+      "id": "carousel-00045",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00045-0.jpg",
+        "queue/carousel-00045-1.jpg",
+        "queue/carousel-00045-2.jpg",
+        "queue/carousel-00045-3.jpg",
+        "queue/carousel-00045-4.jpg",
+        "queue/carousel-00045-5.jpg",
+        "queue/carousel-00045-6.jpg"
+      ],
+      "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
+      "alt": "Carousel: 5 algorithm myths to stop believing.",
+      "posted": false,
+      "source_index": 7,
+      "style": "light",
+      "fp": [
+        "1. \"hashtags are dead",
+        "2. \"post at the perfect time",
+        "3. \"you need to go viral",
+        "4. \"more posting always wins",
+        "5 algorithm myths to stop believing.",
+        "5. \"the algorithm hates links",
+        "consistent reach beats one spike that fades in a week.",
+        "good content travels for days. timing is a rounding error.",
+        "it rewards watch time. make something worth finishing.",
+        "quality and retention beat raw volume every time.",
+        "these are costing you reach.",
+        "they still help categorize. they're just not the whole game."
       ]
     }
   ]
