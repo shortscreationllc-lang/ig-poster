@@ -75,7 +75,7 @@ def build_weights(rows, history):
     scored = []
     for r in rows:
         tags = tagmap.get(r.get("post_id"))
-        if tags is None:           # organic / untagged — not used for learning
+        if not tags:               # organic OR posted before tagging existed — skip
             continue
         s = score_post(r)
         if s is None:
