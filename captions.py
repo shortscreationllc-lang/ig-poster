@@ -23,7 +23,12 @@ QUESTIONS = [
 SEND_CTAS = [
     "Send this to a creator who needs it.",
     "Share this with someone posting this week.",
-    "Save this for your next edit.",
+    "Send this to someone whose videos flop.",
+]
+SAVE_CTAS = [
+    "Save this for your next post.",
+    "Save this so you don't forget it.",
+    "Bookmark this for your next video.",
 ]
 FOLLOW_CTAS = [
     f"Follow {HANDLE} for more short-form tips.",
@@ -39,11 +44,12 @@ def caption_for(hook, idx, value=""):
     tags = TAG_SETS[idx % len(TAG_SETS)]
     q = QUESTIONS[idx % len(QUESTIONS)]
     send = SEND_CTAS[idx % len(SEND_CTAS)]
+    save = SAVE_CTAS[idx % len(SAVE_CTAS)]
     follow = FOLLOW_CTAS[idx % len(FOLLOW_CTAS)]
     body = f"{hook}\n\n{value}".strip()
     style = idx % 6
-    if style == 0:   # hook + value + follow CTA + 4 tags
-        return f"{body}\n\n{follow}\n\n{tags}"
+    if style == 0:   # hook + value + SAVE CTA + 4 tags (drives saves)
+        return f"{body}\n\n{save}\n\n{tags}"
     if style == 1:   # pure SEO caption — no hashtags, no CTA
         return body
     if style == 2:   # one sentence only (the hook)

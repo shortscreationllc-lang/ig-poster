@@ -108,7 +108,7 @@ def _kicker_sprite(text, p):
 
 
 # ----------------------------------------------------------------------------- layouts
-def video_statement(item, out, style="blackout", secs=8):
+def video_statement(item, out, style="blackout", secs=6):
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     tmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
     size = 150
@@ -121,7 +121,7 @@ def video_statement(item, out, style="blackout", secs=8):
     sprites = [_text_sprite(ln, f, p["head"])[0] for ln in lines]
     n = len(sprites); block_h = n * lh; y0 = (VH - block_h) // 2 - 40
     footer = _footer_sprite(p); ul = Image.new("RGBA", (240, 14), ORANGE + (255,))
-    ls, ld, stag = 0.5, 0.6, 0.55
+    ls, ld, stag = 0.2, 0.4, 0.3
     last = ls + (n - 1) * stag + ld; uls = last + 0.1
 
     def frame(i):
@@ -140,7 +140,7 @@ def video_statement(item, out, style="blackout", secs=8):
     return _encode(frame, int(secs * FPS), out)
 
 
-def video_stat(item, out, style="blackout", secs=9):
+def video_stat(item, out, style="blackout", secs=7):
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     m = re.match(r"\s*(\d+(?:\.\d+)?)(.*)", str(item["stat"]))
     target = float(m.group(1)) if m else None
@@ -152,7 +152,7 @@ def video_stat(item, out, style="blackout", secs=9):
     hlines = wrap(htmp, item["headline"], hf, VW - 2 * M)
     hsprites = [_text_sprite(ln, hf, p["head"])[0] for ln in hlines]
     footer = _footer_sprite(p)
-    cnt_s, cnt_d = 0.4, 1.6  # count-up window
+    cnt_s, cnt_d = 0.3, 1.0  # count-up window (faster)
     head_h = len(hlines) * 84
     block = 56 + 40 + nf.size + 24 + head_h
     top = (VH - block) // 2          # vertically center kicker + number + headline
@@ -188,7 +188,7 @@ def video_stat(item, out, style="blackout", secs=9):
     return _encode(frame, int(secs * FPS), out)
 
 
-def video_quote(item, out, style="navyorange", secs=10):
+def video_quote(item, out, style="navyorange", secs=7):
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     qf = f_brand(240)
     tf_size = 92; htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
@@ -212,7 +212,7 @@ def video_quote(item, out, style="navyorange", secs=10):
     text_h = n * lh
     y0 = (VH - text_h - 120) // 2 + 30       # vertically center quote + attribution
     qy = max(120, y0 - 240)
-    ls, ld, stag = 0.7, 0.5, 0.4
+    ls, ld, stag = 0.3, 0.4, 0.3
     last = ls + (n - 1) * stag + ld
 
     def frame(i):
@@ -235,7 +235,7 @@ def video_quote(item, out, style="navyorange", secs=10):
     return _encode(frame, int(secs * FPS), out)
 
 
-def video_checklist(item, out, style="dark", secs=12):
+def video_checklist(item, out, style="dark", secs=9):
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     tf = f_brand(64); htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
     title_lines = wrap(htmp, item["headline"], tf, VW - 2 * M)
@@ -252,12 +252,12 @@ def video_checklist(item, out, style="dark", secs=12):
         t = i / FPS; fr = bg.copy()
         fr.alpha_composite(glow, (0, int(36 * np.sin(t * 0.8))))
         for k, ts in enumerate(title_sprites):
-            pr = ease((t - (0.3 + k * 0.2)) / 0.5)
+            pr = ease((t - (0.15 + k * 0.15)) / 0.4)
             if pr > 0:
                 fr.alpha_composite(_alpha(ts, pr), (0, top + k * 78 + int((1 - pr) * 26)))
         y = rows_top
         for bi, b in enumerate(bullets):
-            st = 1.0 + bi * 0.9
+            st = 0.4 + bi * 0.55
             pr = ease((t - st) / 0.5)
             if pr <= 0:
                 y += 130; continue
@@ -318,7 +318,7 @@ def _scene_card(scene, p):
     return img
 
 
-def video_sequence(scenes, out, style="dark", hold=2.1, trans=0.5):
+def video_sequence(scenes, out, style="dark", hold=1.6, trans=0.45):
     """Carousel-style Reel: scenes swipe past horizontally (push transition),
     with dot indicators — 'feels like a carousel passing by'."""
     p = PALETTES.get(style, PALETTES["dark"])
