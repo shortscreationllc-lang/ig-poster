@@ -1,217 +1,417 @@
 [
-  {
-    "type": "quote",
-    "kicker": "ON CONTENT",
-    "headline": "Content is king, but consistency is the kingdom.",
-    "subheadline": "We automate both.",
-    "caption": "Content is king, but consistency is the kingdom.\n\nOne great video is a moment. A system that ships every day is a brand. The creators who win aren't the most talented — they're the most consistent.\n\nBuild the engine, then feed it.\n\nFollow @josephborroto for more on building a content machine.\n\n#contentstrategy #consistency #personalbrand #shortformvideo #contentcreator #josephborroto",
-    "alt_text": "Quote card: content is king, but consistency is the kingdom."
-  },
-  {
-    "type": "myth",
-    "kicker": "MYTH VS TRUTH",
-    "top_label": "MYTH",
-    "top": "You need to post at the perfect time of day.",
-    "bottom_label": "TRUTH",
-    "bottom": "Good content travels for days. Timing is a rounding error.",
-    "caption": "Myth: there's a magic posting time.\nTruth: strong content gets pushed for days — the algorithm keeps testing it long after you post.\n\nStop obsessing over the clock. Obsess over the first 2 seconds.\n\nFollow @josephborroto for content myths, busted.\n\n#contentstrategy #socialmediatips #algorithm #shortformvideo #reelstips #josephborroto",
-    "alt_text": "Myth vs truth card about posting times."
-  },
-  {
-    "type": "versus",
-    "kicker": "THIS VS THAT",
-    "top_label": "WEAK HOOK",
-    "top": "\"In this video I'm going to show you how to edit.\"",
-    "bottom_label": "STRONG HOOK",
-    "bottom": "\"Your edits are boring people in the first 3 seconds.\"",
-    "caption": "Same video. Two openings. Completely different results.\n\nThe weak hook explains. The strong hook accuses, intrigues, and creates tension. People can't scroll past a problem that sounds like theirs.\n\nRewrite your next first line.\n\nFollow @josephborroto for hook breakdowns.\n\n#hookwriting #shortformvideo #copywriting #reelstips #contentcreator #josephborroto",
-    "alt_text": "This vs that card comparing a weak hook and a strong hook."
-  },
-  {
-    "type": "value",
-    "kicker": "VIDEO IDEAS",
-    "headline": "3 Reel ideas for local business owners.",
-    "bullets": [
-      "A day-in-the-life of running the business",
-      "The #1 question customers always ask, answered",
-      "A before/after of the work you do"
-    ],
-    "footer_note": "Save this for your next batch.",
-    "caption": "Stuck on what to film? Three Reel ideas any local business can shoot this week:\n\n1. A day-in-the-life behind the scenes\n2. The #1 question customers always ask — answered in 30 seconds\n3. A before/after of your work\n\nNone of these need a script. Just your phone and a clear first line.\n\nFollow @josephborroto for weekly content ideas.\n\n#contentideas #smallbusiness #reelstips #shortformvideo #localbusiness #josephborroto",
-    "alt_text": "Value card with 3 Reel ideas for local business owners."
-  },
-  {
-    "type": "value",
-    "kicker": "VIDEO IDEAS",
-    "headline": "3 Reel ideas for coaches & creators.",
-    "bullets": [
-      "Bust a common myth in your niche",
-      "Share the mistake you made starting out",
-      "Answer a DM question on camera"
-    ],
-    "footer_note": "Save this for your next batch.",
-    "caption": "Three Reel ideas for coaches and creators who feel out of ideas:\n\n1. Bust a myth your audience believes\n2. Share the mistake you made when you started\n3. Answer a real DM question on camera\n\nValue first, polish second.\n\nFollow @josephborroto for content ideas every week.\n\n#contentideas #coaches #creators #reelstips #shortformvideo #josephborroto",
-    "alt_text": "Value card with 3 Reel ideas for coaches and creators."
-  },
-  {
-    "type": "value",
-    "kicker": "BEHIND THE PROCESS",
-    "headline": "How we plan a month of content in one sitting.",
-    "bullets": [
-      "Start with 3 core topics, not 30",
-      "Turn each topic into 10 angles",
-      "Write only the hooks first",
-      "Batch-film, then batch-edit",
-      "Post the clearest one first"
-    ],
-    "footer_note": "This is the system, simplified.",
-    "caption": "How a month of content gets planned in one sitting:\n\n1. Pick 3 core topics (not 30)\n2. Turn each into 10 angles\n3. Write only the hooks first\n4. Batch-film, then batch-edit\n5. Post the clearest version first\n\nThe magic isn't motivation. It's the system.\n\nFollow @josephborroto for the behind-the-scenes of content at scale.\n\n#contentstrategy #batching #systems #shortformvideo #contentcreator #josephborroto",
-    "alt_text": "Value card on planning a month of content in one sitting."
-  },
-  {
-    "type": "myth",
-    "kicker": "MYTH VS TRUTH",
-    "top_label": "MYTH",
-    "top": "More posting always means more growth.",
-    "bottom_label": "TRUTH",
-    "bottom": "Retention beats volume. One great video outperforms ten rushed ones.",
-    "caption": "Myth: just post more and you'll grow.\nTruth: the algorithm rewards videos people finish — not how often you show up with weak content.\n\nQuality and retention beat raw volume every time.\n\nFollow @josephborroto for content myths, busted.\n\n#contentstrategy #algorithm #shortformvideo #reelstips #videoediting #josephborroto",
-    "alt_text": "Myth vs truth card about posting volume vs retention."
-  },
-  {
-    "type": "versus",
-    "kicker": "THIS VS THAT",
-    "top_label": "BORING B-ROLL",
-    "top": "A wide shot of someone doing the task.",
-    "bottom_label": "GREAT B-ROLL",
-    "bottom": "A tight, lit close-up of the single most interesting detail.",
-    "caption": "Your B-roll is boring because you film the action, not the detail.\n\nWide and busy = filler.\nClose, lit, and isolated = intentional.\n\nGet uncomfortably close to the most interesting thing in the frame.\n\nFollow @josephborroto for the small stuff that makes content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
-    "alt_text": "This vs that card comparing boring and great B-roll."
-  },
-  {
-    "type": "quote",
-    "kicker": "REAL TALK",
-    "headline": "Discipline ships content. Motivation just talks about it.",
-    "subheadline": "Build the habit, not the hype.",
-    "caption": "Motivation is a mood. It won't show up most days.\n\nThe people who grow built a system that runs whether they feel like it or not. Decide the schedule once, then stop negotiating with yourself.\n\nFollow @josephborroto for the boring habits that compound.\n\n#discipline #consistency #mindset #contentcreator #shortformvideo #josephborroto",
-    "alt_text": "Quote card: discipline ships content, motivation just talks about it."
-  },
-  {
-    "type": "value",
-    "kicker": "BEHIND THE PROCESS",
-    "headline": "What makes an edit feel 'fast' (it's not talking fast).",
-    "bullets": [
-      "Cut the breath before every sentence",
-      "Land captions on the beat, not after",
-      "Switch the frame every couple lines",
-      "Trim anything that isn't the point"
-    ],
-    "footer_note": "Pace is edited in, not talked in.",
-    "caption": "A video feels fast because of the edit, not because you talk fast.\n\n1. Cut the breath before each sentence\n2. Land captions on the beat\n3. Switch the frame every couple lines\n4. Trim anything that isn't the point\n\nPace is something you build in the timeline.\n\nFollow @josephborroto for editing that holds attention.\n\n#videoediting #editingtips #pacing #shortformvideo #reelstips #josephborroto",
-    "alt_text": "Value card on what makes an edit feel fast."
-  },
-  {
-    "type": "value",
-    "kicker": "STEAL THIS",
-    "headline": "The 3-part hook formula you can reuse forever.",
-    "bullets": [
-      "Call out exactly who it's for",
-      "Name the problem they feel",
-      "Promise the payoff in one line"
-    ],
-    "footer_note": "Works in any niche. Save it.",
-    "caption": "Steal this hook formula and reuse it forever:\n\n1. Call out who it's for — \"If you run a local business...\"\n2. Name the problem — \"...your Reels are getting ignored\"\n3. Promise the payoff — \"...here's the 1 fix\"\n\nThree lines. Endless variations. Save it.\n\nFollow @josephborroto for frameworks you can actually use.\n\n#hookwriting #copywriting #contentframework #shortformvideo #reelstips #josephborroto",
-    "alt_text": "Value card: the 3-part hook formula."
-  },
-  {
-    "type": "value",
-    "kicker": "VIDEO IDEAS",
-    "headline": "3 Reel ideas for real estate agents.",
-    "bullets": [
-      "A 30-second tour of the best feature in a listing",
-      "The #1 mistake buyers make (that costs them money)",
-      "What your commission actually pays for"
-    ],
-    "footer_note": "Save and film this week.",
-    "caption": "Three Reel ideas for real estate agents who never know what to post:\n\n1. A 30-second tour of one standout feature\n2. The #1 mistake buyers make\n3. What your commission actually covers\n\nEducation builds trust. Trust books appointments.\n\nFollow @josephborroto for content ideas every week.\n\n#realestate #realtor #contentideas #reelstips #shortformvideo #josephborroto",
-    "alt_text": "Value card with 3 Reel ideas for real estate agents."
-  },
-  {
-    "type": "myth",
-    "kicker": "MYTH VS TRUTH",
-    "top_label": "MYTH",
-    "top": "You need expensive gear to make good content.",
-    "bottom_label": "TRUTH",
-    "bottom": "A phone at 4K/60 and a good hook beats a cinema camera with nothing to say.",
-    "caption": "Myth: you need a fancy camera to grow.\nTruth: the phone in your pocket shoots 4K. What's actually missing is a strong hook and a reason to keep watching.\n\nGear is the excuse. The hook is the job.\n\nFollow @josephborroto for content truths.\n\n#contentcreation #videography #smartphonefilmmaking #reelstips #josephborroto",
-    "alt_text": "Myth vs truth card about needing expensive gear."
-  },
-  {
-    "type": "versus",
-    "kicker": "THIS VS THAT",
-    "top_label": "POSTING TO POST",
-    "top": "Filling a calendar with content nobody asked for.",
-    "bottom_label": "POSTING WITH PURPOSE",
-    "bottom": "One clear idea per post that solves a real problem your audience has.",
-    "caption": "Posting to post fills a calendar. Posting with purpose fills a pipeline.\n\nBefore you hit publish, ask: what does this actually do for the person watching? If you can't answer it, neither can they.\n\nValue first, always.\n\nFollow @josephborroto for content with a point.\n\n#contentstrategy #valuefirst #shortformvideo #marketingtips #josephborroto",
-    "alt_text": "This vs that card comparing posting to post vs posting with purpose."
-  },
-  {
-    "type": "value",
-    "kicker": "MISTAKE I MADE",
-    "headline": "I used to chase views. Then I started chasing saves.",
-    "bullets": [
-      "Views are vanity — they spike and vanish",
-      "Saves mean it was actually useful",
-      "Useful content is what converts to clients"
-    ],
-    "footer_note": "Make stuff worth saving.",
-    "caption": "I used to obsess over views. Big number, good feeling, nothing to show for it.\n\nThen I started making content people SAVE. Saves mean it was useful enough to come back to — and useful is what turns a viewer into a client.\n\nChase saves, not vanity.\n\nFollow @josephborroto for the lessons I learned the hard way.\n\n#contentstrategy #saves #shortformvideo #creatortips #josephborroto",
-    "alt_text": "Value card: chasing saves instead of views."
-  },
-  {
-    "type": "stat",
-    "kicker": "THE NUMBER",
-    "stat": "1.5s",
-    "headline": "That's all your hook gets.",
-    "subheadline": "Make the first line impossible to scroll past.",
-    "caption": "1.5 seconds. That's the window before someone decides to keep watching or swipe.\n\nMost people waste it on \"hey guys, in this video...\" By the time they get to the point, the viewer's gone.\n\nLead with the problem. Earn the next second.\n\nFollow @josephborroto for more on the first frame.\n\n#hookwriting #shortformvideo #retention #reelstips #josephborroto",
-    "alt_text": "Stat card: 1.5 seconds is all your hook gets."
-  },
-  {
-    "type": "stat",
-    "kicker": "THE NUMBER",
-    "stat": "3x",
-    "headline": "Statement hooks beat question hooks.",
-    "subheadline": "Tested across everything I edit.",
-    "caption": "Statement hooks outperform question hooks roughly 3 to 1.\n\nA question lets people decide they don't care. A bold statement makes them stop and react.\n\nStop asking. Start declaring.\n\nFollow @josephborroto for hook tactics that actually move numbers.\n\n#hookwriting #shortformvideo #contentstrategy #reelstips #josephborroto",
-    "alt_text": "Stat card: statement hooks beat question hooks 3 to 1."
-  },
-  {
-    "type": "checklist",
-    "kicker": "CHECKLIST",
-    "headline": "Before you hit post:",
-    "bullets": [
-      "Hook lands in the first 1.5 seconds",
-      "Captions are on the beat, not lagging",
-      "One clear idea, not three",
-      "There's a reason to follow at the end"
-    ],
-    "caption": "Run this checklist before every post:\n\n✓ Hook in the first 1.5 seconds\n✓ Captions on the beat\n✓ One clear idea\n✓ A reason to follow at the end\n\nFour boxes. Check them and your content instantly gets sharper.\n\nFollow @josephborroto for content that's built, not guessed.\n\n#contentchecklist #shortformvideo #reelstips #videoediting #josephborroto",
-    "alt_text": "Checklist card: before you hit post."
-  },
-  {
-    "type": "statement",
-    "kicker": "REMEMBER",
-    "headline": "Consistency beats talent every single time.",
-    "caption": "Consistency beats talent every single time.\n\nThe most talented person who posts twice a month loses to the average one who shows up daily. The algorithm — and the audience — reward who keeps showing up.\n\nTalent gets you noticed. Consistency builds the brand.\n\nFollow @josephborroto and let's both keep showing up.\n\n#consistency #contentstrategy #discipline #creatormindset #josephborroto",
-    "alt_text": "Statement card: consistency beats talent every single time."
-  },
-  {
-    "type": "statement",
-    "kicker": "REAL TALK",
-    "headline": "Boring content is the only content that fails.",
-    "caption": "Boring is the only real risk.\n\nYou can be controversial, simple, rough, or polished — but the moment you're forgettable, you're invisible. Make something people feel.\n\nSafe is the riskiest move there is.\n\nFollow @josephborroto for content that actually lands.\n\n#contentstrategy #shortformvideo #creatortips #marketing #josephborroto",
-    "alt_text": "Statement card: boring content is the only content that fails."
-  }
+ {
+  "type": "quote",
+  "kicker": "ON CONTENT",
+  "headline": "Content is king, but consistency is the kingdom.",
+  "subheadline": "We automate both.",
+  "caption": "Content is king, but consistency is the kingdom.\n\nOne great video is a moment. A system that ships every day is a brand. The creators who win aren't the most talented — they're the most consistent.\n\nBuild the engine, then feed it.\n\nFollow @josephborroto for more on building a content machine.\n\n#contentstrategy #consistency #personalbrand #shortformvideo #contentcreator #josephborroto",
+  "alt_text": "Quote card: content is king, but consistency is the kingdom."
+ },
+ {
+  "type": "myth",
+  "kicker": "MYTH VS TRUTH",
+  "top_label": "MYTH",
+  "top": "You need to post at the perfect time of day.",
+  "bottom_label": "TRUTH",
+  "bottom": "Good content travels for days. Timing is a rounding error.",
+  "caption": "Myth: there's a magic posting time.\nTruth: strong content gets pushed for days — the algorithm keeps testing it long after you post.\n\nStop obsessing over the clock. Obsess over the first 2 seconds.\n\nFollow @josephborroto for content myths, busted.\n\n#contentstrategy #socialmediatips #algorithm #shortformvideo #reelstips #josephborroto",
+  "alt_text": "Myth vs truth card about posting times."
+ },
+ {
+  "type": "versus",
+  "kicker": "THIS VS THAT",
+  "top_label": "WEAK HOOK",
+  "top": "\"In this video I'm going to show you how to edit.\"",
+  "bottom_label": "STRONG HOOK",
+  "bottom": "\"Your edits are boring people in the first 3 seconds.\"",
+  "caption": "Same video. Two openings. Completely different results.\n\nThe weak hook explains. The strong hook accuses, intrigues, and creates tension. People can't scroll past a problem that sounds like theirs.\n\nRewrite your next first line.\n\nFollow @josephborroto for hook breakdowns.\n\n#hookwriting #shortformvideo #copywriting #reelstips #contentcreator #josephborroto",
+  "alt_text": "This vs that card comparing a weak hook and a strong hook."
+ },
+ {
+  "type": "value",
+  "kicker": "VIDEO IDEAS",
+  "headline": "3 Reel ideas for local business owners.",
+  "bullets": [
+   "A day-in-the-life of running the business",
+   "The #1 question customers always ask, answered",
+   "A before/after of the work you do"
+  ],
+  "footer_note": "Save this for your next batch.",
+  "caption": "Stuck on what to film? Three Reel ideas any local business can shoot this week:\n\n1. A day-in-the-life behind the scenes\n2. The #1 question customers always ask — answered in 30 seconds\n3. A before/after of your work\n\nNone of these need a script. Just your phone and a clear first line.\n\nFollow @josephborroto for weekly content ideas.\n\n#contentideas #smallbusiness #reelstips #shortformvideo #localbusiness #josephborroto",
+  "alt_text": "Value card with 3 Reel ideas for local business owners."
+ },
+ {
+  "type": "value",
+  "kicker": "VIDEO IDEAS",
+  "headline": "3 Reel ideas for coaches & creators.",
+  "bullets": [
+   "Bust a common myth in your niche",
+   "Share the mistake you made starting out",
+   "Answer a DM question on camera"
+  ],
+  "footer_note": "Save this for your next batch.",
+  "caption": "Three Reel ideas for coaches and creators who feel out of ideas:\n\n1. Bust a myth your audience believes\n2. Share the mistake you made when you started\n3. Answer a real DM question on camera\n\nValue first, polish second.\n\nFollow @josephborroto for content ideas every week.\n\n#contentideas #coaches #creators #reelstips #shortformvideo #josephborroto",
+  "alt_text": "Value card with 3 Reel ideas for coaches and creators."
+ },
+ {
+  "type": "value",
+  "kicker": "BEHIND THE PROCESS",
+  "headline": "How we plan a month of content in one sitting.",
+  "bullets": [
+   "Start with 3 core topics, not 30",
+   "Turn each topic into 10 angles",
+   "Write only the hooks first",
+   "Batch-film, then batch-edit",
+   "Post the clearest one first"
+  ],
+  "footer_note": "This is the system, simplified.",
+  "caption": "How a month of content gets planned in one sitting:\n\n1. Pick 3 core topics (not 30)\n2. Turn each into 10 angles\n3. Write only the hooks first\n4. Batch-film, then batch-edit\n5. Post the clearest version first\n\nThe magic isn't motivation. It's the system.\n\nFollow @josephborroto for the behind-the-scenes of content at scale.\n\n#contentstrategy #batching #systems #shortformvideo #contentcreator #josephborroto",
+  "alt_text": "Value card on planning a month of content in one sitting."
+ },
+ {
+  "type": "myth",
+  "kicker": "MYTH VS TRUTH",
+  "top_label": "MYTH",
+  "top": "More posting always means more growth.",
+  "bottom_label": "TRUTH",
+  "bottom": "Retention beats volume. One great video outperforms ten rushed ones.",
+  "caption": "Myth: just post more and you'll grow.\nTruth: the algorithm rewards videos people finish — not how often you show up with weak content.\n\nQuality and retention beat raw volume every time.\n\nFollow @josephborroto for content myths, busted.\n\n#contentstrategy #algorithm #shortformvideo #reelstips #videoediting #josephborroto",
+  "alt_text": "Myth vs truth card about posting volume vs retention."
+ },
+ {
+  "type": "versus",
+  "kicker": "THIS VS THAT",
+  "top_label": "BORING B-ROLL",
+  "top": "A wide shot of someone doing the task.",
+  "bottom_label": "GREAT B-ROLL",
+  "bottom": "A tight, lit close-up of the single most interesting detail.",
+  "caption": "Your B-roll is boring because you film the action, not the detail.\n\nWide and busy = filler.\nClose, lit, and isolated = intentional.\n\nGet uncomfortably close to the most interesting thing in the frame.\n\nFollow @josephborroto for the small stuff that makes content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
+  "alt_text": "This vs that card comparing boring and great B-roll."
+ },
+ {
+  "type": "quote",
+  "kicker": "REAL TALK",
+  "headline": "Discipline ships content. Motivation just talks about it.",
+  "subheadline": "Build the habit, not the hype.",
+  "caption": "Motivation is a mood. It won't show up most days.\n\nThe people who grow built a system that runs whether they feel like it or not. Decide the schedule once, then stop negotiating with yourself.\n\nFollow @josephborroto for the boring habits that compound.\n\n#discipline #consistency #mindset #contentcreator #shortformvideo #josephborroto",
+  "alt_text": "Quote card: discipline ships content, motivation just talks about it."
+ },
+ {
+  "type": "value",
+  "kicker": "BEHIND THE PROCESS",
+  "headline": "What makes an edit feel 'fast' (it's not talking fast).",
+  "bullets": [
+   "Cut the breath before every sentence",
+   "Land captions on the beat, not after",
+   "Switch the frame every couple lines",
+   "Trim anything that isn't the point"
+  ],
+  "footer_note": "Pace is edited in, not talked in.",
+  "caption": "A video feels fast because of the edit, not because you talk fast.\n\n1. Cut the breath before each sentence\n2. Land captions on the beat\n3. Switch the frame every couple lines\n4. Trim anything that isn't the point\n\nPace is something you build in the timeline.\n\nFollow @josephborroto for editing that holds attention.\n\n#videoediting #editingtips #pacing #shortformvideo #reelstips #josephborroto",
+  "alt_text": "Value card on what makes an edit feel fast."
+ },
+ {
+  "type": "value",
+  "kicker": "STEAL THIS",
+  "headline": "The 3-part hook formula you can reuse forever.",
+  "bullets": [
+   "Call out exactly who it's for",
+   "Name the problem they feel",
+   "Promise the payoff in one line"
+  ],
+  "footer_note": "Works in any niche. Save it.",
+  "caption": "Steal this hook formula and reuse it forever:\n\n1. Call out who it's for — \"If you run a local business...\"\n2. Name the problem — \"...your Reels are getting ignored\"\n3. Promise the payoff — \"...here's the 1 fix\"\n\nThree lines. Endless variations. Save it.\n\nFollow @josephborroto for frameworks you can actually use.\n\n#hookwriting #copywriting #contentframework #shortformvideo #reelstips #josephborroto",
+  "alt_text": "Value card: the 3-part hook formula."
+ },
+ {
+  "type": "value",
+  "kicker": "VIDEO IDEAS",
+  "headline": "3 Reel ideas for real estate agents.",
+  "bullets": [
+   "A 30-second tour of the best feature in a listing",
+   "The #1 mistake buyers make (that costs them money)",
+   "What your commission actually pays for"
+  ],
+  "footer_note": "Save and film this week.",
+  "caption": "Three Reel ideas for real estate agents who never know what to post:\n\n1. A 30-second tour of one standout feature\n2. The #1 mistake buyers make\n3. What your commission actually covers\n\nEducation builds trust. Trust books appointments.\n\nFollow @josephborroto for content ideas every week.\n\n#realestate #realtor #contentideas #reelstips #shortformvideo #josephborroto",
+  "alt_text": "Value card with 3 Reel ideas for real estate agents."
+ },
+ {
+  "type": "myth",
+  "kicker": "MYTH VS TRUTH",
+  "top_label": "MYTH",
+  "top": "You need expensive gear to make good content.",
+  "bottom_label": "TRUTH",
+  "bottom": "A phone at 4K/60 and a good hook beats a cinema camera with nothing to say.",
+  "caption": "Myth: you need a fancy camera to grow.\nTruth: the phone in your pocket shoots 4K. What's actually missing is a strong hook and a reason to keep watching.\n\nGear is the excuse. The hook is the job.\n\nFollow @josephborroto for content truths.\n\n#contentcreation #videography #smartphonefilmmaking #reelstips #josephborroto",
+  "alt_text": "Myth vs truth card about needing expensive gear."
+ },
+ {
+  "type": "versus",
+  "kicker": "THIS VS THAT",
+  "top_label": "POSTING TO POST",
+  "top": "Filling a calendar with content nobody asked for.",
+  "bottom_label": "POSTING WITH PURPOSE",
+  "bottom": "One clear idea per post that solves a real problem your audience has.",
+  "caption": "Posting to post fills a calendar. Posting with purpose fills a pipeline.\n\nBefore you hit publish, ask: what does this actually do for the person watching? If you can't answer it, neither can they.\n\nValue first, always.\n\nFollow @josephborroto for content with a point.\n\n#contentstrategy #valuefirst #shortformvideo #marketingtips #josephborroto",
+  "alt_text": "This vs that card comparing posting to post vs posting with purpose."
+ },
+ {
+  "type": "value",
+  "kicker": "MISTAKE I MADE",
+  "headline": "I used to chase views. Then I started chasing saves.",
+  "bullets": [
+   "Views are vanity — they spike and vanish",
+   "Saves mean it was actually useful",
+   "Useful content is what converts to clients"
+  ],
+  "footer_note": "Make stuff worth saving.",
+  "caption": "I used to obsess over views. Big number, good feeling, nothing to show for it.\n\nThen I started making content people SAVE. Saves mean it was useful enough to come back to — and useful is what turns a viewer into a client.\n\nChase saves, not vanity.\n\nFollow @josephborroto for the lessons I learned the hard way.\n\n#contentstrategy #saves #shortformvideo #creatortips #josephborroto",
+  "alt_text": "Value card: chasing saves instead of views."
+ },
+ {
+  "type": "stat",
+  "kicker": "THE NUMBER",
+  "stat": "1.5s",
+  "headline": "That's all your hook gets.",
+  "subheadline": "Make the first line impossible to scroll past.",
+  "caption": "1.5 seconds. That's the window before someone decides to keep watching or swipe.\n\nMost people waste it on \"hey guys, in this video...\" By the time they get to the point, the viewer's gone.\n\nLead with the problem. Earn the next second.\n\nFollow @josephborroto for more on the first frame.\n\n#hookwriting #shortformvideo #retention #reelstips #josephborroto",
+  "alt_text": "Stat card: 1.5 seconds is all your hook gets."
+ },
+ {
+  "type": "stat",
+  "kicker": "THE NUMBER",
+  "stat": "3x",
+  "headline": "Statement hooks beat question hooks.",
+  "subheadline": "Tested across everything I edit.",
+  "caption": "Statement hooks outperform question hooks roughly 3 to 1.\n\nA question lets people decide they don't care. A bold statement makes them stop and react.\n\nStop asking. Start declaring.\n\nFollow @josephborroto for hook tactics that actually move numbers.\n\n#hookwriting #shortformvideo #contentstrategy #reelstips #josephborroto",
+  "alt_text": "Stat card: statement hooks beat question hooks 3 to 1."
+ },
+ {
+  "type": "checklist",
+  "kicker": "CHECKLIST",
+  "headline": "Before you hit post:",
+  "bullets": [
+   "Hook lands in the first 1.5 seconds",
+   "Captions are on the beat, not lagging",
+   "One clear idea, not three",
+   "There's a reason to follow at the end"
+  ],
+  "caption": "Run this checklist before every post:\n\n✓ Hook in the first 1.5 seconds\n✓ Captions on the beat\n✓ One clear idea\n✓ A reason to follow at the end\n\nFour boxes. Check them and your content instantly gets sharper.\n\nFollow @josephborroto for content that's built, not guessed.\n\n#contentchecklist #shortformvideo #reelstips #videoediting #josephborroto",
+  "alt_text": "Checklist card: before you hit post."
+ },
+ {
+  "type": "statement",
+  "kicker": "REMEMBER",
+  "headline": "Consistency beats talent every single time.",
+  "caption": "Consistency beats talent every single time.\n\nThe most talented person who posts twice a month loses to the average one who shows up daily. The algorithm — and the audience — reward who keeps showing up.\n\nTalent gets you noticed. Consistency builds the brand.\n\nFollow @josephborroto and let's both keep showing up.\n\n#consistency #contentstrategy #discipline #creatormindset #josephborroto",
+  "alt_text": "Statement card: consistency beats talent every single time."
+ },
+ {
+  "type": "statement",
+  "kicker": "REAL TALK",
+  "headline": "Boring content is the only content that fails.",
+  "caption": "Boring is the only real risk.\n\nYou can be controversial, simple, rough, or polished — but the moment you're forgettable, you're invisible. Make something people feel.\n\nSafe is the riskiest move there is.\n\nFollow @josephborroto for content that actually lands.\n\n#contentstrategy #shortformvideo #creatortips #marketing #josephborroto",
+  "alt_text": "Statement card: boring content is the only content that fails."
+ },
+ {
+  "type": "value",
+  "kicker": "EDITING",
+  "headline": "3 edits that instantly make a video better.",
+  "bullets": [
+   "Cut the pause between every sentence",
+   "Change the shot every 2-3 seconds",
+   "Put captions on the beat, not lagging"
+  ],
+  "footer_note": "Save this for your next edit.",
+  "caption": "3 edits that instantly make any video better.\n\nMost videos aren't bad — they're loose. Tighten the pacing, keep the eye moving, and sync your captions. The content stays the same; the retention doubles.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "checklist",
+  "kicker": "EDITING",
+  "headline": "Your edit is ready when:",
+  "bullets": [
+   "There's no dead air",
+   "A cut lands every few seconds",
+   "Captions are synced clean",
+   "It loops without a hard stop"
+  ],
+  "caption": "Your short-form edit is ready when it passes these 4.\n\nRun every video through this before you export. Dead air and lazy pacing are why people swipe — not your idea.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "myth",
+  "kicker": "MYTH VS TRUTH",
+  "top_label": "MYTH",
+  "top": "You need expensive gear to make good video.",
+  "bottom_label": "TRUTH",
+  "bottom": "A phone, good light, and a tight edit beat a $5k camera with no plan.",
+  "caption": "You don't need better gear. You need a better plan.\n\nA phone in good light with a sharp hook and tight edit outperforms expensive gear every time. Buyers don't care how it was shot — only if it's worth watching.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "myth",
+  "kicker": "MYTH VS TRUTH",
+  "top_label": "MYTH",
+  "top": "More posts means more growth.",
+  "bottom_label": "TRUTH",
+  "bottom": "Better posts mean more growth. One sharp video beats five lazy ones.",
+  "caption": "Posting more isn't the answer — posting better is.\n\nVolume without a point just trains the algorithm that your content is skippable. Make fewer, sharper videos with one clear idea each.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "versus",
+  "kicker": "THIS VS THAT",
+  "top_label": "BUSY",
+  "top": "Filming everything, posting with no point.",
+  "bottom_label": "EFFECTIVE",
+  "bottom": "Film with a plan, post with a purpose.",
+  "caption": "Being busy with content isn't the same as being effective.\n\nRandom posting feels productive but goes nowhere. Decide what each video is for before you hit record.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "statement",
+  "kicker": "REMEMBER",
+  "headline": "Going viral once is luck. A system is a business.",
+  "caption": "Going viral once is luck. A system is a business.\n\nOne lucky video won't build anything. A repeatable system that ships every week will. Chase the system, not the spike.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "stat",
+  "kicker": "THE NUMBER",
+  "stat": "SENDS",
+  "headline": "are the #1 signal growing reach right now.",
+  "subheadline": "Make content people DM to a friend.",
+  "caption": "Shares in DMs are the #1 thing growing reach right now.\n\nThe algorithm watches what people send to friends more than likes. Make content so useful or relatable that someone has to tag a friend.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "value",
+  "kicker": "ALGORITHM",
+  "headline": "What the algorithm actually rewards now.",
+  "bullets": [
+   "Watch time (do they finish?)",
+   "Sends and shares",
+   "Saves",
+   "Profile visits after watching"
+  ],
+  "footer_note": "Optimize for these, not vanity likes.",
+  "caption": "What the algorithm actually rewards in 2026.\n\nLikes are vanity. Watch time, sends, saves, and profile visits are what move you into new feeds. Build for those.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "myth",
+  "kicker": "MYTH VS TRUTH",
+  "top_label": "MYTH",
+  "top": "Hashtags are how you go viral.",
+  "bottom_label": "TRUTH",
+  "bottom": "Keywords in your caption do the heavy lifting now. Use 3-5 niche tags, not 30.",
+  "caption": "Hashtags aren't your reach engine anymore — your caption is.\n\nInstagram reads your caption like a search engine. Put your topic in plain words in the first line, then add 3-5 niche hashtags. Drop the wall of 30.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "value",
+  "kicker": "FOR BUSINESS OWNERS",
+  "headline": "3 videos that bring a business clients.",
+  "bullets": [
+   "The #1 question customers ask, answered",
+   "A before/after of your actual work",
+   "A short client win story"
+  ],
+  "footer_note": "Film these this week.",
+  "caption": "3 videos every business owner should be posting to get clients.\n\nYou don't need trends — you need content that answers the questions buyers have before they pay. Show the work, answer the doubt, prove the result.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "statement",
+  "kicker": "FOR BUSINESS OWNERS",
+  "headline": "Views don't pay the bills. Clients do.",
+  "caption": "Views don't pay the bills. Clients do.\n\nA million views from the wrong audience is worth less than 10 views from a buyer. Make content for the person who can actually hire you.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "stat",
+  "kicker": "THE NUMBER",
+  "stat": "1 VIDEO",
+  "headline": "can answer the question every customer asks before buying.",
+  "subheadline": "That's the one to film first.",
+  "caption": "One video can close the doubt every customer has before they buy.\n\nThink about the question you answer on every sales call. Film that. It works while you sleep.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "quote",
+  "kicker": "FOR BUSINESS OWNERS",
+  "headline": "Your best salesperson is a video that works while you sleep.",
+  "subheadline": "Build it once, it sells forever.",
+  "caption": "Your best salesperson is a video that works while you sleep.\n\nA good piece of content answers objections, builds trust, and books calls 24/7 — without you in the room. That's the leverage.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "statement",
+  "kicker": "REMEMBER",
+  "headline": "Boring and consistent beats perfect and rare.",
+  "caption": "Boring and consistent beats perfect and rare.\n\nThe account that posts steady, decent content wins over the one waiting to post something perfect. Momentum compounds. Perfectionism stalls.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "quote",
+  "kicker": "ON CONSISTENCY",
+  "headline": "100 average videos beat the one you're still perfecting.",
+  "subheadline": "Reps build the skill and the brand.",
+  "caption": "100 average videos beat the one you're still 'perfecting.'\n\nYou learn the craft by shipping, not by polishing one idea forever. Volume early, quality compounds.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "stat",
+  "kicker": "THE NUMBER",
+  "stat": "90 DAYS",
+  "headline": "is where most people quit — right before it works.",
+  "subheadline": "Push past the dip.",
+  "caption": "Most people quit at 90 days — right before the content starts working.\n\nReach is slow at first because the platform is still learning who you're for. Keep showing up; the curve bends after the dip.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "value",
+  "kicker": "PROOF",
+  "headline": "Turn one result into a post.",
+  "bullets": [
+   "Show the 'before'",
+   "Show the 'after'",
+   "Explain the one change that mattered"
+  ],
+  "footer_note": "Proof sells better than promises.",
+  "caption": "Turn any result into a post that builds trust.\n\nPeople believe what they can see. Show where it started, where it ended, and the one move that changed it. No hype needed.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "statement",
+  "kicker": "REMEMBER",
+  "headline": "Show the proof, not the theory.",
+  "caption": "Show the proof, not the theory.\n\nAnyone can give advice. Showing a real before-and-after is what makes people trust you enough to buy.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "value",
+  "kicker": "BEHIND THE SCENES",
+  "headline": "How one good video actually gets made.",
+  "bullets": [
+   "Shoot raw footage with a plan",
+   "Cut straight to the point",
+   "Caption it and post",
+   "Reuse the best parts again"
+  ],
+  "caption": "How a good short-form video actually gets made.\n\nIt's not magic — it's a process. Plan, shoot, cut tight, caption, post, reuse. Build the line and content stops being stressful.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "statement",
+  "kicker": "REMEMBER",
+  "headline": "Content is a system, not a mood.",
+  "caption": "Content is a system, not a mood.\n\nIf posting depends on motivation, it stops. Build a simple repeatable system and it runs whether you feel like it or not.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "statement",
+  "kicker": "WHAT'S WORKING",
+  "headline": "Talking-head only is fading. Add B-roll.",
+  "caption": "Pure talking-head is fading — pair your words with B-roll.\n\nStatic face-to-camera plateaus fast. Show what you're talking about over your voice and watch retention climb.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "stat",
+  "kicker": "THE NUMBER",
+  "stat": "30-90s",
+  "headline": "is getting the most reach right now.",
+  "subheadline": "Long enough to deliver, short enough to finish.",
+  "caption": "30-90 second videos are pulling the most reach right now.\n\nToo short and there's no payoff; too long and they drop. Aim for one complete idea in 30-90 seconds.\n\nFollow @josephborroto for more."
+ },
+ {
+  "type": "versus",
+  "kicker": "THIS VS THAT",
+  "top_label": "WEAK",
+  "top": "\"Here's a tip for your business.\"",
+  "bottom_label": "STRONG",
+  "bottom": "\"You're losing customers in the first 5 seconds of your videos. Here's the fix.\"",
+  "caption": "Same tip. Two openings. Totally different results.\n\nThe weak version informs. The strong version creates tension and a reason to keep watching. Always open with the stakes.\n\nFollow @josephborroto for more."
+ }
 ]

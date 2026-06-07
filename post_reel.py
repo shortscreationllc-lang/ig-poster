@@ -104,6 +104,55 @@ ROTATION = [
                 {"n": 2, "headline": "The number hook", "body": "\"3 things I'd change about your content.\""},
                 {"n": 3, "headline": "The result hook", "body": "\"This got 1M views — here's why.\""},
                 {"kicker": "YOUR MOVE", "headline": "Follow for more hooks like these.", "body": "@josephborroto"}]},
+    # --- EDITING & PRODUCTION CRAFT ---
+    {"type": "statement", "headline": "CUT EVERY SILENCE.", "style": "blackout",
+     "hook": "Cut every silence in your video — dead air is where people swipe away."},
+    {"type": "checklist", "headline": "A tighter edit in 4 moves", "style": "navyorange",
+     "bullets": ["Trim the pause between words", "Cut every 2-3 seconds", "Sync captions to the audio", "End on a clean loop"],
+     "hook": "4 editing moves that make any short-form video tighter and more watchable."},
+    # --- MISTAKES & MYTHS ---
+    {"type": "statement", "headline": "YOU DON'T NEED A BETTER CAMERA.", "style": "navyorange",
+     "hook": "You don't need a better camera — you need a better hook and a tighter edit."},
+    {"type": "quote", "style": "dark",
+     "headline": "Nobody cares how it was filmed. They care if it's worth watching.",
+     "hook": "Nobody cares how your video was filmed — only whether it's worth watching."},
+    # --- ALGORITHM & PLATFORM ---
+    {"type": "stat", "kicker": "THE SIGNAL", "stat": "SENDS", "style": "blackout",
+     "headline": "are the #1 thing growing your reach right now",
+     "hook": "Shares in DMs are the #1 signal growing reach in 2026 — make content people send."},
+    {"type": "statement", "headline": "REACH IS RENTED. TRUST IS OWNED.", "style": "dark",
+     "hook": "Reach is rented; trust is owned — build content that earns trust, not just views."},
+    # --- GETTING CLIENTS WITH VIDEO (business owners) ---
+    {"type": "statement", "headline": "VIEWS DON'T PAY. CLIENTS DO.", "style": "blackout",
+     "hook": "Views don't pay the bills — content that books clients does."},
+    {"type": "checklist", "headline": "Make content that books clients", "style": "navyorange",
+     "bullets": ["Speak to one customer problem", "Show proof you can solve it", "Make the next step obvious", "Post where buyers already scroll"],
+     "hook": "How to make short-form that actually books clients, not just views."},
+    {"type": "quote", "style": "navyorange",
+     "headline": "Your best salesperson is a video that works while you sleep.",
+     "hook": "Your best salesperson is a video that works while you sleep."},
+    {"type": "sequence", "style": "blackout",
+     "hook": "3 videos every business owner should be posting to get clients.",
+     "scenes": [{"kicker": "FOR OWNERS", "headline": "3 videos that bring you clients", "swipe": True},
+                {"n": 1, "headline": "Answer the #1 question", "body": "The thing every customer asks before they buy."},
+                {"n": 2, "headline": "Show a before / after", "body": "Proof of the work beats any sales pitch."},
+                {"n": 3, "headline": "Make the next step obvious", "body": "Tell them exactly how to start."},
+                {"kicker": "YOUR MOVE", "headline": "Follow for content that books clients.", "body": "@josephborroto"}]},
+    # --- MINDSET & CONSISTENCY ---
+    {"type": "statement", "headline": "BORING + CONSISTENT BEATS PERFECT + RARE.", "style": "navyorange",
+     "hook": "Boring and consistent beats perfect and rare — just keep showing up."},
+    {"type": "stat", "kicker": "THE NUMBER", "stat": "90 DAYS", "style": "blackout",
+     "headline": "is where most people quit — right before it works",
+     "hook": "Most people quit posting at 90 days — right before the reach starts to compound."},
+    # --- RESULTS & PROOF ---
+    {"type": "statement", "headline": "SHOW THE PROOF, NOT THE THEORY.", "style": "dark",
+     "hook": "Show the before-and-after, not the theory — proof sells better than promises."},
+    # --- BEHIND THE SCENES / PROCESS ---
+    {"type": "statement", "headline": "CONTENT IS A SYSTEM, NOT A MOOD.", "style": "blackout",
+     "hook": "Content is a system, not a mood — build the system and it runs without motivation."},
+    # --- TRENDS / WHAT'S WORKING ---
+    {"type": "statement", "headline": "ADD B-ROLL. STOP TALKING AT THE CAMERA.", "style": "navyorange",
+     "hook": "Pure talking-head is fading — pair your words with B-roll that shows it."},
 ]
 
 
