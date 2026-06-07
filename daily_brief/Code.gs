@@ -431,43 +431,39 @@ function buildVideoIdeas_(articles, clients, events, memory) {
 
 // Deterministic, article-grounded video brief (no API key needed).
 function buildArticleVideo_(article) {
-  const platform = detectPlatform_(article.title + ' ' + (article.summary || ''));
+  const platform = detectPlatform_(article.title, article.summary);
   const summary = usableSummary_(article.summary);
-  const topic = shortTopic_(article.title);
+  const gist = summary ? firstSentences_(summary, 2) : '';
 
   const context = summary
     ? truncate_(summary, 340)
-    : `${platform} update: "${article.title}" (${article.source}). Open the link for the specifics, then translate it into one thing a business owner should do differently this week.`;
+    : `${platform} story: "${article.title}" (${article.source}). Open the link for the specifics, then translate it into one thing a business owner should do differently this week.`;
 
-  const hook = summary
-    ? `${platform} just changed something you can actually use 👇`
-    : `If you post on ${platform}, this update matters for getting seen 👇`;
+  const hook = `${platform} tip most business owners scroll right past 👇`;
 
-  const body = [
-    `Open with the headline in plain English: what just happened on ${platform}.`,
-    summary ? `The gist: ${truncate_(summary, 170)}` : `Pull the single key point from the article (link in the brief).`,
-    `Then make it about THEM: what this means for a local business owner trying to get seen and get clients, and the ONE move to make this week.`,
-  ].join(' ');
+  const body = (gist ? `Here's the gist: ${gist} ` : `Give the one key point from the article in plain English. `)
+    + `For a local business owner, the takeaway is simple: turn this into ONE short video that answers what your best customer is already wondering. `
+    + `Show your face, give the tip straight, and end with how to reach you.`;
 
-  const cut = `Close with a soft CTA: "If you want this handled for you, that is exactly what we do." Then: follow ${CONFIG.instagramHandle} for ${platform} updates that actually move the needle.`;
+  const cut = `Close with a soft CTA: "If you'd rather have this done for you, that's exactly what we do." Then: follow ${CONFIG.instagramHandle} for ${platform} tips that actually bring in clients.`;
 
-  const caption = buildCaption_(platform, article.title, summary);
+  const caption = buildCaption_(platform, article.title, gist);
   return { context, hook, body, cut, caption };
 }
 
-function buildCaption_(platform, title, summary) {
+function buildCaption_(platform, title, gist) {
   const tagMap = {
     'Instagram': '#instagramtips #reels #instagramgrowth #contentcreator #miamibusiness',
     'TikTok': '#tiktoktips #tiktokforbusiness #shortformvideo #contentcreator #smallbusiness',
     'YouTube': '#youtubeshorts #youtubetips #videomarketing #contentcreator #smallbusiness',
-    'short-form': '#shortformvideo #contentmarketing #socialmediatips #smallbusiness #miami',
+    'social media': '#socialmediatips #contentmarketing #shortformvideo #smallbusiness #miamibusiness',
   };
-  const tags = tagMap[platform] || tagMap['short-form'];
-  const line = summary
-    ? truncate_(summary, 200)
-    : 'Here is what changed and why it actually matters for your business.';
+  const tags = tagMap[platform] || tagMap['social media'];
+  const line = gist
+    ? truncate_(gist, 220)
+    : 'Here is the one thing worth knowing this week and why it matters for your business.';
   return [
-    `${platform} update every business owner should see 👇`,
+    `${platform} tip every business owner should see 👇`,
     '',
     title,
     '',
@@ -701,6 +697,9 @@ function scoreArticle_(title, source, summary) {
 
   let score = 0;
   if (platformHit) score += 6;
+  // Platform named in the HEADLINE = real platform news -> float it to the top
+  // above generic "social media marketing" guides.
+  if (platformOf_(titleNorm)) score += 8;
   INDUSTRY_TERMS.forEach(term => { if (text.indexOf(normalize_(term)) !== -1) score += 1; });
   ACTIONABLE_TERMS.forEach(term => { if (text.indexOf(normalize_(term)) !== -1) score += 2; });
   GROWTH_TERMS.forEach(term => { if (text.indexOf(normalize_(term)) !== -1) score += 2; });
@@ -710,12 +709,39 @@ function scoreArticle_(title, source, summary) {
   return score;
 }
 
-function detectPlatform_(text) {
-  const t = normalize_(text);
+// Detect platform from the HEADLINE first. Long marketing articles mention
+// every platform in the body, so scanning the summary would mislabel them --
+// we only fall back to the summary when the title names exactly one platform.
+function detectPlatform_(title, summary) {
+  const fromTitle = platformOf_(normalize_(title || ''));
+  if (fromTitle) return fromTitle;
+  const t = normalize_(summary || '');
+  const hits = {
+    TikTok: /tiktok/.test(t),
+    YouTube: /youtube|shorts/.test(t),
+    Instagram: /instagram|reels|threads/.test(t),
+  };
+  const named = Object.keys(hits).filter(k => hits[k]);
+  if (named.length === 1) return named[0]; // only one platform in play -> safe
+  return 'social media';
+}
+
+function platformOf_(t) {
   if (/tiktok/.test(t)) return 'TikTok';
   if (/youtube|shorts/.test(t)) return 'YouTube';
-  if (/instagram|reels|reel|threads|meta/.test(t)) return 'Instagram';
-  return 'short-form';
+  if (/instagram|reels|reel|threads/.test(t)) return 'Instagram';
+  return '';
+}
+
+// Split into the first N sentences, capped, so the brief reads like talking
+// points instead of a dumped paragraph.
+function firstSentences_(text, n) {
+  const clean = String(text || '').trim();
+  if (!clean) return '';
+  const parts = clean.split(/(?<=[.!?])\s+/);
+  let out = parts.slice(0, n).join(' ').trim();
+  if (out.length > 260) out = truncate_(out, 260);
+  return out;
 }
 
 function shortTopic_(title) {
@@ -867,11 +893,21 @@ function cleanText_(html) {
     .replace(/<[^>]+>/g, ' ')
     .replace(/&nbsp;/gi, ' ')
     .replace(/&amp;/gi, '&')
-    .replace(/&#39;/g, "'")
-    .replace(/&quot;/gi, '"')
+    .replace(/&#0*39;|&rsquo;|&lsquo;|&#82(16|17);/g, "'")
+    .replace(/&quot;|&#822[01];|&ldquo;|&rdquo;/gi, '"')
+    .replace(/&#8230;|&hellip;/gi, '...')
+    .replace(/&#82(11|12);|&[mn]dash;/gi, '-')
+    // Decode any remaining numeric entities (decimal + hex), e.g. &#8217; &#x2019;
+    .replace(/&#x([0-9a-f]+);/gi, (m, h) => safeFromCharCode_(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (m, d) => safeFromCharCode_(parseInt(d, 10)))
     .replace(/&[a-z]+;/gi, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+function safeFromCharCode_(code) {
+  try { return isNaN(code) ? ' ' : String.fromCharCode(code); }
+  catch (e) { return ' '; }
 }
 
 function truncate_(value, maxLength) {
