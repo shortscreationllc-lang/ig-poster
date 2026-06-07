@@ -1,0 +1,36 @@
+name: Instagram Insights
+
+# Pulls per-post performance (reach, views, watch time, saves, shares) and writes
+# insights_report.md + insights.json. Manual + weekly. Runs on GitHub (token + net).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 14 * * 1"   # weekly, Mondays ~10am ET (best-effort)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: insights
+  cancel-in-progress: false
+
+jobs:
+  insights:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull Instagram insights
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          set -e
+          git config user.name "ig-poster-bot"
+          git config user.email "actions@github.com"
+          python insights.py
+          git add insights_report.md insights.json || true
+          git commit -q -m "insights $(date -u +%FT%TZ)" || true
+          for i in 1 2 3 4; do git push origin HEAD:main && break || { git pull --rebase origin main; sleep $((i*2)); }; done

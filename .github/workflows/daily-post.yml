@@ -12,6 +12,7 @@ on:
       - "queue/**"
       - "state.json"
       - ".slotguard/**"
+      - "insights.json"
       - "**/*.md"
   workflow_dispatch:
     inputs:
