@@ -255,6 +255,20 @@
         "pillar": "editing",
         "source_index": 8
       }
+    },
+    {
+      "at": "20260607T232115Z",
+      "id": "queue/reel-1780874374.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18008959121731244",
+      "tags": {
+        "fmt": "checklist",
+        "style": "blackout",
+        "pillar": "proof",
+        "cap_style": 4
+      },
+      "hook": "The short-form posting checklist \u2014 run every video through this before you publish."
     }
   ],
   "story_hook_i": 1,
