@@ -11,9 +11,11 @@ import argparse, json, os, sys, time, urllib.request, urllib.parse
 from pathlib import Path
 
 import re
+import random
 import render_video
 import render_audio
 import captions
+import weighting
 from daily_run import (graph_post, wait_ready, load_env_file, _public_base,
                        read_state, write_state, QUEUE_DIR, ROOT)
 
@@ -173,31 +175,36 @@ def _reel_key(spec):
 def _pick(kind):
     st = read_state()
     i = st.get("reel_i", 0); cap_i = st.get("reel_cap_i", 0); aud_i = st.get("reel_audio_i", 0)
+    w = weighting.load_weights()
+    cap_style = None
     if kind == "auto":
-        # Skip any item posted in the last several reels so nothing repeats soon.
+        # WEIGHTED pick: among recipes not used in the last 7 reels, score each by
+        # what the insights loop has learned (format + style + topic), plus a dash
+        # of exploration so we keep sampling everything and the loop keeps learning.
         recent = st.get("reel_recent", [])
-        n = len(ROTATION); spec = ROTATION[i % n]
-        for step in range(n):
-            cand = ROTATION[(i + step) % n]
-            if _reel_key(cand) not in recent:
-                spec = cand; i = i + step; break
+        elig = [c for c in ROTATION if _reel_key(c) not in recent] or list(ROTATION)
+        spec = max(elig, key=lambda c: weighting.score_spec(c, w) + random.uniform(0, 0.15))
         item, hook, style = spec, spec["hook"], spec.get("style", "blackout")
         st["reel_recent"] = (recent + [_reel_key(spec)])[-7:]
+        # Pin the caption shape the data likes best (falls back to rotation).
+        cap_style = weighting.best_cap_style(w)
     else:
         bucket = CONTENT.get(kind) or CONTENT["stat"]
         it, hk, style = bucket[i % len(bucket)]; item, hook = it, hk
     st["reel_i"] = i + 1
-    st["reel_cap_i"] = cap_i + 1       # rotate caption style
+    st["reel_cap_i"] = cap_i + 1       # rotate caption wording
     st["reel_audio_i"] = aud_i + 1     # rotate beat
     write_state(st)
-    caption = captions.caption_for(hook, cap_i)   # SEO-rotating caption
-    return item, caption, style, aud_i
+    eff_cap = cap_style if cap_style is not None else (cap_i % 6)
+    caption = captions.caption_for(hook, cap_i, style=cap_style)   # SEO caption, learned shape
+    pillar = weighting.pillar_of(hook or item.get("headline", ""))
+    return item, caption, style, aud_i, pillar, eff_cap
 
 
 def render(kind):
     QUEUE_DIR.mkdir(exist_ok=True)
     _prune_old_reels()
-    item, caption, style, aud_i = _pick(kind)
+    item, caption, style, aud_i, pillar, cap_style = _pick(kind)
     rel = f"queue/reel-{int(time.time())}.mp4"; out = str(ROOT / rel)
     if item.get("type") == "sequence":
         render_video.video_sequence(item["scenes"], out, style=style)
@@ -205,8 +212,11 @@ def render(kind):
         render_video.render_video(item, out, style=style)
     beat = render_audio.add_beat(out, aud_i)   # rotating copyright-safe beat
     PENDING.write_text(json.dumps({"rel": rel, "caption": caption, "type": item.get("type"),
-                                   "style": style, "beat": beat}) + "\n")
-    print(f"rendered reel -> {rel} (type={item.get('type')} style={style} beat={beat})")
+                                   "style": style, "beat": beat, "pillar": pillar,
+                                   "cap_style": cap_style,
+                                   "hook": item.get("hook") or item.get("headline", "")}) + "\n")
+    print(f"rendered reel -> {rel} (type={item.get('type')} style={style} "
+          f"pillar={pillar} cap_style={cap_style} beat={beat})")
 
 
 def _wait_raw(url, timeout=120):
@@ -265,7 +275,11 @@ def publish():
     st.setdefault("history", []).append({
         "at": time.strftime("%Y%m%dT%H%M%SZ", time.gmtime()),
         "id": pend["rel"], "type": "reel", "slot": "video",
-        "post_id": pub.get("id")})
+        "post_id": pub.get("id"),
+        "tags": {"fmt": pend.get("type"), "style": pend.get("style"),
+                 "pillar": pend.get("pillar"), "cap_style": pend.get("cap_style")},
+        "hook": pend.get("hook", "")})
+    st["history"] = st["history"][-200:]
     write_state(st)
     return 0
 

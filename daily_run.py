@@ -36,6 +36,7 @@ from pathlib import Path
 import content_dedup
 import render_card
 import threads_post
+import weighting
 
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "state.json"
@@ -263,7 +264,7 @@ def refill():
             "id": uid, "slot": "am", "type": item.get("type", "single"),
             "images": [rel], "caption": item["caption"],
             "alt": item.get("alt_text", ""), "posted": False,
-            "source_index": idx,
+            "source_index": idx, "style": style,
             "fp": sorted(content_dedup.fingerprint(item)),
         })
         made += 1
@@ -291,7 +292,7 @@ def refill():
             "id": uid, "slot": "pm", "type": "carousel",
             "images": rels, "caption": entry["caption"],
             "alt": entry.get("alt_text", ""), "posted": False,
-            "source_index": idx,
+            "source_index": idx, "style": style,
             "fp": sorted(content_dedup.fingerprint(entry)),
         })
         made += 1
@@ -447,7 +448,11 @@ def publish_only():
     state = read_state()
     state["history"].append({"at": item["posted_at"], "id": item["id"],
                              "slot": item["slot"], "type": item["type"],
-                             "post_id": pub.get("id")})
+                             "post_id": pub.get("id"),
+                             "tags": {"fmt": item.get("type"),
+                                      "style": item.get("style"),
+                                      "pillar": weighting.pillar_of(item.get("caption", "")),
+                                      "source_index": item.get("source_index")}})
     state["history"] = state["history"][-200:]
     content_dedup.remember(state, item.get("fp", []))  # so stories won't repeat it
     write_state(state)
