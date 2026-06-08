@@ -487,6 +487,36 @@
       "post_id": "18382652362206284"
     },
     {
+      "id": "carousel-00024",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00024-0.jpg",
+        "queue/carousel-00024-1.jpg",
+        "queue/carousel-00024-2.jpg",
+        "queue/carousel-00024-3.jpg",
+        "queue/carousel-00024-4.jpg",
+        "queue/carousel-00024-5.jpg"
+      ],
+      "caption": "People forgive average video. They scroll on bad audio instantly.\n\n1. Music too loud\n2. No mic\n3. Inconsistent levels\n4. Dead silence\n\nFix the sound and watch retention rise.\n\nFollow @josephborroto for the production basics nobody teaches.\n\n#audiomixing #videoediting #musictips #editingtips #shortformvideo #josephborroto",
+      "alt": "Carousel: 4 audio mistakes that ruin good video.",
+      "posted": true,
+      "source_index": 9,
+      "fp": [
+        "1. music too loud",
+        "3. inconsistent levels",
+        "4 audio mistakes that ruin good video.",
+        "4. dead silence",
+        "a subtle bed of music under the voice keeps energy up.",
+        "if you notice the track, it's already drowning the voice.",
+        "people hear bad audio before they see good video.",
+        "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
+        "volume jumping between clips makes it feel amateur."
+      ],
+      "posted_at": "20260608T203757Z",
+      "post_id": "17898450870463352"
+    },
+    {
       "id": "single-00011",
       "slot": "am",
       "type": "quote",
@@ -552,34 +582,6 @@
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
-      "id": "carousel-00024",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00024-0.jpg",
-        "queue/carousel-00024-1.jpg",
-        "queue/carousel-00024-2.jpg",
-        "queue/carousel-00024-3.jpg",
-        "queue/carousel-00024-4.jpg",
-        "queue/carousel-00024-5.jpg"
-      ],
-      "caption": "People forgive average video. They scroll on bad audio instantly.\n\n1. Music too loud\n2. No mic\n3. Inconsistent levels\n4. Dead silence\n\nFix the sound and watch retention rise.\n\nFollow @josephborroto for the production basics nobody teaches.\n\n#audiomixing #videoediting #musictips #editingtips #shortformvideo #josephborroto",
-      "alt": "Carousel: 4 audio mistakes that ruin good video.",
-      "posted": false,
-      "source_index": 9,
-      "fp": [
-        "1. music too loud",
-        "3. inconsistent levels",
-        "4 audio mistakes that ruin good video.",
-        "4. dead silence",
-        "a subtle bed of music under the voice keeps energy up.",
-        "if you notice the track, it's already drowning the voice.",
-        "people hear bad audio before they see good video.",
-        "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
-        "volume jumping between clips makes it feel amateur."
       ]
     },
     {
@@ -1107,6 +1109,35 @@
         "a wide shot of someone doing the task.",
         "boring b-roll",
         "great b-roll"
+      ]
+    },
+    {
+      "id": "carousel-00048",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00048-0.jpg",
+        "queue/carousel-00048-1.jpg",
+        "queue/carousel-00048-2.jpg",
+        "queue/carousel-00048-3.jpg",
+        "queue/carousel-00048-4.jpg",
+        "queue/carousel-00048-5.jpg"
+      ],
+      "caption": "People forgive average video. They scroll on bad audio instantly.\n\n1. Music too loud\n2. No mic\n3. Inconsistent levels\n4. Dead silence\n\nFix the sound and watch retention rise.\n\nFollow @josephborroto for the production basics nobody teaches.\n\n#audiomixing #videoediting #musictips #editingtips #shortformvideo #josephborroto",
+      "alt": "Carousel: 4 audio mistakes that ruin good video.",
+      "posted": false,
+      "source_index": 9,
+      "style": "creamorange",
+      "fp": [
+        "1. music too loud",
+        "3. inconsistent levels",
+        "4 audio mistakes that ruin good video.",
+        "4. dead silence",
+        "a subtle bed of music under the voice keeps energy up.",
+        "if you notice the track, it's already drowning the voice.",
+        "people hear bad audio before they see good video.",
+        "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
+        "volume jumping between clips makes it feel amateur."
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "single_index": 24,
-  "carousel_index": 5,
-  "seq": 47,
+  "carousel_index": 7,
+  "seq": 48,
   "daily": {
     "20260604": {
       "morning": true,
@@ -37,7 +37,7 @@
     }
   },
   "am_style_i": 24,
-  "pm_style_i": 23,
+  "pm_style_i": 24,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -341,6 +341,19 @@
         "cap_style": 0
       },
       "hook": "4 editing moves that make any short-form video tighter and more watchable."
+    },
+    {
+      "at": "20260608T203757Z",
+      "id": "carousel-00024",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17898450870463352",
+      "tags": {
+        "fmt": "carousel",
+        "style": null,
+        "pillar": "hook",
+        "source_index": 9
+      }
     }
   ],
   "story_hook_i": 1,
@@ -466,15 +479,6 @@
     }
   ],
   "recent_texts": [
-    "captions should feel a touch faster than the video itself.",
-    "if it's hard to read on a phone, it's costing you watch time.",
-    "most people make all 5.",
-    "text should hit on the cut, not lag behind the sentence.",
-    "the app ui covers it. keep key words in the safe zone.",
-    "white, modern, sans-serif. no heavy drop shadow.",
-    "it reads as energy, even with the same script.",
-    "switch your location every line.",
-    "good content travels for days. timing is a rounding error.",
     "you need to post at the perfect time of day.",
     "act 1 \u2014 hook (0 to 1.5s)",
     "act 2 \u2014 tension (4 to 12s)",
@@ -545,7 +549,16 @@
     "the object close-up beats the wide action shot.",
     "it's because you didn't move.",
     "same shot for 30 seconds = scroll. new spot every sentence = retention.",
-    "your talking-head videos are boring."
+    "your talking-head videos are boring.",
+    "1. music too loud",
+    "3. inconsistent levels",
+    "4 audio mistakes that ruin good video.",
+    "4. dead silence",
+    "a subtle bed of music under the voice keeps energy up.",
+    "if you notice the track, it's already drowning the voice.",
+    "people hear bad audio before they see good video.",
+    "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
+    "volume jumping between clips makes it feel amateur."
   ],
   "reel_i": 20,
   "reel_cap_i": 21,
