@@ -516,8 +516,8 @@
     "your talking-head videos are boring."
   ],
   "reel_i": 20,
-  "reel_cap_i": 19,
-  "reel_audio_i": 19,
+  "reel_cap_i": 21,
+  "reel_audio_i": 21,
   "reel_recent": [
     "3 hooks that work in any niche for short form video",
     "90 of viewers decide whether to keep watching in the first 3",
@@ -526,5 +526,9 @@
     "the short form posting checklist run every video through thi",
     "cutting the first 2 seconds of your video can double your wa",
     "consistency beats going viral once show up and the algorithm"
+  ],
+  "trial_recent": [
+    "consistency beats going viral once show up and the algorithm",
+    "4 editing moves that make any short form video tighter and m"
   ]
 }
