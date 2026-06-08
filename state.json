@@ -355,6 +355,20 @@
         "pillar": "hook",
         "source_index": 9
       }
+    },
+    {
+      "at": "20260608T230257Z",
+      "id": "queue/reel-1780959731.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18315843289274825",
+      "tags": {
+        "fmt": "stat",
+        "style": "blackout",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Most people quit posting at 90 days \u2014 right before the reach starts to compound."
     }
   ],
   "story_hook_i": 1,
