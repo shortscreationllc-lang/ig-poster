@@ -309,6 +309,38 @@
         "cap_style": 0
       },
       "hook": "Consistency beats going viral once \u2014 show up and the algorithm follows."
+    },
+    {
+      "at": "20260608T180751Z",
+      "id": "queue/reel-1780942016-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18587567404027184",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "blackout",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Consistency beats going viral once \u2014 show up and the algorithm follows."
+    },
+    {
+      "at": "20260608T180859Z",
+      "id": "queue/reel-1780942022-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18170437132428111",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "checklist",
+        "style": "navyorange",
+        "pillar": "editing",
+        "cap_style": 0
+      },
+      "hook": "4 editing moves that make any short-form video tighter and more watchable."
     }
   ],
   "story_hook_i": 1,
@@ -530,5 +562,8 @@
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
     "4 editing moves that make any short form video tighter and m"
-  ]
+  ],
+  "trial_daily": {
+    "20260608": 2
+  }
 }
