@@ -476,13 +476,15 @@
       ],
       "caption": "Talking-head videos feel boring for one reason: you stood in one spot.\n\nSame frame for 30 seconds and the brain checks out.\n\nSwitch location every line. New background each sentence. It reads as energy and pace even when the words are identical.\n\nFollow @josephborroto for retention tricks that actually work.\n\n#editingtips #videoediting #shortformvideo #reelstips #contentcreator #josephborroto",
       "alt": "Card: your talking-head videos are boring because you didn't move.",
-      "posted": false,
+      "posted": true,
       "source_index": 9,
       "fp": [
         "it's because you didn't move.",
         "same shot for 30 seconds = scroll. new spot every sentence = retention.",
         "your talking-head videos are boring."
-      ]
+      ],
+      "posted_at": "20260608T152321Z",
+      "post_id": "18382652362206284"
     },
     {
       "id": "single-00011",
@@ -1086,6 +1088,25 @@
         "detail reads as intentional. distance reads as filler.",
         "most people film the wrong thing.",
         "the object close-up beats the wide action shot."
+      ]
+    },
+    {
+      "id": "single-00047",
+      "slot": "am",
+      "type": "versus",
+      "images": [
+        "queue/single-00047.jpg"
+      ],
+      "caption": "Your B-roll is boring because you film the action, not the detail.\n\nWide and busy = filler.\nClose, lit, and isolated = intentional.\n\nGet uncomfortably close to the most interesting thing in the frame.\n\nFollow @josephborroto for the small stuff that makes content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
+      "alt": "This vs that card comparing boring and great B-roll.",
+      "posted": false,
+      "source_index": 23,
+      "style": "navyorange",
+      "fp": [
+        "a tight, lit close-up of the single most interesting detail.",
+        "a wide shot of someone doing the task.",
+        "boring b-roll",
+        "great b-roll"
       ]
     }
   ]
