@@ -1,0 +1,84 @@
+name: Trial Reels
+
+# A cold-audience content lab. Posts VARIED trial reels (distinct format + style
+# + topic, no repeats) that Instagram shows ONLY to non-followers. Winners
+# graduate to your followers automatically (SS_PERFORMANCE) or by you in-app
+# (MANUAL). Every trial's performance feeds the SAME weights.json that steers the
+# main rotation — so the whole account gets smarter from these tests.
+#
+# Daily drip: 2/day, capped via state.json (trials_remaining) so the redundant
+# EDT/EST crons can't double-post. Manual runs post an explicit `count`.
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many trial reels to post now (manual burst)."
+        required: false
+        default: "2"
+      strategy:
+        description: "Graduation: SS_PERFORMANCE (IG auto-promotes) or MANUAL (you promote in-app)."
+        required: false
+        default: "SS_PERFORMANCE"
+  schedule:
+    # ~2:30p ET daily, fired for both EDT and EST; the daily cap makes the
+    # second fire a no-op. Off-peak from the main poster's slots.
+    - cron: "30 18 * * *"   # 2:30p EDT
+    - cron: "30 19 * * *"   # 2:30p EST
+
+permissions:
+  contents: write
+
+# Share the main poster's lane so a trial and a normal post never publish at the
+# same moment (no state.json races, kinder to the publish rate limit).
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+
+jobs:
+  trials:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install --quiet pillow tzdata numpy imageio imageio-ffmpeg
+      - name: Render + post a varied batch of trial reels
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          DAILY_TARGET: "2"
+        run: |
+          set -euo pipefail
+          git config user.name "ig-poster-bot"
+          git config user.email "actions@github.com"
+          gp() { for i in 1 2 3 4; do git push origin HEAD:main && return 0; git pull --rebase origin main || true; sleep $((i*2)); done; echo "push failed" >&2; }
+
+          git pull --rebase origin main || true
+
+          STRAT="${{ github.event.inputs.strategy }}"; STRAT="${STRAT:-SS_PERFORMANCE}"
+
+          # How many to post: manual run uses the input; scheduled run posts only
+          # what's left to hit the daily target (so EDT+EST crons can't double up).
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            COUNT="$(python post_reel.py --trials-remaining "${DAILY_TARGET}")"
+          else
+            COUNT="${{ github.event.inputs.count }}"; COUNT="${COUNT:-2}"
+          fi
+          echo "Trial batch: count=$COUNT strategy=$STRAT (event=${{ github.event_name }})"
+          if [ "${COUNT:-0}" -le 0 ]; then echo "Daily trial cap already met — nothing to do."; exit 0; fi
+
+          # 1) render the batch (mp4 + custom cover each) and commit so the raw
+          #    URLs go live at raw.githubusercontent before we publish.
+          python post_reel.py --render-trials "$COUNT" --trial-strategy "$STRAT"
+          git add queue/ state.json
+          git commit -q -m "render $COUNT trial reels $(date -u +%FT%TZ)" || true
+          gp
+
+          # 2) publish each as a TRIAL reel (non-followers only)
+          python post_reel.py --publish-trials
+          git add state.json queue/
+          git commit -q -m "posted trial reels $(date -u +%FT%TZ)" || true
+          gp
+          echo "Trial batch done."

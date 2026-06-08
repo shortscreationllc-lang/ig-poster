@@ -79,7 +79,7 @@ def _fmt_row(r):
     inter = r.get("total_interactions") or 0
     er = f"{(inter/reach*100):.1f}%" if reach else "n/a"
     sc = weighting.score_post(r)
-    tag = "🤖" if r.get("bot") else "👤"
+    tag = "🧪" if r.get("trial") else ("🤖" if r.get("bot") else "👤")
     fmt = (r.get("type") or r.get("mpt") or "?")
     return (f"- {tag} {r.get('at','')[:8]} | {fmt} | reach {reach} | "
             f"views {r.get('views','-')} | {aw_s} | saves {r.get('saved','-')} "
@@ -122,8 +122,10 @@ def main():
             continue
         seen.add(pid)
         meta = bot_meta.get(pid)
-        rows.append(pull_row(pid, token, when=(meta or {}).get("at"),
-                             typ=(meta or {}).get("type"), bot=pid in bot_meta))
+        r = pull_row(pid, token, when=(meta or {}).get("at"),
+                     typ=(meta or {}).get("type"), bot=pid in bot_meta)
+        r["trial"] = bool((meta or {}).get("trial"))
+        rows.append(r)
 
     err = next((r.get("_err") for r in rows if r.get("_err")), None)
 
@@ -135,10 +137,11 @@ def main():
     if err:
         L += [f"> ⚠️ Insights API note: **{err}**",
               "> (If this mentions permissions, re-auth with `instagram_manage_insights`.)", ""]
-    n_bot = sum(1 for r in rows if r.get("bot"))
-    n_org = len(rows) - n_bot
-    L += [f"**Tracked:** {len(rows)} posts ({n_bot} auto-posted 🤖, {n_org} your own 👤)  ·  "
-          f"learning from {weights.get('n', 0)} tagged posts", ""]
+    n_trial = sum(1 for r in rows if r.get("trial"))
+    n_bot = sum(1 for r in rows if r.get("bot") and not r.get("trial"))
+    n_org = sum(1 for r in rows if not r.get("bot"))
+    L += [f"**Tracked:** {len(rows)} posts ({n_bot} auto-posted 🤖, {n_trial} trial 🧪, "
+          f"{n_org} your own 👤)  ·  learning from {weights.get('n', 0)} tagged posts", ""]
 
     # top performers by composite score (saves+shares heavy, +watch time)
     scored = [(weighting.score_post(r), r) for r in rows]
