@@ -200,7 +200,10 @@ def _pick(kind):
         # what the insights loop has learned (format + style + topic), plus a dash
         # of exploration so we keep sampling everything and the loop keeps learning.
         recent = st.get("reel_recent", [])
-        elig = [c for c in ROTATION if _reel_key(c) not in recent] or list(ROTATION)
+        # Also steer clear of anything posted as a TRIAL — the two streams must
+        # never overlap, or whichever posts second gets throttled as a duplicate.
+        blocked = set(recent) | set(st.get("trial_recent", []))
+        elig = [c for c in ROTATION if _reel_key(c) not in blocked] or list(ROTATION)
         spec = max(elig, key=lambda c: weighting.score_spec(c, w) + random.uniform(0, 0.15))
         item, hook, style = spec, spec["hook"], spec.get("style", "blackout")
         st["reel_recent"] = (recent + [_reel_key(spec)])[-7:]
@@ -212,6 +215,8 @@ def _pick(kind):
     st["reel_i"] = i + 1
     st["reel_cap_i"] = cap_i + 1       # rotate caption wording
     st["reel_audio_i"] = aud_i + 1     # rotate beat
+    # Remember which beat this normal reel uses so trials can pick DIFFERENT music.
+    st["beat_recent"] = (st.get("beat_recent", []) + [aud_i % len(render_audio.BEATS)])[-5:]
     write_state(st)
     eff_cap = cap_style if cap_style is not None else (cap_i % 6)
     caption = captions.caption_for(hook, cap_i, style=cap_style)   # SEO caption, learned shape
@@ -385,14 +390,29 @@ def trials_remaining(target):
     return max(0, target - st.get("trial_daily", {}).get(today, 0))
 
 
+def _pick_trial_beat(st, used):
+    """Pick a beat that DIFFERS from what normal reels recently used (beat_recent)
+    and from the other trials in this same batch (`used`) — so a trial never shares
+    music with something already on the feed."""
+    n = len(render_audio.BEATS)
+    avoid = set(used) | set(st.get("beat_recent", []))
+    cands = [b for b in range(n) if b not in avoid]
+    if not cands:                          # all recent — at least differ within batch
+        cands = [b for b in range(n) if b not in set(used)] or list(range(n))
+    return random.choice(cands)
+
+
 def _pick_trial_batch(n):
     """Pick n recipes maximizing variety — distinct format, style, and topic —
-    skipping anything trialed recently so a batch never repeats itself."""
+    skipping anything used recently by EITHER stream (trials OR normal posts), so a
+    trial never duplicates a reel that's already live (which would kill its reach)."""
     st = read_state()
     recent = st.get("trial_recent", [])
-    pool = [c for c in ROTATION if _reel_key(c) not in recent]
-    if len(pool) < n:                      # exhausted the catalog — allow reuse
-        pool = list(ROTATION)
+    # Block recipes already used by trials AND by recent normal posts.
+    blocked = set(recent) | set(st.get("reel_recent", []))
+    pool = [c for c in ROTATION if _reel_key(c) not in blocked]
+    if len(pool) < n:                      # exhausted the catalog — fall back to trial-only
+        pool = [c for c in ROTATION if _reel_key(c) not in set(recent)] or list(ROTATION)
     random.shuffle(pool)                   # break ties differently each run
     chosen, used_fmt, used_style, used_pillar = [], set(), set(), set()
 
@@ -417,6 +437,7 @@ def render_trials(n, strategy="SS_PERFORMANCE"):
     batch = _pick_trial_batch(n)
     st = read_state(); cap_i = st.get("reel_cap_i", 0); aud_i = st.get("reel_audio_i", 0)
     w = weighting.load_weights()
+    used_beats = []                        # beats picked in THIS batch (keep distinct)
     items = []
     for k, spec in enumerate(batch):
         rel = f"queue/reel-{int(time.time())}-{k}.mp4"; out = str(ROOT / rel)
@@ -425,7 +446,8 @@ def render_trials(n, strategy="SS_PERFORMANCE"):
             render_video.video_sequence(spec["scenes"], out, style=style)
         else:
             render_video.render_video(spec, out, style=style)
-        beat = render_audio.add_beat(out, aud_i + k)
+        bi = _pick_trial_beat(st, used_beats); used_beats.append(bi)
+        beat = render_audio.add_beat(out, bi)
         cover_rel = rel[:-4] + ".jpg"
         try:
             _make_cover(out, spec.get("type"), str(ROOT / cover_rel))
@@ -439,9 +461,11 @@ def render_trials(n, strategy="SS_PERFORMANCE"):
                       "pillar": weighting.pillar_of(hook),
                       "cap_style": cs if cs is not None else (cap_i + k) % 6,
                       "beat": beat, "hook": hook})
-        print(f"  trial {k+1}/{len(batch)}: {spec.get('type')}/{style} -> {rel}")
+        print(f"  trial {k+1}/{len(batch)}: {spec.get('type')}/{style}/{beat} -> {rel}")
     st = read_state()
     st["reel_cap_i"] = cap_i + len(batch); st["reel_audio_i"] = aud_i + len(batch)
+    # Record the trial beats too, so the next normal reel also avoids them.
+    st["beat_recent"] = (st.get("beat_recent", []) + used_beats)[-5:]
     write_state(st)
     TRIAL_PENDING.write_text(json.dumps({"strategy": strategy, "items": items}, indent=1) + "\n")
     print(f"rendered {len(items)} trial reels (strategy={strategy})")
