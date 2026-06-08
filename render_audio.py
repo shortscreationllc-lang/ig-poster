@@ -16,6 +16,10 @@ BEATS = [
     {"name": "minimal",     "bpm": 100, "root": 123.47, "chord": [0, 7, 12],    "kick": 0.45, "hat": 0.07, "pad": 0.035, "trem": 0.00},
     {"name": "chill-sus",   "bpm": 70,  "root": 87.31,  "chord": [0, 5, 7, 10], "kick": 0.42, "hat": 0.00, "pad": 0.070, "trem": 0.18},
     {"name": "drive-soft",  "bpm": 110, "root": 146.83, "chord": [0, 3, 7],     "kick": 0.55, "hat": 0.08, "pad": 0.040, "trem": 0.10},
+    {"name": "trap-dark",   "bpm": 130, "root": 73.42,  "chord": [0, 3, 7, 10], "kick": 0.62, "hat": 0.09, "pad": 0.045, "trem": 0.12},
+    {"name": "ambient-air", "bpm": 64,  "root": 164.81, "chord": [0, 4, 7, 11], "kick": 0.30, "hat": 0.00, "pad": 0.075, "trem": 0.25},
+    {"name": "house-pulse", "bpm": 122, "root": 110.00, "chord": [0, 5, 7, 12], "kick": 0.58, "hat": 0.10, "pad": 0.040, "trem": 0.08},
+    {"name": "phonk-low",   "bpm": 88,  "root": 82.41,  "chord": [0, 3, 7],     "kick": 0.66, "hat": 0.04, "pad": 0.050, "trem": 0.20},
 ]
 
 
