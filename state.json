@@ -294,6 +294,20 @@
         "pillar": "editing",
         "source_index": 9
       }
+    },
+    {
+      "at": "20260608T163803Z",
+      "id": "queue/reel-1780936637.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17965574993931521",
+      "tags": {
+        "fmt": "statement",
+        "style": "blackout",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Consistency beats going viral once \u2014 show up and the algorithm follows."
     }
   ],
   "story_hook_i": 1,
