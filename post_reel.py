@@ -259,9 +259,16 @@ def _wait_raw(url, timeout=120):
     return False
 
 
-def publish_reel(user_id, token, video_url, caption, cover_url=None):
+def publish_reel(user_id, token, video_url, caption, cover_url=None, trial_params=None):
     params = {"media_type": "REELS", "video_url": video_url, "caption": caption,
-              "share_to_feed": "true", "access_token": token}
+              "access_token": token}
+    if trial_params:
+        # TRIAL REEL — shown only to non-followers; no share_to_feed. graduation_strategy
+        # MANUAL (you promote in-app) or SS_PERFORMANCE (IG auto-promotes winners).
+        params["trial_params"] = json.dumps(trial_params)
+        print("  trial:", trial_params)
+    else:
+        params["share_to_feed"] = "true"
     if cover_url:
         params["cover_url"] = cover_url   # the finished design as the Reel cover
         print("  cover:", cover_url)
@@ -362,17 +369,162 @@ def publish_story():
     return 0
 
 
+# ============================ TRIAL REELS (batch) ============================
+# Trial reels are shown ONLY to non-followers — a cold-audience content lab. We
+# fire a varied batch (distinct format + style + topic, no repeats), let IG (or
+# you) graduate the winners to followers, and feed every trial's performance
+# back into the same weights.json that steers the main rotation. Pure signal:
+# cold viewers judge the CONTENT, not your follower relationship.
+TRIAL_PENDING = ROOT / ".pending_trials.json"
+
+
+def trials_remaining(target):
+    """How many more trials to post today to reach `target` (the daily cap)."""
+    st = read_state()
+    today = time.strftime("%Y%m%d", time.gmtime())
+    return max(0, target - st.get("trial_daily", {}).get(today, 0))
+
+
+def _pick_trial_batch(n):
+    """Pick n recipes maximizing variety — distinct format, style, and topic —
+    skipping anything trialed recently so a batch never repeats itself."""
+    st = read_state()
+    recent = st.get("trial_recent", [])
+    pool = [c for c in ROTATION if _reel_key(c) not in recent]
+    if len(pool) < n:                      # exhausted the catalog — allow reuse
+        pool = list(ROTATION)
+    random.shuffle(pool)                   # break ties differently each run
+    chosen, used_fmt, used_style, used_pillar = [], set(), set(), set()
+
+    def gain(c):                           # how much new variety this adds
+        p = weighting.pillar_of(c.get("hook") or c.get("headline", ""))
+        return ((c.get("type") not in used_fmt) + (c.get("style") not in used_style)
+                + (p not in used_pillar))
+
+    while pool and len(chosen) < n:
+        pool.sort(key=gain, reverse=True)
+        c = pool.pop(0)
+        chosen.append(c)
+        used_fmt.add(c.get("type")); used_style.add(c.get("style"))
+        used_pillar.add(weighting.pillar_of(c.get("hook") or c.get("headline", "")))
+    st["trial_recent"] = (recent + [_reel_key(c) for c in chosen])[-14:]
+    write_state(st)
+    return chosen
+
+
+def render_trials(n, strategy="SS_PERFORMANCE"):
+    QUEUE_DIR.mkdir(exist_ok=True); _prune_old_reels(keep=12)
+    batch = _pick_trial_batch(n)
+    st = read_state(); cap_i = st.get("reel_cap_i", 0); aud_i = st.get("reel_audio_i", 0)
+    w = weighting.load_weights()
+    items = []
+    for k, spec in enumerate(batch):
+        rel = f"queue/reel-{int(time.time())}-{k}.mp4"; out = str(ROOT / rel)
+        style = spec.get("style", "blackout")
+        if spec.get("type") == "sequence":
+            render_video.video_sequence(spec["scenes"], out, style=style)
+        else:
+            render_video.render_video(spec, out, style=style)
+        beat = render_audio.add_beat(out, aud_i + k)
+        cover_rel = rel[:-4] + ".jpg"
+        try:
+            _make_cover(out, spec.get("type"), str(ROOT / cover_rel))
+        except Exception as e:
+            print(f"  (cover skipped: {e})"); cover_rel = None
+        hook = spec["hook"]
+        cs = weighting.best_cap_style(w)
+        caption = captions.caption_for(hook, cap_i + k, style=cs)
+        items.append({"rel": rel, "cover": cover_rel, "caption": caption,
+                      "type": spec.get("type"), "style": style,
+                      "pillar": weighting.pillar_of(hook),
+                      "cap_style": cs if cs is not None else (cap_i + k) % 6,
+                      "beat": beat, "hook": hook})
+        print(f"  trial {k+1}/{len(batch)}: {spec.get('type')}/{style} -> {rel}")
+    st = read_state()
+    st["reel_cap_i"] = cap_i + len(batch); st["reel_audio_i"] = aud_i + len(batch)
+    write_state(st)
+    TRIAL_PENDING.write_text(json.dumps({"strategy": strategy, "items": items}, indent=1) + "\n")
+    print(f"rendered {len(items)} trial reels (strategy={strategy})")
+
+
+def publish_trials():
+    load_env_file()
+    user_id = os.getenv("IG_USER_ID", "").strip()
+    token = os.getenv("IG_ACCESS_TOKEN", "").strip()
+    if not user_id or not token:
+        print("ERROR: IG creds not set", file=sys.stderr); return 2
+    if not TRIAL_PENDING.exists():
+        print("ERROR: no .pending_trials.json (run --render-trials N first)", file=sys.stderr); return 2
+    base = _public_base()
+    if not base:
+        print("ERROR: no public base URL", file=sys.stderr); return 2
+    data = json.loads(TRIAL_PENDING.read_text())
+    strat = data.get("strategy", "SS_PERFORMANCE"); items = data.get("items", [])
+    st = read_state(); today = time.strftime("%Y%m%d", time.gmtime()); posted = 0
+    for idx, it in enumerate(items):
+        url = f"{base}/{urllib.parse.quote(it['rel'])}"
+        cover_url = f"{base}/{urllib.parse.quote(it['cover'])}" if it.get("cover") else None
+        print(f"Posting TRIAL reel {idx+1}/{len(items)}: {it['rel']}")
+        _wait_raw(url)
+        if cover_url:
+            _wait_raw(cover_url)
+        tp = {"graduation_strategy": strat}
+        try:
+            pub = publish_reel(user_id, token, url, it["caption"], cover_url=cover_url, trial_params=tp)
+        except Exception as e:
+            # never let a cover block a trial — retry once without it (keep trial_params)
+            if cover_url:
+                print(f"  cover rejected ({e}) — retrying without cover", file=sys.stderr)
+                try:
+                    pub = publish_reel(user_id, token, url, it["caption"], trial_params=tp)
+                except Exception as e2:
+                    print(f"  TRIAL {idx+1} FAILED: {e2}", file=sys.stderr); continue
+            else:
+                print(f"  TRIAL {idx+1} FAILED: {e}", file=sys.stderr); continue
+        print("  Published TRIAL reel:", json.dumps(pub))
+        st.setdefault("history", []).append({
+            "at": time.strftime("%Y%m%dT%H%M%SZ", time.gmtime()),
+            "id": it["rel"], "type": "reel", "slot": "trial", "post_id": pub.get("id"),
+            "trial": True, "graduation": strat,
+            "tags": {"fmt": it.get("type"), "style": it.get("style"),
+                     "pillar": it.get("pillar"), "cap_style": it.get("cap_style")},
+            "hook": it.get("hook", "")})
+        posted += 1
+        if idx < len(items) - 1:
+            time.sleep(30)   # small stagger between publishes (kinder to the API)
+    st["history"] = st["history"][-200:]
+    st.setdefault("trial_daily", {})[today] = st.get("trial_daily", {}).get(today, 0) + posted
+    write_state(st)
+    TRIAL_PENDING.unlink(missing_ok=True)
+    print(f"Posted {posted} trial reel(s). Today's trial total: {st['trial_daily'][today]}")
+    return 0 if posted else 1
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--render", action="store_true")
     ap.add_argument("--publish", action="store_true")
     ap.add_argument("--publish-story", dest="publish_story", action="store_true")
+    ap.add_argument("--render-trials", type=int, default=0,
+                    help="render N varied TRIAL reels into a batch")
+    ap.add_argument("--publish-trials", dest="publish_trials", action="store_true")
+    ap.add_argument("--trials-remaining", type=int, default=-1,
+                    help="print how many trials are left to hit this daily target, then exit")
+    ap.add_argument("--trial-strategy", default=os.getenv("TRIAL_STRATEGY", "SS_PERFORMANCE"),
+                    help="MANUAL or SS_PERFORMANCE")
     ap.add_argument("--kind", default=os.getenv("KIND", "auto"))
     a = ap.parse_args()
+    if a.trials_remaining >= 0:
+        print(trials_remaining(a.trials_remaining)); sys.exit(0)
+    if a.render_trials > 0:
+        render_trials(a.render_trials, strategy=a.trial_strategy); sys.exit(0)
+    if a.publish_trials:
+        sys.exit(publish_trials())
     if a.render:
         render(a.kind); sys.exit(0)
     if a.publish:
         sys.exit(publish())
     if a.publish_story:
         sys.exit(publish_story())
-    print("specify --render | --publish | --publish-story", file=sys.stderr); sys.exit(2)
+    print("specify --render | --publish | --publish-story | --render-trials N | --publish-trials",
+          file=sys.stderr); sys.exit(2)
