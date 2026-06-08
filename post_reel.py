@@ -159,12 +159,30 @@ ROTATION = [
 
 
 def _prune_old_reels(keep=5):
-    reels = sorted(QUEUE_DIR.glob("reel-*.mp4"))
-    for old in reels[:-keep]:
-        try:
-            old.unlink()
-        except Exception:
-            pass
+    for pat in ("reel-*.mp4", "reel-*.jpg"):
+        old = sorted(QUEUE_DIR.glob(pat))[:-keep]
+        for f in old:
+            try:
+                f.unlink()
+            except Exception:
+                pass
+
+
+# A reel's first second is intentionally near-empty (text animates IN), so IG's
+# auto-cover grabs a blank frame. We instead grab the FULLY-COMPOSED frame — the
+# finished design — at a per-type "hero" moment and hand IG that as cover_url.
+COVER_AT = {"statement": 3.0, "stat": 4.0, "quote": 4.0, "checklist": 6.5, "sequence": 1.0}
+
+
+def _make_cover(mp4_path, typ, out_jpg):
+    """Extract the hero frame (all text revealed) as a 1080x1920 JPG cover."""
+    import imageio_ffmpeg, subprocess
+    ff = imageio_ffmpeg.get_ffmpeg_exe()
+    secs = COVER_AT.get(typ, 3.0)
+    subprocess.run([ff, "-y", "-ss", str(secs), "-i", mp4_path,
+                    "-frames:v", "1", "-q:v", "2", out_jpg],
+                   check=True, capture_output=True)
+    return out_jpg
 
 
 def _reel_key(spec):
@@ -211,12 +229,18 @@ def render(kind):
     else:
         render_video.render_video(item, out, style=style)
     beat = render_audio.add_beat(out, aud_i)   # rotating copyright-safe beat
+    # Custom cover = the finished, fully-revealed design (not IG's blank auto-grab).
+    cover_rel = rel[:-4] + ".jpg"
+    try:
+        _make_cover(out, item.get("type"), str(ROOT / cover_rel))
+    except Exception as e:
+        print(f"  (cover render skipped: {e})"); cover_rel = None
     PENDING.write_text(json.dumps({"rel": rel, "caption": caption, "type": item.get("type"),
                                    "style": style, "beat": beat, "pillar": pillar,
-                                   "cap_style": cap_style,
+                                   "cap_style": cap_style, "cover": cover_rel,
                                    "hook": item.get("hook") or item.get("headline", "")}) + "\n")
     print(f"rendered reel -> {rel} (type={item.get('type')} style={style} "
-          f"pillar={pillar} cap_style={cap_style} beat={beat})")
+          f"pillar={pillar} cap_style={cap_style} beat={beat} cover={cover_rel})")
 
 
 def _wait_raw(url, timeout=120):
@@ -235,10 +259,13 @@ def _wait_raw(url, timeout=120):
     return False
 
 
-def publish_reel(user_id, token, video_url, caption):
-    created = graph_post(f"{user_id}/media", {
-        "media_type": "REELS", "video_url": video_url, "caption": caption,
-        "share_to_feed": "true", "access_token": token})
+def publish_reel(user_id, token, video_url, caption, cover_url=None):
+    params = {"media_type": "REELS", "video_url": video_url, "caption": caption,
+              "share_to_feed": "true", "access_token": token}
+    if cover_url:
+        params["cover_url"] = cover_url   # the finished design as the Reel cover
+        print("  cover:", cover_url)
+    created = graph_post(f"{user_id}/media", params)
     cid = created.get("id")
     if not cid:
         raise RuntimeError(f"reel container failed: {json.dumps(created)}")
@@ -263,12 +290,23 @@ def publish():
 
     pend = json.loads(PENDING.read_text())
     url = f"{base}/{urllib.parse.quote(pend['rel'])}"
+    cover_url = f"{base}/{urllib.parse.quote(pend['cover'])}" if pend.get("cover") else None
     print(f"Posting REEL '{pend['rel']}' -> {url}")
     _wait_raw(url)
+    if cover_url:
+        _wait_raw(cover_url)   # cover ships in the same commit, but confirm it's live
     try:
-        pub = publish_reel(user_id, token, url, pend["caption"])
+        pub = publish_reel(user_id, token, url, pend["caption"], cover_url=cover_url)
     except Exception as e:
-        print(f"REEL PUBLISH FAILED: {e}", file=sys.stderr); return 1
+        # A custom cover must never block the post — retry once without it.
+        if cover_url:
+            print(f"  cover rejected ({e}) — retrying without custom cover", file=sys.stderr)
+            try:
+                pub = publish_reel(user_id, token, url, pend["caption"])
+            except Exception as e2:
+                print(f"REEL PUBLISH FAILED: {e2}", file=sys.stderr); return 1
+        else:
+            print(f"REEL PUBLISH FAILED: {e}", file=sys.stderr); return 1
     print("Published REEL:", json.dumps(pub))
     # record in history so it's logged
     st = read_state()
