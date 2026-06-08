@@ -270,6 +270,20 @@
         "cap_style": 4
       },
       "hook": "The short-form posting checklist \u2014 run every video through this before you publish."
+    },
+    {
+      "at": "20260608T123804Z",
+      "id": "queue/reel-1780922236.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18092980142605420",
+      "tags": {
+        "fmt": "stat",
+        "style": "blackout",
+        "pillar": "hook",
+        "cap_style": 5
+      },
+      "hook": "Cutting the first 2 seconds of your video can double your watch time."
     }
   ],
   "story_hook_i": 1,
