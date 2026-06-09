@@ -609,17 +609,17 @@
     "build the system, lose the dread.",
     "content gets easier when the process feels lighter."
   ],
-  "reel_i": 22,
-  "reel_cap_i": 23,
-  "reel_audio_i": 23,
+  "reel_i": 23,
+  "reel_cap_i": 24,
+  "reel_audio_i": 24,
   "reel_recent": [
-    "your hook is 90 of the post the first line does almost all t",
     "if they don t stop scrolling nothing else you made even matt",
     "the short form posting checklist run every video through thi",
     "cutting the first 2 seconds of your video can double your wa",
     "consistency beats going viral once show up and the algorithm",
     "most people quit posting at 90 days right before the reach s",
-    "shares in dms are the 1 signal growing reach in 2026 make co"
+    "shares in dms are the 1 signal growing reach in 2026 make co",
+    "how to make short form that actually books clients not just "
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -630,9 +630,11 @@
   },
   "beat_recent": [
     1,
-    2
+    2,
+    3
   ],
   "style_recent": [
-    "creamorange"
+    "creamorange",
+    "slate"
   ]
 }
