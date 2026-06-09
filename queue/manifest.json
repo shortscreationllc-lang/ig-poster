@@ -525,12 +525,14 @@
       ],
       "caption": "Content gets easier when the process feels lighter.\n\nThe people who burn out are the ones white-knuckling every post. The ones who last build a system so simple that showing up barely costs them anything.\n\nMake it light enough to keep doing.\n\nFollow @josephborroto for content systems that don't burn you out.\n\n#contentcreation #systems #consistency #creatorlife #josephborroto",
       "alt": "",
-      "posted": false,
+      "posted": true,
       "source_index": 10,
       "fp": [
         "build the system, lose the dread.",
         "content gets easier when the process feels lighter."
-      ]
+      ],
+      "posted_at": "20260609T154316Z",
+      "post_id": "18083097119445669"
     },
     {
       "id": "single-00012",
@@ -1138,6 +1140,24 @@
         "people hear bad audio before they see good video.",
         "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
         "volume jumping between clips makes it feel amateur."
+      ]
+    },
+    {
+      "id": "single-00049",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00049.jpg"
+      ],
+      "caption": "Most people frame too tight, then the on-screen title lands right on their face.\n\nThe fix takes one second: leave headroom. Frame with empty space above you so the title has somewhere to live.\n\nShoot for the overlay before you ever add it.\n\nFollow @josephborroto for one-second fixes that level up your video.\n\n#videography #framingtips #reelstips #shortformvideo #videoediting #josephborroto",
+      "alt": "Card: 90% of people frame their videos wrong, one rule fixes it.",
+      "posted": false,
+      "source_index": 24,
+      "style": "dark",
+      "fp": [
+        "90% of people frame their videos wrong.",
+        "leave space above your head for the title overlay, or the text covers your face.",
+        "one rule fixes it instantly."
       ]
     }
   ]
