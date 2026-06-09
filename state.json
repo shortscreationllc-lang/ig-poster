@@ -370,6 +370,20 @@
         "cap_style": 0
       },
       "hook": "Most people quit posting at 90 days \u2014 right before the reach starts to compound."
+    },
+    {
+      "at": "20260609T123802Z",
+      "id": "queue/reel-1781008636.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18378943249205490",
+      "tags": {
+        "fmt": "stat",
+        "style": "creamorange",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Shares in DMs are the #1 signal growing reach in 2026 \u2014 make content people send."
     }
   ],
   "story_hook_i": 1,
