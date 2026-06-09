@@ -124,6 +124,27 @@ PALETTES = {
         "panel": (255, 253, 248), "panel_line": (208, 200, 186),
         "kicker_text": (255, 255, 255), "glow_a": 50,
     },
+    # deep BURNT-orange on near-black — a darker, moodier shade of the brand.
+    "ember": {
+        "bg_top": (14, 10, 8), "bg_bottom": (24, 14, 9),
+        "head": (214, 100, 28), "sub": (236, 226, 216), "muted": (150, 130, 115),
+        "panel": (22, 16, 12), "panel_line": (70, 50, 38),
+        "kicker_text": (16, 12, 10), "glow_a": 44, "accent": (214, 100, 28),
+    },
+    # cool SLATE blue-grey with orange — a different cool tone than navy.
+    "slate": {
+        "bg_top": (20, 24, 28), "bg_bottom": (30, 36, 42),
+        "head": (238, 242, 245), "sub": (220, 226, 230), "muted": (150, 160, 168),
+        "panel": (26, 31, 36), "panel_line": (58, 66, 74),
+        "kicker_text": (12, 12, 12), "glow_a": 48,
+    },
+    # FULL ORANGE background with bold BLACK words — the loud pattern-break.
+    "orangepop": {
+        "bg_top": (245, 138, 28), "bg_bottom": (236, 110, 12),
+        "head": (20, 16, 12), "sub": (28, 22, 16), "muted": (96, 64, 32),
+        "panel": (250, 196, 130), "panel_line": (200, 120, 40),
+        "kicker_text": (245, 238, 230), "glow_a": 0, "accent": (20, 16, 12),
+    },
 }
 
 

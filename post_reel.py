@@ -190,6 +190,26 @@ def _reel_key(spec):
     return re.sub(r"[^a-z0-9]+", " ", str(h).lower()).strip()[:60]
 
 
+# The looks a reel can wear — all the brand colors, in different treatments
+# (orange-on-dark, white headline + orange number, full-orange/black, burnt,
+# slate, cream). We ROTATE through these so the same format never looks the same
+# two posts in a row.
+VIDEO_STYLES = ["blackout", "navyorange", "dark", "midnight",
+                "ember", "slate", "orangepop", "creamorange"]
+
+
+def _next_style(st, avoid=()):
+    """Pick a look that differs from the last few used (style_recent) and from any
+    in `avoid` (e.g. others in the same trial batch) — strong variety, no repeats."""
+    rec = st.get("style_recent", [])
+    blocked = set(avoid) | set(rec[-4:])
+    cands = ([s for s in VIDEO_STYLES if s not in blocked]
+             or [s for s in VIDEO_STYLES if s not in set(avoid)] or list(VIDEO_STYLES))
+    s = random.choice(cands)
+    st["style_recent"] = (rec + [s])[-7:]
+    return s
+
+
 def _pick(kind):
     st = read_state()
     i = st.get("reel_i", 0); cap_i = st.get("reel_cap_i", 0); aud_i = st.get("reel_audio_i", 0)
@@ -212,6 +232,8 @@ def _pick(kind):
     else:
         bucket = CONTENT.get(kind) or CONTENT["stat"]
         it, hk, style = bucket[i % len(bucket)]; item, hook = it, hk
+    # Rotate the LOOK every post (overrides the recipe's default) for variety.
+    style = _next_style(st)
     st["reel_i"] = i + 1
     st["reel_cap_i"] = cap_i + 1       # rotate caption wording
     st["reel_audio_i"] = aud_i + 1     # rotate beat
@@ -437,11 +459,11 @@ def render_trials(n, strategy="SS_PERFORMANCE"):
     batch = _pick_trial_batch(n)
     st = read_state(); cap_i = st.get("reel_cap_i", 0); aud_i = st.get("reel_audio_i", 0)
     w = weighting.load_weights()
-    used_beats = []                        # beats picked in THIS batch (keep distinct)
+    used_beats, used_styles = [], []       # keep beats AND looks distinct in-batch
     items = []
     for k, spec in enumerate(batch):
         rel = f"queue/reel-{int(time.time())}-{k}.mp4"; out = str(ROOT / rel)
-        style = spec.get("style", "blackout")
+        style = _next_style(st, avoid=used_styles); used_styles.append(style)
         if spec.get("type") == "sequence":
             render_video.video_sequence(spec["scenes"], out, style=style)
         else:
