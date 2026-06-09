@@ -423,6 +423,38 @@
         "pillar": "editing",
         "source_index": 10
       }
+    },
+    {
+      "at": "20260609T202831Z",
+      "id": "queue/reel-1781036857-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18094588340187409",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "ember",
+        "pillar": "mindset",
+        "cap_style": 0
+      },
+      "hook": "Boring and consistent beats perfect and rare \u2014 just keep showing up."
+    },
+    {
+      "at": "20260609T202935Z",
+      "id": "queue/reel-1781036863-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18092020016363332",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "quote",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Nobody cares how your video was filmed \u2014 only whether it's worth watching."
     }
   ],
   "story_hook_i": 1,
@@ -657,7 +689,8 @@
     "nobody cares how your video was filmed only whether it s wor"
   ],
   "trial_daily": {
-    "20260608": 2
+    "20260608": 2,
+    "20260609": 2
   },
   "beat_recent": [
     1,
