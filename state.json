@@ -455,6 +455,20 @@
         "cap_style": 0
       },
       "hook": "Nobody cares how your video was filmed \u2014 only whether it's worth watching."
+    },
+    {
+      "at": "20260609T230436Z",
+      "id": "queue/reel-1781046219.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18118491490805365",
+      "tags": {
+        "fmt": "checklist",
+        "style": "blackout",
+        "pillar": "proof",
+        "cap_style": 0
+      },
+      "hook": "The 4-question check every short-form video should pass before you post it."
     }
   ],
   "story_hook_i": 1,
