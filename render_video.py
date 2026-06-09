@@ -34,6 +34,12 @@ def _zoom(img, s):
     return big.crop((x, y, x + VW, y + VH))
 
 
+def _acc(p):
+    """The 'punch' color for a palette — orange on dark looks, near-black on the
+    full-orange look. Drives the big number, dividers, pills, quote marks, etc."""
+    return p.get("accent", ORANGE)
+
+
 def _bg(p):
     top = np.array(p["bg_top"], float); bot = np.array(p["bg_bottom"], float)
     t = np.linspace(0, 1, VH)[:, None]
@@ -45,9 +51,10 @@ def _bg(p):
 def _glow(p):
     g = Image.new("RGBA", (VW, VH), (0, 0, 0, 0)); d = ImageDraw.Draw(g)
     cx, cy = 230, 360
+    acc = _acc(p)
     for r in range(640, 0, -6):
         a = int(p.get("glow_a", 50) * (1 - r / 640))
-        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=ORANGE + (a,))
+        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=acc + (a,))
     return g
 
 
@@ -102,7 +109,7 @@ def _kicker_sprite(text, p):
     kf = f_brand(30); txt = text.upper()
     tmp = ImageDraw.Draw(Image.new("RGBA", (10, 10))); tw = tmp.textlength(txt, font=kf)
     s = Image.new("RGBA", (int(tw) + 80, 70), (0, 0, 0, 0)); d = ImageDraw.Draw(s)
-    d.rounded_rectangle((0, 0, tw + 56, 56), 10, fill=ORANGE)
+    d.rounded_rectangle((0, 0, tw + 56, 56), 10, fill=_acc(p))
     d.text((28, 12), txt, font=kf, fill=p.get("kicker_text", (12, 12, 12)))
     return s
 
@@ -120,7 +127,7 @@ def video_statement(item, out, style="blackout", secs=6):
     f = f_brand(size); lh = int(size * 1.04)
     sprites = [_text_sprite(ln, f, p["head"])[0] for ln in lines]
     n = len(sprites); block_h = n * lh; y0 = (VH - block_h) // 2 - 40
-    footer = _footer_sprite(p); ul = Image.new("RGBA", (240, 14), ORANGE + (255,))
+    footer = _footer_sprite(p); ul = Image.new("RGBA", (240, 14), _acc(p) + (255,))
     ls, ld, stag = 0.2, 0.4, 0.3
     last = ls + (n - 1) * stag + ld; uls = last + 0.1
 
@@ -142,39 +149,66 @@ def video_statement(item, out, style="blackout", secs=6):
 
 def video_stat(item, out, style="blackout", secs=7):
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
+    acc = _acc(p)
+    htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
     m = re.match(r"\s*(\d+(?:\.\d+)?)(.*)", str(item["stat"]))
     target = float(m.group(1)) if m else None
     suffix = m.group(2) if m else ""
-    nf = f_brand(360)
+    unit = suffix.strip()
+    # Stack the unit on its own line when the number has a trailing WORD
+    # ("90 DAYS", "3 SEC") so the number stays huge and NOTHING gets clipped.
+    stacked = target is not None and bool(unit) and suffix[:1] == " "
+
+    def numtext(v):
+        return f"{int(v)}" if float(v).is_integer() else f"{v:g}"
+
+    def fit(text, cap, floor=64):
+        """Largest brand-font size (<=cap) at which `text` fits the frame width."""
+        s = cap
+        while s > floor and htmp.textlength(text, font=f_brand(s)) > VW - 2 * M:
+            s -= 6
+        return s
+
+    if target is None:                       # pure word, e.g. "SENDS"
+        big_final = str(item["stat"]); num_size = fit(big_final, 300)
+    elif stacked:                            # "90" big, "DAYS" below
+        big_final = numtext(target); num_size = fit(big_final, 360)
+    else:                                    # inline, e.g. "90%", "2X"
+        big_final = numtext(target) + suffix; num_size = fit(big_final, 360)
+    nf = f_brand(num_size)
+    unit_size = fit(unit, min(int(num_size * 0.44), 150)) if stacked else 0
+    uf = f_brand(unit_size) if stacked else None
+
     kick = _kicker_sprite(item.get("kicker", "THE NUMBER"), p)
     hf = f_brand(72)
-    htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
     hlines = wrap(htmp, item["headline"], hf, VW - 2 * M)
     hsprites = [_text_sprite(ln, hf, p["head"])[0] for ln in hlines]
     footer = _footer_sprite(p)
     cnt_s, cnt_d = 0.3, 1.0  # count-up window (faster)
+    num_lh = int(num_size * 1.0); unit_lh = int(unit_size * 1.12) if stacked else 0
     head_h = len(hlines) * 84
-    block = 56 + 40 + nf.size + 24 + head_h
+    block = 56 + 40 + num_lh + unit_lh + 24 + head_h
     top = (VH - block) // 2          # vertically center kicker + number + headline
-    ky = top; numy = top + 96; heady = numy + nf.size + 24
+    ky = top; numy = top + 96; unity = numy + num_lh + 4
+    heady = (unity + unit_lh if stacked else numy + num_lh) + 28
 
     def frame(i):
         t = i / FPS; fr = bg.copy()
         fr.alpha_composite(glow, (0, int(36 * np.sin(t * 0.8))))
         fr.alpha_composite(_alpha(kick, ease((t - 0.1) / 0.5)), (M, ky))
-        # counting number
-        if target is not None:
-            pr = ease((t - cnt_s) / cnt_d)
-            val = int(round(target * pr))
-            disp = f"{val}{suffix}"
+        # counting number (left-aligned at the margin)
+        if target is None:
+            disp = big_final
         else:
-            disp = str(item["stat"])
-        spr, _ = _text_sprite(disp, nf, ORANGE, center=False)
-        # left-aligned at M
-        d2 = ImageDraw.Draw(spr)  # already drawn centered; redo left
-        spr2 = Image.new("RGBA", (VW, nf.getmetrics()[0] + nf.getmetrics()[1] + 20), (0, 0, 0, 0))
-        ImageDraw.Draw(spr2).text((M - 8, 0), disp, font=nf, fill=ORANGE)
-        fr.alpha_composite(spr2, (0, numy))
+            val = round(target * ease((t - cnt_s) / cnt_d))
+            disp = numtext(val) + ("" if stacked else suffix)
+        nsp = Image.new("RGBA", (VW, nf.getmetrics()[0] + nf.getmetrics()[1] + 20), (0, 0, 0, 0))
+        ImageDraw.Draw(nsp).text((M - 8, 0), disp, font=nf, fill=acc)
+        fr.alpha_composite(nsp, (0, numy))
+        if stacked:
+            usp = Image.new("RGBA", (VW, uf.getmetrics()[0] + uf.getmetrics()[1] + 16), (0, 0, 0, 0))
+            ImageDraw.Draw(usp).text((M - 4, 0), unit, font=uf, fill=p["head"])
+            fr.alpha_composite(_alpha(usp, ease((t - (cnt_s + cnt_d * 0.5)) / 0.5)), (0, unity))
         # headline reveal after count
         y = heady
         for k, hs in enumerate(hsprites):
@@ -206,7 +240,7 @@ def video_quote(item, out, style="navyorange", secs=7):
         sprites.append(s)
     af = f_sys(42, bold=True)
     attr = Image.new("RGBA", (VW, 70), (0, 0, 0, 0))
-    ImageDraw.Draw(attr).text((M, 0), "— Joseph Borroto", font=af, fill=ORANGE)
+    ImageDraw.Draw(attr).text((M, 0), "— Joseph Borroto", font=af, fill=_acc(p))
     footer = _footer_sprite(p)
     n = len(sprites)
     text_h = n * lh
@@ -221,7 +255,7 @@ def video_quote(item, out, style="navyorange", secs=7):
         qa = ease((t - 0.1) / 0.6)  # quote mark scales/fades in
         if qa > 0:
             qs = Image.new("RGBA", (VW, 320), (0, 0, 0, 0))
-            ImageDraw.Draw(qs).text((M - 12, 0), '"', font=qf, fill=ORANGE)
+            ImageDraw.Draw(qs).text((M - 12, 0), '"', font=qf, fill=_acc(p))
             fr.alpha_composite(_alpha(qs, qa), (0, qy))
         for k, spr in enumerate(sprites):
             pr = ease((t - (ls + k * stag)) / ld)
@@ -262,12 +296,15 @@ def video_checklist(item, out, style="dark", secs=9):
             if pr <= 0:
                 y += 130; continue
             row = Image.new("RGBA", (VW, 130), (0, 0, 0, 0)); d = ImageDraw.Draw(row)
-            d.rounded_rectangle((M, 4, M + 56, 60), 10, fill=ORANGE)
+            d.rounded_rectangle((M, 4, M + 56, 60), 10, fill=_acc(p))
             chk = ease((t - (st + 0.15)) / 0.3)  # check draws in
+            # carve the check out in the bg color so it contrasts ANY pill color
+            # (dark check on the orange pill; orange check on the full-orange look)
+            chkc = p["bg_top"]
             if chk > 0:
-                d.line([(M + 13, 34), (M + 25, 47)], fill=(20, 14, 6), width=7)
+                d.line([(M + 13, 34), (M + 25, 47)], fill=chkc, width=7)
                 if chk > 0.5:
-                    d.line([(M + 25, 47), (M + 47, 18)], fill=(20, 14, 6), width=7)
+                    d.line([(M + 25, 47), (M + 47, 18)], fill=chkc, width=7)
             for j, ln in enumerate(wrap(d, b, itf, VW - (M + 90) - M)):
                 d.text((M + 90, j * 56), ln, font=itf, fill=p["head"] if j == 0 else p["sub"])
             fr.alpha_composite(_alpha(row, pr), (int((1 - pr) * 40), y))
@@ -301,18 +338,18 @@ def _scene_card(scene, p):
     block = num_h + len(hl) * lh + 66 + len(body_lines) * 58
     y = (VH - block) // 2            # vertically center number + headline + body
     if scene.get("n"):
-        d.text((M - 6, y), str(scene["n"]), font=f_brand(150), fill=ORANGE); y += num_h
+        d.text((M - 6, y), str(scene["n"]), font=f_brand(150), fill=_acc(p)); y += num_h
     for ln in hl:
         d.text((M, y), ln, font=hf, fill=p["head"]); y += lh
     y += 16
-    d.rounded_rectangle((M, y, M + 200, y + 10), 5, fill=ORANGE); y += 50
+    d.rounded_rectangle((M, y, M + 200, y + 10), 5, fill=_acc(p)); y += 50
     bf = f_sys(46)
     for ln in body_lines:
         d.text((M, y), ln, font=bf, fill=p["sub"]); y += 58
     if scene.get("swipe"):
-        sf = f_brand(34); d.text((M, VH - 250), "SWIPE", font=sf, fill=ORANGE)
+        sf = f_brand(34); d.text((M, VH - 250), "SWIPE", font=sf, fill=_acc(p))
         sw = d.textlength("SWIPE", font=sf)
-        d.polygon([(M + sw + 22, VH - 246), (M + sw + 22, VH - 214), (M + sw + 52, VH - 230)], fill=ORANGE)
+        d.polygon([(M + sw + 22, VH - 246), (M + sw + 22, VH - 214), (M + sw + 52, VH - 230)], fill=_acc(p))
     hf2 = f_brand(40); h = "@josephborroto"; hw = d.textlength(h, font=hf2)
     d.text(((VW - hw) / 2, VH - 150), h, font=hf2, fill=p.get("muted", (170, 170, 170)))
     return img
@@ -328,7 +365,7 @@ def video_sequence(scenes, out, style="dark", hold=1.6, trans=0.45):
         dd = ImageDraw.Draw(im); r, gap = 9, 36
         x0 = (VW - (n - 1) * gap) // 2
         for i in range(n):
-            c = ORANGE if i == active else (110, 110, 110)
+            c = _acc(p) if i == active else (110, 110, 110)
             dd.ellipse((x0 + i * gap - r, 120 - r, x0 + i * gap + r, 120 + r), fill=c)
 
     cards = []
