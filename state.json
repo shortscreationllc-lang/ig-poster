@@ -394,6 +394,20 @@
         "pillar": "mindset",
         "source_index": 10
       }
+    },
+    {
+      "at": "20260609T160933Z",
+      "id": "queue/reel-1781021333.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18102972848020825",
+      "tags": {
+        "fmt": "checklist",
+        "style": "slate",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to make short-form that actually books clients, not just views."
     }
   ],
   "story_hook_i": 1,
