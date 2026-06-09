@@ -535,6 +535,40 @@
       "post_id": "18083097119445669"
     },
     {
+      "id": "carousel-00025",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00025-0.jpg",
+        "queue/carousel-00025-1.jpg",
+        "queue/carousel-00025-2.jpg",
+        "queue/carousel-00025-3.jpg",
+        "queue/carousel-00025-4.jpg",
+        "queue/carousel-00025-5.jpg",
+        "queue/carousel-00025-6.jpg"
+      ],
+      "caption": "Editing slow is usually a workflow problem, not a skill problem.\n\n1. Cut on the first pass\n2. Build a caption style\n3. Keep a music folder\n4. Template your export\n5. Stop polishing dead air\n\nSpeed comes from systems, not rushing.\n\nFollow @josephborroto for the workflow behind fast, clean edits.\n\n#videoediting #editingworkflow #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 ways to edit twice as fast.",
+      "posted": true,
+      "source_index": 10,
+      "fp": [
+        "1. cut on the first pass",
+        "2. build a caption style",
+        "3. keep a music folder",
+        "4. template your export",
+        "5 ways to edit twice as fast.",
+        "5. stop polishing dead air",
+        "cut the slow parts instead of perfecting them.",
+        "make decisions as you watch. don't re-watch endlessly.",
+        "save your font and look once. reuse it every time.",
+        "set it once: format, size, settings. never rethink it.",
+        "stop hunting. pull from tracks you've already cleared.",
+        "without the video looking rushed."
+      ],
+      "posted_at": "20260609T202302Z",
+      "post_id": "18404205136158599"
+    },
+    {
       "id": "single-00012",
       "slot": "am",
       "type": "value",
@@ -584,38 +618,6 @@
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
-      "id": "carousel-00025",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00025-0.jpg",
-        "queue/carousel-00025-1.jpg",
-        "queue/carousel-00025-2.jpg",
-        "queue/carousel-00025-3.jpg",
-        "queue/carousel-00025-4.jpg",
-        "queue/carousel-00025-5.jpg",
-        "queue/carousel-00025-6.jpg"
-      ],
-      "caption": "Editing slow is usually a workflow problem, not a skill problem.\n\n1. Cut on the first pass\n2. Build a caption style\n3. Keep a music folder\n4. Template your export\n5. Stop polishing dead air\n\nSpeed comes from systems, not rushing.\n\nFollow @josephborroto for the workflow behind fast, clean edits.\n\n#videoediting #editingworkflow #editingtips #shortformvideo #reelstips #josephborroto",
-      "alt": "Carousel: 5 ways to edit twice as fast.",
-      "posted": false,
-      "source_index": 10,
-      "fp": [
-        "1. cut on the first pass",
-        "2. build a caption style",
-        "3. keep a music folder",
-        "4. template your export",
-        "5 ways to edit twice as fast.",
-        "5. stop polishing dead air",
-        "cut the slow parts instead of perfecting them.",
-        "make decisions as you watch. don't re-watch endlessly.",
-        "save your font and look once. reuse it every time.",
-        "set it once: format, size, settings. never rethink it.",
-        "stop hunting. pull from tracks you've already cleared.",
-        "without the video looking rushed."
       ]
     },
     {
@@ -1158,6 +1160,39 @@
         "90% of people frame their videos wrong.",
         "leave space above your head for the title overlay, or the text covers your face.",
         "one rule fixes it instantly."
+      ]
+    },
+    {
+      "id": "carousel-00050",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00050-0.jpg",
+        "queue/carousel-00050-1.jpg",
+        "queue/carousel-00050-2.jpg",
+        "queue/carousel-00050-3.jpg",
+        "queue/carousel-00050-4.jpg",
+        "queue/carousel-00050-5.jpg",
+        "queue/carousel-00050-6.jpg"
+      ],
+      "caption": "Editing slow is usually a workflow problem, not a skill problem.\n\n1. Cut on the first pass\n2. Build a caption style\n3. Keep a music folder\n4. Template your export\n5. Stop polishing dead air\n\nSpeed comes from systems, not rushing.\n\nFollow @josephborroto for the workflow behind fast, clean edits.\n\n#videoediting #editingworkflow #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 ways to edit twice as fast.",
+      "posted": false,
+      "source_index": 10,
+      "style": "light",
+      "fp": [
+        "1. cut on the first pass",
+        "2. build a caption style",
+        "3. keep a music folder",
+        "4. template your export",
+        "5 ways to edit twice as fast.",
+        "5. stop polishing dead air",
+        "cut the slow parts instead of perfecting them.",
+        "make decisions as you watch. don't re-watch endlessly.",
+        "save your font and look once. reuse it every time.",
+        "set it once: format, size, settings. never rethink it.",
+        "stop hunting. pull from tracks you've already cleared.",
+        "without the video looking rushed."
       ]
     }
   ]
