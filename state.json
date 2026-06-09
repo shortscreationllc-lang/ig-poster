@@ -576,17 +576,17 @@
     "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
     "volume jumping between clips makes it feel amateur."
   ],
-  "reel_i": 21,
-  "reel_cap_i": 22,
-  "reel_audio_i": 22,
+  "reel_i": 22,
+  "reel_cap_i": 23,
+  "reel_audio_i": 23,
   "reel_recent": [
-    "90 of viewers decide whether to keep watching in the first 3",
     "your hook is 90 of the post the first line does almost all t",
     "if they don t stop scrolling nothing else you made even matt",
     "the short form posting checklist run every video through thi",
     "cutting the first 2 seconds of your video can double your wa",
     "consistency beats going viral once show up and the algorithm",
-    "most people quit posting at 90 days right before the reach s"
+    "most people quit posting at 90 days right before the reach s",
+    "shares in dms are the 1 signal growing reach in 2026 make co"
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -596,6 +596,10 @@
     "20260608": 2
   },
   "beat_recent": [
-    1
+    1,
+    2
+  ],
+  "style_recent": [
+    "creamorange"
   ]
 }
