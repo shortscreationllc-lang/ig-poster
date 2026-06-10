@@ -350,7 +350,7 @@
   "total_interactions": 0,
   "ig_reels_avg_watch_time": 1205,
   "ig_reels_video_view_total_time": 96462,
-  "views": 91,
+  "views": 92,
   "trial": false
  },
  {
@@ -416,7 +416,7 @@
   "total_interactions": 0,
   "ig_reels_avg_watch_time": 1999,
   "ig_reels_video_view_total_time": 77968,
-  "views": 45,
+  "views": 46,
   "trial": true
  },
  {
@@ -468,9 +468,9 @@
   "shares": 0,
   "saved": 0,
   "total_interactions": 0,
-  "ig_reels_avg_watch_time": 3669,
-  "ig_reels_video_view_total_time": 106428,
-  "views": 52,
+  "ig_reels_avg_watch_time": 3752,
+  "ig_reels_video_view_total_time": 112568,
+  "views": 55,
   "trial": false
  },
  {
@@ -495,7 +495,7 @@
   "post_id": "17960855394132269",
   "bot": true,
   "permalink": "https://www.instagram.com/reel/DZaXdKiApeT/",
-  "reach": 0,
+  "reach": 1,
   "likes": 0,
   "comments": 0,
   "shares": 0,
@@ -503,7 +503,7 @@
   "total_interactions": 0,
   "ig_reels_avg_watch_time": 0,
   "ig_reels_video_view_total_time": 0,
-  "views": 0,
+  "views": 1,
   "trial": false
  },
  {
@@ -513,15 +513,15 @@
   "post_id": "17943127944219558",
   "bot": false,
   "permalink": "https://www.instagram.com/reel/DZaFE_zDw4H/",
-  "reach": 57,
+  "reach": 59,
   "likes": 3,
   "comments": 0,
   "shares": 0,
   "saved": 0,
   "total_interactions": 3,
-  "ig_reels_avg_watch_time": 8916,
-  "ig_reels_video_view_total_time": 499325,
-  "views": 95,
+  "ig_reels_avg_watch_time": 9870,
+  "ig_reels_video_view_total_time": 582370,
+  "views": 96,
   "trial": false
  },
  {
@@ -567,14 +567,14 @@
   "post_id": "17976439976878319",
   "bot": false,
   "permalink": "https://www.instagram.com/reel/DZX7wwxAdHB/",
-  "reach": 120,
+  "reach": 121,
   "likes": 1,
   "comments": 0,
   "shares": 0,
   "saved": 0,
   "total_interactions": 1,
-  "ig_reels_avg_watch_time": 3011,
-  "ig_reels_video_view_total_time": 352389,
+  "ig_reels_avg_watch_time": 3329,
+  "ig_reels_video_view_total_time": 392837,
   "views": 154,
   "trial": false
  },
