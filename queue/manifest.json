@@ -590,6 +590,39 @@
       "post_id": "18599797567054284"
     },
     {
+      "id": "carousel-00026",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00026-0.jpg",
+        "queue/carousel-00026-1.jpg",
+        "queue/carousel-00026-2.jpg",
+        "queue/carousel-00026-3.jpg",
+        "queue/carousel-00026-4.jpg",
+        "queue/carousel-00026-5.jpg",
+        "queue/carousel-00026-6.jpg"
+      ],
+      "caption": "If your videos have stalled, it's usually one of these, not the algorithm.\n\n1. Weak first second\n2. Too many ideas\n3. No reason to finish\n4. Inconsistent posting\n5. No clear next step\n\nFix one this week.\n\nFollow @josephborroto for honest, useful content advice.\n\n#contentstrategy #shortformvideo #reelstips #videomarketing #growth #josephborroto",
+      "alt": "Carousel: 5 reasons your videos aren't growing.",
+      "posted": true,
+      "source_index": 11,
+      "fp": [
+        "1. weak first second",
+        "2. too many ideas",
+        "3. no reason to finish",
+        "4. inconsistent posting",
+        "5 reasons your videos aren't growing.",
+        "5. no clear next step",
+        "a slow open kills the video before the hook lands.",
+        "give one simple action: follow for more.",
+        "if there's no payoff coming, people leave early.",
+        "it's rarely the algorithm.",
+        "one video, one point. cramming means nothing sticks.",
+        "the algorithm rewards reliability. show up daily."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00013",
       "slot": "am",
       "type": "single",
@@ -620,38 +653,6 @@
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
-      "id": "carousel-00026",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00026-0.jpg",
-        "queue/carousel-00026-1.jpg",
-        "queue/carousel-00026-2.jpg",
-        "queue/carousel-00026-3.jpg",
-        "queue/carousel-00026-4.jpg",
-        "queue/carousel-00026-5.jpg",
-        "queue/carousel-00026-6.jpg"
-      ],
-      "caption": "If your videos have stalled, it's usually one of these, not the algorithm.\n\n1. Weak first second\n2. Too many ideas\n3. No reason to finish\n4. Inconsistent posting\n5. No clear next step\n\nFix one this week.\n\nFollow @josephborroto for honest, useful content advice.\n\n#contentstrategy #shortformvideo #reelstips #videomarketing #growth #josephborroto",
-      "alt": "Carousel: 5 reasons your videos aren't growing.",
-      "posted": false,
-      "source_index": 11,
-      "fp": [
-        "1. weak first second",
-        "2. too many ideas",
-        "3. no reason to finish",
-        "4. inconsistent posting",
-        "5 reasons your videos aren't growing.",
-        "5. no clear next step",
-        "a slow open kills the video before the hook lands.",
-        "give one simple action: follow for more.",
-        "if there's no payoff coming, people leave early.",
-        "it's rarely the algorithm.",
-        "one video, one point. cramming means nothing sticks.",
-        "the algorithm rewards reliability. show up daily."
       ]
     },
     {
@@ -1212,6 +1213,39 @@
       "fp": [
         "macro patience, micro speed.",
         "\u2014 gary vaynerchuk"
+      ]
+    },
+    {
+      "id": "carousel-00052",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00052-0.jpg",
+        "queue/carousel-00052-1.jpg",
+        "queue/carousel-00052-2.jpg",
+        "queue/carousel-00052-3.jpg",
+        "queue/carousel-00052-4.jpg",
+        "queue/carousel-00052-5.jpg",
+        "queue/carousel-00052-6.jpg"
+      ],
+      "caption": "If your videos have stalled, it's usually one of these, not the algorithm.\n\n1. Weak first second\n2. Too many ideas\n3. No reason to finish\n4. Inconsistent posting\n5. No clear next step\n\nFix one this week.\n\nFollow @josephborroto for honest, useful content advice.\n\n#contentstrategy #shortformvideo #reelstips #videomarketing #growth #josephborroto",
+      "alt": "Carousel: 5 reasons your videos aren't growing.",
+      "posted": false,
+      "source_index": 11,
+      "style": "bone",
+      "fp": [
+        "1. weak first second",
+        "2. too many ideas",
+        "3. no reason to finish",
+        "4. inconsistent posting",
+        "5 reasons your videos aren't growing.",
+        "5. no clear next step",
+        "a slow open kills the video before the hook lands.",
+        "give one simple action: follow for more.",
+        "if there's no payoff coming, people leave early.",
+        "it's rarely the algorithm.",
+        "one video, one point. cramming means nothing sticks.",
+        "the algorithm rewards reliability. show up daily."
       ]
     }
   ]

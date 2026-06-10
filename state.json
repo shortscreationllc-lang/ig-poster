@@ -1,7 +1,7 @@
 {
   "single_index": 26,
-  "carousel_index": 7,
-  "seq": 51,
+  "carousel_index": 11,
+  "seq": 52,
   "daily": {
     "20260606": {
       "morning": true,
@@ -37,7 +37,7 @@
     }
   },
   "am_style_i": 26,
-  "pm_style_i": 25,
+  "pm_style_i": 26,
   "history": [
     {
       "at": "20260601T122301Z",
