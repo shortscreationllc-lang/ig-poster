@@ -523,6 +523,38 @@
         "pillar": "hook",
         "source_index": 0
       }
+    },
+    {
+      "at": "20260610T210804Z",
+      "id": "queue/reel-1781125633-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18084883196142032",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "quote",
+        "style": "creamorange",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Your best salesperson is a video that works while you sleep."
+    },
+    {
+      "at": "20260610T210908Z",
+      "id": "queue/reel-1781125641-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18596531281014088",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "orangepop",
+        "pillar": "editing",
+        "cap_style": 0
+      },
+      "hook": "Cut every silence in your video \u2014 dead air is where people swipe away."
     }
   ],
   "story_hook_i": 1,
@@ -769,7 +801,8 @@
   ],
   "trial_daily": {
     "20260608": 2,
-    "20260609": 2
+    "20260609": 2,
+    "20260610": 2
   },
   "beat_recent": [
     6,
