@@ -494,6 +494,20 @@
         "pillar": "hook",
         "source_index": 11
       }
+    },
+    {
+      "at": "20260610T162517Z",
+      "id": "queue/reel-1781108670.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17960855394132269",
+      "tags": {
+        "fmt": "statement",
+        "style": "navyorange",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Most short-form content isn't bad \u2014 it's forgettable. Make one thing memorable."
     }
   ],
   "story_hook_i": 1,
