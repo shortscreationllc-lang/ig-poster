@@ -1,7 +1,7 @@
 {
   "single_index": 26,
-  "carousel_index": 11,
-  "seq": 52,
+  "carousel_index": 1,
+  "seq": 53,
   "daily": {
     "20260606": {
       "morning": true,
@@ -37,7 +37,7 @@
     }
   },
   "am_style_i": 26,
-  "pm_style_i": 26,
+  "pm_style_i": 27,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -509,6 +509,19 @@
         "cap_style": 0
       },
       "hook": "Most short-form content isn't bad \u2014 it's forgettable. Make one thing memorable."
+    },
+    {
+      "at": "20260610T200248Z",
+      "id": "carousel-00027",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18108612190961405",
+      "tags": {
+        "fmt": "carousel",
+        "style": null,
+        "pillar": "hook",
+        "source_index": 0
+      }
     }
   ],
   "story_hook_i": 1,
@@ -652,18 +665,6 @@
     }
   ],
   "recent_texts": [
-    "the algorithm already buried you.",
-    "cutting, hand-placed captions, music, pacing. hours, not minutes.",
-    "quality video is hours of skilled work. that's why cheap pricing collapses.",
-    "research and hooks",
-    "setup, multiple takes, location changes, lighting, audio.",
-    "studying what works and writing a hook worth stopping for.",
-    "the part nobody breaks down.",
-    "the pass that turns good into actually-postable.",
-    "what a good reel actually costs to make.",
-    "5 reasons your videos aren't growing.",
-    "a slow open kills it before the hook lands.",
-    "give one action: follow for more.",
     "if there's no payoff coming, people leave early.",
     "inconsistent posting",
     "it's rarely the algorithm.",
@@ -731,7 +732,19 @@
     "a before/after of the work you do",
     "a day-in-the-life of running the business",
     "save this for your next batch.",
-    "the #1 question customers always ask, answered"
+    "the #1 question customers always ask, answered",
+    "5 hook formulas that work in any niche.",
+    "[number] things i learned about [x].",
+    "a curiosity gap. implies you have the inside answer.",
+    "calls out a specific person. they can't scroll past themselves.",
+    "here's the truth about [x].",
+    "i tried / quit / lost...",
+    "if you're [x], stop doing [y].",
+    "most people don't know...",
+    "personal stakes. people stay to see what happened.",
+    "positions you as the one cutting through the noise.",
+    "promises a list. the brain wants to finish what it starts.",
+    "steal these for your next 5 videos."
   ],
   "reel_i": 26,
   "reel_cap_i": 29,
