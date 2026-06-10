@@ -748,8 +748,8 @@
     "steal these for your next 5 videos."
   ],
   "reel_i": 26,
-  "reel_cap_i": 29,
-  "reel_audio_i": 29,
+  "reel_cap_i": 31,
+  "reel_audio_i": 31,
   "reel_recent": [
     "consistency beats going viral once show up and the algorithm",
     "most people quit posting at 90 days right before the reach s",
@@ -763,18 +763,20 @@
     "consistency beats going viral once show up and the algorithm",
     "4 editing moves that make any short form video tighter and m",
     "boring and consistent beats perfect and rare just keep showi",
-    "nobody cares how your video was filmed only whether it s wor"
+    "nobody cares how your video was filmed only whether it s wor",
+    "your best salesperson is a video that works while you sleep",
+    "cut every silence in your video dead air is where people swi"
   ],
   "trial_daily": {
     "20260608": 2,
     "20260609": 2
   },
   "beat_recent": [
-    7,
-    8,
     6,
     7,
-    8
+    8,
+    3,
+    2
   ],
   "style_recent": [
     "creamorange",
