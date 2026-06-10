@@ -470,6 +470,20 @@
         "cap_style": 0
       },
       "hook": "The 4-question check every short-form video should pass before you post it."
+    },
+    {
+      "at": "20260610T123812Z",
+      "id": "queue/reel-1781095039.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17890665789515090",
+      "tags": {
+        "fmt": "statement",
+        "style": "dark",
+        "pillar": "editing",
+        "cap_style": 0
+      },
+      "hook": "Pure talking-head is fading \u2014 pair your words with B-roll that shows it."
     }
   ],
   "story_hook_i": 1,
