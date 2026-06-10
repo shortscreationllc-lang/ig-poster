@@ -685,17 +685,17 @@
     "stop hunting. pull from tracks you've already cleared.",
     "without the video looking rushed."
   ],
-  "reel_i": 24,
-  "reel_cap_i": 27,
-  "reel_audio_i": 27,
+  "reel_i": 25,
+  "reel_cap_i": 28,
+  "reel_audio_i": 28,
   "reel_recent": [
-    "the short form posting checklist run every video through thi",
     "cutting the first 2 seconds of your video can double your wa",
     "consistency beats going viral once show up and the algorithm",
     "most people quit posting at 90 days right before the reach s",
     "shares in dms are the 1 signal growing reach in 2026 make co",
     "how to make short form that actually books clients not just ",
-    "the 4 question check every short form video should pass befo"
+    "the 4 question check every short form video should pass befo",
+    "pure talking head is fading pair your words with b roll that"
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -708,15 +708,16 @@
     "20260609": 2
   },
   "beat_recent": [
-    2,
     3,
     7,
     8,
-    6
+    6,
+    7
   ],
   "style_recent": [
     "creamorange",
     "slate",
-    "blackout"
+    "blackout",
+    "dark"
   ]
 }
