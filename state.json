@@ -555,6 +555,20 @@
         "cap_style": 0
       },
       "hook": "Cut every silence in your video \u2014 dead air is where people swipe away."
+    },
+    {
+      "at": "20260610T231331Z",
+      "id": "queue/reel-1781133172.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18098011306908591",
+      "tags": {
+        "fmt": "checklist",
+        "style": "orangepop",
+        "pillar": "proof",
+        "cap_style": 0
+      },
+      "hook": "The short-form posting checklist \u2014 run every video through this before you publish."
     }
   ],
   "story_hook_i": 1,
