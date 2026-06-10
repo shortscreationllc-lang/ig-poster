@@ -1,7 +1,7 @@
 {
-  "single_index": 25,
-  "carousel_index": 5,
-  "seq": 50,
+  "single_index": 26,
+  "carousel_index": 7,
+  "seq": 51,
   "daily": {
     "20260606": {
       "morning": true,
@@ -34,7 +34,7 @@
       "morning": true
     }
   },
-  "am_style_i": 25,
+  "am_style_i": 26,
   "pm_style_i": 25,
   "history": [
     {
@@ -480,6 +480,19 @@
         "cap_style": 0
       },
       "hook": "Pure talking-head is fading \u2014 pair your words with B-roll that shows it."
+    },
+    {
+      "at": "20260610T162428Z",
+      "id": "single-00012",
+      "slot": "am",
+      "type": "value",
+      "post_id": "18599797567054284",
+      "tags": {
+        "fmt": "value",
+        "style": null,
+        "pillar": "hook",
+        "source_index": 11
+      }
     }
   ],
   "story_hook_i": 1,
@@ -623,11 +636,6 @@
     }
   ],
   "recent_texts": [
-    "post at the perfect time or it flops.",
-    "the algorithm keeps testing strong videos",
-    "timing is a rounding error vs. the hook",
-    "if your hook is over 1.5 seconds, you lost.",
-    "say the problem in the first beat. teaching starts at second 4, not second 1.",
     "the algorithm already buried you.",
     "cutting, hand-placed captions, music, pacing. hours, not minutes.",
     "quality video is hours of skilled work. that's why cheap pricing collapses.",
@@ -702,7 +710,12 @@
     "save your font and look once. reuse it every time.",
     "set it once: format, size, settings. never rethink it.",
     "stop hunting. pull from tracks you've already cleared.",
-    "without the video looking rushed."
+    "without the video looking rushed.",
+    "3 reel ideas for local business owners.",
+    "a before/after of the work you do",
+    "a day-in-the-life of running the business",
+    "save this for your next batch.",
+    "the #1 question customers always ask, answered"
   ],
   "reel_i": 25,
   "reel_cap_i": 28,

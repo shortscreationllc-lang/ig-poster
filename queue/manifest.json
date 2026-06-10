@@ -577,7 +577,7 @@
       ],
       "caption": "Stuck on what to film? Three Reel ideas any local business can shoot this week:\n\n1. A day-in-the-life behind the scenes\n2. The #1 question customers always ask \u2014 answered in 30 seconds\n3. A before/after of your work\n\nNone of these need a script. Just your phone and a clear first line.\n\nFollow @josephborroto for weekly content ideas.\n\n#contentideas #smallbusiness #reelstips #shortformvideo #localbusiness #josephborroto",
       "alt": "Value card with 3 Reel ideas for local business owners.",
-      "posted": false,
+      "posted": true,
       "source_index": 11,
       "fp": [
         "3 reel ideas for local business owners.",
@@ -585,7 +585,9 @@
         "a day-in-the-life of running the business",
         "save this for your next batch.",
         "the #1 question customers always ask, answered"
-      ]
+      ],
+      "posted_at": "20260610T162428Z",
+      "post_id": "18599797567054284"
     },
     {
       "id": "single-00013",
@@ -1193,6 +1195,23 @@
         "set it once: format, size, settings. never rethink it.",
         "stop hunting. pull from tracks you've already cleared.",
         "without the video looking rushed."
+      ]
+    },
+    {
+      "id": "single-00051",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00051.jpg"
+      ],
+      "caption": "\"Macro patience, micro speed.\" \u2014 Gary Vaynerchuk\n\nMove fast on the small stuff \u2014 post today, ship the video, hit publish. Be endlessly patient on the big stuff \u2014 the audience, the brand, the payoff.\n\nMost people do the opposite: slow to post, impatient for results.\n\nFollow @josephborroto for the long game on content.\n\n#garyvee #contentstrategy #patience #consistency #shortformvideo #josephborroto",
+      "alt": "Quote card with Gary Vaynerchuk quote: macro patience, micro speed.",
+      "posted": false,
+      "source_index": 25,
+      "style": "midnight",
+      "fp": [
+        "macro patience, micro speed.",
+        "\u2014 gary vaynerchuk"
       ]
     }
   ]
