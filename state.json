@@ -1,7 +1,7 @@
 {
   "single_index": 27,
-  "carousel_index": 7,
-  "seq": 54,
+  "carousel_index": 9,
+  "seq": 55,
   "daily": {
     "20260607": {
       "morning": true,
@@ -37,7 +37,7 @@
     }
   },
   "am_style_i": 27,
-  "pm_style_i": 27,
+  "pm_style_i": 28,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -609,6 +609,19 @@
         "cap_style": 0
       },
       "hook": "3 ways to stop the scroll on short-form video."
+    },
+    {
+      "at": "20260611T200150Z",
+      "id": "carousel-00034",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17966420706084632",
+      "tags": {
+        "fmt": "carousel",
+        "style": null,
+        "pillar": "editing",
+        "source_index": 1
+      }
     }
   ],
   "story_hook_i": 1,
@@ -761,22 +774,6 @@
     }
   ],
   "recent_texts": [
-    "no clear next step",
-    "no reason to finish",
-    "one video, one point. cramming means nothing sticks.",
-    "the algorithm rewards reliability. show up.",
-    "too many ideas",
-    "weak first second",
-    "same day, ten different days.",
-    "small filming choices make batch content feel fresh.",
-    "1. open on motion",
-    "2. patch second 4",
-    "3. cut the dead air",
-    "4. switch the frame",
-    "5 ways to fix your retention curve.",
-    "5. pay off the hook",
-    "a static first frame loses people before you speak.",
-    "deliver what you promised before they lose patience.",
     "drop a number or contradiction right where attention dips.",
     "new angle or location keeps the eye from settling.",
     "remove the breath before every sentence. pace is retention.",
@@ -840,7 +837,23 @@
     "steal these for your next 5 videos.",
     "here's the line that saves it.",
     "retention always drops at second 4.",
-    "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction."
+    "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction.",
+    "1. 4k at 60fps",
+    "1.5 seconds, memorized. never improvise the first line.",
+    "2. mic test and playback",
+    "3. hook pre-written",
+    "4. scout your spots",
+    "5. batteries and storage",
+    "6. backup device",
+    "7 things to check before every shoot.",
+    "7. frame for the title",
+    "leave headroom so the overlay never covers your face.",
+    "number 4 is the one everyone skips.",
+    "one failure shouldn't cancel the whole shoot.",
+    "record 5 seconds and listen back. don't trust the meter alone.",
+    "switch location every line. this is the one people skip.",
+    "the only camera setting that really matters. set it once.",
+    "two of everything. a dead battery ends the day."
   ],
   "reel_i": 29,
   "reel_cap_i": 34,
