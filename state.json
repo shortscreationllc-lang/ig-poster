@@ -888,17 +888,17 @@
     "the only camera setting that really matters. set it once.",
     "two of everything. a dead battery ends the day."
   ],
-  "reel_i": 29,
-  "reel_cap_i": 36,
-  "reel_audio_i": 36,
+  "reel_i": 30,
+  "reel_cap_i": 37,
+  "reel_audio_i": 37,
   "reel_recent": [
-    "how to make short form that actually books clients not just ",
     "the 4 question check every short form video should pass befo",
     "pure talking head is fading pair your words with b roll that",
     "most short form content isn t bad it s forgettable make one ",
     "the short form posting checklist run every video through thi",
     "post less edit harder one tight short form video beats five ",
-    "3 ways to stop the scroll on short form video"
+    "3 ways to stop the scroll on short form video",
+    "your hook is 90 of the post the first line does almost all t"
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -917,19 +917,19 @@
     "20260611": 2
   },
   "beat_recent": [
-    1,
     2,
     3,
     0,
-    7
+    7,
+    6
   ],
   "style_recent": [
-    "slate",
     "blackout",
     "dark",
     "navyorange",
     "orangepop",
     "creamorange",
-    "slate"
+    "slate",
+    "blackout"
   ]
 }
