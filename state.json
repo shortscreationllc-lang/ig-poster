@@ -623,6 +623,38 @@
         "pillar": "editing",
         "source_index": 1
       }
+    },
+    {
+      "at": "20260611T204410Z",
+      "id": "queue/reel-1781210600-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17981426870852002",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "dark",
+        "pillar": "mindset",
+        "cap_style": 0
+      },
+      "hook": "Content is a system, not a mood \u2014 build the system and it runs without motivation."
+    },
+    {
+      "at": "20260611T204558Z",
+      "id": "queue/reel-1781210607-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18537301228074625",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "stat",
+        "style": "midnight",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "You get about 3 seconds before someone scrolls past your video."
     }
   ],
   "story_hook_i": 1,
@@ -881,7 +913,8 @@
   "trial_daily": {
     "20260608": 2,
     "20260609": 2,
-    "20260610": 2
+    "20260610": 2,
+    "20260611": 2
   },
   "beat_recent": [
     1,
