@@ -570,6 +570,20 @@
         "cap_style": 0
       },
       "hook": "The short-form posting checklist \u2014 run every video through this before you publish."
+    },
+    {
+      "at": "20260611T123806Z",
+      "id": "queue/reel-1781181443.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18176245420408453",
+      "tags": {
+        "fmt": "statement",
+        "style": "creamorange",
+        "pillar": "editing",
+        "cap_style": 0
+      },
+      "hook": "Post less, edit harder \u2014 one tight short-form video beats five lazy ones."
     }
   ],
   "story_hook_i": 1,
