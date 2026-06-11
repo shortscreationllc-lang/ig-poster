@@ -794,17 +794,17 @@
     "promises a list. the brain wants to finish what it starts.",
     "steal these for your next 5 videos."
   ],
-  "reel_i": 27,
-  "reel_cap_i": 32,
-  "reel_audio_i": 32,
+  "reel_i": 28,
+  "reel_cap_i": 33,
+  "reel_audio_i": 33,
   "reel_recent": [
-    "most people quit posting at 90 days right before the reach s",
     "shares in dms are the 1 signal growing reach in 2026 make co",
     "how to make short form that actually books clients not just ",
     "the 4 question check every short form video should pass befo",
     "pure talking head is fading pair your words with b roll that",
     "most short form content isn t bad it s forgettable make one ",
-    "the short form posting checklist run every video through thi"
+    "the short form posting checklist run every video through thi",
+    "post less edit harder one tight short form video beats five "
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -820,11 +820,11 @@
     "20260610": 2
   },
   "beat_recent": [
-    7,
     8,
     3,
     2,
-    1
+    1,
+    2
   ],
   "style_recent": [
     "creamorange",
@@ -832,6 +832,7 @@
     "blackout",
     "dark",
     "navyorange",
-    "orangepop"
+    "orangepop",
+    "creamorange"
   ]
 }
