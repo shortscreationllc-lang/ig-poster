@@ -1,7 +1,7 @@
 {
-  "single_index": 26,
-  "carousel_index": 3,
-  "seq": 53,
+  "single_index": 27,
+  "carousel_index": 5,
+  "seq": 54,
   "daily": {
     "20260607": {
       "morning": true,
@@ -34,7 +34,7 @@
       "morning": true
     }
   },
-  "am_style_i": 26,
+  "am_style_i": 27,
   "pm_style_i": 27,
   "history": [
     {
@@ -580,6 +580,19 @@
         "cap_style": 0
       },
       "hook": "Post less, edit harder \u2014 one tight short-form video beats five lazy ones."
+    },
+    {
+      "at": "20260611T163738Z",
+      "id": "single-00013",
+      "slot": "am",
+      "type": "single",
+      "post_id": "18123002488650101",
+      "tags": {
+        "fmt": "single",
+        "style": null,
+        "pillar": "editing",
+        "source_index": 12
+      }
     }
   ],
   "story_hook_i": 1,
@@ -732,9 +745,6 @@
     }
   ],
   "recent_texts": [
-    "if there's no payoff coming, people leave early.",
-    "inconsistent posting",
-    "it's rarely the algorithm.",
     "no clear next step",
     "no reason to finish",
     "one video, one point. cramming means nothing sticks.",
@@ -811,7 +821,10 @@
     "personal stakes. people stay to see what happened.",
     "positions you as the one cutting through the noise.",
     "promises a list. the brain wants to finish what it starts.",
-    "steal these for your next 5 videos."
+    "steal these for your next 5 videos.",
+    "here's the line that saves it.",
+    "retention always drops at second 4.",
+    "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction."
   ],
   "reel_i": 28,
   "reel_cap_i": 33,

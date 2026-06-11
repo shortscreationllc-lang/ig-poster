@@ -665,13 +665,15 @@
       ],
       "caption": "Pull up any retention curve. It dips at second 4.\n\nThat's the \"why am I still watching this\" moment. If nothing specific lands right there, they're gone.\n\nThe fix: a number, a name, or a contradiction at second 4. Specificity buys you the next 10 seconds.\n\nFollow @josephborroto and test it on your next 5 videos.\n\n#retention #shortformvideo #contentstrategy #reelstips #videoediting #josephborroto",
       "alt": "Card: retention always drops at second 4, here's the line that saves it.",
-      "posted": false,
+      "posted": true,
       "source_index": 12,
       "fp": [
         "here's the line that saves it.",
         "retention always drops at second 4.",
         "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction."
-      ]
+      ],
+      "posted_at": "20260611T163738Z",
+      "post_id": "18123002488650101"
     },
     {
       "id": "single-00014",
@@ -1281,6 +1283,23 @@
         "positions you as the one cutting through the noise.",
         "promises a list. the brain wants to finish what it starts.",
         "steal these for your next 5 videos."
+      ]
+    },
+    {
+      "id": "single-00054",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00054.jpg"
+      ],
+      "caption": "Motivation is a mood. It won't show up most days.\n\nThe people who grow built a system that runs whether they feel like it or not. Decide the schedule once, then stop negotiating with yourself.\n\nFollow @josephborroto for the boring habits that compound.\n\n#discipline #consistency #mindset #contentcreator #shortformvideo #josephborroto",
+      "alt": "Quote card: discipline ships content, motivation just talks about it.",
+      "posted": false,
+      "source_index": 26,
+      "style": "blackout",
+      "fp": [
+        "build the habit, not the hype.",
+        "discipline ships content. motivation just talks about it."
       ]
     }
   ]
