@@ -857,8 +857,8 @@
     "two of everything. a dead battery ends the day."
   ],
   "reel_i": 29,
-  "reel_cap_i": 34,
-  "reel_audio_i": 34,
+  "reel_cap_i": 36,
+  "reel_audio_i": 36,
   "reel_recent": [
     "how to make short form that actually books clients not just ",
     "the 4 question check every short form video should pass befo",
@@ -874,7 +874,9 @@
     "boring and consistent beats perfect and rare just keep showi",
     "nobody cares how your video was filmed only whether it s wor",
     "your best salesperson is a video that works while you sleep",
-    "cut every silence in your video dead air is where people swi"
+    "cut every silence in your video dead air is where people swi",
+    "content is a system not a mood build the system and it runs ",
+    "you get about 3 seconds before someone scrolls past your vid"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -882,11 +884,11 @@
     "20260610": 2
   },
   "beat_recent": [
-    3,
-    2,
     1,
     2,
-    3
+    3,
+    0,
+    7
   ],
   "style_recent": [
     "slate",
