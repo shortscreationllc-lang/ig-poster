@@ -655,6 +655,20 @@
         "cap_style": 0
       },
       "hook": "You get about 3 seconds before someone scrolls past your video."
+    },
+    {
+      "at": "20260611T230842Z",
+      "id": "queue/reel-1781219280.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18103684484043016",
+      "tags": {
+        "fmt": "statement",
+        "style": "blackout",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Your hook is 90% of the post \u2014 the first line does almost all the work."
     }
   ],
   "story_hook_i": 1,
