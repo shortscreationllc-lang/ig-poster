@@ -192,6 +192,40 @@ ROTATION = [
      "comment": {"author": "viral.chase", "initials": "VC", "text": "whats the actual secret to going viral?", "likes": "5.2k"},
      "reply": {"author": "Joseph Borroto", "initials": "JB", "verified": True, "text": "stop chasing viral. chase clarity. one idea said so well it's impossible to scroll past.", "likes": "830"},
      "hook": "Stop chasing viral. Chase clarity — one idea, impossible to scroll past."},
+    # --- DM-THREAD REELS (bubbles pop in) ---
+    {"type": "imessage", "style": "dark",
+     "messages": [{"from": "them", "text": "yo your content tips actually work"},
+                  {"from": "them", "text": "posted daily for a month and hit 10k"},
+                  {"from": "me", "text": "let's go — consistency wins every time"},
+                  {"from": "them", "text": "first brand deal came in this week too"}],
+     "hook": "A DM I got after someone ran my content advice for 30 days."},
+    {"type": "imessage", "style": "midnight",
+     "messages": [{"from": "them", "text": "how do you always know what to post?"},
+                  {"from": "me", "text": "i don't guess. every comment i get is my next video"},
+                  {"from": "them", "text": "wait that's actually genius"},
+                  {"from": "me", "text": "your audience writes your content list for you"}],
+     "hook": "How I always know what to post — your audience writes the list."},
+    # --- TYPEWRITER HOOK REELS (text types out) ---
+    {"type": "typewriter", "style": "blackout",
+     "headline": "Your first line is the only algorithm that matters.",
+     "hook": "Your first line is the only algorithm that matters."},
+    {"type": "typewriter", "style": "navyorange",
+     "headline": "Stop posting more. Start hooking harder.",
+     "hook": "Stop posting more. Start hooking harder."},
+    {"type": "typewriter", "style": "dark",
+     "headline": "Posted beats perfect. Every single time.",
+     "hook": "Posted beats perfect. Every single time."},
+    # --- COUNTDOWN LIST REELS (numbers slam in) ---
+    {"type": "countdown", "style": "navyorange",
+     "headline": "5 hooks that always work",
+     "items": ["Call out one specific person", "Lead with the result", "Make a bold claim",
+               "Open a curiosity gap", "Promise a number"],
+     "hook": "5 hooks that always work — steal these for your next videos."},
+    {"type": "countdown", "style": "blackout",
+     "headline": "4 ways to keep people watching",
+     "items": ["Cut every dead pause", "A new cut every 2-3 seconds", "Caption the first line",
+               "End on a reason to rewatch"],
+     "hook": "4 edits that keep people watching to the end."},
 ]
 
 
@@ -276,7 +310,7 @@ def _pick(kind):
         it, hk, style = bucket[i % len(bucket)]; item, hook = it, hk
     # Rotate the LOOK every post (overrides the recipe's default) for variety.
     # X-post reels are restricted to dark grounds so the blue CTA never clashes.
-    pool = SOCIAL_STYLES if item.get("type") in ("social", "comment") else None
+    pool = SOCIAL_STYLES if item.get("type") in ("social", "comment", "imessage") else None
     style = _next_style(st, pool=pool)
     st["reel_i"] = i + 1
     st["reel_cap_i"] = cap_i + 1       # rotate caption wording
@@ -507,7 +541,7 @@ def render_trials(n, strategy="SS_PERFORMANCE"):
     items = []
     for k, spec in enumerate(batch):
         rel = f"queue/reel-{int(time.time())}-{k}.mp4"; out = str(ROOT / rel)
-        pool = SOCIAL_STYLES if spec.get("type") in ("social", "comment") else None
+        pool = SOCIAL_STYLES if spec.get("type") in ("social", "comment", "imessage") else None
         style = _next_style(st, avoid=used_styles, pool=pool); used_styles.append(style)
         if spec.get("type") == "sequence":
             render_video.video_sequence(spec["scenes"], out, style=style)

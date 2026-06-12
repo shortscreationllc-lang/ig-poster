@@ -1,0 +1,113 @@
+{
+  "_README": "Reddit-thread cards (question + Joseph's top answer). enabled:true => AM rotation.",
+  "entries": [
+    {
+      "enabled": true,
+      "type": "reddit",
+      "style": "dark",
+      "subreddit": "r/NewTubers",
+      "user": "grinding_daily",
+      "upvotes": "4.2k",
+      "comments": "318",
+      "title": "I've posted for 3 months and still have 200 followers. What am I doing wrong?",
+      "answer": {
+        "user": "josephborroto",
+        "initials": "JB",
+        "upvotes": "1.1k",
+        "text": "Your hook. 200 followers after 3 months is almost always a first-line problem, not a content problem. Make the first sentence stop the scroll and everything changes."
+      },
+      "caption": "Your hook. 200 followers after 3 months is almost always a first-line problem, not a content problem. Make the first sentence stop the scroll and everything changes.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Reddit thread: I've posted for 3 months and still have 200 followers. What am I doing wrong?"
+    },
+    {
+      "enabled": true,
+      "type": "reddit",
+      "style": "dark",
+      "subreddit": "r/InstagramMarketing",
+      "user": "stuck_at_1k",
+      "upvotes": "3.1k",
+      "comments": "204",
+      "title": "Does posting more actually help or is it a myth?",
+      "answer": {
+        "user": "josephborroto",
+        "initials": "JB",
+        "upvotes": "842",
+        "text": "It helps — but not the way people think. More posts = more reps = you get better and you find what works faster. Volume is practice, not spam."
+      },
+      "caption": "It helps — but not the way people think. More posts = more reps = you get better and you find what works faster. Volume is practice, not spam.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Reddit thread: Does posting more actually help or is it a myth?"
+    },
+    {
+      "enabled": true,
+      "type": "reddit",
+      "style": "dark",
+      "subreddit": "r/contentcreation",
+      "user": "cant_grow",
+      "upvotes": "2.7k",
+      "comments": "176",
+      "title": "How do you come up with ideas every single day without burning out?",
+      "answer": {
+        "user": "josephborroto",
+        "initials": "JB",
+        "upvotes": "913",
+        "text": "I never start from a blank page. Every comment and DM I get is a video. Your audience writes your content list for you — just listen."
+      },
+      "caption": "I never start from a blank page. Every comment and DM I get is a video. Your audience writes your content list for you — just listen.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Reddit thread: How do you come up with ideas every single day without burning out?"
+    },
+    {
+      "enabled": true,
+      "type": "reddit",
+      "style": "dark",
+      "subreddit": "r/socialmedia",
+      "user": "faceless_creator",
+      "upvotes": "5.3k",
+      "comments": "410",
+      "title": "Do you HAVE to show your face to grow?",
+      "answer": {
+        "user": "josephborroto",
+        "initials": "JB",
+        "upvotes": "1.4k",
+        "text": "It helps because people follow people. But a strong voice + a clear point can carry it. Start with whatever you'll actually do consistently."
+      },
+      "caption": "It helps because people follow people. But a strong voice + a clear point can carry it. Start with whatever you'll actually do consistently.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Reddit thread: Do you HAVE to show your face to grow?"
+    },
+    {
+      "enabled": true,
+      "type": "reddit",
+      "style": "dark",
+      "subreddit": "r/NewTubers",
+      "user": "editing_forever",
+      "upvotes": "2.2k",
+      "comments": "158",
+      "title": "My editing takes hours and still looks amateur. What am I missing?",
+      "answer": {
+        "user": "josephborroto",
+        "initials": "JB",
+        "upvotes": "760",
+        "text": "You're overthinking it. Cut the dead air, one idea per cut, captions on. That's 90% of a clean edit. Stop adding effects and start removing pauses."
+      },
+      "caption": "You're overthinking it. Cut the dead air, one idea per cut, captions on. That's 90% of a clean edit. Stop adding effects and start removing pauses.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Reddit thread: My editing takes hours and still looks amateur. What am I missing?"
+    },
+    {
+      "enabled": true,
+      "type": "reddit",
+      "style": "dark",
+      "subreddit": "r/Entrepreneur",
+      "user": "first_client_pls",
+      "upvotes": "3.8k",
+      "comments": "267",
+      "title": "How do I get my first client from content?",
+      "answer": {
+        "user": "josephborroto",
+        "initials": "JB",
+        "upvotes": "1.0k",
+        "text": "Stop pitching, start proving. Post the work and the results. The right client should land on your page and think 'this person gets it' before you ever DM them."
+      },
+      "caption": "Stop pitching, start proving. Post the work and the results. The right client should land on your page and think 'this person gets it' before you ever DM them.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Reddit thread: How do I get my first client from content?"
+    }
+  ]
+}

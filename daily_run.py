@@ -48,6 +48,9 @@ CAROUSEL_BANK = ROOT / "carousel_bank.json"
 SOCIAL_BANK = ROOT / "social_proof_bank.json"
 SOCIAL_SINGLES = ROOT / "social_singles.json"
 COMMENTS_BANK = ROOT / "comments_bank.json"
+REDDIT_BANK = ROOT / "reddit_bank.json"
+CHEATSHEET_BANK = ROOT / "cheatsheet_bank.json"
+PROMPTS_BANK = ROOT / "prompts_bank.json"
 GRAPH = "https://graph.instagram.com/v25.0"
 
 QUEUE_DEPTH = 14   # keep this many ready items per slot at all times
@@ -187,23 +190,20 @@ def _build_am_pool():
         t.setdefault("type", "single")
     typed = json.loads(CONTENT_BANK.read_text()) if CONTENT_BANK.exists() else []
     quotes = json.loads(QUOTE_BANK.read_text()) if QUOTE_BANK.exists() else []
-    socials = _enabled_social_singles()   # X-post styled single statements
-    comments = _enabled_comments()        # comment + Joseph-reply singles
-    pool = []
-    i = j = k = m = c = 0
-    # pattern: tip, quote, typed, social, comment — keeps every format frequent
-    while (i < len(tips) or j < len(quotes) or k < len(typed)
-           or m < len(socials) or c < len(comments)):
-        if i < len(tips):
-            pool.append(tips[i]); i += 1
-        if j < len(quotes):
-            pool.append(quotes[j]); j += 1
-        if k < len(typed):
-            pool.append(typed[k]); k += 1
-        if m < len(socials):
-            pool.append(socials[m]); m += 1
-        if c < len(comments):
-            pool.append(comments[c]); c += 1
+    # Round-robin every format stream so each one shows up evenly (no clumping).
+    streams = [
+        tips, quotes, typed,
+        _enabled_social_singles(),                  # X-post statements
+        _enabled_comments(),                        # comment + reply
+        _enabled_bank(REDDIT_BANK, "reddit"),       # Reddit threads
+        _enabled_bank(CHEATSHEET_BANK, "cheatsheet"),  # saveable cheat-sheets
+        _enabled_bank(PROMPTS_BANK, "prompt"),      # hot-take / poll / fill-blank
+    ]
+    pool, idx = [], [0] * len(streams)
+    while any(idx[s] < len(streams[s]) for s in range(len(streams))):
+        for s, stream in enumerate(streams):
+            if idx[s] < len(stream):
+                pool.append(stream[idx[s]]); idx[s] += 1
     return pool
 
 
@@ -265,6 +265,12 @@ def _render_am_item(item, out_path, style):
         render_card.draw_imessage(item, out_path, style=style)
     elif t == "notes":
         render_card.draw_notes(item, out_path, style=style)
+    elif t == "reddit":
+        render_card.draw_reddit(item, out_path, style=style)
+    elif t == "cheatsheet":
+        render_card.draw_cheatsheet(item, out_path, style=style)
+    elif t == "prompt":
+        render_card.draw_prompt(item, out_path, style=style)
     else:
         render_card.draw_card(item, out_path, style=style)
 

@@ -542,6 +542,123 @@ def video_comment(item, out, style="dark", secs=7):
     return _encode(frame, int(secs * FPS), out)
 
 
+def video_imessage(item, out, style="dark", secs=7):
+    """Animated DM thread — bubbles pop in one at a time, grey 'them' + blue 'me'."""
+    p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
+    footer = _footer_sprite(p)
+    them_bub, them_txt = (38, 38, 40), (245, 245, 245)
+    me_bub, me_txt = (10, 132, 255), (255, 255, 255)
+    f = f_sys(44); htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10))); maxw = int(VW * 0.70)
+    laid = []
+    for m in item["messages"]:
+        lines = wrap(htmp, rcard._no_emoji(m["text"]), f, maxw - 64)
+        bw = int(max(htmp.textlength(l, font=f) for l in lines)) + 64
+        bh = len(lines) * 54 + 36
+        laid.append((m.get("from") == "me", lines, bw, bh))
+    total = sum(bh for *_, bh in laid) + 24 * (len(laid) - 1)
+    y = max(220, (VH - total) // 2)
+    sprites = []
+    for mine, lines, bw, bh in laid:
+        s = Image.new("RGBA", (VW, bh), (0, 0, 0, 0)); sd = ImageDraw.Draw(s)
+        x0 = (VW - 70 - bw) if mine else 70
+        sd.rounded_rectangle((x0, 0, x0 + bw, bh), radius=36, fill=me_bub if mine else them_bub)
+        ty = 18
+        for l in lines:
+            sd.text((x0 + 32, ty), l, font=f, fill=me_txt if mine else them_txt); ty += 54
+        sprites.append((s, y)); y += bh + 24
+    t0, step = 0.35, 0.62
+    secs = max(secs, t0 + len(sprites) * step + 2.2)
+
+    def frame(i):
+        t = i / FPS; fr = bg.copy(); fr.alpha_composite(glow, (0, int(26 * np.sin(t * 0.7))))
+        for k, (s, yy) in enumerate(sprites):
+            pr = ease((t - (t0 + k * step)) / 0.4)
+            if pr > 0:
+                fr.alpha_composite(_alpha(s, pr), (0, yy + int((1 - pr) * 26)))
+        fr.alpha_composite(_alpha(footer, ease((t - 0.3) / 0.7)), (0, VH - 150))
+        return fr
+    return _encode(frame, int(secs * FPS), out)
+
+
+def video_typewriter(item, out, style="blackout", secs=6):
+    """A headline that types out letter by letter with a blinking cursor."""
+    p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
+    footer = _footer_sprite(p); acc = _acc(p)
+    txt = item.get("headline", ""); htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
+    size = 116
+    while size > 56:
+        f = f_brand(size); lines = wrap(htmp, txt, f, VW - 2 * M)
+        if len(lines) <= 5 and max(htmp.textlength(l, font=f) for l in lines) <= VW - 2 * M:
+            break
+        size -= 6
+    f = f_brand(size); lh = int(size * 1.06)
+    starts, cum = [], 0
+    for l in lines:
+        starts.append(cum); cum += len(l)
+    total_chars = cum; cps = 26
+    block_h = len(lines) * lh; y0 = (VH - block_h) // 2 - 40
+
+    def frame(i):
+        t = i / FPS; fr = bg.copy(); fr.alpha_composite(glow, (0, int(34 * np.sin(t * 0.9))))
+        d = ImageDraw.Draw(fr); n = int(t * cps)
+        y = y0; cursor = None
+        for li, l in enumerate(lines):
+            take = max(0, min(len(l), n - starts[li]))
+            shown = l[:take]
+            if shown:
+                d.text((M, y), shown, font=f, fill=p["head"])
+            if 0 < take <= len(l) and n < total_chars and starts[li] + take == n:
+                cursor = (M + htmp.textlength(shown, font=f) + 6, y)
+            y += lh
+        # blinking cursor (steady while typing, blink after)
+        if n >= total_chars:
+            cursor = (M + htmp.textlength(lines[-1], font=f) + 6, y0 + (len(lines) - 1) * lh)
+        if cursor and (n < total_chars or int(t * 2) % 2 == 0):
+            d.rectangle((cursor[0], cursor[1] + 6, cursor[0] + 10, cursor[1] + size), fill=acc)
+        fr.alpha_composite(_alpha(footer, ease((t - 0.3) / 0.7)), (0, VH - 150))
+        return fr
+    secs = max(secs, total_chars / cps + 2.2)
+    return _encode(frame, int(secs * FPS), out)
+
+
+def video_countdown(item, out, style="navyorange", secs=8):
+    """A numbered list that reveals one row at a time with a big slamming number."""
+    p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
+    footer = _footer_sprite(p); acc = _acc(p)
+    htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
+    title = item.get("headline", ""); items = item.get("items", [])[:5]
+    tf = f_brand(64); tlines = wrap(htmp, title, tf, VW - 2 * M)
+    nf = f_brand(96); bf = f_sys(46)
+    rows = []
+    for it in items:
+        bl = wrap(htmp, it, bf, VW - 2 * M - 150)
+        rows.append((bl, max(110, len(bl) * 54 + 30)))
+    th = len(tlines) * 74
+    total = th + 40 + sum(h for _, h in rows)
+    top = max(150, (VH - total) // 2)
+    t0, step = 0.5, 0.8
+    secs = max(secs, t0 + len(rows) * step + 2.2)
+
+    def frame(i):
+        t = i / FPS; fr = bg.copy(); fr.alpha_composite(glow, (0, int(28 * np.sin(t * 0.7))))
+        d = ImageDraw.Draw(fr); y = top
+        for ln in tlines:
+            d.text((M, y), ln, font=tf, fill=p["head"]); y += 74
+        y += 40
+        for k, (bl, h) in enumerate(rows):
+            pr = ease((t - (t0 + k * step)) / 0.4)
+            if pr > 0:
+                sc = 0.6 + 0.4 * pr
+                d.text((M, y + int((1 - pr) * 20)), str(k + 1), font=f_brand(int(96 * sc)), fill=acc)
+                ty = y + int((1 - pr) * 20)
+                for bln in bl:
+                    d.text((M + 150, ty + 14), bln, font=bf, fill=p["sub"]); ty += 54
+            y += h
+        fr.alpha_composite(_alpha(footer, ease((t - 0.3) / 0.7)), (0, VH - 150))
+        return fr
+    return _encode(frame, int(secs * FPS), out)
+
+
 def render_video(item, out, style="dark"):
     """Dispatch a content item to the right animated Reel by its type."""
     t = item.get("type", "single")
@@ -549,6 +666,12 @@ def render_video(item, out, style="dark"):
         return video_xpost(item, out, style=style)
     if t == "comment":
         return video_comment(item, out, style=style)
+    if t == "imessage":
+        return video_imessage(item, out, style=style)
+    if t == "typewriter":
+        return video_typewriter(item, out, style=style)
+    if t == "countdown":
+        return video_countdown(item, out, style=style)
     if t == "stat":
         return video_stat(item, out, style=style)
     if t == "quote":

@@ -1,0 +1,95 @@
+{
+  "_README": "Saveable cheat-sheet cards (numbered reference lists). enabled:true => AM rotation.",
+  "entries": [
+    {
+      "enabled": true,
+      "type": "cheatsheet",
+      "style": "dark",
+      "kicker": "SAVE THIS",
+      "title": "Steal my 7 hook formulas",
+      "items": [
+        "\"If you're [X], stop doing [Y].\"",
+        "\"Nobody talks about this, but...\"",
+        "\"I tried [X] for 30 days. Here's what happened.\"",
+        "\"The fastest way to [result]:\"",
+        "\"[Number] mistakes killing your [thing].\"",
+        "\"Most people get [topic] completely wrong.\"",
+        "\"Here's exactly how I [result].\""
+      ],
+      "caption": "Steal my 7 hook formulas — save this for your next video.\n\nFollow @josephborroto for more.",
+      "alt_text": "Steal my 7 hook formulas"
+    },
+    {
+      "enabled": true,
+      "type": "cheatsheet",
+      "style": "midnight",
+      "kicker": "SAVE THIS",
+      "title": "5 caption templates that work",
+      "items": [
+        "Hook line that repeats the video's promise",
+        "One-sentence story or stakes",
+        "The lesson in 1-2 lines",
+        "A 'save this' or 'try this' line",
+        "Follow CTA tied to the value"
+      ],
+      "caption": "5 caption templates you can reuse on every post.\n\nFollow @josephborroto for more.",
+      "alt_text": "5 caption templates that work"
+    },
+    {
+      "enabled": true,
+      "type": "cheatsheet",
+      "style": "slate",
+      "kicker": "SAVE THIS",
+      "title": "7 CTAs that actually grow your account",
+      "items": [
+        "\"Follow for part 2.\"",
+        "\"Save this for later.\"",
+        "\"Comment [word] and I'll send it.\"",
+        "\"Share this with someone who needs it.\"",
+        "\"Which one are you? Comment below.\"",
+        "\"Tried this? Let me know.\"",
+        "\"Follow so you don't lose this.\""
+      ],
+      "caption": "7 CTAs that actually grow your account. Steal them.\n\nFollow @josephborroto for more.",
+      "alt_text": "7 CTAs that actually grow your account"
+    },
+    {
+      "enabled": true,
+      "type": "cheatsheet",
+      "style": "ember",
+      "kicker": "SAVE THIS",
+      "title": "Edit any video in 6 steps",
+      "items": [
+        "Cut the first 'umm' — start on the point",
+        "Remove every dead pause",
+        "One idea per cut",
+        "Add captions (most watch on mute)",
+        "Zoom only to land a line",
+        "End on the strongest sentence"
+      ],
+      "caption": "Edit any video in 6 steps. Save this.\n\nFollow @josephborroto for more.",
+      "alt_text": "Edit any video in 6 steps"
+    },
+    {
+      "enabled": true,
+      "type": "cheatsheet",
+      "style": "dark",
+      "kicker": "SAVE THIS",
+      "title": "10 video ideas you can post this week",
+      "items": [
+        "A myth in your niche, busted",
+        "A mistake you used to make",
+        "Answer your most-asked question",
+        "A before/after of your work",
+        "3 tips in 30 seconds",
+        "React to a bad take",
+        "Show your process",
+        "A beginner's first step",
+        "What you'd do differently",
+        "A bold opinion"
+      ],
+      "caption": "10 video ideas you can post this week. Bookmark it.\n\nFollow @josephborroto for more.",
+      "alt_text": "10 video ideas you can post this week"
+    }
+  ]
+}
