@@ -155,6 +155,26 @@ ROTATION = [
     # --- TRENDS / WHAT'S WORKING ---
     {"type": "statement", "headline": "ADD B-ROLL. STOP TALKING AT THE CAMERA.", "style": "navyorange",
      "hook": "Pure talking-head is fading — pair your words with B-roll that shows it."},
+    # --- X-POST REELS (animated tweet, Joseph's face + voice) ---
+    {"type": "social", "style": "dark",
+     "social": {"author": "Joseph Borroto", "handle": "@josephborroto", "verified": True,
+                "initials": "JB", "headline": "I treat the camera like a client, not a camera. That one shift changed all my content.",
+                "cta": "Here's exactly how I do it →"},
+     "hook": "I treat the camera like a client, not a camera — that one shift changed all my content."},
+    {"type": "social", "style": "midnight",
+     "social": {"author": "Joseph Borroto", "handle": "@josephborroto", "verified": True,
+                "initials": "JB", "headline": "Stop trying to sound like a 'content creator.' Just be yourself on camera.",
+                "cta": "Here's how I stay myself →"},
+     "hook": "Stop trying to sound like a content creator — just be yourself on camera."},
+    {"type": "social", "style": "slate",
+     "social": {"author": "Joseph Borroto", "handle": "@josephborroto", "verified": True,
+                "initials": "JB", "headline": "Most people overthink their content. I just get it out — and that's why mine grows.",
+                "cta": "Here's my posting system →"},
+     "hook": "Most people overthink content. I just get it out — and that's why mine grows."},
+    {"type": "social", "style": "ember",
+     "social": {"author": "Joseph Borroto", "handle": "@josephborroto", "verified": True,
+                "initials": "JB", "headline": "You don't need a better camera. You need a better first sentence."},
+     "hook": "You don't need a better camera — you need a better first sentence."},
 ]
 
 
@@ -196,15 +216,20 @@ def _reel_key(spec):
 # two posts in a row.
 VIDEO_STYLES = ["blackout", "navyorange", "dark", "midnight",
                 "ember", "slate", "orangepop", "creamorange"]
+# X-post reels only look right on DARK grounds (the blue CTA / grey reply card
+# clash with the orange and cream looks), so they draw from this subset.
+SOCIAL_STYLES = ["dark", "midnight", "slate", "ember"]
 
 
-def _next_style(st, avoid=()):
+def _next_style(st, avoid=(), pool=None):
     """Pick a look that differs from the last few used (style_recent) and from any
-    in `avoid` (e.g. others in the same trial batch) — strong variety, no repeats."""
+    in `avoid` (e.g. others in the same trial batch) — strong variety, no repeats.
+    `pool` restricts the candidate looks (e.g. dark-only for X-post reels)."""
+    pool = pool or VIDEO_STYLES
     rec = st.get("style_recent", [])
     blocked = set(avoid) | set(rec[-4:])
-    cands = ([s for s in VIDEO_STYLES if s not in blocked]
-             or [s for s in VIDEO_STYLES if s not in set(avoid)] or list(VIDEO_STYLES))
+    cands = ([s for s in pool if s not in blocked]
+             or [s for s in pool if s not in set(avoid)] or list(pool))
     s = random.choice(cands)
     st["style_recent"] = (rec + [s])[-7:]
     return s
@@ -233,7 +258,9 @@ def _pick(kind):
         bucket = CONTENT.get(kind) or CONTENT["stat"]
         it, hk, style = bucket[i % len(bucket)]; item, hook = it, hk
     # Rotate the LOOK every post (overrides the recipe's default) for variety.
-    style = _next_style(st)
+    # X-post reels are restricted to dark grounds so the blue CTA never clashes.
+    pool = SOCIAL_STYLES if item.get("type") == "social" else None
+    style = _next_style(st, pool=pool)
     st["reel_i"] = i + 1
     st["reel_cap_i"] = cap_i + 1       # rotate caption wording
     st["reel_audio_i"] = aud_i + 1     # rotate beat
@@ -463,7 +490,8 @@ def render_trials(n, strategy="SS_PERFORMANCE"):
     items = []
     for k, spec in enumerate(batch):
         rel = f"queue/reel-{int(time.time())}-{k}.mp4"; out = str(ROOT / rel)
-        style = _next_style(st, avoid=used_styles); used_styles.append(style)
+        pool = SOCIAL_STYLES if spec.get("type") == "social" else None
+        style = _next_style(st, avoid=used_styles, pool=pool); used_styles.append(style)
         if spec.get("type") == "sequence":
             render_video.video_sequence(spec["scenes"], out, style=style)
         else:

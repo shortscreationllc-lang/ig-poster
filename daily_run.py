@@ -150,6 +150,23 @@ CONTENT_BANK = ROOT / "content_bank.json"
 QUOTE_BANK = ROOT / "quote_bank.json"
 
 
+def _interleave(primary, extra):
+    """Evenly weave `extra` items through `primary` so they're spread out rather
+    than clumped at the end (keeps the X-post carousels paced across the rotation)."""
+    if not extra:
+        return list(primary)
+    n = len(primary) + len(extra); step = n / len(extra); nextpos = step / 2
+    out = []; pi = ei = 0
+    for pos in range(n):
+        if ei < len(extra) and pos >= nextpos:
+            out.append(extra[ei]); ei += 1; nextpos += step
+        elif pi < len(primary):
+            out.append(primary[pi]); pi += 1
+        elif ei < len(extra):
+            out.append(extra[ei]); ei += 1
+    return out
+
+
 def _enabled_social_carousels():
     """Load only the ENABLED entries from the social-proof bank. Returns [] when
     the bank is missing or empty — so we never invent a testimonial."""
@@ -242,9 +259,10 @@ def refill():
 
     am_pool = _build_am_pool()
     carousels = json.loads(CAROUSEL_BANK.read_text())
-    # Mix in any ENABLED real-testimonial / Joseph-voice "X-post" carousels so they
-    # rotate alongside the normal ones. Empty bank => nothing added (never fabricated).
-    carousels += _enabled_social_carousels()
+    # Weave ENABLED "X-post" carousels EVENLY through the normal ones (not appended
+    # at the end) so they're spread out across the rotation, never clumped. Empty
+    # bank => nothing added (a testimonial is never fabricated).
+    carousels = _interleave(carousels, _enabled_social_carousels())
 
     # Backfill content fingerprints onto items queued before the de-dup guard
     # existed, so feed->story de-dup is active immediately (not only once the
