@@ -493,11 +493,62 @@ def video_xpost(item, out, style="dark", secs=7):
     return _encode(frame, int(secs * FPS), out)
 
 
+def video_comment(item, out, style="dark", secs=7):
+    """Animated comment reel: the question fades in, then Joseph's verified reply
+    slides up underneath — the moving version of the comment card."""
+    p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
+    footer = _footer_sprite(p)
+    name_c = p["head"]; txt_c = (224, 224, 228); meta_c = (150, 150, 156)
+    nf = f_sys(40, bold=True); tf = f_sys(44); mf = f_sys(30)
+    htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
+
+    def block(x, av_init, av_fill, photo, name, text, likes, verified):
+        tx = x + 2 * 46 + 24
+        lines = wrap(htmp, rcard._no_emoji(text), tf, (VW - M) - tx)
+        h = max(2 * 46, 56 + len(lines) * 56 + 8 + 50)
+        s = Image.new("RGBA", (VW, h), (0, 0, 0, 0)); bd = ImageDraw.Draw(s)
+        rcard._put_avatar(s, bd, x, 0, 46, av_init, av_fill, photo=photo)
+        bd.text((tx, 2), name, font=nf, fill=name_c)
+        if verified:
+            rcard._verified(bd, tx + bd.textlength(name, font=nf) + 28, 22, 18)
+        yy = 56
+        for ln in lines:
+            bd.text((tx, yy), ln, font=tf, fill=txt_c); yy += 56
+        bd.text((tx, yy + 8), f"♥ {likes}    Reply", font=mf, fill=meta_c)
+        return s, h
+
+    c = item["comment"]; rp = item["reply"]
+    c_sp, ch = block(M, c.get("initials", "•"), (90, 110, 140), c.get("photo"),
+                     c.get("author", "someone"), c["text"], c.get("likes", "2.1k"), False)
+    r_sp, rh = block(M + 90, rp.get("initials", "JB"), ORANGE,
+                     rp.get("photo") or (str(rcard.AVATAR_PATH) if rcard.AVATAR_PATH else None),
+                     rp.get("author", "Joseph Borroto"), rp["text"], rp.get("likes", "480"),
+                     rp.get("verified", True))
+    total = ch + 40 + rh
+    y_c = max(220, (VH - total) // 2); y_r = y_c + ch + 40
+    t_reply = 1.5
+
+    def frame(i):
+        t = i / FPS; fr = bg.copy()
+        fr.alpha_composite(glow, (0, int(28 * np.sin(t * 0.7))))
+        a = ease((t - 0.25) / 0.5)
+        if a > 0:
+            fr.alpha_composite(_alpha(c_sp, a), (0, y_c + int((1 - a) * 30)))
+        ra = ease((t - t_reply) / 0.55)
+        if ra > 0:
+            fr.alpha_composite(_alpha(r_sp, ra), (0, y_r + int((1 - ra) * 40)))
+        fr.alpha_composite(_alpha(footer, ease((t - t_reply - 0.3) / 0.6)), (0, VH - 150))
+        return fr
+    return _encode(frame, int(secs * FPS), out)
+
+
 def render_video(item, out, style="dark"):
     """Dispatch a content item to the right animated Reel by its type."""
     t = item.get("type", "single")
     if t == "social":
         return video_xpost(item, out, style=style)
+    if t == "comment":
+        return video_comment(item, out, style=style)
     if t == "stat":
         return video_stat(item, out, style=style)
     if t == "quote":
