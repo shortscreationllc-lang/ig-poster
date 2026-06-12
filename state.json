@@ -998,17 +998,17 @@
     "use the exact words your person uses. it feels made for them.",
     "you'll get bored before they do. drill the same message new ways."
   ],
-  "reel_i": 37,
-  "reel_cap_i": 46,
-  "reel_audio_i": 46,
+  "reel_i": 38,
+  "reel_cap_i": 47,
+  "reel_audio_i": 47,
   "reel_recent": [
-    "how to make short form that actually books clients not just ",
     "the 4 question check every short form video should pass befo",
     "pure talking head is fading pair your words with b roll that",
     "most short form content isn t bad it s forgettable make one ",
     "you don t need a better camera you need a better hook and a ",
     "stop posting more start hooking harder",
-    "3 ways to stop the scroll on short form video"
+    "3 ways to stop the scroll on short form video",
+    "your hook is 90 of the post the first line does almost all t"
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -1030,19 +1030,19 @@
     "20260612": 2
   },
   "beat_recent": [
-    1,
     2,
     3,
     7,
-    5
+    5,
+    6
   ],
   "style_recent": [
-    "midnight",
     "dark",
     "creamorange",
     "navyorange",
     "slate",
     "ember",
-    "blackout"
+    "blackout",
+    "creamorange"
   ]
 }
