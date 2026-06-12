@@ -200,6 +200,206 @@
       },
       "caption": "Editing doesn't need to be hard: cut dead air, one idea per cut, captions on.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Comment reply: cut the dead air, one idea per cut, captions on. that's 90% of it. stop overthinking the rest."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "firstk.creator",
+        "initials": "FK",
+        "text": "how do i get my first 1000 followers?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "stop worrying about followers. make ONE video so good people have to share it. that's the unlock.",
+        "likes": "480"
+      },
+      "caption": "Forget the follower count. Make one video good enough to share.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: stop worrying about followers. make ONE video so good people have to share it. that's the unlock."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "late.start",
+        "initials": "LS",
+        "text": "is it too late to start posting?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "no. best time was a year ago. second best is today. just start.",
+        "likes": "480"
+      },
+      "caption": "It's not too late. The second best time to start is today.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: no. best time was a year ago. second best is today. just start."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "longorshort",
+        "initials": "LO",
+        "text": "how long should my videos be?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "as long as they're interesting, as short as possible. cut everything that isn't the point.",
+        "likes": "480"
+      },
+      "caption": "As long as it's interesting, as short as possible.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: as long as they're interesting, as short as possible. cut everything that isn't the point."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "faceless.fear",
+        "initials": "FF",
+        "text": "do i need to show my face?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "it helps — people follow people. but a strong voice + clear value works too. start with what you'll actually do.",
+        "likes": "480"
+      },
+      "caption": "Showing your face helps, but a clear voice works too. Start with what you'll actually do.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: it helps — people follow people. but a strong voice + clear value works too. start with what you'll actually do."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "ghost.poster",
+        "initials": "GP",
+        "text": "my videos do ok then flop. why?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "you're inconsistent with the hook, not the topic. nail the first line every single time.",
+        "likes": "480"
+      },
+      "caption": "Your hook is inconsistent, not your topic. Nail the first line every time.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: you're inconsistent with the hook, not the topic. nail the first line every single time."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "delete.debate",
+        "initials": "DD",
+        "text": "should i delete old posts that flopped?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "no. leave them. nobody scrolls that far, and your best old idea is worth reposting, not deleting.",
+        "likes": "480"
+      },
+      "caption": "Don't delete your flops. Repost your best ideas instead.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: no. leave them. nobody scrolls that far, and your best old idea is worth reposting, not deleting."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "dry.ideas",
+        "initials": "DI",
+        "text": "how do you not run out of ideas?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "i talk to my audience. every question i get is a video. your comments are a content list.",
+        "likes": "480"
+      },
+      "caption": "Your comments are a content list. Every question is a video.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: i talk to my audience. every question i get is a video. your comments are a content list."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "qvq",
+        "initials": "QV",
+        "text": "whats more important, quality or quantity?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "quantity until you find what works, then quality on what's working. volume first, polish later.",
+        "likes": "480"
+      },
+      "caption": "Volume until you find what works — then polish what's working.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: quantity until you find what works, then quality on what's working. volume first, polish later."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "scared.tostart",
+        "initials": "ST",
+        "text": "i'm scared people i know will judge me",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "they might, for a week. then they'll be asking how you did it. post anyway.",
+        "likes": "480"
+      },
+      "caption": "They'll judge for a week, then ask how you did it. Post anyway.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: they might, for a week. then they'll be asking how you did it. post anyway."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "hook.help",
+        "initials": "HH",
+        "text": "how do i write a hook that actually works?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "say the result or the stakes in the first line. make a promise the video keeps. cut the warm-up.",
+        "likes": "480"
+      },
+      "caption": "A hook that works: lead with the result, cut the warm-up.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: say the result or the stakes in the first line. make a promise the video keeps. cut the warm-up."
     }
   ]
 }

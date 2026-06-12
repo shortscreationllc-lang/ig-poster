@@ -175,6 +175,23 @@ ROTATION = [
      "social": {"author": "Joseph Borroto", "handle": "@josephborroto", "verified": True,
                 "initials": "JB", "headline": "You don't need a better camera. You need a better first sentence."},
      "hook": "You don't need a better camera — you need a better first sentence."},
+    # --- COMMENT REELS (animated comment + Joseph's verified reply) ---
+    {"type": "comment", "style": "dark",
+     "comment": {"author": "creator_mike", "initials": "CM", "text": "how do you make every video feel different? mine all blur together", "likes": "2.1k"},
+     "reply": {"author": "Joseph Borroto", "initials": "JB", "verified": True, "text": "same energy, new angle every time. one idea, told 5 ways. never reinvent — re-angle.", "likes": "480"},
+     "hook": "How to make every video feel different — same idea, new angle every time."},
+    {"type": "comment", "style": "midnight",
+     "comment": {"author": "samanthaedits", "initials": "SE", "text": "i post good content but nobody watches", "likes": "3.4k"},
+     "reply": {"author": "Joseph Borroto", "initials": "JB", "verified": True, "text": "good content nobody sees = a weak hook. fix the first 3 seconds before anything else.", "likes": "612"},
+     "hook": "Good content nobody sees is just a weak hook — fix the first 3 seconds."},
+    {"type": "comment", "style": "slate",
+     "comment": {"author": "quietkid.media", "initials": "QK", "text": "i feel so awkward on camera", "likes": "1.8k"},
+     "reply": {"author": "Joseph Borroto", "initials": "JB", "verified": True, "text": "everyone does at first. talk to ONE person, not 'an audience.' it gets easy fast.", "likes": "390"},
+     "hook": "Awkward on camera? Talk to one person, not an audience."},
+    {"type": "comment", "style": "ember",
+     "comment": {"author": "viral.chase", "initials": "VC", "text": "whats the actual secret to going viral?", "likes": "5.2k"},
+     "reply": {"author": "Joseph Borroto", "initials": "JB", "verified": True, "text": "stop chasing viral. chase clarity. one idea said so well it's impossible to scroll past.", "likes": "830"},
+     "hook": "Stop chasing viral. Chase clarity — one idea, impossible to scroll past."},
 ]
 
 
@@ -259,7 +276,7 @@ def _pick(kind):
         it, hk, style = bucket[i % len(bucket)]; item, hook = it, hk
     # Rotate the LOOK every post (overrides the recipe's default) for variety.
     # X-post reels are restricted to dark grounds so the blue CTA never clashes.
-    pool = SOCIAL_STYLES if item.get("type") == "social" else None
+    pool = SOCIAL_STYLES if item.get("type") in ("social", "comment") else None
     style = _next_style(st, pool=pool)
     st["reel_i"] = i + 1
     st["reel_cap_i"] = cap_i + 1       # rotate caption wording
@@ -490,7 +507,7 @@ def render_trials(n, strategy="SS_PERFORMANCE"):
     items = []
     for k, spec in enumerate(batch):
         rel = f"queue/reel-{int(time.time())}-{k}.mp4"; out = str(ROOT / rel)
-        pool = SOCIAL_STYLES if spec.get("type") == "social" else None
+        pool = SOCIAL_STYLES if spec.get("type") in ("social", "comment") else None
         style = _next_style(st, avoid=used_styles, pool=pool); used_styles.append(style)
         if spec.get("type") == "sequence":
             render_video.video_sequence(spec["scenes"], out, style=style)
