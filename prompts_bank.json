@@ -142,6 +142,36 @@
       "prompt": "Agree?",
       "caption": "Overediting hides weak content. Fix the value, not the transitions.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Overediting is just hiding weak content. Fix the value, not the transitions."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "I'd get more views if I stopped opening with ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "I'd get more views if I stopped opening with ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "I'd get more views if I stopped opening with ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "HOT TAKE",
+      "headline": "Feeling too cringe to post is selfish — someone needs what you know.",
+      "prompt": "Who needed to hear this?",
+      "caption": "Feeling too cringe to post is selfish — someone needs what you know.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Feeling too cringe to post is selfish — someone needs what you know."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "HOT TAKE",
+      "headline": "Stop adding effects. Start removing pauses.",
+      "prompt": "Who needed to hear this?",
+      "caption": "Stop adding effects. Start removing pauses.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Stop adding effects. Start removing pauses."
     }
   ]
 }

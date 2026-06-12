@@ -560,6 +560,106 @@
       },
       "caption": "I never run out of ideas because I never stop learning. If you're stagnant, you're dying.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Comment reply: i never stop learning — my craft, my business, myself. if you're stagnant, you're dying, and stagnant people run out of things to say."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "creator_mike",
+        "initials": "CM",
+        "text": "is posting every day really necessary?",
+        "likes": "392"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "lower the bar. 'posted' beats 'perfect.' make it so easy you can't talk yourself out of it.",
+        "likes": "421"
+      },
+      "caption": "Lower the bar. 'posted' beats 'perfect.' make it so easy you can't talk yourself out of it.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: lower the bar. 'posted' beats 'perfect.' make it so easy you can't talk yourself out of it."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "vid_kai",
+        "initials": "VK",
+        "text": "how do you get clients from content?",
+        "likes": "346"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "show up every single day until they can't ignore you. bet on consistency, not luck.",
+        "likes": "668"
+      },
+      "caption": "Show up every single day until they can't ignore you. bet on consistency, not luck.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: show up every single day until they can't ignore you. bet on consistency, not luck."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "kai.media",
+        "initials": "KM",
+        "text": "how do i stand out when everyone uses AI?",
+        "likes": "543"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "AI video will get scary good. the personal touch is the one thing it can't fake — that's your moat.",
+        "likes": "501"
+      },
+      "caption": "Ai video will get scary good. the personal touch is the one thing it can't fake — that's your moat.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: AI video will get scary good. the personal touch is the one thing it can't fake — that's your moat."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "vid_kai",
+        "initials": "VK",
+        "text": "how do i stand out when everyone uses AI?",
+        "likes": "4000k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "be more personal, not more polished. people will crave the real thing.",
+        "likes": "451"
+      },
+      "caption": "Be more personal, not more polished. people will crave the real thing.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: be more personal, not more polished. people will crave the real thing."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "new_noah",
+        "initials": "NN",
+        "text": "i always fall off. how do i keep going?",
+        "likes": "5400k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "daily if you can. not for the algorithm — for the reps. you get good by posting.",
+        "likes": "752"
+      },
+      "caption": "Daily if you can. not for the algorithm — for the reps. you get good by posting.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: daily if you can. not for the algorithm — for the reps. you get good by posting."
     }
   ]
 }
