@@ -92,6 +92,56 @@
         "Daily reps",
         "Fewer, polished"
       ]
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "HOT TAKE",
+      "headline": "Feeling too cringe to post is selfish. Someone out there needs exactly what you know — and you're keeping it from them.",
+      "prompt": "Who needed to hear this?",
+      "caption": "Feeling too cringe to post is selfish. Someone needs what you know.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Feeling too cringe to post is selfish. Someone out there needs exactly what you know — and you're keeping it from them."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "dark",
+      "kicker": "HOT TAKE",
+      "headline": "AI videos are about to get scary good. The personal touch is the one thing they can't fake — that's your whole moat.",
+      "prompt": "Agree?",
+      "caption": "AI videos are coming for everything. The personal touch is the one thing they can't fake.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "AI videos are about to get scary good. The personal touch is the one thing they can't fake — that's your whole moat."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "midnight",
+      "kicker": "HOT TAKE",
+      "headline": "Stop spamming hashtags. I've had videos blow up with zero. Your value is the algorithm.",
+      "prompt": "Agree or disagree?",
+      "caption": "Stop spamming hashtags. I've had videos blow up with zero. Value is the algorithm.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Stop spamming hashtags. I've had videos blow up with zero. Your value is the algorithm."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "HOT TAKE",
+      "headline": "If you're stagnant, you're dying. Always be learning.",
+      "prompt": "Tag someone who needs this.",
+      "caption": "If you're stagnant, you're dying. Always be learning.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "If you're stagnant, you're dying. Always be learning."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "HOT TAKE",
+      "headline": "Overediting is just hiding weak content. Fix the value, not the transitions.",
+      "prompt": "Agree?",
+      "caption": "Overediting hides weak content. Fix the value, not the transitions.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Overediting is just hiding weak content. Fix the value, not the transitions."
     }
   ]
 }

@@ -400,6 +400,166 @@
       },
       "caption": "A hook that works: lead with the result, cut the warm-up.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Comment reply: say the result or the stakes in the first line. make a promise the video keeps. cut the warm-up."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "newcreator_jay",
+        "initials": "NJ",
+        "text": "whats the biggest mistake new creators make?",
+        "likes": "2.4k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "trying to make the perfect post — so they never post it at all. perfect and unposted is worth zero. post the messy one.",
+        "likes": "510"
+      },
+      "caption": "The #1 mistake new creators make: chasing the perfect post, so they never post at all.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: trying to make the perfect post — so they never post it at all. perfect and unposted is worth zero. post the messy one."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "midnight",
+      "comment": {
+        "author": "starting.fresh",
+        "initials": "SF",
+        "text": "0 followers, just starting out. what do i actually do?",
+        "likes": "2.4k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "post every single day, as much as you can. say something, show something, and put text on screen that makes people stop and think. that's the unlock.",
+        "likes": "510"
+      },
+      "caption": "0 followers? Post every day. Say something, show something, text on screen that makes people stop.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: post every single day, as much as you can. say something, show something, and put text on screen that makes people stop and think. that's the unlock."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "hooks.help",
+        "initials": "HH",
+        "text": "why do my hooks flop every time?",
+        "likes": "2.4k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "you're opening with 'hey my name is ___ and i do ___.' you already lost them. start on the point — never on your name.",
+        "likes": "510"
+      },
+      "caption": "Your hook flops because you open with your name. Start on the point.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: you're opening with 'hey my name is ___ and i do ___.' you already lost them. start on the point — never on your name."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "slate",
+      "comment": {
+        "author": "camera.shy",
+        "initials": "CS",
+        "text": "how did you actually get comfortable on camera?",
+        "likes": "2.4k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "i went outside and recorded myself in front of a bunch of people. then i kept doing it. reps kill the fear — there's no shortcut.",
+        "likes": "510"
+      },
+      "caption": "How I got comfortable on camera: filmed myself in front of crowds, over and over. Reps kill the fear.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: i went outside and recorded myself in front of a bunch of people. then i kept doing it. reps kill the fear — there's no shortcut."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "midnight",
+      "comment": {
+        "author": "fall.off.fast",
+        "initials": "FO",
+        "text": "how do you stay consistent? i always fall off",
+        "likes": "2.4k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "discipline, not motivation. videos aren't fun and you won't always see results. you go anyway. that's the whole game.",
+        "likes": "510"
+      },
+      "caption": "Consistency isn't motivation, it's discipline. You won't always see results. Go anyway.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: discipline, not motivation. videos aren't fun and you won't always see results. you go anyway. that's the whole game."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "edit.questions",
+        "initials": "EQ",
+        "text": "whats your editing process?",
+        "likes": "2.4k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "honestly my team runs it for me. if you want to grow, you have to delegate and build a team. (or come hire mine.)",
+        "likes": "510"
+      },
+      "caption": "My editing process? My team runs it. Growth means learning to delegate.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: honestly my team runs it for me. if you want to grow, you have to delegate and build a team. (or come hire mine.)"
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "client.curious",
+        "initials": "CC",
+        "text": "how do you actually get clients from posting?",
+        "likes": "2.4k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "show up every single day until they can't ignore you. you might blow up overnight — but bet on consistency, not luck. build systems so you can post constantly.",
+        "likes": "510"
+      },
+      "caption": "Clients come from showing up every day until they can't ignore you. Bet on consistency, not luck.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: show up every single day until they can't ignore you. you might blow up overnight — but bet on consistency, not luck. build systems so you can post constantly."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "slate",
+      "comment": {
+        "author": "dry.ideas2",
+        "initials": "DR",
+        "text": "how do you never run out of ideas?",
+        "likes": "2.4k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "i never stop learning — my craft, my business, myself. if you're stagnant, you're dying, and stagnant people run out of things to say.",
+        "likes": "510"
+      },
+      "caption": "I never run out of ideas because I never stop learning. If you're stagnant, you're dying.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: i never stop learning — my craft, my business, myself. if you're stagnant, you're dying, and stagnant people run out of things to say."
     }
   ]
 }

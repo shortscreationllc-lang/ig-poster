@@ -150,6 +150,66 @@
       },
       "caption": "The best camera is the one you'll actually use.\n\nFollow @josephborroto for more on content.",
       "alt_text": "The best camera is the one you'll actually use."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "dark",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Your 'perfect' post that never gets posted is worth zero. Post the messy one.",
+        "cta": ""
+      },
+      "caption": "Your 'perfect' post that never gets posted is worth zero. Post the messy one.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your 'perfect' post that never gets posted is worth zero. Post the messy one."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "midnight",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "You don't need a perfect video. You need a video with real value — then post it again tomorrow.",
+        "cta": ""
+      },
+      "caption": "You don't need a perfect video. You need a video with real value — then post it again tomorrow.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "You don't need a perfect video. You need a video with real value — then post it again tomorrow."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Post every single day. That's not a tip. That IS the strategy.",
+        "cta": ""
+      },
+      "caption": "Post every single day. That's not a tip. That IS the strategy.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Post every single day. That's not a tip. That IS the strategy."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "ember",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "The personal touch is the one thing AI can't fake. That's your moat — use it.",
+        "cta": ""
+      },
+      "caption": "The personal touch is the one thing AI can't fake. That's your moat — use it.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The personal touch is the one thing AI can't fake. That's your moat — use it."
     }
   ]
 }
