@@ -695,6 +695,20 @@
         "pillar": "business",
         "source_index": 13
       }
+    },
+    {
+      "at": "20260612T172614Z",
+      "id": "queue/reel-1781285076.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18112633738910475",
+      "tags": {
+        "fmt": "sequence",
+        "style": "blackout",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "3 ways to stop the scroll on short-form video."
     }
   ],
   "story_hook_i": 1,
