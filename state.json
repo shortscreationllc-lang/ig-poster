@@ -937,17 +937,17 @@
     "that's the whole game.",
     "video helps buyers trust a business before they ever decide."
   ],
-  "reel_i": 36,
-  "reel_cap_i": 43,
-  "reel_audio_i": 43,
+  "reel_i": 37,
+  "reel_cap_i": 44,
+  "reel_audio_i": 44,
   "reel_recent": [
-    "your hook is 90 of the post the first line does almost all t",
     "how to make short form that actually books clients not just ",
     "the 4 question check every short form video should pass befo",
     "pure talking head is fading pair your words with b roll that",
     "most short form content isn t bad it s forgettable make one ",
     "you don t need a better camera you need a better hook and a ",
-    "stop posting more start hooking harder"
+    "stop posting more start hooking harder",
+    "3 ways to stop the scroll on short form video"
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -966,19 +966,19 @@
     "20260611": 2
   },
   "beat_recent": [
-    8,
     9,
     0,
     1,
-    2
+    2,
+    3
   ],
   "style_recent": [
-    "blackout",
     "midnight",
     "dark",
     "creamorange",
     "navyorange",
     "slate",
-    "ember"
+    "ember",
+    "blackout"
   ]
 }
