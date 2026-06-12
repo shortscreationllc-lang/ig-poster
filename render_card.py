@@ -549,15 +549,29 @@ def _heart(d, cx, cy, s, fill):
                (cx, cy + s * 0.62)], fill=fill)
 
 
-def draw_social_hook(item, out_path, style="dark"):
-    """Carousel slide 1 styled as an X (Twitter) post: profile + bold claim, an
-    embedded reply that shows a real result, and a blue 'here's how' CTA. A high-
-    converting social-proof hook that leads into the breakdown slides."""
+def draw_social_hook(item, out_path, style="dark", vcenter=True):
+    """An X (Twitter) post: profile + bold claim, an optional embedded reply
+    (real testimonial), and a blue CTA. Works as a carousel cover OR a standalone
+    single post — `vcenter` balances the block vertically so it never looks empty."""
     img, d, p = _new(style)
     MX = 96; INNER = W - 2 * MX
     blue = (45, 140, 255)
+    r = 58
+    pad = 34; rr = 42; rbf = f_sys(36)
+    # ---- measure first (so we can vertically center and never overflow)
+    hf, hlines, hlh = _social_fit(d, item["headline"], INNER, 54, 38)
+    claim_h = len(hlines) * hlh
+    rp = item.get("reply")
+    body_lines, card_h = [], 0
+    if rp:
+        body_lines = wrap(d, rp["body"], rbf, (W - MX - pad) - (MX + pad))
+        card_h = 34 + 2 * rr + 16 + len(body_lines) * 48 + 14 + 52 + 20 + 40 + 26
+    cta_h = 56
+    cta = item.get("cta", "Here's exactly how he did it →")
+    cta_h = 56 if cta else 0
+    total = (2 * r + 46) + claim_h + ((30 + card_h) if rp else 0) + ((48 + cta_h) if cta else 0)
+    top = max(150, (H - total) // 2) if vcenter else 150
     # ---- author row
-    top = 150; r = 58
     _put_avatar(img, d, MX, top, r, item.get("initials", "JB"), ORANGE,
                 photo=item.get("photo"), use_default=True,
                 focus=tuple(item.get("avatar_focus", (0.5, 0.44))))
@@ -570,18 +584,12 @@ def draw_social_hook(item, out_path, style="dark"):
     d.text((nx, top + 64), item.get("handle", "@josephborroto"), font=f_sys(38), fill=p["muted"])
     # ---- the claim
     y = top + 2 * r + 46
-    hf, hlines, hlh = _social_fit(d, item["headline"], INNER, 54, 38)
     for ln in hlines:
         d.text((MX, y), ln, font=hf, fill=p["head"]); y += hlh
-    # ---- embedded reply card (measure first, then draw so it never overflows)
-    rp = item.get("reply")
+    # ---- embedded reply card
     if rp:
         y += 30
-        pad = 34; rr = 42
         ax0, ax1 = MX, W - MX
-        rbf = f_sys(36)
-        body_lines = wrap(d, rp["body"], rbf, (ax1 - pad) - (ax0 + pad))
-        card_h = 34 + 2 * rr + 16 + len(body_lines) * 48 + 14 + 52 + 20 + 40 + 26
         d.rounded_rectangle((ax0, y, ax1, y + card_h), radius=28,
                             fill=(30, 30, 33), outline=(58, 58, 64), width=2)
         cy = y + 34
@@ -596,7 +604,6 @@ def draw_social_hook(item, out_path, style="dark"):
         for ln in body_lines:
             d.text((ax0 + pad, by), ln, font=rbf, fill=(220, 222, 226)); by += 48
         by += 14
-        # reaction pill (heart + count)
         cnt = str(rp.get("reactions", 4))
         pillf = f_sys(30, bold=True); cw = d.textlength(cnt, font=pillf)
         d.rounded_rectangle((ax0 + pad, by, ax0 + pad + 56 + cw + 28, by + 52), radius=26,
@@ -604,14 +611,14 @@ def draw_social_hook(item, out_path, style="dark"):
         _heart(d, ax0 + pad + 32, by + 26, 28, (235, 90, 110))
         d.text((ax0 + pad + 54, by + 11), cnt, font=pillf, fill=(150, 190, 220))
         by += 72
-        # replies meta row
         _avatar(d, ax0 + pad, by + 2, 16, "", (70, 110, 150))
         d.text((ax0 + pad + 46, by + 2), rp.get("replies", ""), font=f_sys(28), fill=p["muted"])
         y += card_h
-    # ---- blue CTA (no brand footer — this card mimics a real screenshot)
-    y += 48
-    d.text((MX, y), item.get("cta", "Here's exactly how he did it →"),
-           font=f_sys(44, bold=True), fill=blue)
+    # ---- blue CTA (no brand footer — this card mimics a real screenshot).
+    # Single posts pass cta="" so the "→" (which implies a swipe) is omitted.
+    if cta:
+        y += 48
+        d.text((MX, y), cta, font=f_sys(44, bold=True), fill=blue)
     img.convert("RGB").save(out_path, quality=95)
     return out_path
 
