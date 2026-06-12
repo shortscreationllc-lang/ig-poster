@@ -45,6 +45,7 @@ QUEUE_DIR = ROOT / "queue"
 MANIFEST = QUEUE_DIR / "manifest.json"
 SINGLE_BANK = ROOT / "post_bank.json"
 CAROUSEL_BANK = ROOT / "carousel_bank.json"
+SOCIAL_BANK = ROOT / "social_proof_bank.json"
 GRAPH = "https://graph.instagram.com/v25.0"
 
 QUEUE_DEPTH = 14   # keep this many ready items per slot at all times
@@ -148,6 +149,16 @@ CONTENT_BANK = ROOT / "content_bank.json"
 QUOTE_BANK = ROOT / "quote_bank.json"
 
 
+def _enabled_social_carousels():
+    """Load only the ENABLED entries from the social-proof bank. Returns [] when
+    the bank is missing or empty — so we never invent a testimonial."""
+    try:
+        data = json.loads(SOCIAL_BANK.read_text())
+    except Exception:
+        return []
+    return [e for e in data.get("entries", []) if e.get("enabled")]
+
+
 def _build_am_pool():
     """Round-robin tips + typed value cards + verified quotes so the feed cycles
     through formats (tip, quote, myth, versus, value, …). Each entry keeps its
@@ -208,6 +219,9 @@ def refill():
 
     am_pool = _build_am_pool()
     carousels = json.loads(CAROUSEL_BANK.read_text())
+    # Mix in any ENABLED real-testimonial / Joseph-voice "X-post" carousels so they
+    # rotate alongside the normal ones. Empty bank => nothing added (never fabricated).
+    carousels += _enabled_social_carousels()
 
     # Backfill content fingerprints onto items queued before the de-dup guard
     # existed, so feed->story de-dup is active immediately (not only once the

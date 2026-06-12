@@ -46,6 +46,14 @@ SYS_BOLD = _first_existing([
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
 ])
 
+# Joseph's real profile photo — drop a square-ish headshot at any of these paths
+# and it's used as the avatar on social cards (falls back to a monogram if absent).
+AVATAR_PATH = _first_existing([
+    ROOT / "assets" / "joseph-avatar.jpg",
+    ROOT / "assets" / "joseph-avatar.png",
+    ROOT / "assets" / "avatar.jpg",
+])
+
 W, H = 1080, 1350
 M = 110  # side margin
 
@@ -491,6 +499,133 @@ def draw_cover(cover, kicker, out_path, style="dark"):
     return out_path
 
 
+# ----------------------------------------------------------------- X-post hook
+def _circle_photo(img, x, y, r, path, focus=(0.5, 0.44)):
+    """Center-crop `path` to a circle of radius r and paste at (x,y). `focus`
+    keeps the face centered (slightly above the vertical middle by default)."""
+    from PIL import ImageOps
+    av = ImageOps.fit(Image.open(path).convert("RGB"), (2 * r, 2 * r),
+                      Image.LANCZOS, centering=focus)
+    mask = Image.new("L", (2 * r, 2 * r), 0)
+    ImageDraw.Draw(mask).ellipse((0, 0, 2 * r, 2 * r), fill=255)
+    img.paste(av, (x, y), mask)
+
+
+def _put_avatar(img, d, x, y, r, initials, fill, photo=None, use_default=False, focus=(0.5, 0.44)):
+    """Real photo if available, else a monogram circle. `use_default` allows
+    falling back to Joseph's global AVATAR_PATH (only for his own avatar, never
+    for a third-party reply)."""
+    src = photo or (str(AVATAR_PATH) if (use_default and AVATAR_PATH) else None)
+    if src and Path(src).exists():
+        try:
+            _circle_photo(img, x, y, r, src, focus); return
+        except Exception:
+            pass
+    _avatar(d, x, y, r, initials, fill)
+
+
+def _avatar(d, x, y, r, initials, fill):
+    """A round monogram avatar — no external image needed."""
+    d.ellipse((x, y, x + 2 * r, y + 2 * r), fill=fill)
+    f = f_brand(int(r * 0.95))
+    tw = d.textlength(initials, font=f); asc, desc = f.getmetrics()
+    d.text((x + r - tw / 2, y + r - (asc + desc) / 2 - 2), initials, font=f, fill=(255, 255, 255))
+
+
+def _verified(d, cx, cy, r):
+    """Blue X-style verified badge."""
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(29, 155, 240))
+    w = max(3, int(r * 0.22))
+    d.line([(cx - r * 0.46, cy + r * 0.02), (cx - r * 0.1, cy + r * 0.42)], fill=(255, 255, 255), width=w)
+    d.line([(cx - r * 0.1, cy + r * 0.42), (cx + r * 0.5, cy - r * 0.4)], fill=(255, 255, 255), width=w)
+
+
+def _heart(d, cx, cy, s, fill):
+    """A small filled heart (for the reaction pill) — drawn, so no emoji font needed."""
+    r = s * 0.5
+    d.ellipse((cx - s * 0.5, cy - r * 0.55, cx - s * 0.02, cy + r * 0.45), fill=fill)
+    d.ellipse((cx + s * 0.02, cy - r * 0.55, cx + s * 0.5, cy + r * 0.45), fill=fill)
+    d.polygon([(cx - s * 0.46, cy + r * 0.05), (cx + s * 0.46, cy + r * 0.05),
+               (cx, cy + s * 0.62)], fill=fill)
+
+
+def draw_social_hook(item, out_path, style="dark"):
+    """Carousel slide 1 styled as an X (Twitter) post: profile + bold claim, an
+    embedded reply that shows a real result, and a blue 'here's how' CTA. A high-
+    converting social-proof hook that leads into the breakdown slides."""
+    img, d, p = _new(style)
+    MX = 96; INNER = W - 2 * MX
+    blue = (45, 140, 255)
+    # ---- author row
+    top = 150; r = 58
+    _put_avatar(img, d, MX, top, r, item.get("initials", "JB"), ORANGE,
+                photo=item.get("photo"), use_default=True,
+                focus=tuple(item.get("avatar_focus", (0.5, 0.44))))
+    nx = MX + 2 * r + 28
+    nf = f_sys(46, bold=True); name = item.get("author", "Joseph Borroto")
+    d.text((nx, top + 6), name, font=nf, fill=p["head"])
+    nw = d.textlength(name, font=nf)
+    if item.get("verified", True):
+        _verified(d, nx + nw + 34, top + 30, 24)
+    d.text((nx, top + 64), item.get("handle", "@josephborroto"), font=f_sys(38), fill=p["muted"])
+    # ---- the claim
+    y = top + 2 * r + 46
+    hf, hlines, hlh = _social_fit(d, item["headline"], INNER, 54, 38)
+    for ln in hlines:
+        d.text((MX, y), ln, font=hf, fill=p["head"]); y += hlh
+    # ---- embedded reply card (measure first, then draw so it never overflows)
+    rp = item.get("reply")
+    if rp:
+        y += 30
+        pad = 34; rr = 42
+        ax0, ax1 = MX, W - MX
+        rbf = f_sys(36)
+        body_lines = wrap(d, rp["body"], rbf, (ax1 - pad) - (ax0 + pad))
+        card_h = 34 + 2 * rr + 16 + len(body_lines) * 48 + 14 + 52 + 20 + 40 + 26
+        d.rounded_rectangle((ax0, y, ax1, y + card_h), radius=28,
+                            fill=(30, 30, 33), outline=(58, 58, 64), width=2)
+        cy = y + 34
+        _put_avatar(img, d, ax0 + pad, cy, rr, rp.get("initials", "TV"),
+                    (70, 110, 150), photo=rp.get("photo"))
+        rnx = ax0 + pad + 2 * rr + 20
+        rnf = f_sys(38, bold=True)
+        d.text((rnx, cy + 4), rp["author"], font=rnf, fill=p["head"])
+        rnw = d.textlength(rp["author"], font=rnf)
+        d.text((rnx + rnw + 16, cy + 12), rp.get("time", ""), font=f_sys(28), fill=p["muted"])
+        by = cy + 2 * rr + 16
+        for ln in body_lines:
+            d.text((ax0 + pad, by), ln, font=rbf, fill=(220, 222, 226)); by += 48
+        by += 14
+        # reaction pill (heart + count)
+        cnt = str(rp.get("reactions", 4))
+        pillf = f_sys(30, bold=True); cw = d.textlength(cnt, font=pillf)
+        d.rounded_rectangle((ax0 + pad, by, ax0 + pad + 56 + cw + 28, by + 52), radius=26,
+                            outline=(70, 130, 180), width=3)
+        _heart(d, ax0 + pad + 32, by + 26, 28, (235, 90, 110))
+        d.text((ax0 + pad + 54, by + 11), cnt, font=pillf, fill=(150, 190, 220))
+        by += 72
+        # replies meta row
+        _avatar(d, ax0 + pad, by + 2, 16, "", (70, 110, 150))
+        d.text((ax0 + pad + 46, by + 2), rp.get("replies", ""), font=f_sys(28), fill=p["muted"])
+        y += card_h
+    # ---- blue CTA (no brand footer — this card mimics a real screenshot)
+    y += 48
+    d.text((MX, y), item.get("cta", "Here's exactly how he did it →"),
+           font=f_sys(44, bold=True), fill=blue)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
+def _social_fit(d, text, max_w, start, floor):
+    for size in range(start, floor - 1, -3):
+        f = f_sys(size, bold=True)
+        ls = wrap(d, text, f, max_w); lh = int(size * 1.16)
+        if len(ls) <= 4:
+            return f, ls, lh
+    f = f_sys(floor, bold=True)
+    return f, wrap(d, text, f, max_w), int(floor * 1.16)
+
+
 def draw_content_slide(slide, idx, total, out_path, style="dark"):
     """Carousel middle slide — big number, title, body."""
     img, d, p = _new(style)
@@ -539,7 +674,12 @@ def render_carousel(entry, outdir, prefix, style="dark"):
     outdir = Path(outdir); outdir.mkdir(parents=True, exist_ok=True)
     paths = []
     cover = outdir / f"{prefix}-0.jpg"
-    draw_cover(entry["cover"], entry.get("kicker", ""), cover, style)
+    # Social-proof carousels open with an X-post screenshot hook instead of the
+    # standard cover; everything after is the usual breakdown + CTA.
+    if entry.get("cover_kind") == "social":
+        draw_social_hook(entry["social"], cover, style)
+    else:
+        draw_cover(entry["cover"], entry.get("kicker", ""), cover, style)
     paths.append(str(cover))
     slides = entry["slides"]
     for i, s in enumerate(slides, start=1):

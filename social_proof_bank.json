@@ -1,0 +1,55 @@
+{
+  "_README": "X-post style carousels in JOSEPH'S OWN voice — his content, his process, his results. Two honesty rules: (1) every claim/number must be TRUE to Joseph; (2) if you use an embedded 'reply', it must be a REAL message from a real person (use initials). Set an entry's \"enabled\": true and it auto-rotates into the PM carousel slot. Leave 'entries' empty and nothing posts (falls back to normal carousels). The author avatar uses assets/joseph-avatar.jpg automatically if present. Copy the shape of the examples below.",
+  "_example_statement": {
+    "_note": "Pure 'me saying something' hook — no third-party testimonial. Joseph makes the claim; slides break down how he does it.",
+    "enabled": false,
+    "style": "dark",
+    "cover_kind": "social",
+    "social": {
+      "author": "Joseph Borroto",
+      "handle": "@josephborroto",
+      "verified": true,
+      "initials": "JB",
+      "headline": "I treat the camera like a client, not a camera. That one shift changed all my content.",
+      "cta": "Here's exactly how I do it →"
+    },
+    "slides": [
+      {"title": "Talk TO one person", "body": "Not 'hey guys.' One person, one problem. It reads as a real conversation."},
+      {"title": "Say the point in line one", "body": "If the first sentence doesn't stop the scroll, nothing after it matters."},
+      {"title": "Be yourself on camera", "body": "The personality is the moat. Nobody can copy how you actually talk."},
+      {"title": "Make every video different", "body": "Same energy, new angle. The feed should never feel like a rerun."},
+      {"title": "Just get content out", "body": "Posted beats perfect. Volume is how you find what actually lands."}
+    ],
+    "caption": "I treat the camera like a client, not a camera — here's the full breakdown.\n\nFollow @josephborroto for more.",
+    "alt_text": "Carousel: how Joseph approaches content — treat the camera like a client."
+  },
+  "_example_testimonial": {
+    "_note": "Same format but with a REAL reply from someone Joseph helped. Only enable when the reply is a genuine message.",
+    "enabled": false,
+    "style": "dark",
+    "cover_kind": "social",
+    "social": {
+      "author": "Joseph Borroto",
+      "handle": "@josephborroto",
+      "verified": true,
+      "initials": "JB",
+      "headline": "Someone followed my content advice for 30 days. Then they sent me this.",
+      "reply": {
+        "author": "REAL PERSON",
+        "initials": "RP",
+        "time": "REPLACE — only a real message",
+        "body": "Paste the real DM/comment here, word for word.",
+        "reactions": 0,
+        "replies": ""
+      },
+      "cta": "Here's exactly what they changed →"
+    },
+    "slides": [
+      {"title": "Step one", "body": "Fill in the real steps."},
+      {"title": "Step two", "body": "Fill in the real steps."}
+    ],
+    "caption": "Replace with the real story + Follow @josephborroto.",
+    "alt_text": "Carousel."
+  },
+  "entries": []
+}
