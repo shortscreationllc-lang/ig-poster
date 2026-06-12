@@ -108,6 +108,24 @@
       },
       "caption": "Stop pitching, start proving. Post the work and the results. The right client should land on your page and think 'this person gets it' before you ever DM them.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Reddit thread: How do I get my first client from content?"
+    },
+    {
+      "enabled": true,
+      "type": "reddit",
+      "style": "dark",
+      "subreddit": "r/NewTubers",
+      "user": "starting_over",
+      "upvotes": "6.1k",
+      "comments": "442",
+      "title": "If you could restart your page from 0, what would you do differently?",
+      "answer": {
+        "user": "josephborroto",
+        "initials": "JB",
+        "upvotes": "1.7k",
+        "text": "I'd stop waiting to be ready. I wasted too long trying to make everything perfect instead of just posting every day and learning in public. More volume early, and being myself on camera sooner, would've gotten me here way faster."
+      },
+      "caption": "If I restarted my page from 0: stop waiting to be ready. Post every day, be yourself sooner, learn in public.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Reddit thread: what I'd do differently restarting"
     }
   ]
 }

@@ -90,6 +90,23 @@
       ],
       "caption": "10 video ideas you can post this week. Bookmark it.\n\nFollow @josephborroto for more.",
       "alt_text": "10 video ideas you can post this week"
+    },
+    {
+      "enabled": true,
+      "type": "cheatsheet",
+      "style": "midnight",
+      "kicker": "SAVE THIS",
+      "title": "How I write a hook that stops the scroll",
+      "items": [
+        "Never open with your name or \"hey guys\" — they're already gone",
+        "Say something or show something in the first second",
+        "Put text on screen that makes the brain stop and think differently",
+        "Lead with the point or the result — skip the setup",
+        "Make a promise the video actually keeps",
+        "If the first line is weak, the rest of the video doesn't exist"
+      ],
+      "caption": "How I write a hook that stops the scroll. Save this for your next video.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Cheat-sheet: how to write a hook that stops the scroll"
     }
   ]
 }
