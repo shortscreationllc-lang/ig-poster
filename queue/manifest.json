@@ -37,205 +37,6 @@
       "post_id": "18342680644171743"
     },
     {
-      "id": "single-00003",
-      "slot": "am",
-      "type": "quote",
-      "images": [
-        "queue/single-00003.jpg"
-      ],
-      "caption": "Content is king, but consistency is the kingdom.\n\nOne great video is a moment. A system that ships every day is a brand. The creators who win aren't the most talented \u2014 they're the most consistent.\n\nBuild the engine, then feed it.\n\nFollow @josephborroto for more on building a content machine.\n\n#contentstrategy #consistency #personalbrand #shortformvideo #contentcreator #josephborroto",
-      "alt": "Quote card: content is king, but consistency is the kingdom.",
-      "posted": false,
-      "source_index": 2,
-      "fp": [
-        "content is king, but consistency is the kingdom.",
-        "we automate both."
-      ]
-    },
-    {
-      "id": "single-00004",
-      "slot": "am",
-      "type": "single",
-      "images": [
-        "queue/single-00004.jpg"
-      ],
-      "caption": "Auto-captions feel free. They're not.\n\nThey land a half-second late, miss the emphasis, and flatten the joke. People feel it before they can explain it, and they swipe.\n\nHand-place your words on the beat. Slower to do, sharper to watch.\n\nFollow @josephborroto for the editing details most people skip.\n\n#captiondesign #videoediting #reelstips #shortformvideo #editingtips #josephborroto",
-      "alt": "Card: stop using AI captions, they're quietly costing you views.",
-      "posted": false,
-      "source_index": 3,
-      "fp": [
-        "auto-captions miss the timing, the emphasis, the joke. hand-place words on the beat.",
-        "stop using ai captions.",
-        "they're quietly costing you views."
-      ]
-    },
-    {
-      "id": "single-00005",
-      "slot": "am",
-      "type": "quote",
-      "images": [
-        "queue/single-00005.jpg"
-      ],
-      "caption": "Reels bring new people to the page. Posts and stories keep your current audience warm.\n\nGrowth without retention is a leaky bucket. Retention without growth is a slow death. The brands that win run both at the same time.\n\nFollow @josephborroto for the full content system.\n\n#contentstrategy #instagramgrowth #shortformvideo #audienceretention #josephborroto",
-      "alt": "",
-      "posted": false,
-      "source_index": 4,
-      "fp": [
-        "reels bring new people in. posts and stories keep them.",
-        "you need both halves."
-      ]
-    },
-    {
-      "id": "single-00006",
-      "slot": "am",
-      "type": "myth",
-      "images": [
-        "queue/single-00006.jpg"
-      ],
-      "caption": "Myth: there's a magic posting time.\nTruth: strong content gets pushed for days \u2014 the algorithm keeps testing it long after you post.\n\nStop obsessing over the clock. Obsess over the first 2 seconds.\n\nFollow @josephborroto for content myths, busted.\n\n#contentstrategy #socialmediatips #algorithm #shortformvideo #reelstips #josephborroto",
-      "alt": "Myth vs truth card about posting times.",
-      "posted": false,
-      "source_index": 5,
-      "fp": [
-        "good content travels for days. timing is a rounding error.",
-        "you need to post at the perfect time of day."
-      ]
-    },
-    {
-      "id": "single-00007",
-      "slot": "am",
-      "type": "single",
-      "images": [
-        "queue/single-00007.jpg"
-      ],
-      "caption": "If your hook runs longer than 1.5 seconds, the scroll already won.\n\nThe first beat is for the problem, stated sharp. No \"hey guys.\" No setup. No throat-clearing.\n\nTeaching starts at second 4. Second 1 is only for stopping the thumb.\n\nFollow @josephborroto for daily short-form breakdowns.\n\n#hookwriting #shortformvideo #reelstips #contentcreator #videoediting #josephborroto",
-      "alt": "Card: if your hook is over 1.5 seconds, you lost.",
-      "posted": false,
-      "source_index": 6,
-      "fp": [
-        "if your hook is over 1.5 seconds, you lost.",
-        "say the problem in the first beat. teaching starts at second 4, not second 1.",
-        "the algorithm already buried you."
-      ]
-    },
-    {
-      "id": "single-00008",
-      "slot": "am",
-      "type": "quote",
-      "images": [
-        "queue/single-00008.jpg"
-      ],
-      "caption": "Small filming choices make batch content feel fresher.\n\nChange your shirt. Switch the wall. Move outside for two. Shoot ten videos in an hour and they'll look like ten separate days \u2014 if you sweat the small stuff.\n\nBatch smart, not lazy.\n\nFollow @josephborroto for the production tricks that scale.\n\n#batching #contentcreation #reelstips #videoproduction #josephborroto",
-      "alt": "",
-      "posted": false,
-      "source_index": 7,
-      "fp": [
-        "same day, ten different days.",
-        "small filming choices make batch content feel fresh."
-      ]
-    },
-    {
-      "id": "single-00009",
-      "slot": "am",
-      "type": "versus",
-      "images": [
-        "queue/single-00009.jpg"
-      ],
-      "caption": "Same video. Two openings. Completely different results.\n\nThe weak hook explains. The strong hook accuses, intrigues, and creates tension. People can't scroll past a problem that sounds like theirs.\n\nRewrite your next first line.\n\nFollow @josephborroto for hook breakdowns.\n\n#hookwriting #shortformvideo #copywriting #reelstips #contentcreator #josephborroto",
-      "alt": "This vs that card comparing a weak hook and a strong hook.",
-      "posted": false,
-      "source_index": 8,
-      "fp": [
-        "in this video i'm going to show you how to edit.",
-        "your edits are boring people in the first 3 seconds."
-      ]
-    },
-    {
-      "id": "single-00010",
-      "slot": "am",
-      "type": "single",
-      "images": [
-        "queue/single-00010.jpg"
-      ],
-      "caption": "Talking-head videos feel boring for one reason: you stood in one spot.\n\nSame frame for 30 seconds and the brain checks out.\n\nSwitch location every line. New background each sentence. It reads as energy and pace even when the words are identical.\n\nFollow @josephborroto for retention tricks that actually work.\n\n#editingtips #videoediting #shortformvideo #reelstips #contentcreator #josephborroto",
-      "alt": "Card: your talking-head videos are boring because you didn't move.",
-      "posted": false,
-      "source_index": 9,
-      "fp": [
-        "it's because you didn't move.",
-        "same shot for 30 seconds = scroll. new spot every sentence = retention.",
-        "your talking-head videos are boring."
-      ]
-    },
-    {
-      "id": "single-00011",
-      "slot": "am",
-      "type": "quote",
-      "images": [
-        "queue/single-00011.jpg"
-      ],
-      "caption": "Content gets easier when the process feels lighter.\n\nThe people who burn out are the ones white-knuckling every post. The ones who last build a system so simple that showing up barely costs them anything.\n\nMake it light enough to keep doing.\n\nFollow @josephborroto for content systems that don't burn you out.\n\n#contentcreation #systems #consistency #creatorlife #josephborroto",
-      "alt": "",
-      "posted": false,
-      "source_index": 10,
-      "fp": [
-        "build the system, lose the dread.",
-        "content gets easier when the process feels lighter."
-      ]
-    },
-    {
-      "id": "single-00012",
-      "slot": "am",
-      "type": "value",
-      "images": [
-        "queue/single-00012.jpg"
-      ],
-      "caption": "Stuck on what to film? Three Reel ideas any local business can shoot this week:\n\n1. A day-in-the-life behind the scenes\n2. The #1 question customers always ask \u2014 answered in 30 seconds\n3. A before/after of your work\n\nNone of these need a script. Just your phone and a clear first line.\n\nFollow @josephborroto for weekly content ideas.\n\n#contentideas #smallbusiness #reelstips #shortformvideo #localbusiness #josephborroto",
-      "alt": "Value card with 3 Reel ideas for local business owners.",
-      "posted": false,
-      "source_index": 11,
-      "fp": [
-        "3 reel ideas for local business owners.",
-        "a before/after of the work you do",
-        "a day-in-the-life of running the business",
-        "save this for your next batch.",
-        "the #1 question customers always ask, answered"
-      ]
-    },
-    {
-      "id": "single-00013",
-      "slot": "am",
-      "type": "single",
-      "images": [
-        "queue/single-00013.jpg"
-      ],
-      "caption": "Pull up any retention curve. It dips at second 4.\n\nThat's the \"why am I still watching this\" moment. If nothing specific lands right there, they're gone.\n\nThe fix: a number, a name, or a contradiction at second 4. Specificity buys you the next 10 seconds.\n\nFollow @josephborroto and test it on your next 5 videos.\n\n#retention #shortformvideo #contentstrategy #reelstips #videoediting #josephborroto",
-      "alt": "Card: retention always drops at second 4, here's the line that saves it.",
-      "posted": false,
-      "source_index": 12,
-      "fp": [
-        "here's the line that saves it.",
-        "retention always drops at second 4.",
-        "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction."
-      ]
-    },
-    {
-      "id": "single-00014",
-      "slot": "am",
-      "type": "quote",
-      "images": [
-        "queue/single-00014.jpg"
-      ],
-      "caption": "Video helps buyers trust the business before they make a decision.\n\nBy the time someone reaches out, they've already watched you, heard how you think, and decided they like you. The content did the selling quietly.\n\nThat's why consistency beats everything.\n\nFollow @josephborroto for more on content that actually converts.\n\n#videomarketing #contentstrategy #trust #shortformvideo #smallbusiness #josephborroto",
-      "alt": "Quote card: video helps buyers trust a business before they ever decide.",
-      "posted": false,
-      "source_index": 13,
-      "fp": [
-        "that's the whole game.",
-        "video helps buyers trust a business before they ever decide."
-      ]
-    },
-    {
       "id": "carousel-00015",
       "slot": "pm",
       "type": "carousel",
@@ -250,7 +51,7 @@
       ],
       "caption": "5 hook formulas that work in any niche:\n\n1. \"I tried / quit / lost...\"\n2. \"Most people don't know...\"\n3. \"If you're [X], stop doing [Y].\"\n4. \"Here's the truth about [X].\"\n5. \"[Number] things I learned about [X].\"\n\nSave it for your next batch of scripts.\n\nFollow @josephborroto for a breakdown like this every few days.\n\n#hookwriting #shortformvideo #contentcreator #copywriting #reelstips #josephborroto",
       "alt": "Carousel: 5 hook formulas that work in any niche.",
-      "posted": false,
+      "posted": true,
       "source_index": 0,
       "fp": [
         "5 hook formulas that work in any niche.",
@@ -265,7 +66,46 @@
         "positions you as the one cutting through the noise.",
         "promises a list. the brain wants to finish what it starts.",
         "steal these for your next 5 videos."
-      ]
+      ],
+      "posted_at": "20260601T230403Z",
+      "post_id": "18128637400615062"
+    },
+    {
+      "id": "single-00003",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00003.jpg"
+      ],
+      "caption": "Content is king, but consistency is the kingdom.\n\nOne great video is a moment. A system that ships every day is a brand. The creators who win aren't the most talented \u2014 they're the most consistent.\n\nBuild the engine, then feed it.\n\nFollow @josephborroto for more on building a content machine.\n\n#contentstrategy #consistency #personalbrand #shortformvideo #contentcreator #josephborroto",
+      "alt": "Quote card: content is king, but consistency is the kingdom.",
+      "posted": true,
+      "source_index": 2,
+      "fp": [
+        "content is king, but consistency is the kingdom.",
+        "we automate both."
+      ],
+      "posted_at": "20260602T132901Z",
+      "post_id": "18065028377424293"
+    },
+    {
+      "id": "single-00004",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00004.jpg"
+      ],
+      "caption": "Auto-captions feel free. They're not.\n\nThey land a half-second late, miss the emphasis, and flatten the joke. People feel it before they can explain it, and they swipe.\n\nHand-place your words on the beat. Slower to do, sharper to watch.\n\nFollow @josephborroto for the editing details most people skip.\n\n#captiondesign #videoediting #reelstips #shortformvideo #editingtips #josephborroto",
+      "alt": "Card: stop using AI captions, they're quietly costing you views.",
+      "posted": true,
+      "source_index": 3,
+      "fp": [
+        "auto-captions miss the timing, the emphasis, the joke. hand-place words on the beat.",
+        "stop using ai captions.",
+        "they're quietly costing you views."
+      ],
+      "posted_at": "20260602T170557Z",
+      "post_id": "18206821777341761"
     },
     {
       "id": "carousel-00016",
@@ -284,7 +124,7 @@
       ],
       "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
       "alt": "Carousel: 7 things to check before every shoot.",
-      "posted": false,
+      "posted": true,
       "source_index": 1,
       "fp": [
         "1. 4k at 60fps",
@@ -303,7 +143,27 @@
         "switch location every line. this is the one people skip.",
         "the only camera setting that really matters. set it once.",
         "two of everything. a dead battery ends the day."
-      ]
+      ],
+      "posted_at": "20260602T230839Z",
+      "post_id": "18319599976272531"
+    },
+    {
+      "id": "single-00005",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00005.jpg"
+      ],
+      "caption": "Reels bring new people to the page. Posts and stories keep your current audience warm.\n\nGrowth without retention is a leaky bucket. Retention without growth is a slow death. The brands that win run both at the same time.\n\nFollow @josephborroto for the full content system.\n\n#contentstrategy #instagramgrowth #shortformvideo #audienceretention #josephborroto",
+      "alt": "",
+      "posted": true,
+      "source_index": 4,
+      "fp": [
+        "reels bring new people in. posts and stories keep them.",
+        "you need both halves."
+      ],
+      "posted_at": "20260603T163742Z",
+      "post_id": "18217478770321218"
     },
     {
       "id": "carousel-00017",
@@ -320,7 +180,7 @@
       ],
       "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
       "alt": "Carousel: 5 caption mistakes killing your retention.",
-      "posted": false,
+      "posted": true,
       "source_index": 2,
       "fp": [
         "1. too small",
@@ -335,7 +195,27 @@
         "text should hit on the cut, not lag behind the sentence.",
         "the app ui covers it. keep key words in the safe zone.",
         "white, modern, sans-serif. no heavy drop shadow."
-      ]
+      ],
+      "posted_at": "20260603T200512Z",
+      "post_id": "18105732016786634"
+    },
+    {
+      "id": "single-00006",
+      "slot": "am",
+      "type": "myth",
+      "images": [
+        "queue/single-00006.jpg"
+      ],
+      "caption": "Myth: there's a magic posting time.\nTruth: strong content gets pushed for days \u2014 the algorithm keeps testing it long after you post.\n\nStop obsessing over the clock. Obsess over the first 2 seconds.\n\nFollow @josephborroto for content myths, busted.\n\n#contentstrategy #socialmediatips #algorithm #shortformvideo #reelstips #josephborroto",
+      "alt": "Myth vs truth card about posting times.",
+      "posted": true,
+      "source_index": 5,
+      "fp": [
+        "good content travels for days. timing is a rounding error.",
+        "you need to post at the perfect time of day."
+      ],
+      "posted_at": "20260604T160359Z",
+      "post_id": "18093013724244230"
     },
     {
       "id": "carousel-00018",
@@ -351,7 +231,7 @@
       ],
       "caption": "Every short-form video that pops has 3 acts. Most people film one and wonder why retention dies.\n\nHook (0 to 1.5s)\nTension (4 to 12s)\nPayoff (13s+)\n\nSave it before you script your next one.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
       "alt": "Carousel: every viral video has 3 acts.",
-      "posted": false,
+      "posted": true,
       "source_index": 3,
       "fp": [
         "act 1 \u2014 hook (0 to 1.5s)",
@@ -364,7 +244,28 @@
         "state the problem sharp. no intro, no setup. stop the thumb.",
         "they film all hook or all payoff. the tension in the middle is what holds people.",
         "why most fail"
-      ]
+      ],
+      "posted_at": "20260604T202729Z",
+      "post_id": "18133879627497860"
+    },
+    {
+      "id": "single-00007",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00007.jpg"
+      ],
+      "caption": "If your hook runs longer than 1.5 seconds, the scroll already won.\n\nThe first beat is for the problem, stated sharp. No \"hey guys.\" No setup. No throat-clearing.\n\nTeaching starts at second 4. Second 1 is only for stopping the thumb.\n\nFollow @josephborroto for daily short-form breakdowns.\n\n#hookwriting #shortformvideo #reelstips #contentcreator #videoediting #josephborroto",
+      "alt": "Card: if your hook is over 1.5 seconds, you lost.",
+      "posted": true,
+      "source_index": 6,
+      "fp": [
+        "if your hook is over 1.5 seconds, you lost.",
+        "say the problem in the first beat. teaching starts at second 4, not second 1.",
+        "the algorithm already buried you."
+      ],
+      "posted_at": "20260605T153806Z",
+      "post_id": "18091059158622659"
     },
     {
       "id": "carousel-00019",
@@ -381,7 +282,7 @@
       ],
       "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
       "alt": "Carousel: 5 rules behind every video that lands.",
-      "posted": false,
+      "posted": true,
       "source_index": 4,
       "fp": [
         "1. 4k at 60fps",
@@ -396,7 +297,8 @@
         "trim ruthlessly. the voice leads, the music supports.",
         "two lines in one spot? move. movement reads as energy.",
         "you don't need a cinema camera. you need the right settings."
-      ]
+      ],
+      "skipped": true
     },
     {
       "id": "carousel-00020",
@@ -413,7 +315,7 @@
       ],
       "caption": "Everyone underestimates what a genuinely good Reel takes.\n\nResearch. Hooks. Filming. Editing. Revisions.\n\nIt's hours of skilled work, which is exactly why rock-bottom pricing never produces rock-solid video.\n\nFollow @josephborroto for the real economics of content.\n\n#videoproduction #pricingstrategy #contentmarketing #shortformvideo #videoediting #josephborroto",
       "alt": "Carousel: what a good Reel actually costs to make.",
-      "posted": false,
+      "posted": true,
       "source_index": 5,
       "fp": [
         "cutting, hand-placed captions, music, pacing. hours, not minutes.",
@@ -424,7 +326,27 @@
         "the part nobody breaks down.",
         "the pass that turns good into actually-postable.",
         "what a good reel actually costs to make."
-      ]
+      ],
+      "posted_at": "20260605T201835Z",
+      "post_id": "18099026828140990"
+    },
+    {
+      "id": "single-00008",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00008.jpg"
+      ],
+      "caption": "Small filming choices make batch content feel fresher.\n\nChange your shirt. Switch the wall. Move outside for two. Shoot ten videos in an hour and they'll look like ten separate days \u2014 if you sweat the small stuff.\n\nBatch smart, not lazy.\n\nFollow @josephborroto for the production tricks that scale.\n\n#batching #contentcreation #reelstips #videoproduction #josephborroto",
+      "alt": "",
+      "posted": true,
+      "source_index": 7,
+      "fp": [
+        "same day, ten different days.",
+        "small filming choices make batch content feel fresh."
+      ],
+      "posted_at": "20260606T141828Z",
+      "post_id": "17950110639000754"
     },
     {
       "id": "carousel-00021",
@@ -441,7 +363,7 @@
       ],
       "caption": "Retention isn't luck, it's a series of small saves.\n\n1. Open on motion\n2. Patch second 4\n3. Cut the dead air\n4. Switch the frame\n5. Pay off the hook\n\nSave it and watch your average watch time climb.\n\nFollow @josephborroto for retention you can actually engineer.\n\n#retention #videoediting #shortformvideo #reelstips #contentstrategy #josephborroto",
       "alt": "Carousel: 5 ways to fix your retention curve.",
-      "posted": false,
+      "posted": true,
       "source_index": 6,
       "fp": [
         "1. open on motion",
@@ -456,7 +378,27 @@
         "new angle or location keeps the eye from settling.",
         "remove the breath before every sentence. pace is retention.",
         "where people drop, and why."
-      ]
+      ],
+      "posted_at": "20260606T203820Z",
+      "post_id": "18105586957989929"
+    },
+    {
+      "id": "single-00009",
+      "slot": "am",
+      "type": "versus",
+      "images": [
+        "queue/single-00009.jpg"
+      ],
+      "caption": "Same video. Two openings. Completely different results.\n\nThe weak hook explains. The strong hook accuses, intrigues, and creates tension. People can't scroll past a problem that sounds like theirs.\n\nRewrite your next first line.\n\nFollow @josephborroto for hook breakdowns.\n\n#hookwriting #shortformvideo #copywriting #reelstips #contentcreator #josephborroto",
+      "alt": "This vs that card comparing a weak hook and a strong hook.",
+      "posted": true,
+      "source_index": 8,
+      "fp": [
+        "in this video i'm going to show you how to edit.",
+        "your edits are boring people in the first 3 seconds."
+      ],
+      "posted_at": "20260607T140244Z",
+      "post_id": "18078477206647466"
     },
     {
       "id": "carousel-00022",
@@ -473,7 +415,7 @@
       ],
       "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
       "alt": "Carousel: 5 algorithm myths to stop believing.",
-      "posted": false,
+      "posted": true,
       "source_index": 7,
       "fp": [
         "1. \"hashtags are dead",
@@ -488,7 +430,8 @@
         "quality and retention beat raw volume every time.",
         "these are costing you reach.",
         "they still help categorize. they're just not the whole game."
-      ]
+      ],
+      "skipped": true
     },
     {
       "id": "carousel-00023",
@@ -505,7 +448,7 @@
       ],
       "caption": "Boring B-roll is usually the wrong subject filmed from too far.\n\n1. Film nouns, not verbs\n2. Get uncomfortably close\n3. Move the camera\n4. Match the light\n5. Overshoot\n\nSave it before your next shoot.\n\nFollow @josephborroto for the details that make content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
       "alt": "Carousel: 5 rules for B-roll that isn't boring.",
-      "posted": false,
+      "posted": true,
       "source_index": 8,
       "fp": [
         "1. film nouns, not verbs",
@@ -520,7 +463,28 @@
         "detail reads as intentional. distance reads as filler.",
         "most people film the wrong thing.",
         "the object close-up beats the wide action shot."
-      ]
+      ],
+      "posted_at": "20260607T215341Z",
+      "post_id": "18154965025482132"
+    },
+    {
+      "id": "single-00010",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00010.jpg"
+      ],
+      "caption": "Talking-head videos feel boring for one reason: you stood in one spot.\n\nSame frame for 30 seconds and the brain checks out.\n\nSwitch location every line. New background each sentence. It reads as energy and pace even when the words are identical.\n\nFollow @josephborroto for retention tricks that actually work.\n\n#editingtips #videoediting #shortformvideo #reelstips #contentcreator #josephborroto",
+      "alt": "Card: your talking-head videos are boring because you didn't move.",
+      "posted": true,
+      "source_index": 9,
+      "fp": [
+        "it's because you didn't move.",
+        "same shot for 30 seconds = scroll. new spot every sentence = retention.",
+        "your talking-head videos are boring."
+      ],
+      "posted_at": "20260608T152321Z",
+      "post_id": "18382652362206284"
     },
     {
       "id": "carousel-00024",
@@ -536,7 +500,7 @@
       ],
       "caption": "People forgive average video. They scroll on bad audio instantly.\n\n1. Music too loud\n2. No mic\n3. Inconsistent levels\n4. Dead silence\n\nFix the sound and watch retention rise.\n\nFollow @josephborroto for the production basics nobody teaches.\n\n#audiomixing #videoediting #musictips #editingtips #shortformvideo #josephborroto",
       "alt": "Carousel: 4 audio mistakes that ruin good video.",
-      "posted": false,
+      "posted": true,
       "source_index": 9,
       "fp": [
         "1. music too loud",
@@ -548,7 +512,27 @@
         "people hear bad audio before they see good video.",
         "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
         "volume jumping between clips makes it feel amateur."
-      ]
+      ],
+      "posted_at": "20260608T203757Z",
+      "post_id": "17898450870463352"
+    },
+    {
+      "id": "single-00011",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00011.jpg"
+      ],
+      "caption": "Content gets easier when the process feels lighter.\n\nThe people who burn out are the ones white-knuckling every post. The ones who last build a system so simple that showing up barely costs them anything.\n\nMake it light enough to keep doing.\n\nFollow @josephborroto for content systems that don't burn you out.\n\n#contentcreation #systems #consistency #creatorlife #josephborroto",
+      "alt": "",
+      "posted": true,
+      "source_index": 10,
+      "fp": [
+        "build the system, lose the dread.",
+        "content gets easier when the process feels lighter."
+      ],
+      "posted_at": "20260609T154316Z",
+      "post_id": "18083097119445669"
     },
     {
       "id": "carousel-00025",
@@ -565,7 +549,7 @@
       ],
       "caption": "Editing slow is usually a workflow problem, not a skill problem.\n\n1. Cut on the first pass\n2. Build a caption style\n3. Keep a music folder\n4. Template your export\n5. Stop polishing dead air\n\nSpeed comes from systems, not rushing.\n\nFollow @josephborroto for the workflow behind fast, clean edits.\n\n#videoediting #editingworkflow #editingtips #shortformvideo #reelstips #josephborroto",
       "alt": "Carousel: 5 ways to edit twice as fast.",
-      "posted": false,
+      "posted": true,
       "source_index": 10,
       "fp": [
         "1. cut on the first pass",
@@ -580,7 +564,30 @@
         "set it once: format, size, settings. never rethink it.",
         "stop hunting. pull from tracks you've already cleared.",
         "without the video looking rushed."
-      ]
+      ],
+      "posted_at": "20260609T202302Z",
+      "post_id": "18404205136158599"
+    },
+    {
+      "id": "single-00012",
+      "slot": "am",
+      "type": "value",
+      "images": [
+        "queue/single-00012.jpg"
+      ],
+      "caption": "Stuck on what to film? Three Reel ideas any local business can shoot this week:\n\n1. A day-in-the-life behind the scenes\n2. The #1 question customers always ask \u2014 answered in 30 seconds\n3. A before/after of your work\n\nNone of these need a script. Just your phone and a clear first line.\n\nFollow @josephborroto for weekly content ideas.\n\n#contentideas #smallbusiness #reelstips #shortformvideo #localbusiness #josephborroto",
+      "alt": "Value card with 3 Reel ideas for local business owners.",
+      "posted": true,
+      "source_index": 11,
+      "fp": [
+        "3 reel ideas for local business owners.",
+        "a before/after of the work you do",
+        "a day-in-the-life of running the business",
+        "save this for your next batch.",
+        "the #1 question customers always ask, answered"
+      ],
+      "posted_at": "20260610T162428Z",
+      "post_id": "18599797567054284"
     },
     {
       "id": "carousel-00026",
@@ -597,7 +604,7 @@
       ],
       "caption": "If your videos have stalled, it's usually one of these, not the algorithm.\n\n1. Weak first second\n2. Too many ideas\n3. No reason to finish\n4. Inconsistent posting\n5. No clear next step\n\nFix one this week.\n\nFollow @josephborroto for honest, useful content advice.\n\n#contentstrategy #shortformvideo #reelstips #videomarketing #growth #josephborroto",
       "alt": "Carousel: 5 reasons your videos aren't growing.",
-      "posted": false,
+      "posted": true,
       "source_index": 11,
       "fp": [
         "1. weak first second",
@@ -612,7 +619,8 @@
         "it's rarely the algorithm.",
         "one video, one point. cramming means nothing sticks.",
         "the algorithm rewards reliability. show up daily."
-      ]
+      ],
+      "skipped": true
     },
     {
       "id": "carousel-00027",
@@ -629,8 +637,692 @@
       ],
       "caption": "5 hook formulas that work in any niche:\n\n1. \"I tried / quit / lost...\"\n2. \"Most people don't know...\"\n3. \"If you're [X], stop doing [Y].\"\n4. \"Here's the truth about [X].\"\n5. \"[Number] things I learned about [X].\"\n\nSave it for your next batch of scripts.\n\nFollow @josephborroto for a breakdown like this every few days.\n\n#hookwriting #shortformvideo #contentcreator #copywriting #reelstips #josephborroto",
       "alt": "Carousel: 5 hook formulas that work in any niche.",
+      "posted": true,
+      "source_index": 0,
+      "fp": [
+        "5 hook formulas that work in any niche.",
+        "[number] things i learned about [x].",
+        "a curiosity gap. implies you have the inside answer.",
+        "calls out a specific person. they can't scroll past themselves.",
+        "here's the truth about [x].",
+        "i tried / quit / lost...",
+        "if you're [x], stop doing [y].",
+        "most people don't know...",
+        "personal stakes. people stay to see what happened.",
+        "positions you as the one cutting through the noise.",
+        "promises a list. the brain wants to finish what it starts.",
+        "steal these for your next 5 videos."
+      ],
+      "posted_at": "20260610T200248Z",
+      "post_id": "18108612190961405"
+    },
+    {
+      "id": "single-00013",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00013.jpg"
+      ],
+      "caption": "Pull up any retention curve. It dips at second 4.\n\nThat's the \"why am I still watching this\" moment. If nothing specific lands right there, they're gone.\n\nThe fix: a number, a name, or a contradiction at second 4. Specificity buys you the next 10 seconds.\n\nFollow @josephborroto and test it on your next 5 videos.\n\n#retention #shortformvideo #contentstrategy #reelstips #videoediting #josephborroto",
+      "alt": "Card: retention always drops at second 4, here's the line that saves it.",
+      "posted": true,
+      "source_index": 12,
+      "fp": [
+        "here's the line that saves it.",
+        "retention always drops at second 4.",
+        "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction."
+      ],
+      "posted_at": "20260611T163738Z",
+      "post_id": "18123002488650101"
+    },
+    {
+      "id": "carousel-00034",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00034-0.jpg",
+        "queue/carousel-00034-1.jpg",
+        "queue/carousel-00034-2.jpg",
+        "queue/carousel-00034-3.jpg",
+        "queue/carousel-00034-4.jpg",
+        "queue/carousel-00034-5.jpg",
+        "queue/carousel-00034-6.jpg",
+        "queue/carousel-00034-7.jpg",
+        "queue/carousel-00034-8.jpg"
+      ],
+      "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: 7 things to check before every shoot.",
+      "posted": true,
+      "source_index": 1,
+      "fp": [
+        "1. 4k at 60fps",
+        "1.5 seconds, memorized. never improvise the first line.",
+        "2. mic test and playback",
+        "3. hook pre-written",
+        "4. scout your spots",
+        "5. batteries and storage",
+        "6. backup device",
+        "7 things to check before every shoot.",
+        "7. frame for the title",
+        "leave headroom so the overlay never covers your face.",
+        "number 4 is the one everyone skips.",
+        "one failure shouldn't cancel the whole shoot.",
+        "record 5 seconds and listen back. don't trust the meter alone.",
+        "switch location every line. this is the one people skip.",
+        "the only camera setting that really matters. set it once.",
+        "two of everything. a dead battery ends the day."
+      ],
+      "posted_at": "20260611T200150Z",
+      "post_id": "17966420706084632"
+    },
+    {
+      "id": "single-00014",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00014.jpg"
+      ],
+      "caption": "Video helps buyers trust the business before they make a decision.\n\nBy the time someone reaches out, they've already watched you, heard how you think, and decided they like you. The content did the selling quietly.\n\nThat's why consistency beats everything.\n\nFollow @josephborroto for more on content that actually converts.\n\n#videomarketing #contentstrategy #trust #shortformvideo #smallbusiness #josephborroto",
+      "alt": "Quote card: video helps buyers trust a business before they ever decide.",
+      "posted": true,
+      "source_index": 13,
+      "fp": [
+        "that's the whole game.",
+        "video helps buyers trust a business before they ever decide."
+      ],
+      "posted_at": "20260612T172433Z",
+      "post_id": "17951800362174514"
+    },
+    {
+      "id": "single-00059",
+      "slot": "am",
+      "type": "comment",
+      "images": [
+        "queue/single-00059.jpg"
+      ],
+      "caption": "Post daily \u2014 not for the algorithm, for the reps.\n\nFollow @josephborroto for more on content.",
+      "alt": "Comment reply: daily if you can. not for the algorithm \u2014 for the reps. you get good by posting.",
+      "posted": false,
+      "source_index": 28,
+      "style": "dark",
+      "fp": [
+        "daily if you can. not for the algorithm \u2014 for the reps. you get good by posting.",
+        "growthwithleo",
+        "how often should i post?",
+        "joseph borroto"
+      ]
+    },
+    {
+      "id": "single-00060",
+      "slot": "am",
+      "type": "reddit",
+      "images": [
+        "queue/single-00060.jpg"
+      ],
+      "caption": "It helps because people follow people. But a strong voice + a clear point can carry it. Start with whatever you'll actually do consistently.\n\nFollow @josephborroto for more on content.",
+      "alt": "Reddit thread: Do you HAVE to show your face to grow?",
+      "posted": false,
+      "source_index": 29,
+      "style": "dark",
+      "fp": [
+        "do you have to show your face to grow?",
+        "faceless_creator",
+        "it helps because people follow people. but a strong voice + a clear point can carry it. start with whatever you'll actually do consistently.",
+        "josephborroto",
+        "r/socialmedia"
+      ]
+    },
+    {
+      "id": "single-00061",
+      "slot": "am",
+      "type": "cheatsheet",
+      "images": [
+        "queue/single-00061.jpg"
+      ],
+      "caption": "Edit any video in 6 steps. Save this.\n\nFollow @josephborroto for more.",
+      "alt": "Edit any video in 6 steps",
+      "posted": false,
+      "source_index": 30,
+      "style": "ember",
+      "fp": [
+        "add captions (most watch on mute)",
+        "cut the first 'umm' \u2014 start on the point",
+        "edit any video in 6 steps",
+        "end on the strongest sentence",
+        "one idea per cut",
+        "remove every dead pause",
+        "zoom only to land a line"
+      ]
+    },
+    {
+      "id": "single-00062",
+      "slot": "am",
+      "type": "prompt",
+      "images": [
+        "queue/single-00062.jpg"
+      ],
+      "caption": "10k engaged or 100k ghosts? Comment your pick.\n\nFollow @josephborroto for more.",
+      "alt": "Which would you rather have?",
+      "posted": false,
+      "source_index": 31,
+      "style": "slate",
+      "fp": [
+        "100k ghost followers",
+        "10k engaged followers",
+        "comment 1 or 2.",
+        "which would you rather have?"
+      ]
+    },
+    {
+      "id": "single-00063",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00063.jpg"
+      ],
+      "caption": "Pull up any retention curve. It dips at second 4.\n\nThat's the \"why am I still watching this\" moment. If nothing specific lands right there, they're gone.\n\nThe fix: a number, a name, or a contradiction at second 4. Specificity buys you the next 10 seconds.\n\nFollow @josephborroto and test it on your next 5 videos.\n\n#retention #shortformvideo #contentstrategy #reelstips #videoediting #josephborroto",
+      "alt": "Card: retention always drops at second 4, here's the line that saves it.",
+      "posted": false,
+      "source_index": 32,
+      "style": "dark",
+      "fp": [
+        "here's the line that saves it.",
+        "retention always drops at second 4.",
+        "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction."
+      ]
+    },
+    {
+      "id": "single-00064",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00064.jpg"
+      ],
+      "caption": "Video helps buyers trust the business before they make a decision.\n\nBy the time someone reaches out, they've already watched you, heard how you think, and decided they like you. The content did the selling quietly.\n\nThat's why consistency beats everything.\n\nFollow @josephborroto for more on content that actually converts.\n\n#videomarketing #contentstrategy #trust #shortformvideo #smallbusiness #josephborroto",
+      "alt": "Quote card: video helps buyers trust a business before they ever decide.",
+      "posted": false,
+      "source_index": 33,
+      "style": "midnight",
+      "fp": [
+        "that's the whole game.",
+        "video helps buyers trust a business before they ever decide."
+      ]
+    },
+    {
+      "id": "single-00065",
+      "slot": "am",
+      "type": "value",
+      "images": [
+        "queue/single-00065.jpg"
+      ],
+      "caption": "Three Reel ideas for coaches and creators who feel out of ideas:\n\n1. Bust a myth your audience believes\n2. Share the mistake you made when you started\n3. Answer a real DM question on camera\n\nValue first, polish second.\n\nFollow @josephborroto for content ideas every week.\n\n#contentideas #coaches #creators #reelstips #shortformvideo #josephborroto",
+      "alt": "Value card with 3 Reel ideas for coaches and creators.",
+      "posted": false,
+      "source_index": 34,
+      "style": "blackout",
+      "fp": [
+        "3 reel ideas for coaches & creators.",
+        "answer a dm question on camera",
+        "bust a common myth in your niche",
+        "save this for your next batch.",
+        "share the mistake you made starting out"
+      ]
+    },
+    {
+      "id": "single-00066",
+      "slot": "am",
+      "type": "social",
+      "images": [
+        "queue/single-00066.jpg"
+      ],
+      "caption": "You don't need permission to start. Just post.\n\nFollow @josephborroto for more on content.",
+      "alt": "You don't need permission to start. Just post.",
+      "posted": false,
+      "source_index": 35,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "joseph borroto",
+        "you don't need permission to start. just post."
+      ]
+    },
+    {
+      "id": "single-00067",
+      "slot": "am",
+      "type": "comment",
+      "images": [
+        "queue/single-00067.jpg"
+      ],
+      "caption": "Awkward on camera? Talk to one person, not 'everyone.' It gets easy fast.\n\nFollow @josephborroto for more on content.",
+      "alt": "Comment reply: everyone does at first. talk to ONE person, not 'an audience.' it gets easy fast.",
+      "posted": false,
+      "source_index": 36,
+      "style": "dark",
+      "fp": [
+        "everyone does at first. talk to one person, not 'an audience.' it gets easy fast.",
+        "i feel so awkward on camera",
+        "joseph borroto",
+        "quietkid.media"
+      ]
+    },
+    {
+      "id": "single-00068",
+      "slot": "am",
+      "type": "reddit",
+      "images": [
+        "queue/single-00068.jpg"
+      ],
+      "caption": "You're overthinking it. Cut the dead air, one idea per cut, captions on. That's 90% of a clean edit. Stop adding effects and start removing pauses.\n\nFollow @josephborroto for more on content.",
+      "alt": "Reddit thread: My editing takes hours and still looks amateur. What am I missing?",
+      "posted": false,
+      "source_index": 37,
+      "style": "dark",
+      "fp": [
+        "editing_forever",
+        "josephborroto",
+        "my editing takes hours and still looks amateur. what am i missing?",
+        "you're overthinking it. cut the dead air, one idea per cut, captions on. that's 90% of a clean edit. stop adding effects and start removing pauses."
+      ]
+    },
+    {
+      "id": "single-00069",
+      "slot": "am",
+      "type": "cheatsheet",
+      "images": [
+        "queue/single-00069.jpg"
+      ],
+      "caption": "10 video ideas you can post this week. Bookmark it.\n\nFollow @josephborroto for more.",
+      "alt": "10 video ideas you can post this week",
+      "posted": false,
+      "source_index": 38,
+      "style": "dark",
+      "fp": [
+        "10 video ideas you can post this week",
+        "3 tips in 30 seconds",
+        "a before/after of your work",
+        "a beginner's first step",
+        "a bold opinion",
+        "a mistake you used to make",
+        "a myth in your niche, busted",
+        "answer your most-asked question",
+        "react to a bad take",
+        "show your process",
+        "what you'd do differently"
+      ]
+    },
+    {
+      "id": "single-00070",
+      "slot": "am",
+      "type": "prompt",
+      "images": [
+        "queue/single-00070.jpg"
+      ],
+      "caption": "Fill in the blank: the best hook always starts with ____.\n\nFollow @josephborroto for more.",
+      "alt": "The best hook always starts with ________.",
+      "posted": false,
+      "source_index": 39,
+      "style": "dark",
+      "fp": [
+        "drop your answer in the comments.",
+        "the best hook always starts with ________."
+      ]
+    },
+    {
+      "id": "single-00071",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00071.jpg"
+      ],
+      "caption": "Every short-form video that pops has 3 acts:\n\n1. Hook (0 to 1.5s) \u2014 state the problem sharp\n2. Tension (4 to 12s) \u2014 give a reason to stay\n3. Payoff (13s to end) \u2014 deliver, then one clear close\n\nMost people film all hook or all payoff. The tension in the middle is what holds people.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
+      "alt": "Card: every viral video has 3 acts, most people only film one.",
+      "posted": false,
+      "source_index": 40,
+      "style": "dark",
+      "fp": [
+        "every viral video has 3 acts.",
+        "hook, then tension, then payoff. skip the middle and retention dies.",
+        "most people only film one."
+      ]
+    },
+    {
+      "id": "single-00072",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00072.jpg"
+      ],
+      "caption": "People think it's all about going viral. It's not.\n\nReels bring new people to the page. Posts and stories keep the people who already found you warm, engaged, and ready to buy.\n\nYou need both \u2014 discovery and retention.\n\nFollow @josephborroto for the full content system.\n\n#contentstrategy #instagramtips #shortformvideo #audiencegrowth #josephborroto",
+      "alt": "Quote card: posts and stories keep your current audience warm.",
+      "posted": false,
+      "source_index": 41,
+      "style": "midnight",
+      "fp": [
+        "posts and stories keep your current audience warm.",
+        "reels bring the new ones in."
+      ]
+    },
+    {
+      "id": "carousel-00073",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00073-0.jpg",
+        "queue/carousel-00073-1.jpg",
+        "queue/carousel-00073-2.jpg",
+        "queue/carousel-00073-3.jpg",
+        "queue/carousel-00073-4.jpg",
+        "queue/carousel-00073-5.jpg",
+        "queue/carousel-00073-6.jpg"
+      ],
+      "caption": "Trying to reach everyone is the fastest way to reach no one.\n\nHere's the breakdown \ud83d\udc47\n\n1. Pick one person\n2. Own one topic\n3. Speak their language\n4. Repeat your core idea\n5. Niche down to grow up\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: niche down to grow.",
+      "posted": false,
+      "source_index": 14,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "a small, clear audience refers you. a broad, blurry one forgets you.",
+        "be the person known for one thing before you branch out.",
+        "here's how i niche down \u2192",
+        "if your content is for everyone, it's for no one.",
+        "joseph borroto",
+        "make content for a specific human, not a vague audience.",
+        "niche down to grow up",
+        "own one topic",
+        "pick one person",
+        "repeat your core idea",
+        "speak their language",
+        "use the exact words your person uses. it feels made for them.",
+        "you'll get bored before they do. drill the same message new ways."
+      ]
+    },
+    {
+      "id": "carousel-00074",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00074-0.jpg",
+        "queue/carousel-00074-1.jpg",
+        "queue/carousel-00074-2.jpg",
+        "queue/carousel-00074-3.jpg",
+        "queue/carousel-00074-4.jpg",
+        "queue/carousel-00074-5.jpg",
+        "queue/carousel-00074-6.jpg"
+      ],
+      "caption": "Boring B-roll is usually the wrong subject filmed from too far.\n\n1. Film nouns, not verbs\n2. Get uncomfortably close\n3. Move the camera\n4. Match the light\n5. Overshoot\n\nSave it before your next shoot.\n\nFollow @josephborroto for the details that make content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: 5 rules for B-roll that isn't boring.",
+      "posted": false,
+      "source_index": 15,
+      "style": "bone",
+      "fp": [
+        "1. film nouns, not verbs",
+        "2. get uncomfortably close",
+        "3. move the camera",
+        "4. match the light",
+        "5 rules for b-roll that isn't boring.",
+        "5. overshoot",
+        "a slow push or pan adds life a locked shot can't.",
+        "capture 3x what you need. you'll thank yourself in the edit.",
+        "consistent lighting makes cuts feel seamless.",
+        "detail reads as intentional. distance reads as filler.",
+        "most people film the wrong thing.",
+        "the object close-up beats the wide action shot."
+      ]
+    },
+    {
+      "id": "carousel-00075",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00075-0.jpg",
+        "queue/carousel-00075-1.jpg",
+        "queue/carousel-00075-2.jpg",
+        "queue/carousel-00075-3.jpg",
+        "queue/carousel-00075-4.jpg",
+        "queue/carousel-00075-5.jpg",
+        "queue/carousel-00075-6.jpg"
+      ],
+      "caption": "People blame the camera. It's almost never the camera.\n\nHere's the breakdown \ud83d\udc47\n\n1. Message over gear\n2. Hook before quality\n3. Lighting beats megapixels\n4. Sound over 4K\n5. Upgrade the idea first\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: gear doesn't make the content.",
+      "posted": false,
+      "source_index": 16,
+      "style": "slate",
+      "fp": [
+        "@josephborroto",
+        "a phone + a sharp idea beats a cinema camera + nothing to say.",
+        "buy the camera once the content is already working.",
+        "face a window. good light makes any camera look pro.",
+        "here's what actually matters \u2192",
+        "hook before quality",
+        "joseph borroto",
+        "lighting beats megapixels",
+        "message over gear",
+        "people forgive a soft image. they won't forgive bad audio.",
+        "sound matters more than 4k",
+        "they decide in 1 second \u2014 long before they notice your lens.",
+        "upgrade the idea first",
+        "you don't need a better camera. you need a better first sentence."
+      ]
+    },
+    {
+      "id": "carousel-00076",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00076-0.jpg",
+        "queue/carousel-00076-1.jpg",
+        "queue/carousel-00076-2.jpg",
+        "queue/carousel-00076-3.jpg",
+        "queue/carousel-00076-4.jpg",
+        "queue/carousel-00076-5.jpg"
+      ],
+      "caption": "People forgive average video. They scroll on bad audio instantly.\n\n1. Music too loud\n2. No mic\n3. Inconsistent levels\n4. Dead silence\n\nFix the sound and watch retention rise.\n\nFollow @josephborroto for the production basics nobody teaches.\n\n#audiomixing #videoediting #musictips #editingtips #shortformvideo #josephborroto",
+      "alt": "Carousel: 4 audio mistakes that ruin good video.",
+      "posted": false,
+      "source_index": 17,
+      "style": "light",
+      "fp": [
+        "1. music too loud",
+        "3. inconsistent levels",
+        "4 audio mistakes that ruin good video.",
+        "4. dead silence",
+        "a subtle bed of music under the voice keeps energy up.",
+        "if you notice the track, it's already drowning the voice.",
+        "people hear bad audio before they see good video.",
+        "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
+        "volume jumping between clips makes it feel amateur."
+      ]
+    },
+    {
+      "id": "carousel-00077",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00077-0.jpg",
+        "queue/carousel-00077-1.jpg",
+        "queue/carousel-00077-2.jpg",
+        "queue/carousel-00077-3.jpg",
+        "queue/carousel-00077-4.jpg",
+        "queue/carousel-00077-5.jpg",
+        "queue/carousel-00077-6.jpg"
+      ],
+      "caption": "Your best idea isn't a single post. It's a content engine.\n\nHere's the breakdown \ud83d\udc47\n\n1. Find your bangers\n2. Change the angle\n3. Switch the format\n4. Repost the winners\n5. Build a swipe file\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: repurpose one idea into many.",
+      "posted": false,
+      "source_index": 18,
+      "style": "ember",
+      "fp": [
+        "@josephborroto",
+        "build a swipe file",
+        "change the angle",
+        "find your bangers",
+        "here's how i repurpose \u2192",
+        "joseph borroto",
+        "keep your best ideas in one place so you never start from zero.",
+        "most of your audience never saw it. run it back.",
+        "one good idea = 5 videos. stop reinventing every post.",
+        "repost the winners",
+        "same idea, new hook. 'why it works,' 'how to do it,' 'what i'd avoid.'",
+        "switch the format",
+        "the post that overperformed isn't done. it's a template.",
+        "turn a reel into a carousel into a single line. one idea, many shapes."
+      ]
+    },
+    {
+      "id": "carousel-00078",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00078-0.jpg",
+        "queue/carousel-00078-1.jpg",
+        "queue/carousel-00078-2.jpg",
+        "queue/carousel-00078-3.jpg",
+        "queue/carousel-00078-4.jpg",
+        "queue/carousel-00078-5.jpg",
+        "queue/carousel-00078-6.jpg"
+      ],
+      "caption": "Editing slow is usually a workflow problem, not a skill problem.\n\n1. Cut on the first pass\n2. Build a caption style\n3. Keep a music folder\n4. Template your export\n5. Stop polishing dead air\n\nSpeed comes from systems, not rushing.\n\nFollow @josephborroto for the workflow behind fast, clean edits.\n\n#videoediting #editingworkflow #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 ways to edit twice as fast.",
+      "posted": false,
+      "source_index": 19,
+      "style": "creamorange",
+      "fp": [
+        "1. cut on the first pass",
+        "2. build a caption style",
+        "3. keep a music folder",
+        "4. template your export",
+        "5 ways to edit twice as fast.",
+        "5. stop polishing dead air",
+        "cut the slow parts instead of perfecting them.",
+        "make decisions as you watch. don't re-watch endlessly.",
+        "save your font and look once. reuse it every time.",
+        "set it once: format, size, settings. never rethink it.",
+        "stop hunting. pull from tracks you've already cleared.",
+        "without the video looking rushed."
+      ]
+    },
+    {
+      "id": "carousel-00079",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00079-0.jpg",
+        "queue/carousel-00079-1.jpg",
+        "queue/carousel-00079-2.jpg",
+        "queue/carousel-00079-3.jpg",
+        "queue/carousel-00079-4.jpg",
+        "queue/carousel-00079-5.jpg",
+        "queue/carousel-00079-6.jpg"
+      ],
+      "caption": "Great content with no ask is a missed opportunity. Tell them what to do.\n\nHere's the breakdown \ud83d\udc47\n\n1. One ask per post\n2. Make it effortless\n3. Tie it to the value\n4. Earn it first\n5. Say it out loud\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: how to use CTAs.",
+      "posted": false,
+      "source_index": 20,
+      "style": "midnight",
+      "fp": [
+        "'comment one word.' the lower the effort, the higher the response.",
+        "'save this for your next video' beats a generic 'like and follow.'",
+        "@josephborroto",
+        "don't assume they'll figure it out. tell them, clearly, once.",
+        "earn it first",
+        "follow or save or comment. pick one. two asks = zero action.",
+        "give something worth acting on before you ask for anything.",
+        "here's how i use ctas \u2192",
+        "if you don't tell people what to do next, they won't.",
+        "joseph borroto",
+        "make it effortless",
+        "one ask per post",
+        "say it out loud",
+        "tie it to the value"
+      ]
+    },
+    {
+      "id": "carousel-00080",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00080-0.jpg",
+        "queue/carousel-00080-1.jpg",
+        "queue/carousel-00080-2.jpg",
+        "queue/carousel-00080-3.jpg",
+        "queue/carousel-00080-4.jpg",
+        "queue/carousel-00080-5.jpg",
+        "queue/carousel-00080-6.jpg"
+      ],
+      "caption": "If your videos have stalled, it's usually one of these, not the algorithm.\n\n1. Weak first second\n2. Too many ideas\n3. No reason to finish\n4. Inconsistent posting\n5. No clear next step\n\nFix one this week.\n\nFollow @josephborroto for honest, useful content advice.\n\n#contentstrategy #shortformvideo #reelstips #videomarketing #growth #josephborroto",
+      "alt": "Carousel: 5 reasons your videos aren't growing.",
+      "posted": false,
+      "source_index": 21,
+      "style": "bone",
+      "fp": [
+        "1. weak first second",
+        "2. too many ideas",
+        "3. no reason to finish",
+        "4. inconsistent posting",
+        "5 reasons your videos aren't growing.",
+        "5. no clear next step",
+        "a slow open kills the video before the hook lands.",
+        "give one simple action: follow for more.",
+        "if there's no payoff coming, people leave early.",
+        "it's rarely the algorithm.",
+        "one video, one point. cramming means nothing sticks.",
+        "the algorithm rewards reliability. show up daily."
+      ]
+    },
+    {
+      "id": "carousel-00081",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00081-0.jpg",
+        "queue/carousel-00081-1.jpg",
+        "queue/carousel-00081-2.jpg",
+        "queue/carousel-00081-3.jpg",
+        "queue/carousel-00081-4.jpg",
+        "queue/carousel-00081-5.jpg",
+        "queue/carousel-00081-6.jpg"
+      ],
+      "caption": "Your first 100 videos aren't the work. They're the warm-up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Reps build the skill\n2. Cringe is the toll\n3. Nobody's watching yet\n4. Track what lands\n5. Stay in the game\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: post through your first 100.",
+      "posted": false,
+      "source_index": 22,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "cringe is the toll",
+        "everyone's early stuff is rough. pay it now, not later.",
+        "here's the mindset \u2192",
+        "joseph borroto",
+        "let the data, not your ego, tell you what's working.",
+        "most quit before the reps compound. don't be most people.",
+        "nobody's watching yet",
+        "reps build the skill",
+        "stay in the game",
+        "the small audience early is a gift \u2014 practice with the lights low.",
+        "track what lands",
+        "you can't think your way to good. you film your way there.",
+        "your first 100 videos are practice. post them anyway."
+      ]
+    },
+    {
+      "id": "carousel-00082",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00082-0.jpg",
+        "queue/carousel-00082-1.jpg",
+        "queue/carousel-00082-2.jpg",
+        "queue/carousel-00082-3.jpg",
+        "queue/carousel-00082-4.jpg",
+        "queue/carousel-00082-5.jpg",
+        "queue/carousel-00082-6.jpg"
+      ],
+      "caption": "5 hook formulas that work in any niche:\n\n1. \"I tried / quit / lost...\"\n2. \"Most people don't know...\"\n3. \"If you're [X], stop doing [Y].\"\n4. \"Here's the truth about [X].\"\n5. \"[Number] things I learned about [X].\"\n\nSave it for your next batch of scripts.\n\nFollow @josephborroto for a breakdown like this every few days.\n\n#hookwriting #shortformvideo #contentcreator #copywriting #reelstips #josephborroto",
+      "alt": "Carousel: 5 hook formulas that work in any niche.",
       "posted": false,
       "source_index": 0,
+      "style": "light",
       "fp": [
         "5 hook formulas that work in any niche.",
         "[number] things i learned about [x].",
@@ -647,24 +1339,25 @@
       ]
     },
     {
-      "id": "carousel-00028",
+      "id": "carousel-00083",
       "slot": "pm",
       "type": "carousel",
       "images": [
-        "queue/carousel-00028-0.jpg",
-        "queue/carousel-00028-1.jpg",
-        "queue/carousel-00028-2.jpg",
-        "queue/carousel-00028-3.jpg",
-        "queue/carousel-00028-4.jpg",
-        "queue/carousel-00028-5.jpg",
-        "queue/carousel-00028-6.jpg",
-        "queue/carousel-00028-7.jpg",
-        "queue/carousel-00028-8.jpg"
+        "queue/carousel-00083-0.jpg",
+        "queue/carousel-00083-1.jpg",
+        "queue/carousel-00083-2.jpg",
+        "queue/carousel-00083-3.jpg",
+        "queue/carousel-00083-4.jpg",
+        "queue/carousel-00083-5.jpg",
+        "queue/carousel-00083-6.jpg",
+        "queue/carousel-00083-7.jpg",
+        "queue/carousel-00083-8.jpg"
       ],
       "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
       "alt": "Carousel: 7 things to check before every shoot.",
       "posted": false,
       "source_index": 1,
+      "style": "bone",
       "fp": [
         "1. 4k at 60fps",
         "1.5 seconds, memorized. never improvise the first line.",
@@ -685,39 +1378,106 @@
       ]
     },
     {
-      "id": "single-00029",
-      "slot": "am",
-      "type": "value",
+      "id": "carousel-00084",
+      "slot": "pm",
+      "type": "carousel",
       "images": [
-        "queue/single-00029.jpg"
+        "queue/carousel-00084-0.jpg",
+        "queue/carousel-00084-1.jpg",
+        "queue/carousel-00084-2.jpg",
+        "queue/carousel-00084-3.jpg",
+        "queue/carousel-00084-4.jpg",
+        "queue/carousel-00084-5.jpg",
+        "queue/carousel-00084-6.jpg"
       ],
-      "caption": "Three Reel ideas for coaches and creators who feel out of ideas:\n\n1. Bust a myth your audience believes\n2. Share the mistake you made when you started\n3. Answer a real DM question on camera\n\nValue first, polish second.\n\nFollow @josephborroto for content ideas every week.\n\n#contentideas #coaches #creators #reelstips #shortformvideo #josephborroto",
-      "alt": "Value card with 3 Reel ideas for coaches and creators.",
+      "caption": "Most people talk AT the camera. The ones who actually grow talk TO a person.\n\nFor the longest time my videos felt stiff \u2014 because I was performing for a lens. The second I started treating the camera like a client sitting across from me, everything changed. More watch time, more comments, more DMs that turned into real work.\n\nHere's the exact shift \ud83d\udc47\n\n1. Talk to ONE person \u2014 not \"hey guys\"\n2. Say the point in the first line, or they're gone\n3. Be yourself \u2014 your personality is the one thing nobody can copy\n4. Make every video feel different\n5. Stop overthinking it and just post\n\nSave this for the next time you hit record. \ud83d\udccc\n\nFollow @josephborroto for the stuff nobody tells you about content.",
+      "alt": "Carousel: treat the camera like a client, not a camera.",
       "posted": false,
-      "source_index": 14,
+      "source_index": 2,
+      "style": "dark",
       "fp": [
-        "3 reel ideas for coaches & creators.",
-        "answer a dm question on camera",
-        "bust a common myth in your niche",
-        "save this for your next batch.",
-        "share the mistake you made starting out"
+        "@josephborroto",
+        "be yourself on camera",
+        "here's exactly how i do it \u2192",
+        "i treat the camera like a client, not a camera. that one shift changed all my content.",
+        "if the first sentence doesn't stop the scroll, nothing after it matters.",
+        "joseph borroto",
+        "just get content out",
+        "make every video different",
+        "not 'hey guys.' one person, one problem. it reads as a real conversation.",
+        "posted beats perfect. volume is how you find what actually lands.",
+        "same energy, new angle. the feed should never feel like a rerun.",
+        "say the point in line one",
+        "talk to one person",
+        "the personality is the moat. nobody can copy how you actually talk."
       ]
     },
     {
-      "id": "single-00030",
-      "slot": "am",
-      "type": "single",
+      "id": "carousel-00085",
+      "slot": "pm",
+      "type": "carousel",
       "images": [
-        "queue/single-00030.jpg"
+        "queue/carousel-00085-0.jpg",
+        "queue/carousel-00085-1.jpg",
+        "queue/carousel-00085-2.jpg",
+        "queue/carousel-00085-3.jpg",
+        "queue/carousel-00085-4.jpg",
+        "queue/carousel-00085-5.jpg",
+        "queue/carousel-00085-6.jpg"
       ],
-      "caption": "Every short-form video that pops has 3 acts:\n\n1. Hook (0 to 1.5s) \u2014 state the problem sharp\n2. Tension (4 to 12s) \u2014 give a reason to stay\n3. Payoff (13s to end) \u2014 deliver, then one clear close\n\nMost people film all hook or all payoff. The tension in the middle is what holds people.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
-      "alt": "Card: every viral video has 3 acts, most people only film one.",
+      "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 caption mistakes killing your retention.",
       "posted": false,
-      "source_index": 15,
+      "source_index": 3,
+      "style": "light",
       "fp": [
-        "every viral video has 3 acts.",
-        "hook, then tension, then payoff. skip the middle and retention dies.",
-        "most people only film one."
+        "1. too small",
+        "2. off the beat",
+        "3. buried at the bottom",
+        "4. wrong font",
+        "5 caption mistakes killing your retention.",
+        "5. paced too slow",
+        "captions should feel a touch faster than the video itself.",
+        "if it's hard to read on a phone, it's costing you watch time.",
+        "most people make all 5.",
+        "text should hit on the cut, not lag behind the sentence.",
+        "the app ui covers it. keep key words in the safe zone.",
+        "white, modern, sans-serif. no heavy drop shadow."
+      ]
+    },
+    {
+      "id": "carousel-00086",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00086-0.jpg",
+        "queue/carousel-00086-1.jpg",
+        "queue/carousel-00086-2.jpg",
+        "queue/carousel-00086-3.jpg",
+        "queue/carousel-00086-4.jpg",
+        "queue/carousel-00086-5.jpg",
+        "queue/carousel-00086-6.jpg"
+      ],
+      "caption": "Stop trying to sound like a \"content creator.\" Just talk.\n\nMy biggest unlock wasn't a better camera or a trending sound \u2014 it was dropping the fake \"creator voice\" and just being myself. People don't follow presenters. They follow people.\n\nHere's how I keep it real on camera \ud83d\udc47\n\n1. Talk how you actually talk\n2. Your quirks ARE the brand\n3. Borrow structure from big accounts \u2014 never their personality\n4. Film like you're texting a friend\n5. The more \"you\" it is, the better it does\n\nSave this, then go be yourself on your next video. \ud83d\udccc\n\nFollow @josephborroto for content tips that actually move the needle.",
+      "alt": "Carousel: be yourself on camera.",
+      "posted": false,
+      "source_index": 4,
+      "style": "midnight",
+      "fp": [
+        "@josephborroto",
+        "borrow structure, not personality",
+        "casual beats polished. people trust a person, not a presenter.",
+        "every time i loosen up on camera, the content does better.",
+        "film like you're texting a friend",
+        "here's how i stay myself on camera \u2192",
+        "joseph borroto",
+        "steal the format from big accounts. keep your own voice on top of it.",
+        "stop trying to sound like a 'content creator.' just be yourself on camera.",
+        "talk how you actually talk",
+        "the 'script voice' is what makes people scroll. your real voice keeps them.",
+        "the more 'you,' the better it does",
+        "the weird way you say things is the one thing nobody can copy.",
+        "your quirks are the brand"
       ]
     }
   ]
