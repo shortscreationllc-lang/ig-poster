@@ -1,0 +1,205 @@
+{
+  "_README": "Comment + Joseph-reply single posts (the 'top comment' format). Each answers a real-style question in his voice. enabled:true => rotates into the AM single-post slot.",
+  "entries": [
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "creator_mike",
+        "initials": "CM",
+        "text": "how do you make every video feel different? mine all blur together",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "same energy, new angle every time. one idea, told 5 ways. never reinvent — re-angle.",
+        "likes": "480"
+      },
+      "caption": "Your videos blur together because you reinvent every post. Don't. One idea, new angle.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: same energy, new angle every time. one idea, told 5 ways. never reinvent — re-angle."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "jordan.films",
+        "initials": "JF",
+        "text": "what camera do you use??",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "my phone. the gear was never the problem — the first line was.",
+        "likes": "480"
+      },
+      "caption": "It was never the camera. Fix your first line before you buy anything.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: my phone. the gear was never the problem — the first line was."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "samanthaedits",
+        "initials": "SE",
+        "text": "i post good content but nobody watches",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "good content nobody sees = a weak hook. fix the first 3 seconds before anything else.",
+        "likes": "480"
+      },
+      "caption": "Good content nobody sees is just a weak hook. Start there.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: good content nobody sees = a weak hook. fix the first 3 seconds before anything else."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "growthwithleo",
+        "initials": "GL",
+        "text": "how often should i post?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "daily if you can. not for the algorithm — for the reps. you get good by posting.",
+        "likes": "480"
+      },
+      "caption": "Post daily — not for the algorithm, for the reps.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: daily if you can. not for the algorithm — for the reps. you get good by posting."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "quietkid.media",
+        "initials": "QK",
+        "text": "i feel so awkward on camera",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "everyone does at first. talk to ONE person, not 'an audience.' it gets easy fast.",
+        "likes": "480"
+      },
+      "caption": "Awkward on camera? Talk to one person, not 'everyone.' It gets easy fast.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: everyone does at first. talk to ONE person, not 'an audience.' it gets easy fast."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "viral.chase",
+        "initials": "VC",
+        "text": "whats the actual secret to going viral?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "stop chasing viral. chase clarity. one idea said so well it's impossible to scroll past.",
+        "likes": "480"
+      },
+      "caption": "Stop chasing viral. Chase clarity.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: stop chasing viral. chase clarity. one idea said so well it's impossible to scroll past."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "tagqueen",
+        "initials": "TQ",
+        "text": "do hashtags even work anymore?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "barely. your hook does 90% of the work. spend your time there, not on 30 tags.",
+        "likes": "480"
+      },
+      "caption": "Hashtags barely move the needle. Your hook does 90% of the work.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: barely. your hook does 90% of the work. spend your time there, not on 30 tags."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "noideas.daily",
+        "initials": "ND",
+        "text": "how do you come up with ideas every day?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "i keep a notes list and add to it all day. i never start from a blank page.",
+        "likes": "480"
+      },
+      "caption": "Never start from a blank page. Keep a running notes list.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: i keep a notes list and add to it all day. i never start from a blank page."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "brandbuilder",
+        "initials": "BB",
+        "text": "should i actually niche down?",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "yes. be known for ONE thing first. you can always expand once people remember you.",
+        "likes": "480"
+      },
+      "caption": "Niche down. Be known for one thing before you branch out.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: yes. be known for ONE thing first. you can always expand once people remember you."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "edit.slow",
+        "initials": "ES",
+        "text": "my editing takes forever and still looks off",
+        "likes": "2.1k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "cut the dead air, one idea per cut, captions on. that's 90% of it. stop overthinking the rest.",
+        "likes": "480"
+      },
+      "caption": "Editing doesn't need to be hard: cut dead air, one idea per cut, captions on.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: cut the dead air, one idea per cut, captions on. that's 90% of it. stop overthinking the rest."
+    }
+  ]
+}

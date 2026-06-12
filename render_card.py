@@ -6,9 +6,18 @@ and composites the real logo. 1080x1350 (4:5 Instagram portrait).
 """
 import argparse
 import json
+import re
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
+
+# Strip emoji / pictographs the bundled fonts can't render (they show as tofu).
+_EMOJI_RE = re.compile(
+    "[\U0001F000-\U0001FAFF\U00002600-\U000027BF\U0001F1E6-\U0001F1FF\U0000FE00-\U0000FE0F\U00002190-\U000021FF]+")
+
+
+def _no_emoji(s):
+    return _EMOJI_RE.sub("", str(s)).replace("  ", " ").strip()
 
 ROOT = Path(__file__).resolve().parent
 DOWNLOADS = ROOT.parent
@@ -631,6 +640,153 @@ def _social_fit(d, text, max_w, start, floor):
             return f, ls, lh
     f = f_sys(floor, bold=True)
     return f, wrap(d, text, f, max_w), int(floor * 1.16)
+
+
+# ============================================================ screenshot formats
+def _is_light(style):
+    return style in ("light", "creamorange", "bone")
+
+
+def _magnifier(d, cx, cy, r, col, w=6):
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=col, width=w)
+    d.line((cx + r * 0.72, cy + r * 0.72, cx + r * 1.5, cy + r * 1.5), fill=col, width=w)
+
+
+def draw_imessage(item, out_path, style="dark"):
+    """A text-message / DM thread — grey 'them' bubbles + blue 'me' bubbles."""
+    light = _is_light(style)
+    bg = (255, 255, 255) if light else (0, 0, 0)
+    them_bub = (233, 233, 235) if light else (38, 38, 40)
+    them_txt = (0, 0, 0) if light else (245, 245, 245)
+    me_bub, me_txt = (10, 132, 255), (255, 255, 255)
+    name_col = (60, 60, 65) if light else (150, 150, 155)
+    img = Image.new("RGB", (W, H), bg); d = ImageDraw.Draw(img)
+    f = f_sys(42); nf = f_sys(34, bold=True)
+    maxw = int(W * 0.70)
+    # measure the whole thread to center it vertically
+    laid = []
+    for m in item["messages"]:
+        lines = wrap(d, _no_emoji(m["text"]), f, maxw - 64)
+        bw = int(max(d.textlength(l, font=f) for l in lines)) + 64
+        bh = len(lines) * 54 + 36
+        laid.append((m.get("from") == "me", lines, bw, bh))
+    total = sum(bh for *_, bh in laid) + 24 * (len(laid) - 1)
+    # avatar + contact name header
+    contact = item.get("contact", "")
+    top = 150
+    if contact:
+        ar = 56; ax = (W - 2 * ar) // 2
+        _put_avatar(img, d, ax, top, ar, item.get("contact_initials", "•"),
+                    (90, 110, 140), photo=item.get("contact_photo"))
+        d.text(((W - d.textlength(contact, font=nf)) / 2, top + 2 * ar + 14), contact, font=nf, fill=name_col)
+        head_bottom = top + 2 * ar + 14 + 44
+    else:
+        head_bottom = top
+    y = max(head_bottom + 40, (H - total) // 2)
+    for mine, lines, bw, bh in laid:
+        if mine:
+            x1 = W - 70; x0 = x1 - bw; bub, tx = me_bub, me_txt
+        else:
+            x0 = 70; x1 = x0 + bw; bub, tx = them_bub, them_txt
+        d.rounded_rectangle((x0, y, x1, y + bh), radius=36, fill=bub)
+        ty = y + 18
+        for l in lines:
+            d.text((x0 + 32, ty), l, font=f, fill=tx); ty += 54
+        y += bh + 24
+    img.save(out_path, quality=95)
+    return out_path
+
+
+def draw_notes(item, out_path, style="light"):
+    """An iOS Notes-style card — title + body, the 'raw thoughts' look."""
+    light = style != "darknote"  # default light; pass style='darknote' for dark
+    bg = (252, 251, 248) if light else (28, 28, 30)
+    title_c = (24, 24, 26) if light else (245, 245, 245)
+    body_c = (60, 60, 64) if light else (210, 210, 214)
+    meta_c = (160, 160, 165) if light else (130, 130, 135)
+    img = Image.new("RGB", (W, H), bg); d = ImageDraw.Draw(img)
+    # little notes header line
+    d.text((M, 120), item.get("meta", "Notes"), font=f_sys(30), fill=meta_c)
+    d.line((M, 168, W - M, 168), fill=(0, 0, 0, 0) if light else (50, 50, 54))
+    y = 210
+    tf = f_brand(78)
+    for ln in wrap(d, item["title"], tf, W - 2 * M):
+        d.text((M, y), ln, font=tf, fill=title_c); y += 86
+    y += 24
+    bf = f_sys(46)
+    for para in item.get("body", "").split("\n"):
+        if not para.strip():
+            y += 32; continue
+        for ln in wrap(d, para, bf, W - 2 * M):
+            d.text((M, y), ln, font=bf, fill=body_c); y += 60
+        y += 16
+    img.save(out_path, quality=95)
+    return out_path
+
+
+def draw_search(item, out_path, style="dark"):
+    """A Google-style search bar + autocomplete suggestions (your talking points)."""
+    img = Image.new("RGB", (W, H), (248, 248, 250)); d = ImageDraw.Draw(img)
+    box_top, box_h = 320, 116
+    d.rounded_rectangle((90, box_top, W - 90, box_top + box_h), radius=58,
+                        fill=(255, 255, 255), outline=(222, 222, 226), width=3)
+    _magnifier(d, 168, box_top + box_h // 2, 26, (120, 120, 128))
+    qf = f_sys(48)
+    d.text((230, box_top + 30), item["query"], font=qf, fill=(30, 30, 34))
+    # suggestion rows
+    y = box_top + box_h + 6
+    sf = f_sys(44)
+    for s in item.get("suggestions", []):
+        d.rounded_rectangle((90, y, W - 90, y + 92), radius=0, fill=(255, 255, 255))
+        _magnifier(d, 168, y + 46, 22, (170, 170, 176), w=5)
+        d.text((230, y + 22), s, font=sf, fill=(70, 70, 76))
+        y += 92
+        d.line((90, y, W - 90, y), fill=(236, 236, 240), width=2)
+    img.save(out_path, quality=95)
+    return out_path
+
+
+def draw_comment(item, out_path, style="dark"):
+    """A social comment + your reply — the 'top comment' screenshot look."""
+    light = _is_light(style)
+    bg = (255, 255, 255) if light else (10, 10, 12)
+    name_c = (20, 20, 22) if light else (240, 240, 244)
+    txt_c = (40, 40, 44) if light else (224, 224, 228)
+    meta_c = (150, 150, 156)
+    img = Image.new("RGB", (W, H), bg); d = ImageDraw.Draw(img)
+    nf = f_sys(40, bold=True); tf = f_sys(44); mf = f_sys(30)
+
+    def measure(x, text):
+        tx = x + 2 * 46 + 24
+        lines = wrap(d, _no_emoji(text), tf, (W - M) - tx)
+        return tx, lines, max(2 * 46, 56 + len(lines) * 56 + 8 + 50)
+
+    def block(x, y, av_init, av_fill, photo, name, lines, tx, likes, verified=False):
+        _put_avatar(img, d, x, y, 46, av_init, av_fill, photo=photo)
+        d.text((tx, y + 2), name, font=nf, fill=name_c)
+        if verified:
+            _verified(d, tx + d.textlength(name, font=nf) + 28, y + 22, 18)
+        yy = y + 56
+        for ln in lines:
+            d.text((tx, yy), ln, font=tf, fill=txt_c); yy += 56
+        d.text((tx, yy + 8), f"♥ {likes}    Reply", font=mf, fill=meta_c)
+
+    c = item["comment"]; rep = item.get("reply")
+    ctx, clines, ch = measure(M, c["text"])
+    total = ch
+    if rep:
+        rtx, rlines, rh = measure(M + 90, rep["text"]); total += 30 + rh
+    y = max(200, (H - total) // 2)
+    block(M, y, c.get("initials", "•"), (90, 110, 140), c.get("photo"),
+          c.get("author", "someone"), clines, ctx, c.get("likes", "1.2k"))
+    if rep:
+        y += ch + 30
+        block(M + 90, y, rep.get("initials", "JB"), ORANGE,
+              rep.get("photo") or (str(AVATAR_PATH) if AVATAR_PATH else None),
+              rep.get("author", "Joseph Borroto"), rlines, rtx, rep.get("likes", "340"),
+              verified=rep.get("verified", True))
+    img.save(out_path, quality=95)
+    return out_path
 
 
 def draw_content_slide(slide, idx, total, out_path, style="dark"):

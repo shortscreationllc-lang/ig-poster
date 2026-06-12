@@ -47,6 +47,7 @@ SINGLE_BANK = ROOT / "post_bank.json"
 CAROUSEL_BANK = ROOT / "carousel_bank.json"
 SOCIAL_BANK = ROOT / "social_proof_bank.json"
 SOCIAL_SINGLES = ROOT / "social_singles.json"
+COMMENTS_BANK = ROOT / "comments_bank.json"
 GRAPH = "https://graph.instagram.com/v25.0"
 
 QUEUE_DEPTH = 14   # keep this many ready items per slot at all times
@@ -187,10 +188,12 @@ def _build_am_pool():
     typed = json.loads(CONTENT_BANK.read_text()) if CONTENT_BANK.exists() else []
     quotes = json.loads(QUOTE_BANK.read_text()) if QUOTE_BANK.exists() else []
     socials = _enabled_social_singles()   # X-post styled single statements
+    comments = _enabled_comments()        # comment + Joseph-reply singles
     pool = []
-    i = j = k = m = 0
-    # pattern: tip, quote, typed, social, repeat — keeps every format frequent
-    while i < len(tips) or j < len(quotes) or k < len(typed) or m < len(socials):
+    i = j = k = m = c = 0
+    # pattern: tip, quote, typed, social, comment — keeps every format frequent
+    while (i < len(tips) or j < len(quotes) or k < len(typed)
+           or m < len(socials) or c < len(comments)):
         if i < len(tips):
             pool.append(tips[i]); i += 1
         if j < len(quotes):
@@ -199,7 +202,25 @@ def _build_am_pool():
             pool.append(typed[k]); k += 1
         if m < len(socials):
             pool.append(socials[m]); m += 1
+        if c < len(comments):
+            pool.append(comments[c]); c += 1
     return pool
+
+
+def _enabled_bank(path, default_type):
+    try:
+        data = json.loads(path.read_text())
+    except Exception:
+        return []
+    out = []
+    for e in data.get("entries", []):
+        if e.get("enabled"):
+            e.setdefault("type", default_type); out.append(e)
+    return out
+
+
+def _enabled_comments():
+    return _enabled_bank(COMMENTS_BANK, "comment")
 
 
 def _enabled_social_singles():
@@ -238,6 +259,12 @@ def _render_am_item(item, out_path, style):
         # X-post styled single — drop the swipe CTA so it stands alone.
         social = dict(item.get("social", item)); social["cta"] = ""
         render_card.draw_social_hook(social, out_path, style=style)
+    elif t == "comment":
+        render_card.draw_comment(item, out_path, style=style)
+    elif t == "imessage":
+        render_card.draw_imessage(item, out_path, style=style)
+    elif t == "notes":
+        render_card.draw_notes(item, out_path, style=style)
     else:
         render_card.draw_card(item, out_path, style=style)
 
