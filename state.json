@@ -756,6 +756,20 @@
         "cap_style": 0
       },
       "hook": "90% of viewers decide whether to keep watching in the first 3 seconds."
+    },
+    {
+      "at": "20260612T230317Z",
+      "id": "queue/reel-1781305325.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18113664538721847",
+      "tags": {
+        "fmt": "statement",
+        "style": "creamorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Your hook is 90% of the post \u2014 the first line does almost all the work."
     }
   ],
   "story_hook_i": 1,
