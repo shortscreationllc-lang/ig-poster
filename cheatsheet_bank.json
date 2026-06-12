@@ -107,6 +107,38 @@
       ],
       "caption": "How I write a hook that stops the scroll. Save this for your next video.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Cheat-sheet: how to write a hook that stops the scroll"
+    },
+    {
+      "enabled": true,
+      "type": "cheatsheet",
+      "style": "dark",
+      "kicker": "SAVE THIS",
+      "title": "How to actually be yourself on camera",
+      "items": [
+        "Talk how you actually talk",
+        "Your quirks are the brand",
+        "Film like you're texting a friend",
+        "Borrow structure, never personality",
+        "The more 'you,' the better it does"
+      ],
+      "caption": "How to actually be yourself on camera. Save this.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "How to actually be yourself on camera"
+    },
+    {
+      "enabled": true,
+      "type": "cheatsheet",
+      "style": "slate",
+      "kicker": "SAVE THIS",
+      "title": "What I'd tell anyone starting from 0",
+      "items": [
+        "Post every single day",
+        "Done beats perfect",
+        "Say something, show something, add text",
+        "Volume teaches you what works",
+        "Stop waiting to be ready"
+      ],
+      "caption": "What I'd tell anyone starting from 0. Save this.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "What I'd tell anyone starting from 0"
     }
   ]
 }

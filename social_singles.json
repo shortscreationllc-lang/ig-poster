@@ -210,6 +210,66 @@
       },
       "caption": "The personal touch is the one thing AI can't fake. That's your moat — use it.\n\nFollow @josephborroto for more on content.",
       "alt_text": "The personal touch is the one thing AI can't fake. That's your moat — use it."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "You don't need a perfect video. You need a video with real value.",
+        "cta": ""
+      },
+      "caption": "You don't need a perfect video. You need a video with real value.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "You don't need a perfect video. You need a video with real value."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Your first line is the only algorithm that matters.",
+        "cta": ""
+      },
+      "caption": "Your first line is the only algorithm that matters.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your first line is the only algorithm that matters."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Stop trying to sound like a 'content creator.' Just talk.",
+        "cta": ""
+      },
+      "caption": "Stop trying to sound like a 'content creator.' Just talk.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Stop trying to sound like a 'content creator.' Just talk."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "dark",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Your personality is the one thing nobody can copy.",
+        "cta": ""
+      },
+      "caption": "Your personality is the one thing nobody can copy.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your personality is the one thing nobody can copy."
     }
   ]
 }

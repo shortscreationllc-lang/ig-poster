@@ -1,0 +1,42 @@
+name: Content Engine (weekly fresh batch)
+
+# Reads the latest performance weights (built by insights.py from real IG data)
+# and mints a NEW, on-brand batch biased toward what's winning — then commits it
+# into the banks so the feed never goes stale. Runs weekly + on demand.
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many new posts to generate"
+        default: "14"
+  schedule:
+    - cron: "20 13 * * 1"   # Mondays ~9:20a ET (after insights has refreshed weights)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-engine
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install --quiet pillow
+      - name: Generate a fresh batch biased to winners
+        run: |
+          git config user.email "bot@users.noreply.github.com"
+          git config user.name "content-engine-bot"
+          git pull --rebase --autostash origin main || true
+          N="${{ github.event.inputs.count || 14 }}"
+          python content_engine.py --report
+          python content_engine.py --generate "$N"
+          git add comments_bank.json prompts_bank.json social_singles.json cheatsheet_bank.json
+          git commit -m "content-engine: +$N fresh posts biased to winners $(date -u +%FT%TZ)" || echo "nothing new"
+          for i in 1 2 3 4; do git push origin main && break || { git pull --rebase --autostash origin main; sleep $((i*2)); }; done
