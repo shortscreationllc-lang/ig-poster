@@ -1342,6 +1342,74 @@
         "the only camera setting that really matters. set it once.",
         "two of everything. a dead battery ends the day."
       ]
+    },
+    {
+      "id": "carousel-00056",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00056-0.jpg",
+        "queue/carousel-00056-1.jpg",
+        "queue/carousel-00056-2.jpg",
+        "queue/carousel-00056-3.jpg",
+        "queue/carousel-00056-4.jpg",
+        "queue/carousel-00056-5.jpg",
+        "queue/carousel-00056-6.jpg"
+      ],
+      "caption": "The algorithm doesn't reward talent. It rewards the person who keeps showing up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Lower the bar to start\n2. Batch your filming\n3. Keep an idea list\n4. Detach from one post\n5. Show up on the bad days\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: how to stay consistent with content.",
+      "posted": false,
+      "source_index": 12,
+      "style": "midnight",
+      "fp": [
+        "@josephborroto",
+        "aim for 'posted,' not 'perfect.' momentum beats motivation.",
+        "batch your filming",
+        "detach from one post",
+        "here's how i stay consistent \u2192",
+        "joseph borroto",
+        "keep an idea list",
+        "lower the bar to start",
+        "never stare at a blank page. capture ideas the second they hit.",
+        "no single video defines you. the body of work does.",
+        "posting once and quitting is why most people fail. show up daily.",
+        "shoot a week in one sitting. future you just posts.",
+        "show up on the bad days",
+        "the post you don't feel like making is usually the one that hits."
+      ]
+    },
+    {
+      "id": "carousel-00057",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00057-0.jpg",
+        "queue/carousel-00057-1.jpg",
+        "queue/carousel-00057-2.jpg",
+        "queue/carousel-00057-3.jpg",
+        "queue/carousel-00057-4.jpg",
+        "queue/carousel-00057-5.jpg",
+        "queue/carousel-00057-6.jpg"
+      ],
+      "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
+      "alt": "Carousel: 5 algorithm myths to stop believing.",
+      "posted": false,
+      "source_index": 13,
+      "style": "creamorange",
+      "fp": [
+        "1. \"hashtags are dead",
+        "2. \"post at the perfect time",
+        "3. \"you need to go viral",
+        "4. \"more posting always wins",
+        "5 algorithm myths to stop believing.",
+        "5. \"the algorithm hates links",
+        "consistent reach beats one spike that fades in a week.",
+        "good content travels for days. timing is a rounding error.",
+        "it rewards watch time. make something worth finishing.",
+        "quality and retention beat raw volume every time.",
+        "these are costing you reach.",
+        "they still help categorize. they're just not the whole game."
+      ]
     }
   ]
 }
