@@ -734,6 +734,43 @@
       "post_id": "17951800362174514"
     },
     {
+      "id": "carousel-00073",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00073-0.jpg",
+        "queue/carousel-00073-1.jpg",
+        "queue/carousel-00073-2.jpg",
+        "queue/carousel-00073-3.jpg",
+        "queue/carousel-00073-4.jpg",
+        "queue/carousel-00073-5.jpg",
+        "queue/carousel-00073-6.jpg"
+      ],
+      "caption": "Trying to reach everyone is the fastest way to reach no one.\n\nHere's the breakdown \ud83d\udc47\n\n1. Pick one person\n2. Own one topic\n3. Speak their language\n4. Repeat your core idea\n5. Niche down to grow up\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: niche down to grow.",
+      "posted": true,
+      "source_index": 14,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "a small, clear audience refers you. a broad, blurry one forgets you.",
+        "be the person known for one thing before you branch out.",
+        "here's how i niche down \u2192",
+        "if your content is for everyone, it's for no one.",
+        "joseph borroto",
+        "make content for a specific human, not a vague audience.",
+        "niche down to grow up",
+        "own one topic",
+        "pick one person",
+        "repeat your core idea",
+        "speak their language",
+        "use the exact words your person uses. it feels made for them.",
+        "you'll get bored before they do. drill the same message new ways."
+      ],
+      "posted_at": "20260612T203032Z",
+      "post_id": "17917515993183074"
+    },
+    {
       "id": "single-00059",
       "slot": "am",
       "type": "comment",
@@ -1000,41 +1037,6 @@
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
-    },
-    {
-      "id": "carousel-00073",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00073-0.jpg",
-        "queue/carousel-00073-1.jpg",
-        "queue/carousel-00073-2.jpg",
-        "queue/carousel-00073-3.jpg",
-        "queue/carousel-00073-4.jpg",
-        "queue/carousel-00073-5.jpg",
-        "queue/carousel-00073-6.jpg"
-      ],
-      "caption": "Trying to reach everyone is the fastest way to reach no one.\n\nHere's the breakdown \ud83d\udc47\n\n1. Pick one person\n2. Own one topic\n3. Speak their language\n4. Repeat your core idea\n5. Niche down to grow up\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: niche down to grow.",
-      "posted": false,
-      "source_index": 14,
-      "style": "dark",
-      "fp": [
-        "@josephborroto",
-        "a small, clear audience refers you. a broad, blurry one forgets you.",
-        "be the person known for one thing before you branch out.",
-        "here's how i niche down \u2192",
-        "if your content is for everyone, it's for no one.",
-        "joseph borroto",
-        "make content for a specific human, not a vague audience.",
-        "niche down to grow up",
-        "own one topic",
-        "pick one person",
-        "repeat your core idea",
-        "speak their language",
-        "use the exact words your person uses. it feels made for them.",
-        "you'll get bored before they do. drill the same message new ways."
       ]
     },
     {
@@ -1478,6 +1480,36 @@
         "the more 'you,' the better it does",
         "the weird way you say things is the one thing nobody can copy.",
         "your quirks are the brand"
+      ]
+    },
+    {
+      "id": "carousel-00087",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00087-0.jpg",
+        "queue/carousel-00087-1.jpg",
+        "queue/carousel-00087-2.jpg",
+        "queue/carousel-00087-3.jpg",
+        "queue/carousel-00087-4.jpg",
+        "queue/carousel-00087-5.jpg"
+      ],
+      "caption": "Every short-form video that pops has 3 acts. Most people film one and wonder why retention dies.\n\nHook (0 to 1.5s)\nTension (4 to 12s)\nPayoff (13s+)\n\nSave it before you script your next one.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: every viral video has 3 acts.",
+      "posted": false,
+      "source_index": 5,
+      "style": "creamorange",
+      "fp": [
+        "act 1 \u2014 hook (0 to 1.5s)",
+        "act 2 \u2014 tension (4 to 12s)",
+        "act 3 \u2014 payoff (13s to end)",
+        "build the gap. give a reason to keep watching past second 4.",
+        "deliver the answer, then one clean close. don't trail off.",
+        "every viral video has 3 acts.",
+        "most people only film one.",
+        "state the problem sharp. no intro, no setup. stop the thumb.",
+        "they film all hook or all payoff. the tension in the middle is what holds people.",
+        "why most fail"
       ]
     }
   ]

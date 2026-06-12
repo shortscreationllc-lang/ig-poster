@@ -1,7 +1,7 @@
 {
   "single_index": 42,
-  "carousel_index": 5,
-  "seq": 86,
+  "carousel_index": 6,
+  "seq": 87,
   "daily": {
     "20260608": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 42,
-  "pm_style_i": 44,
+  "pm_style_i": 45,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -710,6 +710,19 @@
         "cap_style": 0
       },
       "hook": "3 ways to stop the scroll on short-form video."
+    },
+    {
+      "at": "20260612T203032Z",
+      "id": "carousel-00073",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17917515993183074",
+      "tags": {
+        "fmt": "carousel",
+        "style": "dark",
+        "pillar": "algorithm",
+        "source_index": 14
+      }
     }
   ],
   "story_hook_i": 1,
@@ -871,20 +884,6 @@
     }
   ],
   "recent_texts": [
-    "remove the breath before every sentence. pace is retention.",
-    "where people drop, and why.",
-    "in this video i'm going to show you how to edit.",
-    "your edits are boring people in the first 3 seconds.",
-    "1. film nouns, not verbs",
-    "2. get uncomfortably close",
-    "3. move the camera",
-    "4. match the light",
-    "5 rules for b-roll that isn't boring.",
-    "5. overshoot",
-    "a slow push or pan adds life a locked shot can't.",
-    "capture 3x what you need. you'll thank yourself in the edit.",
-    "consistent lighting makes cuts feel seamless.",
-    "detail reads as intentional. distance reads as filler.",
     "most people film the wrong thing.",
     "the object close-up beats the wide action shot.",
     "it's because you didn't move.",
@@ -950,7 +949,21 @@
     "the only camera setting that really matters. set it once.",
     "two of everything. a dead battery ends the day.",
     "that's the whole game.",
-    "video helps buyers trust a business before they ever decide."
+    "video helps buyers trust a business before they ever decide.",
+    "@josephborroto",
+    "a small, clear audience refers you. a broad, blurry one forgets you.",
+    "be the person known for one thing before you branch out.",
+    "here's how i niche down \u2192",
+    "if your content is for everyone, it's for no one.",
+    "joseph borroto",
+    "make content for a specific human, not a vague audience.",
+    "niche down to grow up",
+    "own one topic",
+    "pick one person",
+    "repeat your core idea",
+    "speak their language",
+    "use the exact words your person uses. it feels made for them.",
+    "you'll get bored before they do. drill the same message new ways."
   ],
   "reel_i": 37,
   "reel_cap_i": 44,
