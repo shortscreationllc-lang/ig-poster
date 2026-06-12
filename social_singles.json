@@ -1,0 +1,155 @@
+{
+  "_README": "Single 'X-post' posts in Joseph's OWN voice (the camera-on-you statements). Each is one card, no swipe. enabled:true => rotates into the AM single-post slot. These are opinions/philosophy in his voice — no fabricated numbers or third-party claims.",
+  "entries": [
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "dark",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Posted beats perfect. Every single time.",
+        "cta": ""
+      },
+      "caption": "Posted beats perfect. Every single time.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Posted beats perfect. Every single time."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "midnight",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Your personality is the one thing nobody can copy.",
+        "cta": ""
+      },
+      "caption": "Your personality is the one thing nobody can copy.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your personality is the one thing nobody can copy."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Talk to one person — not 'everyone.'",
+        "cta": ""
+      },
+      "caption": "Talk to one person — not 'everyone.'\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Talk to one person — not 'everyone.'"
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "ember",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "The hook isn't part of the video. It IS the video.",
+        "cta": ""
+      },
+      "caption": "The hook isn't part of the video. It IS the video.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The hook isn't part of the video. It IS the video."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "dark",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "You don't need permission to start. Just post.",
+        "cta": ""
+      },
+      "caption": "You don't need permission to start. Just post.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "You don't need permission to start. Just post."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "midnight",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Boring is the only thing the algorithm actually punishes.",
+        "cta": ""
+      },
+      "caption": "Boring is the only thing the algorithm actually punishes.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Boring is the only thing the algorithm actually punishes."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Consistency beats talent that quits.",
+        "cta": ""
+      },
+      "caption": "Consistency beats talent that quits.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Consistency beats talent that quits."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "ember",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Stop watching content about content. Go make some.",
+        "cta": ""
+      },
+      "caption": "Stop watching content about content. Go make some.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Stop watching content about content. Go make some."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "dark",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "If it didn't stop your scroll, it won't stop theirs.",
+        "cta": ""
+      },
+      "caption": "If it didn't stop your scroll, it won't stop theirs.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "If it didn't stop your scroll, it won't stop theirs."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "midnight",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "The best camera is the one you'll actually use.",
+        "cta": ""
+      },
+      "caption": "The best camera is the one you'll actually use.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The best camera is the one you'll actually use."
+    }
+  ]
+}
