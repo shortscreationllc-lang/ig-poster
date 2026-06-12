@@ -1,55 +1,81 @@
 {
-  "_README": "X-post style carousels in JOSEPH'S OWN voice — his content, his process, his results. Two honesty rules: (1) every claim/number must be TRUE to Joseph; (2) if you use an embedded 'reply', it must be a REAL message from a real person (use initials). Set an entry's \"enabled\": true and it auto-rotates into the PM carousel slot. Leave 'entries' empty and nothing posts (falls back to normal carousels). The author avatar uses assets/joseph-avatar.jpg automatically if present. Copy the shape of the examples below.",
-  "_example_statement": {
-    "_note": "Pure 'me saying something' hook — no third-party testimonial. Joseph makes the claim; slides break down how he does it.",
-    "enabled": false,
-    "style": "dark",
-    "cover_kind": "social",
-    "social": {
-      "author": "Joseph Borroto",
-      "handle": "@josephborroto",
-      "verified": true,
-      "initials": "JB",
-      "headline": "I treat the camera like a client, not a camera. That one shift changed all my content.",
-      "cta": "Here's exactly how I do it →"
-    },
-    "slides": [
-      {"title": "Talk TO one person", "body": "Not 'hey guys.' One person, one problem. It reads as a real conversation."},
-      {"title": "Say the point in line one", "body": "If the first sentence doesn't stop the scroll, nothing after it matters."},
-      {"title": "Be yourself on camera", "body": "The personality is the moat. Nobody can copy how you actually talk."},
-      {"title": "Make every video different", "body": "Same energy, new angle. The feed should never feel like a rerun."},
-      {"title": "Just get content out", "body": "Posted beats perfect. Volume is how you find what actually lands."}
-    ],
-    "caption": "I treat the camera like a client, not a camera — here's the full breakdown.\n\nFollow @josephborroto for more.",
-    "alt_text": "Carousel: how Joseph approaches content — treat the camera like a client."
-  },
+  "_README": "X-post style carousels for the PM slot. TWO honesty rules: (1) every claim/number must be TRUE to Joseph; (2) any embedded 'reply' must be a REAL message from a real person (initials only). Flip an entry's \"enabled\" to true and it auto-rotates in. Author avatar uses assets/joseph-avatar.jpg automatically. 'entries' below are DRAFTS in Joseph's voice (enabled:false) — review the wording, then enable. Use '_example_testimonial' as the shape for real-DM cards.",
   "_example_testimonial": {
-    "_note": "Same format but with a REAL reply from someone Joseph helped. Only enable when the reply is a genuine message.",
+    "_note": "Copy this shape for a REAL testimonial. Only enable when the reply is a genuine message someone actually sent.",
     "enabled": false,
     "style": "dark",
     "cover_kind": "social",
     "social": {
-      "author": "Joseph Borroto",
-      "handle": "@josephborroto",
-      "verified": true,
-      "initials": "JB",
-      "headline": "Someone followed my content advice for 30 days. Then they sent me this.",
+      "author": "Joseph Borroto", "handle": "@josephborroto", "verified": true, "initials": "JB",
+      "headline": "Someone ran my content advice for 30 days. Then they sent me this.",
       "reply": {
-        "author": "REAL PERSON",
-        "initials": "RP",
-        "time": "REPLACE — only a real message",
+        "author": "REAL PERSON", "initials": "RP", "time": "REPLACE",
         "body": "Paste the real DM/comment here, word for word.",
-        "reactions": 0,
-        "replies": ""
+        "reactions": 0, "replies": ""
       },
       "cta": "Here's exactly what they changed →"
     },
-    "slides": [
-      {"title": "Step one", "body": "Fill in the real steps."},
-      {"title": "Step two", "body": "Fill in the real steps."}
-    ],
+    "slides": [{"title": "Step one", "body": "Fill in the real steps."}],
     "caption": "Replace with the real story + Follow @josephborroto.",
     "alt_text": "Carousel."
   },
-  "entries": []
+  "entries": [
+    {
+      "enabled": false,
+      "style": "dark",
+      "cover_kind": "social",
+      "social": {
+        "author": "Joseph Borroto", "handle": "@josephborroto", "verified": true, "initials": "JB",
+        "headline": "I treat the camera like a client, not a camera. That one shift changed all my content.",
+        "cta": "Here's exactly how I do it →"
+      },
+      "slides": [
+        {"title": "Talk TO one person", "body": "Not 'hey guys.' One person, one problem. It reads as a real conversation."},
+        {"title": "Say the point in line one", "body": "If the first sentence doesn't stop the scroll, nothing after it matters."},
+        {"title": "Be yourself on camera", "body": "The personality is the moat. Nobody can copy how you actually talk."},
+        {"title": "Make every video different", "body": "Same energy, new angle. The feed should never feel like a rerun."},
+        {"title": "Just get content out", "body": "Posted beats perfect. Volume is how you find what actually lands."}
+      ],
+      "caption": "I treat the camera like a client, not a camera — here's the full breakdown.\n\nFollow @josephborroto for more.",
+      "alt_text": "Carousel: treat the camera like a client, not a camera."
+    },
+    {
+      "enabled": false,
+      "style": "midnight",
+      "cover_kind": "social",
+      "social": {
+        "author": "Joseph Borroto", "handle": "@josephborroto", "verified": true, "initials": "JB",
+        "headline": "Stop trying to sound like a 'content creator.' Just be yourself on camera.",
+        "cta": "Here's how I stay myself on camera →"
+      },
+      "slides": [
+        {"title": "Talk how you actually talk", "body": "The 'script voice' is what makes people scroll. Your real voice keeps them."},
+        {"title": "Your quirks are the brand", "body": "The weird way you say things is the one thing nobody can copy."},
+        {"title": "Borrow structure, not personality", "body": "Steal the format from big accounts. Keep your own voice on top of it."},
+        {"title": "Film like you're texting a friend", "body": "Casual beats polished. People trust a person, not a presenter."},
+        {"title": "The more 'you,' the better it does", "body": "Every time I loosen up on camera, the content does better."}
+      ],
+      "caption": "Stop trying to sound like a 'content creator' — just be yourself. Full breakdown.\n\nFollow @josephborroto for more.",
+      "alt_text": "Carousel: be yourself on camera."
+    },
+    {
+      "enabled": false,
+      "style": "dark",
+      "cover_kind": "social",
+      "social": {
+        "author": "Joseph Borroto", "handle": "@josephborroto", "verified": true, "initials": "JB",
+        "headline": "Most people overthink their content. I just get it out — and that's why mine grows.",
+        "cta": "Here's my posting system →"
+      },
+      "slides": [
+        {"title": "Posted beats perfect", "body": "A 'good enough' video that exists beats a perfect one that never goes up."},
+        {"title": "Volume teaches you", "body": "You learn what works by posting, not by planning. The reps are the lesson."},
+        {"title": "Lower the stakes", "body": "One post isn't make-or-break. The hundredth one is what compounds."},
+        {"title": "Batch when you can", "body": "I filmed 12 videos on one trip — a week of content in an afternoon."},
+        {"title": "Consistency compounds", "body": "The algorithm rewards the person who keeps showing up. Be that person."}
+      ],
+      "caption": "Most people overthink content. I just get it out — here's how.\n\nFollow @josephborroto for more.",
+      "alt_text": "Carousel: stop overthinking, just post."
+    }
+  ]
 }
