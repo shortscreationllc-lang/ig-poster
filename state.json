@@ -1,7 +1,7 @@
 {
-  "single_index": 27,
+  "single_index": 28,
   "carousel_index": 14,
-  "seq": 57,
+  "seq": 58,
   "daily": {
     "20260608": {
       "morning": true,
@@ -35,7 +35,7 @@
       "morning": true
     }
   },
-  "am_style_i": 27,
+  "am_style_i": 28,
   "pm_style_i": 30,
   "history": [
     {
@@ -681,6 +681,19 @@
         "cap_style": 0
       },
       "hook": "How to make short-form that actually books clients, not just views."
+    },
+    {
+      "at": "20260612T172433Z",
+      "id": "single-00014",
+      "slot": "am",
+      "type": "quote",
+      "post_id": "17951800362174514",
+      "tags": {
+        "fmt": "quote",
+        "style": null,
+        "pillar": "business",
+        "source_index": 13
+      }
     }
   ],
   "story_hook_i": 1,
@@ -842,8 +855,6 @@
     }
   ],
   "recent_texts": [
-    "drop a number or contradiction right where attention dips.",
-    "new angle or location keeps the eye from settling.",
     "remove the breath before every sentence. pace is retention.",
     "where people drop, and why.",
     "in this video i'm going to show you how to edit.",
@@ -921,7 +932,9 @@
     "record 5 seconds and listen back. don't trust the meter alone.",
     "switch location every line. this is the one people skip.",
     "the only camera setting that really matters. set it once.",
-    "two of everything. a dead battery ends the day."
+    "two of everything. a dead battery ends the day.",
+    "that's the whole game.",
+    "video helps buyers trust a business before they ever decide."
   ],
   "reel_i": 36,
   "reel_cap_i": 43,

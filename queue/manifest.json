@@ -724,12 +724,14 @@
       ],
       "caption": "Video helps buyers trust the business before they make a decision.\n\nBy the time someone reaches out, they've already watched you, heard how you think, and decided they like you. The content did the selling quietly.\n\nThat's why consistency beats everything.\n\nFollow @josephborroto for more on content that actually converts.\n\n#videomarketing #contentstrategy #trust #shortformvideo #smallbusiness #josephborroto",
       "alt": "Quote card: video helps buyers trust a business before they ever decide.",
-      "posted": false,
+      "posted": true,
       "source_index": 13,
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
+      ],
+      "posted_at": "20260612T172433Z",
+      "post_id": "17951800362174514"
     },
     {
       "id": "single-00029",
@@ -1409,6 +1411,24 @@
         "quality and retention beat raw volume every time.",
         "these are costing you reach.",
         "they still help categorize. they're just not the whole game."
+      ]
+    },
+    {
+      "id": "single-00058",
+      "slot": "am",
+      "type": "social",
+      "images": [
+        "queue/single-00058.jpg"
+      ],
+      "caption": "The hook isn't part of the video. It IS the video.\n\nFollow @josephborroto for more on content.",
+      "alt": "The hook isn't part of the video. It IS the video.",
+      "posted": false,
+      "source_index": 27,
+      "style": "ember",
+      "fp": [
+        "@josephborroto",
+        "joseph borroto",
+        "the hook isn't part of the video. it is the video."
       ]
     }
   ]
