@@ -32,7 +32,7 @@
   },
   "entries": [
     {
-      "enabled": false,
+      "enabled": true,
       "style": "dark",
       "cover_kind": "social",
       "social": {
@@ -69,7 +69,7 @@
       "alt_text": "Carousel: treat the camera like a client, not a camera."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "midnight",
       "cover_kind": "social",
       "social": {
@@ -106,7 +106,7 @@
       "alt_text": "Carousel: be yourself on camera."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "dark",
       "cover_kind": "social",
       "social": {
@@ -143,7 +143,7 @@
       "alt_text": "Carousel: stop overthinking, just post."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "slate",
       "cover_kind": "social",
       "social": {
@@ -217,7 +217,7 @@
       "alt_text": "Carousel: editing so the cut disappears."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "midnight",
       "cover_kind": "social",
       "social": {
@@ -254,7 +254,7 @@
       "alt_text": "Carousel: how to stay consistent with content."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "dark",
       "cover_kind": "social",
       "social": {

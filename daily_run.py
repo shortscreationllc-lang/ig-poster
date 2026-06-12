@@ -46,6 +46,7 @@ MANIFEST = QUEUE_DIR / "manifest.json"
 SINGLE_BANK = ROOT / "post_bank.json"
 CAROUSEL_BANK = ROOT / "carousel_bank.json"
 SOCIAL_BANK = ROOT / "social_proof_bank.json"
+SOCIAL_SINGLES = ROOT / "social_singles.json"
 GRAPH = "https://graph.instagram.com/v25.0"
 
 QUEUE_DEPTH = 14   # keep this many ready items per slot at all times
@@ -168,17 +169,35 @@ def _build_am_pool():
         t.setdefault("type", "single")
     typed = json.loads(CONTENT_BANK.read_text()) if CONTENT_BANK.exists() else []
     quotes = json.loads(QUOTE_BANK.read_text()) if QUOTE_BANK.exists() else []
+    socials = _enabled_social_singles()   # X-post styled single statements
     pool = []
-    i = j = k = 0
-    # pattern: tip, quote, typed, repeat — keeps quotes & value frequent
-    while i < len(tips) or j < len(quotes) or k < len(typed):
+    i = j = k = m = 0
+    # pattern: tip, quote, typed, social, repeat — keeps every format frequent
+    while i < len(tips) or j < len(quotes) or k < len(typed) or m < len(socials):
         if i < len(tips):
             pool.append(tips[i]); i += 1
         if j < len(quotes):
             pool.append(quotes[j]); j += 1
         if k < len(typed):
             pool.append(typed[k]); k += 1
+        if m < len(socials):
+            pool.append(socials[m]); m += 1
     return pool
+
+
+def _enabled_social_singles():
+    """ENABLED single 'X-post' statements (Joseph's own voice) for the AM slot.
+    Returns [] if the bank is missing/empty — nothing is ever invented."""
+    try:
+        data = json.loads(SOCIAL_SINGLES.read_text())
+    except Exception:
+        return []
+    out = []
+    for e in data.get("entries", []):
+        if e.get("enabled"):
+            e.setdefault("type", "social")
+            out.append(e)
+    return out
 
 
 def _render_am_item(item, out_path, style):
@@ -198,6 +217,10 @@ def _render_am_item(item, out_path, style):
         render_card.draw_checklist(item, out_path, style=style)
     elif t == "statement":
         render_card.draw_statement(item, out_path, style=style)
+    elif t == "social":
+        # X-post styled single — drop the swipe CTA so it stands alone.
+        social = dict(item.get("social", item)); social["cta"] = ""
+        render_card.draw_social_hook(social, out_path, style=style)
     else:
         render_card.draw_card(item, out_path, style=style)
 
