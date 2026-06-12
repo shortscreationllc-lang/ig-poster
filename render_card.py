@@ -789,6 +789,103 @@ def draw_comment(item, out_path, style="dark"):
     return out_path
 
 
+def draw_reddit(item, out_path, style="dark"):
+    """A Reddit-thread screenshot — subreddit + question, then your top answer."""
+    bg = (18, 18, 20); card = (26, 26, 28); line = (52, 52, 56)
+    head = (220, 222, 226); body = (190, 192, 196); meta = (129, 131, 134)
+    up = (255, 69, 0)
+    img = Image.new("RGB", (W, H), bg); d = ImageDraw.Draw(img)
+    sub = item.get("subreddit", "r/NewTubers")
+    title_f = f_sys(54, bold=True)
+    tlines = wrap(d, item["title"], title_f, W - 2 * M)
+    af = f_sys(42)
+    ans = item.get("answer", {})
+    alines = wrap(d, _no_emoji(ans.get("text", "")), af, W - 2 * M - 80) if ans else []
+    block = 70 + 60 + len(tlines) * 64 + 70 + (0 if not ans else 40 + 64 + len(alines) * 50 + 20)
+    top = max(150, (H - block) // 2)
+    # subreddit row
+    _avatar(d, M, top, 30, "", up)
+    d.text((M + 80, top + 4), sub, font=f_sys(36, bold=True), fill=head)
+    d.text((M + 80, top + 46), f"Posted by u/{item.get('user','creator')} · 9h",
+           font=f_sys(28), fill=meta)
+    y = top + 100
+    for ln in tlines:
+        d.text((M, y), ln, font=title_f, fill=head); y += 64
+    y += 16
+    # vote + comment chrome
+    d.polygon([(M + 14, y + 8), (M, y + 28), (M + 28, y + 28)], fill=up)
+    d.text((M + 42, y + 4), str(item.get("upvotes", "4.2k")), font=f_sys(34, bold=True), fill=up)
+    d.text((M + 230, y + 4), f"{item.get('comments','318')} comments", font=f_sys(32), fill=meta)
+    y += 70
+    # top answer (you)
+    if ans:
+        d.line((M, y, W - M, y), fill=line, width=2); y += 30
+        ar = 38
+        _put_avatar(img, d, M, y, ar, ans.get("initials", "JB"), ORANGE,
+                    photo=ans.get("photo") or (str(AVATAR_PATH) if AVATAR_PATH else None))
+        d.text((M + 2 * ar + 18, y + 4), f"u/{ans.get('user','josephborroto')}",
+               font=f_sys(32, bold=True), fill=(120, 170, 255))
+        yy = y + 2 * ar + 12
+        for ln in alines:
+            d.text((M, yy), ln, font=af, fill=body); yy += 50
+        d.polygon([(M + 14, yy + 14), (M, yy + 34), (M + 28, yy + 34)], fill=up)
+        d.text((M + 42, yy + 10), str(ans.get("upvotes", "1.1k")), font=f_sys(30, bold=True), fill=up)
+    img.save(out_path, quality=95)
+    return out_path
+
+
+def draw_cheatsheet(item, out_path, style="dark"):
+    """A saveable reference card — title + a tight numbered list (steal-my-X)."""
+    img, d, p = _new(style)
+    _kicker(d, item.get("kicker", "SAVE THIS"), p)
+    y = 270
+    tf, lines, lh = _fit_lines(d, item["title"], W - 2 * M, 250, 84, 52)
+    for ln in lines:
+        d.text((M, y), ln, font=tf, fill=p["head"]); y += lh
+    y += 18
+    d.rounded_rectangle((M, y, M + 200, y + 9), radius=4, fill=ORANGE); y += 48
+    items = item["items"][:7]
+    nf = f_brand(50); bf = f_sys(40)
+    avail = (H - 200) - y
+    row_gap = max(64, min(108, avail // max(1, len(items))))
+    for i, it in enumerate(items, 1):
+        d.text((M, y), str(i), font=nf, fill=ORANGE)
+        wl = wrap(d, it, bf, W - 2 * M - 86)
+        for j, ln in enumerate(wl):
+            d.text((M + 86, y + j * 48), ln, font=bf, fill=p["sub"])
+        y += max(row_gap, len(wl) * 48 + 22)
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
+def draw_prompt(item, out_path, style="dark"):
+    """Engagement card — hot take / fill-in-the-blank / this-or-that, with a
+    'comment' prompt. `options` (2) renders a poll; `prompt` is the call to act."""
+    img, d, p = _new(style)
+    _kicker(d, item.get("kicker", "HOT TAKE"), p)
+    opts = item.get("options") or []
+    pr = _no_emoji(item.get("prompt", ""))
+    hf, hlines, hlh = _fit_lines(d, item["headline"], W - 2 * M,
+                                 460 if opts else 620, 100, 54)
+    block = len(hlines) * hlh + (270 if opts else 0) + (90 if pr else 0)
+    y = max(280, (H - block) // 2)
+    for ln in hlines:
+        d.text((M, y), ln, font=hf, fill=p["head"]); y += hlh
+    y += 36
+    if len(opts) >= 2:
+        of = f_sys(50, bold=True)
+        d.rounded_rectangle((M, y, W - M, y + 116), radius=20, fill=p["panel"], outline=p["panel_line"], width=2)
+        d.text((M + 44, y + 30), opts[0], font=of, fill=p["head"]); y += 132
+        d.rounded_rectangle((M, y, W - M, y + 116), radius=20, fill=ORANGE)
+        d.text((M + 44, y + 30), opts[1], font=of, fill=(22, 16, 10)); y += 150
+    if pr:
+        d.text((M, y), pr, font=f_sys(44, bold=True), fill=ORANGE)
+    _footer(d, p)
+    img.convert("RGB").save(out_path, quality=95)
+    return out_path
+
+
 def draw_content_slide(slide, idx, total, out_path, style="dark"):
     """Carousel middle slide — big number, title, body."""
     img, d, p = _new(style)
