@@ -724,6 +724,38 @@
         "pillar": "algorithm",
         "source_index": 14
       }
+    },
+    {
+      "at": "20260612T203540Z",
+      "id": "queue/reel-1781296489-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18113254762720716",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "typewriter",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Posted beats perfect. Every single time."
+    },
+    {
+      "at": "20260612T203644Z",
+      "id": "queue/reel-1781296495-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17968718436078097",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "stat",
+        "style": "navyorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "90% of viewers decide whether to keep watching in the first 3 seconds."
     }
   ],
   "story_hook_i": 1,
@@ -994,7 +1026,8 @@
     "20260608": 2,
     "20260609": 2,
     "20260610": 2,
-    "20260611": 2
+    "20260611": 2,
+    "20260612": 2
   },
   "beat_recent": [
     1,
