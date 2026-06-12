@@ -11,6 +11,7 @@ import numpy as np
 import imageio.v2 as imageio
 from PIL import Image, ImageDraw
 from render_card import PALETTES, ORANGE, f_brand, f_sys, wrap
+import render_card as rcard  # reuse avatar / verified / heart drawing helpers
 
 VW, VH, M, FPS = 1080, 1920, 120, 30
 
@@ -396,9 +397,107 @@ def video_sequence(scenes, out, style="dark", hold=1.6, trans=0.45):
     return out
 
 
+def video_xpost(item, out, style="dark", secs=7):
+    """Animated X (Twitter) post: the profile + claim build in line by line, an
+    optional reply card slides up, then the CTA — the moving version of the card."""
+    p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
+    soc = item.get("social", item)
+    MX = 96; INNER = VW - 2 * MX; blue = (45, 140, 255); r = 58
+    pad = 34; rr = 42; rbf = f_sys(36)
+    muted = p.get("muted", (150, 150, 150))
+    htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
+
+    def fit(text):
+        for size in range(54, 37, -3):
+            f = f_sys(size, bold=True); ls = wrap(htmp, text, f, INNER)
+            if len(ls) <= 4:
+                return f, ls, int(size * 1.16)
+        f = f_sys(38, bold=True); return f, wrap(htmp, text, f, INNER), int(38 * 1.16)
+    hf, hlines, hlh = fit(soc["headline"]); claim_h = len(hlines) * hlh
+    rp = soc.get("reply"); body_lines, card_h = [], 0
+    if rp:
+        body_lines = wrap(htmp, rp["body"], rbf, (VW - MX - pad) - (MX + pad))
+        card_h = 34 + 2 * rr + 16 + len(body_lines) * 48 + 14 + 52 + 20 + 40 + 26
+    cta = soc.get("cta", ""); cta_h = 56 if cta else 0
+    total = (2 * r + 46) + claim_h + ((30 + card_h) if rp else 0) + ((48 + cta_h) if cta else 0)
+    block_top = max(150, (VH - total) // 2)
+
+    # header sprite (avatar + name + verified + handle)
+    head = Image.new("RGBA", (VW, 2 * r + 24), (0, 0, 0, 0)); hd = ImageDraw.Draw(head)
+    rcard._put_avatar(head, hd, MX, 0, r, soc.get("initials", "JB"), ORANGE,
+                      photo=soc.get("photo"), use_default=True,
+                      focus=tuple(soc.get("avatar_focus", (0.5, 0.44))))
+    nx = MX + 2 * r + 28; nf = f_sys(46, bold=True); name = soc.get("author", "Joseph Borroto")
+    hd.text((nx, 6), name, font=nf, fill=p["head"]); nw = hd.textlength(name, font=nf)
+    if soc.get("verified", True):
+        rcard._verified(hd, nx + nw + 34, 30, 24)
+    hd.text((nx, 64), soc.get("handle", "@josephborroto"), font=f_sys(38), fill=muted)
+
+    claim_sprites = []
+    for ln in hlines:
+        s = Image.new("RGBA", (VW, hlh), (0, 0, 0, 0))
+        ImageDraw.Draw(s).text((MX, 0), ln, font=hf, fill=p["head"]); claim_sprites.append(s)
+
+    reply = None
+    if rp:
+        reply = Image.new("RGBA", (VW, card_h), (0, 0, 0, 0)); rd = ImageDraw.Draw(reply)
+        ax0, ax1 = MX, VW - MX
+        rd.rounded_rectangle((ax0, 0, ax1, card_h), radius=28, fill=(30, 30, 33), outline=(58, 58, 64), width=2)
+        cy = 34
+        rcard._put_avatar(reply, rd, ax0 + pad, cy, rr, rp.get("initials", "TV"), (70, 110, 150), photo=rp.get("photo"))
+        rnx = ax0 + pad + 2 * rr + 20; rnf = f_sys(38, bold=True)
+        rd.text((rnx, cy + 4), rp["author"], font=rnf, fill=p["head"]); rnw = rd.textlength(rp["author"], font=rnf)
+        rd.text((rnx + rnw + 16, cy + 12), rp.get("time", ""), font=f_sys(28), fill=muted)
+        by = cy + 2 * rr + 16
+        for ln in body_lines:
+            rd.text((ax0 + pad, by), ln, font=rbf, fill=(220, 222, 226)); by += 48
+        by += 14; cnt = str(rp.get("reactions", 4)); pillf = f_sys(30, bold=True); cw = rd.textlength(cnt, font=pillf)
+        rd.rounded_rectangle((ax0 + pad, by, ax0 + pad + 56 + cw + 28, by + 52), radius=26, outline=(70, 130, 180), width=3)
+        rcard._heart(rd, ax0 + pad + 32, by + 26, 28, (235, 90, 110))
+        rd.text((ax0 + pad + 54, by + 11), cnt, font=pillf, fill=(150, 190, 220))
+        by += 72; rcard._avatar(rd, ax0 + pad, by + 2, 16, "", (70, 110, 150))
+        rd.text((ax0 + pad + 46, by + 2), rp.get("replies", ""), font=f_sys(28), fill=muted)
+
+    cta_sprite = None
+    if cta:
+        cta_sprite = Image.new("RGBA", (VW, 60), (0, 0, 0, 0))
+        ImageDraw.Draw(cta_sprite).text((MX, 0), cta, font=f_sys(44, bold=True), fill=blue)
+
+    y_claim0 = block_top + 2 * r + 46
+    y_reply = y_claim0 + claim_h + 30
+    y_cta = (y_reply + card_h if rp else y_claim0 + claim_h) + 48
+    t_claim = [0.5 + i * 0.22 for i in range(len(claim_sprites))]
+    last_claim = t_claim[-1] if t_claim else 0.5
+    t_reply = last_claim + 0.35
+    t_cta = (t_reply + 0.5) if rp else (last_claim + 0.35)
+
+    def frame(i):
+        t = i / FPS; fr = bg.copy()
+        fr.alpha_composite(glow, (0, int(30 * np.sin(t * 0.7))))
+        a = ease((t - 0.15) / 0.5)
+        if a > 0:
+            fr.alpha_composite(_alpha(head, a), (0, block_top + int((1 - a) * 24)))
+        for k, s in enumerate(claim_sprites):
+            pr = ease((t - t_claim[k]) / 0.45)
+            if pr > 0:
+                fr.alpha_composite(_alpha(s, pr), (0, y_claim0 + k * hlh + int((1 - pr) * 26)))
+        if reply is not None:
+            pr = ease((t - t_reply) / 0.55)
+            if pr > 0:
+                fr.alpha_composite(_alpha(reply, pr), (0, y_reply + int((1 - pr) * 40)))
+        if cta_sprite is not None:
+            pr = ease((t - t_cta) / 0.5)
+            if pr > 0:
+                fr.alpha_composite(_alpha(cta_sprite, pr), (0, y_cta + int((1 - pr) * 20)))
+        return fr
+    return _encode(frame, int(secs * FPS), out)
+
+
 def render_video(item, out, style="dark"):
     """Dispatch a content item to the right animated Reel by its type."""
     t = item.get("type", "single")
+    if t == "social":
+        return video_xpost(item, out, style=style)
     if t == "stat":
         return video_stat(item, out, style=style)
     if t == "quote":

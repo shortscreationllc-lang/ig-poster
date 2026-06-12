@@ -180,7 +180,7 @@
       "alt_text": "Carousel: how to write hooks that stop the scroll."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "ember",
       "cover_kind": "social",
       "social": {
@@ -291,7 +291,7 @@
       "alt_text": "Carousel: niche down to grow."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "slate",
       "cover_kind": "social",
       "social": {
@@ -328,7 +328,7 @@
       "alt_text": "Carousel: gear doesn't make the content."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "ember",
       "cover_kind": "social",
       "social": {
@@ -365,7 +365,7 @@
       "alt_text": "Carousel: repurpose one idea into many."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "midnight",
       "cover_kind": "social",
       "social": {
@@ -402,7 +402,7 @@
       "alt_text": "Carousel: how to use CTAs."
     },
     {
-      "enabled": false,
+      "enabled": true,
       "style": "dark",
       "cover_kind": "social",
       "social": {
