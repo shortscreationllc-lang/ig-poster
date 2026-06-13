@@ -795,6 +795,20 @@
         "pillar": "mindset",
         "source_index": 29
       }
+    },
+    {
+      "at": "20260613T160049Z",
+      "id": "queue/reel-1781366406.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17897208570332645",
+      "tags": {
+        "fmt": "social",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
     }
   ],
   "story_hook_i": 1,
