@@ -799,7 +799,7 @@
       ],
       "caption": "It helps because people follow people. But a strong voice + a clear point can carry it. Start with whatever you'll actually do consistently.\n\nFollow @josephborroto for more on content.",
       "alt": "Reddit thread: Do you HAVE to show your face to grow?",
-      "posted": false,
+      "posted": true,
       "source_index": 29,
       "style": "dark",
       "fp": [
@@ -808,7 +808,9 @@
         "it helps because people follow people. but a strong voice + a clear point can carry it. start with whatever you'll actually do consistently.",
         "josephborroto",
         "r/socialmedia"
-      ]
+      ],
+      "posted_at": "20260613T144033Z",
+      "post_id": "18202630480359347"
     },
     {
       "id": "single-00061",
@@ -1533,6 +1535,24 @@
         "this is the system, simplified.",
         "turn each topic into 10 angles",
         "write only the hooks first"
+      ]
+    },
+    {
+      "id": "single-00089",
+      "slot": "am",
+      "type": "social",
+      "images": [
+        "queue/single-00089.jpg"
+      ],
+      "caption": "Boring is the only thing the algorithm actually punishes.\n\nFollow @josephborroto for more on content.",
+      "alt": "Boring is the only thing the algorithm actually punishes.",
+      "posted": false,
+      "source_index": 43,
+      "style": "midnight",
+      "fp": [
+        "@josephborroto",
+        "boring is the only thing the algorithm actually punishes.",
+        "joseph borroto"
       ]
     }
   ]

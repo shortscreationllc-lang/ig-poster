@@ -1,7 +1,7 @@
 {
-  "single_index": 43,
+  "single_index": 44,
   "carousel_index": 6,
-  "seq": 88,
+  "seq": 89,
   "daily": {
     "20260609": {
       "morning": true,
@@ -35,7 +35,7 @@
       "morning": true
     }
   },
-  "am_style_i": 43,
+  "am_style_i": 44,
   "pm_style_i": 45,
   "history": [
     {
@@ -781,6 +781,19 @@
         "cap_style": 0
       },
       "hook": "How to make short-form that actually books clients, not just views."
+    },
+    {
+      "at": "20260613T144033Z",
+      "id": "single-00060",
+      "slot": "am",
+      "type": "reddit",
+      "post_id": "18202630480359347",
+      "tags": {
+        "fmt": "reddit",
+        "style": "dark",
+        "pillar": "mindset",
+        "source_index": 29
+      }
     }
   ],
   "story_hook_i": 1,
@@ -951,11 +964,6 @@
     }
   ],
   "recent_texts": [
-    "most people film the wrong thing.",
-    "the object close-up beats the wide action shot.",
-    "it's because you didn't move.",
-    "same shot for 30 seconds = scroll. new spot every sentence = retention.",
-    "your talking-head videos are boring.",
     "1. music too loud",
     "3. inconsistent levels",
     "4 audio mistakes that ruin good video.",
@@ -1030,7 +1038,12 @@
     "repeat your core idea",
     "speak their language",
     "use the exact words your person uses. it feels made for them.",
-    "you'll get bored before they do. drill the same message new ways."
+    "you'll get bored before they do. drill the same message new ways.",
+    "do you have to show your face to grow?",
+    "faceless_creator",
+    "it helps because people follow people. but a strong voice + a clear point can carry it. start with whatever you'll actually do consistently.",
+    "josephborroto",
+    "r/socialmedia"
   ],
   "reel_i": 39,
   "reel_cap_i": 48,
