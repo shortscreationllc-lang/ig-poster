@@ -779,7 +779,7 @@
       ],
       "caption": "Post daily \u2014 not for the algorithm, for the reps.\n\nFollow @josephborroto for more on content.",
       "alt": "Comment reply: daily if you can. not for the algorithm \u2014 for the reps. you get good by posting.",
-      "posted": false,
+      "posted": true,
       "source_index": 28,
       "style": "dark",
       "fp": [
@@ -787,7 +787,8 @@
         "growthwithleo",
         "how often should i post?",
         "joseph borroto"
-      ]
+      ],
+      "skipped": true
     },
     {
       "id": "single-00060",
@@ -1510,6 +1511,28 @@
         "state the problem sharp. no intro, no setup. stop the thumb.",
         "they film all hook or all payoff. the tension in the middle is what holds people.",
         "why most fail"
+      ]
+    },
+    {
+      "id": "single-00088",
+      "slot": "am",
+      "type": "value",
+      "images": [
+        "queue/single-00088.jpg"
+      ],
+      "caption": "How a month of content gets planned in one sitting:\n\n1. Pick 3 core topics (not 30)\n2. Turn each into 10 angles\n3. Write only the hooks first\n4. Batch-film, then batch-edit\n5. Post the clearest version first\n\nThe magic isn't motivation. It's the system.\n\nFollow @josephborroto for the behind-the-scenes of content at scale.\n\n#contentstrategy #batching #systems #shortformvideo #contentcreator #josephborroto",
+      "alt": "Value card on planning a month of content in one sitting.",
+      "posted": false,
+      "source_index": 42,
+      "style": "blackout",
+      "fp": [
+        "batch-film, then batch-edit",
+        "how we plan a month of content in one sitting.",
+        "post the clearest one first",
+        "start with 3 core topics, not 30",
+        "this is the system, simplified.",
+        "turn each topic into 10 angles",
+        "write only the hooks first"
       ]
     }
   ]
