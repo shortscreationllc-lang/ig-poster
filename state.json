@@ -810,6 +810,38 @@
         "cap_style": 0
       },
       "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
+    },
+    {
+      "at": "20260613T200204Z",
+      "id": "queue/reel-1781380861-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18130793971540985",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "typewriter",
+        "style": "navyorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Your first line is the only algorithm that matters."
+    },
+    {
+      "at": "20260613T200309Z",
+      "id": "queue/reel-1781380868-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18341501557221365",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Most people overthink content. I just get it out \u2014 and that's why mine grows."
     }
   ],
   "story_hook_i": 1,
@@ -1092,7 +1124,8 @@
     "20260609": 2,
     "20260610": 2,
     "20260611": 2,
-    "20260612": 2
+    "20260612": 2,
+    "20260613": 2
   },
   "beat_recent": [
     6,
