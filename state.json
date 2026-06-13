@@ -1,7 +1,7 @@
 {
   "single_index": 44,
-  "carousel_index": 6,
-  "seq": 89,
+  "carousel_index": 7,
+  "seq": 90,
   "daily": {
     "20260609": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 44,
-  "pm_style_i": 45,
+  "pm_style_i": 46,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -842,6 +842,19 @@
         "cap_style": 0
       },
       "hook": "Most people overthink content. I just get it out \u2014 and that's why mine grows."
+    },
+    {
+      "at": "20260613T203833Z",
+      "id": "carousel-00074",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18155348692476885",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "editing",
+        "source_index": 15
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1012,18 +1025,6 @@
     }
   ],
   "recent_texts": [
-    "1. music too loud",
-    "3. inconsistent levels",
-    "4 audio mistakes that ruin good video.",
-    "4. dead silence",
-    "a subtle bed of music under the voice keeps energy up.",
-    "if you notice the track, it's already drowning the voice.",
-    "people hear bad audio before they see good video.",
-    "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
-    "volume jumping between clips makes it feel amateur.",
-    "build the system, lose the dread.",
-    "content gets easier when the process feels lighter.",
-    "1. cut on the first pass",
     "2. build a caption style",
     "3. keep a music folder",
     "4. template your export",
@@ -1091,7 +1092,19 @@
     "faceless_creator",
     "it helps because people follow people. but a strong voice + a clear point can carry it. start with whatever you'll actually do consistently.",
     "josephborroto",
-    "r/socialmedia"
+    "r/socialmedia",
+    "1. film nouns, not verbs",
+    "2. get uncomfortably close",
+    "3. move the camera",
+    "4. match the light",
+    "5 rules for b-roll that isn't boring.",
+    "5. overshoot",
+    "a slow push or pan adds life a locked shot can't.",
+    "capture 3x what you need. you'll thank yourself in the edit.",
+    "consistent lighting makes cuts feel seamless.",
+    "detail reads as intentional. distance reads as filler.",
+    "most people film the wrong thing.",
+    "the object close-up beats the wide action shot."
   ],
   "reel_i": 40,
   "reel_cap_i": 51,

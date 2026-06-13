@@ -813,6 +813,41 @@
       "post_id": "18202630480359347"
     },
     {
+      "id": "carousel-00074",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00074-0.jpg",
+        "queue/carousel-00074-1.jpg",
+        "queue/carousel-00074-2.jpg",
+        "queue/carousel-00074-3.jpg",
+        "queue/carousel-00074-4.jpg",
+        "queue/carousel-00074-5.jpg",
+        "queue/carousel-00074-6.jpg"
+      ],
+      "caption": "Boring B-roll is usually the wrong subject filmed from too far.\n\n1. Film nouns, not verbs\n2. Get uncomfortably close\n3. Move the camera\n4. Match the light\n5. Overshoot\n\nSave it before your next shoot.\n\nFollow @josephborroto for the details that make content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: 5 rules for B-roll that isn't boring.",
+      "posted": true,
+      "source_index": 15,
+      "style": "bone",
+      "fp": [
+        "1. film nouns, not verbs",
+        "2. get uncomfortably close",
+        "3. move the camera",
+        "4. match the light",
+        "5 rules for b-roll that isn't boring.",
+        "5. overshoot",
+        "a slow push or pan adds life a locked shot can't.",
+        "capture 3x what you need. you'll thank yourself in the edit.",
+        "consistent lighting makes cuts feel seamless.",
+        "detail reads as intentional. distance reads as filler.",
+        "most people film the wrong thing.",
+        "the object close-up beats the wide action shot."
+      ],
+      "posted_at": "20260613T203833Z",
+      "post_id": "18155348692476885"
+    },
+    {
       "id": "single-00061",
       "slot": "am",
       "type": "cheatsheet",
@@ -1040,39 +1075,6 @@
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
-    },
-    {
-      "id": "carousel-00074",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00074-0.jpg",
-        "queue/carousel-00074-1.jpg",
-        "queue/carousel-00074-2.jpg",
-        "queue/carousel-00074-3.jpg",
-        "queue/carousel-00074-4.jpg",
-        "queue/carousel-00074-5.jpg",
-        "queue/carousel-00074-6.jpg"
-      ],
-      "caption": "Boring B-roll is usually the wrong subject filmed from too far.\n\n1. Film nouns, not verbs\n2. Get uncomfortably close\n3. Move the camera\n4. Match the light\n5. Overshoot\n\nSave it before your next shoot.\n\nFollow @josephborroto for the details that make content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
-      "alt": "Carousel: 5 rules for B-roll that isn't boring.",
-      "posted": false,
-      "source_index": 15,
-      "style": "bone",
-      "fp": [
-        "1. film nouns, not verbs",
-        "2. get uncomfortably close",
-        "3. move the camera",
-        "4. match the light",
-        "5 rules for b-roll that isn't boring.",
-        "5. overshoot",
-        "a slow push or pan adds life a locked shot can't.",
-        "capture 3x what you need. you'll thank yourself in the edit.",
-        "consistent lighting makes cuts feel seamless.",
-        "detail reads as intentional. distance reads as filler.",
-        "most people film the wrong thing.",
-        "the object close-up beats the wide action shot."
       ]
     },
     {
@@ -1553,6 +1555,41 @@
         "@josephborroto",
         "boring is the only thing the algorithm actually punishes.",
         "joseph borroto"
+      ]
+    },
+    {
+      "id": "carousel-00090",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00090-0.jpg",
+        "queue/carousel-00090-1.jpg",
+        "queue/carousel-00090-2.jpg",
+        "queue/carousel-00090-3.jpg",
+        "queue/carousel-00090-4.jpg",
+        "queue/carousel-00090-5.jpg",
+        "queue/carousel-00090-6.jpg"
+      ],
+      "caption": "Most people overthink their content into never posting it. I just get it out \u2014 and that's the whole secret.\n\nEvery \"perfect\" video sitting in your drafts is worth zero. The messy one you actually post is the one that grows you. Volume is how you learn what works.\n\nMy posting system \ud83d\udc47\n\n1. Posted beats perfect \u2014 every time\n2. Volume teaches you what planning can't\n3. Lower the stakes: it's one post, not your reputation\n4. Batch it \u2014 I shot 12 videos on a single trip\n5. Consistency compounds. Keep showing up.\n\nSave this for the days you don't feel like posting. \ud83d\udccc\n\nFollow @josephborroto.",
+      "alt": "Carousel: stop overthinking, just post.",
+      "posted": false,
+      "source_index": 6,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "a 'good enough' video that exists beats a perfect one that never goes up.",
+        "batch when you can",
+        "consistency compounds",
+        "here's my posting system \u2192",
+        "i filmed 12 videos on one trip \u2014 a week of content in an afternoon.",
+        "joseph borroto",
+        "lower the stakes",
+        "most people overthink their content. i just get it out \u2014 and that's why mine grows.",
+        "one post isn't make-or-break. the hundredth one is what compounds.",
+        "posted beats perfect",
+        "the algorithm rewards the person who keeps showing up. be that person.",
+        "volume teaches you",
+        "you learn what works by posting, not by planning. the reps are the lesson."
       ]
     }
   ]
