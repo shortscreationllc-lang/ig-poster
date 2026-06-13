@@ -771,6 +771,20 @@
         "cap_style": 0
       },
       "hook": "Your hook is 90% of the post \u2014 the first line does almost all the work."
+    },
+    {
+      "at": "20260613T123911Z",
+      "id": "queue/reel-1781354237.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18068720060698059",
+      "tags": {
+        "fmt": "checklist",
+        "style": "dark",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to make short-form that actually books clients, not just views."
     }
   ],
   "story_hook_i": 1,
