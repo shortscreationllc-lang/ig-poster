@@ -856,6 +856,20 @@
         "pillar": "editing",
         "source_index": 15
       }
+    },
+    {
+      "at": "20260613T233506Z",
+      "id": "queue/reel-1781393601.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18029741567820637",
+      "tags": {
+        "fmt": "imessage",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How I always know what to post \u2014 your audience writes the list."
     }
   ],
   "story_hook_i": 1,
