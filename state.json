@@ -1107,17 +1107,17 @@
     "most people film the wrong thing.",
     "the object close-up beats the wide action shot."
   ],
-  "reel_i": 40,
-  "reel_cap_i": 51,
-  "reel_audio_i": 51,
+  "reel_i": 41,
+  "reel_cap_i": 52,
+  "reel_audio_i": 52,
   "reel_recent": [
-    "most short form content isn t bad it s forgettable make one ",
     "you don t need a better camera you need a better hook and a ",
     "stop posting more start hooking harder",
     "3 ways to stop the scroll on short form video",
     "your hook is 90 of the post the first line does almost all t",
     "how to make short form that actually books clients not just ",
-    "stop trying to sound like a content creator just be yourself"
+    "stop trying to sound like a content creator just be yourself",
+    "how i always know what to post your audience writes the list"
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -1142,19 +1142,19 @@
     "20260613": 2
   },
   "beat_recent": [
-    6,
     7,
     8,
     4,
-    3
+    3,
+    1
   ],
   "style_recent": [
-    "navyorange",
     "slate",
     "ember",
     "blackout",
     "creamorange",
     "dark",
-    "slate"
+    "slate",
+    "ember"
   ]
 }
