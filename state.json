@@ -924,6 +924,38 @@
         "pillar": "hook",
         "source_index": 17
       }
+    },
+    {
+      "at": "20260614T200650Z",
+      "id": "queue/reel-1781467563-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18165579784451413",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "comment",
+        "style": "dark",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How to make every video feel different \u2014 same idea, new angle every time."
+    },
+    {
+      "at": "20260614T200813Z",
+      "id": "queue/reel-1781467568-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18179514184361675",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "countdown",
+        "style": "navyorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "5 hooks that always work \u2014 steal these for your next videos."
     }
   ],
   "story_hook_i": 1,
@@ -1218,7 +1250,8 @@
     "20260610": 2,
     "20260611": 2,
     "20260612": 2,
-    "20260613": 2
+    "20260613": 2,
+    "20260614": 2
   },
   "beat_recent": [
     1,
