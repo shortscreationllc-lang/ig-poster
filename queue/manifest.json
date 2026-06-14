@@ -872,6 +872,42 @@
       "post_id": "18078195896666558"
     },
     {
+      "id": "carousel-00075",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00075-0.jpg",
+        "queue/carousel-00075-1.jpg",
+        "queue/carousel-00075-2.jpg",
+        "queue/carousel-00075-3.jpg",
+        "queue/carousel-00075-4.jpg",
+        "queue/carousel-00075-5.jpg",
+        "queue/carousel-00075-6.jpg"
+      ],
+      "caption": "People blame the camera. It's almost never the camera.\n\nHere's the breakdown \ud83d\udc47\n\n1. Message over gear\n2. Hook before quality\n3. Lighting beats megapixels\n4. Sound over 4K\n5. Upgrade the idea first\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: gear doesn't make the content.",
+      "posted": true,
+      "source_index": 16,
+      "style": "slate",
+      "fp": [
+        "@josephborroto",
+        "a phone + a sharp idea beats a cinema camera + nothing to say.",
+        "buy the camera once the content is already working.",
+        "face a window. good light makes any camera look pro.",
+        "here's what actually matters \u2192",
+        "hook before quality",
+        "joseph borroto",
+        "lighting beats megapixels",
+        "message over gear",
+        "people forgive a soft image. they won't forgive bad audio.",
+        "sound matters more than 4k",
+        "they decide in 1 second \u2014 long before they notice your lens.",
+        "upgrade the idea first",
+        "you don't need a better camera. you need a better first sentence."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00062",
       "slot": "am",
       "type": "prompt",
@@ -1077,41 +1113,6 @@
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
-    },
-    {
-      "id": "carousel-00075",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00075-0.jpg",
-        "queue/carousel-00075-1.jpg",
-        "queue/carousel-00075-2.jpg",
-        "queue/carousel-00075-3.jpg",
-        "queue/carousel-00075-4.jpg",
-        "queue/carousel-00075-5.jpg",
-        "queue/carousel-00075-6.jpg"
-      ],
-      "caption": "People blame the camera. It's almost never the camera.\n\nHere's the breakdown \ud83d\udc47\n\n1. Message over gear\n2. Hook before quality\n3. Lighting beats megapixels\n4. Sound over 4K\n5. Upgrade the idea first\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: gear doesn't make the content.",
-      "posted": false,
-      "source_index": 16,
-      "style": "slate",
-      "fp": [
-        "@josephborroto",
-        "a phone + a sharp idea beats a cinema camera + nothing to say.",
-        "buy the camera once the content is already working.",
-        "face a window. good light makes any camera look pro.",
-        "here's what actually matters \u2192",
-        "hook before quality",
-        "joseph borroto",
-        "lighting beats megapixels",
-        "message over gear",
-        "people forgive a soft image. they won't forgive bad audio.",
-        "sound matters more than 4k",
-        "they decide in 1 second \u2014 long before they notice your lens.",
-        "upgrade the idea first",
-        "you don't need a better camera. you need a better first sentence."
       ]
     },
     {
@@ -1610,6 +1611,39 @@
         "joseph borroto",
         "stop chasing viral. chase clarity. one idea said so well it's impossible to scroll past.",
         "whats the actual secret to going viral?"
+      ]
+    },
+    {
+      "id": "carousel-00092",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00092-0.jpg",
+        "queue/carousel-00092-1.jpg",
+        "queue/carousel-00092-2.jpg",
+        "queue/carousel-00092-3.jpg",
+        "queue/carousel-00092-4.jpg",
+        "queue/carousel-00092-5.jpg",
+        "queue/carousel-00092-6.jpg"
+      ],
+      "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
+      "alt": "Carousel: 5 rules behind every video that lands.",
+      "posted": false,
+      "source_index": 7,
+      "style": "bone",
+      "fp": [
+        "1. 4k at 60fps",
+        "2. 1.5-second hook, written",
+        "3. switch location every line",
+        "4. one idea per video",
+        "5 rules behind every video that lands.",
+        "5. music quieter than feels right",
+        "memorized before you hit record. never improvised.",
+        "simple, repeatable, no fancy gear.",
+        "specific beats broad. one clear point gets saved and shared.",
+        "trim ruthlessly. the voice leads, the music supports.",
+        "two lines in one spot? move. movement reads as energy.",
+        "you don't need a cinema camera. you need the right settings."
       ]
     }
   ]
