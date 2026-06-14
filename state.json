@@ -1155,17 +1155,17 @@
     "remove every dead pause",
     "zoom only to land a line"
   ],
-  "reel_i": 42,
-  "reel_cap_i": 53,
-  "reel_audio_i": 53,
+  "reel_i": 43,
+  "reel_cap_i": 54,
+  "reel_audio_i": 54,
   "reel_recent": [
-    "stop posting more start hooking harder",
     "3 ways to stop the scroll on short form video",
     "your hook is 90 of the post the first line does almost all t",
     "how to make short form that actually books clients not just ",
     "stop trying to sound like a content creator just be yourself",
     "how i always know what to post your audience writes the list",
-    "most short form content isn t bad it s forgettable make one "
+    "most short form content isn t bad it s forgettable make one ",
+    "how i got comfortable on camera reps in front of real people"
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -1190,19 +1190,19 @@
     "20260613": 2
   },
   "beat_recent": [
-    8,
     4,
     3,
     1,
-    2
+    2,
+    3
   ],
   "style_recent": [
-    "ember",
     "blackout",
     "creamorange",
     "dark",
     "slate",
     "ember",
-    "blackout"
+    "blackout",
+    "midnight"
   ]
 }
