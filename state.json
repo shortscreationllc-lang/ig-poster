@@ -895,6 +895,20 @@
         "pillar": "editing",
         "source_index": 30
       }
+    },
+    {
+      "at": "20260614T160809Z",
+      "id": "queue/reel-1781453251.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18429242194125900",
+      "tags": {
+        "fmt": "imessage",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How I got comfortable on camera \u2014 reps in front of real people."
     }
   ],
   "story_hook_i": 1,
