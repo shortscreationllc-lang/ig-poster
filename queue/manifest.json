@@ -856,7 +856,7 @@
       ],
       "caption": "Edit any video in 6 steps. Save this.\n\nFollow @josephborroto for more.",
       "alt": "Edit any video in 6 steps",
-      "posted": false,
+      "posted": true,
       "source_index": 30,
       "style": "ember",
       "fp": [
@@ -867,7 +867,9 @@
         "one idea per cut",
         "remove every dead pause",
         "zoom only to land a line"
-      ]
+      ],
+      "posted_at": "20260614T145705Z",
+      "post_id": "18078195896666558"
     },
     {
       "id": "single-00062",
@@ -1590,6 +1592,24 @@
         "the algorithm rewards the person who keeps showing up. be that person.",
         "volume teaches you",
         "you learn what works by posting, not by planning. the reps are the lesson."
+      ]
+    },
+    {
+      "id": "single-00091",
+      "slot": "am",
+      "type": "comment",
+      "images": [
+        "queue/single-00091.jpg"
+      ],
+      "caption": "Stop chasing viral. Chase clarity.\n\nFollow @josephborroto for more on content.",
+      "alt": "Comment reply: stop chasing viral. chase clarity. one idea said so well it's impossible to scroll past.",
+      "posted": false,
+      "source_index": 44,
+      "style": "dark",
+      "fp": [
+        "joseph borroto",
+        "stop chasing viral. chase clarity. one idea said so well it's impossible to scroll past.",
+        "whats the actual secret to going viral?"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
-  "single_index": 44,
+  "single_index": 45,
   "carousel_index": 7,
-  "seq": 90,
+  "seq": 91,
   "daily": {
     "20260610": {
       "morning": true,
@@ -35,7 +35,7 @@
       "morning": true
     }
   },
-  "am_style_i": 44,
+  "am_style_i": 45,
   "pm_style_i": 46,
   "history": [
     {
@@ -881,6 +881,19 @@
         "cap_style": 0
       },
       "hook": "Most short-form content isn't bad \u2014 it's forgettable. Make one thing memorable."
+    },
+    {
+      "at": "20260614T145705Z",
+      "id": "single-00061",
+      "slot": "am",
+      "type": "cheatsheet",
+      "post_id": "18078195896666558",
+      "tags": {
+        "fmt": "cheatsheet",
+        "style": "ember",
+        "pillar": "editing",
+        "source_index": 30
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1060,13 +1073,6 @@
     }
   ],
   "recent_texts": [
-    "2. build a caption style",
-    "3. keep a music folder",
-    "4. template your export",
-    "5 ways to edit twice as fast.",
-    "5. stop polishing dead air",
-    "cut the slow parts instead of perfecting them.",
-    "make decisions as you watch. don't re-watch endlessly.",
     "save your font and look once. reuse it every time.",
     "set it once: format, size, settings. never rethink it.",
     "stop hunting. pull from tracks you've already cleared.",
@@ -1139,7 +1145,14 @@
     "consistent lighting makes cuts feel seamless.",
     "detail reads as intentional. distance reads as filler.",
     "most people film the wrong thing.",
-    "the object close-up beats the wide action shot."
+    "the object close-up beats the wide action shot.",
+    "add captions (most watch on mute)",
+    "cut the first 'umm' \u2014 start on the point",
+    "edit any video in 6 steps",
+    "end on the strongest sentence",
+    "one idea per cut",
+    "remove every dead pause",
+    "zoom only to land a line"
   ],
   "reel_i": 42,
   "reel_cap_i": 53,
