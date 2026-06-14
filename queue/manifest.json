@@ -908,6 +908,37 @@
       "skipped": true
     },
     {
+      "id": "carousel-00076",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00076-0.jpg",
+        "queue/carousel-00076-1.jpg",
+        "queue/carousel-00076-2.jpg",
+        "queue/carousel-00076-3.jpg",
+        "queue/carousel-00076-4.jpg",
+        "queue/carousel-00076-5.jpg"
+      ],
+      "caption": "People forgive average video. They scroll on bad audio instantly.\n\n1. Music too loud\n2. No mic\n3. Inconsistent levels\n4. Dead silence\n\nFix the sound and watch retention rise.\n\nFollow @josephborroto for the production basics nobody teaches.\n\n#audiomixing #videoediting #musictips #editingtips #shortformvideo #josephborroto",
+      "alt": "Carousel: 4 audio mistakes that ruin good video.",
+      "posted": true,
+      "source_index": 17,
+      "style": "light",
+      "fp": [
+        "1. music too loud",
+        "3. inconsistent levels",
+        "4 audio mistakes that ruin good video.",
+        "4. dead silence",
+        "a subtle bed of music under the voice keeps energy up.",
+        "if you notice the track, it's already drowning the voice.",
+        "people hear bad audio before they see good video.",
+        "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
+        "volume jumping between clips makes it feel amateur."
+      ],
+      "posted_at": "20260614T200212Z",
+      "post_id": "18123091120730738"
+    },
+    {
       "id": "single-00062",
       "slot": "am",
       "type": "prompt",
@@ -1113,35 +1144,6 @@
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
-    },
-    {
-      "id": "carousel-00076",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00076-0.jpg",
-        "queue/carousel-00076-1.jpg",
-        "queue/carousel-00076-2.jpg",
-        "queue/carousel-00076-3.jpg",
-        "queue/carousel-00076-4.jpg",
-        "queue/carousel-00076-5.jpg"
-      ],
-      "caption": "People forgive average video. They scroll on bad audio instantly.\n\n1. Music too loud\n2. No mic\n3. Inconsistent levels\n4. Dead silence\n\nFix the sound and watch retention rise.\n\nFollow @josephborroto for the production basics nobody teaches.\n\n#audiomixing #videoediting #musictips #editingtips #shortformvideo #josephborroto",
-      "alt": "Carousel: 4 audio mistakes that ruin good video.",
-      "posted": false,
-      "source_index": 17,
-      "style": "light",
-      "fp": [
-        "1. music too loud",
-        "3. inconsistent levels",
-        "4 audio mistakes that ruin good video.",
-        "4. dead silence",
-        "a subtle bed of music under the voice keeps energy up.",
-        "if you notice the track, it's already drowning the voice.",
-        "people hear bad audio before they see good video.",
-        "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
-        "volume jumping between clips makes it feel amateur."
       ]
     },
     {
@@ -1644,6 +1646,41 @@
         "trim ruthlessly. the voice leads, the music supports.",
         "two lines in one spot? move. movement reads as energy.",
         "you don't need a cinema camera. you need the right settings."
+      ]
+    },
+    {
+      "id": "carousel-00093",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00093-0.jpg",
+        "queue/carousel-00093-1.jpg",
+        "queue/carousel-00093-2.jpg",
+        "queue/carousel-00093-3.jpg",
+        "queue/carousel-00093-4.jpg",
+        "queue/carousel-00093-5.jpg",
+        "queue/carousel-00093-6.jpg"
+      ],
+      "caption": "Nobody owes you 3 seconds. Your first line has to earn them.\n\nHere's the breakdown \ud83d\udc47\n\n1. Lead with the result\n2. Call out one person\n3. Make a bold claim\n4. Cut the warm-up\n5. Test 3 hooks per idea\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: how to write hooks that stop the scroll.",
+      "posted": false,
+      "source_index": 8,
+      "style": "slate",
+      "fp": [
+        "@josephborroto",
+        "call out one person",
+        "cut the warm-up",
+        "here's how i write hooks \u2192",
+        "if you're a creator who\u2026\" \u2014 they can't scroll past themselves.",
+        "if your first line is weak, the rest of the video doesn't exist.",
+        "joseph borroto",
+        "lead with the result",
+        "make a bold claim",
+        "no 'hey guys, so today.' start on the point, not before it.",
+        "same video, three openings. post the one that stops you first.",
+        "say the thing most people are scared to say. boring is invisible.",
+        "show the payoff first. curiosity is what buys you the next 3 seconds.",
+        "test 3 hooks per idea"
       ]
     }
   ]

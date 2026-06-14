@@ -1,7 +1,7 @@
 {
   "single_index": 45,
-  "carousel_index": 8,
-  "seq": 92,
+  "carousel_index": 9,
+  "seq": 93,
   "daily": {
     "20260610": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 45,
-  "pm_style_i": 47,
+  "pm_style_i": 48,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -910,6 +910,19 @@
         "cap_style": 0
       },
       "hook": "How I got comfortable on camera \u2014 reps in front of real people."
+    },
+    {
+      "at": "20260614T200212Z",
+      "id": "carousel-00076",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18123091120730738",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "hook",
+        "source_index": 17
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1089,15 +1102,6 @@
     }
   ],
   "recent_texts": [
-    "save your font and look once. reuse it every time.",
-    "set it once: format, size, settings. never rethink it.",
-    "stop hunting. pull from tracks you've already cleared.",
-    "without the video looking rushed.",
-    "3 reel ideas for local business owners.",
-    "a before/after of the work you do",
-    "a day-in-the-life of running the business",
-    "save this for your next batch.",
-    "the #1 question customers always ask, answered",
     "5 hook formulas that work in any niche.",
     "[number] things i learned about [x].",
     "a curiosity gap. implies you have the inside answer.",
@@ -1168,7 +1172,16 @@
     "end on the strongest sentence",
     "one idea per cut",
     "remove every dead pause",
-    "zoom only to land a line"
+    "zoom only to land a line",
+    "1. music too loud",
+    "3. inconsistent levels",
+    "4 audio mistakes that ruin good video.",
+    "4. dead silence",
+    "a subtle bed of music under the voice keeps energy up.",
+    "if you notice the track, it's already drowning the voice.",
+    "people hear bad audio before they see good video.",
+    "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
+    "volume jumping between clips makes it feel amateur."
   ],
   "reel_i": 43,
   "reel_cap_i": 54,
