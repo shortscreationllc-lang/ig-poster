@@ -956,6 +956,20 @@
         "cap_style": 0
       },
       "hook": "5 hooks that always work \u2014 steal these for your next videos."
+    },
+    {
+      "at": "20260614T233838Z",
+      "id": "queue/reel-1781480237.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18050093747784113",
+      "tags": {
+        "fmt": "social",
+        "style": "dark",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "You don't need a better camera \u2014 you need a better first sentence."
     }
   ],
   "story_hook_i": 1,
