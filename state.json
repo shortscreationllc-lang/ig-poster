@@ -1,7 +1,7 @@
 {
   "single_index": 46,
-  "carousel_index": 10,
-  "seq": 95,
+  "carousel_index": 11,
+  "seq": 96,
   "daily": {
     "20260611": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 46,
-  "pm_style_i": 49,
+  "pm_style_i": 50,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1010,6 +1010,19 @@
         "cap_style": 0
       },
       "hook": "Reach is rented; trust is owned \u2014 build content that earns trust, not just views."
+    },
+    {
+      "at": "20260615T200713Z",
+      "id": "carousel-00078",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18571244875067345",
+      "tags": {
+        "fmt": "carousel",
+        "style": "creamorange",
+        "pillar": "editing",
+        "source_index": 19
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1198,18 +1211,6 @@
     }
   ],
   "recent_texts": [
-    "here's the truth about [x].",
-    "i tried / quit / lost...",
-    "if you're [x], stop doing [y].",
-    "most people don't know...",
-    "personal stakes. people stay to see what happened.",
-    "positions you as the one cutting through the noise.",
-    "promises a list. the brain wants to finish what it starts.",
-    "steal these for your next 5 videos.",
-    "here's the line that saves it.",
-    "retention always drops at second 4.",
-    "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction.",
-    "1. 4k at 60fps",
     "1.5 seconds, memorized. never improvise the first line.",
     "2. mic test and playback",
     "3. hook pre-written",
@@ -1277,7 +1278,19 @@
     "100k ghost followers",
     "10k engaged followers",
     "comment 1 or 2.",
-    "which would you rather have?"
+    "which would you rather have?",
+    "1. cut on the first pass",
+    "2. build a caption style",
+    "3. keep a music folder",
+    "4. template your export",
+    "5 ways to edit twice as fast.",
+    "5. stop polishing dead air",
+    "cut the slow parts instead of perfecting them.",
+    "make decisions as you watch. don't re-watch endlessly.",
+    "save your font and look once. reuse it every time.",
+    "set it once: format, size, settings. never rethink it.",
+    "stop hunting. pull from tracks you've already cleared.",
+    "without the video looking rushed."
   ],
   "reel_i": 46,
   "reel_cap_i": 59,
