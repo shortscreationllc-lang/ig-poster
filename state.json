@@ -1264,17 +1264,17 @@
     "comment 1 or 2.",
     "which would you rather have?"
   ],
-  "reel_i": 45,
-  "reel_cap_i": 58,
-  "reel_audio_i": 58,
+  "reel_i": 46,
+  "reel_cap_i": 59,
+  "reel_audio_i": 59,
   "reel_recent": [
-    "how to make short form that actually books clients not just ",
     "stop trying to sound like a content creator just be yourself",
     "how i always know what to post your audience writes the list",
     "most short form content isn t bad it s forgettable make one ",
     "how i got comfortable on camera reps in front of real people",
     "you don t need a better camera you need a better first sente",
-    "awkward on camera talk to one person not an audience"
+    "awkward on camera talk to one person not an audience",
+    "reach is rented trust is owned build content that earns trus"
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -1302,19 +1302,19 @@
     "20260614": 2
   },
   "beat_recent": [
-    3,
     9,
     0,
     6,
-    7
+    7,
+    8
   ],
   "style_recent": [
-    "dark",
     "slate",
     "ember",
     "blackout",
     "midnight",
     "dark",
-    "slate"
+    "slate",
+    "navyorange"
   ]
 }
