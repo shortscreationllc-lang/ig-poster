@@ -1024,6 +1024,38 @@
         "pillar": "editing",
         "source_index": 19
       }
+    },
+    {
+      "at": "20260615T213240Z",
+      "id": "queue/reel-1781559110-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18415921870180200",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "blackout",
+        "pillar": "editing",
+        "cap_style": 0
+      },
+      "hook": "Post less, edit harder \u2014 one tight short-form video beats five lazy ones."
+    },
+    {
+      "at": "20260615T213343Z",
+      "id": "queue/reel-1781559116-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17975746089053051",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "stat",
+        "style": "ember",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Most people quit posting at 90 days \u2014 right before the reach starts to compound."
     }
   ],
   "story_hook_i": 1,
@@ -1328,7 +1360,8 @@
     "20260611": 2,
     "20260612": 2,
     "20260613": 2,
-    "20260614": 2
+    "20260614": 2,
+    "20260615": 2
   },
   "beat_recent": [
     6,
