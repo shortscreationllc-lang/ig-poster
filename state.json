@@ -1,7 +1,7 @@
 {
-  "single_index": 45,
+  "single_index": 46,
   "carousel_index": 9,
-  "seq": 93,
+  "seq": 94,
   "daily": {
     "20260611": {
       "morning": true,
@@ -35,7 +35,7 @@
       "morning": true
     }
   },
-  "am_style_i": 45,
+  "am_style_i": 46,
   "pm_style_i": 48,
   "history": [
     {
@@ -981,6 +981,19 @@
         "cap_style": 0
       },
       "hook": "Awkward on camera? Talk to one person, not an audience."
+    },
+    {
+      "at": "20260615T163731Z",
+      "id": "single-00062",
+      "slot": "am",
+      "type": "prompt",
+      "post_id": "17950524174194372",
+      "tags": {
+        "fmt": "prompt",
+        "style": "slate",
+        "pillar": "general",
+        "source_index": 31
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1169,10 +1182,6 @@
     }
   ],
   "recent_texts": [
-    "5 hook formulas that work in any niche.",
-    "[number] things i learned about [x].",
-    "a curiosity gap. implies you have the inside answer.",
-    "calls out a specific person. they can't scroll past themselves.",
     "here's the truth about [x].",
     "i tried / quit / lost...",
     "if you're [x], stop doing [y].",
@@ -1248,7 +1257,11 @@
     "if you notice the track, it's already drowning the voice.",
     "people hear bad audio before they see good video.",
     "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
-    "volume jumping between clips makes it feel amateur."
+    "volume jumping between clips makes it feel amateur.",
+    "100k ghost followers",
+    "10k engaged followers",
+    "comment 1 or 2.",
+    "which would you rather have?"
   ],
   "reel_i": 45,
   "reel_cap_i": 58,

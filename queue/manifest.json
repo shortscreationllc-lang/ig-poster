@@ -947,7 +947,7 @@
       ],
       "caption": "10k engaged or 100k ghosts? Comment your pick.\n\nFollow @josephborroto for more.",
       "alt": "Which would you rather have?",
-      "posted": false,
+      "posted": true,
       "source_index": 31,
       "style": "slate",
       "fp": [
@@ -955,7 +955,9 @@
         "10k engaged followers",
         "comment 1 or 2.",
         "which would you rather have?"
-      ]
+      ],
+      "posted_at": "20260615T163731Z",
+      "post_id": "17950524174194372"
     },
     {
       "id": "single-00063",
@@ -1681,6 +1683,26 @@
         "say the thing most people are scared to say. boring is invisible.",
         "show the payoff first. curiosity is what buys you the next 3 seconds.",
         "test 3 hooks per idea"
+      ]
+    },
+    {
+      "id": "single-00094",
+      "slot": "am",
+      "type": "reddit",
+      "images": [
+        "queue/single-00094.jpg"
+      ],
+      "caption": "Stop pitching, start proving. Post the work and the results. The right client should land on your page and think 'this person gets it' before you ever DM them.\n\nFollow @josephborroto for more on content.",
+      "alt": "Reddit thread: How do I get my first client from content?",
+      "posted": false,
+      "source_index": 45,
+      "style": "dark",
+      "fp": [
+        "first_client_pls",
+        "how do i get my first client from content?",
+        "josephborroto",
+        "r/entrepreneur",
+        "stop pitching, start proving. post the work and the results. the right client should land on your page and think 'this person gets it' before you ever dm them."
       ]
     }
   ]
