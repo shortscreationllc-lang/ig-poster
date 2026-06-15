@@ -995,6 +995,20 @@
         "pillar": "general",
         "source_index": 31
       }
+    },
+    {
+      "at": "20260615T163819Z",
+      "id": "queue/reel-1781541453.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18056812100729434",
+      "tags": {
+        "fmt": "statement",
+        "style": "navyorange",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Reach is rented; trust is owned \u2014 build content that earns trust, not just views."
     }
   ],
   "story_hook_i": 1,
