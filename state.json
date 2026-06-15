@@ -1325,17 +1325,17 @@
     "stop hunting. pull from tracks you've already cleared.",
     "without the video looking rushed."
   ],
-  "reel_i": 46,
-  "reel_cap_i": 61,
-  "reel_audio_i": 61,
+  "reel_i": 47,
+  "reel_cap_i": 62,
+  "reel_audio_i": 62,
   "reel_recent": [
-    "stop trying to sound like a content creator just be yourself",
     "how i always know what to post your audience writes the list",
     "most short form content isn t bad it s forgettable make one ",
     "how i got comfortable on camera reps in front of real people",
     "you don t need a better camera you need a better first sente",
     "awkward on camera talk to one person not an audience",
-    "reach is rented trust is owned build content that earns trus"
+    "reach is rented trust is owned build content that earns trus",
+    "good content nobody sees is just a weak hook fix the first 3"
   ],
   "trial_recent": [
     "boring and consistent beats perfect and rare just keep showi",
@@ -1364,19 +1364,19 @@
     "20260615": 2
   },
   "beat_recent": [
-    6,
     7,
     8,
     4,
-    3
+    3,
+    1
   ],
   "style_recent": [
-    "slate",
     "ember",
     "blackout",
     "midnight",
     "dark",
     "slate",
-    "navyorange"
+    "navyorange",
+    "ember"
   ]
 }
