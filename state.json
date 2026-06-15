@@ -971,6 +971,20 @@
         "cap_style": 0
       },
       "hook": "You don't need a better camera \u2014 you need a better first sentence."
+    },
+    {
+      "at": "20260615T123813Z",
+      "id": "queue/reel-1781527045.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17933166528089605",
+      "tags": {
+        "fmt": "comment",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Awkward on camera? Talk to one person, not an audience."
     }
   ],
   "story_hook_i": 1,
