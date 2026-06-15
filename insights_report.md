@@ -19,15 +19,15 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 3.3s  ·  bot: 2.5s
-- avg reach — yours: 150.5  ·  bot: 103.0
+- avg reach — yours: 150.5  ·  bot: 103.2
 - avg saves — yours: 0.0  ·  bot: 0.0
 
 ## 📈 What the loop is learning (weights → what we make more of)
-_overall avg score: 2.774 · weights pull toward neutral until a tag has 3+ posts_
+_overall avg score: 2.773 · weights pull toward neutral until a tag has 3+ posts_
 
 ### By format
-- ▲ **typewriter** — weight 1.275  ·  2 post(s)  _(only 2, low confidence)_
-- ▲ **comment** — weight 1.216  ·  2 post(s)  _(only 2, low confidence)_
+- ▲ **typewriter** — weight 1.276  ·  2 post(s)  _(only 2, low confidence)_
+- ▲ **comment** — weight 1.215  ·  2 post(s)  _(only 2, low confidence)_
 - ▲ **imessage** — weight 1.211  ·  2 post(s)  _(only 2, low confidence)_
 - ▲ **countdown** — weight 1.102  ·  1 post(s)  _(only 1, low confidence)_
 - ▲ **carousel** — weight 1.077  ·  4 post(s)
@@ -48,12 +48,12 @@ _overall avg score: 2.774 · weights pull toward neutral until a tag has 3+ post
 - ▬ **algorithm** — weight 1.0  ·  2 post(s)  _(only 2, low confidence)_
 - ▼ **business** — weight 0.938  ·  3 post(s)
 - ▼ **mindset** — weight 0.81  ·  2 post(s)  _(only 2, low confidence)_
-- ▼ **editing** — weight 0.612  ·  4 post(s)
+- ▼ **editing** — weight 0.613  ·  4 post(s)
 
 ### By visual style
-- ▲ **midnight** — weight 1.258  ·  4 post(s)
+- ▲ **midnight** — weight 1.259  ·  4 post(s)
 - ▲ **light** — weight 1.179  ·  1 post(s)  _(only 1, low confidence)_
-- ▲ **ember** — weight 1.057  ·  3 post(s)
+- ▲ **ember** — weight 1.058  ·  3 post(s)
 - ▲ **dark** — weight 1.052  ·  6 post(s)
 - ▬ **blackout** — weight 1.009  ·  3 post(s)
 - ▬ **creamorange** — weight 0.985  ·  1 post(s)  _(only 1, low confidence)_
