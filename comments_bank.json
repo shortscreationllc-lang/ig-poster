@@ -660,6 +660,66 @@
       },
       "caption": "Daily if you can. not for the algorithm — for the reps. you get good by posting.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Comment reply: daily if you can. not for the algorithm — for the reps. you get good by posting."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "dev.films",
+        "initials": "DF",
+        "text": "biggest editing mistake?",
+        "likes": "801"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "cut the dead air, one idea per cut, captions on. that's 90% of it.",
+        "likes": "562"
+      },
+      "caption": "Cut the dead air, one idea per cut, captions on. that's 90% of it.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: cut the dead air, one idea per cut, captions on. that's 90% of it."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "midnight",
+      "comment": {
+        "author": "dev.media",
+        "initials": "DM",
+        "text": "is AI going to kill content?",
+        "likes": "2300k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "be more personal, not more polished. people will crave the real thing.",
+        "likes": "172"
+      },
+      "caption": "Be more personal, not more polished. people will crave the real thing.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: be more personal, not more polished. people will crave the real thing."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "mike.media",
+        "initials": "MM",
+        "text": "is posting every day really necessary?",
+        "likes": "3400k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "discipline, not motivation. videos aren't fun, you won't always see results. go anyway.",
+        "likes": "430"
+      },
+      "caption": "Discipline, not motivation. videos aren't fun, you won't always see results. go anyway.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: discipline, not motivation. videos aren't fun, you won't always see results. go anyway."
     }
   ]
 }

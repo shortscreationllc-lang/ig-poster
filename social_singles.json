@@ -270,6 +270,51 @@
       },
       "caption": "Your personality is the one thing nobody can copy.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Your personality is the one thing nobody can copy."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "ember",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Your 'perfect' post that never gets posted is worth zero.",
+        "cta": ""
+      },
+      "caption": "Your 'perfect' post that never gets posted is worth zero.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your 'perfect' post that never gets posted is worth zero."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "ember",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "You don't need a perfect video. You need a video with real value.",
+        "cta": ""
+      },
+      "caption": "You don't need a perfect video. You need a video with real value.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "You don't need a perfect video. You need a video with real value."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "midnight",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Feeling too cringe to post is selfish — someone needs what you know.",
+        "cta": ""
+      },
+      "caption": "Feeling too cringe to post is selfish — someone needs what you know.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Feeling too cringe to post is selfish — someone needs what you know."
     }
   ]
 }
