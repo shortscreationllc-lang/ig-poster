@@ -1231,17 +1231,17 @@
     "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
     "volume jumping between clips makes it feel amateur."
   ],
-  "reel_i": 44,
-  "reel_cap_i": 57,
-  "reel_audio_i": 57,
+  "reel_i": 45,
+  "reel_cap_i": 58,
+  "reel_audio_i": 58,
   "reel_recent": [
-    "your hook is 90 of the post the first line does almost all t",
     "how to make short form that actually books clients not just ",
     "stop trying to sound like a content creator just be yourself",
     "how i always know what to post your audience writes the list",
     "most short form content isn t bad it s forgettable make one ",
     "how i got comfortable on camera reps in front of real people",
-    "you don t need a better camera you need a better first sente"
+    "you don t need a better camera you need a better first sente",
+    "awkward on camera talk to one person not an audience"
   ],
   "trial_recent": [
     "consistency beats going viral once show up and the algorithm",
@@ -1269,19 +1269,19 @@
     "20260614": 2
   },
   "beat_recent": [
-    2,
     3,
     9,
     0,
-    6
+    6,
+    7
   ],
   "style_recent": [
-    "creamorange",
     "dark",
     "slate",
     "ember",
     "blackout",
     "midnight",
-    "dark"
+    "dark",
+    "slate"
   ]
 }
