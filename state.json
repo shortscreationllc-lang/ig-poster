@@ -1294,8 +1294,8 @@
     "without the video looking rushed."
   ],
   "reel_i": 46,
-  "reel_cap_i": 59,
-  "reel_audio_i": 59,
+  "reel_cap_i": 61,
+  "reel_audio_i": 61,
   "reel_recent": [
     "stop trying to sound like a content creator just be yourself",
     "how i always know what to post your audience writes the list",
@@ -1306,8 +1306,6 @@
     "reach is rented trust is owned build content that earns trus"
   ],
   "trial_recent": [
-    "consistency beats going viral once show up and the algorithm",
-    "4 editing moves that make any short form video tighter and m",
     "boring and consistent beats perfect and rare just keep showi",
     "nobody cares how your video was filmed only whether it s wor",
     "your best salesperson is a video that works while you sleep",
@@ -1319,7 +1317,9 @@
     "your first line is the only algorithm that matters",
     "most people overthink content i just get it out and that s w",
     "how to make every video feel different same idea new angle e",
-    "5 hooks that always work steal these for your next videos"
+    "5 hooks that always work steal these for your next videos",
+    "post less edit harder one tight short form video beats five ",
+    "most people quit posting at 90 days right before the reach s"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -1331,11 +1331,11 @@
     "20260614": 2
   },
   "beat_recent": [
-    9,
-    0,
     6,
     7,
-    8
+    8,
+    4,
+    3
   ],
   "style_recent": [
     "slate",
