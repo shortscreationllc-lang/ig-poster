@@ -1,7 +1,7 @@
 {
   "single_index": 47,
-  "carousel_index": 12,
-  "seq": 98,
+  "carousel_index": 13,
+  "seq": 99,
   "daily": {
     "20260612": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 47,
-  "pm_style_i": 51,
+  "pm_style_i": 52,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1110,6 +1110,19 @@
         "pillar": "editing",
         "source_index": 32
       }
+    },
+    {
+      "at": "20260616T203008Z",
+      "id": "carousel-00080",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18118449949840104",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "algorithm",
+        "source_index": 21
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1307,18 +1320,6 @@
     }
   ],
   "recent_texts": [
-    "4. scout your spots",
-    "5. batteries and storage",
-    "6. backup device",
-    "7 things to check before every shoot.",
-    "7. frame for the title",
-    "leave headroom so the overlay never covers your face.",
-    "number 4 is the one everyone skips.",
-    "one failure shouldn't cancel the whole shoot.",
-    "record 5 seconds and listen back. don't trust the meter alone.",
-    "switch location every line. this is the one people skip.",
-    "the only camera setting that really matters. set it once.",
-    "two of everything. a dead battery ends the day.",
     "that's the whole game.",
     "video helps buyers trust a business before they ever decide.",
     "@josephborroto",
@@ -1386,7 +1387,19 @@
     "without the video looking rushed.",
     "here's the line that saves it.",
     "retention always drops at second 4.",
-    "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction."
+    "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction.",
+    "1. weak first second",
+    "2. too many ideas",
+    "3. no reason to finish",
+    "4. inconsistent posting",
+    "5 reasons your videos aren't growing.",
+    "5. no clear next step",
+    "a slow open kills the video before the hook lands.",
+    "give one simple action: follow for more.",
+    "if there's no payoff coming, people leave early.",
+    "it's rarely the algorithm.",
+    "one video, one point. cramming means nothing sticks.",
+    "the algorithm rewards reliability. show up daily."
   ],
   "reel_i": 49,
   "reel_cap_i": 64,
