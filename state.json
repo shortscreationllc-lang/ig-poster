@@ -1124,6 +1124,38 @@
         "pillar": "algorithm",
         "source_index": 21
       }
+    },
+    {
+      "at": "20260616T212703Z",
+      "id": "queue/reel-1781645172-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17930552493312598",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "slate",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Your hook is 90% of the post \u2014 the first line does almost all the work."
+    },
+    {
+      "at": "20260616T212812Z",
+      "id": "queue/reel-1781645179-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18074528960663673",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "midnight",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "I treat the camera like a client, not a camera \u2014 that one shift changed all my content."
     }
   ],
   "story_hook_i": 1,
@@ -1438,7 +1470,8 @@
     "20260612": 2,
     "20260613": 2,
     "20260614": 2,
-    "20260615": 2
+    "20260615": 2,
+    "20260616": 2
   },
   "beat_recent": [
     1,
