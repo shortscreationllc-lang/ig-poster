@@ -1403,8 +1403,8 @@
     "the algorithm rewards reliability. show up daily."
   ],
   "reel_i": 49,
-  "reel_cap_i": 64,
-  "reel_audio_i": 64,
+  "reel_cap_i": 66,
+  "reel_audio_i": 66,
   "reel_recent": [
     "how i got comfortable on camera reps in front of real people",
     "you don t need a better camera you need a better first sente",
@@ -1415,8 +1415,6 @@
     "how i always know what to post your audience writes the list"
   ],
   "trial_recent": [
-    "boring and consistent beats perfect and rare just keep showi",
-    "nobody cares how your video was filmed only whether it s wor",
     "your best salesperson is a video that works while you sleep",
     "cut every silence in your video dead air is where people swi",
     "content is a system not a mood build the system and it runs ",
@@ -1428,7 +1426,9 @@
     "how to make every video feel different same idea new angle e",
     "5 hooks that always work steal these for your next videos",
     "post less edit harder one tight short form video beats five ",
-    "most people quit posting at 90 days right before the reach s"
+    "most people quit posting at 90 days right before the reach s",
+    "your hook is 90 of the post the first line does almost all t",
+    "i treat the camera like a client not a camera that one shift"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -1441,11 +1441,11 @@
     "20260615": 2
   },
   "beat_recent": [
-    4,
-    3,
     1,
     2,
-    3
+    3,
+    7,
+    0
   ],
   "style_recent": [
     "midnight",
