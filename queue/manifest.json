@@ -1039,14 +1039,16 @@
       ],
       "caption": "Pull up any retention curve. It dips at second 4.\n\nThat's the \"why am I still watching this\" moment. If nothing specific lands right there, they're gone.\n\nThe fix: a number, a name, or a contradiction at second 4. Specificity buys you the next 10 seconds.\n\nFollow @josephborroto and test it on your next 5 videos.\n\n#retention #shortformvideo #contentstrategy #reelstips #videoediting #josephborroto",
       "alt": "Card: retention always drops at second 4, here's the line that saves it.",
-      "posted": false,
+      "posted": true,
       "source_index": 32,
       "style": "dark",
       "fp": [
         "here's the line that saves it.",
         "retention always drops at second 4.",
         "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction."
-      ]
+      ],
+      "posted_at": "20260616T173554Z",
+      "post_id": "18132179719595760"
     },
     {
       "id": "single-00064",
@@ -1770,6 +1772,28 @@
         "most people watch on mute. no captions = no message.",
         "one idea per cut",
         "stop over-editing. the cut should disappear, not show off."
+      ]
+    },
+    {
+      "id": "single-00097",
+      "slot": "am",
+      "type": "cheatsheet",
+      "images": [
+        "queue/single-00097.jpg"
+      ],
+      "caption": "How I write a hook that stops the scroll. Save this for your next video.\n\nFollow @josephborroto for more on content.",
+      "alt": "Cheat-sheet: how to write a hook that stops the scroll",
+      "posted": false,
+      "source_index": 46,
+      "style": "midnight",
+      "fp": [
+        "how i write a hook that stops the scroll",
+        "if the first line is weak, the rest of the video doesn't exist",
+        "lead with the point or the result \u2014 skip the setup",
+        "make a promise the video actually keeps",
+        "never open with your name or \"hey guys\" \u2014 they're already gone",
+        "put text on screen that makes the brain stop and think differently",
+        "say something or show something in the first second"
       ]
     }
   ]

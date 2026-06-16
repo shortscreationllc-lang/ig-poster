@@ -1,7 +1,7 @@
 {
-  "single_index": 46,
+  "single_index": 47,
   "carousel_index": 11,
-  "seq": 96,
+  "seq": 97,
   "daily": {
     "20260612": {
       "morning": true,
@@ -36,7 +36,7 @@
       "midday": true
     }
   },
-  "am_style_i": 46,
+  "am_style_i": 47,
   "pm_style_i": 50,
   "history": [
     {
@@ -1096,6 +1096,19 @@
         "cap_style": 0
       },
       "hook": "How I always know what to post \u2014 your audience writes the list."
+    },
+    {
+      "at": "20260616T173554Z",
+      "id": "single-00063",
+      "slot": "am",
+      "type": "single",
+      "post_id": "18132179719595760",
+      "tags": {
+        "fmt": "single",
+        "style": "dark",
+        "pillar": "editing",
+        "source_index": 32
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1293,9 +1306,6 @@
     }
   ],
   "recent_texts": [
-    "1.5 seconds, memorized. never improvise the first line.",
-    "2. mic test and playback",
-    "3. hook pre-written",
     "4. scout your spots",
     "5. batteries and storage",
     "6. backup device",
@@ -1372,7 +1382,10 @@
     "save your font and look once. reuse it every time.",
     "set it once: format, size, settings. never rethink it.",
     "stop hunting. pull from tracks you've already cleared.",
-    "without the video looking rushed."
+    "without the video looking rushed.",
+    "here's the line that saves it.",
+    "retention always drops at second 4.",
+    "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction."
   ],
   "reel_i": 49,
   "reel_cap_i": 64,
