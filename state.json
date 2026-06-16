@@ -1156,6 +1156,20 @@
         "cap_style": 0
       },
       "hook": "I treat the camera like a client, not a camera \u2014 that one shift changed all my content."
+    },
+    {
+      "at": "20260616T230917Z",
+      "id": "queue/reel-1781651265.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17977706109044634",
+      "tags": {
+        "fmt": "quote",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Nobody cares how your video was filmed \u2014 only whether it's worth watching."
     }
   ],
   "story_hook_i": 1,
