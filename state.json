@@ -1171,6 +1171,20 @@
         "cap_style": 0
       },
       "hook": "Nobody cares how your video was filmed \u2014 only whether it's worth watching."
+    },
+    {
+      "at": "20260617T123813Z",
+      "id": "queue/reel-1781699848.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17971567917066529",
+      "tags": {
+        "fmt": "imessage",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How I got comfortable on camera \u2014 reps in front of real people."
     }
   ],
   "story_hook_i": 1,
