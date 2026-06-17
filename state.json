@@ -1449,17 +1449,17 @@
     "one video, one point. cramming means nothing sticks.",
     "the algorithm rewards reliability. show up daily."
   ],
-  "reel_i": 50,
-  "reel_cap_i": 67,
-  "reel_audio_i": 67,
+  "reel_i": 51,
+  "reel_cap_i": 68,
+  "reel_audio_i": 68,
   "reel_recent": [
-    "you don t need a better camera you need a better first sente",
     "awkward on camera talk to one person not an audience",
     "reach is rented trust is owned build content that earns trus",
     "good content nobody sees is just a weak hook fix the first 3",
     "stop trying to sound like a content creator just be yourself",
     "how i always know what to post your audience writes the list",
-    "nobody cares how your video was filmed only whether it s wor"
+    "nobody cares how your video was filmed only whether it s wor",
+    "how i got comfortable on camera reps in front of real people"
   ],
   "trial_recent": [
     "your best salesperson is a video that works while you sleep",
@@ -1489,19 +1489,19 @@
     "20260616": 2
   },
   "beat_recent": [
-    2,
     3,
     7,
     0,
-    6
+    6,
+    7
   ],
   "style_recent": [
-    "dark",
     "slate",
     "navyorange",
     "ember",
     "midnight",
     "dark",
-    "slate"
+    "slate",
+    "midnight"
   ]
 }
