@@ -1162,6 +1162,42 @@
       "post_id": "17889815985553914"
     },
     {
+      "id": "carousel-00081",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00081-0.jpg",
+        "queue/carousel-00081-1.jpg",
+        "queue/carousel-00081-2.jpg",
+        "queue/carousel-00081-3.jpg",
+        "queue/carousel-00081-4.jpg",
+        "queue/carousel-00081-5.jpg",
+        "queue/carousel-00081-6.jpg"
+      ],
+      "caption": "Your first 100 videos aren't the work. They're the warm-up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Reps build the skill\n2. Cringe is the toll\n3. Nobody's watching yet\n4. Track what lands\n5. Stay in the game\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: post through your first 100.",
+      "posted": true,
+      "source_index": 22,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "cringe is the toll",
+        "everyone's early stuff is rough. pay it now, not later.",
+        "here's the mindset \u2192",
+        "joseph borroto",
+        "let the data, not your ego, tell you what's working.",
+        "most quit before the reps compound. don't be most people.",
+        "nobody's watching yet",
+        "reps build the skill",
+        "stay in the game",
+        "the small audience early is a gift \u2014 practice with the lights low.",
+        "track what lands",
+        "you can't think your way to good. you film your way there.",
+        "your first 100 videos are practice. post them anyway."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00066",
       "slot": "am",
       "type": "social",
@@ -1293,41 +1329,6 @@
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
-    },
-    {
-      "id": "carousel-00081",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00081-0.jpg",
-        "queue/carousel-00081-1.jpg",
-        "queue/carousel-00081-2.jpg",
-        "queue/carousel-00081-3.jpg",
-        "queue/carousel-00081-4.jpg",
-        "queue/carousel-00081-5.jpg",
-        "queue/carousel-00081-6.jpg"
-      ],
-      "caption": "Your first 100 videos aren't the work. They're the warm-up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Reps build the skill\n2. Cringe is the toll\n3. Nobody's watching yet\n4. Track what lands\n5. Stay in the game\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: post through your first 100.",
-      "posted": false,
-      "source_index": 22,
-      "style": "dark",
-      "fp": [
-        "@josephborroto",
-        "cringe is the toll",
-        "everyone's early stuff is rough. pay it now, not later.",
-        "here's the mindset \u2192",
-        "joseph borroto",
-        "let the data, not your ego, tell you what's working.",
-        "most quit before the reps compound. don't be most people.",
-        "nobody's watching yet",
-        "reps build the skill",
-        "stay in the game",
-        "the small audience early is a gift \u2014 practice with the lights low.",
-        "track what lands",
-        "you can't think your way to good. you film your way there.",
-        "your first 100 videos are practice. post them anyway."
       ]
     },
     {
@@ -1903,6 +1904,39 @@
         "verbs show the action. nouns show the detail, close and isolated. detail wins.",
         "you're filming verbs, not nouns.",
         "your b-roll is boring."
+      ]
+    },
+    {
+      "id": "carousel-00102",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00102-0.jpg",
+        "queue/carousel-00102-1.jpg",
+        "queue/carousel-00102-2.jpg",
+        "queue/carousel-00102-3.jpg",
+        "queue/carousel-00102-4.jpg",
+        "queue/carousel-00102-5.jpg",
+        "queue/carousel-00102-6.jpg"
+      ],
+      "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
+      "alt": "Carousel: 5 algorithm myths to stop believing.",
+      "posted": false,
+      "source_index": 13,
+      "style": "bone",
+      "fp": [
+        "1. \"hashtags are dead",
+        "2. \"post at the perfect time",
+        "3. \"you need to go viral",
+        "4. \"more posting always wins",
+        "5 algorithm myths to stop believing.",
+        "5. \"the algorithm hates links",
+        "consistent reach beats one spike that fades in a week.",
+        "good content travels for days. timing is a rounding error.",
+        "it rewards watch time. make something worth finishing.",
+        "quality and retention beat raw volume every time.",
+        "these are costing you reach.",
+        "they still help categorize. they're just not the whole game."
       ]
     }
   ]
