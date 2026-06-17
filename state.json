@@ -1224,6 +1224,38 @@
         "pillar": "hook",
         "source_index": 0
       }
+    },
+    {
+      "at": "20260617T203607Z",
+      "id": "queue/reel-1781728492-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18096007280223527",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "imessage",
+        "style": "dark",
+        "pillar": "proof",
+        "cap_style": 0
+      },
+      "hook": "A DM I got after someone ran my content advice for 30 days."
+    },
+    {
+      "at": "20260617T203802Z",
+      "id": "queue/reel-1781728500-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18106699159966933",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "sequence",
+        "style": "blackout",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "3 videos every business owner should be posting to get clients."
     }
   ],
   "story_hook_i": 1,
@@ -1548,7 +1580,8 @@
     "20260613": 2,
     "20260614": 2,
     "20260615": 2,
-    "20260616": 2
+    "20260616": 2,
+    "20260617": 2
   },
   "beat_recent": [
     6,
