@@ -6,11 +6,11 @@
 - 🧪 20260616 | reel | reach 104 | views 130 | 3.8s watch | saves 1 shares 0 | eng 2.9% | score 9.598 | https://www.instagram.com/reel/DZqW5pVDnxl/
 - 🤖 20260616 | carousel | reach 27 | views - | — | saves 0 shares 0 | eng 7.4% | score 7.407 | https://www.instagram.com/p/DZqQSIViWoJ/
 - 🤖 20260616 | reel | reach 125 | views 169 | 4.5s watch | saves 0 shares 0 | eng 1.6% | score 6.059 | https://www.instagram.com/reel/DZp1xTmFfwY/
-- 🤖 20260617 | reel | reach 95 | views 133 | 5.5s watch | saves 0 shares 0 | eng 0.0% | score 5.524 | https://www.instagram.com/reel/DZr_CN6j2bn/
+- 🤖 20260617 | reel | reach 95 | views 136 | 5.5s watch | saves 0 shares 0 | eng 0.0% | score 5.524 | https://www.instagram.com/reel/DZr_CN6j2bn/
 - 🤖 20260613 | reel | reach 164 | views 246 | 5.3s watch | saves 0 shares 0 | eng 0.0% | score 5.331 | https://www.instagram.com/reel/DZi3BjVlQvP/
 - 🤖 20260615 | reel | reach 135 | views 206 | 5.3s watch | saves 0 shares 0 | eng 0.0% | score 5.27 | https://www.instagram.com/reel/DZn8wQAD9Dh/
 - 🧪 20260614 | reel | reach 102 | views 126 | 3.3s watch | saves 0 shares 0 | eng 2.0% | score 5.219 | https://www.instagram.com/reel/DZlD_muiVuY/
-- 🤖 20260616 | reel | reach 85 | views 117 | 2.7s watch | saves 0 shares 0 | eng 2.4% | score 5.022 | https://www.instagram.com/reel/DZqidTlD5hj/
+- 🤖 20260616 | reel | reach 85 | views 119 | 2.7s watch | saves 0 shares 0 | eng 2.4% | score 5.022 | https://www.instagram.com/reel/DZqidTlD5hj/
 
 ## 🧊 Weakest (rework or retire these)
 - 🤖 20260615 | prompt | reach 61 | views - | — | saves 0 shares 0 | eng 0.0% | score 0.0 | https://www.instagram.com/p/DZnQ4O2FjUf/
