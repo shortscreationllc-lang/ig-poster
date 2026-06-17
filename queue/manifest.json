@@ -1148,7 +1148,7 @@
       ],
       "caption": "Three Reel ideas for coaches and creators who feel out of ideas:\n\n1. Bust a myth your audience believes\n2. Share the mistake you made when you started\n3. Answer a real DM question on camera\n\nValue first, polish second.\n\nFollow @josephborroto for content ideas every week.\n\n#contentideas #coaches #creators #reelstips #shortformvideo #josephborroto",
       "alt": "Value card with 3 Reel ideas for coaches and creators.",
-      "posted": false,
+      "posted": true,
       "source_index": 34,
       "style": "blackout",
       "fp": [
@@ -1157,7 +1157,9 @@
         "bust a common myth in your niche",
         "save this for your next batch.",
         "share the mistake you made starting out"
-      ]
+      ],
+      "posted_at": "20260617T162608Z",
+      "post_id": "17889815985553914"
     },
     {
       "id": "single-00066",
@@ -1883,6 +1885,24 @@
       "fp": [
         "be honest \u2014 comment yours.",
         "i'd grow way faster if i just stopped ________."
+      ]
+    },
+    {
+      "id": "single-00101",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00101.jpg"
+      ],
+      "caption": "Your B-roll is boring because you film the action instead of the thing.\n\nVerbs: someone doing the task, wide and busy.\nNouns: the object itself, close-up, isolated, lit.\n\nB-roll wins on detail, not motion. Get tight on the noun.\n\nFollow @josephborroto for the small stuff that makes content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
+      "alt": "Card: your B-roll is boring, you're filming verbs not nouns.",
+      "posted": false,
+      "source_index": 48,
+      "style": "dark",
+      "fp": [
+        "verbs show the action. nouns show the detail, close and isolated. detail wins.",
+        "you're filming verbs, not nouns.",
+        "your b-roll is boring."
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
-  "single_index": 48,
+  "single_index": 49,
   "carousel_index": 13,
-  "seq": 100,
+  "seq": 101,
   "daily": {
     "20260613": {
       "morning": true,
@@ -35,7 +35,7 @@
       "morning": true
     }
   },
-  "am_style_i": 48,
+  "am_style_i": 49,
   "pm_style_i": 52,
   "history": [
     {
@@ -1181,6 +1181,19 @@
         "cap_style": 0
       },
       "hook": "How I got comfortable on camera \u2014 reps in front of real people."
+    },
+    {
+      "at": "20260617T162608Z",
+      "id": "single-00065",
+      "slot": "am",
+      "type": "value",
+      "post_id": "17889815985553914",
+      "tags": {
+        "fmt": "value",
+        "style": "blackout",
+        "pillar": "algorithm",
+        "source_index": 34
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1387,11 +1400,6 @@
     }
   ],
   "recent_texts": [
-    "that's the whole game.",
-    "video helps buyers trust a business before they ever decide.",
-    "@josephborroto",
-    "a small, clear audience refers you. a broad, blurry one forgets you.",
-    "be the person known for one thing before you branch out.",
     "here's how i niche down \u2192",
     "if your content is for everyone, it's for no one.",
     "joseph borroto",
@@ -1466,7 +1474,12 @@
     "if there's no payoff coming, people leave early.",
     "it's rarely the algorithm.",
     "one video, one point. cramming means nothing sticks.",
-    "the algorithm rewards reliability. show up daily."
+    "the algorithm rewards reliability. show up daily.",
+    "3 reel ideas for coaches & creators.",
+    "answer a dm question on camera",
+    "bust a common myth in your niche",
+    "save this for your next batch.",
+    "share the mistake you made starting out"
   ],
   "reel_i": 51,
   "reel_cap_i": 68,
