@@ -1195,6 +1195,20 @@
         "pillar": "algorithm",
         "source_index": 34
       }
+    },
+    {
+      "at": "20260617T162730Z",
+      "id": "queue/reel-1781713571.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18024711212665224",
+      "tags": {
+        "fmt": "social",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "You don't need a better camera \u2014 you need a better first sentence."
     }
   ],
   "story_hook_i": 1,
