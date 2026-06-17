@@ -1482,17 +1482,17 @@
     "save this for your next batch.",
     "share the mistake you made starting out"
   ],
-  "reel_i": 51,
-  "reel_cap_i": 68,
-  "reel_audio_i": 68,
+  "reel_i": 52,
+  "reel_cap_i": 69,
+  "reel_audio_i": 69,
   "reel_recent": [
-    "awkward on camera talk to one person not an audience",
     "reach is rented trust is owned build content that earns trus",
     "good content nobody sees is just a weak hook fix the first 3",
     "stop trying to sound like a content creator just be yourself",
     "how i always know what to post your audience writes the list",
     "nobody cares how your video was filmed only whether it s wor",
-    "how i got comfortable on camera reps in front of real people"
+    "how i got comfortable on camera reps in front of real people",
+    "you don t need a better camera you need a better first sente"
   ],
   "trial_recent": [
     "your best salesperson is a video that works while you sleep",
@@ -1522,19 +1522,19 @@
     "20260616": 2
   },
   "beat_recent": [
-    3,
     7,
     0,
     6,
-    7
+    7,
+    8
   ],
   "style_recent": [
-    "slate",
     "navyorange",
     "ember",
     "midnight",
     "dark",
     "slate",
-    "midnight"
+    "midnight",
+    "ember"
   ]
 }
