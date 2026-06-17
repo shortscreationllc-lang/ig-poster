@@ -1130,13 +1130,14 @@
       ],
       "caption": "Video helps buyers trust the business before they make a decision.\n\nBy the time someone reaches out, they've already watched you, heard how you think, and decided they like you. The content did the selling quietly.\n\nThat's why consistency beats everything.\n\nFollow @josephborroto for more on content that actually converts.\n\n#videomarketing #contentstrategy #trust #shortformvideo #smallbusiness #josephborroto",
       "alt": "Quote card: video helps buyers trust a business before they ever decide.",
-      "posted": false,
+      "posted": true,
       "source_index": 33,
       "style": "midnight",
       "fp": [
         "that's the whole game.",
         "video helps buyers trust a business before they ever decide."
-      ]
+      ],
+      "skipped": true
     },
     {
       "id": "single-00065",
@@ -1865,6 +1866,23 @@
         "shoot a week in one sitting. future you just posts.",
         "show up on the bad days",
         "the post you don't feel like making is usually the one that hits."
+      ]
+    },
+    {
+      "id": "single-00100",
+      "slot": "am",
+      "type": "prompt",
+      "images": [
+        "queue/single-00100.jpg"
+      ],
+      "caption": "Fill in the blank: I'd grow faster if I stopped ____.\n\nFollow @josephborroto for more.",
+      "alt": "I'd grow way faster if I just stopped ________.",
+      "posted": false,
+      "source_index": 47,
+      "style": "midnight",
+      "fp": [
+        "be honest \u2014 comment yours.",
+        "i'd grow way faster if i just stopped ________."
       ]
     }
   ]
