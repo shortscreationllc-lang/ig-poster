@@ -1,7 +1,7 @@
 {
   "single_index": 49,
-  "carousel_index": 14,
-  "seq": 102,
+  "carousel_index": 15,
+  "seq": 103,
   "daily": {
     "20260613": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 49,
-  "pm_style_i": 53,
+  "pm_style_i": 54,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1210,6 +1210,19 @@
         "cap_style": 0
       },
       "hook": "You don't need a better camera \u2014 you need a better first sentence."
+    },
+    {
+      "at": "20260617T203400Z",
+      "id": "carousel-00082",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18182680198399162",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "hook",
+        "source_index": 0
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1416,18 +1429,6 @@
     }
   ],
   "recent_texts": [
-    "here's how i niche down \u2192",
-    "if your content is for everyone, it's for no one.",
-    "joseph borroto",
-    "make content for a specific human, not a vague audience.",
-    "niche down to grow up",
-    "own one topic",
-    "pick one person",
-    "repeat your core idea",
-    "speak their language",
-    "use the exact words your person uses. it feels made for them.",
-    "you'll get bored before they do. drill the same message new ways.",
-    "do you have to show your face to grow?",
     "faceless_creator",
     "it helps because people follow people. but a strong voice + a clear point can carry it. start with whatever you'll actually do consistently.",
     "josephborroto",
@@ -1495,7 +1496,19 @@
     "answer a dm question on camera",
     "bust a common myth in your niche",
     "save this for your next batch.",
-    "share the mistake you made starting out"
+    "share the mistake you made starting out",
+    "5 hook formulas that work in any niche.",
+    "[number] things i learned about [x].",
+    "a curiosity gap. implies you have the inside answer.",
+    "calls out a specific person. they can't scroll past themselves.",
+    "here's the truth about [x].",
+    "i tried / quit / lost...",
+    "if you're [x], stop doing [y].",
+    "most people don't know...",
+    "personal stakes. people stay to see what happened.",
+    "positions you as the one cutting through the noise.",
+    "promises a list. the brain wants to finish what it starts.",
+    "steal these for your next 5 videos."
   ],
   "reel_i": 52,
   "reel_cap_i": 69,

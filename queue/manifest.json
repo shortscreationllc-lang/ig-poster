@@ -1198,6 +1198,41 @@
       "skipped": true
     },
     {
+      "id": "carousel-00082",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00082-0.jpg",
+        "queue/carousel-00082-1.jpg",
+        "queue/carousel-00082-2.jpg",
+        "queue/carousel-00082-3.jpg",
+        "queue/carousel-00082-4.jpg",
+        "queue/carousel-00082-5.jpg",
+        "queue/carousel-00082-6.jpg"
+      ],
+      "caption": "5 hook formulas that work in any niche:\n\n1. \"I tried / quit / lost...\"\n2. \"Most people don't know...\"\n3. \"If you're [X], stop doing [Y].\"\n4. \"Here's the truth about [X].\"\n5. \"[Number] things I learned about [X].\"\n\nSave it for your next batch of scripts.\n\nFollow @josephborroto for a breakdown like this every few days.\n\n#hookwriting #shortformvideo #contentcreator #copywriting #reelstips #josephborroto",
+      "alt": "Carousel: 5 hook formulas that work in any niche.",
+      "posted": true,
+      "source_index": 0,
+      "style": "light",
+      "fp": [
+        "5 hook formulas that work in any niche.",
+        "[number] things i learned about [x].",
+        "a curiosity gap. implies you have the inside answer.",
+        "calls out a specific person. they can't scroll past themselves.",
+        "here's the truth about [x].",
+        "i tried / quit / lost...",
+        "if you're [x], stop doing [y].",
+        "most people don't know...",
+        "personal stakes. people stay to see what happened.",
+        "positions you as the one cutting through the noise.",
+        "promises a list. the brain wants to finish what it starts.",
+        "steal these for your next 5 videos."
+      ],
+      "posted_at": "20260617T203400Z",
+      "post_id": "18182680198399162"
+    },
+    {
       "id": "single-00066",
       "slot": "am",
       "type": "social",
@@ -1329,39 +1364,6 @@
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
-    },
-    {
-      "id": "carousel-00082",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00082-0.jpg",
-        "queue/carousel-00082-1.jpg",
-        "queue/carousel-00082-2.jpg",
-        "queue/carousel-00082-3.jpg",
-        "queue/carousel-00082-4.jpg",
-        "queue/carousel-00082-5.jpg",
-        "queue/carousel-00082-6.jpg"
-      ],
-      "caption": "5 hook formulas that work in any niche:\n\n1. \"I tried / quit / lost...\"\n2. \"Most people don't know...\"\n3. \"If you're [X], stop doing [Y].\"\n4. \"Here's the truth about [X].\"\n5. \"[Number] things I learned about [X].\"\n\nSave it for your next batch of scripts.\n\nFollow @josephborroto for a breakdown like this every few days.\n\n#hookwriting #shortformvideo #contentcreator #copywriting #reelstips #josephborroto",
-      "alt": "Carousel: 5 hook formulas that work in any niche.",
-      "posted": false,
-      "source_index": 0,
-      "style": "light",
-      "fp": [
-        "5 hook formulas that work in any niche.",
-        "[number] things i learned about [x].",
-        "a curiosity gap. implies you have the inside answer.",
-        "calls out a specific person. they can't scroll past themselves.",
-        "here's the truth about [x].",
-        "i tried / quit / lost...",
-        "if you're [x], stop doing [y].",
-        "most people don't know...",
-        "personal stakes. people stay to see what happened.",
-        "positions you as the one cutting through the noise.",
-        "promises a list. the brain wants to finish what it starts.",
-        "steal these for your next 5 videos."
       ]
     },
     {
@@ -1937,6 +1939,41 @@
         "quality and retention beat raw volume every time.",
         "these are costing you reach.",
         "they still help categorize. they're just not the whole game."
+      ]
+    },
+    {
+      "id": "carousel-00103",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00103-0.jpg",
+        "queue/carousel-00103-1.jpg",
+        "queue/carousel-00103-2.jpg",
+        "queue/carousel-00103-3.jpg",
+        "queue/carousel-00103-4.jpg",
+        "queue/carousel-00103-5.jpg",
+        "queue/carousel-00103-6.jpg"
+      ],
+      "caption": "Trying to reach everyone is the fastest way to reach no one.\n\nHere's the breakdown \ud83d\udc47\n\n1. Pick one person\n2. Own one topic\n3. Speak their language\n4. Repeat your core idea\n5. Niche down to grow up\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: niche down to grow.",
+      "posted": false,
+      "source_index": 14,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "a small, clear audience refers you. a broad, blurry one forgets you.",
+        "be the person known for one thing before you branch out.",
+        "here's how i niche down \u2192",
+        "if your content is for everyone, it's for no one.",
+        "joseph borroto",
+        "make content for a specific human, not a vague audience.",
+        "niche down to grow up",
+        "own one topic",
+        "pick one person",
+        "repeat your core idea",
+        "speak their language",
+        "use the exact words your person uses. it feels made for them.",
+        "you'll get bored before they do. drill the same message new ways."
       ]
     }
   ]
