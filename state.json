@@ -1256,6 +1256,20 @@
         "cap_style": 0
       },
       "hook": "3 videos every business owner should be posting to get clients."
+    },
+    {
+      "at": "20260617T230539Z",
+      "id": "queue/reel-1781737495.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18009287504917382",
+      "tags": {
+        "fmt": "imessage",
+        "style": "midnight",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to get clients from content \u2014 show up daily until they can't ignore you."
     }
   ],
   "story_hook_i": 1,
