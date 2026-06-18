@@ -1,7 +1,7 @@
 {
   "single_index": 50,
-  "carousel_index": 15,
-  "seq": 104,
+  "carousel_index": 16,
+  "seq": 105,
   "daily": {
     "20260614": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 50,
-  "pm_style_i": 54,
+  "pm_style_i": 55,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1310,6 +1310,19 @@
         "pillar": "general",
         "source_index": 35
       }
+    },
+    {
+      "at": "20260618T200236Z",
+      "id": "carousel-00083",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18456344275117663",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "editing",
+        "source_index": 1
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1525,22 +1538,6 @@
     }
   ],
   "recent_texts": [
-    "r/socialmedia",
-    "1. film nouns, not verbs",
-    "2. get uncomfortably close",
-    "3. move the camera",
-    "4. match the light",
-    "5 rules for b-roll that isn't boring.",
-    "5. overshoot",
-    "a slow push or pan adds life a locked shot can't.",
-    "capture 3x what you need. you'll thank yourself in the edit.",
-    "consistent lighting makes cuts feel seamless.",
-    "detail reads as intentional. distance reads as filler.",
-    "most people film the wrong thing.",
-    "the object close-up beats the wide action shot.",
-    "add captions (most watch on mute)",
-    "cut the first 'umm' \u2014 start on the point",
-    "edit any video in 6 steps",
     "end on the strongest sentence",
     "one idea per cut",
     "remove every dead pause",
@@ -1604,7 +1601,23 @@
     "steal these for your next 5 videos.",
     "@josephborroto",
     "joseph borroto",
-    "you don't need permission to start. just post."
+    "you don't need permission to start. just post.",
+    "1. 4k at 60fps",
+    "1.5 seconds, memorized. never improvise the first line.",
+    "2. mic test and playback",
+    "3. hook pre-written",
+    "4. scout your spots",
+    "5. batteries and storage",
+    "6. backup device",
+    "7 things to check before every shoot.",
+    "7. frame for the title",
+    "leave headroom so the overlay never covers your face.",
+    "number 4 is the one everyone skips.",
+    "one failure shouldn't cancel the whole shoot.",
+    "record 5 seconds and listen back. don't trust the meter alone.",
+    "switch location every line. this is the one people skip.",
+    "the only camera setting that really matters. set it once.",
+    "two of everything. a dead battery ends the day."
   ],
   "reel_i": 55,
   "reel_cap_i": 74,
