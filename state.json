@@ -1271,6 +1271,20 @@
         "cap_style": 0
       },
       "hook": "How to get clients from content \u2014 show up daily until they can't ignore you."
+    },
+    {
+      "at": "20260618T123758Z",
+      "id": "queue/reel-1781786243.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18083429420444122",
+      "tags": {
+        "fmt": "statement",
+        "style": "creamorange",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Views don't pay the bills \u2014 content that books clients does."
     }
   ],
   "story_hook_i": 1,
