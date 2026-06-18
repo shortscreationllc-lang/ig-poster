@@ -1621,8 +1621,8 @@
     "two of everything. a dead battery ends the day."
   ],
   "reel_i": 55,
-  "reel_cap_i": 74,
-  "reel_audio_i": 74,
+  "reel_cap_i": 76,
+  "reel_audio_i": 76,
   "reel_recent": [
     "how i always know what to post your audience writes the list",
     "nobody cares how your video was filmed only whether it s wor",
@@ -1633,8 +1633,6 @@
     "good content nobody sees is just a weak hook fix the first 3"
   ],
   "trial_recent": [
-    "content is a system not a mood build the system and it runs ",
-    "you get about 3 seconds before someone scrolls past your vid",
     "posted beats perfect every single time",
     "90 of viewers decide whether to keep watching in the first 3",
     "your first line is the only algorithm that matters",
@@ -1646,7 +1644,9 @@
     "your hook is 90 of the post the first line does almost all t",
     "i treat the camera like a client not a camera that one shift",
     "a dm i got after someone ran my content advice for 30 days",
-    "3 videos every business owner should be posting to get clien"
+    "3 videos every business owner should be posting to get clien",
+    "show the before and after not the theory proof sells better ",
+    "3 ways to stop the scroll on short form video"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -1661,11 +1661,11 @@
     "20260617": 2
   },
   "beat_recent": [
-    2,
-    9,
     1,
     2,
-    3
+    3,
+    8,
+    0
   ],
   "style_recent": [
     "dark",
