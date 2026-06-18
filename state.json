@@ -35,7 +35,8 @@
       "morning": true,
       "midday": true,
       "midmorning": true,
-      "afternoon": true
+      "afternoon": true,
+      "evening": true
     }
   },
   "am_style_i": 50,
