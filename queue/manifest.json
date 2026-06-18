@@ -1241,14 +1241,16 @@
       ],
       "caption": "You don't need permission to start. Just post.\n\nFollow @josephborroto for more on content.",
       "alt": "You don't need permission to start. Just post.",
-      "posted": false,
+      "posted": true,
       "source_index": 35,
       "style": "dark",
       "fp": [
         "@josephborroto",
         "joseph borroto",
         "you don't need permission to start. just post."
-      ]
+      ],
+      "posted_at": "20260618T161901Z",
+      "post_id": "17916016008401376"
     },
     {
       "id": "single-00067",
@@ -1974,6 +1976,23 @@
         "speak their language",
         "use the exact words your person uses. it feels made for them.",
         "you'll get bored before they do. drill the same message new ways."
+      ]
+    },
+    {
+      "id": "single-00104",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00104.jpg"
+      ],
+      "caption": "\"The consumer isn't a moron; she is your wife.\" \u2014 David Ogilvy\n\nThe father of advertising said it decades ago and it's never been more true. Don't talk down to your audience. Don't use empty hype. Respect their intelligence and they'll reward you with attention.\n\nGood content treats people like they're smart.\n\nFollow @josephborroto for marketing principles that still hold up.\n\n#davidogilvy #marketing #copywriting #advertising #contentstrategy #josephborroto",
+      "alt": "Quote card with David Ogilvy quote about respecting the consumer.",
+      "posted": false,
+      "source_index": 49,
+      "style": "midnight",
+      "fp": [
+        "the consumer isn't a moron. she is your wife.",
+        "\u2014 david ogilvy"
       ]
     }
   ]
