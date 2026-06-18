@@ -1281,6 +1281,20 @@
         "cap_style": 0
       },
       "hook": "Views don't pay the bills \u2014 content that books clients does."
+    },
+    {
+      "at": "20260618T160310Z",
+      "id": "queue/reel-1781798545.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18135558262560811",
+      "tags": {
+        "fmt": "comment",
+        "style": "dark",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Good content nobody sees is just a weak hook \u2014 fix the first 3 seconds."
     }
   ],
   "story_hook_i": 1,
