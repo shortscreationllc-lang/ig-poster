@@ -1324,6 +1324,38 @@
         "pillar": "editing",
         "source_index": 1
       }
+    },
+    {
+      "at": "20260618T210308Z",
+      "id": "queue/reel-1781816532-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18035448146806240",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "slate",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Show the before-and-after, not the theory \u2014 proof sells better than promises."
+    },
+    {
+      "at": "20260618T210413Z",
+      "id": "queue/reel-1781816538-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18415905373197465",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "sequence",
+        "style": "navyorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "3 ways to stop the scroll on short-form video."
     }
   ],
   "story_hook_i": 1,
@@ -1658,7 +1690,8 @@
     "20260614": 2,
     "20260615": 2,
     "20260616": 2,
-    "20260617": 2
+    "20260617": 2,
+    "20260618": 2
   },
   "beat_recent": [
     1,
