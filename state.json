@@ -1652,17 +1652,17 @@
     "the only camera setting that really matters. set it once.",
     "two of everything. a dead battery ends the day."
   ],
-  "reel_i": 55,
-  "reel_cap_i": 76,
-  "reel_audio_i": 76,
+  "reel_i": 56,
+  "reel_cap_i": 77,
+  "reel_audio_i": 77,
   "reel_recent": [
-    "how i always know what to post your audience writes the list",
     "nobody cares how your video was filmed only whether it s wor",
     "how i got comfortable on camera reps in front of real people",
     "you don t need a better camera you need a better first sente",
     "how to get clients from content show up daily until they can",
     "views don t pay the bills content that books clients does",
-    "good content nobody sees is just a weak hook fix the first 3"
+    "good content nobody sees is just a weak hook fix the first 3",
+    "3 hooks that work in any niche for short form video"
   ],
   "trial_recent": [
     "posted beats perfect every single time",
@@ -1694,19 +1694,19 @@
     "20260618": 2
   },
   "beat_recent": [
-    1,
     2,
     3,
     8,
-    0
+    0,
+    6
   ],
   "style_recent": [
-    "dark",
     "slate",
     "midnight",
     "ember",
     "midnight",
     "creamorange",
-    "dark"
+    "dark",
+    "blackout"
   ]
 }
