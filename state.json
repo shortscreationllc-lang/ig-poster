@@ -1,7 +1,7 @@
 {
   "single_index": 52,
-  "carousel_index": 17,
-  "seq": 108,
+  "carousel_index": 18,
+  "seq": 109,
   "daily": {
     "20260615": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 52,
-  "pm_style_i": 56,
+  "pm_style_i": 57,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1410,6 +1410,19 @@
         "cap_style": 0
       },
       "hook": "Content is a system, not a mood \u2014 build the system and it runs without motivation."
+    },
+    {
+      "at": "20260619T200719Z",
+      "id": "carousel-00085",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18151094974436670",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "editing",
+        "source_index": 3
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1634,18 +1647,6 @@
     }
   ],
   "recent_texts": [
-    "1. music too loud",
-    "3. inconsistent levels",
-    "4 audio mistakes that ruin good video.",
-    "4. dead silence",
-    "a subtle bed of music under the voice keeps energy up.",
-    "if you notice the track, it's already drowning the voice.",
-    "people hear bad audio before they see good video.",
-    "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
-    "volume jumping between clips makes it feel amateur.",
-    "100k ghost followers",
-    "10k engaged followers",
-    "comment 1 or 2.",
     "which would you rather have?",
     "1. cut on the first pass",
     "2. build a caption style",
@@ -1713,7 +1714,19 @@
     "editing_forever",
     "josephborroto",
     "my editing takes hours and still looks amateur. what am i missing?",
-    "you're overthinking it. cut the dead air, one idea per cut, captions on. that's 90% of a clean edit. stop adding effects and start removing pauses."
+    "you're overthinking it. cut the dead air, one idea per cut, captions on. that's 90% of a clean edit. stop adding effects and start removing pauses.",
+    "1. too small",
+    "2. off the beat",
+    "3. buried at the bottom",
+    "4. wrong font",
+    "5 caption mistakes killing your retention.",
+    "5. paced too slow",
+    "captions should feel a touch faster than the video itself.",
+    "if it's hard to read on a phone, it's costing you watch time.",
+    "most people make all 5.",
+    "text should hit on the cut, not lag behind the sentence.",
+    "the app ui covers it. keep key words in the safe zone.",
+    "white, modern, sans-serif. no heavy drop shadow."
   ],
   "reel_i": 58,
   "reel_cap_i": 79,
