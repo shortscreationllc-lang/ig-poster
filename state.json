@@ -1730,8 +1730,8 @@
     "white, modern, sans-serif. no heavy drop shadow."
   ],
   "reel_i": 58,
-  "reel_cap_i": 79,
-  "reel_audio_i": 79,
+  "reel_cap_i": 81,
+  "reel_audio_i": 81,
   "reel_recent": [
     "you don t need a better camera you need a better first sente",
     "how to get clients from content show up daily until they can",
@@ -1742,8 +1742,6 @@
     "content is a system not a mood build the system and it runs "
   ],
   "trial_recent": [
-    "posted beats perfect every single time",
-    "90 of viewers decide whether to keep watching in the first 3",
     "your first line is the only algorithm that matters",
     "most people overthink content i just get it out and that s w",
     "how to make every video feel different same idea new angle e",
@@ -1755,7 +1753,9 @@
     "a dm i got after someone ran my content advice for 30 days",
     "3 videos every business owner should be posting to get clien",
     "show the before and after not the theory proof sells better ",
-    "3 ways to stop the scroll on short form video"
+    "3 ways to stop the scroll on short form video",
+    "how to make short form that actually books clients not just ",
+    "cut every silence in your video dead air is where people swi"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -1771,11 +1771,11 @@
     "20260618": 2
   },
   "beat_recent": [
-    8,
-    0,
     6,
     7,
-    8
+    8,
+    3,
+    9
   ],
   "style_recent": [
     "ember",
