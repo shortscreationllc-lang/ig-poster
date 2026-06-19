@@ -1371,6 +1371,20 @@
         "cap_style": 0
       },
       "hook": "3 hooks that work in any niche for short-form video."
+    },
+    {
+      "at": "20260619T123812Z",
+      "id": "queue/reel-1781872637.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17943136638212426",
+      "tags": {
+        "fmt": "stat",
+        "style": "ember",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Cutting the first 2 seconds of your video can double your watch time."
     }
   ],
   "story_hook_i": 1,
