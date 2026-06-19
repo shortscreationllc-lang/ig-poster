@@ -1302,7 +1302,7 @@
       ],
       "caption": "Awkward on camera? Talk to one person, not 'everyone.' It gets easy fast.\n\nFollow @josephborroto for more on content.",
       "alt": "Comment reply: everyone does at first. talk to ONE person, not 'an audience.' it gets easy fast.",
-      "posted": false,
+      "posted": true,
       "source_index": 36,
       "style": "dark",
       "fp": [
@@ -1310,7 +1310,8 @@
         "i feel so awkward on camera",
         "joseph borroto",
         "quietkid.media"
-      ]
+      ],
+      "skipped": true
     },
     {
       "id": "single-00068",
@@ -2028,6 +2029,23 @@
         "detail reads as intentional. distance reads as filler.",
         "most people film the wrong thing.",
         "the object close-up beats the wide action shot."
+      ]
+    },
+    {
+      "id": "single-00106",
+      "slot": "am",
+      "type": "myth",
+      "images": [
+        "queue/single-00106.jpg"
+      ],
+      "caption": "Myth: just post more and you'll grow.\nTruth: the algorithm rewards videos people finish \u2014 not how often you show up with weak content.\n\nQuality and retention beat raw volume every time.\n\nFollow @josephborroto for content myths, busted.\n\n#contentstrategy #algorithm #shortformvideo #reelstips #videoediting #josephborroto",
+      "alt": "Myth vs truth card about posting volume vs retention.",
+      "posted": false,
+      "source_index": 50,
+      "style": "blackout",
+      "fp": [
+        "more posting always means more growth.",
+        "retention beats volume. one great video outperforms ten rushed ones."
       ]
     }
   ]
