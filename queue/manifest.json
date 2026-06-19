@@ -1322,7 +1322,7 @@
       ],
       "caption": "You're overthinking it. Cut the dead air, one idea per cut, captions on. That's 90% of a clean edit. Stop adding effects and start removing pauses.\n\nFollow @josephborroto for more on content.",
       "alt": "Reddit thread: My editing takes hours and still looks amateur. What am I missing?",
-      "posted": false,
+      "posted": true,
       "source_index": 37,
       "style": "dark",
       "fp": [
@@ -1330,7 +1330,9 @@
         "josephborroto",
         "my editing takes hours and still looks amateur. what am i missing?",
         "you're overthinking it. cut the dead air, one idea per cut, captions on. that's 90% of a clean edit. stop adding effects and start removing pauses."
-      ]
+      ],
+      "posted_at": "20260619T155129Z",
+      "post_id": "18064259453520832"
     },
     {
       "id": "single-00069",
@@ -2046,6 +2048,24 @@
       "fp": [
         "more posting always means more growth.",
         "retention beats volume. one great video outperforms ten rushed ones."
+      ]
+    },
+    {
+      "id": "single-00107",
+      "slot": "am",
+      "type": "social",
+      "images": [
+        "queue/single-00107.jpg"
+      ],
+      "caption": "Consistency beats talent that quits.\n\nFollow @josephborroto for more on content.",
+      "alt": "Consistency beats talent that quits.",
+      "posted": false,
+      "source_index": 51,
+      "style": "slate",
+      "fp": [
+        "@josephborroto",
+        "consistency beats talent that quits.",
+        "joseph borroto"
       ]
     }
   ]

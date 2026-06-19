@@ -1,7 +1,7 @@
 {
-  "single_index": 51,
+  "single_index": 52,
   "carousel_index": 16,
-  "seq": 106,
+  "seq": 107,
   "daily": {
     "20260615": {
       "morning": true,
@@ -35,7 +35,7 @@
       "morning": true
     }
   },
-  "am_style_i": 51,
+  "am_style_i": 52,
   "pm_style_i": 55,
   "history": [
     {
@@ -1381,6 +1381,19 @@
         "cap_style": 0
       },
       "hook": "Cutting the first 2 seconds of your video can double your watch time."
+    },
+    {
+      "at": "20260619T155129Z",
+      "id": "single-00068",
+      "slot": "am",
+      "type": "reddit",
+      "post_id": "18064259453520832",
+      "tags": {
+        "fmt": "reddit",
+        "style": "dark",
+        "pillar": "editing",
+        "source_index": 37
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1605,10 +1618,6 @@
     }
   ],
   "recent_texts": [
-    "end on the strongest sentence",
-    "one idea per cut",
-    "remove every dead pause",
-    "zoom only to land a line",
     "1. music too loud",
     "3. inconsistent levels",
     "4 audio mistakes that ruin good video.",
@@ -1684,7 +1693,11 @@
     "record 5 seconds and listen back. don't trust the meter alone.",
     "switch location every line. this is the one people skip.",
     "the only camera setting that really matters. set it once.",
-    "two of everything. a dead battery ends the day."
+    "two of everything. a dead battery ends the day.",
+    "editing_forever",
+    "josephborroto",
+    "my editing takes hours and still looks amateur. what am i missing?",
+    "you're overthinking it. cut the dead air, one idea per cut, captions on. that's 90% of a clean edit. stop adding effects and start removing pauses."
   ],
   "reel_i": 57,
   "reel_cap_i": 78,
