@@ -1335,6 +1335,42 @@
       "post_id": "18064259453520832"
     },
     {
+      "id": "carousel-00084",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00084-0.jpg",
+        "queue/carousel-00084-1.jpg",
+        "queue/carousel-00084-2.jpg",
+        "queue/carousel-00084-3.jpg",
+        "queue/carousel-00084-4.jpg",
+        "queue/carousel-00084-5.jpg",
+        "queue/carousel-00084-6.jpg"
+      ],
+      "caption": "Most people talk AT the camera. The ones who actually grow talk TO a person.\n\nFor the longest time my videos felt stiff \u2014 because I was performing for a lens. The second I started treating the camera like a client sitting across from me, everything changed. More watch time, more comments, more DMs that turned into real work.\n\nHere's the exact shift \ud83d\udc47\n\n1. Talk to ONE person \u2014 not \"hey guys\"\n2. Say the point in the first line, or they're gone\n3. Be yourself \u2014 your personality is the one thing nobody can copy\n4. Make every video feel different\n5. Stop overthinking it and just post\n\nSave this for the next time you hit record. \ud83d\udccc\n\nFollow @josephborroto for the stuff nobody tells you about content.",
+      "alt": "Carousel: treat the camera like a client, not a camera.",
+      "posted": true,
+      "source_index": 2,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "be yourself on camera",
+        "here's exactly how i do it \u2192",
+        "i treat the camera like a client, not a camera. that one shift changed all my content.",
+        "if the first sentence doesn't stop the scroll, nothing after it matters.",
+        "joseph borroto",
+        "just get content out",
+        "make every video different",
+        "not 'hey guys.' one person, one problem. it reads as a real conversation.",
+        "posted beats perfect. volume is how you find what actually lands.",
+        "same energy, new angle. the feed should never feel like a rerun.",
+        "say the point in line one",
+        "talk to one person",
+        "the personality is the moat. nobody can copy how you actually talk."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00069",
       "slot": "am",
       "type": "cheatsheet",
@@ -1410,41 +1446,6 @@
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
-    },
-    {
-      "id": "carousel-00084",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00084-0.jpg",
-        "queue/carousel-00084-1.jpg",
-        "queue/carousel-00084-2.jpg",
-        "queue/carousel-00084-3.jpg",
-        "queue/carousel-00084-4.jpg",
-        "queue/carousel-00084-5.jpg",
-        "queue/carousel-00084-6.jpg"
-      ],
-      "caption": "Most people talk AT the camera. The ones who actually grow talk TO a person.\n\nFor the longest time my videos felt stiff \u2014 because I was performing for a lens. The second I started treating the camera like a client sitting across from me, everything changed. More watch time, more comments, more DMs that turned into real work.\n\nHere's the exact shift \ud83d\udc47\n\n1. Talk to ONE person \u2014 not \"hey guys\"\n2. Say the point in the first line, or they're gone\n3. Be yourself \u2014 your personality is the one thing nobody can copy\n4. Make every video feel different\n5. Stop overthinking it and just post\n\nSave this for the next time you hit record. \ud83d\udccc\n\nFollow @josephborroto for the stuff nobody tells you about content.",
-      "alt": "Carousel: treat the camera like a client, not a camera.",
-      "posted": false,
-      "source_index": 2,
-      "style": "dark",
-      "fp": [
-        "@josephborroto",
-        "be yourself on camera",
-        "here's exactly how i do it \u2192",
-        "i treat the camera like a client, not a camera. that one shift changed all my content.",
-        "if the first sentence doesn't stop the scroll, nothing after it matters.",
-        "joseph borroto",
-        "just get content out",
-        "make every video different",
-        "not 'hey guys.' one person, one problem. it reads as a real conversation.",
-        "posted beats perfect. volume is how you find what actually lands.",
-        "same energy, new angle. the feed should never feel like a rerun.",
-        "say the point in line one",
-        "talk to one person",
-        "the personality is the moat. nobody can copy how you actually talk."
       ]
     },
     {
@@ -2066,6 +2067,41 @@
         "@josephborroto",
         "consistency beats talent that quits.",
         "joseph borroto"
+      ]
+    },
+    {
+      "id": "carousel-00108",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00108-0.jpg",
+        "queue/carousel-00108-1.jpg",
+        "queue/carousel-00108-2.jpg",
+        "queue/carousel-00108-3.jpg",
+        "queue/carousel-00108-4.jpg",
+        "queue/carousel-00108-5.jpg",
+        "queue/carousel-00108-6.jpg"
+      ],
+      "caption": "People blame the camera. It's almost never the camera.\n\nHere's the breakdown \ud83d\udc47\n\n1. Message over gear\n2. Hook before quality\n3. Lighting beats megapixels\n4. Sound over 4K\n5. Upgrade the idea first\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: gear doesn't make the content.",
+      "posted": false,
+      "source_index": 16,
+      "style": "slate",
+      "fp": [
+        "@josephborroto",
+        "a phone + a sharp idea beats a cinema camera + nothing to say.",
+        "buy the camera once the content is already working.",
+        "face a window. good light makes any camera look pro.",
+        "here's what actually matters \u2192",
+        "hook before quality",
+        "joseph borroto",
+        "lighting beats megapixels",
+        "message over gear",
+        "people forgive a soft image. they won't forgive bad audio.",
+        "sound matters more than 4k",
+        "they decide in 1 second \u2014 long before they notice your lens.",
+        "upgrade the idea first",
+        "you don't need a better camera. you need a better first sentence."
       ]
     }
   ]
