@@ -1456,6 +1456,20 @@
         "cap_style": 0
       },
       "hook": "Cut every silence in your video \u2014 dead air is where people swipe away."
+    },
+    {
+      "at": "20260619T231622Z",
+      "id": "queue/reel-1781910905.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17926116477357028",
+      "tags": {
+        "fmt": "statement",
+        "style": "creamorange",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Consistency beats going viral once \u2014 show up and the algorithm follows."
     }
   ],
   "story_hook_i": 1,
