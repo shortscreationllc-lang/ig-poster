@@ -1395,6 +1395,20 @@
         "pillar": "editing",
         "source_index": 37
       }
+    },
+    {
+      "at": "20260619T161114Z",
+      "id": "queue/reel-1781885434.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18049191998549985",
+      "tags": {
+        "fmt": "statement",
+        "style": "midnight",
+        "pillar": "mindset",
+        "cap_style": 0
+      },
+      "hook": "Content is a system, not a mood \u2014 build the system and it runs without motivation."
     }
   ],
   "story_hook_i": 1,
