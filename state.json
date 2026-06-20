@@ -1809,17 +1809,17 @@
     "show your process",
     "what you'd do differently"
   ],
-  "reel_i": 60,
-  "reel_cap_i": 83,
-  "reel_audio_i": 83,
+  "reel_i": 61,
+  "reel_cap_i": 84,
+  "reel_audio_i": 84,
   "reel_recent": [
-    "views don t pay the bills content that books clients does",
     "good content nobody sees is just a weak hook fix the first 3",
     "3 hooks that work in any niche for short form video",
     "cutting the first 2 seconds of your video can double your wa",
     "content is a system not a mood build the system and it runs ",
     "consistency beats going viral once show up and the algorithm",
-    "your best salesperson is a video that works while you sleep"
+    "your best salesperson is a video that works while you sleep",
+    "how to get clients from content show up daily until they can"
   ],
   "trial_recent": [
     "your first line is the only algorithm that matters",
@@ -1852,19 +1852,19 @@
     "20260619": 2
   },
   "beat_recent": [
-    8,
     3,
     9,
     1,
-    2
+    2,
+    3
   ],
   "style_recent": [
-    "creamorange",
     "dark",
     "blackout",
     "ember",
     "midnight",
     "creamorange",
-    "navyorange"
+    "navyorange",
+    "dark"
   ]
 }
