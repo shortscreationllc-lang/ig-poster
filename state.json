@@ -1495,6 +1495,20 @@
         "pillar": "business",
         "source_index": 38
       }
+    },
+    {
+      "at": "20260620T160154Z",
+      "id": "queue/reel-1781971267.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18027222749821378",
+      "tags": {
+        "fmt": "imessage",
+        "style": "dark",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to get clients from content \u2014 show up daily until they can't ignore you."
     }
   ],
   "story_hook_i": 1,
