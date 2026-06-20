@@ -1510,6 +1510,22 @@
         "cap_style": 0
       },
       "hook": "How to get clients from content \u2014 show up daily until they can't ignore you."
+    },
+    {
+      "at": "20260620T200434Z",
+      "id": "queue/reel-1781985831-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17967564627109051",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
     }
   ],
   "story_hook_i": 1,
@@ -1864,7 +1880,8 @@
     "20260616": 2,
     "20260617": 2,
     "20260618": 2,
-    "20260619": 2
+    "20260619": 2,
+    "20260620": 1
   },
   "beat_recent": [
     9,
