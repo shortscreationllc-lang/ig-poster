@@ -1776,17 +1776,17 @@
     "the app ui covers it. keep key words in the safe zone.",
     "white, modern, sans-serif. no heavy drop shadow."
   ],
-  "reel_i": 59,
-  "reel_cap_i": 82,
-  "reel_audio_i": 82,
+  "reel_i": 60,
+  "reel_cap_i": 83,
+  "reel_audio_i": 83,
   "reel_recent": [
-    "how to get clients from content show up daily until they can",
     "views don t pay the bills content that books clients does",
     "good content nobody sees is just a weak hook fix the first 3",
     "3 hooks that work in any niche for short form video",
     "cutting the first 2 seconds of your video can double your wa",
     "content is a system not a mood build the system and it runs ",
-    "consistency beats going viral once show up and the algorithm"
+    "consistency beats going viral once show up and the algorithm",
+    "your best salesperson is a video that works while you sleep"
   ],
   "trial_recent": [
     "your first line is the only algorithm that matters",
@@ -1819,19 +1819,19 @@
     "20260619": 2
   },
   "beat_recent": [
-    7,
     8,
     3,
     9,
-    1
+    1,
+    2
   ],
   "style_recent": [
-    "midnight",
     "creamorange",
     "dark",
     "blackout",
     "ember",
     "midnight",
-    "creamorange"
+    "creamorange",
+    "navyorange"
   ]
 }
