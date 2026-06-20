@@ -1414,7 +1414,7 @@
       ],
       "caption": "10 video ideas you can post this week. Bookmark it.\n\nFollow @josephborroto for more.",
       "alt": "10 video ideas you can post this week",
-      "posted": false,
+      "posted": true,
       "source_index": 38,
       "style": "dark",
       "fp": [
@@ -1429,7 +1429,9 @@
         "react to a bad take",
         "show your process",
         "what you'd do differently"
-      ]
+      ],
+      "posted_at": "20260620T145509Z",
+      "post_id": "18108260161984708"
     },
     {
       "id": "single-00070",
@@ -2133,6 +2135,24 @@
         "people hear bad audio before they see good video.",
         "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
         "volume jumping between clips makes it feel amateur."
+      ]
+    },
+    {
+      "id": "single-00110",
+      "slot": "am",
+      "type": "comment",
+      "images": [
+        "queue/single-00110.jpg"
+      ],
+      "caption": "Hashtags barely move the needle. Your hook does 90% of the work.\n\nFollow @josephborroto for more on content.",
+      "alt": "Comment reply: barely. your hook does 90% of the work. spend your time there, not on 30 tags.",
+      "posted": false,
+      "source_index": 52,
+      "style": "dark",
+      "fp": [
+        "barely. your hook does 90% of the work. spend your time there, not on 30 tags.",
+        "do hashtags even work anymore?",
+        "joseph borroto"
       ]
     }
   ]

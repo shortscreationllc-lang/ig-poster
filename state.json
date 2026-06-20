@@ -1,7 +1,7 @@
 {
-  "single_index": 52,
+  "single_index": 53,
   "carousel_index": 18,
-  "seq": 109,
+  "seq": 110,
   "daily": {
     "20260616": {
       "morning": true,
@@ -35,7 +35,7 @@
       "morning": true
     }
   },
-  "am_style_i": 52,
+  "am_style_i": 53,
   "pm_style_i": 57,
   "history": [
     {
@@ -1481,6 +1481,19 @@
         "cap_style": 0
       },
       "hook": "Your best salesperson is a video that works while you sleep."
+    },
+    {
+      "at": "20260620T145509Z",
+      "id": "single-00069",
+      "slot": "am",
+      "type": "cheatsheet",
+      "post_id": "18108260161984708",
+      "tags": {
+        "fmt": "cheatsheet",
+        "style": "dark",
+        "pillar": "business",
+        "source_index": 38
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1714,17 +1727,6 @@
     }
   ],
   "recent_texts": [
-    "which would you rather have?",
-    "1. cut on the first pass",
-    "2. build a caption style",
-    "3. keep a music folder",
-    "4. template your export",
-    "5 ways to edit twice as fast.",
-    "5. stop polishing dead air",
-    "cut the slow parts instead of perfecting them.",
-    "make decisions as you watch. don't re-watch endlessly.",
-    "save your font and look once. reuse it every time.",
-    "set it once: format, size, settings. never rethink it.",
     "stop hunting. pull from tracks you've already cleared.",
     "without the video looking rushed.",
     "here's the line that saves it.",
@@ -1793,7 +1795,18 @@
     "most people make all 5.",
     "text should hit on the cut, not lag behind the sentence.",
     "the app ui covers it. keep key words in the safe zone.",
-    "white, modern, sans-serif. no heavy drop shadow."
+    "white, modern, sans-serif. no heavy drop shadow.",
+    "10 video ideas you can post this week",
+    "3 tips in 30 seconds",
+    "a before/after of your work",
+    "a beginner's first step",
+    "a bold opinion",
+    "a mistake you used to make",
+    "a myth in your niche, busted",
+    "answer your most-asked question",
+    "react to a bad take",
+    "show your process",
+    "what you'd do differently"
   ],
   "reel_i": 60,
   "reel_cap_i": 83,
