@@ -1434,6 +1434,42 @@
       "post_id": "18108260161984708"
     },
     {
+      "id": "carousel-00086",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00086-0.jpg",
+        "queue/carousel-00086-1.jpg",
+        "queue/carousel-00086-2.jpg",
+        "queue/carousel-00086-3.jpg",
+        "queue/carousel-00086-4.jpg",
+        "queue/carousel-00086-5.jpg",
+        "queue/carousel-00086-6.jpg"
+      ],
+      "caption": "Stop trying to sound like a \"content creator.\" Just talk.\n\nMy biggest unlock wasn't a better camera or a trending sound \u2014 it was dropping the fake \"creator voice\" and just being myself. People don't follow presenters. They follow people.\n\nHere's how I keep it real on camera \ud83d\udc47\n\n1. Talk how you actually talk\n2. Your quirks ARE the brand\n3. Borrow structure from big accounts \u2014 never their personality\n4. Film like you're texting a friend\n5. The more \"you\" it is, the better it does\n\nSave this, then go be yourself on your next video. \ud83d\udccc\n\nFollow @josephborroto for content tips that actually move the needle.",
+      "alt": "Carousel: be yourself on camera.",
+      "posted": true,
+      "source_index": 4,
+      "style": "midnight",
+      "fp": [
+        "@josephborroto",
+        "borrow structure, not personality",
+        "casual beats polished. people trust a person, not a presenter.",
+        "every time i loosen up on camera, the content does better.",
+        "film like you're texting a friend",
+        "here's how i stay myself on camera \u2192",
+        "joseph borroto",
+        "steal the format from big accounts. keep your own voice on top of it.",
+        "stop trying to sound like a 'content creator.' just be yourself on camera.",
+        "talk how you actually talk",
+        "the 'script voice' is what makes people scroll. your real voice keeps them.",
+        "the more 'you,' the better it does",
+        "the weird way you say things is the one thing nobody can copy.",
+        "your quirks are the brand"
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00070",
       "slot": "am",
       "type": "prompt",
@@ -1483,41 +1519,6 @@
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
-    },
-    {
-      "id": "carousel-00086",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00086-0.jpg",
-        "queue/carousel-00086-1.jpg",
-        "queue/carousel-00086-2.jpg",
-        "queue/carousel-00086-3.jpg",
-        "queue/carousel-00086-4.jpg",
-        "queue/carousel-00086-5.jpg",
-        "queue/carousel-00086-6.jpg"
-      ],
-      "caption": "Stop trying to sound like a \"content creator.\" Just talk.\n\nMy biggest unlock wasn't a better camera or a trending sound \u2014 it was dropping the fake \"creator voice\" and just being myself. People don't follow presenters. They follow people.\n\nHere's how I keep it real on camera \ud83d\udc47\n\n1. Talk how you actually talk\n2. Your quirks ARE the brand\n3. Borrow structure from big accounts \u2014 never their personality\n4. Film like you're texting a friend\n5. The more \"you\" it is, the better it does\n\nSave this, then go be yourself on your next video. \ud83d\udccc\n\nFollow @josephborroto for content tips that actually move the needle.",
-      "alt": "Carousel: be yourself on camera.",
-      "posted": false,
-      "source_index": 4,
-      "style": "midnight",
-      "fp": [
-        "@josephborroto",
-        "borrow structure, not personality",
-        "casual beats polished. people trust a person, not a presenter.",
-        "every time i loosen up on camera, the content does better.",
-        "film like you're texting a friend",
-        "here's how i stay myself on camera \u2192",
-        "joseph borroto",
-        "steal the format from big accounts. keep your own voice on top of it.",
-        "stop trying to sound like a 'content creator.' just be yourself on camera.",
-        "talk how you actually talk",
-        "the 'script voice' is what makes people scroll. your real voice keeps them.",
-        "the more 'you,' the better it does",
-        "the weird way you say things is the one thing nobody can copy.",
-        "your quirks are the brand"
       ]
     },
     {
@@ -2153,6 +2154,41 @@
         "barely. your hook does 90% of the work. spend your time there, not on 30 tags.",
         "do hashtags even work anymore?",
         "joseph borroto"
+      ]
+    },
+    {
+      "id": "carousel-00111",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00111-0.jpg",
+        "queue/carousel-00111-1.jpg",
+        "queue/carousel-00111-2.jpg",
+        "queue/carousel-00111-3.jpg",
+        "queue/carousel-00111-4.jpg",
+        "queue/carousel-00111-5.jpg",
+        "queue/carousel-00111-6.jpg"
+      ],
+      "caption": "Your best idea isn't a single post. It's a content engine.\n\nHere's the breakdown \ud83d\udc47\n\n1. Find your bangers\n2. Change the angle\n3. Switch the format\n4. Repost the winners\n5. Build a swipe file\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: repurpose one idea into many.",
+      "posted": false,
+      "source_index": 18,
+      "style": "ember",
+      "fp": [
+        "@josephborroto",
+        "build a swipe file",
+        "change the angle",
+        "find your bangers",
+        "here's how i repurpose \u2192",
+        "joseph borroto",
+        "keep your best ideas in one place so you never start from zero.",
+        "most of your audience never saw it. run it back.",
+        "one good idea = 5 videos. stop reinventing every post.",
+        "repost the winners",
+        "same idea, new hook. 'why it works,' 'how to do it,' 'what i'd avoid.'",
+        "switch the format",
+        "the post that overperformed isn't done. it's a template.",
+        "turn a reel into a carousel into a single line. one idea, many shapes."
       ]
     }
   ]
