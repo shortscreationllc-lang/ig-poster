@@ -1825,8 +1825,8 @@
     "what you'd do differently"
   ],
   "reel_i": 61,
-  "reel_cap_i": 84,
-  "reel_audio_i": 84,
+  "reel_cap_i": 85,
+  "reel_audio_i": 85,
   "reel_recent": [
     "good content nobody sees is just a weak hook fix the first 3",
     "3 hooks that work in any niche for short form video",
@@ -1837,7 +1837,6 @@
     "how to get clients from content show up daily until they can"
   ],
   "trial_recent": [
-    "your first line is the only algorithm that matters",
     "most people overthink content i just get it out and that s w",
     "how to make every video feel different same idea new angle e",
     "5 hooks that always work steal these for your next videos",
@@ -1850,7 +1849,8 @@
     "show the before and after not the theory proof sells better ",
     "3 ways to stop the scroll on short form video",
     "how to make short form that actually books clients not just ",
-    "cut every silence in your video dead air is where people swi"
+    "cut every silence in your video dead air is where people swi",
+    "stop trying to sound like a content creator just be yourself"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -1867,11 +1867,11 @@
     "20260619": 2
   },
   "beat_recent": [
-    3,
     9,
     1,
     2,
-    3
+    3,
+    4
   ],
   "style_recent": [
     "dark",
