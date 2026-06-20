@@ -1471,6 +1471,20 @@
         "cap_style": 0
       },
       "hook": "Consistency beats going viral once \u2014 show up and the algorithm follows."
+    },
+    {
+      "at": "20260620T123815Z",
+      "id": "queue/reel-1781959037.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18071880410690513",
+      "tags": {
+        "fmt": "quote",
+        "style": "navyorange",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Your best salesperson is a video that works while you sleep."
     }
   ],
   "story_hook_i": 1,
