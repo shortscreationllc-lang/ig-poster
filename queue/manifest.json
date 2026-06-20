@@ -1470,6 +1470,38 @@
       "skipped": true
     },
     {
+      "id": "carousel-00087",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00087-0.jpg",
+        "queue/carousel-00087-1.jpg",
+        "queue/carousel-00087-2.jpg",
+        "queue/carousel-00087-3.jpg",
+        "queue/carousel-00087-4.jpg",
+        "queue/carousel-00087-5.jpg"
+      ],
+      "caption": "Every short-form video that pops has 3 acts. Most people film one and wonder why retention dies.\n\nHook (0 to 1.5s)\nTension (4 to 12s)\nPayoff (13s+)\n\nSave it before you script your next one.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: every viral video has 3 acts.",
+      "posted": true,
+      "source_index": 5,
+      "style": "creamorange",
+      "fp": [
+        "act 1 \u2014 hook (0 to 1.5s)",
+        "act 2 \u2014 tension (4 to 12s)",
+        "act 3 \u2014 payoff (13s to end)",
+        "build the gap. give a reason to keep watching past second 4.",
+        "deliver the answer, then one clean close. don't trail off.",
+        "every viral video has 3 acts.",
+        "most people only film one.",
+        "state the problem sharp. no intro, no setup. stop the thumb.",
+        "they film all hook or all payoff. the tension in the middle is what holds people.",
+        "why most fail"
+      ],
+      "posted_at": "20260620T233706Z",
+      "post_id": "17906296980262355"
+    },
+    {
       "id": "single-00070",
       "slot": "am",
       "type": "prompt",
@@ -1519,36 +1551,6 @@
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
-    },
-    {
-      "id": "carousel-00087",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00087-0.jpg",
-        "queue/carousel-00087-1.jpg",
-        "queue/carousel-00087-2.jpg",
-        "queue/carousel-00087-3.jpg",
-        "queue/carousel-00087-4.jpg",
-        "queue/carousel-00087-5.jpg"
-      ],
-      "caption": "Every short-form video that pops has 3 acts. Most people film one and wonder why retention dies.\n\nHook (0 to 1.5s)\nTension (4 to 12s)\nPayoff (13s+)\n\nSave it before you script your next one.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
-      "alt": "Carousel: every viral video has 3 acts.",
-      "posted": false,
-      "source_index": 5,
-      "style": "creamorange",
-      "fp": [
-        "act 1 \u2014 hook (0 to 1.5s)",
-        "act 2 \u2014 tension (4 to 12s)",
-        "act 3 \u2014 payoff (13s to end)",
-        "build the gap. give a reason to keep watching past second 4.",
-        "deliver the answer, then one clean close. don't trail off.",
-        "every viral video has 3 acts.",
-        "most people only film one.",
-        "state the problem sharp. no intro, no setup. stop the thumb.",
-        "they film all hook or all payoff. the tension in the middle is what holds people.",
-        "why most fail"
       ]
     },
     {
@@ -2189,6 +2191,39 @@
         "switch the format",
         "the post that overperformed isn't done. it's a template.",
         "turn a reel into a carousel into a single line. one idea, many shapes."
+      ]
+    },
+    {
+      "id": "carousel-00112",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00112-0.jpg",
+        "queue/carousel-00112-1.jpg",
+        "queue/carousel-00112-2.jpg",
+        "queue/carousel-00112-3.jpg",
+        "queue/carousel-00112-4.jpg",
+        "queue/carousel-00112-5.jpg",
+        "queue/carousel-00112-6.jpg"
+      ],
+      "caption": "Editing slow is usually a workflow problem, not a skill problem.\n\n1. Cut on the first pass\n2. Build a caption style\n3. Keep a music folder\n4. Template your export\n5. Stop polishing dead air\n\nSpeed comes from systems, not rushing.\n\nFollow @josephborroto for the workflow behind fast, clean edits.\n\n#videoediting #editingworkflow #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 ways to edit twice as fast.",
+      "posted": false,
+      "source_index": 19,
+      "style": "bone",
+      "fp": [
+        "1. cut on the first pass",
+        "2. build a caption style",
+        "3. keep a music folder",
+        "4. template your export",
+        "5 ways to edit twice as fast.",
+        "5. stop polishing dead air",
+        "cut the slow parts instead of perfecting them.",
+        "make decisions as you watch. don't re-watch endlessly.",
+        "save your font and look once. reuse it every time.",
+        "set it once: format, size, settings. never rethink it.",
+        "stop hunting. pull from tracks you've already cleared.",
+        "without the video looking rushed."
       ]
     }
   ]

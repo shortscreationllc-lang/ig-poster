@@ -1,7 +1,7 @@
 {
   "single_index": 53,
-  "carousel_index": 19,
-  "seq": 111,
+  "carousel_index": 20,
+  "seq": 112,
   "daily": {
     "20260616": {
       "morning": true,
@@ -38,7 +38,7 @@
     }
   },
   "am_style_i": 53,
-  "pm_style_i": 58,
+  "pm_style_i": 59,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1526,6 +1526,19 @@
         "cap_style": 0
       },
       "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
+    },
+    {
+      "at": "20260620T233706Z",
+      "id": "carousel-00087",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17906296980262355",
+      "tags": {
+        "fmt": "carousel",
+        "style": "creamorange",
+        "pillar": "hook",
+        "source_index": 5
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1759,16 +1772,6 @@
     }
   ],
   "recent_texts": [
-    "stop hunting. pull from tracks you've already cleared.",
-    "without the video looking rushed.",
-    "here's the line that saves it.",
-    "retention always drops at second 4.",
-    "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction.",
-    "1. weak first second",
-    "2. too many ideas",
-    "3. no reason to finish",
-    "4. inconsistent posting",
-    "5 reasons your videos aren't growing.",
     "5. no clear next step",
     "a slow open kills the video before the hook lands.",
     "give one simple action: follow for more.",
@@ -1838,7 +1841,17 @@
     "answer your most-asked question",
     "react to a bad take",
     "show your process",
-    "what you'd do differently"
+    "what you'd do differently",
+    "act 1 \u2014 hook (0 to 1.5s)",
+    "act 2 \u2014 tension (4 to 12s)",
+    "act 3 \u2014 payoff (13s to end)",
+    "build the gap. give a reason to keep watching past second 4.",
+    "deliver the answer, then one clean close. don't trail off.",
+    "every viral video has 3 acts.",
+    "most people only film one.",
+    "state the problem sharp. no intro, no setup. stop the thumb.",
+    "they film all hook or all payoff. the tension in the middle is what holds people.",
+    "why most fail"
   ],
   "reel_i": 61,
   "reel_cap_i": 85,
