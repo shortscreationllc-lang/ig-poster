@@ -34,7 +34,8 @@
     "20260620": {
       "morning": true,
       "midmorning": true,
-      "midday": true
+      "midday": true,
+      "evening": true
     }
   },
   "am_style_i": 53,
