@@ -287,14 +287,19 @@ SOCIAL_STYLES = ["dark", "midnight", "slate", "ember"]
 
 def _next_style(st, avoid=(), pool=None):
     """Pick a look that differs from the last few used (style_recent) and from any
-    in `avoid` (e.g. others in the same trial batch) — strong variety, no repeats.
-    `pool` restricts the candidate looks (e.g. dark-only for X-post reels)."""
+    in `avoid`. BIASED by real performance — styles the analytics says win
+    (weights.json) get picked more; chronic under-performers get picked less."""
     pool = pool or VIDEO_STYLES
     rec = st.get("style_recent", [])
     blocked = set(avoid) | set(rec[-4:])
     cands = ([s for s in pool if s not in blocked]
              or [s for s in pool if s not in set(avoid)] or list(pool))
-    s = random.choice(cands)
+    try:
+        w = weighting.load_weights()
+        wts = [max(0.12, weighting._w(w, "style", s) ** 2) for s in cands]  # square = sharper bias
+        s = random.choices(cands, weights=wts)[0]
+    except Exception:
+        s = random.choice(cands)
     st["style_recent"] = (rec + [s])[-7:]
     return s
 
