@@ -49,20 +49,15 @@ STATE = ROOT / "state.json"
 
 # kind, NY start hour, media, feed-slot, story.
 #   media : "reel" (animated video) | "post" (image) | None
-#   feed  : am | pm | None  (only when media == "post"; am=single card, pm=carousel)
+#   feed  : am | pm | auto | None  (only when media == "post"; am=single card,
+#           pm=carousel, auto=alternate single/carousel by day)
 #   story : post the morning story this slot?
-# Daily lineup = 3 Reels + 2 image posts + 1 story (6 automated):
-#   morning    ~8:37a : Reel + story
-#   midmorning ~10:37a: image post (single card)
-#   midday     ~12:37p: Reel
-#   afternoon  ~4:37p : image post (carousel)
-#   evening    ~7:37p : Reel
+# Daily lineup = 1 Reel + 1 image post + 1 story (2 posts/day):
+#   morning   ~8:37a : Reel + story
+#   afternoon ~4:37p : image post (alternates single card / carousel by day)
 SLOTS = [
-    ("morning",     8, "reel", None, True),
-    ("midmorning", 10, "post", "am", False),
-    ("midday",     12, "reel", None, False),
-    ("afternoon",  16, "post", "pm", False),
-    ("evening",    19, "reel", None, False),
+    ("morning",    8, "reel", None,   True),
+    ("afternoon", 16, "post", "auto", False),
 ]
 # A slot's LIVE window is [start, start + WINDOW_SPAN] hours — slack so a cron
 # that fires late (or slips into the next hour) still counts as "in window".
