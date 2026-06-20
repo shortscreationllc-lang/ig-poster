@@ -52,12 +52,14 @@ STATE = ROOT / "state.json"
 #   feed  : am | pm | auto | None  (only when media == "post"; am=single card,
 #           pm=carousel, auto=alternate single/carousel by day)
 #   story : post the morning story this slot?
-# Daily lineup = 1 Reel + 1 image post + 1 story (2 posts/day):
-#   morning   ~8:37a : Reel + story
-#   afternoon ~4:37p : image post (alternates single card / carousel by day)
+# Daily lineup = 1 Reel + 1 image post + 1 story (2 posts/day).
+# Scheduled in the GAPS around Joseph's own manual posts (9:30a & 5:30p) so the
+# feed never clusters:
+#   midday  ~12:37p : Reel + story
+#   evening ~7:37p  : image post (alternates single card / carousel by day)
 SLOTS = [
-    ("morning",    8, "reel", None,   True),
-    ("afternoon", 16, "post", "auto", False),
+    ("midday",  12, "reel", None,   True),
+    ("evening", 19, "post", "auto", False),
 ]
 # A slot's LIVE window is [start, start + WINDOW_SPAN] hours — slack so a cron
 # that fires late (or slips into the next hour) still counts as "in window".
