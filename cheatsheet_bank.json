@@ -2,7 +2,7 @@
   "_README": "Saveable cheat-sheet cards (numbered reference lists). enabled:true => AM rotation.",
   "entries": [
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "dark",
       "kicker": "SAVE THIS",
@@ -20,7 +20,7 @@
       "alt_text": "Steal my 7 hook formulas"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "midnight",
       "kicker": "SAVE THIS",
@@ -36,7 +36,7 @@
       "alt_text": "5 caption templates that work"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "slate",
       "kicker": "SAVE THIS",
@@ -54,7 +54,7 @@
       "alt_text": "7 CTAs that actually grow your account"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "ember",
       "kicker": "SAVE THIS",
@@ -71,7 +71,7 @@
       "alt_text": "Edit any video in 6 steps"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "dark",
       "kicker": "SAVE THIS",
@@ -92,7 +92,7 @@
       "alt_text": "10 video ideas you can post this week"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "midnight",
       "kicker": "SAVE THIS",
@@ -109,7 +109,7 @@
       "alt_text": "Cheat-sheet: how to write a hook that stops the scroll"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "dark",
       "kicker": "SAVE THIS",
@@ -125,7 +125,7 @@
       "alt_text": "How to actually be yourself on camera"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "slate",
       "kicker": "SAVE THIS",
@@ -139,38 +139,6 @@
       ],
       "caption": "What I'd tell anyone starting from 0. Save this.\n\nFollow @josephborroto for more on content.",
       "alt_text": "What I'd tell anyone starting from 0"
-    },
-    {
-      "enabled": true,
-      "type": "cheatsheet",
-      "style": "ember",
-      "kicker": "SAVE THIS",
-      "title": "How content actually turns into clients",
-      "items": [
-        "Show up daily until they can't ignore you",
-        "Post proof, not theory",
-        "Make your page sell for you",
-        "Build systems to post constantly",
-        "Bet on consistency, not luck"
-      ],
-      "caption": "How content actually turns into clients. Save this.\n\nFollow @josephborroto for more on content.",
-      "alt_text": "How content actually turns into clients"
-    },
-    {
-      "enabled": true,
-      "type": "cheatsheet",
-      "style": "midnight",
-      "kicker": "SAVE THIS",
-      "title": "How to stay human as AI floods the feed",
-      "items": [
-        "Show your face and your voice",
-        "Tell real stories, not generic tips",
-        "Post the behind-the-scenes",
-        "Be opinionated — AI plays it safe",
-        "Consistency from a real person wins"
-      ],
-      "caption": "How to stay human as AI floods the feed. Save this.\n\nFollow @josephborroto for more on content.",
-      "alt_text": "How to stay human as AI floods the feed"
     }
   ]
 }
