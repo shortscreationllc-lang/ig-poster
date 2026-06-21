@@ -1,7 +1,7 @@
 {
-  "single_index": 53,
+  "single_index": 54,
   "carousel_index": 20,
-  "seq": 112,
+  "seq": 113,
   "daily": {
     "20260617": {
       "morning": true,
@@ -34,7 +34,7 @@
       "midday": true
     }
   },
-  "am_style_i": 53,
+  "am_style_i": 54,
   "pm_style_i": 59,
   "history": [
     {
@@ -1566,6 +1566,19 @@
         "cap_style": 0
       },
       "hook": "You don't need a better camera \u2014 you need a better hook and a tighter edit."
+    },
+    {
+      "at": "20260621T233737Z",
+      "id": "single-00070",
+      "slot": "am",
+      "type": "prompt",
+      "post_id": "18014067152913575",
+      "tags": {
+        "fmt": "prompt",
+        "style": "dark",
+        "pillar": "hook",
+        "source_index": 39
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1799,8 +1812,6 @@
     }
   ],
   "recent_texts": [
-    "5. no clear next step",
-    "a slow open kills the video before the hook lands.",
     "give one simple action: follow for more.",
     "if there's no payoff coming, people leave early.",
     "it's rarely the algorithm.",
@@ -1878,7 +1889,9 @@
     "most people only film one.",
     "state the problem sharp. no intro, no setup. stop the thumb.",
     "they film all hook or all payoff. the tension in the middle is what holds people.",
-    "why most fail"
+    "why most fail",
+    "drop your answer in the comments.",
+    "the best hook always starts with ________."
   ],
   "reel_i": 62,
   "reel_cap_i": 87,

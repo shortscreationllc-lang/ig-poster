@@ -1510,13 +1510,15 @@
       ],
       "caption": "Fill in the blank: the best hook always starts with ____.\n\nFollow @josephborroto for more.",
       "alt": "The best hook always starts with ________.",
-      "posted": false,
+      "posted": true,
       "source_index": 39,
       "style": "dark",
       "fp": [
         "drop your answer in the comments.",
         "the best hook always starts with ________."
-      ]
+      ],
+      "posted_at": "20260621T233737Z",
+      "post_id": "18014067152913575"
     },
     {
       "id": "single-00071",
@@ -2224,6 +2226,23 @@
         "set it once: format, size, settings. never rethink it.",
         "stop hunting. pull from tracks you've already cleared.",
         "without the video looking rushed."
+      ]
+    },
+    {
+      "id": "single-00113",
+      "slot": "am",
+      "type": "prompt",
+      "images": [
+        "queue/single-00113.jpg"
+      ],
+      "caption": "Feeling too cringe to post is selfish. Someone needs what you know.\n\nFollow @josephborroto for more on content.",
+      "alt": "Feeling too cringe to post is selfish. Someone out there needs exactly what you know \u2014 and you're keeping it from them.",
+      "posted": false,
+      "source_index": 53,
+      "style": "ember",
+      "fp": [
+        "feeling too cringe to post is selfish. someone out there needs exactly what you know \u2014 and you're keeping it from them.",
+        "who needed to hear this?"
       ]
     }
   ]
