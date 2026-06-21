@@ -2,7 +2,7 @@
   "_README": "Reddit-thread cards (question + Joseph's top answer). enabled:true => AM rotation.",
   "entries": [
     {
-      "enabled": true,
+      "enabled": false,
       "type": "reddit",
       "style": "dark",
       "subreddit": "r/NewTubers",
@@ -20,7 +20,7 @@
       "alt_text": "Reddit thread: I've posted for 3 months and still have 200 followers. What am I doing wrong?"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "reddit",
       "style": "dark",
       "subreddit": "r/InstagramMarketing",
@@ -38,7 +38,7 @@
       "alt_text": "Reddit thread: Does posting more actually help or is it a myth?"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "reddit",
       "style": "dark",
       "subreddit": "r/contentcreation",
@@ -56,7 +56,7 @@
       "alt_text": "Reddit thread: How do you come up with ideas every single day without burning out?"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "reddit",
       "style": "dark",
       "subreddit": "r/socialmedia",
@@ -74,7 +74,7 @@
       "alt_text": "Reddit thread: Do you HAVE to show your face to grow?"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "reddit",
       "style": "dark",
       "subreddit": "r/NewTubers",
@@ -92,7 +92,7 @@
       "alt_text": "Reddit thread: My editing takes hours and still looks amateur. What am I missing?"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "reddit",
       "style": "dark",
       "subreddit": "r/Entrepreneur",
@@ -110,7 +110,7 @@
       "alt_text": "Reddit thread: How do I get my first client from content?"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "reddit",
       "style": "dark",
       "subreddit": "r/NewTubers",

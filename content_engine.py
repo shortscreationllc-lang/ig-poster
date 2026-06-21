@@ -223,8 +223,8 @@ def generate(n=12):
     while sum(len(v) for v in added.values()) < n and tries < n * 12:
         tries += 1
         key, t = pick_topic()
-        fmt = random.choices(["comment", "prompt", "social", "cheatsheet"],
-                             weights=[4, 3, 3, 2])[0]
+        fmt = random.choices(["comment", "prompt", "social"],
+                             weights=[5, 4, 3])[0]
         style = random.choice(styles)
         if fmt == "comment":
             q = random.choice(t["questions"]); ans = random.choice(t["answers"])

@@ -2,7 +2,7 @@
   "_README": "Saveable cheat-sheet cards (numbered reference lists). enabled:true => AM rotation.",
   "entries": [
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "dark",
       "kicker": "SAVE THIS",
@@ -20,7 +20,7 @@
       "alt_text": "Steal my 7 hook formulas"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "midnight",
       "kicker": "SAVE THIS",
@@ -36,7 +36,7 @@
       "alt_text": "5 caption templates that work"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "slate",
       "kicker": "SAVE THIS",
@@ -54,7 +54,7 @@
       "alt_text": "7 CTAs that actually grow your account"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "ember",
       "kicker": "SAVE THIS",
@@ -71,7 +71,7 @@
       "alt_text": "Edit any video in 6 steps"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "dark",
       "kicker": "SAVE THIS",
@@ -92,7 +92,7 @@
       "alt_text": "10 video ideas you can post this week"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "midnight",
       "kicker": "SAVE THIS",
@@ -109,7 +109,7 @@
       "alt_text": "Cheat-sheet: how to write a hook that stops the scroll"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "dark",
       "kicker": "SAVE THIS",
@@ -125,7 +125,7 @@
       "alt_text": "How to actually be yourself on camera"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "type": "cheatsheet",
       "style": "slate",
       "kicker": "SAVE THIS",
