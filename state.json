@@ -1550,6 +1550,22 @@
         "cap_style": 3
       },
       "hook": "Views don't pay the bills \u2014 content that books clients does."
+    },
+    {
+      "at": "20260621T201416Z",
+      "id": "queue/reel-1782072735-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18592352704060020",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "midnight",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "You don't need a better camera \u2014 you need a better hook and a tighter edit."
     }
   ],
   "story_hook_i": 1,
@@ -1905,7 +1921,8 @@
     "20260617": 2,
     "20260618": 2,
     "20260619": 2,
-    "20260620": 1
+    "20260620": 1,
+    "20260621": 1
   },
   "beat_recent": [
     2,
