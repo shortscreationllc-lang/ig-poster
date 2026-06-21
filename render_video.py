@@ -116,7 +116,7 @@ def _kicker_sprite(text, p):
 
 
 # ----------------------------------------------------------------------------- layouts
-def video_statement(item, out, style="blackout", secs=6):
+def video_statement(item, out, style="blackout", secs=5):
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     tmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
     size = 150
@@ -148,7 +148,7 @@ def video_statement(item, out, style="blackout", secs=6):
     return _encode(frame, int(secs * FPS), out)
 
 
-def video_stat(item, out, style="blackout", secs=7):
+def video_stat(item, out, style="blackout", secs=6):
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     acc = _acc(p)
     htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
@@ -223,7 +223,7 @@ def video_stat(item, out, style="blackout", secs=7):
     return _encode(frame, int(secs * FPS), out)
 
 
-def video_quote(item, out, style="navyorange", secs=7):
+def video_quote(item, out, style="navyorange", secs=5):
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     qf = f_brand(240)
     tf_size = 92; htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
@@ -270,7 +270,7 @@ def video_quote(item, out, style="navyorange", secs=7):
     return _encode(frame, int(secs * FPS), out)
 
 
-def video_checklist(item, out, style="dark", secs=9):
+def video_checklist(item, out, style="dark", secs=7):
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     tf = f_brand(64); htmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
     title_lines = wrap(htmp, item["headline"], tf, VW - 2 * M)
@@ -397,7 +397,7 @@ def video_sequence(scenes, out, style="dark", hold=1.6, trans=0.45):
     return out
 
 
-def video_xpost(item, out, style="dark", secs=7):
+def video_xpost(item, out, style="dark", secs=6):
     """Animated X (Twitter) post: the profile + claim build in line by line, an
     optional reply card slides up, then the CTA — the moving version of the card."""
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
@@ -493,7 +493,7 @@ def video_xpost(item, out, style="dark", secs=7):
     return _encode(frame, int(secs * FPS), out)
 
 
-def video_comment(item, out, style="dark", secs=7):
+def video_comment(item, out, style="dark", secs=6):
     """Animated comment reel: the question fades in, then Joseph's verified reply
     slides up underneath — the moving version of the comment card."""
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
@@ -542,7 +542,7 @@ def video_comment(item, out, style="dark", secs=7):
     return _encode(frame, int(secs * FPS), out)
 
 
-def video_imessage(item, out, style="dark", secs=7):
+def video_imessage(item, out, style="dark", secs=6):
     """Animated DM thread — bubbles pop in one at a time, grey 'them' + blue 'me'."""
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     footer = _footer_sprite(p)
@@ -621,7 +621,7 @@ def video_typewriter(item, out, style="blackout", secs=6):
     return _encode(frame, int(secs * FPS), out)
 
 
-def video_countdown(item, out, style="navyorange", secs=8):
+def video_countdown(item, out, style="navyorange", secs=7):
     """A numbered list that reveals one row at a time with a big slamming number."""
     p = PALETTES.get(style, PALETTES["dark"]); bg, glow = _bg(p), _glow(p)
     footer = _footer_sprite(p); acc = _acc(p)

@@ -321,8 +321,10 @@ def _pick(kind):
         spec = max(elig, key=lambda c: weighting.score_spec(c, w) + random.uniform(0, 0.15))
         item, hook, style = spec, spec["hook"], spec.get("style", "blackout")
         st["reel_recent"] = (recent + [_reel_key(spec)])[-7:]
-        # Pin the caption shape the data likes best (falls back to rotation).
-        cap_style = weighting.best_cap_style(w)
+        # ROTATE the three engagement levers so we actually drive (and learn from)
+        # comments + sends, not just saves: 0=save, 3=question→comments, 4=send→reach.
+        # (Pinning the single "best" shape is why we had ~0 comments.)
+        cap_style = [0, 3, 4][cap_i % 3]
     else:
         bucket = CONTENT.get(kind) or CONTENT["stat"]
         it, hk, style = bucket[i % len(bucket)]; item, hook = it, hk
