@@ -1865,8 +1865,8 @@
     "why most fail"
   ],
   "reel_i": 62,
-  "reel_cap_i": 86,
-  "reel_audio_i": 86,
+  "reel_cap_i": 87,
+  "reel_audio_i": 87,
   "reel_recent": [
     "3 hooks that work in any niche for short form video",
     "cutting the first 2 seconds of your video can double your wa",
@@ -1877,7 +1877,6 @@
     "views don t pay the bills content that books clients does"
   ],
   "trial_recent": [
-    "most people overthink content i just get it out and that s w",
     "how to make every video feel different same idea new angle e",
     "5 hooks that always work steal these for your next videos",
     "post less edit harder one tight short form video beats five ",
@@ -1890,7 +1889,8 @@
     "3 ways to stop the scroll on short form video",
     "how to make short form that actually books clients not just ",
     "cut every silence in your video dead air is where people swi",
-    "stop trying to sound like a content creator just be yourself"
+    "stop trying to sound like a content creator just be yourself",
+    "you don t need a better camera you need a better hook and a "
   ],
   "trial_daily": {
     "20260608": 2,
@@ -1908,11 +1908,11 @@
     "20260620": 1
   },
   "beat_recent": [
-    1,
     2,
     3,
     4,
-    1
+    1,
+    9
   ],
   "style_recent": [
     "blackout",
