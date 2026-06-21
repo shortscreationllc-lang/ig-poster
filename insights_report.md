@@ -5,7 +5,7 @@
 ## 🏆 Top performers (by save/share/watch score)
 - 🧪 20260618 | reel | reach 100 | views 121 | 2.3s watch | saves 1 shares 2 | eng 5.0% | score 16.284 | https://www.instagram.com/reel/DZvdnw-D_Ux/
 - 🧪 20260617 | reel | reach 37 | views 42 | 1.7s watch | saves 1 shares 0 | eng 2.7% | score 12.529 | https://www.instagram.com/reel/DZs18hLFP2f/
-- 👤 20260621 | REELS | reach 215 | views 304 | 5.9s watch | saves 0 shares 1 | eng 5.1% | score 12.368 | https://www.instagram.com/reel/DZ1ExCvt9PL/
+- 👤 20260621 | REELS | reach 221 | views 305 | 5.9s watch | saves 0 shares 1 | eng 5.0% | score 12.24 | https://www.instagram.com/reel/DZ1ExCvt9PL/
 - 👤 20260619 | REELS | reach 228 | views 335 | 6.1s watch | saves 0 shares 1 | eng 2.6% | score 10.058 | https://www.instagram.com/reel/DZwT1_rtr33/
 - 🤖 20260620 | reel | reach 55 | views 72 | 2.4s watch | saves 1 shares 0 | eng 1.8% | score 9.67 | https://www.instagram.com/reel/DZztbK8jXbU/
 - 🧪 20260616 | reel | reach 105 | views 131 | 3.8s watch | saves 1 shares 0 | eng 2.9% | score 9.512 | https://www.instagram.com/reel/DZqW5pVDnxl/
@@ -19,7 +19,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 4.5s  ·  bot: 2.5s
-- avg reach — yours: 136.4  ·  bot: 91.0
+- avg reach — yours: 138.0  ·  bot: 91.1
 - avg saves — yours: 0.0  ·  bot: 0.2
 
 ## 📈 What the loop is learning (weights → what we make more of)
@@ -41,7 +41,7 @@ _overall avg score: 4.169 · weights pull toward neutral until a tag has 3+ post
 
 ### By topic / pillar
 - ▲ **business** — weight 1.39  ·  9 post(s)
-- ▬ **algorithm** — weight 1.0  ·  3 post(s)
+- ▬ **algorithm** — weight 1.001  ·  3 post(s)
 - ▬ **hook** — weight 0.975  ·  7 post(s)
 - ▼ **proof** — weight 0.888  ·  1 post(s)  _(only 1, low confidence)_
 - ▼ **mindset** — weight 0.862  ·  1 post(s)  _(only 1, low confidence)_
@@ -57,8 +57,8 @@ _overall avg score: 4.169 · weights pull toward neutral until a tag has 3+ post
 - ▲ **midnight** — weight 1.062  ·  4 post(s)
 - ▼ **ember** — weight 0.935  ·  2 post(s)  _(only 2, low confidence)_
 - ▼ **orangepop** — weight 0.823  ·  1 post(s)  _(only 1, low confidence)_
-- ▼ **creamorange** — weight 0.651  ·  3 post(s)
-- ▼ **dark** — weight 0.594  ·  6 post(s)
+- ▼ **creamorange** — weight 0.652  ·  3 post(s)
+- ▼ **dark** — weight 0.593  ·  6 post(s)
 
 ### By caption shape (0=save 3=question 4=send …)
 - ▲ **0** — weight 1.105  ·  21 post(s)
