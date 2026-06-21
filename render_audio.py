@@ -12,19 +12,29 @@ SR = 44100
 # bpm, root (Hz), chord (semitones), and per-element levels. Defaults via .get so
 # every variant is full unless it deliberately strips an element back.
 BEATS = [
-    {"name": "lofi-warm",   "bpm": 82,  "root": 110.00, "chord": [0, 3, 7, 10], "kick": 0.9, "clap": 0.5, "hat": 0.35, "bass": 0.8, "pluck": 0.5, "swing": 0.12},
-    {"name": "deep-min",    "bpm": 76,  "root": 98.00,  "chord": [0, 3, 7, 12], "kick": 1.0, "clap": 0.4, "hat": 0.25, "bass": 0.9, "pluck": 0.35, "swing": 0.0},
-    {"name": "bright-maj",  "bpm": 92,  "root": 130.81, "chord": [0, 4, 7, 11], "kick": 0.85, "clap": 0.55, "hat": 0.45, "bass": 0.7, "pluck": 0.6, "swing": 0.08},
-    {"name": "minimal",     "bpm": 104, "root": 123.47, "chord": [0, 7, 12],    "kick": 0.8, "clap": 0.45, "hat": 0.5, "bass": 0.6, "pluck": 0.3, "swing": 0.0},
-    {"name": "chill-sus",   "bpm": 72,  "root": 87.31,  "chord": [0, 5, 7, 10], "kick": 0.75, "clap": 0.4, "hat": 0.2, "bass": 0.8, "pluck": 0.45, "swing": 0.14},
-    {"name": "drive-soft",  "bpm": 112, "root": 146.83, "chord": [0, 3, 7, 10], "kick": 0.95, "clap": 0.6, "hat": 0.55, "bass": 0.7, "pluck": 0.5, "swing": 0.0},
-    {"name": "trap-dark",   "bpm": 132, "root": 73.42,  "chord": [0, 3, 7, 10], "kick": 1.0, "clap": 0.5, "hat": 0.6, "bass": 1.0, "pluck": 0.4, "swing": 0.0, "rolls": True},
-    {"name": "ambient-air", "bpm": 66,  "root": 164.81, "chord": [0, 4, 7, 11], "kick": 0.55, "clap": 0.3, "hat": 0.15, "bass": 0.5, "pluck": 0.6, "swing": 0.18},
-    {"name": "house-pulse", "bpm": 124, "root": 110.00, "chord": [0, 5, 7, 12], "kick": 1.0, "clap": 0.55, "hat": 0.6, "bass": 0.85, "pluck": 0.4, "swing": 0.0, "four": True},
-    {"name": "phonk-low",   "bpm": 88,  "root": 82.41,  "chord": [0, 3, 7, 10], "kick": 1.0, "clap": 0.5, "hat": 0.4, "bass": 1.0, "pluck": 0.55, "swing": 0.1},
-    {"name": "uk-bounce",   "bpm": 140, "root": 98.00,  "chord": [0, 3, 7, 12], "kick": 0.95, "clap": 0.6, "hat": 0.55, "bass": 0.9, "pluck": 0.5, "swing": 0.0},
-    {"name": "dreamy-keys", "bpm": 90,  "root": 146.83, "chord": [0, 4, 9, 11], "kick": 0.7, "clap": 0.45, "hat": 0.3, "bass": 0.6, "pluck": 0.7, "swing": 0.1},
+    {"name": "lofi-warm", "lead": "pluck",   "bpm": 82,  "root": 110.00, "chord": [0, 3, 7, 10], "kick": 0.9, "clap": 0.5, "hat": 0.35, "bass": 0.8, "pluck": 0.5, "swing": 0.12},
+    {"name": "deep-min", "lead": "sine",    "bpm": 76,  "root": 98.00,  "chord": [0, 3, 7, 12], "kick": 1.0, "clap": 0.4, "hat": 0.25, "bass": 0.9, "pluck": 0.35, "swing": 0.0},
+    {"name": "bright-maj", "lead": "tri",  "bpm": 92,  "root": 130.81, "chord": [0, 4, 7, 11], "kick": 0.85, "clap": 0.55, "hat": 0.45, "bass": 0.7, "pluck": 0.6, "swing": 0.08},
+    {"name": "minimal", "lead": "square",     "bpm": 104, "root": 123.47, "chord": [0, 7, 12],    "kick": 0.8, "clap": 0.45, "hat": 0.5, "bass": 0.6, "pluck": 0.3, "swing": 0.0},
+    {"name": "chill-sus", "lead": "fm",   "bpm": 72,  "root": 87.31,  "chord": [0, 5, 7, 10], "kick": 0.75, "clap": 0.4, "hat": 0.2, "bass": 0.8, "pluck": 0.45, "swing": 0.14},
+    {"name": "drive-soft", "lead": "saw",  "bpm": 112, "root": 146.83, "chord": [0, 3, 7, 10], "kick": 0.95, "clap": 0.6, "hat": 0.55, "bass": 0.7, "pluck": 0.5, "swing": 0.0},
+    {"name": "trap-dark", "lead": "square",   "bpm": 132, "root": 73.42,  "chord": [0, 3, 7, 10], "kick": 1.0, "clap": 0.5, "hat": 0.6, "bass": 1.0, "pluck": 0.4, "swing": 0.0, "rolls": True},
+    {"name": "ambient-air", "lead": "fm", "bpm": 66,  "root": 164.81, "chord": [0, 4, 7, 11], "kick": 0.55, "clap": 0.3, "hat": 0.15, "bass": 0.5, "pluck": 0.6, "swing": 0.18},
+    {"name": "house-pulse", "lead": "saw", "bpm": 124, "root": 110.00, "chord": [0, 5, 7, 12], "kick": 1.0, "clap": 0.55, "hat": 0.6, "bass": 0.85, "pluck": 0.4, "swing": 0.0, "four": True},
+    {"name": "phonk-low", "lead": "tri",   "bpm": 88,  "root": 82.41,  "chord": [0, 3, 7, 10], "kick": 1.0, "clap": 0.5, "hat": 0.4, "bass": 1.0, "pluck": 0.55, "swing": 0.1},
+    {"name": "uk-bounce", "lead": "square",   "bpm": 140, "root": 98.00,  "chord": [0, 3, 7, 12], "kick": 0.95, "clap": 0.6, "hat": 0.55, "bass": 0.9, "pluck": 0.5, "swing": 0.0},
+    {"name": "dreamy-keys", "lead": "pluck", "bpm": 90,  "root": 146.83, "chord": [0, 4, 9, 11], "kick": 0.7, "clap": 0.45, "hat": 0.3, "bass": 0.6, "pluck": 0.7, "swing": 0.1},
 ]
+
+
+def _wave(kind, ph):
+    """Different instrument timbres so beats don't all sound the same."""
+    if kind == "tri":   return 2/np.pi*np.arcsin(np.sin(ph))
+    if kind == "saw":   return 2*((ph/(2*np.pi)) % 1.0)-1.0
+    if kind == "square":return np.tanh(3*np.sin(ph))
+    if kind == "fm":    return np.sin(ph + 2.5*np.sin(ph*2))      # bell-ish FM
+    if kind == "pluck": return np.sin(ph)*np.exp(-((ph/(2*np.pi))%1.0)*2)
+    return np.sin(ph)   # sine
 
 
 def _env(L, decay):
@@ -116,7 +126,8 @@ def _synth(variant, dur=30.0, var=0):
                 continue  # rest — gives the melody breathing room
             f = notes[rng.integers(0, len(notes))] * (2.0 if rng.random() < 0.25 else 1.0)
             i0 = int(pos * SR); L = int(min(spb * 0.9, 0.5) * SR)
-            tone = (np.sin(2 * np.pi * f * t[:L]) + 0.3 * np.sin(2 * np.pi * 2 * f * t[:L]))
+            ph = 2 * np.pi * f * t[:L]
+            tone = _wave(b.get('lead','sine'), ph) + 0.25 * np.sin(2 * ph)
             _place(lead, i0, tone * _env(L, 7) * 0.06 * pl)
 
     music = pad * 1.15 + lead * 1.25            # lead with the MUSIC, not the drums
