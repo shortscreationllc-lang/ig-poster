@@ -1540,6 +1540,20 @@
         "pillar": "hook",
         "source_index": 5
       }
+    },
+    {
+      "at": "20260621T160546Z",
+      "id": "queue/reel-1782057825.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18056617805583967",
+      "tags": {
+        "fmt": "statement",
+        "style": "blackout",
+        "pillar": "business",
+        "cap_style": 3
+      },
+      "hook": "Views don't pay the bills \u2014 content that books clients does."
     }
   ],
   "story_hook_i": 1,
