@@ -79,13 +79,18 @@ def _footer_sprite(p):
     return s
 
 
-def _encode(frames_fn, total_frames, out_path):
-    """frames_fn(i)->PIL RGB-ish image. Writes MP4 + silent audio."""
+def _encode(frames_fn, total_frames, out_path, motion=True):
+    """frames_fn(i)->PIL RGB-ish image. Writes MP4 + silent audio. `motion` adds
+    a subtle breathing push-in so the frame is never static and loops seamlessly."""
     w = imageio.get_writer(out_path, fps=FPS, codec="libx264", quality=8,
                            macro_block_size=8, ffmpeg_log_level="error",
                            output_params=["-pix_fmt", "yuv420p"])
     for i in range(total_frames):
-        w.append_data(np.array(frames_fn(i).convert("RGB")))
+        fr = frames_fn(i).convert("RGB")
+        if motion and total_frames > 1:
+            z = 1.0 + 0.030 * (0.5 - 0.5 * np.cos(2 * np.pi * i / total_frames))
+            fr = _zoom(fr, z)
+        w.append_data(np.array(fr))
     w.close()
     _add_silent_audio(out_path)
     return out_path

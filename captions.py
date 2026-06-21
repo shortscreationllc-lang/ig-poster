@@ -13,27 +13,46 @@ TAG_SETS = [
     "#shortformcontent #editingtips #audienceretention #reels",
     "#contentcreation #videocontent #socialmediatips #creatortips",
     "#reelsstrategy #videoediting #shortform #growthtips",
+    "#contentcreatortips #reelsforbusiness #videomarketing #hooks",
+    "#instagramgrowth #shortformstrategy #editingforcreators #reelideas",
+    "#personalbrand #contentcreators #videotips #scrollstoppers",
+    "#creatoreconomy #reelstutorial #videohooks #organicgrowth",
+    "#smallbusinessmarketing #contenttips #reelsofinstagram #videoediting",
 ]
 QUESTIONS = [
     "What's stopping people from finishing your videos?",
     "How long do your first 3 seconds really hold?",
     "Which one are you guilty of?",
     "What would you add to this list?",
+    "Be honest — which one is you?",
+    "What's the hardest part of posting for you?",
+    "Agree or disagree? Tell me below.",
+    "What would you ask me if I was sitting across from you?",
+    "Drop a 🎯 if this hit.",
+    "What's your biggest content struggle right now?",
 ]
 SEND_CTAS = [
     "Send this to a creator who needs it.",
     "Share this with someone posting this week.",
     "Send this to someone whose videos flop.",
+    "Tag the friend who keeps overthinking their content.",
+    "Send this to your editor.",
+    "Share this to your story if it helped.",
 ]
 SAVE_CTAS = [
     "Save this for your next post.",
     "Save this so you don't forget it.",
     "Bookmark this for your next video.",
+    "Save this before your next batch day.",
+    "Save it — you'll need it on a slow day.",
+    "Keep this where you'll actually see it.",
 ]
 FOLLOW_CTAS = [
     f"Follow {HANDLE} for more short-form tips.",
     f"Follow {HANDLE} — new one every few days.",
     f"More like this: follow {HANDLE}.",
+    f"Follow {HANDLE} for the stuff nobody tells you about content.",
+    f"{HANDLE} drops one of these every few days. Follow along.",
 ]
 
 
