@@ -79,9 +79,37 @@ def _footer_sprite(p):
     return s
 
 
-def _encode(frames_fn, total_frames, out_path, motion=True):
+_VIGNETTE = None
+_GRAIN = np.random.default_rng(7)
+
+
+def _vignette():
+    """Soft radial edge-darkening — cinematic focus. Computed once, cached."""
+    global _VIGNETTE
+    if _VIGNETTE is None:
+        yy, xx = np.mgrid[0:VH, 0:VW].astype(np.float32)
+        d = np.sqrt(((xx - VW / 2) / (VW / 2)) ** 2 + ((yy - VH / 2) / (VH / 2)) ** 2)
+        _VIGNETTE = (1.0 - 0.17 * np.clip((d - 0.5) / 0.9, 0, 1) ** 1.5)[..., None]
+    return _VIGNETTE
+
+
+def _finish(img, i, total, p):
+    """Premium finishing pass on every frame: film grain + vignette + a thin
+    progress bar. Makes the reel read as 'designed', not auto-generated."""
+    arr = np.asarray(img).astype(np.float32)
+    arr += _GRAIN.integers(-5, 6, arr.shape[:2])[..., None].astype(np.float32)  # grain
+    arr *= _vignette()                                                           # vignette
+    out = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
+    d = ImageDraw.Draw(out)
+    bw = int(VW * (i + 1) / max(1, total))
+    d.rectangle((0, VH - 7, VW, VH), fill=(70, 70, 74))          # track
+    d.rectangle((0, VH - 7, bw, VH), fill=_acc(p))               # progress
+    return out
+
+
+def _encode(frames_fn, total_frames, out_path, motion=True, p=None):
     """frames_fn(i)->PIL RGB-ish image. Writes MP4 + silent audio. `motion` adds
-    a subtle breathing push-in so the frame is never static and loops seamlessly."""
+    a subtle breathing push-in; `p` enables the premium finishing pass."""
     w = imageio.get_writer(out_path, fps=FPS, codec="libx264", quality=8,
                            macro_block_size=8, ffmpeg_log_level="error",
                            output_params=["-pix_fmt", "yuv420p"])
@@ -90,6 +118,8 @@ def _encode(frames_fn, total_frames, out_path, motion=True):
         if motion and total_frames > 1:
             z = 1.0 + 0.030 * (0.5 - 0.5 * np.cos(2 * np.pi * i / total_frames))
             fr = _zoom(fr, z)
+        if p is not None:
+            fr = _finish(fr, i, total_frames, p)
         w.append_data(np.array(fr))
     w.close()
     _add_silent_audio(out_path)
@@ -150,7 +180,7 @@ def video_statement(item, out, style="blackout", secs=5):
             fr.alpha_composite(ul.crop((0, 0, max(1, int(240 * up)), 14)),
                                (int((VW - 240) / 2), y0 + block_h + 30))
         return fr
-    return _encode(frame, int(secs * FPS), out)
+    return _encode(frame, int(secs * FPS), out, p=p)
 
 
 def video_stat(item, out, style="blackout", secs=6):
@@ -225,7 +255,7 @@ def video_stat(item, out, style="blackout", secs=6):
                 fr.alpha_composite(_alpha(hs2, pr), (0, y + k * 84 + int((1 - pr) * 30)))
         fr.alpha_composite(_alpha(footer, ease((t - 0.3) / 0.7)), (0, VH - 150))
         return fr
-    return _encode(frame, int(secs * FPS), out)
+    return _encode(frame, int(secs * FPS), out, p=p)
 
 
 def video_quote(item, out, style="navyorange", secs=5):
@@ -272,7 +302,7 @@ def video_quote(item, out, style="navyorange", secs=5):
             fr.alpha_composite(_alpha(attr, aa), (0, y0 + n * lh + 40))
         fr.alpha_composite(_alpha(footer, ease((t - 0.3) / 0.7)), (0, VH - 150))
         return fr
-    return _encode(frame, int(secs * FPS), out)
+    return _encode(frame, int(secs * FPS), out, p=p)
 
 
 def video_checklist(item, out, style="dark", secs=7):
@@ -317,7 +347,7 @@ def video_checklist(item, out, style="dark", secs=7):
             y += 130
         fr.alpha_composite(_alpha(footer, ease((t - 0.3) / 0.7)), (0, VH - 150))
         return fr
-    return _encode(frame, int(secs * FPS), out)
+    return _encode(frame, int(secs * FPS), out, p=p)
 
 
 def _mk_left(text, font, fill):
@@ -495,7 +525,7 @@ def video_xpost(item, out, style="dark", secs=6):
             if pr > 0:
                 fr.alpha_composite(_alpha(cta_sprite, pr), (0, y_cta + int((1 - pr) * 20)))
         return fr
-    return _encode(frame, int(secs * FPS), out)
+    return _encode(frame, int(secs * FPS), out, p=p)
 
 
 def video_comment(item, out, style="dark", secs=6):
@@ -544,7 +574,7 @@ def video_comment(item, out, style="dark", secs=6):
             fr.alpha_composite(_alpha(r_sp, ra), (0, y_r + int((1 - ra) * 40)))
         fr.alpha_composite(_alpha(footer, ease((t - t_reply - 0.3) / 0.6)), (0, VH - 150))
         return fr
-    return _encode(frame, int(secs * FPS), out)
+    return _encode(frame, int(secs * FPS), out, p=p)
 
 
 def video_imessage(item, out, style="dark", secs=6):
@@ -582,7 +612,7 @@ def video_imessage(item, out, style="dark", secs=6):
                 fr.alpha_composite(_alpha(s, pr), (0, yy + int((1 - pr) * 26)))
         fr.alpha_composite(_alpha(footer, ease((t - 0.3) / 0.7)), (0, VH - 150))
         return fr
-    return _encode(frame, int(secs * FPS), out)
+    return _encode(frame, int(secs * FPS), out, p=p)
 
 
 def video_typewriter(item, out, style="blackout", secs=6):
@@ -623,7 +653,7 @@ def video_typewriter(item, out, style="blackout", secs=6):
         fr.alpha_composite(_alpha(footer, ease((t - 0.3) / 0.7)), (0, VH - 150))
         return fr
     secs = max(secs, total_chars / cps + 2.2)
-    return _encode(frame, int(secs * FPS), out)
+    return _encode(frame, int(secs * FPS), out, p=p)
 
 
 def video_countdown(item, out, style="navyorange", secs=7):
@@ -661,7 +691,7 @@ def video_countdown(item, out, style="navyorange", secs=7):
             y += h
         fr.alpha_composite(_alpha(footer, ease((t - 0.3) / 0.7)), (0, VH - 150))
         return fr
-    return _encode(frame, int(secs * FPS), out)
+    return _encode(frame, int(secs * FPS), out, p=p)
 
 
 def render_video(item, out, style="dark"):
