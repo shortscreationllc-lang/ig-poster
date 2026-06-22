@@ -1905,8 +1905,8 @@
     "the best hook always starts with ________."
   ],
   "reel_i": 63,
-  "reel_cap_i": 88,
-  "reel_audio_i": 88,
+  "reel_cap_i": 89,
+  "reel_audio_i": 89,
   "reel_recent": [
     "cutting the first 2 seconds of your video can double your wa",
     "content is a system not a mood build the system and it runs ",
@@ -1917,7 +1917,6 @@
     "your first line is the only algorithm that matters"
   ],
   "trial_recent": [
-    "how to make every video feel different same idea new angle e",
     "5 hooks that always work steal these for your next videos",
     "post less edit harder one tight short form video beats five ",
     "most people quit posting at 90 days right before the reach s",
@@ -1930,7 +1929,8 @@
     "how to make short form that actually books clients not just ",
     "cut every silence in your video dead air is where people swi",
     "stop trying to sound like a content creator just be yourself",
-    "you don t need a better camera you need a better hook and a "
+    "you don t need a better camera you need a better hook and a ",
+    "most people overthink content i just get it out and that s w"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -1949,11 +1949,11 @@
     "20260621": 1
   },
   "beat_recent": [
-    3,
     4,
     1,
     9,
-    3
+    3,
+    10
   ],
   "style_recent": [
     "ember",
