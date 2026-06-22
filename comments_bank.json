@@ -720,6 +720,86 @@
       },
       "caption": "Discipline, not motivation. videos aren't fun, you won't always see results. go anyway.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Comment reply: discipline, not motivation. videos aren't fun, you won't always see results. go anyway."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "creator_jordan",
+        "initials": "CJ",
+        "text": "how do i turn views into income?",
+        "likes": "3700k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "post the work and the results. the right client should land on your page already sold.",
+        "likes": "360"
+      },
+      "caption": "Post the work and the results. the right client should land on your page already sold.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: post the work and the results. the right client should land on your page already sold."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "midnight",
+      "comment": {
+        "author": "new_alex",
+        "initials": "NA",
+        "text": "whats the #1 mistake new creators make?",
+        "likes": "3700k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "no. you don't need a perfect video. you need a video with real value, then post it again.",
+        "likes": "465"
+      },
+      "caption": "No. you don't need a perfect video. you need a video with real value, then post it again.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: no. you don't need a perfect video. you need a video with real value, then post it again."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "alex.media",
+        "initials": "AM",
+        "text": "0 followers, where do i start?",
+        "likes": "2800k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "no. you don't need a perfect video. you need a video with real value, then post it again.",
+        "likes": "601"
+      },
+      "caption": "No. you don't need a perfect video. you need a video with real value, then post it again.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: no. you don't need a perfect video. you need a video with real value, then post it again."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "creator_mike",
+        "initials": "CM",
+        "text": "how do i make money from posting?",
+        "likes": "2100k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "post the work and the results. the right client should land on your page already sold.",
+        "likes": "642"
+      },
+      "caption": "Post the work and the results. the right client should land on your page already sold.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: post the work and the results. the right client should land on your page already sold."
     }
   ]
 }

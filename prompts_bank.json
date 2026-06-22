@@ -232,6 +232,56 @@
       "prompt": "Agree or disagree?",
       "caption": "Stop trying to sound like a 'content creator.' Just talk.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Stop trying to sound like a 'content creator.' Just talk."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "I'd get more views if I stopped opening with ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "I'd get more views if I stopped opening with ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "I'd get more views if I stopped opening with ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The bridge from views to money is ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The bridge from views to money is ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The bridge from views to money is ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "HOT TAKE",
+      "headline": "Your first line is the only algorithm that matters.",
+      "prompt": "Agree?",
+      "caption": "Your first line is the only algorithm that matters.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your first line is the only algorithm that matters."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "I'd be way more consistent if I stopped ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "I'd be way more consistent if I stopped ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "I'd be way more consistent if I stopped ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The best hook always starts with ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The best hook always starts with ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The best hook always starts with ________."
     }
   ]
 }

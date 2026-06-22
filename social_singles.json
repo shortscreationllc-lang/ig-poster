@@ -315,6 +315,81 @@
       },
       "caption": "Feeling too cringe to post is selfish — someone needs what you know.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Feeling too cringe to post is selfish — someone needs what you know."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Your 'perfect' post that never gets posted is worth zero.",
+        "cta": ""
+      },
+      "caption": "Your 'perfect' post that never gets posted is worth zero.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your 'perfect' post that never gets posted is worth zero."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Posting daily isn't a tip. It IS the strategy.",
+        "cta": ""
+      },
+      "caption": "Posting daily isn't a tip. It IS the strategy.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Posting daily isn't a tip. It IS the strategy."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "A weak first line means the rest of the video doesn't exist.",
+        "cta": ""
+      },
+      "caption": "A weak first line means the rest of the video doesn't exist.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "A weak first line means the rest of the video doesn't exist."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "AI videos are coming for everything. The personal touch is the one thing they can't fake.",
+        "cta": ""
+      },
+      "caption": "AI videos are coming for everything. The personal touch is the one thing they can't fake.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "AI videos are coming for everything. The personal touch is the one thing they can't fake."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Good editing is invisible. People feel the pace, not the cuts.",
+        "cta": ""
+      },
+      "caption": "Good editing is invisible. People feel the pace, not the cuts.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Good editing is invisible. People feel the pace, not the cuts."
     }
   ]
 }
