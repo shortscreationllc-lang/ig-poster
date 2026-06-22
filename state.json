@@ -1590,6 +1590,22 @@
         "cap_style": 0
       },
       "hook": "Your first line is the only algorithm that matters."
+    },
+    {
+      "at": "20260622T212130Z",
+      "id": "queue/reel-1782163214-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18030757115819186",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Most people overthink content. I just get it out \u2014 and that's why mine grows."
     }
   ],
   "story_hook_i": 1,
@@ -1946,7 +1962,8 @@
     "20260618": 2,
     "20260619": 2,
     "20260620": 1,
-    "20260621": 1
+    "20260621": 1,
+    "20260622": 1
   },
   "beat_recent": [
     4,
