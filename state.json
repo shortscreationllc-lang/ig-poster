@@ -1894,17 +1894,17 @@
     "drop your answer in the comments.",
     "the best hook always starts with ________."
   ],
-  "reel_i": 62,
-  "reel_cap_i": 87,
-  "reel_audio_i": 87,
+  "reel_i": 63,
+  "reel_cap_i": 88,
+  "reel_audio_i": 88,
   "reel_recent": [
-    "3 hooks that work in any niche for short form video",
     "cutting the first 2 seconds of your video can double your wa",
     "content is a system not a mood build the system and it runs ",
     "consistency beats going viral once show up and the algorithm",
     "your best salesperson is a video that works while you sleep",
     "how to get clients from content show up daily until they can",
-    "views don t pay the bills content that books clients does"
+    "views don t pay the bills content that books clients does",
+    "your first line is the only algorithm that matters"
   ],
   "trial_recent": [
     "how to make every video feel different same idea new angle e",
@@ -1939,19 +1939,19 @@
     "20260621": 1
   },
   "beat_recent": [
-    2,
     3,
     4,
     1,
-    9
+    9,
+    3
   ],
   "style_recent": [
-    "blackout",
     "ember",
     "midnight",
     "creamorange",
     "navyorange",
     "dark",
-    "blackout"
+    "blackout",
+    "ember"
   ]
 }
