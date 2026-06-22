@@ -1521,6 +1521,112 @@
       "post_id": "18014067152913575"
     },
     {
+      "id": "carousel-00090",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00090-0.jpg",
+        "queue/carousel-00090-1.jpg",
+        "queue/carousel-00090-2.jpg",
+        "queue/carousel-00090-3.jpg",
+        "queue/carousel-00090-4.jpg",
+        "queue/carousel-00090-5.jpg",
+        "queue/carousel-00090-6.jpg"
+      ],
+      "caption": "Most people overthink their content into never posting it. I just get it out \u2014 and that's the whole secret.\n\nEvery \"perfect\" video sitting in your drafts is worth zero. The messy one you actually post is the one that grows you. Volume is how you learn what works.\n\nMy posting system \ud83d\udc47\n\n1. Posted beats perfect \u2014 every time\n2. Volume teaches you what planning can't\n3. Lower the stakes: it's one post, not your reputation\n4. Batch it \u2014 I shot 12 videos on a single trip\n5. Consistency compounds. Keep showing up.\n\nSave this for the days you don't feel like posting. \ud83d\udccc\n\nFollow @josephborroto.",
+      "alt": "Carousel: stop overthinking, just post.",
+      "posted": true,
+      "source_index": 6,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "a 'good enough' video that exists beats a perfect one that never goes up.",
+        "batch when you can",
+        "consistency compounds",
+        "here's my posting system \u2192",
+        "i filmed 12 videos on one trip \u2014 a week of content in an afternoon.",
+        "joseph borroto",
+        "lower the stakes",
+        "most people overthink their content. i just get it out \u2014 and that's why mine grows.",
+        "one post isn't make-or-break. the hundredth one is what compounds.",
+        "posted beats perfect",
+        "the algorithm rewards the person who keeps showing up. be that person.",
+        "volume teaches you",
+        "you learn what works by posting, not by planning. the reps are the lesson."
+      ],
+      "skipped": true
+    },
+    {
+      "id": "carousel-00092",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00092-0.jpg",
+        "queue/carousel-00092-1.jpg",
+        "queue/carousel-00092-2.jpg",
+        "queue/carousel-00092-3.jpg",
+        "queue/carousel-00092-4.jpg",
+        "queue/carousel-00092-5.jpg",
+        "queue/carousel-00092-6.jpg"
+      ],
+      "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
+      "alt": "Carousel: 5 rules behind every video that lands.",
+      "posted": true,
+      "source_index": 7,
+      "style": "bone",
+      "fp": [
+        "1. 4k at 60fps",
+        "2. 1.5-second hook, written",
+        "3. switch location every line",
+        "4. one idea per video",
+        "5 rules behind every video that lands.",
+        "5. music quieter than feels right",
+        "memorized before you hit record. never improvised.",
+        "simple, repeatable, no fancy gear.",
+        "specific beats broad. one clear point gets saved and shared.",
+        "trim ruthlessly. the voice leads, the music supports.",
+        "two lines in one spot? move. movement reads as energy.",
+        "you don't need a cinema camera. you need the right settings."
+      ],
+      "skipped": true
+    },
+    {
+      "id": "carousel-00093",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00093-0.jpg",
+        "queue/carousel-00093-1.jpg",
+        "queue/carousel-00093-2.jpg",
+        "queue/carousel-00093-3.jpg",
+        "queue/carousel-00093-4.jpg",
+        "queue/carousel-00093-5.jpg",
+        "queue/carousel-00093-6.jpg"
+      ],
+      "caption": "Nobody owes you 3 seconds. Your first line has to earn them.\n\nHere's the breakdown \ud83d\udc47\n\n1. Lead with the result\n2. Call out one person\n3. Make a bold claim\n4. Cut the warm-up\n5. Test 3 hooks per idea\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: how to write hooks that stop the scroll.",
+      "posted": true,
+      "source_index": 8,
+      "style": "slate",
+      "fp": [
+        "@josephborroto",
+        "call out one person",
+        "cut the warm-up",
+        "here's how i write hooks \u2192",
+        "if you're a creator who\u2026\" \u2014 they can't scroll past themselves.",
+        "if your first line is weak, the rest of the video doesn't exist.",
+        "joseph borroto",
+        "lead with the result",
+        "make a bold claim",
+        "no 'hey guys, so today.' start on the point, not before it.",
+        "same video, three openings. post the one that stops you first.",
+        "say the thing most people are scared to say. boring is invisible.",
+        "show the payoff first. curiosity is what buys you the next 3 seconds.",
+        "test 3 hooks per idea"
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00071",
       "slot": "am",
       "type": "single",
@@ -1596,41 +1702,6 @@
       ]
     },
     {
-      "id": "carousel-00090",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00090-0.jpg",
-        "queue/carousel-00090-1.jpg",
-        "queue/carousel-00090-2.jpg",
-        "queue/carousel-00090-3.jpg",
-        "queue/carousel-00090-4.jpg",
-        "queue/carousel-00090-5.jpg",
-        "queue/carousel-00090-6.jpg"
-      ],
-      "caption": "Most people overthink their content into never posting it. I just get it out \u2014 and that's the whole secret.\n\nEvery \"perfect\" video sitting in your drafts is worth zero. The messy one you actually post is the one that grows you. Volume is how you learn what works.\n\nMy posting system \ud83d\udc47\n\n1. Posted beats perfect \u2014 every time\n2. Volume teaches you what planning can't\n3. Lower the stakes: it's one post, not your reputation\n4. Batch it \u2014 I shot 12 videos on a single trip\n5. Consistency compounds. Keep showing up.\n\nSave this for the days you don't feel like posting. \ud83d\udccc\n\nFollow @josephborroto.",
-      "alt": "Carousel: stop overthinking, just post.",
-      "posted": false,
-      "source_index": 6,
-      "style": "dark",
-      "fp": [
-        "@josephborroto",
-        "a 'good enough' video that exists beats a perfect one that never goes up.",
-        "batch when you can",
-        "consistency compounds",
-        "here's my posting system \u2192",
-        "i filmed 12 videos on one trip \u2014 a week of content in an afternoon.",
-        "joseph borroto",
-        "lower the stakes",
-        "most people overthink their content. i just get it out \u2014 and that's why mine grows.",
-        "one post isn't make-or-break. the hundredth one is what compounds.",
-        "posted beats perfect",
-        "the algorithm rewards the person who keeps showing up. be that person.",
-        "volume teaches you",
-        "you learn what works by posting, not by planning. the reps are the lesson."
-      ]
-    },
-    {
       "id": "single-00091",
       "slot": "am",
       "type": "comment",
@@ -1646,74 +1717,6 @@
         "joseph borroto",
         "stop chasing viral. chase clarity. one idea said so well it's impossible to scroll past.",
         "whats the actual secret to going viral?"
-      ]
-    },
-    {
-      "id": "carousel-00092",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00092-0.jpg",
-        "queue/carousel-00092-1.jpg",
-        "queue/carousel-00092-2.jpg",
-        "queue/carousel-00092-3.jpg",
-        "queue/carousel-00092-4.jpg",
-        "queue/carousel-00092-5.jpg",
-        "queue/carousel-00092-6.jpg"
-      ],
-      "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
-      "alt": "Carousel: 5 rules behind every video that lands.",
-      "posted": false,
-      "source_index": 7,
-      "style": "bone",
-      "fp": [
-        "1. 4k at 60fps",
-        "2. 1.5-second hook, written",
-        "3. switch location every line",
-        "4. one idea per video",
-        "5 rules behind every video that lands.",
-        "5. music quieter than feels right",
-        "memorized before you hit record. never improvised.",
-        "simple, repeatable, no fancy gear.",
-        "specific beats broad. one clear point gets saved and shared.",
-        "trim ruthlessly. the voice leads, the music supports.",
-        "two lines in one spot? move. movement reads as energy.",
-        "you don't need a cinema camera. you need the right settings."
-      ]
-    },
-    {
-      "id": "carousel-00093",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00093-0.jpg",
-        "queue/carousel-00093-1.jpg",
-        "queue/carousel-00093-2.jpg",
-        "queue/carousel-00093-3.jpg",
-        "queue/carousel-00093-4.jpg",
-        "queue/carousel-00093-5.jpg",
-        "queue/carousel-00093-6.jpg"
-      ],
-      "caption": "Nobody owes you 3 seconds. Your first line has to earn them.\n\nHere's the breakdown \ud83d\udc47\n\n1. Lead with the result\n2. Call out one person\n3. Make a bold claim\n4. Cut the warm-up\n5. Test 3 hooks per idea\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: how to write hooks that stop the scroll.",
-      "posted": false,
-      "source_index": 8,
-      "style": "slate",
-      "fp": [
-        "@josephborroto",
-        "call out one person",
-        "cut the warm-up",
-        "here's how i write hooks \u2192",
-        "if you're a creator who\u2026\" \u2014 they can't scroll past themselves.",
-        "if your first line is weak, the rest of the video doesn't exist.",
-        "joseph borroto",
-        "lead with the result",
-        "make a bold claim",
-        "no 'hey guys, so today.' start on the point, not before it.",
-        "same video, three openings. post the one that stops you first.",
-        "say the thing most people are scared to say. boring is invisible.",
-        "show the payoff first. curiosity is what buys you the next 3 seconds.",
-        "test 3 hooks per idea"
       ]
     },
     {
@@ -2243,6 +2246,109 @@
       "fp": [
         "feeling too cringe to post is selfish. someone out there needs exactly what you know \u2014 and you're keeping it from them.",
         "who needed to hear this?"
+      ]
+    },
+    {
+      "id": "carousel-00114",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00114-0.jpg",
+        "queue/carousel-00114-1.jpg",
+        "queue/carousel-00114-2.jpg",
+        "queue/carousel-00114-3.jpg",
+        "queue/carousel-00114-4.jpg",
+        "queue/carousel-00114-5.jpg",
+        "queue/carousel-00114-6.jpg"
+      ],
+      "caption": "Great content with no ask is a missed opportunity. Tell them what to do.\n\nHere's the breakdown \ud83d\udc47\n\n1. One ask per post\n2. Make it effortless\n3. Tie it to the value\n4. Earn it first\n5. Say it out loud\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: how to use CTAs.",
+      "posted": false,
+      "source_index": 20,
+      "style": "midnight",
+      "fp": [
+        "'comment one word.' the lower the effort, the higher the response.",
+        "'save this for your next video' beats a generic 'like and follow.'",
+        "@josephborroto",
+        "don't assume they'll figure it out. tell them, clearly, once.",
+        "earn it first",
+        "follow or save or comment. pick one. two asks = zero action.",
+        "give something worth acting on before you ask for anything.",
+        "here's how i use ctas \u2192",
+        "if you don't tell people what to do next, they won't.",
+        "joseph borroto",
+        "make it effortless",
+        "one ask per post",
+        "say it out loud",
+        "tie it to the value"
+      ]
+    },
+    {
+      "id": "carousel-00115",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00115-0.jpg",
+        "queue/carousel-00115-1.jpg",
+        "queue/carousel-00115-2.jpg",
+        "queue/carousel-00115-3.jpg",
+        "queue/carousel-00115-4.jpg",
+        "queue/carousel-00115-5.jpg",
+        "queue/carousel-00115-6.jpg"
+      ],
+      "caption": "If your videos have stalled, it's usually one of these, not the algorithm.\n\n1. Weak first second\n2. Too many ideas\n3. No reason to finish\n4. Inconsistent posting\n5. No clear next step\n\nFix one this week.\n\nFollow @josephborroto for honest, useful content advice.\n\n#contentstrategy #shortformvideo #reelstips #videomarketing #growth #josephborroto",
+      "alt": "Carousel: 5 reasons your videos aren't growing.",
+      "posted": false,
+      "source_index": 21,
+      "style": "light",
+      "fp": [
+        "1. weak first second",
+        "2. too many ideas",
+        "3. no reason to finish",
+        "4. inconsistent posting",
+        "5 reasons your videos aren't growing.",
+        "5. no clear next step",
+        "a slow open kills the video before the hook lands.",
+        "give one simple action: follow for more.",
+        "if there's no payoff coming, people leave early.",
+        "it's rarely the algorithm.",
+        "one video, one point. cramming means nothing sticks.",
+        "the algorithm rewards reliability. show up daily."
+      ]
+    },
+    {
+      "id": "carousel-00116",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00116-0.jpg",
+        "queue/carousel-00116-1.jpg",
+        "queue/carousel-00116-2.jpg",
+        "queue/carousel-00116-3.jpg",
+        "queue/carousel-00116-4.jpg",
+        "queue/carousel-00116-5.jpg",
+        "queue/carousel-00116-6.jpg"
+      ],
+      "caption": "Your first 100 videos aren't the work. They're the warm-up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Reps build the skill\n2. Cringe is the toll\n3. Nobody's watching yet\n4. Track what lands\n5. Stay in the game\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: post through your first 100.",
+      "posted": false,
+      "source_index": 22,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "cringe is the toll",
+        "everyone's early stuff is rough. pay it now, not later.",
+        "here's the mindset \u2192",
+        "joseph borroto",
+        "let the data, not your ego, tell you what's working.",
+        "most quit before the reps compound. don't be most people.",
+        "nobody's watching yet",
+        "reps build the skill",
+        "stay in the game",
+        "the small audience early is a gift \u2014 practice with the lights low.",
+        "track what lands",
+        "you can't think your way to good. you film your way there.",
+        "your first 100 videos are practice. post them anyway."
       ]
     }
   ]
