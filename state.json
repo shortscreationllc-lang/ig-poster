@@ -1580,6 +1580,20 @@
         "pillar": "hook",
         "source_index": 39
       }
+    },
+    {
+      "at": "20260622T163910Z",
+      "id": "queue/reel-1782146257.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18591380842044728",
+      "tags": {
+        "fmt": "typewriter",
+        "style": "ember",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Your first line is the only algorithm that matters."
     }
   ],
   "story_hook_i": 1,
