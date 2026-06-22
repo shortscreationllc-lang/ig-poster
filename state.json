@@ -1,7 +1,7 @@
 {
   "single_index": 54,
-  "carousel_index": 0,
-  "seq": 116,
+  "carousel_index": 1,
+  "seq": 117,
   "daily": {
     "20260618": {
       "morning": true,
@@ -32,7 +32,7 @@
     }
   },
   "am_style_i": 54,
-  "pm_style_i": 62,
+  "pm_style_i": 63,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1606,6 +1606,19 @@
         "cap_style": 0
       },
       "hook": "Most people overthink content. I just get it out \u2014 and that's why mine grows."
+    },
+    {
+      "at": "20260622T230558Z",
+      "id": "carousel-00095",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17907052527433484",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "hook",
+        "source_index": 9
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1839,14 +1852,6 @@
     }
   ],
   "recent_texts": [
-    "give one simple action: follow for more.",
-    "if there's no payoff coming, people leave early.",
-    "it's rarely the algorithm.",
-    "one video, one point. cramming means nothing sticks.",
-    "the algorithm rewards reliability. show up daily.",
-    "3 reel ideas for coaches & creators.",
-    "answer a dm question on camera",
-    "bust a common myth in your niche",
     "save this for your next batch.",
     "share the mistake you made starting out",
     "5 hook formulas that work in any niche.",
@@ -1918,7 +1923,15 @@
     "they film all hook or all payoff. the tension in the middle is what holds people.",
     "why most fail",
     "drop your answer in the comments.",
-    "the best hook always starts with ________."
+    "the best hook always starts with ________.",
+    "cutting, hand-placed captions, music, pacing. hours, not minutes.",
+    "quality video is hours of skilled work. that's why cheap pricing collapses.",
+    "research and hooks",
+    "setup, multiple takes, location changes, lighting, audio.",
+    "studying what works and writing a hook worth stopping for.",
+    "the part nobody breaks down.",
+    "the pass that turns good into actually-postable.",
+    "what a good reel actually costs to make."
   ],
   "reel_i": 63,
   "reel_cap_i": 89,

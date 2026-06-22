@@ -1627,6 +1627,37 @@
       "skipped": true
     },
     {
+      "id": "carousel-00095",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00095-0.jpg",
+        "queue/carousel-00095-1.jpg",
+        "queue/carousel-00095-2.jpg",
+        "queue/carousel-00095-3.jpg",
+        "queue/carousel-00095-4.jpg",
+        "queue/carousel-00095-5.jpg",
+        "queue/carousel-00095-6.jpg"
+      ],
+      "caption": "Everyone underestimates what a genuinely good Reel takes.\n\nResearch. Hooks. Filming. Editing. Revisions.\n\nIt's hours of skilled work, which is exactly why rock-bottom pricing never produces rock-solid video.\n\nFollow @josephborroto for the real economics of content.\n\n#videoproduction #pricingstrategy #contentmarketing #shortformvideo #videoediting #josephborroto",
+      "alt": "Carousel: what a good Reel actually costs to make.",
+      "posted": true,
+      "source_index": 9,
+      "style": "light",
+      "fp": [
+        "cutting, hand-placed captions, music, pacing. hours, not minutes.",
+        "quality video is hours of skilled work. that's why cheap pricing collapses.",
+        "research and hooks",
+        "setup, multiple takes, location changes, lighting, audio.",
+        "studying what works and writing a hook worth stopping for.",
+        "the part nobody breaks down.",
+        "the pass that turns good into actually-postable.",
+        "what a good reel actually costs to make."
+      ],
+      "posted_at": "20260622T230558Z",
+      "post_id": "17907052527433484"
+    },
+    {
       "id": "single-00071",
       "slot": "am",
       "type": "single",
@@ -1737,35 +1768,6 @@
         "josephborroto",
         "r/entrepreneur",
         "stop pitching, start proving. post the work and the results. the right client should land on your page and think 'this person gets it' before you ever dm them."
-      ]
-    },
-    {
-      "id": "carousel-00095",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00095-0.jpg",
-        "queue/carousel-00095-1.jpg",
-        "queue/carousel-00095-2.jpg",
-        "queue/carousel-00095-3.jpg",
-        "queue/carousel-00095-4.jpg",
-        "queue/carousel-00095-5.jpg",
-        "queue/carousel-00095-6.jpg"
-      ],
-      "caption": "Everyone underestimates what a genuinely good Reel takes.\n\nResearch. Hooks. Filming. Editing. Revisions.\n\nIt's hours of skilled work, which is exactly why rock-bottom pricing never produces rock-solid video.\n\nFollow @josephborroto for the real economics of content.\n\n#videoproduction #pricingstrategy #contentmarketing #shortformvideo #videoediting #josephborroto",
-      "alt": "Carousel: what a good Reel actually costs to make.",
-      "posted": false,
-      "source_index": 9,
-      "style": "light",
-      "fp": [
-        "cutting, hand-placed captions, music, pacing. hours, not minutes.",
-        "quality video is hours of skilled work. that's why cheap pricing collapses.",
-        "research and hooks",
-        "setup, multiple takes, location changes, lighting, audio.",
-        "studying what works and writing a hook worth stopping for.",
-        "the part nobody breaks down.",
-        "the pass that turns good into actually-postable.",
-        "what a good reel actually costs to make."
       ]
     },
     {
@@ -2349,6 +2351,39 @@
         "track what lands",
         "you can't think your way to good. you film your way there.",
         "your first 100 videos are practice. post them anyway."
+      ]
+    },
+    {
+      "id": "carousel-00117",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00117-0.jpg",
+        "queue/carousel-00117-1.jpg",
+        "queue/carousel-00117-2.jpg",
+        "queue/carousel-00117-3.jpg",
+        "queue/carousel-00117-4.jpg",
+        "queue/carousel-00117-5.jpg",
+        "queue/carousel-00117-6.jpg"
+      ],
+      "caption": "5 hook formulas that work in any niche:\n\n1. \"I tried / quit / lost...\"\n2. \"Most people don't know...\"\n3. \"If you're [X], stop doing [Y].\"\n4. \"Here's the truth about [X].\"\n5. \"[Number] things I learned about [X].\"\n\nSave it for your next batch of scripts.\n\nFollow @josephborroto for a breakdown like this every few days.\n\n#hookwriting #shortformvideo #contentcreator #copywriting #reelstips #josephborroto",
+      "alt": "Carousel: 5 hook formulas that work in any niche.",
+      "posted": false,
+      "source_index": 0,
+      "style": "creamorange",
+      "fp": [
+        "5 hook formulas that work in any niche.",
+        "[number] things i learned about [x].",
+        "a curiosity gap. implies you have the inside answer.",
+        "calls out a specific person. they can't scroll past themselves.",
+        "here's the truth about [x].",
+        "i tried / quit / lost...",
+        "if you're [x], stop doing [y].",
+        "most people don't know...",
+        "personal stakes. people stay to see what happened.",
+        "positions you as the one cutting through the noise.",
+        "promises a list. the brain wants to finish what it starts.",
+        "steal these for your next 5 videos."
       ]
     }
   ]
