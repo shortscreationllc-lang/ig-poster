@@ -1945,8 +1945,8 @@
     "what a good reel actually costs to make."
   ],
   "reel_i": 64,
-  "reel_cap_i": 90,
-  "reel_audio_i": 90,
+  "reel_cap_i": 91,
+  "reel_audio_i": 91,
   "reel_recent": [
     "content is a system not a mood build the system and it runs ",
     "consistency beats going viral once show up and the algorithm",
@@ -1957,7 +1957,6 @@
     "awkward on camera talk to one person not an audience"
   ],
   "trial_recent": [
-    "5 hooks that always work steal these for your next videos",
     "post less edit harder one tight short form video beats five ",
     "most people quit posting at 90 days right before the reach s",
     "your hook is 90 of the post the first line does almost all t",
@@ -1970,7 +1969,8 @@
     "cut every silence in your video dead air is where people swi",
     "stop trying to sound like a content creator just be yourself",
     "you don t need a better camera you need a better hook and a ",
-    "most people overthink content i just get it out and that s w"
+    "most people overthink content i just get it out and that s w",
+    "pure talking head is fading pair your words with b roll that"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -1990,11 +1990,11 @@
     "20260622": 1
   },
   "beat_recent": [
-    1,
     9,
     3,
     10,
-    5
+    5,
+    0
   ],
   "style_recent": [
     "midnight",
