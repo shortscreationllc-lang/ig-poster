@@ -1666,14 +1666,15 @@
       ],
       "caption": "Every short-form video that pops has 3 acts:\n\n1. Hook (0 to 1.5s) \u2014 state the problem sharp\n2. Tension (4 to 12s) \u2014 give a reason to stay\n3. Payoff (13s to end) \u2014 deliver, then one clear close\n\nMost people film all hook or all payoff. The tension in the middle is what holds people.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
       "alt": "Card: every viral video has 3 acts, most people only film one.",
-      "posted": false,
+      "posted": true,
       "source_index": 40,
       "style": "dark",
       "fp": [
         "every viral video has 3 acts.",
         "hook, then tension, then payoff. skip the middle and retention dies.",
         "most people only film one."
-      ]
+      ],
+      "skipped": true
     },
     {
       "id": "single-00072",
@@ -2384,6 +2385,24 @@
         "positions you as the one cutting through the noise.",
         "promises a list. the brain wants to finish what it starts.",
         "steal these for your next 5 videos."
+      ]
+    },
+    {
+      "id": "single-00118",
+      "slot": "am",
+      "type": "single",
+      "images": [
+        "queue/single-00118.jpg"
+      ],
+      "caption": "Clear hooks die. Curious hooks live.\n\n\"How to edit faster\" = scroll.\n\"I wasted 2 years editing the slow way\" = stop.\n\nTease the gap in the first 2 seconds. Save the how-to for later in the video.\n\nFollow @josephborroto for hook writing that stops the scroll.\n\n#hookwriting #shortformvideo #contentstrategy #copywriting #reelstips #josephborroto",
+      "alt": "Card: curiosity beats clarity in your hook.",
+      "posted": false,
+      "source_index": 54,
+      "style": "blackout",
+      "fp": [
+        "curiosity beats clarity in your hook.",
+        "how to make a reel\" gets skipped. a tease gets watched. teach at second 4.",
+        "stop being so helpful in the first 2 seconds."
       ]
     }
   ]
