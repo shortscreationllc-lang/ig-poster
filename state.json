@@ -1630,6 +1630,22 @@
         "cap_style": 4
       },
       "hook": "Awkward on camera? Talk to one person, not an audience."
+    },
+    {
+      "at": "20260623T203405Z",
+      "id": "queue/reel-1782246767-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18130045738613929",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "navyorange",
+        "pillar": "editing",
+        "cap_style": 0
+      },
+      "hook": "Pure talking-head is fading \u2014 pair your words with B-roll that shows it."
     }
   ],
   "story_hook_i": 1,
@@ -1987,7 +2003,8 @@
     "20260619": 2,
     "20260620": 1,
     "20260621": 1,
-    "20260622": 1
+    "20260622": 1,
+    "20260623": 1
   },
   "beat_recent": [
     9,
