@@ -1620,6 +1620,20 @@
         "pillar": "hook",
         "source_index": 9
       }
+    },
+    {
+      "at": "20260623T161349Z",
+      "id": "queue/reel-1782231140.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17890469985556028",
+      "tags": {
+        "fmt": "comment",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 4
+      },
+      "hook": "Awkward on camera? Talk to one person, not an audience."
     }
   ],
   "story_hook_i": 1,
