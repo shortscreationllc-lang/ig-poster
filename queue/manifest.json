@@ -1,24 +1,6 @@
 {
   "items": [
     {
-      "id": "single-00001",
-      "slot": "am",
-      "type": "single",
-      "images": [
-        "queue/single-00001.jpg"
-      ],
-      "caption": "Most videos lose people in the first 2 seconds because the hook sounds optional.\n\n\"Wanna know how?\" lets people scroll.\n\"Your first 2 seconds are killing your views\" makes them stop.\n\nTease, don't ask. A statement creates tension a question never will.\n\nFollow @josephborroto for a short-form tip every day.\n\n#shortformvideo #hookwriting #reelstips #contentstrategy #videoediting #contentcreator #josephborroto",
-      "alt": "Bold card: stop asking questions in your hooks, use a bold statement instead.",
-      "posted": true,
-      "source_index": 0,
-      "post_id": "18086117405095480",
-      "fp": [
-        "statements stop the scroll. questions let people decide they don't care.",
-        "stop asking questions in your hooks.",
-        "use a bold statement instead."
-      ]
-    },
-    {
       "id": "single-00002",
       "slot": "am",
       "type": "quote",
@@ -1685,13 +1667,15 @@
       ],
       "caption": "People think it's all about going viral. It's not.\n\nReels bring new people to the page. Posts and stories keep the people who already found you warm, engaged, and ready to buy.\n\nYou need both \u2014 discovery and retention.\n\nFollow @josephborroto for the full content system.\n\n#contentstrategy #instagramtips #shortformvideo #audiencegrowth #josephborroto",
       "alt": "Quote card: posts and stories keep your current audience warm.",
-      "posted": false,
+      "posted": true,
       "source_index": 41,
       "style": "midnight",
       "fp": [
         "posts and stories keep your current audience warm.",
         "reels bring the new ones in."
-      ]
+      ],
+      "posted_at": "20260623T233151Z",
+      "post_id": "17893670754536777"
     },
     {
       "id": "single-00088",
@@ -2403,6 +2387,23 @@
         "curiosity beats clarity in your hook.",
         "how to make a reel\" gets skipped. a tease gets watched. teach at second 4.",
         "stop being so helpful in the first 2 seconds."
+      ]
+    },
+    {
+      "id": "single-00119",
+      "slot": "am",
+      "type": "quote",
+      "images": [
+        "queue/single-00119.jpg"
+      ],
+      "caption": "Alex Hormozi built his whole framework on one idea: make offers so good people feel stupid saying no.\n\nThe same applies to content. Make the value so obvious, so useful, so worth-the-watch that scrolling past feels like a mistake.\n\nOver-deliver in the first 5 seconds.\n\nFollow @josephborroto for content that's impossible to scroll past.\n\n#alexhormozi #offers #marketing #contentstrategy #valuefirst #josephborroto",
+      "alt": "Quote card referencing Alex Hormozi: make an offer so good people feel stupid saying no.",
+      "posted": false,
+      "source_index": 55,
+      "style": "navyorange",
+      "fp": [
+        "make an offer so good people feel stupid saying no.",
+        "\u2014 alex hormozi"
       ]
     }
   ]

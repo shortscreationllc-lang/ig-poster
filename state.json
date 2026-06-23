@@ -1,7 +1,7 @@
 {
-  "single_index": 55,
+  "single_index": 56,
   "carousel_index": 1,
-  "seq": 118,
+  "seq": 119,
   "daily": {
     "20260619": {
       "morning": true,
@@ -28,7 +28,7 @@
       "midday": true
     }
   },
-  "am_style_i": 55,
+  "am_style_i": 56,
   "pm_style_i": 63,
   "history": [
     {
@@ -1646,6 +1646,19 @@
         "cap_style": 0
       },
       "hook": "Pure talking-head is fading \u2014 pair your words with B-roll that shows it."
+    },
+    {
+      "at": "20260623T233151Z",
+      "id": "single-00072",
+      "slot": "am",
+      "type": "quote",
+      "post_id": "17893670754536777",
+      "tags": {
+        "fmt": "quote",
+        "style": "midnight",
+        "pillar": "algorithm",
+        "source_index": 41
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1879,8 +1892,6 @@
     }
   ],
   "recent_texts": [
-    "save this for your next batch.",
-    "share the mistake you made starting out",
     "5 hook formulas that work in any niche.",
     "[number] things i learned about [x].",
     "a curiosity gap. implies you have the inside answer.",
@@ -1958,7 +1969,9 @@
     "studying what works and writing a hook worth stopping for.",
     "the part nobody breaks down.",
     "the pass that turns good into actually-postable.",
-    "what a good reel actually costs to make."
+    "what a good reel actually costs to make.",
+    "posts and stories keep your current audience warm.",
+    "reels bring the new ones in."
   ],
   "reel_i": 64,
   "reel_cap_i": 91,
