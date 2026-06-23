@@ -1934,17 +1934,17 @@
     "the pass that turns good into actually-postable.",
     "what a good reel actually costs to make."
   ],
-  "reel_i": 63,
-  "reel_cap_i": 89,
-  "reel_audio_i": 89,
+  "reel_i": 64,
+  "reel_cap_i": 90,
+  "reel_audio_i": 90,
   "reel_recent": [
-    "cutting the first 2 seconds of your video can double your wa",
     "content is a system not a mood build the system and it runs ",
     "consistency beats going viral once show up and the algorithm",
     "your best salesperson is a video that works while you sleep",
     "how to get clients from content show up daily until they can",
     "views don t pay the bills content that books clients does",
-    "your first line is the only algorithm that matters"
+    "your first line is the only algorithm that matters",
+    "awkward on camera talk to one person not an audience"
   ],
   "trial_recent": [
     "5 hooks that always work steal these for your next videos",
@@ -1980,19 +1980,19 @@
     "20260622": 1
   },
   "beat_recent": [
-    4,
     1,
     9,
     3,
-    10
+    10,
+    5
   ],
   "style_recent": [
-    "ember",
     "midnight",
     "creamorange",
     "navyorange",
     "dark",
     "blackout",
-    "ember"
+    "ember",
+    "slate"
   ]
 }
