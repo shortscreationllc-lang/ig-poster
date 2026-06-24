@@ -1974,17 +1974,17 @@
     "posts and stories keep your current audience warm.",
     "reels bring the new ones in."
   ],
-  "reel_i": 64,
-  "reel_cap_i": 91,
-  "reel_audio_i": 91,
+  "reel_i": 65,
+  "reel_cap_i": 92,
+  "reel_audio_i": 92,
   "reel_recent": [
-    "content is a system not a mood build the system and it runs ",
     "consistency beats going viral once show up and the algorithm",
     "your best salesperson is a video that works while you sleep",
     "how to get clients from content show up daily until they can",
     "views don t pay the bills content that books clients does",
     "your first line is the only algorithm that matters",
-    "awkward on camera talk to one person not an audience"
+    "awkward on camera talk to one person not an audience",
+    "you don t need a better camera you need a better first sente"
   ],
   "trial_recent": [
     "post less edit harder one tight short form video beats five ",
@@ -2021,19 +2021,19 @@
     "20260623": 1
   },
   "beat_recent": [
-    9,
     3,
     10,
     5,
-    0
+    0,
+    7
   ],
   "style_recent": [
-    "midnight",
     "creamorange",
     "navyorange",
     "dark",
     "blackout",
     "ember",
-    "slate"
+    "slate",
+    "midnight"
   ]
 }
