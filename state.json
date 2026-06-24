@@ -1660,6 +1660,20 @@
         "pillar": "algorithm",
         "source_index": 41
       }
+    },
+    {
+      "at": "20260624T160528Z",
+      "id": "queue/reel-1782317044.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18096607871189612",
+      "tags": {
+        "fmt": "social",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 3
+      },
+      "hook": "You don't need a better camera \u2014 you need a better first sentence."
     }
   ],
   "story_hook_i": 1,
