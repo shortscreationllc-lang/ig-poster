@@ -3,13 +3,6 @@
   "carousel_index": 1,
   "seq": 119,
   "daily": {
-    "20260619": {
-      "morning": true,
-      "midmorning": true,
-      "midday": true,
-      "afternoon": true,
-      "evening": true
-    },
     "20260620": {
       "morning": true,
       "midmorning": true,
@@ -27,6 +20,9 @@
     "20260623": {
       "midday": true,
       "evening": true
+    },
+    "20260624": {
+      "midday": true
     }
   },
   "am_style_i": 56,
