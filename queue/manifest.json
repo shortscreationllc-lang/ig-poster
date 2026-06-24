@@ -1,24 +1,6 @@
 {
   "items": [
     {
-      "id": "single-00002",
-      "slot": "am",
-      "type": "quote",
-      "images": [
-        "queue/single-00002.jpg"
-      ],
-      "caption": "\"If you confuse, you lose.\" \u2014 Donald Miller\n\nThe StoryBrand principle that breaks most content: if people have to work to understand your message, they're gone. Clarity beats clever every single time.\n\nSay one thing. Say it simply. Then say it again.\n\nFollow @josephborroto for messaging that actually lands.\n\n#donaldmiller #storybrand #marketing #messaging #contentstrategy #josephborroto",
-      "alt": "Quote card with Donald Miller quote: if you confuse, you lose.",
-      "posted": true,
-      "source_index": 1,
-      "fp": [
-        "if you confuse, you lose.",
-        "\u2014 donald miller, storybrand"
-      ],
-      "posted_at": "20260601T182412Z",
-      "post_id": "18342680644171743"
-    },
-    {
       "id": "carousel-00015",
       "slot": "pm",
       "type": "carousel",
@@ -1678,6 +1660,42 @@
       "post_id": "17893670754536777"
     },
     {
+      "id": "carousel-00096",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00096-0.jpg",
+        "queue/carousel-00096-1.jpg",
+        "queue/carousel-00096-2.jpg",
+        "queue/carousel-00096-3.jpg",
+        "queue/carousel-00096-4.jpg",
+        "queue/carousel-00096-5.jpg",
+        "queue/carousel-00096-6.jpg"
+      ],
+      "caption": "Good editing is invisible. People should feel the pace, not notice the cuts.\n\nHere's the breakdown \ud83d\udc47\n\n1. Cut the dead air\n2. One idea per cut\n3. Captions always\n4. Effects serve the point\n5. End on momentum\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: editing so the cut disappears.",
+      "posted": true,
+      "source_index": 10,
+      "style": "ember",
+      "fp": [
+        "@josephborroto",
+        "a zoom should land a line, not decorate it. less is sharper.",
+        "captions always",
+        "cut the dead air",
+        "don't trail off. cut on the strongest line so they rewatch.",
+        "effects serve the point",
+        "end on momentum",
+        "every 'um' and pause is an exit. tighten until it's almost uncomfortable.",
+        "here's how i edit \u2192",
+        "if a clip isn't moving the story forward, it's slowing it down.",
+        "joseph borroto",
+        "most people watch on mute. no captions = no message.",
+        "one idea per cut",
+        "stop over-editing. the cut should disappear, not show off."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -1753,41 +1771,6 @@
         "josephborroto",
         "r/entrepreneur",
         "stop pitching, start proving. post the work and the results. the right client should land on your page and think 'this person gets it' before you ever dm them."
-      ]
-    },
-    {
-      "id": "carousel-00096",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00096-0.jpg",
-        "queue/carousel-00096-1.jpg",
-        "queue/carousel-00096-2.jpg",
-        "queue/carousel-00096-3.jpg",
-        "queue/carousel-00096-4.jpg",
-        "queue/carousel-00096-5.jpg",
-        "queue/carousel-00096-6.jpg"
-      ],
-      "caption": "Good editing is invisible. People should feel the pace, not notice the cuts.\n\nHere's the breakdown \ud83d\udc47\n\n1. Cut the dead air\n2. One idea per cut\n3. Captions always\n4. Effects serve the point\n5. End on momentum\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: editing so the cut disappears.",
-      "posted": false,
-      "source_index": 10,
-      "style": "ember",
-      "fp": [
-        "@josephborroto",
-        "a zoom should land a line, not decorate it. less is sharper.",
-        "captions always",
-        "cut the dead air",
-        "don't trail off. cut on the strongest line so they rewatch.",
-        "effects serve the point",
-        "end on momentum",
-        "every 'um' and pause is an exit. tighten until it's almost uncomfortable.",
-        "here's how i edit \u2192",
-        "if a clip isn't moving the story forward, it's slowing it down.",
-        "joseph borroto",
-        "most people watch on mute. no captions = no message.",
-        "one idea per cut",
-        "stop over-editing. the cut should disappear, not show off."
       ]
     },
     {
@@ -2404,6 +2387,45 @@
       "fp": [
         "make an offer so good people feel stupid saying no.",
         "\u2014 alex hormozi"
+      ]
+    },
+    {
+      "id": "carousel-00120",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00120-0.jpg",
+        "queue/carousel-00120-1.jpg",
+        "queue/carousel-00120-2.jpg",
+        "queue/carousel-00120-3.jpg",
+        "queue/carousel-00120-4.jpg",
+        "queue/carousel-00120-5.jpg",
+        "queue/carousel-00120-6.jpg",
+        "queue/carousel-00120-7.jpg",
+        "queue/carousel-00120-8.jpg"
+      ],
+      "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: 7 things to check before every shoot.",
+      "posted": false,
+      "source_index": 1,
+      "style": "light",
+      "fp": [
+        "1. 4k at 60fps",
+        "1.5 seconds, memorized. never improvise the first line.",
+        "2. mic test and playback",
+        "3. hook pre-written",
+        "4. scout your spots",
+        "5. batteries and storage",
+        "6. backup device",
+        "7 things to check before every shoot.",
+        "7. frame for the title",
+        "leave headroom so the overlay never covers your face.",
+        "number 4 is the one everyone skips.",
+        "one failure shouldn't cancel the whole shoot.",
+        "record 5 seconds and listen back. don't trust the meter alone.",
+        "switch location every line. this is the one people skip.",
+        "the only camera setting that really matters. set it once.",
+        "two of everything. a dead battery ends the day."
       ]
     }
   ]
