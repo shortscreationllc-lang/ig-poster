@@ -1985,8 +1985,8 @@
     "reels bring the new ones in."
   ],
   "reel_i": 65,
-  "reel_cap_i": 92,
-  "reel_audio_i": 92,
+  "reel_cap_i": 93,
+  "reel_audio_i": 93,
   "reel_recent": [
     "consistency beats going viral once show up and the algorithm",
     "your best salesperson is a video that works while you sleep",
@@ -1997,7 +1997,6 @@
     "you don t need a better camera you need a better first sente"
   ],
   "trial_recent": [
-    "post less edit harder one tight short form video beats five ",
     "most people quit posting at 90 days right before the reach s",
     "your hook is 90 of the post the first line does almost all t",
     "i treat the camera like a client not a camera that one shift",
@@ -2010,7 +2009,8 @@
     "stop trying to sound like a content creator just be yourself",
     "you don t need a better camera you need a better hook and a ",
     "most people overthink content i just get it out and that s w",
-    "pure talking head is fading pair your words with b roll that"
+    "pure talking head is fading pair your words with b roll that",
+    "stop posting more start hooking harder"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -2031,11 +2031,11 @@
     "20260623": 1
   },
   "beat_recent": [
-    3,
     10,
     5,
     0,
-    7
+    7,
+    1
   ],
   "style_recent": [
     "creamorange",
