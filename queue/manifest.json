@@ -1,24 +1,6 @@
 {
   "items": [
     {
-      "id": "single-00003",
-      "slot": "am",
-      "type": "quote",
-      "images": [
-        "queue/single-00003.jpg"
-      ],
-      "caption": "Content is king, but consistency is the kingdom.\n\nOne great video is a moment. A system that ships every day is a brand. The creators who win aren't the most talented \u2014 they're the most consistent.\n\nBuild the engine, then feed it.\n\nFollow @josephborroto for more on building a content machine.\n\n#contentstrategy #consistency #personalbrand #shortformvideo #contentcreator #josephborroto",
-      "alt": "Quote card: content is king, but consistency is the kingdom.",
-      "posted": true,
-      "source_index": 2,
-      "fp": [
-        "content is king, but consistency is the kingdom.",
-        "we automate both."
-      ],
-      "posted_at": "20260602T132901Z",
-      "post_id": "18065028377424293"
-    },
-    {
       "id": "single-00004",
       "slot": "am",
       "type": "single",
@@ -1697,6 +1679,42 @@
       "post_id": "17947092657080254"
     },
     {
+      "id": "carousel-00099",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00099-0.jpg",
+        "queue/carousel-00099-1.jpg",
+        "queue/carousel-00099-2.jpg",
+        "queue/carousel-00099-3.jpg",
+        "queue/carousel-00099-4.jpg",
+        "queue/carousel-00099-5.jpg",
+        "queue/carousel-00099-6.jpg"
+      ],
+      "caption": "The algorithm doesn't reward talent. It rewards the person who keeps showing up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Lower the bar to start\n2. Batch your filming\n3. Keep an idea list\n4. Detach from one post\n5. Show up on the bad days\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: how to stay consistent with content.",
+      "posted": true,
+      "source_index": 12,
+      "style": "midnight",
+      "fp": [
+        "@josephborroto",
+        "aim for 'posted,' not 'perfect.' momentum beats motivation.",
+        "batch your filming",
+        "detach from one post",
+        "here's how i stay consistent \u2192",
+        "joseph borroto",
+        "keep an idea list",
+        "lower the bar to start",
+        "never stare at a blank page. capture ideas the second they hit.",
+        "no single video defines you. the body of work does.",
+        "posting once and quitting is why most people fail. show up daily.",
+        "shoot a week in one sitting. future you just posts.",
+        "show up on the bad days",
+        "the post you don't feel like making is usually the one that hits."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -1794,41 +1812,6 @@
         "never open with your name or \"hey guys\" \u2014 they're already gone",
         "put text on screen that makes the brain stop and think differently",
         "say something or show something in the first second"
-      ]
-    },
-    {
-      "id": "carousel-00099",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00099-0.jpg",
-        "queue/carousel-00099-1.jpg",
-        "queue/carousel-00099-2.jpg",
-        "queue/carousel-00099-3.jpg",
-        "queue/carousel-00099-4.jpg",
-        "queue/carousel-00099-5.jpg",
-        "queue/carousel-00099-6.jpg"
-      ],
-      "caption": "The algorithm doesn't reward talent. It rewards the person who keeps showing up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Lower the bar to start\n2. Batch your filming\n3. Keep an idea list\n4. Detach from one post\n5. Show up on the bad days\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: how to stay consistent with content.",
-      "posted": false,
-      "source_index": 12,
-      "style": "midnight",
-      "fp": [
-        "@josephborroto",
-        "aim for 'posted,' not 'perfect.' momentum beats motivation.",
-        "batch your filming",
-        "detach from one post",
-        "here's how i stay consistent \u2192",
-        "joseph borroto",
-        "keep an idea list",
-        "lower the bar to start",
-        "never stare at a blank page. capture ideas the second they hit.",
-        "no single video defines you. the body of work does.",
-        "posting once and quitting is why most people fail. show up daily.",
-        "shoot a week in one sitting. future you just posts.",
-        "show up on the bad days",
-        "the post you don't feel like making is usually the one that hits."
       ]
     },
     {
@@ -2429,6 +2412,39 @@
         "say the point in line one",
         "talk to one person",
         "the personality is the moat. nobody can copy how you actually talk."
+      ]
+    },
+    {
+      "id": "carousel-00122",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00122-0.jpg",
+        "queue/carousel-00122-1.jpg",
+        "queue/carousel-00122-2.jpg",
+        "queue/carousel-00122-3.jpg",
+        "queue/carousel-00122-4.jpg",
+        "queue/carousel-00122-5.jpg",
+        "queue/carousel-00122-6.jpg"
+      ],
+      "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 caption mistakes killing your retention.",
+      "posted": false,
+      "source_index": 3,
+      "style": "creamorange",
+      "fp": [
+        "1. too small",
+        "2. off the beat",
+        "3. buried at the bottom",
+        "4. wrong font",
+        "5 caption mistakes killing your retention.",
+        "5. paced too slow",
+        "captions should feel a touch faster than the video itself.",
+        "if it's hard to read on a phone, it's costing you watch time.",
+        "most people make all 5.",
+        "text should hit on the cut, not lag behind the sentence.",
+        "the app ui covers it. keep key words in the safe zone.",
+        "white, modern, sans-serif. no heavy drop shadow."
       ]
     }
   ]
