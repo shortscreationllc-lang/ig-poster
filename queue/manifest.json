@@ -1,25 +1,6 @@
 {
   "items": [
     {
-      "id": "single-00004",
-      "slot": "am",
-      "type": "single",
-      "images": [
-        "queue/single-00004.jpg"
-      ],
-      "caption": "Auto-captions feel free. They're not.\n\nThey land a half-second late, miss the emphasis, and flatten the joke. People feel it before they can explain it, and they swipe.\n\nHand-place your words on the beat. Slower to do, sharper to watch.\n\nFollow @josephborroto for the editing details most people skip.\n\n#captiondesign #videoediting #reelstips #shortformvideo #editingtips #josephborroto",
-      "alt": "Card: stop using AI captions, they're quietly costing you views.",
-      "posted": true,
-      "source_index": 3,
-      "fp": [
-        "auto-captions miss the timing, the emphasis, the joke. hand-place words on the beat.",
-        "stop using ai captions.",
-        "they're quietly costing you views."
-      ],
-      "posted_at": "20260602T170557Z",
-      "post_id": "18206821777341761"
-    },
-    {
       "id": "carousel-00016",
       "slot": "pm",
       "type": "carousel",
@@ -1715,6 +1696,41 @@
       "skipped": true
     },
     {
+      "id": "carousel-00102",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00102-0.jpg",
+        "queue/carousel-00102-1.jpg",
+        "queue/carousel-00102-2.jpg",
+        "queue/carousel-00102-3.jpg",
+        "queue/carousel-00102-4.jpg",
+        "queue/carousel-00102-5.jpg",
+        "queue/carousel-00102-6.jpg"
+      ],
+      "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
+      "alt": "Carousel: 5 algorithm myths to stop believing.",
+      "posted": true,
+      "source_index": 13,
+      "style": "bone",
+      "fp": [
+        "1. \"hashtags are dead",
+        "2. \"post at the perfect time",
+        "3. \"you need to go viral",
+        "4. \"more posting always wins",
+        "5 algorithm myths to stop believing.",
+        "5. \"the algorithm hates links",
+        "consistent reach beats one spike that fades in a week.",
+        "good content travels for days. timing is a rounding error.",
+        "it rewards watch time. make something worth finishing.",
+        "quality and retention beat raw volume every time.",
+        "these are costing you reach.",
+        "they still help categorize. they're just not the whole game."
+      ],
+      "posted_at": "20260625T160754Z",
+      "post_id": "17954576562167490"
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -1847,39 +1863,6 @@
         "verbs show the action. nouns show the detail, close and isolated. detail wins.",
         "you're filming verbs, not nouns.",
         "your b-roll is boring."
-      ]
-    },
-    {
-      "id": "carousel-00102",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00102-0.jpg",
-        "queue/carousel-00102-1.jpg",
-        "queue/carousel-00102-2.jpg",
-        "queue/carousel-00102-3.jpg",
-        "queue/carousel-00102-4.jpg",
-        "queue/carousel-00102-5.jpg",
-        "queue/carousel-00102-6.jpg"
-      ],
-      "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
-      "alt": "Carousel: 5 algorithm myths to stop believing.",
-      "posted": false,
-      "source_index": 13,
-      "style": "bone",
-      "fp": [
-        "1. \"hashtags are dead",
-        "2. \"post at the perfect time",
-        "3. \"you need to go viral",
-        "4. \"more posting always wins",
-        "5 algorithm myths to stop believing.",
-        "5. \"the algorithm hates links",
-        "consistent reach beats one spike that fades in a week.",
-        "good content travels for days. timing is a rounding error.",
-        "it rewards watch time. make something worth finishing.",
-        "quality and retention beat raw volume every time.",
-        "these are costing you reach.",
-        "they still help categorize. they're just not the whole game."
       ]
     },
     {
@@ -2445,6 +2428,41 @@
         "text should hit on the cut, not lag behind the sentence.",
         "the app ui covers it. keep key words in the safe zone.",
         "white, modern, sans-serif. no heavy drop shadow."
+      ]
+    },
+    {
+      "id": "carousel-00123",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00123-0.jpg",
+        "queue/carousel-00123-1.jpg",
+        "queue/carousel-00123-2.jpg",
+        "queue/carousel-00123-3.jpg",
+        "queue/carousel-00123-4.jpg",
+        "queue/carousel-00123-5.jpg",
+        "queue/carousel-00123-6.jpg"
+      ],
+      "caption": "Stop trying to sound like a \"content creator.\" Just talk.\n\nMy biggest unlock wasn't a better camera or a trending sound \u2014 it was dropping the fake \"creator voice\" and just being myself. People don't follow presenters. They follow people.\n\nHere's how I keep it real on camera \ud83d\udc47\n\n1. Talk how you actually talk\n2. Your quirks ARE the brand\n3. Borrow structure from big accounts \u2014 never their personality\n4. Film like you're texting a friend\n5. The more \"you\" it is, the better it does\n\nSave this, then go be yourself on your next video. \ud83d\udccc\n\nFollow @josephborroto for content tips that actually move the needle.",
+      "alt": "Carousel: be yourself on camera.",
+      "posted": false,
+      "source_index": 4,
+      "style": "midnight",
+      "fp": [
+        "@josephborroto",
+        "borrow structure, not personality",
+        "casual beats polished. people trust a person, not a presenter.",
+        "every time i loosen up on camera, the content does better.",
+        "film like you're texting a friend",
+        "here's how i stay myself on camera \u2192",
+        "joseph borroto",
+        "steal the format from big accounts. keep your own voice on top of it.",
+        "stop trying to sound like a 'content creator.' just be yourself on camera.",
+        "talk how you actually talk",
+        "the 'script voice' is what makes people scroll. your real voice keeps them.",
+        "the more 'you,' the better it does",
+        "the weird way you say things is the one thing nobody can copy.",
+        "your quirks are the brand"
       ]
     }
   ]

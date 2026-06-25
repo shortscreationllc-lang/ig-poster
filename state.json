@@ -1,7 +1,7 @@
 {
   "single_index": 56,
-  "carousel_index": 4,
-  "seq": 122,
+  "carousel_index": 5,
+  "seq": 123,
   "daily": {
     "20260620": {
       "morning": true,
@@ -27,7 +27,7 @@
     }
   },
   "am_style_i": 56,
-  "pm_style_i": 66,
+  "pm_style_i": 67,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1700,6 +1700,19 @@
         "pillar": "hook",
         "source_index": 11
       }
+    },
+    {
+      "at": "20260625T160754Z",
+      "id": "carousel-00102",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17954576562167490",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "algorithm",
+        "source_index": 13
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1933,18 +1946,6 @@
     }
   ],
   "recent_texts": [
-    "@josephborroto",
-    "joseph borroto",
-    "you don't need permission to start. just post.",
-    "1. 4k at 60fps",
-    "1.5 seconds, memorized. never improvise the first line.",
-    "2. mic test and playback",
-    "3. hook pre-written",
-    "4. scout your spots",
-    "5. batteries and storage",
-    "6. backup device",
-    "7 things to check before every shoot.",
-    "7. frame for the title",
     "leave headroom so the overlay never covers your face.",
     "number 4 is the one everyone skips.",
     "one failure shouldn't cancel the whole shoot.",
@@ -2012,7 +2013,19 @@
     "drop a number or contradiction right where attention dips.",
     "new angle or location keeps the eye from settling.",
     "remove the breath before every sentence. pace is retention.",
-    "where people drop, and why."
+    "where people drop, and why.",
+    "1. \"hashtags are dead",
+    "2. \"post at the perfect time",
+    "3. \"you need to go viral",
+    "4. \"more posting always wins",
+    "5 algorithm myths to stop believing.",
+    "5. \"the algorithm hates links",
+    "consistent reach beats one spike that fades in a week.",
+    "good content travels for days. timing is a rounding error.",
+    "it rewards watch time. make something worth finishing.",
+    "quality and retention beat raw volume every time.",
+    "these are costing you reach.",
+    "they still help categorize. they're just not the whole game."
   ],
   "reel_i": 65,
   "reel_cap_i": 93,
