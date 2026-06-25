@@ -48,18 +48,14 @@ ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "state.json"
 
 # kind, NY start hour, media, feed-slot, story.
-#   media : "reel" (animated video) | "post" (image) | None
+#   media : "reel" | "post" | "altrc" (alternate reel<->carousel by day) | None
 #   feed  : am | pm | auto | None  (only when media == "post"; am=single card,
 #           pm=carousel, auto=alternate single/carousel by day)
 #   story : post the morning story this slot?
-# Daily lineup = 1 Reel + 1 image post + 1 story (2 posts/day).
-# Scheduled in the GAPS around Joseph's own manual posts (9:30a & 5:30p) so the
-# feed never clusters:
-#   midday  ~12:37p : Reel + story
-#   evening ~7:37p  : image post (alternates single card / carousel by day)
+# Daily lineup = ONE post/day, alternating reel <-> carousel by day. No story.
+#   midday ~12:37p : reel (even days) / carousel (odd days)
 SLOTS = [
-    ("midday",  12, "reel", None,   True),
-    ("evening", 19, "post", "auto", False),
+    ("midday", 12, "altrc", None, False),
 ]
 # A slot's LIVE window is [start, start + WINDOW_SPAN] hours — slack so a cron
 # that fires late (or slips into the next hour) still counts as "in window".
@@ -97,6 +93,12 @@ def plan():
     forced = (os.getenv("FORCE_SLOT") or "").strip().lower()
     lines = []
     for kind, start, media, feed, story in SLOTS:
+        # alternate reel <-> carousel by day: even day = reel, odd day = carousel
+        if media == "altrc":
+            if int(day) % 2 == 0:
+                media, feed = "reel", None
+            else:
+                media, feed = "post", "pm"
         if forced:
             if kind != forced:
                 continue
