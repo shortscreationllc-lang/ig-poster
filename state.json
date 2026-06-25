@@ -1710,6 +1710,22 @@
         "pillar": "algorithm",
         "source_index": 13
       }
+    },
+    {
+      "at": "20260625T203336Z",
+      "id": "queue/reel-1782419520-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18108774808766560",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "comment",
+        "style": "dark",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Stop chasing viral. Chase clarity \u2014 one idea, impossible to scroll past."
     }
   ],
   "story_hook_i": 1,
@@ -2069,7 +2085,8 @@
     "20260621": 1,
     "20260622": 1,
     "20260623": 1,
-    "20260624": 1
+    "20260624": 1,
+    "20260625": 1
   },
   "beat_recent": [
     5,
