@@ -2025,8 +2025,8 @@
     "they still help categorize. they're just not the whole game."
   ],
   "reel_i": 65,
-  "reel_cap_i": 93,
-  "reel_audio_i": 93,
+  "reel_cap_i": 94,
+  "reel_audio_i": 94,
   "reel_recent": [
     "consistency beats going viral once show up and the algorithm",
     "your best salesperson is a video that works while you sleep",
@@ -2037,7 +2037,6 @@
     "you don t need a better camera you need a better first sente"
   ],
   "trial_recent": [
-    "most people quit posting at 90 days right before the reach s",
     "your hook is 90 of the post the first line does almost all t",
     "i treat the camera like a client not a camera that one shift",
     "a dm i got after someone ran my content advice for 30 days",
@@ -2050,7 +2049,8 @@
     "you don t need a better camera you need a better hook and a ",
     "most people overthink content i just get it out and that s w",
     "pure talking head is fading pair your words with b roll that",
-    "stop posting more start hooking harder"
+    "stop posting more start hooking harder",
+    "stop chasing viral chase clarity one idea impossible to scro"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -2072,11 +2072,11 @@
     "20260624": 1
   },
   "beat_recent": [
-    10,
     5,
     0,
     7,
-    1
+    1,
+    8
   ],
   "style_recent": [
     "creamorange",
