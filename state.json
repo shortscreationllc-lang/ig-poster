@@ -1739,6 +1739,22 @@
         "cap_style": 3
       },
       "hook": "Most short-form content isn't bad \u2014 it's forgettable. Make one thing memorable."
+    },
+    {
+      "at": "20260626T201919Z",
+      "id": "queue/reel-1782505068-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18271057069295578",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "stat",
+        "style": "blackout",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "90% of viewers decide whether to keep watching in the first 3 seconds."
     }
   ],
   "story_hook_i": 1,
@@ -2099,7 +2115,8 @@
     "20260622": 1,
     "20260623": 1,
     "20260624": 1,
-    "20260625": 1
+    "20260625": 1,
+    "20260626": 1
   },
   "beat_recent": [
     7,
