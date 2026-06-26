@@ -2054,8 +2054,8 @@
     "they still help categorize. they're just not the whole game."
   ],
   "reel_i": 66,
-  "reel_cap_i": 95,
-  "reel_audio_i": 95,
+  "reel_cap_i": 96,
+  "reel_audio_i": 96,
   "reel_recent": [
     "your best salesperson is a video that works while you sleep",
     "how to get clients from content show up daily until they can",
@@ -2066,7 +2066,6 @@
     "most short form content isn t bad it s forgettable make one "
   ],
   "trial_recent": [
-    "your hook is 90 of the post the first line does almost all t",
     "i treat the camera like a client not a camera that one shift",
     "a dm i got after someone ran my content advice for 30 days",
     "3 videos every business owner should be posting to get clien",
@@ -2079,7 +2078,8 @@
     "most people overthink content i just get it out and that s w",
     "pure talking head is fading pair your words with b roll that",
     "stop posting more start hooking harder",
-    "stop chasing viral chase clarity one idea impossible to scro"
+    "stop chasing viral chase clarity one idea impossible to scro",
+    "90 of viewers decide whether to keep watching in the first 3"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -2102,11 +2102,11 @@
     "20260625": 1
   },
   "beat_recent": [
-    0,
     7,
     1,
     8,
-    10
+    10,
+    11
   ],
   "style_recent": [
     "navyorange",
