@@ -1726,6 +1726,20 @@
         "cap_style": 0
       },
       "hook": "Stop chasing viral. Chase clarity \u2014 one idea, impossible to scroll past."
+    },
+    {
+      "at": "20260626T160429Z",
+      "id": "queue/reel-1782489771.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17919341274396103",
+      "tags": {
+        "fmt": "statement",
+        "style": "navyorange",
+        "pillar": "general",
+        "cap_style": 3
+      },
+      "hook": "Most short-form content isn't bad \u2014 it's forgettable. Make one thing memorable."
     }
   ],
   "story_hook_i": 1,
