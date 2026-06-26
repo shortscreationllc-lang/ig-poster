@@ -2040,17 +2040,17 @@
     "these are costing you reach.",
     "they still help categorize. they're just not the whole game."
   ],
-  "reel_i": 65,
-  "reel_cap_i": 94,
-  "reel_audio_i": 94,
+  "reel_i": 66,
+  "reel_cap_i": 95,
+  "reel_audio_i": 95,
   "reel_recent": [
-    "consistency beats going viral once show up and the algorithm",
     "your best salesperson is a video that works while you sleep",
     "how to get clients from content show up daily until they can",
     "views don t pay the bills content that books clients does",
     "your first line is the only algorithm that matters",
     "awkward on camera talk to one person not an audience",
-    "you don t need a better camera you need a better first sente"
+    "you don t need a better camera you need a better first sente",
+    "most short form content isn t bad it s forgettable make one "
   ],
   "trial_recent": [
     "your hook is 90 of the post the first line does almost all t",
@@ -2089,19 +2089,19 @@
     "20260625": 1
   },
   "beat_recent": [
-    5,
     0,
     7,
     1,
-    8
+    8,
+    10
   ],
   "style_recent": [
-    "creamorange",
     "navyorange",
     "dark",
     "blackout",
     "ember",
     "slate",
-    "midnight"
+    "midnight",
+    "navyorange"
   ]
 }
