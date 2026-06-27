@@ -1767,6 +1767,22 @@
         "pillar": "algorithm",
         "source_index": 14
       }
+    },
+    {
+      "at": "20260627T195532Z",
+      "id": "queue/reel-1782590001-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18104931539018241",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "quote",
+        "style": "orangepop",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "If they don't stop scrolling, nothing else you made even matters."
     }
   ],
   "story_hook_i": 1,
@@ -2128,7 +2144,8 @@
     "20260623": 1,
     "20260624": 1,
     "20260625": 1,
-    "20260626": 1
+    "20260626": 1,
+    "20260627": 1
   },
   "beat_recent": [
     1,
