@@ -2082,8 +2082,8 @@
     "you'll get bored before they do. drill the same message new ways."
   ],
   "reel_i": 66,
-  "reel_cap_i": 96,
-  "reel_audio_i": 96,
+  "reel_cap_i": 97,
+  "reel_audio_i": 97,
   "reel_recent": [
     "your best salesperson is a video that works while you sleep",
     "how to get clients from content show up daily until they can",
@@ -2094,7 +2094,6 @@
     "most short form content isn t bad it s forgettable make one "
   ],
   "trial_recent": [
-    "i treat the camera like a client not a camera that one shift",
     "a dm i got after someone ran my content advice for 30 days",
     "3 videos every business owner should be posting to get clien",
     "show the before and after not the theory proof sells better ",
@@ -2107,7 +2106,8 @@
     "pure talking head is fading pair your words with b roll that",
     "stop posting more start hooking harder",
     "stop chasing viral chase clarity one idea impossible to scro",
-    "90 of viewers decide whether to keep watching in the first 3"
+    "90 of viewers decide whether to keep watching in the first 3",
+    "if they don t stop scrolling nothing else you made even matt"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -2131,11 +2131,11 @@
     "20260626": 1
   },
   "beat_recent": [
-    7,
     1,
     8,
     10,
-    11
+    11,
+    6
   ],
   "style_recent": [
     "navyorange",
