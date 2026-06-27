@@ -1,7 +1,7 @@
 {
   "single_index": 56,
-  "carousel_index": 5,
-  "seq": 123,
+  "carousel_index": 6,
+  "seq": 124,
   "daily": {
     "20260622": {
       "midday": true,
@@ -23,7 +23,7 @@
     }
   },
   "am_style_i": 56,
-  "pm_style_i": 67,
+  "pm_style_i": 68,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1755,6 +1755,19 @@
         "cap_style": 0
       },
       "hook": "90% of viewers decide whether to keep watching in the first 3 seconds."
+    },
+    {
+      "at": "20260627T160210Z",
+      "id": "carousel-00103",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18139946389480003",
+      "tags": {
+        "fmt": "carousel",
+        "style": "dark",
+        "pillar": "algorithm",
+        "source_index": 14
+      }
     }
   ],
   "story_hook_i": 1,
@@ -1988,20 +2001,6 @@
     }
   ],
   "recent_texts": [
-    "leave headroom so the overlay never covers your face.",
-    "number 4 is the one everyone skips.",
-    "one failure shouldn't cancel the whole shoot.",
-    "record 5 seconds and listen back. don't trust the meter alone.",
-    "switch location every line. this is the one people skip.",
-    "the only camera setting that really matters. set it once.",
-    "two of everything. a dead battery ends the day.",
-    "editing_forever",
-    "josephborroto",
-    "my editing takes hours and still looks amateur. what am i missing?",
-    "you're overthinking it. cut the dead air, one idea per cut, captions on. that's 90% of a clean edit. stop adding effects and start removing pauses.",
-    "1. too small",
-    "2. off the beat",
-    "3. buried at the bottom",
     "4. wrong font",
     "5 caption mistakes killing your retention.",
     "5. paced too slow",
@@ -2067,7 +2066,21 @@
     "it rewards watch time. make something worth finishing.",
     "quality and retention beat raw volume every time.",
     "these are costing you reach.",
-    "they still help categorize. they're just not the whole game."
+    "they still help categorize. they're just not the whole game.",
+    "@josephborroto",
+    "a small, clear audience refers you. a broad, blurry one forgets you.",
+    "be the person known for one thing before you branch out.",
+    "here's how i niche down \u2192",
+    "if your content is for everyone, it's for no one.",
+    "joseph borroto",
+    "make content for a specific human, not a vague audience.",
+    "niche down to grow up",
+    "own one topic",
+    "pick one person",
+    "repeat your core idea",
+    "speak their language",
+    "use the exact words your person uses. it feels made for them.",
+    "you'll get bored before they do. drill the same message new ways."
   ],
   "reel_i": 66,
   "reel_cap_i": 96,
