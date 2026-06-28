@@ -1796,6 +1796,22 @@
         "cap_style": 3
       },
       "hook": "How I always know what to post \u2014 your audience writes the list."
+    },
+    {
+      "at": "20260628T204254Z",
+      "id": "queue/reel-1782679291-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18345448840172493",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "comment",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How to make every video feel different \u2014 same idea, new angle every time."
     }
   ],
   "story_hook_i": 1,
@@ -2158,7 +2174,8 @@
     "20260624": 1,
     "20260625": 1,
     "20260626": 1,
-    "20260627": 1
+    "20260627": 1,
+    "20260628": 1
   },
   "beat_recent": [
     10,
