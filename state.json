@@ -2097,17 +2097,17 @@
     "use the exact words your person uses. it feels made for them.",
     "you'll get bored before they do. drill the same message new ways."
   ],
-  "reel_i": 66,
-  "reel_cap_i": 97,
-  "reel_audio_i": 97,
+  "reel_i": 67,
+  "reel_cap_i": 98,
+  "reel_audio_i": 98,
   "reel_recent": [
-    "your best salesperson is a video that works while you sleep",
     "how to get clients from content show up daily until they can",
     "views don t pay the bills content that books clients does",
     "your first line is the only algorithm that matters",
     "awkward on camera talk to one person not an audience",
     "you don t need a better camera you need a better first sente",
-    "most short form content isn t bad it s forgettable make one "
+    "most short form content isn t bad it s forgettable make one ",
+    "how i always know what to post your audience writes the list"
   ],
   "trial_recent": [
     "a dm i got after someone ran my content advice for 30 days",
@@ -2148,19 +2148,19 @@
     "20260627": 1
   },
   "beat_recent": [
-    1,
     8,
     10,
     11,
-    6
+    6,
+    1
   ],
   "style_recent": [
-    "navyorange",
     "dark",
     "blackout",
     "ember",
     "slate",
     "midnight",
-    "navyorange"
+    "navyorange",
+    "dark"
   ]
 }
