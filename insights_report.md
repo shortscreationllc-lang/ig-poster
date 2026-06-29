@@ -4,7 +4,7 @@
 
 ## 🏆 Top performers (by save/share/watch score)
 - 🧪 20260622 | reel | reach 109 | views 143 | 47.4s watch | saves 0 shares 1 | eng 0.9% | score 33.67 | https://www.instagram.com/reel/DZ5y6xhCDA1/
-- 👤 20260629 | REELS | reach 178 | views 357 | 15.2s watch | saves 0 shares 0 | eng 7.3% | score 22.508 | https://www.instagram.com/reel/DaLCg8puSCw/
+- 👤 20260629 | REELS | reach 178 | views 364 | 15.2s watch | saves 0 shares 0 | eng 7.3% | score 22.508 | https://www.instagram.com/reel/DaLCg8puSCw/
 - 👤 20260624 | REELS | reach 129 | views 176 | 5.9s watch | saves 1 shares 2 | eng 5.4% | score 18.28 | https://www.instagram.com/reel/DZ_GBteBbQt/
 - 👤 20260624 | REELS | reach 242 | views 358 | 4.8s watch | saves 3 shares 1 | eng 7.9% | score 17.631 | https://www.instagram.com/reel/DZ_E214BqMW/
 - 👤 20260627 | REELS | reach 207 | views 304 | 5.8s watch | saves 0 shares 1 | eng 5.3% | score 12.585 | https://www.instagram.com/reel/DaFa4ZphoPj/
