@@ -1,7 +1,7 @@
 {
   "single_index": 56,
-  "carousel_index": 6,
-  "seq": 124,
+  "carousel_index": 7,
+  "seq": 125,
   "daily": {
     "20260624": {
       "midday": true,
@@ -21,7 +21,7 @@
     }
   },
   "am_style_i": 56,
-  "pm_style_i": 68,
+  "pm_style_i": 69,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1812,6 +1812,19 @@
         "cap_style": 0
       },
       "hook": "How to make every video feel different \u2014 same idea, new angle every time."
+    },
+    {
+      "at": "20260629T162801Z",
+      "id": "carousel-00105",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18183207034360192",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "editing",
+        "source_index": 15
+      }
     }
   ],
   "story_hook_i": 1,
@@ -2045,18 +2058,6 @@
     }
   ],
   "recent_texts": [
-    "4. wrong font",
-    "5 caption mistakes killing your retention.",
-    "5. paced too slow",
-    "captions should feel a touch faster than the video itself.",
-    "if it's hard to read on a phone, it's costing you watch time.",
-    "most people make all 5.",
-    "text should hit on the cut, not lag behind the sentence.",
-    "the app ui covers it. keep key words in the safe zone.",
-    "white, modern, sans-serif. no heavy drop shadow.",
-    "10 video ideas you can post this week",
-    "3 tips in 30 seconds",
-    "a before/after of your work",
     "a beginner's first step",
     "a bold opinion",
     "a mistake you used to make",
@@ -2124,7 +2125,19 @@
     "repeat your core idea",
     "speak their language",
     "use the exact words your person uses. it feels made for them.",
-    "you'll get bored before they do. drill the same message new ways."
+    "you'll get bored before they do. drill the same message new ways.",
+    "1. film nouns, not verbs",
+    "2. get uncomfortably close",
+    "3. move the camera",
+    "4. match the light",
+    "5 rules for b-roll that isn't boring.",
+    "5. overshoot",
+    "a slow push or pan adds life a locked shot can't.",
+    "capture 3x what you need. you'll thank yourself in the edit.",
+    "consistent lighting makes cuts feel seamless.",
+    "detail reads as intentional. distance reads as filler.",
+    "most people film the wrong thing.",
+    "the object close-up beats the wide action shot."
   ],
   "reel_i": 67,
   "reel_cap_i": 99,
