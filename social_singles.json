@@ -390,6 +390,66 @@
       },
       "caption": "Good editing is invisible. People feel the pace, not the cuts.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Good editing is invisible. People feel the pace, not the cuts."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Posted beats perfect. Every single time.",
+        "cta": ""
+      },
+      "caption": "Posted beats perfect. Every single time.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Posted beats perfect. Every single time."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "The more AI floods the feed, the more your face is worth.",
+        "cta": ""
+      },
+      "caption": "The more AI floods the feed, the more your face is worth.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The more AI floods the feed, the more your face is worth."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Stop adding effects. Start removing pauses.",
+        "cta": ""
+      },
+      "caption": "Stop adding effects. Start removing pauses.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Stop adding effects. Start removing pauses."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "slate",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Consistency beats talent that quits.",
+        "cta": ""
+      },
+      "caption": "Consistency beats talent that quits.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Consistency beats talent that quits."
     }
   ]
 }

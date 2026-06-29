@@ -282,6 +282,46 @@
       "prompt": "Drop your answer in the comments.",
       "caption": "The best hook always starts with ________.\n\nFollow @josephborroto for more on content.",
       "alt_text": "The best hook always starts with ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "HOT TAKE",
+      "headline": "AI videos are coming for everything. The personal touch is the one thing they can't fake.",
+      "prompt": "Who needed to hear this?",
+      "caption": "AI videos are coming for everything. The personal touch is the one thing they can't fake.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "AI videos are coming for everything. The personal touch is the one thing they can't fake."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The most underrated content skill is ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The most underrated content skill is ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The most underrated content skill is ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "HOT TAKE",
+      "headline": "Don't bet on going viral. Bet on consistency.",
+      "prompt": "Agree or disagree?",
+      "caption": "Don't bet on going viral. Bet on consistency.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Don't bet on going viral. Bet on consistency."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "I'd post more if I stopped worrying about ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "I'd post more if I stopped worrying about ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "I'd post more if I stopped worrying about ________."
     }
   ]
 }

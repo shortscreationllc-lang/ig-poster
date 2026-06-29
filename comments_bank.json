@@ -800,6 +800,126 @@
       },
       "caption": "Post the work and the results. the right client should land on your page already sold.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Comment reply: post the work and the results. the right client should land on your page already sold."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "vid_leo",
+        "initials": "VL",
+        "text": "whats your editing process?",
+        "likes": "939"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "my team runs it. if you want to grow, delegate and build a team.",
+        "likes": "580"
+      },
+      "caption": "My team runs it. if you want to grow, delegate and build a team.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: my team runs it. if you want to grow, delegate and build a team."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "vid_jordan",
+        "initials": "VJ",
+        "text": "0 followers, where do i start?",
+        "likes": "248"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "trying to make the perfect post — so they never post at all. perfect and unposted is worth zero.",
+        "likes": "594"
+      },
+      "caption": "Trying to make the perfect post — so they never post at all. perfect and unposted is worth zero.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: trying to make the perfect post — so they never post at all. perfect and unposted is worth zero."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "midnight",
+      "comment": {
+        "author": "mike.media",
+        "initials": "MM",
+        "text": "i feel so cringe posting. help?",
+        "likes": "681"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "go record yourself in front of a bunch of people. keep doing it. reps kill the fear.",
+        "likes": "750"
+      },
+      "caption": "Go record yourself in front of a bunch of people. keep doing it. reps kill the fear.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: go record yourself in front of a bunch of people. keep doing it. reps kill the fear."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "kai.daily",
+        "initials": "KD",
+        "text": "is posting every day really necessary?",
+        "likes": "453"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "discipline, not motivation. videos aren't fun, you won't always see results. go anyway.",
+        "likes": "292"
+      },
+      "caption": "Discipline, not motivation. videos aren't fun, you won't always see results. go anyway.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: discipline, not motivation. videos aren't fun, you won't always see results. go anyway."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "midnight",
+      "comment": {
+        "author": "new_ty",
+        "initials": "NT",
+        "text": "i always fall off. how do i keep going?",
+        "likes": "1600k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "daily if you can. not for the algorithm — for the reps. you get good by posting.",
+        "likes": "131"
+      },
+      "caption": "Daily if you can. not for the algorithm — for the reps. you get good by posting.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: daily if you can. not for the algorithm — for the reps. you get good by posting."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "midnight",
+      "comment": {
+        "author": "kai.daily",
+        "initials": "KD",
+        "text": "do i have to show my face?",
+        "likes": "704"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "stop copying the creator voice. talk how you actually talk. that's the style.",
+        "likes": "331"
+      },
+      "caption": "Stop copying the creator voice. talk how you actually talk. that's the style.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: stop copying the creator voice. talk how you actually talk. that's the style."
     }
   ]
 }
