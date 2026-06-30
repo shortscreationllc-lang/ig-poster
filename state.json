@@ -1840,6 +1840,20 @@
         "cap_style": 0
       },
       "hook": "Good content nobody sees is just a weak hook \u2014 fix the first 3 seconds."
+    },
+    {
+      "at": "20260630T161211Z",
+      "id": "queue/reel-1782835849.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18127528048641750",
+      "tags": {
+        "fmt": "imessage",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 3
+      },
+      "hook": "How I got comfortable on camera \u2014 reps in front of real people."
     }
   ],
   "story_hook_i": 1,
