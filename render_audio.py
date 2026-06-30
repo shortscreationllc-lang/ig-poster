@@ -1,139 +1,142 @@
 #!/usr/bin/env python3
-"""Generate 100% copyright-safe beat beds in code and mux them into Reels.
-Fully synthesized (zero copyright risk): sub-bass groove, punchy kick + click,
-backbeat clap, hi-hat pattern, detuned pad, a melodic pluck hook, sidechain
-'pump' and soft saturation — so the audio is full and modern, not a thin sine."""
+"""Synthesized, 100% copyright-safe MUSIC beds for Reels — actual little songs,
+not a static beat. Each bed plays a 4-chord progression (the kind pop/lofi/
+cinematic tracks are built on) with a soft keys timbre, a bassline, a melody
+line over the top, gentle drums and reverb. Many moods + per-render variation,
+so every video gets its own track and nothing repeats."""
 import subprocess, wave
 import numpy as np
 import imageio_ffmpeg
 
 SR = 44100
 
-# bpm, root (Hz), chord (semitones), and per-element levels. Defaults via .get so
-# every variant is full unless it deliberately strips an element back.
+# chord shapes (semitone intervals from the chord root)
+CH = {"maj": [0, 4, 7], "min": [0, 3, 7], "maj7": [0, 4, 7, 11],
+      "min7": [0, 3, 7, 10], "sus": [0, 5, 7], "add9": [0, 4, 7, 14]}
+
+# Song templates. prog = 4 chords as (root-semitones-from-key, quality).
+# `inst` shapes the timbre; `drums` 0..1 keeps percussion subtle (musical, not boom).
+# Progressions are the common emotional/pop/lofi ones — evocative of today's
+# sound without copying any actual song.
 BEATS = [
-    {"name": "lofi-warm", "lead": "pluck",   "bpm": 82,  "root": 110.00, "chord": [0, 3, 7, 10], "kick": 0.9, "clap": 0.5, "hat": 0.35, "bass": 0.8, "pluck": 0.5, "swing": 0.12},
-    {"name": "deep-min", "lead": "sine",    "bpm": 76,  "root": 98.00,  "chord": [0, 3, 7, 12], "kick": 1.0, "clap": 0.4, "hat": 0.25, "bass": 0.9, "pluck": 0.35, "swing": 0.0},
-    {"name": "bright-maj", "lead": "tri",  "bpm": 92,  "root": 130.81, "chord": [0, 4, 7, 11], "kick": 0.85, "clap": 0.55, "hat": 0.45, "bass": 0.7, "pluck": 0.6, "swing": 0.08},
-    {"name": "minimal", "lead": "square",     "bpm": 104, "root": 123.47, "chord": [0, 7, 12],    "kick": 0.8, "clap": 0.45, "hat": 0.5, "bass": 0.6, "pluck": 0.3, "swing": 0.0},
-    {"name": "chill-sus", "lead": "fm",   "bpm": 72,  "root": 87.31,  "chord": [0, 5, 7, 10], "kick": 0.75, "clap": 0.4, "hat": 0.2, "bass": 0.8, "pluck": 0.45, "swing": 0.14},
-    {"name": "drive-soft", "lead": "saw",  "bpm": 112, "root": 146.83, "chord": [0, 3, 7, 10], "kick": 0.95, "clap": 0.6, "hat": 0.55, "bass": 0.7, "pluck": 0.5, "swing": 0.0},
-    {"name": "trap-dark", "lead": "square",   "bpm": 132, "root": 73.42,  "chord": [0, 3, 7, 10], "kick": 1.0, "clap": 0.5, "hat": 0.6, "bass": 1.0, "pluck": 0.4, "swing": 0.0, "rolls": True},
-    {"name": "ambient-air", "lead": "fm", "bpm": 66,  "root": 164.81, "chord": [0, 4, 7, 11], "kick": 0.55, "clap": 0.3, "hat": 0.15, "bass": 0.5, "pluck": 0.6, "swing": 0.18},
-    {"name": "house-pulse", "lead": "saw", "bpm": 124, "root": 110.00, "chord": [0, 5, 7, 12], "kick": 1.0, "clap": 0.55, "hat": 0.6, "bass": 0.85, "pluck": 0.4, "swing": 0.0, "four": True},
-    {"name": "phonk-low", "lead": "tri",   "bpm": 88,  "root": 82.41,  "chord": [0, 3, 7, 10], "kick": 1.0, "clap": 0.5, "hat": 0.4, "bass": 1.0, "pluck": 0.55, "swing": 0.1},
-    {"name": "uk-bounce", "lead": "square",   "bpm": 140, "root": 98.00,  "chord": [0, 3, 7, 12], "kick": 0.95, "clap": 0.6, "hat": 0.55, "bass": 0.9, "pluck": 0.5, "swing": 0.0},
-    {"name": "dreamy-keys", "lead": "pluck", "bpm": 90,  "root": 146.83, "chord": [0, 4, 9, 11], "kick": 0.7, "clap": 0.45, "hat": 0.3, "bass": 0.6, "pluck": 0.7, "swing": 0.1},
+    {"name": "emotional-keys", "key": 261.63, "bpm": 80, "drums": 0.35, "inst": "keys",
+     "prog": [(9, "min"), (5, "maj"), (0, "maj"), (7, "maj")]},          # vi IV I V
+    {"name": "uplift-pop",     "key": 293.66, "bpm": 96, "drums": 0.5,  "inst": "pluck",
+     "prog": [(0, "maj"), (7, "maj"), (9, "min"), (5, "maj")]},          # I V vi IV
+    {"name": "lofi-rhodes",    "key": 233.08, "bpm": 74, "drums": 0.3,  "inst": "rhodes",
+     "prog": [(2, "min7"), (7, "maj7"), (0, "maj7"), (0, "maj7")]},      # ii V I I
+    {"name": "cinematic",      "key": 220.00, "bpm": 70, "drums": 0.25, "inst": "pad",
+     "prog": [(0, "min"), (8, "maj"), (3, "maj"), (10, "maj")]},         # i VI III VII
+    {"name": "dreamy",         "key": 329.63, "bpm": 88, "drums": 0.4,  "inst": "keys",
+     "prog": [(0, "maj7"), (9, "min7"), (5, "maj7"), (7, "sus")]},
+    {"name": "warm-hopeful",   "key": 246.94, "bpm": 92, "drums": 0.45, "inst": "pluck",
+     "prog": [(5, "maj"), (7, "maj"), (9, "min"), (4, "min")]},          # IV V vi iii
+    {"name": "night-drive",    "key": 220.00, "bpm": 102, "drums": 0.5, "inst": "rhodes",
+     "prog": [(9, "min"), (0, "maj"), (5, "maj"), (7, "maj")]},
+    {"name": "soft-anthem",    "key": 277.18, "bpm": 84, "drums": 0.42, "inst": "keys",
+     "prog": [(0, "add9"), (5, "maj"), (9, "min7"), (7, "sus")]},
+    {"name": "gentle-future",  "key": 311.13, "bpm": 98, "drums": 0.46, "inst": "pluck",
+     "prog": [(9, "min"), (5, "maj"), (7, "maj"), (0, "maj")]},
+    {"name": "reflective",     "key": 196.00, "bpm": 72, "drums": 0.22, "inst": "pad",
+     "prog": [(0, "maj7"), (4, "min7"), (5, "maj7"), (7, "maj")]},
 ]
 
-
-def _wave(kind, ph):
-    """Different instrument timbres so beats don't all sound the same."""
-    if kind == "tri":   return 2/np.pi*np.arcsin(np.sin(ph))
-    if kind == "saw":   return 2*((ph/(2*np.pi)) % 1.0)-1.0
-    if kind == "square":return np.tanh(3*np.sin(ph))
-    if kind == "fm":    return np.sin(ph + 2.5*np.sin(ph*2))      # bell-ish FM
-    if kind == "pluck": return np.sin(ph)*np.exp(-((ph/(2*np.pi))%1.0)*2)
-    return np.sin(ph)   # sine
+# timbre = harmonic amplitudes + ADSR (attack, decay, sustain, release)
+TIMBRE = {
+    "keys":   {"harm": [1.0, 0.45, 0.28, 0.14, 0.07], "adsr": (0.006, 0.22, 0.45, 0.30)},
+    "rhodes": {"harm": [1.0, 0.30, 0.55, 0.12, 0.20], "adsr": (0.004, 0.30, 0.40, 0.35)},
+    "pluck":  {"harm": [1.0, 0.50, 0.30, 0.20, 0.10], "adsr": (0.002, 0.16, 0.18, 0.18)},
+    "pad":    {"harm": [1.0, 0.60, 0.40, 0.25, 0.15], "adsr": (0.25, 0.40, 0.70, 0.60)},
+}
 
 
-def _env(L, decay):
-    return np.exp(-np.linspace(0, 1, max(1, L)) * decay)
+def _adsr(n, a, d, s, r):
+    a_n, d_n, r_n = int(a * SR), int(d * SR), int(r * SR)
+    s_n = max(0, n - a_n - d_n - r_n)
+    parts = [np.linspace(0, 1, a_n, endpoint=False),
+             np.linspace(1, s, d_n, endpoint=False),
+             np.full(s_n, s),
+             np.linspace(s, 0, max(1, n - a_n - d_n - s_n))]
+    env = np.concatenate(parts)
+    return env[:n] if len(env) >= n else np.pad(env, (0, n - len(env)))
 
 
-def _reverb(x, decay=0.32, taps=(0.037, 0.053, 0.071, 0.097, 0.131)):
-    """Cheap multi-tap reverb — adds space so it sounds produced, not dry/fake."""
+def _tone(freq, dur, inst, amp=1.0, detune=0.004):
+    n = int(dur * SR)
+    if n <= 0:
+        return np.zeros(0)
+    t = np.arange(n) / SR
+    tb = TIMBRE[inst]; w = np.zeros(n)
+    for i, h in enumerate(tb["harm"], start=1):
+        w += h * np.sin(2 * np.pi * freq * i * (1 + detune * (i - 1)) * t)
+    return w * _adsr(n, *tb["adsr"]) * amp
+
+
+def _reverb(x, decay=0.3, taps=(0.041, 0.057, 0.079, 0.103, 0.137)):
     out = x.copy(); g = decay
     for d in taps:
         L = int(d * SR)
         if 0 < L < len(x):
-            out[L:] += x[:-L] * g; g *= 0.62
+            out[L:] += x[:-L] * g; g *= 0.6
     return out
 
 
-def _place(buf, i0, sig):
-    """Add `sig` into `buf` at sample i0, clipped to bounds."""
-    L = min(len(sig), len(buf) - i0)
-    if L > 0:
-        buf[i0:i0 + L] += sig[:L]
+def _hz(key, semis):
+    return key * (2 ** (semis / 12.0))
 
 
 def _synth(variant, dur=30.0, var=0):
     b = BEATS[variant % len(BEATS)]
-    rng = np.random.default_rng(variant * 131 + var)   # varied every render
+    rng = np.random.default_rng(variant * 257 + var)
     n = int(SR * dur); t = np.arange(n) / SR
-    spb = 60.0 / b["bpm"] * (1.0 + rng.uniform(-0.015, 0.015))  # tiny tempo drift
-    pad = np.zeros(n); lead = np.zeros(n); drums = np.zeros(n); duck = np.ones(n)
+    spb = 60.0 / b["bpm"]; bar = spb * 4
+    inst = b["inst"]; key = b["key"]
+    keys = np.zeros(n); bass = np.zeros(n); mel = np.zeros(n); drums = np.zeros(n)
 
-    # ---- detuned pad (richer than a pure sine: 3 harmonics + slight detune) ----
-    for st in b["chord"]:
-        f = b["root"] * (2 ** (st / 12.0))
-        for h, amp, det in ((1, 1.0, 1.000), (2, 0.35, 1.004), (3, 0.18, 0.997)):
-            pad += np.sin(2 * np.pi * f * h * det * t) * amp
-    pad *= 0.05
-    pad *= 0.85 + 0.15 * np.sin(2 * np.pi * 0.18 * t)  # slow tremolo / movement
+    def place(buf, i0, sig):
+        L = min(len(sig), len(buf) - i0)
+        if L > 0:
+            buf[i0:i0 + L] += sig[:L]
 
-    # ---- sub-bass groove (root, one octave down, plays the chord rhythm) ----
-    bass_amp = b.get("bass", 0.7)
-    bf = b["root"] / 2.0
-    bass = np.sin(2 * np.pi * bf * t) * 0.18 * bass_amp
-    bass = np.tanh(bass * 2.2)  # saturate for warmth/weight
+    # ---- walk the chord progression, one chord per bar, looping ----
+    bar_idx = 0
+    pos = 0.0
+    while pos < dur:
+        root, qual = b["prog"][bar_idx % len(b["prog"])]
+        intervals = CH[qual]
+        i0 = int(pos * SR)
+        # chord (keys/pad) — held for the bar, soft
+        for iv in intervals:
+            f = _hz(key, root + iv)
+            place(keys, i0, _tone(f, bar * 0.98, inst, amp=0.10))
+        # bass — root, one octave down, plays on each beat (subtle pattern)
+        for beat in range(4):
+            bi0 = int((pos + beat * spb) * SR)
+            place(bass, bi0, _tone(_hz(key / 2, root), spb * 0.9, "pad", amp=0.16))
+        # melody — notes from the chord, simple motif over 8th notes w/ rests
+        scale = [root + iv for iv in intervals] + [root + 12, root + intervals[1] + 12]
+        for step in range(8):
+            if rng.random() < 0.35:
+                continue  # rest -> musical phrasing, not constant
+            note = scale[rng.integers(0, len(scale))]
+            mi0 = int((pos + step * spb / 2) * SR)
+            place(mel, mi0, _tone(_hz(key * 2, note), spb * 0.55, inst, amp=0.06))
+        pos += bar; bar_idx += 1
 
-    # ---- drums ----
-    beats = np.arange(0, dur, spb)
-    four = b.get("four", False)
-    for bi, beat in enumerate(beats):
-        i0 = int(beat * SR)
-        # kick: every beat for house/4-on-floor, else beats 1 & 3 (+ syncopation)
-        if four or bi % 2 == 0:
-            L = int(0.20 * SR)
-            fk = np.linspace(150, 48, L)
-            k = np.sin(2 * np.pi * np.cumsum(fk) / SR) * _env(L, 16) * b.get("kick", 0.9)
-            k[:int(0.004 * SR)] += rng.standard_normal(int(0.004 * SR)) * 0.4  # click transient
-            _place(drums, i0, k)
-            # sidechain pump: duck pad+bass right after each kick
-            dL = int(spb * 0.9 * SR)
-            duck_env = 0.35 + 0.65 * (1 - _env(dL, 6))
-            _place_min = min(dL, n - i0)
-            if _place_min > 0:
-                duck[i0:i0 + _place_min] = np.minimum(duck[i0:i0 + _place_min], duck_env[:_place_min])
-        # clap/snare on the backbeat (beats 2 & 4)
-        if bi % 2 == 1:
-            L = int(0.16 * SR)
-            c = (rng.standard_normal(L) * _env(L, 22) + np.sin(2 * np.pi * 1800 * t[:L]) * _env(L, 30) * 0.3) * b.get("clap", 0.5)
-            _place(drums, i0, c * 0.5)
+    # ---- gentle, musical drums (soft kick + soft hat, NOT boom-boom) ----
+    da = b.get("drums", 0.4)
+    for beat in np.arange(0, dur, spb):
+        i0 = int(beat * SR); L = int(0.16 * SR)
+        fk = np.linspace(120, 50, L)
+        place(drums, i0, np.sin(2 * np.pi * np.cumsum(fk) / SR) * np.exp(-np.linspace(0, 1, L) * 14) * da * 0.7)
+    for off in np.arange(spb / 2, dur, spb):
+        i0 = int(off * SR); L = int(0.025 * SR)
+        place(drums, i0, rng.standard_normal(L) * np.exp(-np.linspace(0, 1, L) * 60) * da * 0.18)
 
-    # ---- hats (8th notes, with optional swing + trap rolls) ----
-    hat_amp = b.get("hat", 0.4); sw = b.get("swing", 0.0)
-    step = spb / 2.0
-    for s, pos in enumerate(np.arange(0, dur, step)):
-        off = (sw * step) if (s % 2 == 1) else 0.0
-        i0 = int((pos + off) * SR); L = int(0.03 * SR)
-        h = rng.standard_normal(L) * _env(L, 60) * hat_amp * (0.7 if s % 2 else 1.0)
-        _place(drums, i0, h * 0.4)
-    if b.get("rolls"):  # trap-style hi-hat rolls every 2 bars
-        for pos in np.arange(spb * 3.5, dur, spb * 4):
-            for k in range(6):
-                i0 = int((pos + k * spb / 12) * SR); L = int(0.02 * SR)
-                _place(drums, i0, rng.standard_normal(L) * _env(L, 70) * hat_amp * 0.3)
-
-    # ---- melodic pluck hook (arpeggiates the chord, gives it identity) ----
-    pl = b.get("pluck", 0.5)
-    if pl:
-        notes = [b["root"] * 2 * (2 ** (st / 12.0)) for st in b["chord"]]
-        for s, pos in enumerate(np.arange(0, dur, spb)):
-            if rng.random() < 0.18:
-                continue  # rest — gives the melody breathing room
-            f = notes[rng.integers(0, len(notes))] * (2.0 if rng.random() < 0.25 else 1.0)
-            i0 = int(pos * SR); L = int(min(spb * 0.9, 0.5) * SR)
-            ph = 2 * np.pi * f * t[:L]
-            tone = _wave(b.get('lead','sine'), ph) + 0.25 * np.sin(2 * ph)
-            _place(lead, i0, tone * _env(L, 7) * 0.06 * pl)
-
-    music = pad * 1.15 + lead * 1.25            # lead with the MUSIC, not the drums
-    music = music + _reverb(music) * 0.5         # space so it doesn't sound dry/fake
-    mix = (music + bass) * duck + drums * 0.62   # drums pulled back (less 'drum-machine')
-    mix = np.tanh(mix * 1.25)                     # glue / soft saturation
+    music = keys + bass + mel
+    music = music + _reverb(music) * 0.55
+    mix = music + drums * 0.5
+    mix = np.tanh(mix * 1.2)
     mix /= (np.max(np.abs(mix)) + 1e-6)
     mix *= 0.72
     return np.repeat((mix * 32767).astype(np.int16)[:, None], 2, axis=1)
@@ -148,7 +151,7 @@ def write_wav(path, variant, dur=30.0, var=0):
 
 
 def add_beat(video_path, variant, tmp_wav="/tmp/_beat.wav"):
-    """Mux a rotating beat onto an existing (silent) video, trimmed to length."""
+    """Mux a fresh, unique music bed onto an existing (silent) video."""
     import random as _r
     write_wav(tmp_wav, variant, var=_r.randint(0, 99999))
     ff = imageio_ffmpeg.get_ffmpeg_exe()
@@ -166,5 +169,5 @@ if __name__ == "__main__":
     import os
     os.makedirs("/tmp/proof", exist_ok=True)
     for i in range(len(BEATS)):
-        write_wav(f"/tmp/proof/beat_{BEATS[i]['name']}.wav", i, dur=6)
-        print("wrote beat", BEATS[i]["name"])
+        write_wav(f"/tmp/proof/song_{BEATS[i]['name']}.wav", i, dur=6)
+        print("wrote", BEATS[i]["name"])
