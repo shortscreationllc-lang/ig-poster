@@ -93,12 +93,12 @@ def plan():
     forced = (os.getenv("FORCE_SLOT") or "").strip().lower()
     lines = []
     for kind, start, media, feed, story in SLOTS:
-        # alternate reel <-> carousel by day: even day = reel, odd day = carousel
+        # alternate reel <-> carousel by day: even day = reel (+story), odd = carousel
         if media == "altrc":
             if int(day) % 2 == 0:
-                media, feed = "reel", None
+                media, feed, story = "reel", None, True   # reel day → reshare to story
             else:
-                media, feed = "post", "pm"
+                media, feed = "post", "pm"                # carousel day, no story
         if forced:
             if kind != forced:
                 continue
