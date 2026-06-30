@@ -1854,6 +1854,22 @@
         "cap_style": 3
       },
       "hook": "How I got comfortable on camera \u2014 reps in front of real people."
+    },
+    {
+      "at": "20260630T203135Z",
+      "id": "queue/reel-1782851414-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18121115074782864",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "slate",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Reach is rented; trust is owned \u2014 build content that earns trust, not just views."
     }
   ],
   "story_hook_i": 1,
@@ -2218,7 +2234,8 @@
     "20260626": 1,
     "20260627": 1,
     "20260628": 1,
-    "20260629": 1
+    "20260629": 1,
+    "20260630": 1
   },
   "beat_recent": [
     1,
