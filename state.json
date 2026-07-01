@@ -1883,6 +1883,22 @@
         "pillar": "hook",
         "source_index": 17
       }
+    },
+    {
+      "at": "20260701T202627Z",
+      "id": "queue/reel-1782937504-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17874441033683264",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "imessage",
+        "style": "slate",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to get clients from content \u2014 show up daily until they can't ignore you."
     }
   ],
   "story_hook_i": 1,
@@ -2248,7 +2264,8 @@
     "20260627": 1,
     "20260628": 1,
     "20260629": 1,
-    "20260630": 1
+    "20260630": 1,
+    "20260701": 1
   },
   "beat_recent": [
     4,
