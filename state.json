@@ -1,7 +1,7 @@
 {
   "single_index": 56,
-  "carousel_index": 8,
-  "seq": 126,
+  "carousel_index": 9,
+  "seq": 127,
   "daily": {
     "20260626": {
       "midday": true
@@ -20,7 +20,7 @@
     }
   },
   "am_style_i": 56,
-  "pm_style_i": 70,
+  "pm_style_i": 71,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1870,6 +1870,19 @@
         "cap_style": 0
       },
       "hook": "Reach is rented; trust is owned \u2014 build content that earns trust, not just views."
+    },
+    {
+      "at": "20260701T161020Z",
+      "id": "carousel-00109",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18106662202895853",
+      "tags": {
+        "fmt": "carousel",
+        "style": "creamorange",
+        "pillar": "hook",
+        "source_index": 17
+      }
     }
   ],
   "story_hook_i": 1,
@@ -2103,15 +2116,6 @@
     }
   ],
   "recent_texts": [
-    "a beginner's first step",
-    "a bold opinion",
-    "a mistake you used to make",
-    "a myth in your niche, busted",
-    "answer your most-asked question",
-    "react to a bad take",
-    "show your process",
-    "what you'd do differently",
-    "act 1 \u2014 hook (0 to 1.5s)",
     "act 2 \u2014 tension (4 to 12s)",
     "act 3 \u2014 payoff (13s to end)",
     "build the gap. give a reason to keep watching past second 4.",
@@ -2182,7 +2186,16 @@
     "consistent lighting makes cuts feel seamless.",
     "detail reads as intentional. distance reads as filler.",
     "most people film the wrong thing.",
-    "the object close-up beats the wide action shot."
+    "the object close-up beats the wide action shot.",
+    "1. music too loud",
+    "3. inconsistent levels",
+    "4 audio mistakes that ruin good video.",
+    "4. dead silence",
+    "a subtle bed of music under the voice keeps energy up.",
+    "if you notice the track, it's already drowning the voice.",
+    "people hear bad audio before they see good video.",
+    "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
+    "volume jumping between clips makes it feel amateur."
   ],
   "reel_i": 68,
   "reel_cap_i": 102,
