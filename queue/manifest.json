@@ -1,40 +1,6 @@
 {
   "items": [
     {
-      "id": "carousel-00017",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00017-0.jpg",
-        "queue/carousel-00017-1.jpg",
-        "queue/carousel-00017-2.jpg",
-        "queue/carousel-00017-3.jpg",
-        "queue/carousel-00017-4.jpg",
-        "queue/carousel-00017-5.jpg",
-        "queue/carousel-00017-6.jpg"
-      ],
-      "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
-      "alt": "Carousel: 5 caption mistakes killing your retention.",
-      "posted": true,
-      "source_index": 2,
-      "fp": [
-        "1. too small",
-        "2. off the beat",
-        "3. buried at the bottom",
-        "4. wrong font",
-        "5 caption mistakes killing your retention.",
-        "5. paced too slow",
-        "captions should feel a touch faster than the video itself.",
-        "if it's hard to read on a phone, it's costing you watch time.",
-        "most people make all 5.",
-        "text should hit on the cut, not lag behind the sentence.",
-        "the app ui covers it. keep key words in the safe zone.",
-        "white, modern, sans-serif. no heavy drop shadow."
-      ],
-      "posted_at": "20260603T200512Z",
-      "post_id": "18105732016786634"
-    },
-    {
       "id": "single-00006",
       "slot": "am",
       "type": "myth",
@@ -1745,6 +1711,42 @@
       "post_id": "18183207034360192"
     },
     {
+      "id": "carousel-00108",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00108-0.jpg",
+        "queue/carousel-00108-1.jpg",
+        "queue/carousel-00108-2.jpg",
+        "queue/carousel-00108-3.jpg",
+        "queue/carousel-00108-4.jpg",
+        "queue/carousel-00108-5.jpg",
+        "queue/carousel-00108-6.jpg"
+      ],
+      "caption": "People blame the camera. It's almost never the camera.\n\nHere's the breakdown \ud83d\udc47\n\n1. Message over gear\n2. Hook before quality\n3. Lighting beats megapixels\n4. Sound over 4K\n5. Upgrade the idea first\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: gear doesn't make the content.",
+      "posted": true,
+      "source_index": 16,
+      "style": "slate",
+      "fp": [
+        "@josephborroto",
+        "a phone + a sharp idea beats a cinema camera + nothing to say.",
+        "buy the camera once the content is already working.",
+        "face a window. good light makes any camera look pro.",
+        "here's what actually matters \u2192",
+        "hook before quality",
+        "joseph borroto",
+        "lighting beats megapixels",
+        "message over gear",
+        "people forgive a soft image. they won't forgive bad audio.",
+        "sound matters more than 4k",
+        "they decide in 1 second \u2014 long before they notice your lens.",
+        "upgrade the idea first",
+        "you don't need a better camera. you need a better first sentence."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -1929,41 +1931,6 @@
         "@josephborroto",
         "consistency beats talent that quits.",
         "joseph borroto"
-      ]
-    },
-    {
-      "id": "carousel-00108",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00108-0.jpg",
-        "queue/carousel-00108-1.jpg",
-        "queue/carousel-00108-2.jpg",
-        "queue/carousel-00108-3.jpg",
-        "queue/carousel-00108-4.jpg",
-        "queue/carousel-00108-5.jpg",
-        "queue/carousel-00108-6.jpg"
-      ],
-      "caption": "People blame the camera. It's almost never the camera.\n\nHere's the breakdown \ud83d\udc47\n\n1. Message over gear\n2. Hook before quality\n3. Lighting beats megapixels\n4. Sound over 4K\n5. Upgrade the idea first\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: gear doesn't make the content.",
-      "posted": false,
-      "source_index": 16,
-      "style": "slate",
-      "fp": [
-        "@josephborroto",
-        "a phone + a sharp idea beats a cinema camera + nothing to say.",
-        "buy the camera once the content is already working.",
-        "face a window. good light makes any camera look pro.",
-        "here's what actually matters \u2192",
-        "hook before quality",
-        "joseph borroto",
-        "lighting beats megapixels",
-        "message over gear",
-        "people forgive a soft image. they won't forgive bad audio.",
-        "sound matters more than 4k",
-        "they decide in 1 second \u2014 long before they notice your lens.",
-        "upgrade the idea first",
-        "you don't need a better camera. you need a better first sentence."
       ]
     },
     {
@@ -2474,6 +2441,39 @@
         "the algorithm rewards the person who keeps showing up. be that person.",
         "volume teaches you",
         "you learn what works by posting, not by planning. the reps are the lesson."
+      ]
+    },
+    {
+      "id": "carousel-00126",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00126-0.jpg",
+        "queue/carousel-00126-1.jpg",
+        "queue/carousel-00126-2.jpg",
+        "queue/carousel-00126-3.jpg",
+        "queue/carousel-00126-4.jpg",
+        "queue/carousel-00126-5.jpg",
+        "queue/carousel-00126-6.jpg"
+      ],
+      "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
+      "alt": "Carousel: 5 rules behind every video that lands.",
+      "posted": false,
+      "source_index": 7,
+      "style": "light",
+      "fp": [
+        "1. 4k at 60fps",
+        "2. 1.5-second hook, written",
+        "3. switch location every line",
+        "4. one idea per video",
+        "5 rules behind every video that lands.",
+        "5. music quieter than feels right",
+        "memorized before you hit record. never improvised.",
+        "simple, repeatable, no fancy gear.",
+        "specific beats broad. one clear point gets saved and shared.",
+        "trim ruthlessly. the voice leads, the music supports.",
+        "two lines in one spot? move. movement reads as energy.",
+        "you don't need a cinema camera. you need the right settings."
       ]
     }
   ]
