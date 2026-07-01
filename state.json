@@ -2198,8 +2198,8 @@
     "volume jumping between clips makes it feel amateur."
   ],
   "reel_i": 68,
-  "reel_cap_i": 102,
-  "reel_audio_i": 102,
+  "reel_cap_i": 103,
+  "reel_audio_i": 103,
   "reel_recent": [
     "views don t pay the bills content that books clients does",
     "your first line is the only algorithm that matters",
@@ -2210,7 +2210,6 @@
     "how i got comfortable on camera reps in front of real people"
   ],
   "trial_recent": [
-    "3 ways to stop the scroll on short form video",
     "how to make short form that actually books clients not just ",
     "cut every silence in your video dead air is where people swi",
     "stop trying to sound like a content creator just be yourself",
@@ -2223,7 +2222,8 @@
     "if they don t stop scrolling nothing else you made even matt",
     "how to make every video feel different same idea new angle e",
     "good content nobody sees is just a weak hook fix the first 3",
-    "reach is rented trust is owned build content that earns trus"
+    "reach is rented trust is owned build content that earns trus",
+    "how to get clients from content show up daily until they can"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -2251,11 +2251,11 @@
     "20260630": 1
   },
   "beat_recent": [
-    1,
     4,
     5,
     4,
-    9
+    9,
+    6
   ],
   "style_recent": [
     "blackout",
