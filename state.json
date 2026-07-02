@@ -2228,8 +2228,8 @@
     "volume jumping between clips makes it feel amateur."
   ],
   "reel_i": 69,
-  "reel_cap_i": 104,
-  "reel_audio_i": 104,
+  "reel_cap_i": 105,
+  "reel_audio_i": 105,
   "reel_recent": [
     "your first line is the only algorithm that matters",
     "awkward on camera talk to one person not an audience",
@@ -2240,7 +2240,6 @@
     "cutting the first 2 seconds of your video can double your wa"
   ],
   "trial_recent": [
-    "how to make short form that actually books clients not just ",
     "cut every silence in your video dead air is where people swi",
     "stop trying to sound like a content creator just be yourself",
     "you don t need a better camera you need a better hook and a ",
@@ -2253,7 +2252,8 @@
     "how to make every video feel different same idea new angle e",
     "good content nobody sees is just a weak hook fix the first 3",
     "reach is rented trust is owned build content that earns trus",
-    "how to get clients from content show up daily until they can"
+    "how to get clients from content show up daily until they can",
+    "show the before and after not the theory proof sells better "
   ],
   "trial_daily": {
     "20260608": 2,
@@ -2282,11 +2282,11 @@
     "20260701": 1
   },
   "beat_recent": [
-    5,
     4,
     9,
     6,
-    3
+    3,
+    1
   ],
   "style_recent": [
     "ember",
