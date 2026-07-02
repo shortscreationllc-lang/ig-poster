@@ -1913,6 +1913,22 @@
         "cap_style": 3
       },
       "hook": "Cutting the first 2 seconds of your video can double your watch time."
+    },
+    {
+      "at": "20260702T200329Z",
+      "id": "queue/reel-1783022534-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18003685247761103",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "slate",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Show the before-and-after, not the theory \u2014 proof sells better than promises."
     }
   ],
   "story_hook_i": 1,
@@ -2279,7 +2295,8 @@
     "20260628": 1,
     "20260629": 1,
     "20260630": 1,
-    "20260701": 1
+    "20260701": 1,
+    "20260702": 1
   },
   "beat_recent": [
     4,
