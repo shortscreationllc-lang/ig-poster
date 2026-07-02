@@ -1899,6 +1899,20 @@
         "cap_style": 0
       },
       "hook": "How to get clients from content \u2014 show up daily until they can't ignore you."
+    },
+    {
+      "at": "20260702T161216Z",
+      "id": "queue/reel-1783008635.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18076138418333063",
+      "tags": {
+        "fmt": "stat",
+        "style": "blackout",
+        "pillar": "hook",
+        "cap_style": 3
+      },
+      "hook": "Cutting the first 2 seconds of your video can double your watch time."
     }
   ],
   "story_hook_i": 1,
