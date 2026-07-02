@@ -5,11 +5,11 @@
 ## 🏆 Top performers (by save/share/watch score)
 - 🧪 20260622 | reel | reach 109 | views 143 | 47.4s watch | saves 0 shares 1 | eng 0.9% | score 33.67 | https://www.instagram.com/reel/DZ5y6xhCDA1/
 - 👤 20260629 | REELS | reach 398 | views 651 | 12.2s watch | saves 0 shares 0 | eng 4.3% | score 16.44 | https://www.instagram.com/reel/DaLCg8puSCw/
-- 👤 20260701 | REELS | reach 1811 | views 3140 | 8.4s watch | saves 1 shares 7 | eng 6.7% | score 16.359 | https://www.instagram.com/reel/DaRL0shhUxh/
-- 👤 20260630 | REELS | reach 1835 | views 2457 | 5.8s watch | saves 5 shares 20 | eng 5.8% | score 15.684 | https://www.instagram.com/reel/DaORZUwh0EX/
+- 👤 20260701 | REELS | reach 1818 | views 3157 | 8.4s watch | saves 1 shares 7 | eng 6.7% | score 16.388 | https://www.instagram.com/reel/DaRL0shhUxh/
+- 👤 20260630 | REELS | reach 1835 | views 2462 | 5.8s watch | saves 5 shares 20 | eng 5.8% | score 15.692 | https://www.instagram.com/reel/DaORZUwh0EX/
 - 👤 20260629 | REELS | reach 1096 | views 1565 | 6.7s watch | saves 2 shares 1 | eng 7.9% | score 15.409 | https://www.instagram.com/reel/DaLzPjxhpnX/
-- 👤 20260702 | FEED | reach 64 | views - | — | saves 0 shares 1 | eng 9.4% | score 14.062 | https://www.instagram.com/p/DaSoxO3u7aj/
-- 👤 20260701 | REELS | reach 1058 | views 1229 | 7.2s watch | saves 0 shares 0 | eng 4.5% | score 11.755 | https://www.instagram.com/reel/DaPExZpt_RA/
+- 👤 20260702 | FEED | reach 68 | views - | — | saves 0 shares 1 | eng 8.8% | score 13.235 | https://www.instagram.com/p/DaSoxO3u7aj/
+- 👤 20260701 | REELS | reach 1061 | views 1230 | 7.2s watch | saves 0 shares 0 | eng 4.5% | score 11.728 | https://www.instagram.com/reel/DaPExZpt_RA/
 - 👤 20260629 | REELS | reach 171 | views 217 | 3.5s watch | saves 0 shares 1 | eng 6.4% | score 11.643 | https://www.instagram.com/reel/DaLt5RpzZJe/
 
 ## 🧊 Weakest (rework or retire these)
@@ -19,7 +19,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.6s  ·  bot: 5.4s
-- avg reach — yours: 628.4  ·  bot: 118.2
+- avg reach — yours: 629.3  ·  bot: 118.2
 - avg saves — yours: 0.6  ·  bot: 0.2
 
 ## 📈 What the loop is learning (weights → what we make more of)
