@@ -1,37 +1,6 @@
 {
   "items": [
     {
-      "id": "carousel-00018",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00018-0.jpg",
-        "queue/carousel-00018-1.jpg",
-        "queue/carousel-00018-2.jpg",
-        "queue/carousel-00018-3.jpg",
-        "queue/carousel-00018-4.jpg",
-        "queue/carousel-00018-5.jpg"
-      ],
-      "caption": "Every short-form video that pops has 3 acts. Most people film one and wonder why retention dies.\n\nHook (0 to 1.5s)\nTension (4 to 12s)\nPayoff (13s+)\n\nSave it before you script your next one.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
-      "alt": "Carousel: every viral video has 3 acts.",
-      "posted": true,
-      "source_index": 3,
-      "fp": [
-        "act 1 \u2014 hook (0 to 1.5s)",
-        "act 2 \u2014 tension (4 to 12s)",
-        "act 3 \u2014 payoff (13s to end)",
-        "build the gap. give a reason to keep watching past second 4.",
-        "deliver the answer, then one clean close. don't trail off.",
-        "every viral video has 3 acts.",
-        "most people only film one.",
-        "state the problem sharp. no intro, no setup. stop the thumb.",
-        "they film all hook or all payoff. the tension in the middle is what holds people.",
-        "why most fail"
-      ],
-      "posted_at": "20260604T202729Z",
-      "post_id": "18133879627497860"
-    },
-    {
       "id": "single-00007",
       "slot": "am",
       "type": "single",
@@ -1760,6 +1729,42 @@
       "post_id": "18106662202895853"
     },
     {
+      "id": "carousel-00111",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00111-0.jpg",
+        "queue/carousel-00111-1.jpg",
+        "queue/carousel-00111-2.jpg",
+        "queue/carousel-00111-3.jpg",
+        "queue/carousel-00111-4.jpg",
+        "queue/carousel-00111-5.jpg",
+        "queue/carousel-00111-6.jpg"
+      ],
+      "caption": "Your best idea isn't a single post. It's a content engine.\n\nHere's the breakdown \ud83d\udc47\n\n1. Find your bangers\n2. Change the angle\n3. Switch the format\n4. Repost the winners\n5. Build a swipe file\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: repurpose one idea into many.",
+      "posted": true,
+      "source_index": 18,
+      "style": "ember",
+      "fp": [
+        "@josephborroto",
+        "build a swipe file",
+        "change the angle",
+        "find your bangers",
+        "here's how i repurpose \u2192",
+        "joseph borroto",
+        "keep your best ideas in one place so you never start from zero.",
+        "most of your audience never saw it. run it back.",
+        "one good idea = 5 videos. stop reinventing every post.",
+        "repost the winners",
+        "same idea, new hook. 'why it works,' 'how to do it,' 'what i'd avoid.'",
+        "switch the format",
+        "the post that overperformed isn't done. it's a template.",
+        "turn a reel into a carousel into a single line. one idea, many shapes."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -1962,41 +1967,6 @@
         "barely. your hook does 90% of the work. spend your time there, not on 30 tags.",
         "do hashtags even work anymore?",
         "joseph borroto"
-      ]
-    },
-    {
-      "id": "carousel-00111",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00111-0.jpg",
-        "queue/carousel-00111-1.jpg",
-        "queue/carousel-00111-2.jpg",
-        "queue/carousel-00111-3.jpg",
-        "queue/carousel-00111-4.jpg",
-        "queue/carousel-00111-5.jpg",
-        "queue/carousel-00111-6.jpg"
-      ],
-      "caption": "Your best idea isn't a single post. It's a content engine.\n\nHere's the breakdown \ud83d\udc47\n\n1. Find your bangers\n2. Change the angle\n3. Switch the format\n4. Repost the winners\n5. Build a swipe file\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: repurpose one idea into many.",
-      "posted": false,
-      "source_index": 18,
-      "style": "ember",
-      "fp": [
-        "@josephborroto",
-        "build a swipe file",
-        "change the angle",
-        "find your bangers",
-        "here's how i repurpose \u2192",
-        "joseph borroto",
-        "keep your best ideas in one place so you never start from zero.",
-        "most of your audience never saw it. run it back.",
-        "one good idea = 5 videos. stop reinventing every post.",
-        "repost the winners",
-        "same idea, new hook. 'why it works,' 'how to do it,' 'what i'd avoid.'",
-        "switch the format",
-        "the post that overperformed isn't done. it's a template.",
-        "turn a reel into a carousel into a single line. one idea, many shapes."
       ]
     },
     {
@@ -2493,6 +2463,35 @@
         "say the thing most people are scared to say. boring is invisible.",
         "show the payoff first. curiosity is what buys you the next 3 seconds.",
         "test 3 hooks per idea"
+      ]
+    },
+    {
+      "id": "carousel-00128",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00128-0.jpg",
+        "queue/carousel-00128-1.jpg",
+        "queue/carousel-00128-2.jpg",
+        "queue/carousel-00128-3.jpg",
+        "queue/carousel-00128-4.jpg",
+        "queue/carousel-00128-5.jpg",
+        "queue/carousel-00128-6.jpg"
+      ],
+      "caption": "Everyone underestimates what a genuinely good Reel takes.\n\nResearch. Hooks. Filming. Editing. Revisions.\n\nIt's hours of skilled work, which is exactly why rock-bottom pricing never produces rock-solid video.\n\nFollow @josephborroto for the real economics of content.\n\n#videoproduction #pricingstrategy #contentmarketing #shortformvideo #videoediting #josephborroto",
+      "alt": "Carousel: what a good Reel actually costs to make.",
+      "posted": false,
+      "source_index": 9,
+      "style": "creamorange",
+      "fp": [
+        "cutting, hand-placed captions, music, pacing. hours, not minutes.",
+        "quality video is hours of skilled work. that's why cheap pricing collapses.",
+        "research and hooks",
+        "setup, multiple takes, location changes, lighting, audio.",
+        "studying what works and writing a hook worth stopping for.",
+        "the part nobody breaks down.",
+        "the pass that turns good into actually-postable.",
+        "what a good reel actually costs to make."
       ]
     }
   ]
