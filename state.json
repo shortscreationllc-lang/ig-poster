@@ -2257,8 +2257,8 @@
     "without the video looking rushed."
   ],
   "reel_i": 69,
-  "reel_cap_i": 105,
-  "reel_audio_i": 105,
+  "reel_cap_i": 106,
+  "reel_audio_i": 106,
   "reel_recent": [
     "your first line is the only algorithm that matters",
     "awkward on camera talk to one person not an audience",
@@ -2269,7 +2269,6 @@
     "cutting the first 2 seconds of your video can double your wa"
   ],
   "trial_recent": [
-    "cut every silence in your video dead air is where people swi",
     "stop trying to sound like a content creator just be yourself",
     "you don t need a better camera you need a better hook and a ",
     "most people overthink content i just get it out and that s w",
@@ -2282,7 +2281,8 @@
     "good content nobody sees is just a weak hook fix the first 3",
     "reach is rented trust is owned build content that earns trus",
     "how to get clients from content show up daily until they can",
-    "show the before and after not the theory proof sells better "
+    "show the before and after not the theory proof sells better ",
+    "nobody cares how your video was filmed only whether it s wor"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -2312,11 +2312,11 @@
     "20260702": 1
   },
   "beat_recent": [
-    4,
     9,
     6,
     3,
-    1
+    1,
+    0
   ],
   "style_recent": [
     "ember",
