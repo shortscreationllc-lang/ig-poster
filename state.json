@@ -1942,6 +1942,22 @@
         "pillar": "editing",
         "source_index": 19
       }
+    },
+    {
+      "at": "20260703T203934Z",
+      "id": "queue/reel-1783111066-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17976485403027105",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "quote",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Nobody cares how your video was filmed \u2014 only whether it's worth watching."
     }
   ],
   "story_hook_i": 1,
@@ -2309,7 +2325,8 @@
     "20260629": 1,
     "20260630": 1,
     "20260701": 1,
-    "20260702": 1
+    "20260702": 1,
+    "20260703": 1
   },
   "beat_recent": [
     9,
