@@ -1,7 +1,7 @@
 {
   "single_index": 56,
-  "carousel_index": 10,
-  "seq": 128,
+  "carousel_index": 11,
+  "seq": 129,
   "daily": {
     "20260628": {
       "midday": true
@@ -20,7 +20,7 @@
     }
   },
   "am_style_i": 56,
-  "pm_style_i": 72,
+  "pm_style_i": 73,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1929,6 +1929,19 @@
         "cap_style": 0
       },
       "hook": "Show the before-and-after, not the theory \u2014 proof sells better than promises."
+    },
+    {
+      "at": "20260703T160931Z",
+      "id": "carousel-00112",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18603371128030049",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "editing",
+        "source_index": 19
+      }
     }
   ],
   "story_hook_i": 1,
@@ -2162,18 +2175,6 @@
     }
   ],
   "recent_texts": [
-    "act 2 \u2014 tension (4 to 12s)",
-    "act 3 \u2014 payoff (13s to end)",
-    "build the gap. give a reason to keep watching past second 4.",
-    "deliver the answer, then one clean close. don't trail off.",
-    "every viral video has 3 acts.",
-    "most people only film one.",
-    "state the problem sharp. no intro, no setup. stop the thumb.",
-    "they film all hook or all payoff. the tension in the middle is what holds people.",
-    "why most fail",
-    "drop your answer in the comments.",
-    "the best hook always starts with ________.",
-    "cutting, hand-placed captions, music, pacing. hours, not minutes.",
     "quality video is hours of skilled work. that's why cheap pricing collapses.",
     "research and hooks",
     "setup, multiple takes, location changes, lighting, audio.",
@@ -2241,7 +2242,19 @@
     "if you notice the track, it's already drowning the voice.",
     "people hear bad audio before they see good video.",
     "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
-    "volume jumping between clips makes it feel amateur."
+    "volume jumping between clips makes it feel amateur.",
+    "1. cut on the first pass",
+    "2. build a caption style",
+    "3. keep a music folder",
+    "4. template your export",
+    "5 ways to edit twice as fast.",
+    "5. stop polishing dead air",
+    "cut the slow parts instead of perfecting them.",
+    "make decisions as you watch. don't re-watch endlessly.",
+    "save your font and look once. reuse it every time.",
+    "set it once: format, size, settings. never rethink it.",
+    "stop hunting. pull from tracks you've already cleared.",
+    "without the video looking rushed."
   ],
   "reel_i": 69,
   "reel_cap_i": 105,

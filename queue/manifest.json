@@ -1,25 +1,6 @@
 {
   "items": [
     {
-      "id": "single-00007",
-      "slot": "am",
-      "type": "single",
-      "images": [
-        "queue/single-00007.jpg"
-      ],
-      "caption": "If your hook runs longer than 1.5 seconds, the scroll already won.\n\nThe first beat is for the problem, stated sharp. No \"hey guys.\" No setup. No throat-clearing.\n\nTeaching starts at second 4. Second 1 is only for stopping the thumb.\n\nFollow @josephborroto for daily short-form breakdowns.\n\n#hookwriting #shortformvideo #reelstips #contentcreator #videoediting #josephborroto",
-      "alt": "Card: if your hook is over 1.5 seconds, you lost.",
-      "posted": true,
-      "source_index": 6,
-      "fp": [
-        "if your hook is over 1.5 seconds, you lost.",
-        "say the problem in the first beat. teaching starts at second 4, not second 1.",
-        "the algorithm already buried you."
-      ],
-      "posted_at": "20260605T153806Z",
-      "post_id": "18091059158622659"
-    },
-    {
       "id": "carousel-00019",
       "slot": "pm",
       "type": "carousel",
@@ -1765,6 +1746,41 @@
       "skipped": true
     },
     {
+      "id": "carousel-00112",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00112-0.jpg",
+        "queue/carousel-00112-1.jpg",
+        "queue/carousel-00112-2.jpg",
+        "queue/carousel-00112-3.jpg",
+        "queue/carousel-00112-4.jpg",
+        "queue/carousel-00112-5.jpg",
+        "queue/carousel-00112-6.jpg"
+      ],
+      "caption": "Editing slow is usually a workflow problem, not a skill problem.\n\n1. Cut on the first pass\n2. Build a caption style\n3. Keep a music folder\n4. Template your export\n5. Stop polishing dead air\n\nSpeed comes from systems, not rushing.\n\nFollow @josephborroto for the workflow behind fast, clean edits.\n\n#videoediting #editingworkflow #editingtips #shortformvideo #reelstips #josephborroto",
+      "alt": "Carousel: 5 ways to edit twice as fast.",
+      "posted": true,
+      "source_index": 19,
+      "style": "bone",
+      "fp": [
+        "1. cut on the first pass",
+        "2. build a caption style",
+        "3. keep a music folder",
+        "4. template your export",
+        "5 ways to edit twice as fast.",
+        "5. stop polishing dead air",
+        "cut the slow parts instead of perfecting them.",
+        "make decisions as you watch. don't re-watch endlessly.",
+        "save your font and look once. reuse it every time.",
+        "set it once: format, size, settings. never rethink it.",
+        "stop hunting. pull from tracks you've already cleared.",
+        "without the video looking rushed."
+      ],
+      "posted_at": "20260703T160931Z",
+      "post_id": "18603371128030049"
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -1967,39 +1983,6 @@
         "barely. your hook does 90% of the work. spend your time there, not on 30 tags.",
         "do hashtags even work anymore?",
         "joseph borroto"
-      ]
-    },
-    {
-      "id": "carousel-00112",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00112-0.jpg",
-        "queue/carousel-00112-1.jpg",
-        "queue/carousel-00112-2.jpg",
-        "queue/carousel-00112-3.jpg",
-        "queue/carousel-00112-4.jpg",
-        "queue/carousel-00112-5.jpg",
-        "queue/carousel-00112-6.jpg"
-      ],
-      "caption": "Editing slow is usually a workflow problem, not a skill problem.\n\n1. Cut on the first pass\n2. Build a caption style\n3. Keep a music folder\n4. Template your export\n5. Stop polishing dead air\n\nSpeed comes from systems, not rushing.\n\nFollow @josephborroto for the workflow behind fast, clean edits.\n\n#videoediting #editingworkflow #editingtips #shortformvideo #reelstips #josephborroto",
-      "alt": "Carousel: 5 ways to edit twice as fast.",
-      "posted": false,
-      "source_index": 19,
-      "style": "bone",
-      "fp": [
-        "1. cut on the first pass",
-        "2. build a caption style",
-        "3. keep a music folder",
-        "4. template your export",
-        "5 ways to edit twice as fast.",
-        "5. stop polishing dead air",
-        "cut the slow parts instead of perfecting them.",
-        "make decisions as you watch. don't re-watch endlessly.",
-        "save your font and look once. reuse it every time.",
-        "set it once: format, size, settings. never rethink it.",
-        "stop hunting. pull from tracks you've already cleared.",
-        "without the video looking rushed."
       ]
     },
     {
@@ -2492,6 +2475,41 @@
         "the part nobody breaks down.",
         "the pass that turns good into actually-postable.",
         "what a good reel actually costs to make."
+      ]
+    },
+    {
+      "id": "carousel-00129",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00129-0.jpg",
+        "queue/carousel-00129-1.jpg",
+        "queue/carousel-00129-2.jpg",
+        "queue/carousel-00129-3.jpg",
+        "queue/carousel-00129-4.jpg",
+        "queue/carousel-00129-5.jpg",
+        "queue/carousel-00129-6.jpg"
+      ],
+      "caption": "Good editing is invisible. People should feel the pace, not notice the cuts.\n\nHere's the breakdown \ud83d\udc47\n\n1. Cut the dead air\n2. One idea per cut\n3. Captions always\n4. Effects serve the point\n5. End on momentum\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: editing so the cut disappears.",
+      "posted": false,
+      "source_index": 10,
+      "style": "ember",
+      "fp": [
+        "@josephborroto",
+        "a zoom should land a line, not decorate it. less is sharper.",
+        "captions always",
+        "cut the dead air",
+        "don't trail off. cut on the strongest line so they rewatch.",
+        "effects serve the point",
+        "end on momentum",
+        "every 'um' and pause is an exit. tighten until it's almost uncomfortable.",
+        "here's how i edit \u2192",
+        "if a clip isn't moving the story forward, it's slowing it down.",
+        "joseph borroto",
+        "most people watch on mute. no captions = no message.",
+        "one idea per cut",
+        "stop over-editing. the cut should disappear, not show off."
       ]
     }
   ]
