@@ -1972,6 +1972,22 @@
         "cap_style": 3
       },
       "hook": "I treat the camera like a client, not a camera \u2014 that one shift changed all my content."
+    },
+    {
+      "at": "20260704T194633Z",
+      "id": "queue/reel-1783194308-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18120489088833286",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "stat",
+        "style": "creamorange",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Shares in DMs are the #1 signal growing reach in 2026 \u2014 make content people send."
     }
   ],
   "story_hook_i": 1,
@@ -2340,7 +2356,8 @@
     "20260630": 1,
     "20260701": 1,
     "20260702": 1,
-    "20260703": 1
+    "20260703": 1,
+    "20260704": 1
   },
   "beat_recent": [
     3,
