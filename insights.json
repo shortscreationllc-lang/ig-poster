@@ -318,8 +318,8 @@
   "shares": 0,
   "saved": 1,
   "total_interactions": 3,
-  "ig_reels_avg_watch_time": 2760,
-  "ig_reels_video_view_total_time": 460993,
+  "ig_reels_avg_watch_time": 2749,
+  "ig_reels_video_view_total_time": 461850,
   "views": 231,
   "trial": false
  },
@@ -348,7 +348,7 @@
   "post_id": "18183207034360192",
   "bot": true,
   "permalink": "https://www.instagram.com/p/DaLS6JXHCaM/",
-  "reach": 50,
+  "reach": 51,
   "likes": 1,
   "comments": 0,
   "shares": 0,
@@ -563,7 +563,7 @@
   "total_interactions": 125,
   "ig_reels_avg_watch_time": 5543,
   "ig_reels_video_view_total_time": 6552064,
-  "views": 1562,
+  "views": 1563,
   "trial": false
  },
  {
@@ -720,9 +720,9 @@
   "shares": 0,
   "saved": 0,
   "total_interactions": 66,
-  "ig_reels_avg_watch_time": 7267,
-  "ig_reels_video_view_total_time": 9272833,
-  "views": 1617,
+  "ig_reels_avg_watch_time": 7275,
+  "ig_reels_video_view_total_time": 9291097,
+  "views": 1622,
   "trial": false
  },
  {
