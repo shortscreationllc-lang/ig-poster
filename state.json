@@ -2272,17 +2272,17 @@
     "stop hunting. pull from tracks you've already cleared.",
     "without the video looking rushed."
   ],
-  "reel_i": 69,
-  "reel_cap_i": 106,
-  "reel_audio_i": 106,
+  "reel_i": 70,
+  "reel_cap_i": 107,
+  "reel_audio_i": 107,
   "reel_recent": [
-    "your first line is the only algorithm that matters",
     "awkward on camera talk to one person not an audience",
     "you don t need a better camera you need a better first sente",
     "most short form content isn t bad it s forgettable make one ",
     "how i always know what to post your audience writes the list",
     "how i got comfortable on camera reps in front of real people",
-    "cutting the first 2 seconds of your video can double your wa"
+    "cutting the first 2 seconds of your video can double your wa",
+    "i treat the camera like a client not a camera that one shift"
   ],
   "trial_recent": [
     "stop trying to sound like a content creator just be yourself",
@@ -2329,19 +2329,19 @@
     "20260703": 1
   },
   "beat_recent": [
-    9,
     6,
     3,
     1,
-    0
+    0,
+    6
   ],
   "style_recent": [
-    "ember",
     "slate",
     "midnight",
     "navyorange",
     "dark",
     "ember",
-    "blackout"
+    "blackout",
+    "slate"
   ]
 }
