@@ -2001,6 +2001,22 @@
         "pillar": "algorithm",
         "source_index": 21
       }
+    },
+    {
+      "at": "20260705T195155Z",
+      "id": "queue/reel-1783281027-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17894338002552922",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
     }
   ],
   "story_hook_i": 1,
@@ -2370,7 +2386,8 @@
     "20260701": 1,
     "20260702": 1,
     "20260703": 1,
-    "20260704": 1
+    "20260704": 1,
+    "20260705": 1
   },
   "beat_recent": [
     1,
