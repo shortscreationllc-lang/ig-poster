@@ -1,36 +1,6 @@
 {
   "items": [
     {
-      "id": "carousel-00020",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00020-0.jpg",
-        "queue/carousel-00020-1.jpg",
-        "queue/carousel-00020-2.jpg",
-        "queue/carousel-00020-3.jpg",
-        "queue/carousel-00020-4.jpg",
-        "queue/carousel-00020-5.jpg",
-        "queue/carousel-00020-6.jpg"
-      ],
-      "caption": "Everyone underestimates what a genuinely good Reel takes.\n\nResearch. Hooks. Filming. Editing. Revisions.\n\nIt's hours of skilled work, which is exactly why rock-bottom pricing never produces rock-solid video.\n\nFollow @josephborroto for the real economics of content.\n\n#videoproduction #pricingstrategy #contentmarketing #shortformvideo #videoediting #josephborroto",
-      "alt": "Carousel: what a good Reel actually costs to make.",
-      "posted": true,
-      "source_index": 5,
-      "fp": [
-        "cutting, hand-placed captions, music, pacing. hours, not minutes.",
-        "quality video is hours of skilled work. that's why cheap pricing collapses.",
-        "research and hooks",
-        "setup, multiple takes, location changes, lighting, audio.",
-        "studying what works and writing a hook worth stopping for.",
-        "the part nobody breaks down.",
-        "the pass that turns good into actually-postable.",
-        "what a good reel actually costs to make."
-      ],
-      "posted_at": "20260605T201835Z",
-      "post_id": "18099026828140990"
-    },
-    {
       "id": "single-00008",
       "slot": "am",
       "type": "quote",
@@ -1784,6 +1754,41 @@
       "skipped": true
     },
     {
+      "id": "carousel-00115",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00115-0.jpg",
+        "queue/carousel-00115-1.jpg",
+        "queue/carousel-00115-2.jpg",
+        "queue/carousel-00115-3.jpg",
+        "queue/carousel-00115-4.jpg",
+        "queue/carousel-00115-5.jpg",
+        "queue/carousel-00115-6.jpg"
+      ],
+      "caption": "If your videos have stalled, it's usually one of these, not the algorithm.\n\n1. Weak first second\n2. Too many ideas\n3. No reason to finish\n4. Inconsistent posting\n5. No clear next step\n\nFix one this week.\n\nFollow @josephborroto for honest, useful content advice.\n\n#contentstrategy #shortformvideo #reelstips #videomarketing #growth #josephborroto",
+      "alt": "Carousel: 5 reasons your videos aren't growing.",
+      "posted": true,
+      "source_index": 21,
+      "style": "light",
+      "fp": [
+        "1. weak first second",
+        "2. too many ideas",
+        "3. no reason to finish",
+        "4. inconsistent posting",
+        "5 reasons your videos aren't growing.",
+        "5. no clear next step",
+        "a slow open kills the video before the hook lands.",
+        "give one simple action: follow for more.",
+        "if there's no payoff coming, people leave early.",
+        "it's rarely the algorithm.",
+        "one video, one point. cramming means nothing sticks.",
+        "the algorithm rewards reliability. show up daily."
+      ],
+      "posted_at": "20260705T160350Z",
+      "post_id": "18056474420755488"
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -2003,39 +2008,6 @@
       "fp": [
         "feeling too cringe to post is selfish. someone out there needs exactly what you know \u2014 and you're keeping it from them.",
         "who needed to hear this?"
-      ]
-    },
-    {
-      "id": "carousel-00115",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00115-0.jpg",
-        "queue/carousel-00115-1.jpg",
-        "queue/carousel-00115-2.jpg",
-        "queue/carousel-00115-3.jpg",
-        "queue/carousel-00115-4.jpg",
-        "queue/carousel-00115-5.jpg",
-        "queue/carousel-00115-6.jpg"
-      ],
-      "caption": "If your videos have stalled, it's usually one of these, not the algorithm.\n\n1. Weak first second\n2. Too many ideas\n3. No reason to finish\n4. Inconsistent posting\n5. No clear next step\n\nFix one this week.\n\nFollow @josephborroto for honest, useful content advice.\n\n#contentstrategy #shortformvideo #reelstips #videomarketing #growth #josephborroto",
-      "alt": "Carousel: 5 reasons your videos aren't growing.",
-      "posted": false,
-      "source_index": 21,
-      "style": "light",
-      "fp": [
-        "1. weak first second",
-        "2. too many ideas",
-        "3. no reason to finish",
-        "4. inconsistent posting",
-        "5 reasons your videos aren't growing.",
-        "5. no clear next step",
-        "a slow open kills the video before the hook lands.",
-        "give one simple action: follow for more.",
-        "if there's no payoff coming, people leave early.",
-        "it's rarely the algorithm.",
-        "one video, one point. cramming means nothing sticks.",
-        "the algorithm rewards reliability. show up daily."
       ]
     },
     {
@@ -2511,6 +2483,41 @@
         "new angle or location keeps the eye from settling.",
         "remove the breath before every sentence. pace is retention.",
         "where people drop, and why."
+      ]
+    },
+    {
+      "id": "carousel-00131",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00131-0.jpg",
+        "queue/carousel-00131-1.jpg",
+        "queue/carousel-00131-2.jpg",
+        "queue/carousel-00131-3.jpg",
+        "queue/carousel-00131-4.jpg",
+        "queue/carousel-00131-5.jpg",
+        "queue/carousel-00131-6.jpg"
+      ],
+      "caption": "The algorithm doesn't reward talent. It rewards the person who keeps showing up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Lower the bar to start\n2. Batch your filming\n3. Keep an idea list\n4. Detach from one post\n5. Show up on the bad days\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: how to stay consistent with content.",
+      "posted": false,
+      "source_index": 12,
+      "style": "midnight",
+      "fp": [
+        "@josephborroto",
+        "aim for 'posted,' not 'perfect.' momentum beats motivation.",
+        "batch your filming",
+        "detach from one post",
+        "here's how i stay consistent \u2192",
+        "joseph borroto",
+        "keep an idea list",
+        "lower the bar to start",
+        "never stare at a blank page. capture ideas the second they hit.",
+        "no single video defines you. the body of work does.",
+        "posting once and quitting is why most people fail. show up daily.",
+        "shoot a week in one sitting. future you just posts.",
+        "show up on the bad days",
+        "the post you don't feel like making is usually the one that hits."
       ]
     }
   ]

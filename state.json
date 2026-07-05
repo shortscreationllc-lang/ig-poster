@@ -1,7 +1,7 @@
 {
   "single_index": 56,
-  "carousel_index": 12,
-  "seq": 130,
+  "carousel_index": 13,
+  "seq": 131,
   "daily": {
     "20260630": {
       "midday": true
@@ -20,7 +20,7 @@
     }
   },
   "am_style_i": 56,
-  "pm_style_i": 74,
+  "pm_style_i": 75,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -1988,6 +1988,19 @@
         "cap_style": 0
       },
       "hook": "Shares in DMs are the #1 signal growing reach in 2026 \u2014 make content people send."
+    },
+    {
+      "at": "20260705T160350Z",
+      "id": "carousel-00115",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18056474420755488",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "algorithm",
+        "source_index": 21
+      }
     }
   ],
   "story_hook_i": 1,
@@ -2221,18 +2234,6 @@
     }
   ],
   "recent_texts": [
-    "quality video is hours of skilled work. that's why cheap pricing collapses.",
-    "research and hooks",
-    "setup, multiple takes, location changes, lighting, audio.",
-    "studying what works and writing a hook worth stopping for.",
-    "the part nobody breaks down.",
-    "the pass that turns good into actually-postable.",
-    "what a good reel actually costs to make.",
-    "posts and stories keep your current audience warm.",
-    "reels bring the new ones in.",
-    "1. open on motion",
-    "2. patch second 4",
-    "3. cut the dead air",
     "4. switch the frame",
     "5 ways to fix your retention curve.",
     "5. pay off the hook",
@@ -2300,7 +2301,19 @@
     "save your font and look once. reuse it every time.",
     "set it once: format, size, settings. never rethink it.",
     "stop hunting. pull from tracks you've already cleared.",
-    "without the video looking rushed."
+    "without the video looking rushed.",
+    "1. weak first second",
+    "2. too many ideas",
+    "3. no reason to finish",
+    "4. inconsistent posting",
+    "5 reasons your videos aren't growing.",
+    "5. no clear next step",
+    "a slow open kills the video before the hook lands.",
+    "give one simple action: follow for more.",
+    "if there's no payoff coming, people leave early.",
+    "it's rarely the algorithm.",
+    "one video, one point. cramming means nothing sticks.",
+    "the algorithm rewards reliability. show up daily."
   ],
   "reel_i": 70,
   "reel_cap_i": 108,
