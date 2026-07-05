@@ -1,39 +1,6 @@
 {
   "items": [
     {
-      "id": "carousel-00019",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00019-0.jpg",
-        "queue/carousel-00019-1.jpg",
-        "queue/carousel-00019-2.jpg",
-        "queue/carousel-00019-3.jpg",
-        "queue/carousel-00019-4.jpg",
-        "queue/carousel-00019-5.jpg",
-        "queue/carousel-00019-6.jpg"
-      ],
-      "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
-      "alt": "Carousel: 5 rules behind every video that lands.",
-      "posted": true,
-      "source_index": 4,
-      "fp": [
-        "1. 4k at 60fps",
-        "2. 1.5-second hook, written",
-        "3. switch location every line",
-        "4. one idea per video",
-        "5 rules behind every video that lands.",
-        "5. music quieter than feels right",
-        "memorized before you hit record. never improvised.",
-        "simple, repeatable, no fancy gear.",
-        "specific beats broad. one clear point gets saved and shared.",
-        "trim ruthlessly. the voice leads, the music supports.",
-        "two lines in one spot? move. movement reads as energy.",
-        "you don't need a cinema camera. you need the right settings."
-      ],
-      "skipped": true
-    },
-    {
       "id": "carousel-00020",
       "slot": "pm",
       "type": "carousel",
@@ -1781,6 +1748,42 @@
       "post_id": "18603371128030049"
     },
     {
+      "id": "carousel-00114",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00114-0.jpg",
+        "queue/carousel-00114-1.jpg",
+        "queue/carousel-00114-2.jpg",
+        "queue/carousel-00114-3.jpg",
+        "queue/carousel-00114-4.jpg",
+        "queue/carousel-00114-5.jpg",
+        "queue/carousel-00114-6.jpg"
+      ],
+      "caption": "Great content with no ask is a missed opportunity. Tell them what to do.\n\nHere's the breakdown \ud83d\udc47\n\n1. One ask per post\n2. Make it effortless\n3. Tie it to the value\n4. Earn it first\n5. Say it out loud\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: how to use CTAs.",
+      "posted": true,
+      "source_index": 20,
+      "style": "midnight",
+      "fp": [
+        "'comment one word.' the lower the effort, the higher the response.",
+        "'save this for your next video' beats a generic 'like and follow.'",
+        "@josephborroto",
+        "don't assume they'll figure it out. tell them, clearly, once.",
+        "earn it first",
+        "follow or save or comment. pick one. two asks = zero action.",
+        "give something worth acting on before you ask for anything.",
+        "here's how i use ctas \u2192",
+        "if you don't tell people what to do next, they won't.",
+        "joseph borroto",
+        "make it effortless",
+        "one ask per post",
+        "say it out loud",
+        "tie it to the value"
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -2000,41 +2003,6 @@
       "fp": [
         "feeling too cringe to post is selfish. someone out there needs exactly what you know \u2014 and you're keeping it from them.",
         "who needed to hear this?"
-      ]
-    },
-    {
-      "id": "carousel-00114",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00114-0.jpg",
-        "queue/carousel-00114-1.jpg",
-        "queue/carousel-00114-2.jpg",
-        "queue/carousel-00114-3.jpg",
-        "queue/carousel-00114-4.jpg",
-        "queue/carousel-00114-5.jpg",
-        "queue/carousel-00114-6.jpg"
-      ],
-      "caption": "Great content with no ask is a missed opportunity. Tell them what to do.\n\nHere's the breakdown \ud83d\udc47\n\n1. One ask per post\n2. Make it effortless\n3. Tie it to the value\n4. Earn it first\n5. Say it out loud\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: how to use CTAs.",
-      "posted": false,
-      "source_index": 20,
-      "style": "midnight",
-      "fp": [
-        "'comment one word.' the lower the effort, the higher the response.",
-        "'save this for your next video' beats a generic 'like and follow.'",
-        "@josephborroto",
-        "don't assume they'll figure it out. tell them, clearly, once.",
-        "earn it first",
-        "follow or save or comment. pick one. two asks = zero action.",
-        "give something worth acting on before you ask for anything.",
-        "here's how i use ctas \u2192",
-        "if you don't tell people what to do next, they won't.",
-        "joseph borroto",
-        "make it effortless",
-        "one ask per post",
-        "say it out loud",
-        "tie it to the value"
       ]
     },
     {
@@ -2510,6 +2478,39 @@
         "most people watch on mute. no captions = no message.",
         "one idea per cut",
         "stop over-editing. the cut should disappear, not show off."
+      ]
+    },
+    {
+      "id": "carousel-00130",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00130-0.jpg",
+        "queue/carousel-00130-1.jpg",
+        "queue/carousel-00130-2.jpg",
+        "queue/carousel-00130-3.jpg",
+        "queue/carousel-00130-4.jpg",
+        "queue/carousel-00130-5.jpg",
+        "queue/carousel-00130-6.jpg"
+      ],
+      "caption": "Retention isn't luck, it's a series of small saves.\n\n1. Open on motion\n2. Patch second 4\n3. Cut the dead air\n4. Switch the frame\n5. Pay off the hook\n\nSave it and watch your average watch time climb.\n\nFollow @josephborroto for retention you can actually engineer.\n\n#retention #videoediting #shortformvideo #reelstips #contentstrategy #josephborroto",
+      "alt": "Carousel: 5 ways to fix your retention curve.",
+      "posted": false,
+      "source_index": 11,
+      "style": "bone",
+      "fp": [
+        "1. open on motion",
+        "2. patch second 4",
+        "3. cut the dead air",
+        "4. switch the frame",
+        "5 ways to fix your retention curve.",
+        "5. pay off the hook",
+        "a static first frame loses people before you speak.",
+        "deliver what you promised before they lose patience.",
+        "drop a number or contradiction right where attention dips.",
+        "new angle or location keeps the eye from settling.",
+        "remove the breath before every sentence. pace is retention.",
+        "where people drop, and why."
       ]
     }
   ]
