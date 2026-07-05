@@ -2316,8 +2316,8 @@
     "the algorithm rewards reliability. show up daily."
   ],
   "reel_i": 70,
-  "reel_cap_i": 108,
-  "reel_audio_i": 108,
+  "reel_cap_i": 109,
+  "reel_audio_i": 109,
   "reel_recent": [
     "awkward on camera talk to one person not an audience",
     "you don t need a better camera you need a better first sente",
@@ -2328,7 +2328,6 @@
     "i treat the camera like a client not a camera that one shift"
   ],
   "trial_recent": [
-    "you don t need a better camera you need a better hook and a ",
     "most people overthink content i just get it out and that s w",
     "pure talking head is fading pair your words with b roll that",
     "stop posting more start hooking harder",
@@ -2341,7 +2340,8 @@
     "how to get clients from content show up daily until they can",
     "show the before and after not the theory proof sells better ",
     "nobody cares how your video was filmed only whether it s wor",
-    "shares in dms are the 1 signal growing reach in 2026 make co"
+    "shares in dms are the 1 signal growing reach in 2026 make co",
+    "stop trying to sound like a content creator just be yourself"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -2373,11 +2373,11 @@
     "20260704": 1
   },
   "beat_recent": [
-    3,
     1,
     0,
     6,
-    4
+    4,
+    5
   ],
   "style_recent": [
     "slate",
