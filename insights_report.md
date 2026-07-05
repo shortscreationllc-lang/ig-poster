@@ -8,7 +8,7 @@
 - 👤 20260703 | REELS | reach 1023 | views 1659 | 6.0s watch | saves 2 shares 1 | eng 10.6% | score 17.457 | https://www.instagram.com/reel/DaUYL3vh-vp/
 - 👤 20260702 | REELS | reach 1190 | views 1575 | 5.5s watch | saves 1 shares 1 | eng 10.6% | score 16.624 | https://www.instagram.com/reel/DaTlvArBO5l/
 - 👤 20260702 | REELS | reach 1262 | views 1589 | 5.8s watch | saves 0 shares 5 | eng 9.6% | score 16.594 | https://www.instagram.com/reel/DaTkLfYBkSu/
-- 👤 20260701 | REELS | reach 2022 | views 3611 | 8.3s watch | saves 1 shares 8 | eng 6.6% | score 16.255 | https://www.instagram.com/reel/DaRL0shhUxh/
+- 👤 20260701 | REELS | reach 2022 | views 3611 | 8.3s watch | saves 1 shares 8 | eng 6.6% | score 16.253 | https://www.instagram.com/reel/DaRL0shhUxh/
 - 👤 20260702 | REELS | reach 1239 | views 1821 | 8.3s watch | saves 2 shares 3 | eng 6.6% | score 16.083 | https://www.instagram.com/reel/DaTjHbrB04E/
 - 👤 20260630 | REELS | reach 1910 | views 2571 | 5.8s watch | saves 5 shares 20 | eng 5.9% | score 15.598 | https://www.instagram.com/reel/DaORZUwh0EX/
 
