@@ -2017,6 +2017,20 @@
         "cap_style": 0
       },
       "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
+    },
+    {
+      "at": "20260706T160427Z",
+      "id": "queue/reel-1783353811.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18325476961261875",
+      "tags": {
+        "fmt": "sequence",
+        "style": "orangepop",
+        "pillar": "business",
+        "cap_style": 3
+      },
+      "hook": "3 videos every business owner should be posting to get clients."
     }
   ],
   "story_hook_i": 1,
