@@ -2331,17 +2331,17 @@
     "one video, one point. cramming means nothing sticks.",
     "the algorithm rewards reliability. show up daily."
   ],
-  "reel_i": 70,
-  "reel_cap_i": 109,
-  "reel_audio_i": 109,
+  "reel_i": 71,
+  "reel_cap_i": 110,
+  "reel_audio_i": 110,
   "reel_recent": [
-    "awkward on camera talk to one person not an audience",
     "you don t need a better camera you need a better first sente",
     "most short form content isn t bad it s forgettable make one ",
     "how i always know what to post your audience writes the list",
     "how i got comfortable on camera reps in front of real people",
     "cutting the first 2 seconds of your video can double your wa",
-    "i treat the camera like a client not a camera that one shift"
+    "i treat the camera like a client not a camera that one shift",
+    "3 videos every business owner should be posting to get clien"
   ],
   "trial_recent": [
     "most people overthink content i just get it out and that s w",
@@ -2390,19 +2390,19 @@
     "20260705": 1
   },
   "beat_recent": [
-    1,
     0,
     6,
     4,
-    5
+    5,
+    9
   ],
   "style_recent": [
-    "slate",
     "midnight",
     "navyorange",
     "dark",
     "ember",
     "blackout",
-    "slate"
+    "slate",
+    "orangepop"
   ]
 }
