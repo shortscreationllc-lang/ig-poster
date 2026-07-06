@@ -2031,6 +2031,22 @@
         "cap_style": 3
       },
       "hook": "3 videos every business owner should be posting to get clients."
+    },
+    {
+      "at": "20260706T202523Z",
+      "id": "queue/reel-1783369435-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17933571588317255",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "imessage",
+        "style": "midnight",
+        "pillar": "proof",
+        "cap_style": 3
+      },
+      "hook": "A DM I got after someone ran my content advice for 30 days."
     }
   ],
   "story_hook_i": 1,
@@ -2410,7 +2426,8 @@
     "20260702": 1,
     "20260703": 1,
     "20260704": 1,
-    "20260705": 1
+    "20260705": 1,
+    "20260706": 1
   },
   "beat_recent": [
     6,
