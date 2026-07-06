@@ -2355,8 +2355,8 @@
     "the algorithm rewards reliability. show up daily."
   ],
   "reel_i": 71,
-  "reel_cap_i": 110,
-  "reel_audio_i": 110,
+  "reel_cap_i": 111,
+  "reel_audio_i": 111,
   "reel_recent": [
     "you don t need a better camera you need a better first sente",
     "most short form content isn t bad it s forgettable make one ",
@@ -2367,7 +2367,6 @@
     "3 videos every business owner should be posting to get clien"
   ],
   "trial_recent": [
-    "most people overthink content i just get it out and that s w",
     "pure talking head is fading pair your words with b roll that",
     "stop posting more start hooking harder",
     "stop chasing viral chase clarity one idea impossible to scro",
@@ -2380,7 +2379,8 @@
     "show the before and after not the theory proof sells better ",
     "nobody cares how your video was filmed only whether it s wor",
     "shares in dms are the 1 signal growing reach in 2026 make co",
-    "stop trying to sound like a content creator just be yourself"
+    "stop trying to sound like a content creator just be yourself",
+    "a dm i got after someone ran my content advice for 30 days"
   ],
   "trial_daily": {
     "20260608": 2,
@@ -2413,11 +2413,11 @@
     "20260705": 1
   },
   "beat_recent": [
-    0,
     6,
     4,
     5,
-    9
+    9,
+    3
   ],
   "style_recent": [
     "midnight",
