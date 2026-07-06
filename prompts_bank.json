@@ -322,6 +322,36 @@
       "prompt": "Drop your answer in the comments.",
       "caption": "I'd post more if I stopped worrying about ________.\n\nFollow @josephborroto for more on content.",
       "alt_text": "I'd post more if I stopped worrying about ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The most underrated content skill is ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The most underrated content skill is ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The most underrated content skill is ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "dark",
+      "kicker": "HOT TAKE",
+      "headline": "AI videos are coming for everything. The personal touch is the one thing they can't fake.",
+      "prompt": "Agree?",
+      "caption": "AI videos are coming for everything. The personal touch is the one thing they can't fake.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "AI videos are coming for everything. The personal touch is the one thing they can't fake."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "HOT TAKE",
+      "headline": "Your first line is the only algorithm that matters.",
+      "prompt": "Agree or disagree?",
+      "caption": "Your first line is the only algorithm that matters.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your first line is the only algorithm that matters."
     }
   ]
 }

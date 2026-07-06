@@ -450,6 +450,51 @@
       },
       "caption": "Consistency beats talent that quits.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Consistency beats talent that quits."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "dark",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Feeling too cringe to post is selfish — someone needs what you know.",
+        "cta": ""
+      },
+      "caption": "Feeling too cringe to post is selfish — someone needs what you know.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Feeling too cringe to post is selfish — someone needs what you know."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "ember",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Overediting is just hiding weak content.",
+        "cta": ""
+      },
+      "caption": "Overediting is just hiding weak content.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Overediting is just hiding weak content."
+    },
+    {
+      "enabled": true,
+      "type": "social",
+      "style": "dark",
+      "social": {
+        "author": "Joseph Borroto",
+        "handle": "@josephborroto",
+        "verified": true,
+        "initials": "JB",
+        "headline": "Stop trying to sound like a 'content creator.' Just talk.",
+        "cta": ""
+      },
+      "caption": "Stop trying to sound like a 'content creator.' Just talk.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Stop trying to sound like a 'content creator.' Just talk."
     }
   ]
 }

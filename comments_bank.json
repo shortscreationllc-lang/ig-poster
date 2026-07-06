@@ -920,6 +920,166 @@
       },
       "caption": "Stop copying the creator voice. talk how you actually talk. that's the style.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Comment reply: stop copying the creator voice. talk how you actually talk. that's the style."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "slate",
+      "comment": {
+        "author": "grow_with_mike",
+        "initials": "GW",
+        "text": "do i have to show my face?",
+        "likes": "4200k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "it helps — people follow people. but a strong voice and clear value carries it too.",
+        "likes": "418"
+      },
+      "caption": "It helps — people follow people. but a strong voice and clear value carries it too.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: it helps — people follow people. but a strong voice and clear value carries it too."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "dark",
+      "comment": {
+        "author": "vid_jordan",
+        "initials": "VJ",
+        "text": "how do i find my style?",
+        "likes": "1200k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "stop copying the creator voice. talk how you actually talk. that's the style.",
+        "likes": "288"
+      },
+      "caption": "Stop copying the creator voice. talk how you actually talk. that's the style.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: stop copying the creator voice. talk how you actually talk. that's the style."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "slate",
+      "comment": {
+        "author": "creator_alex",
+        "initials": "CA",
+        "text": "should i wait until my content is better?",
+        "likes": "426"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "no. you don't need a perfect video. you need a video with real value, then post it again.",
+        "likes": "371"
+      },
+      "caption": "No. you don't need a perfect video. you need a video with real value, then post it again.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: no. you don't need a perfect video. you need a video with real value, then post it again."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "slate",
+      "comment": {
+        "author": "creator_sam",
+        "initials": "CS",
+        "text": "i feel so cringe posting. help?",
+        "likes": "692"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "it helps — people follow people. but a strong voice and clear value carries it too.",
+        "likes": "782"
+      },
+      "caption": "It helps — people follow people. but a strong voice and clear value carries it too.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: it helps — people follow people. but a strong voice and clear value carries it too."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "ember",
+      "comment": {
+        "author": "grow_with_max",
+        "initials": "GW",
+        "text": "whats the #1 mistake new creators make?",
+        "likes": "822"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "trying to make the perfect post — so they never post at all. perfect and unposted is worth zero.",
+        "likes": "541"
+      },
+      "caption": "Trying to make the perfect post — so they never post at all. perfect and unposted is worth zero.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: trying to make the perfect post — so they never post at all. perfect and unposted is worth zero."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "midnight",
+      "comment": {
+        "author": "rio.media",
+        "initials": "RM",
+        "text": "how do you get clients from content?",
+        "likes": "5100k"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "show up every single day until they can't ignore you. bet on consistency, not luck.",
+        "likes": "799"
+      },
+      "caption": "Show up every single day until they can't ignore you. bet on consistency, not luck.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: show up every single day until they can't ignore you. bet on consistency, not luck."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "midnight",
+      "comment": {
+        "author": "creator_chris",
+        "initials": "CC",
+        "text": "how do i stand out when everyone uses AI?",
+        "likes": "447"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "be more personal, not more polished. people will crave the real thing.",
+        "likes": "427"
+      },
+      "caption": "Be more personal, not more polished. people will crave the real thing.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: be more personal, not more polished. people will crave the real thing."
+    },
+    {
+      "enabled": true,
+      "type": "comment",
+      "style": "slate",
+      "comment": {
+        "author": "new_mike",
+        "initials": "NM",
+        "text": "whats the #1 mistake new creators make?",
+        "likes": "965"
+      },
+      "reply": {
+        "author": "Joseph Borroto",
+        "initials": "JB",
+        "verified": true,
+        "text": "post every single day, as much as you can. say something, show something, text on screen.",
+        "likes": "544"
+      },
+      "caption": "Post every single day, as much as you can. say something, show something, text on screen.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Comment reply: post every single day, as much as you can. say something, show something, text on screen."
     }
   ]
 }
