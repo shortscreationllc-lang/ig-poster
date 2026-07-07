@@ -2060,6 +2060,22 @@
         "pillar": "hook",
         "source_index": 0
       }
+    },
+    {
+      "at": "20260707T202626Z",
+      "id": "queue/reel-1783455908-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18158674651467939",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "navyorange",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Consistency beats going viral once \u2014 show up and the algorithm follows."
     }
   ],
   "story_hook_i": 1,
@@ -2440,7 +2456,8 @@
     "20260703": 1,
     "20260704": 1,
     "20260705": 1,
-    "20260706": 1
+    "20260706": 1,
+    "20260707": 1
   },
   "beat_recent": [
     4,
