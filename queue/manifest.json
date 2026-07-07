@@ -1,24 +1,6 @@
 {
   "items": [
     {
-      "id": "single-00008",
-      "slot": "am",
-      "type": "quote",
-      "images": [
-        "queue/single-00008.jpg"
-      ],
-      "caption": "Small filming choices make batch content feel fresher.\n\nChange your shirt. Switch the wall. Move outside for two. Shoot ten videos in an hour and they'll look like ten separate days \u2014 if you sweat the small stuff.\n\nBatch smart, not lazy.\n\nFollow @josephborroto for the production tricks that scale.\n\n#batching #contentcreation #reelstips #videoproduction #josephborroto",
-      "alt": "",
-      "posted": true,
-      "source_index": 7,
-      "fp": [
-        "same day, ten different days.",
-        "small filming choices make batch content feel fresh."
-      ],
-      "posted_at": "20260606T141828Z",
-      "post_id": "17950110639000754"
-    },
-    {
       "id": "carousel-00021",
       "slot": "pm",
       "type": "carousel",
@@ -1789,6 +1771,42 @@
       "post_id": "18056474420755488"
     },
     {
+      "id": "carousel-00116",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00116-0.jpg",
+        "queue/carousel-00116-1.jpg",
+        "queue/carousel-00116-2.jpg",
+        "queue/carousel-00116-3.jpg",
+        "queue/carousel-00116-4.jpg",
+        "queue/carousel-00116-5.jpg",
+        "queue/carousel-00116-6.jpg"
+      ],
+      "caption": "Your first 100 videos aren't the work. They're the warm-up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Reps build the skill\n2. Cringe is the toll\n3. Nobody's watching yet\n4. Track what lands\n5. Stay in the game\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
+      "alt": "Carousel: post through your first 100.",
+      "posted": true,
+      "source_index": 22,
+      "style": "dark",
+      "fp": [
+        "@josephborroto",
+        "cringe is the toll",
+        "everyone's early stuff is rough. pay it now, not later.",
+        "here's the mindset \u2192",
+        "joseph borroto",
+        "let the data, not your ego, tell you what's working.",
+        "most quit before the reps compound. don't be most people.",
+        "nobody's watching yet",
+        "reps build the skill",
+        "stay in the game",
+        "the small audience early is a gift \u2014 practice with the lights low.",
+        "track what lands",
+        "you can't think your way to good. you film your way there.",
+        "your first 100 videos are practice. post them anyway."
+      ],
+      "skipped": true
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -2008,41 +2026,6 @@
       "fp": [
         "feeling too cringe to post is selfish. someone out there needs exactly what you know \u2014 and you're keeping it from them.",
         "who needed to hear this?"
-      ]
-    },
-    {
-      "id": "carousel-00116",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00116-0.jpg",
-        "queue/carousel-00116-1.jpg",
-        "queue/carousel-00116-2.jpg",
-        "queue/carousel-00116-3.jpg",
-        "queue/carousel-00116-4.jpg",
-        "queue/carousel-00116-5.jpg",
-        "queue/carousel-00116-6.jpg"
-      ],
-      "caption": "Your first 100 videos aren't the work. They're the warm-up.\n\nHere's the breakdown \ud83d\udc47\n\n1. Reps build the skill\n2. Cringe is the toll\n3. Nobody's watching yet\n4. Track what lands\n5. Stay in the game\n\nSave this for later. \ud83d\udccc\n\nFollow @josephborroto for more.",
-      "alt": "Carousel: post through your first 100.",
-      "posted": false,
-      "source_index": 22,
-      "style": "dark",
-      "fp": [
-        "@josephborroto",
-        "cringe is the toll",
-        "everyone's early stuff is rough. pay it now, not later.",
-        "here's the mindset \u2192",
-        "joseph borroto",
-        "let the data, not your ego, tell you what's working.",
-        "most quit before the reps compound. don't be most people.",
-        "nobody's watching yet",
-        "reps build the skill",
-        "stay in the game",
-        "the small audience early is a gift \u2014 practice with the lights low.",
-        "track what lands",
-        "you can't think your way to good. you film your way there.",
-        "your first 100 videos are practice. post them anyway."
       ]
     },
     {
@@ -2518,6 +2501,39 @@
         "shoot a week in one sitting. future you just posts.",
         "show up on the bad days",
         "the post you don't feel like making is usually the one that hits."
+      ]
+    },
+    {
+      "id": "carousel-00132",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00132-0.jpg",
+        "queue/carousel-00132-1.jpg",
+        "queue/carousel-00132-2.jpg",
+        "queue/carousel-00132-3.jpg",
+        "queue/carousel-00132-4.jpg",
+        "queue/carousel-00132-5.jpg",
+        "queue/carousel-00132-6.jpg"
+      ],
+      "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
+      "alt": "Carousel: 5 algorithm myths to stop believing.",
+      "posted": false,
+      "source_index": 13,
+      "style": "light",
+      "fp": [
+        "1. \"hashtags are dead",
+        "2. \"post at the perfect time",
+        "3. \"you need to go viral",
+        "4. \"more posting always wins",
+        "5 algorithm myths to stop believing.",
+        "5. \"the algorithm hates links",
+        "consistent reach beats one spike that fades in a week.",
+        "good content travels for days. timing is a rounding error.",
+        "it rewards watch time. make something worth finishing.",
+        "quality and retention beat raw volume every time.",
+        "these are costing you reach.",
+        "they still help categorize. they're just not the whole game."
       ]
     }
   ]
