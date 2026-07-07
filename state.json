@@ -1,7 +1,7 @@
 {
   "single_index": 56,
-  "carousel_index": 14,
-  "seq": 132,
+  "carousel_index": 15,
+  "seq": 133,
   "daily": {
     "20260702": {
       "midday": true
@@ -20,7 +20,7 @@
     }
   },
   "am_style_i": 56,
-  "pm_style_i": 76,
+  "pm_style_i": 77,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -2047,6 +2047,19 @@
         "cap_style": 3
       },
       "hook": "A DM I got after someone ran my content advice for 30 days."
+    },
+    {
+      "at": "20260707T160726Z",
+      "id": "carousel-00117",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17881812297609996",
+      "tags": {
+        "fmt": "carousel",
+        "style": "creamorange",
+        "pillar": "hook",
+        "source_index": 0
+      }
     }
   ],
   "story_hook_i": 1,
@@ -2289,18 +2302,6 @@
     }
   ],
   "recent_texts": [
-    "4. switch the frame",
-    "5 ways to fix your retention curve.",
-    "5. pay off the hook",
-    "a static first frame loses people before you speak.",
-    "deliver what you promised before they lose patience.",
-    "drop a number or contradiction right where attention dips.",
-    "new angle or location keeps the eye from settling.",
-    "remove the breath before every sentence. pace is retention.",
-    "where people drop, and why.",
-    "1. \"hashtags are dead",
-    "2. \"post at the perfect time",
-    "3. \"you need to go viral",
     "4. \"more posting always wins",
     "5 algorithm myths to stop believing.",
     "5. \"the algorithm hates links",
@@ -2368,7 +2369,19 @@
     "if there's no payoff coming, people leave early.",
     "it's rarely the algorithm.",
     "one video, one point. cramming means nothing sticks.",
-    "the algorithm rewards reliability. show up daily."
+    "the algorithm rewards reliability. show up daily.",
+    "5 hook formulas that work in any niche.",
+    "[number] things i learned about [x].",
+    "a curiosity gap. implies you have the inside answer.",
+    "calls out a specific person. they can't scroll past themselves.",
+    "here's the truth about [x].",
+    "i tried / quit / lost...",
+    "if you're [x], stop doing [y].",
+    "most people don't know...",
+    "personal stakes. people stay to see what happened.",
+    "positions you as the one cutting through the noise.",
+    "promises a list. the brain wants to finish what it starts.",
+    "steal these for your next 5 videos."
   ],
   "reel_i": 71,
   "reel_cap_i": 111,
