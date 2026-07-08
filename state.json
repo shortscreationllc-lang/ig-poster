@@ -2076,6 +2076,20 @@
         "cap_style": 0
       },
       "hook": "Consistency beats going viral once \u2014 show up and the algorithm follows."
+    },
+    {
+      "at": "20260708T160859Z",
+      "id": "queue/reel-1783526835.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18114745759705735",
+      "tags": {
+        "fmt": "typewriter",
+        "style": "midnight",
+        "pillar": "hook",
+        "cap_style": 3
+      },
+      "hook": "Your first line is the only algorithm that matters."
     }
   ],
   "story_hook_i": 1,
