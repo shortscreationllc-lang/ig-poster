@@ -2090,6 +2090,22 @@
         "cap_style": 3
       },
       "hook": "Your first line is the only algorithm that matters."
+    },
+    {
+      "at": "20260708T200503Z",
+      "id": "queue/reel-1783541016-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17871807624623392",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "ember",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Views don't pay the bills \u2014 content that books clients does."
     }
   ],
   "story_hook_i": 1,
@@ -2471,7 +2487,8 @@
     "20260704": 1,
     "20260705": 1,
     "20260706": 1,
-    "20260707": 1
+    "20260707": 1,
+    "20260708": 1
   },
   "beat_recent": [
     9,
