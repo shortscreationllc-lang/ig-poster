@@ -3,9 +3,6 @@
   "carousel_index": 16,
   "seq": 134,
   "daily": {
-    "20260704": {
-      "midday": true
-    },
     "20260705": {
       "midday": true
     },
@@ -16,6 +13,9 @@
       "midday": true
     },
     "20260708": {
+      "midday": true
+    },
+    "20260709": {
       "midday": true
     }
   },
