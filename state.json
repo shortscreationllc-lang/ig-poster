@@ -2119,6 +2119,22 @@
         "pillar": "editing",
         "source_index": 1
       }
+    },
+    {
+      "at": "20260709T210421Z",
+      "id": "queue/reel-1783631000-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17999449727786065",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "sequence",
+        "style": "ember",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "3 ways to stop the scroll on short-form video."
     }
   ],
   "story_hook_i": 1,
@@ -2501,7 +2517,8 @@
     "20260705": 1,
     "20260706": 1,
     "20260707": 1,
-    "20260708": 1
+    "20260708": 1,
+    "20260709": 1
   },
   "beat_recent": [
     3,
