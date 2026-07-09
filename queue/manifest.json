@@ -1,24 +1,6 @@
 {
   "items": [
     {
-      "id": "single-00009",
-      "slot": "am",
-      "type": "versus",
-      "images": [
-        "queue/single-00009.jpg"
-      ],
-      "caption": "Same video. Two openings. Completely different results.\n\nThe weak hook explains. The strong hook accuses, intrigues, and creates tension. People can't scroll past a problem that sounds like theirs.\n\nRewrite your next first line.\n\nFollow @josephborroto for hook breakdowns.\n\n#hookwriting #shortformvideo #copywriting #reelstips #contentcreator #josephborroto",
-      "alt": "This vs that card comparing a weak hook and a strong hook.",
-      "posted": true,
-      "source_index": 8,
-      "fp": [
-        "in this video i'm going to show you how to edit.",
-        "your edits are boring people in the first 3 seconds."
-      ],
-      "posted_at": "20260607T140244Z",
-      "post_id": "18078477206647466"
-    },
-    {
       "id": "carousel-00022",
       "slot": "pm",
       "type": "carousel",
@@ -1808,6 +1790,47 @@
       "post_id": "17881812297609996"
     },
     {
+      "id": "carousel-00120",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00120-0.jpg",
+        "queue/carousel-00120-1.jpg",
+        "queue/carousel-00120-2.jpg",
+        "queue/carousel-00120-3.jpg",
+        "queue/carousel-00120-4.jpg",
+        "queue/carousel-00120-5.jpg",
+        "queue/carousel-00120-6.jpg",
+        "queue/carousel-00120-7.jpg",
+        "queue/carousel-00120-8.jpg"
+      ],
+      "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: 7 things to check before every shoot.",
+      "posted": true,
+      "source_index": 1,
+      "style": "light",
+      "fp": [
+        "1. 4k at 60fps",
+        "1.5 seconds, memorized. never improvise the first line.",
+        "2. mic test and playback",
+        "3. hook pre-written",
+        "4. scout your spots",
+        "5. batteries and storage",
+        "6. backup device",
+        "7 things to check before every shoot.",
+        "7. frame for the title",
+        "leave headroom so the overlay never covers your face.",
+        "number 4 is the one everyone skips.",
+        "one failure shouldn't cancel the whole shoot.",
+        "record 5 seconds and listen back. don't trust the meter alone.",
+        "switch location every line. this is the one people skip.",
+        "the only camera setting that really matters. set it once.",
+        "two of everything. a dead battery ends the day."
+      ],
+      "posted_at": "20260709T160701Z",
+      "post_id": "17961361082961529"
+    },
+    {
       "id": "single-00088",
       "slot": "am",
       "type": "value",
@@ -2062,45 +2085,6 @@
       "fp": [
         "make an offer so good people feel stupid saying no.",
         "\u2014 alex hormozi"
-      ]
-    },
-    {
-      "id": "carousel-00120",
-      "slot": "pm",
-      "type": "carousel",
-      "images": [
-        "queue/carousel-00120-0.jpg",
-        "queue/carousel-00120-1.jpg",
-        "queue/carousel-00120-2.jpg",
-        "queue/carousel-00120-3.jpg",
-        "queue/carousel-00120-4.jpg",
-        "queue/carousel-00120-5.jpg",
-        "queue/carousel-00120-6.jpg",
-        "queue/carousel-00120-7.jpg",
-        "queue/carousel-00120-8.jpg"
-      ],
-      "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
-      "alt": "Carousel: 7 things to check before every shoot.",
-      "posted": false,
-      "source_index": 1,
-      "style": "light",
-      "fp": [
-        "1. 4k at 60fps",
-        "1.5 seconds, memorized. never improvise the first line.",
-        "2. mic test and playback",
-        "3. hook pre-written",
-        "4. scout your spots",
-        "5. batteries and storage",
-        "6. backup device",
-        "7 things to check before every shoot.",
-        "7. frame for the title",
-        "leave headroom so the overlay never covers your face.",
-        "number 4 is the one everyone skips.",
-        "one failure shouldn't cancel the whole shoot.",
-        "record 5 seconds and listen back. don't trust the meter alone.",
-        "switch location every line. this is the one people skip.",
-        "the only camera setting that really matters. set it once.",
-        "two of everything. a dead battery ends the day."
       ]
     },
     {
@@ -2537,6 +2521,39 @@
         "speak their language",
         "use the exact words your person uses. it feels made for them.",
         "you'll get bored before they do. drill the same message new ways."
+      ]
+    },
+    {
+      "id": "carousel-00134",
+      "slot": "pm",
+      "type": "carousel",
+      "images": [
+        "queue/carousel-00134-0.jpg",
+        "queue/carousel-00134-1.jpg",
+        "queue/carousel-00134-2.jpg",
+        "queue/carousel-00134-3.jpg",
+        "queue/carousel-00134-4.jpg",
+        "queue/carousel-00134-5.jpg",
+        "queue/carousel-00134-6.jpg"
+      ],
+      "caption": "Boring B-roll is usually the wrong subject filmed from too far.\n\n1. Film nouns, not verbs\n2. Get uncomfortably close\n3. Move the camera\n4. Match the light\n5. Overshoot\n\nSave it before your next shoot.\n\nFollow @josephborroto for the details that make content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
+      "alt": "Carousel: 5 rules for B-roll that isn't boring.",
+      "posted": false,
+      "source_index": 15,
+      "style": "creamorange",
+      "fp": [
+        "1. film nouns, not verbs",
+        "2. get uncomfortably close",
+        "3. move the camera",
+        "4. match the light",
+        "5 rules for b-roll that isn't boring.",
+        "5. overshoot",
+        "a slow push or pan adds life a locked shot can't.",
+        "capture 3x what you need. you'll thank yourself in the edit.",
+        "consistent lighting makes cuts feel seamless.",
+        "detail reads as intentional. distance reads as filler.",
+        "most people film the wrong thing.",
+        "the object close-up beats the wide action shot."
       ]
     }
   ]

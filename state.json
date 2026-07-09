@@ -1,7 +1,7 @@
 {
   "single_index": 56,
-  "carousel_index": 15,
-  "seq": 133,
+  "carousel_index": 16,
+  "seq": 134,
   "daily": {
     "20260704": {
       "midday": true
@@ -20,7 +20,7 @@
     }
   },
   "am_style_i": 56,
-  "pm_style_i": 77,
+  "pm_style_i": 78,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -2106,6 +2106,19 @@
         "cap_style": 0
       },
       "hook": "Views don't pay the bills \u2014 content that books clients does."
+    },
+    {
+      "at": "20260709T160701Z",
+      "id": "carousel-00120",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17961361082961529",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "editing",
+        "source_index": 1
+      }
     }
   ],
   "story_hook_i": 1,
@@ -2348,22 +2361,6 @@
     }
   ],
   "recent_texts": [
-    "4. \"more posting always wins",
-    "5 algorithm myths to stop believing.",
-    "5. \"the algorithm hates links",
-    "consistent reach beats one spike that fades in a week.",
-    "good content travels for days. timing is a rounding error.",
-    "it rewards watch time. make something worth finishing.",
-    "quality and retention beat raw volume every time.",
-    "these are costing you reach.",
-    "they still help categorize. they're just not the whole game.",
-    "@josephborroto",
-    "a small, clear audience refers you. a broad, blurry one forgets you.",
-    "be the person known for one thing before you branch out.",
-    "here's how i niche down \u2192",
-    "if your content is for everyone, it's for no one.",
-    "joseph borroto",
-    "make content for a specific human, not a vague audience.",
     "niche down to grow up",
     "own one topic",
     "pick one person",
@@ -2427,7 +2424,23 @@
     "personal stakes. people stay to see what happened.",
     "positions you as the one cutting through the noise.",
     "promises a list. the brain wants to finish what it starts.",
-    "steal these for your next 5 videos."
+    "steal these for your next 5 videos.",
+    "1. 4k at 60fps",
+    "1.5 seconds, memorized. never improvise the first line.",
+    "2. mic test and playback",
+    "3. hook pre-written",
+    "4. scout your spots",
+    "5. batteries and storage",
+    "6. backup device",
+    "7 things to check before every shoot.",
+    "7. frame for the title",
+    "leave headroom so the overlay never covers your face.",
+    "number 4 is the one everyone skips.",
+    "one failure shouldn't cancel the whole shoot.",
+    "record 5 seconds and listen back. don't trust the meter alone.",
+    "switch location every line. this is the one people skip.",
+    "the only camera setting that really matters. set it once.",
+    "two of everything. a dead battery ends the day."
   ],
   "reel_i": 72,
   "reel_cap_i": 114,
