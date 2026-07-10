@@ -48,7 +48,7 @@ jobs:
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          DAILY_TARGET: "1"
+          DAILY_TARGET: "0"
         run: |
           set -euo pipefail
           git config user.name "ig-poster-bot"

@@ -52,11 +52,11 @@ STATE = ROOT / "state.json"
 #   feed  : am | pm | auto | None  (only when media == "post"; am=single card,
 #           pm=carousel, auto=alternate single/carousel by day)
 #   story : post the morning story this slot?
-# Daily lineup = ONE post/day, alternating reel <-> carousel by day. No story.
-#   midday ~12:37p : reel (even days) / carousel (odd days)
-SLOTS = [
-    ("midday", 12, "altrc", None, False),
-]
+# ⏸️ POSTING PAUSED — Joseph handles all content manually now. An empty SLOTS
+# means the bot posts NOTHING (no reels, carousels, or stories), no matter what
+# triggers the workflow. To resume, add a slot back, e.g.:
+#     ("midday", 12, "altrc", None, False)   # 1 post/day, reel<->carousel, +story
+SLOTS = []
 # A slot's LIVE window is [start, start + WINDOW_SPAN] hours — slack so a cron
 # that fires late (or slips into the next hour) still counts as "in window".
 WINDOW_SPAN = 1

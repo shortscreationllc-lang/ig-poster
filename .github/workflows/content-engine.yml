@@ -9,8 +9,9 @@ on:
       count:
         description: "How many new posts to generate"
         default: "14"
-  schedule:
-    - cron: "20 13 * * 1"   # Mondays ~9:20a ET (after insights has refreshed weights)
+  # schedule paused — posting is off, so no auto-generation needed
+  # schedule:
+  #   - cron: "20 13 * * 1"
 
 permissions:
   contents: write
