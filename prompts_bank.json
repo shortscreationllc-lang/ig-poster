@@ -172,6 +172,186 @@
       "prompt": "Who needed to hear this?",
       "caption": "Stop adding effects. Start removing pauses.\n\nFollow @josephborroto for more on content.",
       "alt_text": "Stop adding effects. Start removing pauses."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The one thing AI can't copy is ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The one thing AI can't copy is ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The one thing AI can't copy is ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "Most people's edits flop because of ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "Most people's edits flop because of ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Most people's edits flop because of ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "New creators waste the most time on ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "New creators waste the most time on ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "New creators waste the most time on ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "midnight",
+      "kicker": "HOT TAKE",
+      "headline": "Consistency beats talent that quits.",
+      "prompt": "Agree?",
+      "caption": "Consistency beats talent that quits.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Consistency beats talent that quits."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The most underrated content skill is ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The most underrated content skill is ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The most underrated content skill is ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "midnight",
+      "kicker": "HOT TAKE",
+      "headline": "Stop trying to sound like a 'content creator.' Just talk.",
+      "prompt": "Agree or disagree?",
+      "caption": "Stop trying to sound like a 'content creator.' Just talk.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Stop trying to sound like a 'content creator.' Just talk."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "I'd get more views if I stopped opening with ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "I'd get more views if I stopped opening with ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "I'd get more views if I stopped opening with ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The bridge from views to money is ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The bridge from views to money is ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The bridge from views to money is ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "HOT TAKE",
+      "headline": "Your first line is the only algorithm that matters.",
+      "prompt": "Agree?",
+      "caption": "Your first line is the only algorithm that matters.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your first line is the only algorithm that matters."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "I'd be way more consistent if I stopped ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "I'd be way more consistent if I stopped ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "I'd be way more consistent if I stopped ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The best hook always starts with ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The best hook always starts with ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The best hook always starts with ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "HOT TAKE",
+      "headline": "AI videos are coming for everything. The personal touch is the one thing they can't fake.",
+      "prompt": "Who needed to hear this?",
+      "caption": "AI videos are coming for everything. The personal touch is the one thing they can't fake.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "AI videos are coming for everything. The personal touch is the one thing they can't fake."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The most underrated content skill is ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The most underrated content skill is ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The most underrated content skill is ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "HOT TAKE",
+      "headline": "Don't bet on going viral. Bet on consistency.",
+      "prompt": "Agree or disagree?",
+      "caption": "Don't bet on going viral. Bet on consistency.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Don't bet on going viral. Bet on consistency."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "slate",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "I'd post more if I stopped worrying about ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "I'd post more if I stopped worrying about ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "I'd post more if I stopped worrying about ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "FILL IN THE BLANK",
+      "headline": "The most underrated content skill is ________.",
+      "prompt": "Drop your answer in the comments.",
+      "caption": "The most underrated content skill is ________.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "The most underrated content skill is ________."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "dark",
+      "kicker": "HOT TAKE",
+      "headline": "AI videos are coming for everything. The personal touch is the one thing they can't fake.",
+      "prompt": "Agree?",
+      "caption": "AI videos are coming for everything. The personal touch is the one thing they can't fake.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "AI videos are coming for everything. The personal touch is the one thing they can't fake."
+    },
+    {
+      "enabled": true,
+      "type": "prompt",
+      "style": "ember",
+      "kicker": "HOT TAKE",
+      "headline": "Your first line is the only algorithm that matters.",
+      "prompt": "Agree or disagree?",
+      "caption": "Your first line is the only algorithm that matters.\n\nFollow @josephborroto for more on content.",
+      "alt_text": "Your first line is the only algorithm that matters."
     }
   ]
 }

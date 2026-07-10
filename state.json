@@ -1,44 +1,26 @@
 {
-  "single_index": 42,
-  "carousel_index": 5,
-  "seq": 86,
+  "single_index": 56,
+  "carousel_index": 16,
+  "seq": 134,
   "daily": {
-    "20260608": {
-      "morning": true,
-      "midmorning": true,
-      "midday": true,
-      "afternoon": true,
-      "evening": true
+    "20260706": {
+      "midday": true
     },
-    "20260609": {
-      "morning": true,
-      "midmorning": true,
-      "midday": true,
-      "afternoon": true,
-      "evening": true
+    "20260707": {
+      "midday": true
     },
-    "20260610": {
-      "morning": true,
-      "midmorning": true,
-      "midday": true,
-      "afternoon": true,
-      "evening": true
+    "20260708": {
+      "midday": true
     },
-    "20260611": {
-      "morning": true,
-      "midmorning": true,
-      "midday": true,
-      "afternoon": true,
-      "evening": true
+    "20260709": {
+      "midday": true
     },
-    "20260612": {
-      "morning": true,
-      "midmorning": true,
+    "20260710": {
       "midday": true
     }
   },
-  "am_style_i": 42,
-  "pm_style_i": 44,
+  "am_style_i": 56,
+  "pm_style_i": 78,
   "history": [
     {
       "at": "20260601T122301Z",
@@ -710,6 +692,1463 @@
         "cap_style": 0
       },
       "hook": "3 ways to stop the scroll on short-form video."
+    },
+    {
+      "at": "20260612T203032Z",
+      "id": "carousel-00073",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17917515993183074",
+      "tags": {
+        "fmt": "carousel",
+        "style": "dark",
+        "pillar": "algorithm",
+        "source_index": 14
+      }
+    },
+    {
+      "at": "20260612T203540Z",
+      "id": "queue/reel-1781296489-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18113254762720716",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "typewriter",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Posted beats perfect. Every single time."
+    },
+    {
+      "at": "20260612T203644Z",
+      "id": "queue/reel-1781296495-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17968718436078097",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "stat",
+        "style": "navyorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "90% of viewers decide whether to keep watching in the first 3 seconds."
+    },
+    {
+      "at": "20260612T230317Z",
+      "id": "queue/reel-1781305325.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18113664538721847",
+      "tags": {
+        "fmt": "statement",
+        "style": "creamorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Your hook is 90% of the post \u2014 the first line does almost all the work."
+    },
+    {
+      "at": "20260613T123911Z",
+      "id": "queue/reel-1781354237.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18068720060698059",
+      "tags": {
+        "fmt": "checklist",
+        "style": "dark",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to make short-form that actually books clients, not just views."
+    },
+    {
+      "at": "20260613T144033Z",
+      "id": "single-00060",
+      "slot": "am",
+      "type": "reddit",
+      "post_id": "18202630480359347",
+      "tags": {
+        "fmt": "reddit",
+        "style": "dark",
+        "pillar": "mindset",
+        "source_index": 29
+      }
+    },
+    {
+      "at": "20260613T160049Z",
+      "id": "queue/reel-1781366406.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17897208570332645",
+      "tags": {
+        "fmt": "social",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
+    },
+    {
+      "at": "20260613T200204Z",
+      "id": "queue/reel-1781380861-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18130793971540985",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "typewriter",
+        "style": "navyorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Your first line is the only algorithm that matters."
+    },
+    {
+      "at": "20260613T200309Z",
+      "id": "queue/reel-1781380868-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18341501557221365",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Most people overthink content. I just get it out \u2014 and that's why mine grows."
+    },
+    {
+      "at": "20260613T203833Z",
+      "id": "carousel-00074",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18155348692476885",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "editing",
+        "source_index": 15
+      }
+    },
+    {
+      "at": "20260613T233506Z",
+      "id": "queue/reel-1781393601.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18029741567820637",
+      "tags": {
+        "fmt": "imessage",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How I always know what to post \u2014 your audience writes the list."
+    },
+    {
+      "at": "20260614T123853Z",
+      "id": "queue/reel-1781440635.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18097423706227190",
+      "tags": {
+        "fmt": "statement",
+        "style": "blackout",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Most short-form content isn't bad \u2014 it's forgettable. Make one thing memorable."
+    },
+    {
+      "at": "20260614T145705Z",
+      "id": "single-00061",
+      "slot": "am",
+      "type": "cheatsheet",
+      "post_id": "18078195896666558",
+      "tags": {
+        "fmt": "cheatsheet",
+        "style": "ember",
+        "pillar": "editing",
+        "source_index": 30
+      }
+    },
+    {
+      "at": "20260614T160809Z",
+      "id": "queue/reel-1781453251.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18429242194125900",
+      "tags": {
+        "fmt": "imessage",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How I got comfortable on camera \u2014 reps in front of real people."
+    },
+    {
+      "at": "20260614T200212Z",
+      "id": "carousel-00076",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18123091120730738",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "hook",
+        "source_index": 17
+      }
+    },
+    {
+      "at": "20260614T200650Z",
+      "id": "queue/reel-1781467563-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18165579784451413",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "comment",
+        "style": "dark",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How to make every video feel different \u2014 same idea, new angle every time."
+    },
+    {
+      "at": "20260614T200813Z",
+      "id": "queue/reel-1781467568-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18179514184361675",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "countdown",
+        "style": "navyorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "5 hooks that always work \u2014 steal these for your next videos."
+    },
+    {
+      "at": "20260614T233838Z",
+      "id": "queue/reel-1781480237.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18050093747784113",
+      "tags": {
+        "fmt": "social",
+        "style": "dark",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "You don't need a better camera \u2014 you need a better first sentence."
+    },
+    {
+      "at": "20260615T123813Z",
+      "id": "queue/reel-1781527045.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17933166528089605",
+      "tags": {
+        "fmt": "comment",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Awkward on camera? Talk to one person, not an audience."
+    },
+    {
+      "at": "20260615T163731Z",
+      "id": "single-00062",
+      "slot": "am",
+      "type": "prompt",
+      "post_id": "17950524174194372",
+      "tags": {
+        "fmt": "prompt",
+        "style": "slate",
+        "pillar": "general",
+        "source_index": 31
+      }
+    },
+    {
+      "at": "20260615T163819Z",
+      "id": "queue/reel-1781541453.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18056812100729434",
+      "tags": {
+        "fmt": "statement",
+        "style": "navyorange",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Reach is rented; trust is owned \u2014 build content that earns trust, not just views."
+    },
+    {
+      "at": "20260615T200713Z",
+      "id": "carousel-00078",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18571244875067345",
+      "tags": {
+        "fmt": "carousel",
+        "style": "creamorange",
+        "pillar": "editing",
+        "source_index": 19
+      }
+    },
+    {
+      "at": "20260615T213240Z",
+      "id": "queue/reel-1781559110-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18415921870180200",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "blackout",
+        "pillar": "editing",
+        "cap_style": 0
+      },
+      "hook": "Post less, edit harder \u2014 one tight short-form video beats five lazy ones."
+    },
+    {
+      "at": "20260615T213343Z",
+      "id": "queue/reel-1781559116-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17975746089053051",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "stat",
+        "style": "ember",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Most people quit posting at 90 days \u2014 right before the reach starts to compound."
+    },
+    {
+      "at": "20260615T230107Z",
+      "id": "queue/reel-1781564435.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18084079307183955",
+      "tags": {
+        "fmt": "comment",
+        "style": "ember",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Good content nobody sees is just a weak hook \u2014 fix the first 3 seconds."
+    },
+    {
+      "at": "20260616T123805Z",
+      "id": "queue/reel-1781613442.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17930479791336937",
+      "tags": {
+        "fmt": "social",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
+    },
+    {
+      "at": "20260616T163840Z",
+      "id": "queue/reel-1781627844.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18107360521788157",
+      "tags": {
+        "fmt": "imessage",
+        "style": "dark",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How I always know what to post \u2014 your audience writes the list."
+    },
+    {
+      "at": "20260616T173554Z",
+      "id": "single-00063",
+      "slot": "am",
+      "type": "single",
+      "post_id": "18132179719595760",
+      "tags": {
+        "fmt": "single",
+        "style": "dark",
+        "pillar": "editing",
+        "source_index": 32
+      }
+    },
+    {
+      "at": "20260616T203008Z",
+      "id": "carousel-00080",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18118449949840104",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "algorithm",
+        "source_index": 21
+      }
+    },
+    {
+      "at": "20260616T212703Z",
+      "id": "queue/reel-1781645172-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17930552493312598",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "slate",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Your hook is 90% of the post \u2014 the first line does almost all the work."
+    },
+    {
+      "at": "20260616T212812Z",
+      "id": "queue/reel-1781645179-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18074528960663673",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "midnight",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "I treat the camera like a client, not a camera \u2014 that one shift changed all my content."
+    },
+    {
+      "at": "20260616T230917Z",
+      "id": "queue/reel-1781651265.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17977706109044634",
+      "tags": {
+        "fmt": "quote",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Nobody cares how your video was filmed \u2014 only whether it's worth watching."
+    },
+    {
+      "at": "20260617T123813Z",
+      "id": "queue/reel-1781699848.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17971567917066529",
+      "tags": {
+        "fmt": "imessage",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How I got comfortable on camera \u2014 reps in front of real people."
+    },
+    {
+      "at": "20260617T162608Z",
+      "id": "single-00065",
+      "slot": "am",
+      "type": "value",
+      "post_id": "17889815985553914",
+      "tags": {
+        "fmt": "value",
+        "style": "blackout",
+        "pillar": "algorithm",
+        "source_index": 34
+      }
+    },
+    {
+      "at": "20260617T162730Z",
+      "id": "queue/reel-1781713571.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18024711212665224",
+      "tags": {
+        "fmt": "social",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "You don't need a better camera \u2014 you need a better first sentence."
+    },
+    {
+      "at": "20260617T203400Z",
+      "id": "carousel-00082",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18182680198399162",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "hook",
+        "source_index": 0
+      }
+    },
+    {
+      "at": "20260617T203607Z",
+      "id": "queue/reel-1781728492-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18096007280223527",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "imessage",
+        "style": "dark",
+        "pillar": "proof",
+        "cap_style": 0
+      },
+      "hook": "A DM I got after someone ran my content advice for 30 days."
+    },
+    {
+      "at": "20260617T203802Z",
+      "id": "queue/reel-1781728500-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18106699159966933",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "sequence",
+        "style": "blackout",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "3 videos every business owner should be posting to get clients."
+    },
+    {
+      "at": "20260617T230539Z",
+      "id": "queue/reel-1781737495.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18009287504917382",
+      "tags": {
+        "fmt": "imessage",
+        "style": "midnight",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to get clients from content \u2014 show up daily until they can't ignore you."
+    },
+    {
+      "at": "20260618T123758Z",
+      "id": "queue/reel-1781786243.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18083429420444122",
+      "tags": {
+        "fmt": "statement",
+        "style": "creamorange",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Views don't pay the bills \u2014 content that books clients does."
+    },
+    {
+      "at": "20260618T160310Z",
+      "id": "queue/reel-1781798545.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18135558262560811",
+      "tags": {
+        "fmt": "comment",
+        "style": "dark",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Good content nobody sees is just a weak hook \u2014 fix the first 3 seconds."
+    },
+    {
+      "at": "20260618T161901Z",
+      "id": "single-00066",
+      "slot": "am",
+      "type": "social",
+      "post_id": "17916016008401376",
+      "tags": {
+        "fmt": "social",
+        "style": "dark",
+        "pillar": "general",
+        "source_index": 35
+      }
+    },
+    {
+      "at": "20260618T200236Z",
+      "id": "carousel-00083",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18456344275117663",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "editing",
+        "source_index": 1
+      }
+    },
+    {
+      "at": "20260618T210308Z",
+      "id": "queue/reel-1781816532-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18035448146806240",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "slate",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Show the before-and-after, not the theory \u2014 proof sells better than promises."
+    },
+    {
+      "at": "20260618T210413Z",
+      "id": "queue/reel-1781816538-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18415905373197465",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "sequence",
+        "style": "navyorange",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "3 ways to stop the scroll on short-form video."
+    },
+    {
+      "at": "20260618T232238Z",
+      "id": "queue/reel-1781824906.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18003861887946568",
+      "tags": {
+        "fmt": "sequence",
+        "style": "blackout",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "3 hooks that work in any niche for short-form video."
+    },
+    {
+      "at": "20260619T123812Z",
+      "id": "queue/reel-1781872637.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17943136638212426",
+      "tags": {
+        "fmt": "stat",
+        "style": "ember",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Cutting the first 2 seconds of your video can double your watch time."
+    },
+    {
+      "at": "20260619T155129Z",
+      "id": "single-00068",
+      "slot": "am",
+      "type": "reddit",
+      "post_id": "18064259453520832",
+      "tags": {
+        "fmt": "reddit",
+        "style": "dark",
+        "pillar": "editing",
+        "source_index": 37
+      }
+    },
+    {
+      "at": "20260619T161114Z",
+      "id": "queue/reel-1781885434.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18049191998549985",
+      "tags": {
+        "fmt": "statement",
+        "style": "midnight",
+        "pillar": "mindset",
+        "cap_style": 0
+      },
+      "hook": "Content is a system, not a mood \u2014 build the system and it runs without motivation."
+    },
+    {
+      "at": "20260619T200719Z",
+      "id": "carousel-00085",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18151094974436670",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "editing",
+        "source_index": 3
+      }
+    },
+    {
+      "at": "20260619T201510Z",
+      "id": "queue/reel-1781900064-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18002235851949011",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "checklist",
+        "style": "orangepop",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to make short-form that actually books clients, not just views."
+    },
+    {
+      "at": "20260619T201611Z",
+      "id": "queue/reel-1781900072-1.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17973433173055980",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "slate",
+        "pillar": "editing",
+        "cap_style": 0
+      },
+      "hook": "Cut every silence in your video \u2014 dead air is where people swipe away."
+    },
+    {
+      "at": "20260619T231622Z",
+      "id": "queue/reel-1781910905.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17926116477357028",
+      "tags": {
+        "fmt": "statement",
+        "style": "creamorange",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Consistency beats going viral once \u2014 show up and the algorithm follows."
+    },
+    {
+      "at": "20260620T123815Z",
+      "id": "queue/reel-1781959037.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18071880410690513",
+      "tags": {
+        "fmt": "quote",
+        "style": "navyorange",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Your best salesperson is a video that works while you sleep."
+    },
+    {
+      "at": "20260620T145509Z",
+      "id": "single-00069",
+      "slot": "am",
+      "type": "cheatsheet",
+      "post_id": "18108260161984708",
+      "tags": {
+        "fmt": "cheatsheet",
+        "style": "dark",
+        "pillar": "business",
+        "source_index": 38
+      }
+    },
+    {
+      "at": "20260620T160154Z",
+      "id": "queue/reel-1781971267.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18027222749821378",
+      "tags": {
+        "fmt": "imessage",
+        "style": "dark",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to get clients from content \u2014 show up daily until they can't ignore you."
+    },
+    {
+      "at": "20260620T200434Z",
+      "id": "queue/reel-1781985831-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17967564627109051",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
+    },
+    {
+      "at": "20260620T233706Z",
+      "id": "carousel-00087",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17906296980262355",
+      "tags": {
+        "fmt": "carousel",
+        "style": "creamorange",
+        "pillar": "hook",
+        "source_index": 5
+      }
+    },
+    {
+      "at": "20260621T160546Z",
+      "id": "queue/reel-1782057825.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18056617805583967",
+      "tags": {
+        "fmt": "statement",
+        "style": "blackout",
+        "pillar": "business",
+        "cap_style": 3
+      },
+      "hook": "Views don't pay the bills \u2014 content that books clients does."
+    },
+    {
+      "at": "20260621T201416Z",
+      "id": "queue/reel-1782072735-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18592352704060020",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "midnight",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "You don't need a better camera \u2014 you need a better hook and a tighter edit."
+    },
+    {
+      "at": "20260621T233737Z",
+      "id": "single-00070",
+      "slot": "am",
+      "type": "prompt",
+      "post_id": "18014067152913575",
+      "tags": {
+        "fmt": "prompt",
+        "style": "dark",
+        "pillar": "hook",
+        "source_index": 39
+      }
+    },
+    {
+      "at": "20260622T163910Z",
+      "id": "queue/reel-1782146257.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18591380842044728",
+      "tags": {
+        "fmt": "typewriter",
+        "style": "ember",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Your first line is the only algorithm that matters."
+    },
+    {
+      "at": "20260622T212130Z",
+      "id": "queue/reel-1782163214-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18030757115819186",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Most people overthink content. I just get it out \u2014 and that's why mine grows."
+    },
+    {
+      "at": "20260622T230558Z",
+      "id": "carousel-00095",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17907052527433484",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "hook",
+        "source_index": 9
+      }
+    },
+    {
+      "at": "20260623T161349Z",
+      "id": "queue/reel-1782231140.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17890469985556028",
+      "tags": {
+        "fmt": "comment",
+        "style": "slate",
+        "pillar": "general",
+        "cap_style": 4
+      },
+      "hook": "Awkward on camera? Talk to one person, not an audience."
+    },
+    {
+      "at": "20260623T203405Z",
+      "id": "queue/reel-1782246767-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18130045738613929",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "navyorange",
+        "pillar": "editing",
+        "cap_style": 0
+      },
+      "hook": "Pure talking-head is fading \u2014 pair your words with B-roll that shows it."
+    },
+    {
+      "at": "20260623T233151Z",
+      "id": "single-00072",
+      "slot": "am",
+      "type": "quote",
+      "post_id": "17893670754536777",
+      "tags": {
+        "fmt": "quote",
+        "style": "midnight",
+        "pillar": "algorithm",
+        "source_index": 41
+      }
+    },
+    {
+      "at": "20260624T160528Z",
+      "id": "queue/reel-1782317044.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18096607871189612",
+      "tags": {
+        "fmt": "social",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 3
+      },
+      "hook": "You don't need a better camera \u2014 you need a better first sentence."
+    },
+    {
+      "at": "20260624T201935Z",
+      "id": "queue/reel-1782332286-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18107337010906323",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "typewriter",
+        "style": "orangepop",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Stop posting more. Start hooking harder."
+    },
+    {
+      "at": "20260624T233601Z",
+      "id": "carousel-00098",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17947092657080254",
+      "tags": {
+        "fmt": "carousel",
+        "style": "creamorange",
+        "pillar": "hook",
+        "source_index": 11
+      }
+    },
+    {
+      "at": "20260625T160754Z",
+      "id": "carousel-00102",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17954576562167490",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "algorithm",
+        "source_index": 13
+      }
+    },
+    {
+      "at": "20260625T203336Z",
+      "id": "queue/reel-1782419520-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18108774808766560",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "comment",
+        "style": "dark",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Stop chasing viral. Chase clarity \u2014 one idea, impossible to scroll past."
+    },
+    {
+      "at": "20260626T160429Z",
+      "id": "queue/reel-1782489771.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "17919341274396103",
+      "tags": {
+        "fmt": "statement",
+        "style": "navyorange",
+        "pillar": "general",
+        "cap_style": 3
+      },
+      "hook": "Most short-form content isn't bad \u2014 it's forgettable. Make one thing memorable."
+    },
+    {
+      "at": "20260626T201919Z",
+      "id": "queue/reel-1782505068-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18271057069295578",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "stat",
+        "style": "blackout",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "90% of viewers decide whether to keep watching in the first 3 seconds."
+    },
+    {
+      "at": "20260627T160210Z",
+      "id": "carousel-00103",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18139946389480003",
+      "tags": {
+        "fmt": "carousel",
+        "style": "dark",
+        "pillar": "algorithm",
+        "source_index": 14
+      }
+    },
+    {
+      "at": "20260627T195532Z",
+      "id": "queue/reel-1782590001-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18104931539018241",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "quote",
+        "style": "orangepop",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "If they don't stop scrolling, nothing else you made even matters."
+    },
+    {
+      "at": "20260628T160719Z",
+      "id": "queue/reel-1782662753.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18375655015167602",
+      "tags": {
+        "fmt": "imessage",
+        "style": "dark",
+        "pillar": "general",
+        "cap_style": 3
+      },
+      "hook": "How I always know what to post \u2014 your audience writes the list."
+    },
+    {
+      "at": "20260628T204254Z",
+      "id": "queue/reel-1782679291-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18345448840172493",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "comment",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "How to make every video feel different \u2014 same idea, new angle every time."
+    },
+    {
+      "at": "20260629T162801Z",
+      "id": "carousel-00105",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18183207034360192",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "editing",
+        "source_index": 15
+      }
+    },
+    {
+      "at": "20260629T202645Z",
+      "id": "queue/reel-1782764690-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18140970559534194",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "comment",
+        "style": "ember",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "Good content nobody sees is just a weak hook \u2014 fix the first 3 seconds."
+    },
+    {
+      "at": "20260630T161211Z",
+      "id": "queue/reel-1782835849.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18127528048641750",
+      "tags": {
+        "fmt": "imessage",
+        "style": "ember",
+        "pillar": "general",
+        "cap_style": 3
+      },
+      "hook": "How I got comfortable on camera \u2014 reps in front of real people."
+    },
+    {
+      "at": "20260630T203135Z",
+      "id": "queue/reel-1782851414-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18121115074782864",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "slate",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Reach is rented; trust is owned \u2014 build content that earns trust, not just views."
+    },
+    {
+      "at": "20260701T161020Z",
+      "id": "carousel-00109",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18106662202895853",
+      "tags": {
+        "fmt": "carousel",
+        "style": "creamorange",
+        "pillar": "hook",
+        "source_index": 17
+      }
+    },
+    {
+      "at": "20260701T202627Z",
+      "id": "queue/reel-1782937504-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17874441033683264",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "imessage",
+        "style": "slate",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "How to get clients from content \u2014 show up daily until they can't ignore you."
+    },
+    {
+      "at": "20260702T161216Z",
+      "id": "queue/reel-1783008635.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18076138418333063",
+      "tags": {
+        "fmt": "stat",
+        "style": "blackout",
+        "pillar": "hook",
+        "cap_style": 3
+      },
+      "hook": "Cutting the first 2 seconds of your video can double your watch time."
+    },
+    {
+      "at": "20260702T200329Z",
+      "id": "queue/reel-1783022534-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18003685247761103",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "slate",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Show the before-and-after, not the theory \u2014 proof sells better than promises."
+    },
+    {
+      "at": "20260703T160931Z",
+      "id": "carousel-00112",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18603371128030049",
+      "tags": {
+        "fmt": "carousel",
+        "style": "bone",
+        "pillar": "editing",
+        "source_index": 19
+      }
+    },
+    {
+      "at": "20260703T203934Z",
+      "id": "queue/reel-1783111066-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17976485403027105",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "quote",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Nobody cares how your video was filmed \u2014 only whether it's worth watching."
+    },
+    {
+      "at": "20260704T163515Z",
+      "id": "queue/reel-1783182828.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18463121779113423",
+      "tags": {
+        "fmt": "social",
+        "style": "slate",
+        "pillar": "business",
+        "cap_style": 3
+      },
+      "hook": "I treat the camera like a client, not a camera \u2014 that one shift changed all my content."
+    },
+    {
+      "at": "20260704T194633Z",
+      "id": "queue/reel-1783194308-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18120489088833286",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "stat",
+        "style": "creamorange",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Shares in DMs are the #1 signal growing reach in 2026 \u2014 make content people send."
+    },
+    {
+      "at": "20260705T160350Z",
+      "id": "carousel-00115",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "18056474420755488",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "algorithm",
+        "source_index": 21
+      }
+    },
+    {
+      "at": "20260705T195155Z",
+      "id": "queue/reel-1783281027-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17894338002552922",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "social",
+        "style": "midnight",
+        "pillar": "general",
+        "cap_style": 0
+      },
+      "hook": "Stop trying to sound like a content creator \u2014 just be yourself on camera."
+    },
+    {
+      "at": "20260706T160427Z",
+      "id": "queue/reel-1783353811.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18325476961261875",
+      "tags": {
+        "fmt": "sequence",
+        "style": "orangepop",
+        "pillar": "business",
+        "cap_style": 3
+      },
+      "hook": "3 videos every business owner should be posting to get clients."
+    },
+    {
+      "at": "20260706T202523Z",
+      "id": "queue/reel-1783369435-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17933571588317255",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "imessage",
+        "style": "midnight",
+        "pillar": "proof",
+        "cap_style": 3
+      },
+      "hook": "A DM I got after someone ran my content advice for 30 days."
+    },
+    {
+      "at": "20260707T160726Z",
+      "id": "carousel-00117",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17881812297609996",
+      "tags": {
+        "fmt": "carousel",
+        "style": "creamorange",
+        "pillar": "hook",
+        "source_index": 0
+      }
+    },
+    {
+      "at": "20260707T202626Z",
+      "id": "queue/reel-1783455908-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "18158674651467939",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "navyorange",
+        "pillar": "algorithm",
+        "cap_style": 0
+      },
+      "hook": "Consistency beats going viral once \u2014 show up and the algorithm follows."
+    },
+    {
+      "at": "20260708T160859Z",
+      "id": "queue/reel-1783526835.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18114745759705735",
+      "tags": {
+        "fmt": "typewriter",
+        "style": "midnight",
+        "pillar": "hook",
+        "cap_style": 3
+      },
+      "hook": "Your first line is the only algorithm that matters."
+    },
+    {
+      "at": "20260708T200503Z",
+      "id": "queue/reel-1783541016-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17871807624623392",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "statement",
+        "style": "ember",
+        "pillar": "business",
+        "cap_style": 0
+      },
+      "hook": "Views don't pay the bills \u2014 content that books clients does."
+    },
+    {
+      "at": "20260709T160701Z",
+      "id": "carousel-00120",
+      "slot": "pm",
+      "type": "carousel",
+      "post_id": "17961361082961529",
+      "tags": {
+        "fmt": "carousel",
+        "style": "light",
+        "pillar": "editing",
+        "source_index": 1
+      }
+    },
+    {
+      "at": "20260709T210421Z",
+      "id": "queue/reel-1783631000-0.mp4",
+      "type": "reel",
+      "slot": "trial",
+      "post_id": "17999449727786065",
+      "trial": true,
+      "graduation": "SS_PERFORMANCE",
+      "tags": {
+        "fmt": "sequence",
+        "style": "ember",
+        "pillar": "hook",
+        "cap_style": 0
+      },
+      "hook": "3 ways to stop the scroll on short-form video."
+    },
+    {
+      "at": "20260710T160158Z",
+      "id": "queue/reel-1783699234.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18114172468910020",
+      "tags": {
+        "fmt": "comment",
+        "style": "dark",
+        "pillar": "hook",
+        "cap_style": 3
+      },
+      "hook": "Stop chasing viral. Chase clarity \u2014 one idea, impossible to scroll past."
     }
   ],
   "story_hook_i": 1,
@@ -868,13 +2307,97 @@
           "id": "17915855283400583"
         }
       ]
+    },
+    {
+      "at": "20260613T124111Z",
+      "reshare_of": "queue/reel-1781354237.mp4",
+      "posted": [
+        {
+          "id": "18133392100603395"
+        }
+      ]
+    },
+    {
+      "at": "20260614T124141Z",
+      "reshare_of": "queue/reel-1781440635.mp4",
+      "posted": [
+        {
+          "id": "18099645005144502"
+        }
+      ]
+    },
+    {
+      "at": "20260615T124130Z",
+      "reshare_of": "queue/reel-1781527045.mp4",
+      "posted": [
+        {
+          "id": "18126629800580289"
+        }
+      ]
+    },
+    {
+      "at": "20260616T124008Z",
+      "reshare_of": "queue/reel-1781613442.mp4",
+      "posted": [
+        {
+          "id": "18330035686251876"
+        }
+      ]
+    },
+    {
+      "at": "20260617T124031Z",
+      "reshare_of": "queue/reel-1781699848.mp4",
+      "posted": [
+        {
+          "id": "18427667773192443"
+        }
+      ]
+    },
+    {
+      "at": "20260618T124049Z",
+      "reshare_of": "queue/reel-1781786243.mp4",
+      "posted": [
+        {
+          "id": "18063843788526308"
+        }
+      ]
+    },
+    {
+      "at": "20260619T124103Z",
+      "reshare_of": "queue/reel-1781872637.mp4",
+      "posted": [
+        {
+          "id": "17876348958612813"
+        }
+      ]
+    },
+    {
+      "at": "20260620T124028Z",
+      "reshare_of": "queue/reel-1781959037.mp4",
+      "posted": [
+        {
+          "id": "18089730572580690"
+        }
+      ]
+    },
+    {
+      "at": "20260706T160719Z",
+      "reshare_of": "queue/reel-1783353811.mp4",
+      "posted": [
+        {
+          "id": "18095275790253057"
+        }
+      ]
     }
   ],
   "recent_texts": [
-    "remove the breath before every sentence. pace is retention.",
-    "where people drop, and why.",
-    "in this video i'm going to show you how to edit.",
-    "your edits are boring people in the first 3 seconds.",
+    "niche down to grow up",
+    "own one topic",
+    "pick one person",
+    "repeat your core idea",
+    "speak their language",
+    "use the exact words your person uses. it feels made for them.",
+    "you'll get bored before they do. drill the same message new ways.",
     "1. film nouns, not verbs",
     "2. get uncomfortably close",
     "3. move the camera",
@@ -887,9 +2410,6 @@
     "detail reads as intentional. distance reads as filler.",
     "most people film the wrong thing.",
     "the object close-up beats the wide action shot.",
-    "it's because you didn't move.",
-    "same shot for 30 seconds = scroll. new spot every sentence = retention.",
-    "your talking-head videos are boring.",
     "1. music too loud",
     "3. inconsistent levels",
     "4 audio mistakes that ruin good video.",
@@ -899,8 +2419,6 @@
     "people hear bad audio before they see good video.",
     "phone audio echoes. a cheap clip mic is a night-and-day upgrade.",
     "volume jumping between clips makes it feel amateur.",
-    "build the system, lose the dread.",
-    "content gets easier when the process feels lighter.",
     "1. cut on the first pass",
     "2. build a caption style",
     "3. keep a music folder",
@@ -913,11 +2431,18 @@
     "set it once: format, size, settings. never rethink it.",
     "stop hunting. pull from tracks you've already cleared.",
     "without the video looking rushed.",
-    "3 reel ideas for local business owners.",
-    "a before/after of the work you do",
-    "a day-in-the-life of running the business",
-    "save this for your next batch.",
-    "the #1 question customers always ask, answered",
+    "1. weak first second",
+    "2. too many ideas",
+    "3. no reason to finish",
+    "4. inconsistent posting",
+    "5 reasons your videos aren't growing.",
+    "5. no clear next step",
+    "a slow open kills the video before the hook lands.",
+    "give one simple action: follow for more.",
+    "if there's no payoff coming, people leave early.",
+    "it's rarely the algorithm.",
+    "one video, one point. cramming means nothing sticks.",
+    "the algorithm rewards reliability. show up daily.",
     "5 hook formulas that work in any niche.",
     "[number] things i learned about [x].",
     "a curiosity gap. implies you have the inside answer.",
@@ -930,9 +2455,6 @@
     "positions you as the one cutting through the noise.",
     "promises a list. the brain wants to finish what it starts.",
     "steal these for your next 5 videos.",
-    "here's the line that saves it.",
-    "retention always drops at second 4.",
-    "second 4 is the 'why am i still here' moment. hit them with a number, a name, a contradiction.",
     "1. 4k at 60fps",
     "1.5 seconds, memorized. never improvise the first line.",
     "2. mic test and playback",
@@ -948,52 +2470,84 @@
     "record 5 seconds and listen back. don't trust the meter alone.",
     "switch location every line. this is the one people skip.",
     "the only camera setting that really matters. set it once.",
-    "two of everything. a dead battery ends the day.",
-    "that's the whole game.",
-    "video helps buyers trust a business before they ever decide."
+    "two of everything. a dead battery ends the day."
   ],
-  "reel_i": 37,
-  "reel_cap_i": 44,
-  "reel_audio_i": 44,
+  "reel_i": 73,
+  "reel_cap_i": 116,
+  "reel_audio_i": 116,
   "reel_recent": [
-    "how to make short form that actually books clients not just ",
-    "the 4 question check every short form video should pass befo",
-    "pure talking head is fading pair your words with b roll that",
-    "most short form content isn t bad it s forgettable make one ",
-    "you don t need a better camera you need a better hook and a ",
-    "stop posting more start hooking harder",
-    "3 ways to stop the scroll on short form video"
+    "how i always know what to post your audience writes the list",
+    "how i got comfortable on camera reps in front of real people",
+    "cutting the first 2 seconds of your video can double your wa",
+    "i treat the camera like a client not a camera that one shift",
+    "3 videos every business owner should be posting to get clien",
+    "your first line is the only algorithm that matters",
+    "stop chasing viral chase clarity one idea impossible to scro"
   ],
   "trial_recent": [
-    "consistency beats going viral once show up and the algorithm",
-    "4 editing moves that make any short form video tighter and m",
-    "boring and consistent beats perfect and rare just keep showi",
+    "90 of viewers decide whether to keep watching in the first 3",
+    "if they don t stop scrolling nothing else you made even matt",
+    "how to make every video feel different same idea new angle e",
+    "good content nobody sees is just a weak hook fix the first 3",
+    "reach is rented trust is owned build content that earns trus",
+    "how to get clients from content show up daily until they can",
+    "show the before and after not the theory proof sells better ",
     "nobody cares how your video was filmed only whether it s wor",
-    "your best salesperson is a video that works while you sleep",
-    "cut every silence in your video dead air is where people swi",
-    "content is a system not a mood build the system and it runs ",
-    "you get about 3 seconds before someone scrolls past your vid"
+    "shares in dms are the 1 signal growing reach in 2026 make co",
+    "stop trying to sound like a content creator just be yourself",
+    "a dm i got after someone ran my content advice for 30 days",
+    "consistency beats going viral once show up and the algorithm",
+    "views don t pay the bills content that books clients does",
+    "3 ways to stop the scroll on short form video"
   ],
   "trial_daily": {
     "20260608": 2,
     "20260609": 2,
     "20260610": 2,
-    "20260611": 2
+    "20260611": 2,
+    "20260612": 2,
+    "20260613": 2,
+    "20260614": 2,
+    "20260615": 2,
+    "20260616": 2,
+    "20260617": 2,
+    "20260618": 2,
+    "20260619": 2,
+    "20260620": 1,
+    "20260621": 1,
+    "20260622": 1,
+    "20260623": 1,
+    "20260624": 1,
+    "20260625": 1,
+    "20260626": 1,
+    "20260627": 1,
+    "20260628": 1,
+    "20260629": 1,
+    "20260630": 1,
+    "20260701": 1,
+    "20260702": 1,
+    "20260703": 1,
+    "20260704": 1,
+    "20260705": 1,
+    "20260706": 1,
+    "20260707": 1,
+    "20260708": 1,
+    "20260709": 1
   },
   "beat_recent": [
-    9,
-    0,
-    1,
+    8,
     2,
-    3
+    1,
+    6,
+    5
   ],
   "style_recent": [
-    "midnight",
     "dark",
-    "creamorange",
-    "navyorange",
-    "slate",
     "ember",
-    "blackout"
+    "blackout",
+    "slate",
+    "orangepop",
+    "midnight",
+    "dark"
   ]
 }
