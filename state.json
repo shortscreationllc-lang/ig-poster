@@ -2458,17 +2458,17 @@
     "the only camera setting that really matters. set it once.",
     "two of everything. a dead battery ends the day."
   ],
-  "reel_i": 72,
-  "reel_cap_i": 115,
-  "reel_audio_i": 115,
+  "reel_i": 73,
+  "reel_cap_i": 116,
+  "reel_audio_i": 116,
   "reel_recent": [
-    "most short form content isn t bad it s forgettable make one ",
     "how i always know what to post your audience writes the list",
     "how i got comfortable on camera reps in front of real people",
     "cutting the first 2 seconds of your video can double your wa",
     "i treat the camera like a client not a camera that one shift",
     "3 videos every business owner should be posting to get clien",
-    "your first line is the only algorithm that matters"
+    "your first line is the only algorithm that matters",
+    "stop chasing viral chase clarity one idea impossible to scro"
   ],
   "trial_recent": [
     "90 of viewers decide whether to keep watching in the first 3",
@@ -2521,19 +2521,19 @@
     "20260709": 1
   },
   "beat_recent": [
-    3,
     8,
     2,
     1,
-    6
+    6,
+    5
   ],
   "style_recent": [
-    "navyorange",
     "dark",
     "ember",
     "blackout",
     "slate",
     "orangepop",
-    "midnight"
+    "midnight",
+    "dark"
   ]
 }
