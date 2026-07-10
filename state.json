@@ -2135,6 +2135,20 @@
         "cap_style": 0
       },
       "hook": "3 ways to stop the scroll on short-form video."
+    },
+    {
+      "at": "20260710T160158Z",
+      "id": "queue/reel-1783699234.mp4",
+      "type": "reel",
+      "slot": "video",
+      "post_id": "18114172468910020",
+      "tags": {
+        "fmt": "comment",
+        "style": "dark",
+        "pillar": "hook",
+        "cap_style": 3
+      },
+      "hook": "Stop chasing viral. Chase clarity \u2014 one idea, impossible to scroll past."
     }
   ],
   "story_hook_i": 1,
