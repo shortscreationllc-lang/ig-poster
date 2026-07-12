@@ -13,7 +13,7 @@
 - 👤 20260710 | REELS | reach 116 | views 137 | 2.6s watch | saves 0 shares 6 | eng 6.9% | score 25.05 | https://www.instagram.com/reel/Dan-8QaBcGi/
 - 👤 20260710 | REELS | reach 1148 | views 1496 | 6.4s watch | saves 7 shares 4 | eng 11.7% | score 20.907 | https://www.instagram.com/reel/Dan_yHmh5_t/
 - 👤 20260709 | REELS | reach 1146 | views 1634 | 5.2s watch | saves 2 shares 5 | eng 13.4% | score 20.342 | https://www.instagram.com/reel/DalMljzhFMT/
-- 👤 20260710 | REELS | reach 3678 | views 6226 | 9.4s watch | saves 2 shares 14 | eng 8.6% | score 19.323 | https://www.instagram.com/reel/DanXf5LBlYv/
+- 👤 20260710 | REELS | reach 3678 | views 6232 | 9.4s watch | saves 2 shares 14 | eng 8.6% | score 19.326 | https://www.instagram.com/reel/DanXf5LBlYv/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
@@ -22,11 +22,11 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 7.1s  ·  bot: 3.0s
-- avg reach — yours: 1250.4  ·  bot: 133.9
+- avg reach — yours: 1250.5  ·  bot: 133.9
 - avg saves — yours: 4.2  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
-_overall avg score: 5.254 · weights pull toward neutral until a tag has 3+ posts_
+_overall avg score: 5.253 · weights pull toward neutral until a tag has 3+ posts_
 
 ### By format
 - ▲ **comment** — weight 1.373  ·  3 post(s)
@@ -34,7 +34,7 @@ _overall avg score: 5.254 · weights pull toward neutral until a tag has 3+ post
 - ▬ **social** — weight 1.036  ·  2 post(s)  _(only 2, low confidence)_
 - ▬ **typewriter** — weight 0.956  ·  1 post(s)  _(only 1, low confidence)_
 - ▬ **quote** — weight 0.951  ·  2 post(s)  _(only 2, low confidence)_
-- ▼ **statement** — weight 0.947  ·  5 post(s)
+- ▼ **statement** — weight 0.948  ·  5 post(s)
 - ▼ **sequence** — weight 0.892  ·  2 post(s)  _(only 2, low confidence)_
 - ▼ **imessage** — weight 0.886  ·  4 post(s)
 - ▼ **carousel** — weight 0.87  ·  7 post(s)
