@@ -7,13 +7,13 @@
 
 ## 🏆 Top performers (by save/share/watch score)
 - 👤 20260710 | REELS | reach 1251 | views 1590 | 14.2s watch | saves 6 shares 10 | eng 7.4% | score 25.345 | https://www.instagram.com/reel/DaoBEBKB-R0/
-- 👤 20260712 | REELS | reach 18882 | views 24573 | 16.4s watch | saves 31 shares 130 | eng 2.7% | score 21.638 | https://www.instagram.com/reel/DatkVsOBjVZ/
+- 👤 20260712 | REELS | reach 19375 | views 25033 | 16.4s watch | saves 31 shares 131 | eng 2.7% | score 21.54 | https://www.instagram.com/reel/DatkVsOBjVZ/
 - 👤 20260710 | REELS | reach 1155 | views 1502 | 6.3s watch | saves 8 shares 4 | eng 11.8% | score 21.238 | https://www.instagram.com/reel/Dan_yHmh5_t/
-- 👤 20260710 | REELS | reach 2110 | views 3065 | 5.2s watch | saves 10 shares 8 | eng 11.7% | score 19.392 | https://www.instagram.com/reel/Dan_VJ2Bi-q/
+- 👤 20260710 | REELS | reach 2110 | views 3067 | 5.2s watch | saves 10 shares 8 | eng 11.7% | score 19.391 | https://www.instagram.com/reel/Dan_VJ2Bi-q/
 - 👤 20260710 | REELS | reach 1189 | views 1451 | 7.1s watch | saves 2 shares 3 | eng 9.3% | score 17.641 | https://www.instagram.com/reel/DaoaPIrhW6Y/
-- 👤 20260710 | REELS | reach 1732 | views 2541 | 8.9s watch | saves 2 shares 5 | eng 7.4% | score 17.475 | https://www.instagram.com/reel/DaoBPj8hf4T/
-- 👤 20260714 | REELS | reach 1178 | views 1611 | 6.8s watch | saves 8 shares 3 | eng 7.6% | score 17.181 | https://www.instagram.com/reel/DawdSewNAPQ/
-- 👤 20260712 | REELS | reach 1206 | views 1438 | 6.5s watch | saves 9 shares 2 | eng 5.4% | score 14.619 | https://www.instagram.com/reel/Das8yPzhd1i/
+- 👤 20260710 | REELS | reach 1732 | views 2543 | 8.9s watch | saves 2 shares 5 | eng 7.4% | score 17.471 | https://www.instagram.com/reel/DaoBPj8hf4T/
+- 👤 20260714 | REELS | reach 1179 | views 1625 | 6.8s watch | saves 8 shares 3 | eng 7.5% | score 17.176 | https://www.instagram.com/reel/DawdSewNAPQ/
+- 👤 20260712 | REELS | reach 1207 | views 1438 | 6.5s watch | saves 9 shares 2 | eng 5.4% | score 14.608 | https://www.instagram.com/reel/Das8yPzhd1i/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
@@ -22,18 +22,18 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 6.1s  ·  bot: 3.0s
-- avg reach — yours: 1614.6  ·  bot: 134.9
+- avg reach — yours: 1635.0  ·  bot: 134.9
 - avg saves — yours: 4.2  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
-_overall avg score: 5.226 · weights pull toward neutral until a tag has 3+ posts_
+_overall avg score: 5.225 · weights pull toward neutral until a tag has 3+ posts_
 
 ### By format
 - ▲ **comment** — weight 1.378  ·  3 post(s)
 - ▲ **stat** — weight 1.175  ·  3 post(s)
 - ▬ **social** — weight 1.038  ·  2 post(s)  _(only 2, low confidence)_
-- ▬ **typewriter** — weight 0.954  ·  1 post(s)  _(only 1, low confidence)_
 - ▬ **quote** — weight 0.953  ·  2 post(s)  _(only 2, low confidence)_
+- ▬ **typewriter** — weight 0.953  ·  1 post(s)  _(only 1, low confidence)_
 - ▬ **statement** — weight 0.951  ·  5 post(s)
 - ▼ **sequence** — weight 0.892  ·  2 post(s)  _(only 2, low confidence)_
 - ▼ **imessage** — weight 0.888  ·  4 post(s)
@@ -51,7 +51,7 @@ _overall avg score: 5.226 · weights pull toward neutral until a tag has 3+ post
 - ▲ **blackout** — weight 1.314  ·  2 post(s)  _(only 2, low confidence)_
 - ▲ **ember** — weight 1.285  ·  5 post(s)
 - ▲ **dark** — weight 1.156  ·  3 post(s)
-- ▼ **midnight** — weight 0.943  ·  4 post(s)
+- ▼ **midnight** — weight 0.942  ·  4 post(s)
 - ▼ **creamorange** — weight 0.918  ·  3 post(s)
 - ▼ **light** — weight 0.894  ·  3 post(s)
 - ▼ **navyorange** — weight 0.889  ·  2 post(s)  _(only 2, low confidence)_
