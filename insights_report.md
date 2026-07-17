@@ -7,13 +7,13 @@
 
 ## 🏆 Top performers (by save/share/watch score)
 - 👤 20260714 | REELS | reach 1214 | views 1568 | 5.0s watch | saves 8 shares 6 | eng 17.2% | score 25.684 | https://www.instagram.com/reel/DayayBxh6aF/
-- 👤 20260715 | REELS | reach 1938 | views 2873 | 5.3s watch | saves 7 shares 58 | eng 7.6% | score 23.014 | https://www.instagram.com/reel/Da0o1-pB3-D/
-- 👤 20260715 | REELS | reach 1136 | views 1410 | 4.9s watch | saves 4 shares 21 | eng 10.2% | score 21.692 | https://www.instagram.com/reel/Da0oD3KhVpl/
+- 👤 20260715 | REELS | reach 1941 | views 2876 | 5.3s watch | saves 7 shares 58 | eng 7.6% | score 22.98 | https://www.instagram.com/reel/Da0o1-pB3-D/
+- 👤 20260715 | REELS | reach 1138 | views 1410 | 4.9s watch | saves 4 shares 21 | eng 10.2% | score 21.663 | https://www.instagram.com/reel/Da0oD3KhVpl/
 - 👤 20260714 | REELS | reach 1034 | views 1493 | 4.7s watch | saves 8 shares 4 | eng 11.1% | score 19.324 | https://www.instagram.com/reel/DayVCSehy7m/
 - 👤 20260714 | REELS | reach 1319 | views 1797 | 6.8s watch | saves 8 shares 3 | eng 7.3% | score 16.576 | https://www.instagram.com/reel/DawdSewNAPQ/
 - 👤 20260714 | REELS | reach 1159 | views 1433 | 4.7s watch | saves 8 shares 7 | eng 7.9% | score 16.42 | https://www.instagram.com/reel/DayWdC_BKqR/
 - 👤 20260714 | REELS | reach 552 | views 631 | 5.2s watch | saves 4 shares 3 | eng 6.0% | score 14.966 | https://www.instagram.com/reel/DayUuvrhx1U/
-- 👤 20260716 | REELS | reach 1117 | views 1311 | 6.4s watch | saves 4 shares 3 | eng 5.9% | score 14.152 | https://www.instagram.com/reel/Da3DHqMOxQI/
+- 👤 20260716 | REELS | reach 1119 | views 1313 | 6.4s watch | saves 4 shares 3 | eng 6.0% | score 14.227 | https://www.instagram.com/reel/Da3DHqMOxQI/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
@@ -21,8 +21,8 @@
 - 🤖 20260703 | carousel | reach 44 | views - | — | saves 0 shares 0 | eng 0.0% | score 0.0 | https://www.instagram.com/p/DaVj-vIHF50/
 
 ## 👤 vs 🤖 benchmark (reels)
-- avg watch — yours: 4.3s  ·  bot: 3.0s
-- avg reach — yours: 596.5  ·  bot: 135.8
+- avg watch — yours: 4.6s  ·  bot: 3.0s
+- avg reach — yours: 606.2  ·  bot: 135.8
 - avg saves — yours: 2.8  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
