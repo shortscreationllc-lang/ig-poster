@@ -6,14 +6,14 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260717 | REELS | reach 1064 | views 1750 | 17.5s watch | saves 1 shares 4 | eng 10.0% | score 28.88 | https://www.instagram.com/reel/Da6PUF2BKIp/
+- 👤 20260717 | REELS | reach 1068 | views 1753 | 17.5s watch | saves 1 shares 4 | eng 9.9% | score 28.812 | https://www.instagram.com/reel/Da6PUF2BKIp/
 - 👤 20260714 | REELS | reach 1214 | views 1570 | 5.0s watch | saves 8 shares 6 | eng 17.2% | score 25.683 | https://www.instagram.com/reel/DayayBxh6aF/
 - 👤 20260715 | REELS | reach 2001 | views 2965 | 5.3s watch | saves 8 shares 58 | eng 7.5% | score 22.668 | https://www.instagram.com/reel/Da0o1-pB3-D/
-- 👤 20260715 | REELS | reach 1178 | views 1474 | 4.9s watch | saves 4 shares 21 | eng 10.2% | score 21.431 | https://www.instagram.com/reel/Da0oD3KhVpl/
+- 👤 20260715 | REELS | reach 1178 | views 1475 | 4.9s watch | saves 4 shares 21 | eng 10.2% | score 21.431 | https://www.instagram.com/reel/Da0oD3KhVpl/
 - 👤 20260714 | REELS | reach 1034 | views 1495 | 4.7s watch | saves 8 shares 4 | eng 11.1% | score 19.326 | https://www.instagram.com/reel/DayVCSehy7m/
-- 👤 20260717 | REELS | reach 728 | views 942 | 4.4s watch | saves 9 shares 6 | eng 7.1% | score 17.713 | https://www.instagram.com/reel/Da5aAV6Ow7J/
+- 👤 20260717 | REELS | reach 730 | views 942 | 4.4s watch | saves 9 shares 6 | eng 7.1% | score 17.672 | https://www.instagram.com/reel/Da5aAV6Ow7J/
 - 👤 20260714 | REELS | reach 1159 | views 1440 | 4.7s watch | saves 8 shares 7 | eng 7.9% | score 16.44 | https://www.instagram.com/reel/DayWdC_BKqR/
-- 👤 20260718 | REELS | reach 1063 | views 1500 | 7.4s watch | saves 12 shares 4 | eng 4.0% | score 15.925 | https://www.instagram.com/reel/Da8G0baO9vE/
+- 👤 20260718 | REELS | reach 1063 | views 1500 | 7.4s watch | saves 12 shares 4 | eng 4.0% | score 15.926 | https://www.instagram.com/reel/Da8G0baO9vE/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.4s  ·  bot: 3.0s
-- avg reach — yours: 729.2  ·  bot: 136.4
+- avg reach — yours: 729.5  ·  bot: 136.4
 - avg saves — yours: 3.5  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
