@@ -6,12 +6,12 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260717 | REELS | reach 1164 | views 1906 | 17.2s watch | saves 1 shares 4 | eng 9.5% | score 28.027 | https://www.instagram.com/reel/Da6PUF2BKIp/
-- 👤 20260720 | REELS | reach 275 | views 312 | 3.3s watch | saves 4 shares 0 | eng 10.5% | score 18.176 | https://www.instagram.com/reel/DbBb5u8BfF-/
-- 👤 20260720 | REELS | reach 428 | views 534 | 5.9s watch | saves 3 shares 5 | eng 6.3% | score 17.81 | https://www.instagram.com/reel/DbBbW5BBaO9/
+- 👤 20260717 | REELS | reach 1166 | views 1906 | 17.2s watch | saves 1 shares 4 | eng 9.5% | score 28.001 | https://www.instagram.com/reel/Da6PUF2BKIp/
+- 👤 20260720 | REELS | reach 279 | views 316 | 3.3s watch | saves 4 shares 0 | eng 10.4% | score 17.956 | https://www.instagram.com/reel/DbBb5u8BfF-/
+- 👤 20260720 | REELS | reach 430 | views 541 | 5.9s watch | saves 3 shares 5 | eng 6.3% | score 17.72 | https://www.instagram.com/reel/DbBbW5BBaO9/
 - 👤 20260717 | REELS | reach 730 | views 942 | 4.4s watch | saves 9 shares 6 | eng 7.1% | score 17.672 | https://www.instagram.com/reel/Da5aAV6Ow7J/
 - 👤 20260718 | REELS | reach 1168 | views 1653 | 7.2s watch | saves 12 shares 4 | eng 4.1% | score 15.398 | https://www.instagram.com/reel/Da8G0baO9vE/
-- 👤 20260720 | REELS | reach 1229 | views 1423 | 7.2s watch | saves 6 shares 2 | eng 5.7% | score 14.877 | https://www.instagram.com/reel/DbBcbzpB84d/
+- 👤 20260720 | REELS | reach 1231 | views 1424 | 7.2s watch | saves 6 shares 2 | eng 5.7% | score 14.855 | https://www.instagram.com/reel/DbBcbzpB84d/
 - 👤 20260716 | REELS | reach 1138 | views 1339 | 6.3s watch | saves 4 shares 3 | eng 5.9% | score 14.061 | https://www.instagram.com/reel/Da3DHqMOxQI/
 - 👤 20260716 | REELS | reach 822 | views 1230 | 5.0s watch | saves 6 shares 5 | eng 5.0% | score 14.006 | https://www.instagram.com/reel/Da3AuU4O11c/
 
@@ -21,8 +21,8 @@
 - 🤖 20260703 | carousel | reach 44 | views - | — | saves 0 shares 0 | eng 0.0% | score 0.0 | https://www.instagram.com/p/DaVj-vIHF50/
 
 ## 👤 vs 🤖 benchmark (reels)
-- avg watch — yours: 5.8s  ·  bot: 3.0s
-- avg reach — yours: 607.7  ·  bot: 136.5
+- avg watch — yours: 5.9s  ·  bot: 3.0s
+- avg reach — yours: 610.5  ·  bot: 136.5
 - avg saves — yours: 2.5  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
