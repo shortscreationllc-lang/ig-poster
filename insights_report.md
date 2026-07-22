@@ -6,13 +6,13 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260717 | REELS | reach 1193 | views 1949 | 17.2s watch | saves 1 shares 4 | eng 9.4% | score 27.826 | https://www.instagram.com/reel/Da6PUF2BKIp/
-- 👤 20260721 | REELS | reach 2222 | views 3968 | 6.5s watch | saves 17 shares 20 | eng 7.7% | score 19.153 | https://www.instagram.com/reel/DbEAGa5BzZW/
+- 👤 20260717 | REELS | reach 1193 | views 1950 | 17.2s watch | saves 1 shares 4 | eng 9.4% | score 27.826 | https://www.instagram.com/reel/Da6PUF2BKIp/
+- 👤 20260721 | REELS | reach 2222 | views 3988 | 6.5s watch | saves 17 shares 20 | eng 7.7% | score 19.243 | https://www.instagram.com/reel/DbEAGa5BzZW/
 - 👤 20260720 | REELS | reach 538 | views 668 | 6.0s watch | saves 3 shares 6 | eng 7.4% | score 18.405 | https://www.instagram.com/reel/DbBbW5BBaO9/
 - 👤 20260720 | REELS | reach 315 | views 353 | 3.2s watch | saves 4 shares 0 | eng 9.8% | score 16.893 | https://www.instagram.com/reel/DbBb5u8BfF-/
 - 👤 20260721 | REELS | reach 281 | views 361 | 4.3s watch | saves 2 shares 1 | eng 8.2% | score 15.687 | https://www.instagram.com/reel/DbCnslStO7E/
-- 👤 20260718 | REELS | reach 1175 | views 1674 | 7.1s watch | saves 12 shares 4 | eng 4.1% | score 15.299 | https://www.instagram.com/reel/Da8G0baO9vE/
-- 👤 20260720 | REELS | reach 1247 | views 1447 | 7.2s watch | saves 6 shares 2 | eng 5.8% | score 14.884 | https://www.instagram.com/reel/DbBcbzpB84d/
+- 👤 20260718 | REELS | reach 1175 | views 1675 | 7.1s watch | saves 12 shares 4 | eng 4.1% | score 15.299 | https://www.instagram.com/reel/Da8G0baO9vE/
+- 👤 20260720 | REELS | reach 1247 | views 1448 | 7.2s watch | saves 6 shares 2 | eng 5.8% | score 14.884 | https://www.instagram.com/reel/DbBcbzpB84d/
 - 👤 20260720 | REELS | reach 363 | views 411 | 11.3s watch | saves 0 shares 0 | eng 2.5% | score 13.772 | https://www.instagram.com/reel/DbBa-etB_EM/
 
 ## 🧊 Weakest (rework or retire these)
