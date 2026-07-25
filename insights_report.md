@@ -6,14 +6,14 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260723 | REELS | reach 1029 | views 1279 | 8.1s watch | saves 9 shares 4 | eng 6.6% | score 18.49 | https://www.instagram.com/reel/DbJXwhHBdy8/
-- 👤 20260722 | REELS | reach 358 | views 461 | 4.4s watch | saves 2 shares 3 | eng 9.8% | score 18.317 | https://www.instagram.com/reel/DbGvzR7hCjE/
-- 👤 20260723 | REELS | reach 1031 | views 1252 | 5.4s watch | saves 7 shares 10 | eng 6.4% | score 16.716 | https://www.instagram.com/reel/DbJOA-chJhQ/
-- 👤 20260723 | REELS | reach 1086 | views 1582 | 6.0s watch | saves 5 shares 9 | eng 5.8% | score 15.714 | https://www.instagram.com/reel/DbJYNsfh2e5/
-- 👤 20260721 | REELS | reach 226 | views 320 | 6.0s watch | saves 0 shares 1 | eng 8.0% | score 15.323 | https://www.instagram.com/reel/DbEQstXT1_4/
-- 👤 20260722 | REELS | reach 1185 | views 1422 | 7.5s watch | saves 6 shares 3 | eng 5.1% | score 14.88 | https://www.instagram.com/reel/DbGuxaWhMOJ/
-- 👤 20260722 | REELS | reach 760 | views 832 | 6.4s watch | saves 4 shares 1 | eng 5.9% | score 14.267 | https://www.instagram.com/reel/DbGwY2ehYey/
-- 👤 20260723 | REELS | reach 1161 | views 1356 | 6.1s watch | saves 9 shares 1 | eng 5.3% | score 13.931 | https://www.instagram.com/reel/DbJYgOtBosZ/
+- 👤 20260724 | REELS | reach 1184 | views 1605 | 5.6s watch | saves 6 shares 23 | eng 9.9% | score 22.855 | https://www.instagram.com/reel/DbLunRKh5tL/
+- 👤 20260724 | REELS | reach 713 | views 1074 | 12.2s watch | saves 0 shares 4 | eng 7.4% | score 21.297 | https://www.instagram.com/reel/DbMQ4mdhcQh/
+- 👤 20260724 | REELS | reach 1178 | views 1568 | 5.3s watch | saves 9 shares 15 | eng 8.2% | score 19.647 | https://www.instagram.com/reel/DbLywhTBoap/
+- 👤 20260724 | REELS | reach 624 | views 705 | 7.2s watch | saves 3 shares 5 | eng 7.7% | score 18.765 | https://www.instagram.com/reel/DbLxgAuBb6y/
+- 👤 20260723 | REELS | reach 1086 | views 1345 | 8.0s watch | saves 9 shares 4 | eng 6.4% | score 17.952 | https://www.instagram.com/reel/DbJXwhHBdy8/
+- 👤 20260724 | REELS | reach 583 | views 705 | 5.7s watch | saves 7 shares 1 | eng 7.2% | score 17.0 | https://www.instagram.com/reel/DbLzQqahbss/
+- 👤 20260723 | REELS | reach 1056 | views 1283 | 5.3s watch | saves 7 shares 10 | eng 6.2% | score 16.419 | https://www.instagram.com/reel/DbJOA-chJhQ/
+- 👤 20260723 | REELS | reach 1105 | views 1596 | 6.0s watch | saves 5 shares 10 | eng 5.8% | score 15.869 | https://www.instagram.com/reel/DbJYNsfh2e5/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
@@ -21,42 +21,42 @@
 - 🤖 20260703 | carousel | reach 44 | views - | — | saves 0 shares 0 | eng 0.0% | score 0.0 | https://www.instagram.com/p/DaVj-vIHF50/
 
 ## 👤 vs 🤖 benchmark (reels)
-- avg watch — yours: 5.4s  ·  bot: 3.0s
-- avg reach — yours: 639.0  ·  bot: 136.6
-- avg saves — yours: 2.7  ·  bot: 0.3
+- avg watch — yours: 6.1s  ·  bot: 3.0s
+- avg reach — yours: 839.6  ·  bot: 136.6
+- avg saves — yours: 3.9  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
-_overall avg score: 5.095 · weights pull toward neutral until a tag has 3+ posts_
+_overall avg score: 5.093 · weights pull toward neutral until a tag has 3+ posts_
 
 ### By format
 - ▲ **comment** — weight 1.4  ·  3 post(s)
 - ▲ **stat** — weight 1.187  ·  3 post(s)
 - ▬ **social** — weight 1.048  ·  2 post(s)  _(only 2, low confidence)_
-- ▬ **statement** — weight 0.965  ·  5 post(s)
+- ▬ **statement** — weight 0.966  ·  5 post(s)
 - ▬ **quote** — weight 0.962  ·  2 post(s)  _(only 2, low confidence)_
 - ▼ **typewriter** — weight 0.948  ·  1 post(s)  _(only 1, low confidence)_
-- ▼ **imessage** — weight 0.898  ·  4 post(s)
-- ▼ **sequence** — weight 0.897  ·  2 post(s)  _(only 2, low confidence)_
-- ▼ **carousel** — weight 0.815  ·  7 post(s)
+- ▼ **imessage** — weight 0.899  ·  4 post(s)
+- ▼ **sequence** — weight 0.896  ·  2 post(s)  _(only 2, low confidence)_
+- ▼ **carousel** — weight 0.814  ·  7 post(s)
 
 ### By topic / pillar
-- ▲ **hook** — weight 1.193  ·  9 post(s)
-- ▲ **general** — weight 1.091  ·  6 post(s)
+- ▲ **hook** — weight 1.192  ·  9 post(s)
+- ▲ **general** — weight 1.092  ·  6 post(s)
 - ▬ **business** — weight 1.043  ·  5 post(s)
 - ▼ **proof** — weight 0.914  ·  1 post(s)  _(only 1, low confidence)_
 - ▼ **algorithm** — weight 0.876  ·  5 post(s)
 - ▼ **editing** — weight 0.643  ·  3 post(s)
 
 ### By visual style
-- ▲ **blackout** — weight 1.326  ·  2 post(s)  _(only 2, low confidence)_
-- ▲ **ember** — weight 1.308  ·  5 post(s)
+- ▲ **blackout** — weight 1.327  ·  2 post(s)  _(only 2, low confidence)_
+- ▲ **ember** — weight 1.309  ·  5 post(s)
 - ▲ **dark** — weight 1.172  ·  3 post(s)
-- ▼ **midnight** — weight 0.949  ·  4 post(s)
+- ▬ **midnight** — weight 0.95  ·  4 post(s)
 - ▼ **navyorange** — weight 0.896  ·  2 post(s)  _(only 2, low confidence)_
-- ▼ **creamorange** — weight 0.886  ·  3 post(s)
+- ▼ **creamorange** — weight 0.884  ·  3 post(s)
 - ▼ **slate** — weight 0.881  ·  4 post(s)
 - ▼ **orangepop** — weight 0.844  ·  2 post(s)  _(only 2, low confidence)_
-- ▼ **light** — weight 0.84  ·  3 post(s)
+- ▼ **light** — weight 0.841  ·  3 post(s)
 - ▼ **bone** — weight 0.75  ·  1 post(s)  _(only 1, low confidence)_
 
 ### By caption shape (0=save 3=question 4=send …)
