@@ -6,11 +6,11 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260727 | REELS | reach 391 | views 900 | 5.5s watch | saves 5 shares 0 | eng 13.8% | score 23.117 | https://www.instagram.com/reel/DbTKKzTBzFV/
 - 👤 20260724 | REELS | reach 730 | views 823 | 7.5s watch | saves 3 shares 12 | eng 9.0% | score 22.745 | https://www.instagram.com/reel/DbLxgAuBb6y/
 - 👤 20260724 | REELS | reach 1284 | views 1741 | 5.5s watch | saves 6 shares 23 | eng 9.9% | score 22.167 | https://www.instagram.com/reel/DbLunRKh5tL/
-- 👤 20260724 | REELS | reach 972 | views 1442 | 12.5s watch | saves 0 shares 5 | eng 7.5% | score 21.584 | https://www.instagram.com/reel/DbMQ4mdhcQh/
+- 👤 20260724 | REELS | reach 972 | views 1442 | 12.5s watch | saves 0 shares 5 | eng 7.5% | score 21.571 | https://www.instagram.com/reel/DbMQ4mdhcQh/
 - 👤 20260724 | REELS | reach 1299 | views 1733 | 5.3s watch | saves 9 shares 16 | eng 7.9% | score 18.962 | https://www.instagram.com/reel/DbLywhTBoap/
+- 👤 20260727 | REELS | reach 679 | views 1205 | 5.4s watch | saves 7 shares 0 | eng 10.0% | score 18.512 | https://www.instagram.com/reel/DbTKKzTBzFV/
 - 👤 20260724 | REELS | reach 344 | views 449 | 5.7s watch | saves 5 shares 1 | eng 6.7% | score 17.645 | https://www.instagram.com/reel/DbMO_ohzeac/
 - 👤 20260724 | REELS | reach 1117 | views 1332 | 6.4s watch | saves 5 shares 4 | eng 7.2% | score 15.961 | https://www.instagram.com/reel/DbLw-0jB7yB/
 - 👤 20260724 | REELS | reach 679 | views 809 | 5.6s watch | saves 7 shares 1 | eng 6.8% | score 15.878 | https://www.instagram.com/reel/DbLzQqahbss/
@@ -21,8 +21,8 @@
 - 🤖 20260703 | carousel | reach 44 | views - | — | saves 0 shares 0 | eng 0.0% | score 0.0 | https://www.instagram.com/p/DaVj-vIHF50/
 
 ## 👤 vs 🤖 benchmark (reels)
-- avg watch — yours: 5.6s  ·  bot: 3.0s
-- avg reach — yours: 687.3  ·  bot: 136.6
+- avg watch — yours: 5.7s  ·  bot: 3.0s
+- avg reach — yours: 704.0  ·  bot: 136.6
 - avg saves — yours: 2.8  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
