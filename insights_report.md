@@ -6,14 +6,14 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260729 | REELS | reach 9629 | views 14601 | 8.1s watch | saves 79 shares 337 | eng 10.3% | score 31.381 | https://www.instagram.com/reel/DbYbM54hkJW/
+- 👤 20260729 | REELS | reach 9629 | views 14617 | 8.1s watch | saves 79 shares 338 | eng 10.3% | score 31.419 | https://www.instagram.com/reel/DbYbM54hkJW/
 - 👤 20260729 | REELS | reach 762 | views 1142 | 12.1s watch | saves 0 shares 2 | eng 12.6% | score 25.472 | https://www.instagram.com/reel/DbZIG0uB2mw/
 - 👤 20260728 | REELS | reach 1177 | views 1544 | 4.9s watch | saves 0 shares 26 | eng 9.8% | score 21.34 | https://www.instagram.com/reel/DbVzNv-BnfD/
-- 👤 20260729 | REELS | reach 1231 | views 1845 | 6.0s watch | saves 6 shares 13 | eng 7.4% | score 18.002 | https://www.instagram.com/reel/DbY7UYKhcfP/
+- 👤 20260729 | REELS | reach 1231 | views 1847 | 6.0s watch | saves 6 shares 13 | eng 7.4% | score 18.002 | https://www.instagram.com/reel/DbY7UYKhcfP/
 - 👤 20260727 | REELS | reach 1331 | views 1568 | 7.2s watch | saves 9 shares 6 | eng 7.1% | score 17.664 | https://www.instagram.com/reel/DbTW_wrhM89/
 - 👤 20260728 | REELS | reach 570 | views 704 | 3.5s watch | saves 7 shares 1 | eng 9.8% | score 17.581 | https://www.instagram.com/reel/DbVtgVVuOAm/
 - 👤 20260727 | REELS | reach 2243 | views 2712 | 4.8s watch | saves 13 shares 19 | eng 6.9% | score 15.921 | https://www.instagram.com/reel/DbTWsySh217/
-- 👤 20260728 | REELS | reach 1828 | views 2234 | 4.6s watch | saves 12 shares 6 | eng 7.9% | score 15.43 | https://www.instagram.com/reel/DbVvzetu0ZQ/
+- 👤 20260728 | REELS | reach 1828 | views 2236 | 4.6s watch | saves 12 shares 6 | eng 7.9% | score 15.428 | https://www.instagram.com/reel/DbVvzetu0ZQ/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
