@@ -554,14 +554,14 @@
   "bot": false,
   "permalink": "https://www.instagram.com/reel/Db8ZFnshBfr/",
   "reach": 722,
-  "likes": 32,
+  "likes": 33,
   "comments": 2,
   "shares": 0,
   "saved": 2,
-  "total_interactions": 37,
+  "total_interactions": 38,
   "ig_reels_avg_watch_time": 4314,
   "ig_reels_video_view_total_time": 3097934,
-  "views": 926,
+  "views": 928,
   "trial": false
  },
  {
@@ -571,7 +571,7 @@
   "post_id": "18112833346767680",
   "bot": false,
   "permalink": "https://www.instagram.com/reel/Db8YbveBVDW/",
-  "reach": 1303,
+  "reach": 1305,
   "likes": 38,
   "comments": 2,
   "shares": 2,
@@ -579,7 +579,7 @@
   "total_interactions": 45,
   "ig_reels_avg_watch_time": 5439,
   "ig_reels_video_view_total_time": 7115360,
-  "views": 1695,
+  "views": 1696,
   "trial": false
  },
  {
@@ -661,15 +661,15 @@
   "post_id": "17957249826189104",
   "bot": false,
   "permalink": "https://www.instagram.com/reel/Db8UtNahibS/",
-  "reach": 1148,
+  "reach": 1152,
   "likes": 83,
   "comments": 0,
   "shares": 7,
   "saved": 8,
   "total_interactions": 98,
-  "ig_reels_avg_watch_time": 4632,
-  "ig_reels_video_view_total_time": 5438190,
-  "views": 1642,
+  "ig_reels_avg_watch_time": 4638,
+  "ig_reels_video_view_total_time": 5455453,
+  "views": 1643,
   "trial": false
  },
  {
@@ -685,8 +685,8 @@
   "shares": 2,
   "saved": 8,
   "total_interactions": 71,
-  "ig_reels_avg_watch_time": 3923,
-  "ig_reels_video_view_total_time": 3672123,
+  "ig_reels_avg_watch_time": 3928,
+  "ig_reels_video_view_total_time": 3676840,
   "views": 1305,
   "trial": false
  },
@@ -811,8 +811,8 @@
   "shares": 5,
   "saved": 7,
   "total_interactions": 88,
-  "ig_reels_avg_watch_time": 5332,
-  "ig_reels_video_view_total_time": 5998975,
+  "ig_reels_avg_watch_time": 5328,
+  "ig_reels_video_view_total_time": 5999948,
   "views": 1508,
   "trial": false
  },
@@ -939,7 +939,7 @@
   "total_interactions": 50,
   "ig_reels_avg_watch_time": 7534,
   "ig_reels_video_view_total_time": 11339228,
-  "views": 2268,
+  "views": 2270,
   "trial": false
  },
  {
