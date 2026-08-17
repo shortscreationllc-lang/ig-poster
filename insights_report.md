@@ -7,12 +7,12 @@
 
 ## 🏆 Top performers (by save/share/watch score)
 - 👤 20260812 | REELS | reach 1143 | views 1430 | 5.0s watch | saves 15 shares 6 | eng 11.1% | score 21.585 | https://www.instagram.com/reel/Db8VUQ7B1ml/
-- 👤 20260812 | REELS | reach 1155 | views 1655 | 4.6s watch | saves 8 shares 7 | eng 8.5% | score 17.006 | https://www.instagram.com/reel/Db8UtNahibS/
+- 👤 20260812 | REELS | reach 1155 | views 1655 | 4.6s watch | saves 8 shares 7 | eng 8.5% | score 17.014 | https://www.instagram.com/reel/Db8UtNahibS/
 - 👤 20260814 | REELS | reach 895 | views 1107 | 4.8s watch | saves 7 shares 5 | eng 8.2% | score 16.951 | https://www.instagram.com/reel/DcCLpg3B0pp/
-- 👤 20260814 | REELS | reach 1806 | views 2209 | 4.6s watch | saves 2 shares 15 | eng 9.5% | score 16.931 | https://www.instagram.com/reel/DcCLb5fBwGE/
+- 👤 20260814 | REELS | reach 1806 | views 2210 | 4.6s watch | saves 2 shares 15 | eng 9.5% | score 16.931 | https://www.instagram.com/reel/DcCLb5fBwGE/
 - 👤 20260812 | REELS | reach 526 | views 685 | 9.9s watch | saves 2 shares 1 | eng 4.4% | score 15.942 | https://www.instagram.com/reel/Db80DdCTIIX/
 - 👤 20260812 | REELS | reach 644 | views 747 | 6.4s watch | saves 4 shares 5 | eng 4.5% | score 15.09 | https://www.instagram.com/reel/Db8V0BNB1XT/
-- 👤 20260812 | REELS | reach 1493 | views 1984 | 5.2s watch | saves 5 shares 6 | eng 7.5% | score 14.911 | https://www.instagram.com/reel/Db8ZbB3BzLz/
+- 👤 20260812 | REELS | reach 1493 | views 1985 | 5.2s watch | saves 5 shares 6 | eng 7.5% | score 14.911 | https://www.instagram.com/reel/Db8ZbB3BzLz/
 - 👤 20260812 | REELS | reach 964 | views 1319 | 3.9s watch | saves 8 shares 2 | eng 7.4% | score 14.396 | https://www.instagram.com/reel/Db8Tq7ehFn_/
 
 ## 🧊 Weakest (rework or retire these)
