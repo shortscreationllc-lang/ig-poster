@@ -6,13 +6,13 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260818 | REELS | reach 1519 | views 1906 | 7.1s watch | saves 15 shares 17 | eng 7.3% | score 20.776 | https://www.instagram.com/reel/DcMWnMGBMnU/
-- 👤 20260819 | REELS | reach 1718 | views 2146 | 7.8s watch | saves 10 shares 25 | eng 6.6% | score 20.445 | https://www.instagram.com/reel/DcOnm2AhfCD/
-- 👤 20260818 | REELS | reach 1478 | views 1880 | 7.6s watch | saves 9 shares 11 | eng 6.6% | score 18.257 | https://www.instagram.com/reel/DcMaxAPBDNp/
-- 👤 20260819 | REELS | reach 324 | views 387 | 3.5s watch | saves 2 shares 3 | eng 9.9% | score 17.977 | https://www.instagram.com/reel/DcOukaXhS5V/
+- 👤 20260818 | REELS | reach 1520 | views 1909 | 7.1s watch | saves 15 shares 17 | eng 7.3% | score 20.762 | https://www.instagram.com/reel/DcMWnMGBMnU/
+- 👤 20260819 | REELS | reach 1721 | views 2148 | 7.8s watch | saves 10 shares 25 | eng 6.6% | score 20.489 | https://www.instagram.com/reel/DcOnm2AhfCD/
+- 👤 20260818 | REELS | reach 1478 | views 1880 | 7.6s watch | saves 9 shares 11 | eng 6.6% | score 18.254 | https://www.instagram.com/reel/DcMaxAPBDNp/
 - 👤 20260818 | REELS | reach 1148 | views 1366 | 5.3s watch | saves 7 shares 9 | eng 8.3% | score 17.781 | https://www.instagram.com/reel/DcMVUADho0F/
 - 👤 20260818 | REELS | reach 1241 | views 1486 | 11.3s watch | saves 1 shares 2 | eng 5.7% | score 17.751 | https://www.instagram.com/reel/DcMaAmSB0WJ/
-- 👤 20260818 | REELS | reach 1294 | views 1994 | 5.8s watch | saves 7 shares 8 | eng 8.3% | score 17.572 | https://www.instagram.com/reel/DcMXMVrB4hG/
+- 👤 20260819 | REELS | reach 330 | views 391 | 3.4s watch | saves 2 shares 3 | eng 9.7% | score 17.672 | https://www.instagram.com/reel/DcOukaXhS5V/
+- 👤 20260818 | REELS | reach 1294 | views 1996 | 5.8s watch | saves 7 shares 8 | eng 8.3% | score 17.572 | https://www.instagram.com/reel/DcMXMVrB4hG/
 - 👤 20260818 | REELS | reach 1540 | views 1973 | 7.1s watch | saves 10 shares 11 | eng 5.5% | score 16.708 | https://www.instagram.com/reel/DcMYWYnhwGE/
 
 ## 🧊 Weakest (rework or retire these)
@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.7s  ·  bot: 3.0s
-- avg reach — yours: 862.7  ·  bot: 136.9
+- avg reach — yours: 864.3  ·  bot: 136.9
 - avg saves — yours: 3.3  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
