@@ -11,9 +11,9 @@
 - 👤 20260820 | REELS | reach 597 | views 787 | 5.1s watch | saves 4 shares 2 | eng 9.4% | score 17.516 | https://www.instagram.com/reel/DcRnCTrBz3-/
 - 👤 20260821 | REELS | reach 1038 | views 1329 | 5.4s watch | saves 8 shares 6 | eng 8.0% | score 17.42 | https://www.instagram.com/reel/DcTapVUBmNk/
 - 👤 20260820 | REELS | reach 1205 | views 1565 | 6.9s watch | saves 4 shares 5 | eng 8.0% | score 17.187 | https://www.instagram.com/reel/DcRnX2AheVd/
-- 👤 20260821 | REELS | reach 1011 | views 1285 | 5.8s watch | saves 3 shares 5 | eng 8.1% | score 16.328 | https://www.instagram.com/reel/DcTlITvhUaw/
-- 👤 20260819 | REELS | reach 1316 | views 1561 | 7.3s watch | saves 5 shares 1 | eng 7.2% | score 15.894 | https://www.instagram.com/reel/DcOoOoDBDoP/
-- 👤 20260822 | REELS | reach 149 | views 291 | 9.9s watch | saves 0 shares 1 | eng 4.0% | score 15.891 | https://www.instagram.com/reel/DcV5uJfBYu_/
+- 👤 20260822 | REELS | reach 199 | views 382 | 10.1s watch | saves 0 shares 1 | eng 5.0% | score 16.625 | https://www.instagram.com/reel/DcV5uJfBYu_/
+- 👤 20260819 | REELS | reach 1317 | views 1561 | 7.3s watch | saves 5 shares 1 | eng 7.2% | score 15.889 | https://www.instagram.com/reel/DcOoOoDBDoP/
+- 👤 20260821 | REELS | reach 1019 | views 1291 | 5.8s watch | saves 3 shares 4 | eng 7.9% | score 15.802 | https://www.instagram.com/reel/DcTlITvhUaw/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 6.0s  ·  bot: 3.0s
-- avg reach — yours: 806.1  ·  bot: 136.9
+- avg reach — yours: 810.6  ·  bot: 136.9
 - avg saves — yours: 3.2  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
