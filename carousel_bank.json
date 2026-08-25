@@ -1,158 +1,436 @@
 [
   {
     "kicker": "PLAYBOOK",
-    "cover": {"headline": "5 hook formulas that work in any niche.", "subheadline": "Steal these for your next 5 videos."},
+    "cover": {
+      "headline": "5 hook formulas that work in any niche.",
+      "subheadline": "Steal these for your next 5 videos."
+    },
     "slides": [
-      {"title": "\"I tried / quit / lost...\"", "body": "Personal stakes. People stay to see what happened."},
-      {"title": "\"Most people don't know...\"", "body": "A curiosity gap. Implies you have the inside answer."},
-      {"title": "\"If you're [X], stop doing [Y].\"", "body": "Calls out a specific person. They can't scroll past themselves."},
-      {"title": "\"Here's the truth about [X].\"", "body": "Positions you as the one cutting through the noise."},
-      {"title": "\"[Number] things I learned about [X].\"", "body": "Promises a list. The brain wants to finish what it starts."}
+      {
+        "title": "\"I tried / quit / lost...\"",
+        "body": "Personal stakes. People stay to see what happened."
+      },
+      {
+        "title": "\"Most people don't know...\"",
+        "body": "A curiosity gap. Implies you have the inside answer."
+      },
+      {
+        "title": "\"If you're [X], stop doing [Y].\"",
+        "body": "Calls out a specific person. They can't scroll past themselves."
+      },
+      {
+        "title": "\"Here's the truth about [X].\"",
+        "body": "Positions you as the one cutting through the noise."
+      },
+      {
+        "title": "\"[Number] things I learned about [X].\"",
+        "body": "Promises a list. The brain wants to finish what it starts."
+      }
     ],
     "caption": "5 hook formulas that work in any niche:\n\n1. \"I tried / quit / lost...\"\n2. \"Most people don't know...\"\n3. \"If you're [X], stop doing [Y].\"\n4. \"Here's the truth about [X].\"\n5. \"[Number] things I learned about [X].\"\n\nSave it for your next batch of scripts.\n\nFollow @josephborroto for a breakdown like this every few days.\n\n#hookwriting #shortformvideo #contentcreator #copywriting #reelstips #josephborroto",
     "alt_text": "Carousel: 5 hook formulas that work in any niche."
   },
   {
     "kicker": "CHECKLIST",
-    "cover": {"headline": "7 things to check before every shoot.", "subheadline": "Number 4 is the one everyone skips."},
+    "cover": {
+      "headline": "7 things to check before every shoot.",
+      "subheadline": "Number 4 is the one everyone skips."
+    },
     "slides": [
-      {"title": "1. 4K at 60fps", "body": "The only camera setting that really matters. Set it once."},
-      {"title": "2. Mic test and playback", "body": "Record 5 seconds and listen back. Don't trust the meter alone."},
-      {"title": "3. Hook pre-written", "body": "1.5 seconds, memorized. Never improvise the first line."},
-      {"title": "4. Scout your spots", "body": "Switch location every line. This is the one people skip."},
-      {"title": "5. Batteries and storage", "body": "Two of everything. A dead battery ends the day."},
-      {"title": "6. Backup device", "body": "One failure shouldn't cancel the whole shoot."},
-      {"title": "7. Frame for the title", "body": "Leave headroom so the overlay never covers your face."}
+      {
+        "title": "1. 4K at 60fps",
+        "body": "The only camera setting that really matters. Set it once."
+      },
+      {
+        "title": "2. Mic test and playback",
+        "body": "Record 5 seconds and listen back. Don't trust the meter alone."
+      },
+      {
+        "title": "3. Hook pre-written",
+        "body": "1.5 seconds, memorized. Never improvise the first line."
+      },
+      {
+        "title": "4. Scout your spots",
+        "body": "Switch location every line. This is the one people skip."
+      },
+      {
+        "title": "5. Batteries and storage",
+        "body": "Two of everything. A dead battery ends the day."
+      },
+      {
+        "title": "6. Backup device",
+        "body": "One failure shouldn't cancel the whole shoot."
+      },
+      {
+        "title": "7. Frame for the title",
+        "body": "Leave headroom so the overlay never covers your face."
+      }
     ],
     "caption": "Run this before every shoot. Number 4 is why most talking-head videos feel flat.\n\nSave it before your next shoot day.\n\nFollow @josephborroto for the systems behind good content.\n\n#shootday #videography #checklist #reelstips #videoediting #josephborroto",
     "alt_text": "Carousel: 7 things to check before every shoot."
   },
   {
     "kicker": "RETENTION",
-    "cover": {"headline": "5 caption mistakes killing your retention.", "subheadline": "Most people make all 5."},
+    "cover": {
+      "headline": "5 caption mistakes killing your retention.",
+      "subheadline": "Most people make all 5."
+    },
     "slides": [
-      {"title": "1. Too small", "body": "If it's hard to read on a phone, it's costing you watch time."},
-      {"title": "2. Off the beat", "body": "Text should hit on the cut, not lag behind the sentence."},
-      {"title": "3. Buried at the bottom", "body": "The app UI covers it. Keep key words in the safe zone."},
-      {"title": "4. Wrong font", "body": "White, modern, sans-serif. No heavy drop shadow."},
-      {"title": "5. Paced too slow", "body": "Captions should feel a touch faster than the video itself."}
+      {
+        "title": "1. Too small",
+        "body": "If it's hard to read on a phone, it's costing you watch time."
+      },
+      {
+        "title": "2. Off the beat",
+        "body": "Text should hit on the cut, not lag behind the sentence."
+      },
+      {
+        "title": "3. Buried at the bottom",
+        "body": "The app UI covers it. Keep key words in the safe zone."
+      },
+      {
+        "title": "4. Wrong font",
+        "body": "White, modern, sans-serif. No heavy drop shadow."
+      },
+      {
+        "title": "5. Paced too slow",
+        "body": "Captions should feel a touch faster than the video itself."
+      }
     ],
     "caption": "Captions aren't decoration, they're a retention tool. These 5 mistakes quietly leak your views:\n\n1. Too small\n2. Off the beat\n3. Buried at the bottom\n4. Wrong font\n5. Paced too slow\n\nSave it for your next edit.\n\nFollow @josephborroto for the editing details that move numbers.\n\n#captiondesign #videoediting #editingtips #shortformvideo #reelstips #josephborroto",
     "alt_text": "Carousel: 5 caption mistakes killing your retention."
   },
   {
     "kicker": "STRUCTURE",
-    "cover": {"headline": "Every viral video has 3 acts.", "subheadline": "Most people only film one."},
+    "cover": {
+      "headline": "Every viral video has 3 acts.",
+      "subheadline": "Most people only film one."
+    },
     "slides": [
-      {"title": "Act 1 — Hook (0 to 1.5s)", "body": "State the problem sharp. No intro, no setup. Stop the thumb."},
-      {"title": "Act 2 — Tension (4 to 12s)", "body": "Build the gap. Give a reason to keep watching past second 4."},
-      {"title": "Act 3 — Payoff (13s to end)", "body": "Deliver the answer, then one clean close. Don't trail off."},
-      {"title": "Why most fail", "body": "They film all hook or all payoff. The tension in the middle is what holds people."}
+      {
+        "title": "Act 1 — Hook (0 to 1.5s)",
+        "body": "State the problem sharp. No intro, no setup. Stop the thumb."
+      },
+      {
+        "title": "Act 2 — Tension (4 to 12s)",
+        "body": "Build the gap. Give a reason to keep watching past second 4."
+      },
+      {
+        "title": "Act 3 — Payoff (13s to end)",
+        "body": "Deliver the answer, then one clean close. Don't trail off."
+      },
+      {
+        "title": "Why most fail",
+        "body": "They film all hook or all payoff. The tension in the middle is what holds people."
+      }
     ],
     "caption": "Every short-form video that pops has 3 acts. Most people film one and wonder why retention dies.\n\nHook (0 to 1.5s)\nTension (4 to 12s)\nPayoff (13s+)\n\nSave it before you script your next one.\n\nFollow @josephborroto for the structure behind the views.\n\n#scriptwriting #shortformvideo #storytelling #reelstips #videoediting #josephborroto",
     "alt_text": "Carousel: every viral video has 3 acts."
   },
   {
     "kicker": "PRODUCTION",
-    "cover": {"headline": "5 rules behind every video that lands.", "subheadline": "Simple, repeatable, no fancy gear."},
+    "cover": {
+      "headline": "5 rules behind every video that lands.",
+      "subheadline": "Simple, repeatable, no fancy gear."
+    },
     "slides": [
-      {"title": "1. 4K at 60fps", "body": "You don't need a cinema camera. You need the right settings."},
-      {"title": "2. 1.5-second hook, written", "body": "Memorized before you hit record. Never improvised."},
-      {"title": "3. Switch location every line", "body": "Two lines in one spot? Move. Movement reads as energy."},
-      {"title": "4. One idea per video", "body": "Specific beats broad. One clear point gets saved and shared."},
-      {"title": "5. Music quieter than feels right", "body": "Trim ruthlessly. The voice leads, the music supports."}
+      {
+        "title": "1. 4K at 60fps",
+        "body": "You don't need a cinema camera. You need the right settings."
+      },
+      {
+        "title": "2. 1.5-second hook, written",
+        "body": "Memorized before you hit record. Never improvised."
+      },
+      {
+        "title": "3. Switch location every line",
+        "body": "Two lines in one spot? Move. Movement reads as energy."
+      },
+      {
+        "title": "4. One idea per video",
+        "body": "Specific beats broad. One clear point gets saved and shared."
+      },
+      {
+        "title": "5. Music quieter than feels right",
+        "body": "Trim ruthlessly. The voice leads, the music supports."
+      }
     ],
     "caption": "5 rules behind every video that lands. None of them need expensive gear, just discipline.\n\n1. 4K / 60fps\n2. 1.5s hook, written\n3. Switch location every line\n4. One idea per video\n5. Music quieter than feels right\n\nSave it for your next shoot.\n\nFollow @josephborroto for the production system that scales.\n\n#videography #contentcreator #reelstips #shortformvideo #videoediting #josephborroto",
     "alt_text": "Carousel: 5 rules behind every video that lands."
   },
   {
     "kicker": "MONEY",
-    "cover": {"headline": "What a good Reel actually costs to make.", "subheadline": "The part nobody breaks down."},
+    "cover": {
+      "headline": "What a good Reel actually costs to make.",
+      "subheadline": "The part nobody breaks down."
+    },
     "slides": [
-      {"title": "Research and hooks", "body": "Studying what works and writing a hook worth stopping for."},
-      {"title": "Filming", "body": "Setup, multiple takes, location changes, lighting, audio."},
-      {"title": "Editing", "body": "Cutting, hand-placed captions, music, pacing. Hours, not minutes."},
-      {"title": "Revisions", "body": "The pass that turns good into actually-postable."},
-      {"title": "The point", "body": "Quality video is hours of skilled work. That's why cheap pricing collapses."}
+      {
+        "title": "Research and hooks",
+        "body": "Studying what works and writing a hook worth stopping for."
+      },
+      {
+        "title": "Filming",
+        "body": "Setup, multiple takes, location changes, lighting, audio."
+      },
+      {
+        "title": "Editing",
+        "body": "Cutting, hand-placed captions, music, pacing. Hours, not minutes."
+      },
+      {
+        "title": "Revisions",
+        "body": "The pass that turns good into actually-postable."
+      },
+      {
+        "title": "The point",
+        "body": "Quality video is hours of skilled work. That's why cheap pricing collapses."
+      }
     ],
     "caption": "Everyone underestimates what a genuinely good Reel takes.\n\nResearch. Hooks. Filming. Editing. Revisions.\n\nIt's hours of skilled work, which is exactly why rock-bottom pricing never produces rock-solid video.\n\nFollow @josephborroto for the real economics of content.\n\n#videoproduction #pricingstrategy #contentmarketing #shortformvideo #videoediting #josephborroto",
     "alt_text": "Carousel: what a good Reel actually costs to make."
   },
   {
     "kicker": "RETENTION",
-    "cover": {"headline": "5 ways to fix your retention curve.", "subheadline": "Where people drop, and why."},
+    "cover": {
+      "headline": "5 ways to fix your retention curve.",
+      "subheadline": "Where people drop, and why."
+    },
     "slides": [
-      {"title": "1. Open on motion", "body": "A static first frame loses people before you speak."},
-      {"title": "2. Patch second 4", "body": "Drop a number or contradiction right where attention dips."},
-      {"title": "3. Cut the dead air", "body": "Remove the breath before every sentence. Pace is retention."},
-      {"title": "4. Switch the frame", "body": "New angle or location keeps the eye from settling."},
-      {"title": "5. Pay off the hook", "body": "Deliver what you promised before they lose patience."}
+      {
+        "title": "1. Open on motion",
+        "body": "A static first frame loses people before you speak."
+      },
+      {
+        "title": "2. Patch second 4",
+        "body": "Drop a number or contradiction right where attention dips."
+      },
+      {
+        "title": "3. Cut the dead air",
+        "body": "Remove the breath before every sentence. Pace is retention."
+      },
+      {
+        "title": "4. Switch the frame",
+        "body": "New angle or location keeps the eye from settling."
+      },
+      {
+        "title": "5. Pay off the hook",
+        "body": "Deliver what you promised before they lose patience."
+      }
     ],
     "caption": "Retention isn't luck, it's a series of small saves.\n\n1. Open on motion\n2. Patch second 4\n3. Cut the dead air\n4. Switch the frame\n5. Pay off the hook\n\nSave it and watch your average watch time climb.\n\nFollow @josephborroto for retention you can actually engineer.\n\n#retention #videoediting #shortformvideo #reelstips #contentstrategy #josephborroto",
     "alt_text": "Carousel: 5 ways to fix your retention curve."
   },
   {
     "kicker": "MYTHS",
-    "cover": {"headline": "5 algorithm myths to stop believing.", "subheadline": "These are costing you reach."},
+    "cover": {
+      "headline": "5 algorithm myths to stop believing.",
+      "subheadline": "These are costing you reach."
+    },
     "slides": [
-      {"title": "1. \"Hashtags are dead\"", "body": "They still help categorize. They're just not the whole game."},
-      {"title": "2. \"Post at the perfect time\"", "body": "Good content travels for days. Timing is a rounding error."},
-      {"title": "3. \"You need to go viral\"", "body": "Consistent reach beats one spike that fades in a week."},
-      {"title": "4. \"More posting always wins\"", "body": "Quality and retention beat raw volume every time."},
-      {"title": "5. \"The algorithm hates links\"", "body": "It rewards watch time. Make something worth finishing."}
+      {
+        "title": "1. \"Hashtags are dead\"",
+        "body": "They still help categorize. They're just not the whole game."
+      },
+      {
+        "title": "2. \"Post at the perfect time\"",
+        "body": "Good content travels for days. Timing is a rounding error."
+      },
+      {
+        "title": "3. \"You need to go viral\"",
+        "body": "Consistent reach beats one spike that fades in a week."
+      },
+      {
+        "title": "4. \"More posting always wins\"",
+        "body": "Quality and retention beat raw volume every time."
+      },
+      {
+        "title": "5. \"The algorithm hates links\"",
+        "body": "It rewards watch time. Make something worth finishing."
+      }
     ],
     "caption": "Most \"algorithm advice\" is expired or made up. Five myths to drop:\n\n1. Hashtags are dead\n2. Post at the perfect time\n3. You need to go viral\n4. More posting always wins\n5. The algorithm hates links\n\nMake content humans finish. The reach follows.\n\nFollow @josephborroto for strategy that ages well.\n\n#algorithm #contentstrategy #shortformvideo #videomarketing #reelstips #josephborroto",
     "alt_text": "Carousel: 5 algorithm myths to stop believing."
   },
   {
     "kicker": "B-ROLL",
-    "cover": {"headline": "5 rules for B-roll that isn't boring.", "subheadline": "Most people film the wrong thing."},
+    "cover": {
+      "headline": "5 rules for B-roll that isn't boring.",
+      "subheadline": "Most people film the wrong thing."
+    },
     "slides": [
-      {"title": "1. Film nouns, not verbs", "body": "The object close-up beats the wide action shot."},
-      {"title": "2. Get uncomfortably close", "body": "Detail reads as intentional. Distance reads as filler."},
-      {"title": "3. Move the camera", "body": "A slow push or pan adds life a locked shot can't."},
-      {"title": "4. Match the light", "body": "Consistent lighting makes cuts feel seamless."},
-      {"title": "5. Overshoot", "body": "Capture 3x what you need. You'll thank yourself in the edit."}
+      {
+        "title": "1. Film nouns, not verbs",
+        "body": "The object close-up beats the wide action shot."
+      },
+      {
+        "title": "2. Get uncomfortably close",
+        "body": "Detail reads as intentional. Distance reads as filler."
+      },
+      {
+        "title": "3. Move the camera",
+        "body": "A slow push or pan adds life a locked shot can't."
+      },
+      {
+        "title": "4. Match the light",
+        "body": "Consistent lighting makes cuts feel seamless."
+      },
+      {
+        "title": "5. Overshoot",
+        "body": "Capture 3x what you need. You'll thank yourself in the edit."
+      }
     ],
     "caption": "Boring B-roll is usually the wrong subject filmed from too far.\n\n1. Film nouns, not verbs\n2. Get uncomfortably close\n3. Move the camera\n4. Match the light\n5. Overshoot\n\nSave it before your next shoot.\n\nFollow @josephborroto for the details that make content look pro.\n\n#broll #videography #cinematography #reelstips #videoediting #josephborroto",
     "alt_text": "Carousel: 5 rules for B-roll that isn't boring."
   },
   {
     "kicker": "AUDIO",
-    "cover": {"headline": "4 audio mistakes that ruin good video.", "subheadline": "People hear bad audio before they see good video."},
+    "cover": {
+      "headline": "4 audio mistakes that ruin good video.",
+      "subheadline": "People hear bad audio before they see good video."
+    },
     "slides": [
-      {"title": "1. Music too loud", "body": "If you notice the track, it's already drowning the voice."},
-      {"title": "2. No mic", "body": "Phone audio echoes. A cheap clip mic is a night-and-day upgrade."},
-      {"title": "3. Inconsistent levels", "body": "Volume jumping between clips makes it feel amateur."},
-      {"title": "4. Dead silence", "body": "A subtle bed of music under the voice keeps energy up."}
+      {
+        "title": "1. Music too loud",
+        "body": "If you notice the track, it's already drowning the voice."
+      },
+      {
+        "title": "2. No mic",
+        "body": "Phone audio echoes. A cheap clip mic is a night-and-day upgrade."
+      },
+      {
+        "title": "3. Inconsistent levels",
+        "body": "Volume jumping between clips makes it feel amateur."
+      },
+      {
+        "title": "4. Dead silence",
+        "body": "A subtle bed of music under the voice keeps energy up."
+      }
     ],
     "caption": "People forgive average video. They scroll on bad audio instantly.\n\n1. Music too loud\n2. No mic\n3. Inconsistent levels\n4. Dead silence\n\nFix the sound and watch retention rise.\n\nFollow @josephborroto for the production basics nobody teaches.\n\n#audiomixing #videoediting #musictips #editingtips #shortformvideo #josephborroto",
     "alt_text": "Carousel: 4 audio mistakes that ruin good video."
   },
   {
     "kicker": "SPEED",
-    "cover": {"headline": "5 ways to edit twice as fast.", "subheadline": "Without the video looking rushed."},
+    "cover": {
+      "headline": "5 ways to edit twice as fast.",
+      "subheadline": "Without the video looking rushed."
+    },
     "slides": [
-      {"title": "1. Cut on the first pass", "body": "Make decisions as you watch. Don't re-watch endlessly."},
-      {"title": "2. Build a caption style", "body": "Save your font and look once. Reuse it every time."},
-      {"title": "3. Keep a music folder", "body": "Stop hunting. Pull from tracks you've already cleared."},
-      {"title": "4. Template your export", "body": "Set it once: format, size, settings. Never rethink it."},
-      {"title": "5. Stop polishing dead air", "body": "Cut the slow parts instead of perfecting them."}
+      {
+        "title": "1. Cut on the first pass",
+        "body": "Make decisions as you watch. Don't re-watch endlessly."
+      },
+      {
+        "title": "2. Build a caption style",
+        "body": "Save your font and look once. Reuse it every time."
+      },
+      {
+        "title": "3. Keep a music folder",
+        "body": "Stop hunting. Pull from tracks you've already cleared."
+      },
+      {
+        "title": "4. Template your export",
+        "body": "Set it once: format, size, settings. Never rethink it."
+      },
+      {
+        "title": "5. Stop polishing dead air",
+        "body": "Cut the slow parts instead of perfecting them."
+      }
     ],
     "caption": "Editing slow is usually a workflow problem, not a skill problem.\n\n1. Cut on the first pass\n2. Build a caption style\n3. Keep a music folder\n4. Template your export\n5. Stop polishing dead air\n\nSpeed comes from systems, not rushing.\n\nFollow @josephborroto for the workflow behind fast, clean edits.\n\n#videoediting #editingworkflow #editingtips #shortformvideo #reelstips #josephborroto",
     "alt_text": "Carousel: 5 ways to edit twice as fast."
   },
   {
     "kicker": "GROWTH",
-    "cover": {"headline": "5 reasons your videos aren't growing.", "subheadline": "It's rarely the algorithm."},
+    "cover": {
+      "headline": "5 reasons your videos aren't growing.",
+      "subheadline": "It's rarely the algorithm."
+    },
     "slides": [
-      {"title": "1. Weak first second", "body": "A slow open kills the video before the hook lands."},
-      {"title": "2. Too many ideas", "body": "One video, one point. Cramming means nothing sticks."},
-      {"title": "3. No reason to finish", "body": "If there's no payoff coming, people leave early."},
-      {"title": "4. Inconsistent posting", "body": "The algorithm rewards reliability. Show up daily."},
-      {"title": "5. No clear next step", "body": "Give one simple action: follow for more."}
+      {
+        "title": "1. Weak first second",
+        "body": "A slow open kills the video before the hook lands."
+      },
+      {
+        "title": "2. Too many ideas",
+        "body": "One video, one point. Cramming means nothing sticks."
+      },
+      {
+        "title": "3. No reason to finish",
+        "body": "If there's no payoff coming, people leave early."
+      },
+      {
+        "title": "4. Inconsistent posting",
+        "body": "The algorithm rewards reliability. Show up daily."
+      },
+      {
+        "title": "5. No clear next step",
+        "body": "Give one simple action: follow for more."
+      }
     ],
     "caption": "If your videos have stalled, it's usually one of these, not the algorithm.\n\n1. Weak first second\n2. Too many ideas\n3. No reason to finish\n4. Inconsistent posting\n5. No clear next step\n\nFix one this week.\n\nFollow @josephborroto for honest, useful content advice.\n\n#contentstrategy #shortformvideo #reelstips #videomarketing #growth #josephborroto",
     "alt_text": "Carousel: 5 reasons your videos aren't growing."
+  },
+  {
+    "kicker": "PLAYBOOK",
+    "cover": {
+      "headline": "6 ways to frame any hook.",
+      "subheadline": "Same topic. Six different scroll-stoppers."
+    },
+    "slides": [
+      {
+        "title": "1. Predict the future.",
+        "body": "\"This is going to change how [your niche] works.\" Present vs. future = instant curiosity."
+      },
+      {
+        "title": "2. Show the experiment.",
+        "body": "\"I tried [new way] for 30 days — here's what happened.\" A friend showing a friend."
+      },
+      {
+        "title": "3. Teach the lesson.",
+        "body": "\"Here's how [someone] solved [pain point].\" You found the answer — break it down."
+      },
+      {
+        "title": "4. Force the look.",
+        "body": "\"Check this out.\" Point the eye at one thing moving on screen. Attention first, context second."
+      },
+      {
+        "title": "5. Reveal the secret.",
+        "body": "\"Nobody talks about why [surprising thing].\" The gap between what they know and what you found."
+      },
+      {
+        "title": "6. Say the unpopular thing.",
+        "body": "\"Everyone does [X]. Everyone's wrong.\" State the belief, then break it."
+      }
+    ],
+    "caption": "6 ways to frame any hook — same topic, six angles:\n\n1. Predict the future.\n2. Show the experiment.\n3. Teach the lesson.\n4. Force the look.\n5. Reveal the secret.\n6. Say the unpopular thing.\n\nStuck on a hook? Run your topic through all six and pick the one with the most contrast.\n\nSave this for your next scripting day.\n\nFollow @josephborroto for a playbook like this every week.\n\n#hookwriting #shortformvideo #reelstips #contentstrategy #videomarketing #josephborroto",
+    "alt_text": "Carousel: six ways to frame any hook — predict the future, show the experiment, teach the lesson, force the look, reveal the secret, say the unpopular thing."
+  },
+  {
+    "kicker": "FIX IT",
+    "cover": {
+      "headline": "Your hook died for 1 of 4 reasons.",
+      "subheadline": "Diagnose it in 30 seconds."
+    },
+    "slides": [
+      {
+        "title": "1. Too slow.",
+        "body": "The topic isn't in your first sentence. Every second of warm-up costs you viewers. Cut everything before the point."
+      },
+      {
+        "title": "2. Too confusing.",
+        "body": "If a 6th grader can't repeat your first line back, rewrite it. Short words. Active voice. One meaning."
+      },
+      {
+        "title": "3. Not for them.",
+        "body": "\"I struggled with...\" makes them guess if it applies. \"If YOU struggle with...\" removes the guess. Name their pain."
+      },
+      {
+        "title": "4. No tension.",
+        "body": "Clear but boring = no contrast. Add the gap: \"Most people do A — but B works 3x better.\" Curiosity lives in that gap."
+      }
+    ],
+    "caption": "If a video flopped, the hook failed one of these 4 checks:\n\n1. Too slow — topic wasn't in line one.\n2. Too confusing — more than one way to read it.\n3. Not for them — no \"you,\" no pain point.\n4. No tension — nothing to be curious about.\n\nRun your last flop through this list. You'll find it in 30 seconds.\n\nSave this checklist for your next edit.\n\nFollow @josephborroto for fixes like this every week.\n\n#hookwriting #reelstips #shortformvideo #audienceretention #contenttips #josephborroto",
+    "alt_text": "Carousel: four reasons a hook fails — too slow, too confusing, not for them, no tension — with fixes."
   }
 ]
