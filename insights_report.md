@@ -7,13 +7,13 @@
 
 ## 🏆 Top performers (by save/share/watch score)
 - 👤 20260822 | REELS | reach 1462 | views 1988 | 6.4s watch | saves 2 shares 36 | eng 7.9% | score 22.094 | https://www.instagram.com/reel/DcWSAOchrHP/
-- 👤 20260824 | REELS | reach 1299 | views 1510 | 6.7s watch | saves 17 shares 11 | eng 7.8% | score 20.959 | https://www.instagram.com/reel/DcbjDCUBapQ/
+- 👤 20260824 | REELS | reach 1300 | views 1510 | 6.7s watch | saves 17 shares 11 | eng 7.8% | score 20.955 | https://www.instagram.com/reel/DcbjDCUBapQ/
 - 👤 20260822 | REELS | reach 1096 | views 1445 | 5.6s watch | saves 9 shares 2 | eng 11.5% | score 20.155 | https://www.instagram.com/reel/DcWSJEPBqeB/
 - 👤 20260824 | REELS | reach 456 | views 578 | 5.2s watch | saves 4 shares 2 | eng 8.3% | score 17.497 | https://www.instagram.com/reel/DcbMEuvhWa1/
 - 👤 20260824 | REELS | reach 1136 | views 1462 | 7.1s watch | saves 5 shares 10 | eng 5.5% | score 16.473 | https://www.instagram.com/reel/DcbkVx_BXKe/
-- 👤 20260825 | REELS | reach 1079 | views 1292 | 10.4s watch | saves 4 shares 0 | eng 4.4% | score 15.904 | https://www.instagram.com/reel/DceiHHnBpGj/
+- 👤 20260825 | REELS | reach 1081 | views 1296 | 10.4s watch | saves 4 shares 0 | eng 4.3% | score 15.897 | https://www.instagram.com/reel/DceiHHnBpGj/
+- 👤 20260825 | REELS | reach 374 | views 523 | 5.6s watch | saves 1 shares 3 | eng 6.4% | score 15.178 | https://www.instagram.com/reel/Dceh6LVhNzu/
 - 👤 20260822 | REELS | reach 1604 | views 1911 | 6.7s watch | saves 6 shares 9 | eng 5.0% | score 14.545 | https://www.instagram.com/reel/DcWSQD6hoFn/
-- 👤 20260825 | REELS | reach 427 | views 560 | 4.2s watch | saves 1 shares 3 | eng 7.0% | score 14.067 | https://www.instagram.com/reel/DcemkBshElQ/
 
 ## 🧊 Weakest (rework or retire these)
 - 🤖 20260629 | carousel | reach 68 | views - | — | saves 0 shares 0 | eng 1.5% | score 1.471 | https://www.instagram.com/p/DaLS6JXHCaM/
@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.3s  ·  bot: 3.0s
-- avg reach — yours: 651.8  ·  bot: 136.9
+- avg reach — yours: 654.0  ·  bot: 136.9
 - avg saves — yours: 2.7  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
