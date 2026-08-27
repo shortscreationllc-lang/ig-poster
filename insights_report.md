@@ -8,11 +8,11 @@
 ## 🏆 Top performers (by save/share/watch score)
 - 👤 20260825 | REELS | reach 625 | views 869 | 5.6s watch | saves 3 shares 12 | eng 8.0% | score 20.831 | https://www.instagram.com/reel/Dceh6LVhNzu/
 - 👤 20260825 | REELS | reach 595 | views 791 | 4.4s watch | saves 3 shares 5 | eng 10.8% | score 19.207 | https://www.instagram.com/reel/DcemkBshElQ/
-- 👤 20260826 | REELS | reach 447 | views 666 | 5.3s watch | saves 4 shares 1 | eng 10.1% | score 18.765 | https://www.instagram.com/reel/Dcgzkt0BP9O/
+- 👤 20260826 | REELS | reach 450 | views 670 | 5.3s watch | saves 4 shares 1 | eng 10.0% | score 18.666 | https://www.instagram.com/reel/Dcgzkt0BP9O/
 - 👤 20260826 | REELS | reach 1257 | views 1796 | 8.5s watch | saves 9 shares 6 | eng 5.8% | score 17.852 | https://www.instagram.com/reel/Dcg0YXmh23Y/
 - 👤 20260825 | REELS | reach 1167 | views 1402 | 10.4s watch | saves 5 shares 0 | eng 4.4% | score 16.086 | https://www.instagram.com/reel/DceiHHnBpGj/
-- 👤 20260826 | REELS | reach 1666 | views 2010 | 6.3s watch | saves 15 shares 5 | eng 5.3% | score 15.136 | https://www.instagram.com/reel/Dcgl_RthomR/
-- 👤 20260826 | REELS | reach 1298 | views 2094 | 6.9s watch | saves 4 shares 2 | eng 6.7% | score 15.001 | https://www.instagram.com/reel/Dcg0NC7hxW6/
+- 👤 20260826 | REELS | reach 1666 | views 2010 | 6.3s watch | saves 15 shares 5 | eng 5.3% | score 15.139 | https://www.instagram.com/reel/Dcgl_RthomR/
+- 👤 20260826 | REELS | reach 1298 | views 2095 | 6.9s watch | saves 4 shares 2 | eng 6.7% | score 15.001 | https://www.instagram.com/reel/Dcg0NC7hxW6/
 - 👤 20260825 | REELS | reach 807 | views 927 | 5.8s watch | saves 3 shares 2 | eng 5.9% | score 13.655 | https://www.instagram.com/reel/DcenqiLBSUV/
 
 ## 🧊 Weakest (rework or retire these)
@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.6s  ·  bot: 3.0s
-- avg reach — yours: 715.5  ·  bot: 136.9
+- avg reach — yours: 715.7  ·  bot: 136.9
 - avg saves — yours: 2.6  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
