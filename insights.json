@@ -511,6 +511,24 @@
   "trial": false
  },
  {
+  "at": "20260831T192756+0000",
+  "type": null,
+  "mpt": "REELS",
+  "post_id": "18154079995512522",
+  "bot": false,
+  "permalink": "https://www.instagram.com/reel/Dct1jAnT_mx/",
+  "reach": 0,
+  "likes": 0,
+  "comments": 0,
+  "shares": 0,
+  "saved": 0,
+  "total_interactions": 0,
+  "ig_reels_avg_watch_time": 0,
+  "ig_reels_video_view_total_time": 0,
+  "views": 28,
+  "trial": false
+ },
+ {
   "at": "20260829T184203+0000",
   "type": null,
   "mpt": "REELS",
@@ -535,14 +553,14 @@
   "post_id": "17966252589167582",
   "bot": false,
   "permalink": "https://www.instagram.com/reel/Dcl9h1YBvVf/",
-  "reach": 3678,
+  "reach": 3684,
   "likes": 118,
   "comments": 0,
   "shares": 40,
   "saved": 11,
   "total_interactions": 170,
-  "ig_reels_avg_watch_time": 14670,
-  "ig_reels_video_view_total_time": 55364613,
+  "ig_reels_avg_watch_time": 14667,
+  "ig_reels_video_view_total_time": 55369643,
   "views": 4827,
   "trial": false
  },
@@ -940,24 +958,6 @@
   "ig_reels_avg_watch_time": 4630,
   "ig_reels_video_view_total_time": 1074274,
   "views": 329,
-  "trial": false
- },
- {
-  "at": "20260825T213820+0000",
-  "type": null,
-  "mpt": "REELS",
-  "post_id": "18113098393800592",
-  "bot": false,
-  "permalink": "https://www.instagram.com/reel/DcenqiLBSUV/",
-  "reach": 807,
-  "likes": 43,
-  "comments": 0,
-  "shares": 2,
-  "saved": 3,
-  "total_interactions": 48,
-  "ig_reels_avg_watch_time": 5848,
-  "ig_reels_video_view_total_time": 4678560,
-  "views": 927,
   "trial": false
  }
 ]
