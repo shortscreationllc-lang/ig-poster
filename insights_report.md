@@ -6,10 +6,10 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260903 | REELS | reach 343 | views 401 | 5.4s watch | saves 3 shares 4 | eng 13.1% | score 24.635 | https://www.instagram.com/reel/Dc1vSOohnaR/
-- 👤 20260903 | REELS | reach 1115 | views 1411 | 5.7s watch | saves 12 shares 17 | eng 10.1% | score 23.66 | https://www.instagram.com/reel/Dc1aNv6hhrr/
-- 👤 20260904 | REELS | reach 1586 | views 2504 | 6.7s watch | saves 13 shares 11 | eng 7.4% | score 18.637 | https://www.instagram.com/reel/Dc3zCZfBOsy/
-- 👤 20260902 | REELS | reach 555 | views 930 | 10.0s watch | saves 0 shares 1 | eng 8.1% | score 18.617 | https://www.instagram.com/reel/DczGrjdzYLI/
+- 👤 20260903 | REELS | reach 344 | views 401 | 5.4s watch | saves 3 shares 4 | eng 13.1% | score 24.569 | https://www.instagram.com/reel/Dc1vSOohnaR/
+- 👤 20260903 | REELS | reach 1115 | views 1414 | 5.7s watch | saves 12 shares 17 | eng 10.1% | score 23.66 | https://www.instagram.com/reel/Dc1aNv6hhrr/
+- 👤 20260902 | REELS | reach 555 | views 931 | 10.0s watch | saves 0 shares 1 | eng 8.1% | score 18.691 | https://www.instagram.com/reel/DczGrjdzYLI/
+- 👤 20260904 | REELS | reach 1588 | views 2509 | 6.7s watch | saves 13 shares 11 | eng 7.4% | score 18.618 | https://www.instagram.com/reel/Dc3zCZfBOsy/
 - 👤 20260903 | REELS | reach 679 | views 945 | 5.9s watch | saves 3 shares 3 | eng 7.1% | score 15.655 | https://www.instagram.com/reel/Dc1tVzRhmGu/
 - 👤 20260904 | REELS | reach 452 | views 512 | 5.1s watch | saves 2 shares 0 | eng 6.2% | score 12.578 | https://www.instagram.com/reel/Dc30pyYh49D/
 - 👤 20260904 | REELS | reach 173 | views 200 | 4.9s watch | saves 2 shares 0 | eng 4.0% | score 12.454 | https://www.instagram.com/reel/Dc3w03vB9zf/
@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.0s  ·  bot: 3.0s
-- avg reach — yours: 454.0  ·  bot: 137.0
+- avg reach — yours: 454.2  ·  bot: 137.0
 - avg saves — yours: 1.9  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
