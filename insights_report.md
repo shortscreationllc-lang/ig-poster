@@ -10,10 +10,10 @@
 - 👤 20260908 | REELS | reach 1050 | views 1316 | 6.1s watch | saves 9 shares 7 | eng 8.7% | score 19.327 | https://www.instagram.com/reel/DdB5W9NBl1O/
 - 👤 20260908 | REELS | reach 587 | views 837 | 6.3s watch | saves 8 shares 2 | eng 7.7% | score 19.048 | https://www.instagram.com/reel/DdB4INXBx9T/
 - 👤 20260904 | REELS | reach 1602 | views 2524 | 6.7s watch | saves 13 shares 11 | eng 7.4% | score 18.641 | https://www.instagram.com/reel/Dc3zCZfBOsy/
-- 👤 20260911 | REELS | reach 119 | views 179 | 4.7s watch | saves 2 shares 0 | eng 6.7% | score 16.435 | https://www.instagram.com/reel/DdJtMwDBTnS/
-- 👤 20260911 | REELS | reach 116 | views 163 | 4.2s watch | saves 1 shares 0 | eng 9.5% | score 16.266 | https://www.instagram.com/reel/DdJsl4UBAhY/
-- 👤 20260911 | REELS | reach 152 | views 213 | 7.0s watch | saves 2 shares 0 | eng 5.3% | score 16.249 | https://www.instagram.com/reel/DdJrzAFBL57/
-- 👤 20260911 | REELS | reach 141 | views 201 | 4.7s watch | saves 1 shares 0 | eng 8.5% | score 15.372 | https://www.instagram.com/reel/DdJt1HxBCU-/
+- 👤 20260911 | REELS | reach 163 | views 217 | 7.1s watch | saves 2 shares 0 | eng 5.5% | score 16.269 | https://www.instagram.com/reel/DdJrzAFBL57/
+- 👤 20260911 | REELS | reach 121 | views 180 | 4.5s watch | saves 1 shares 0 | eng 9.1% | score 16.024 | https://www.instagram.com/reel/DdJsl4UBAhY/
+- 👤 20260911 | REELS | reach 127 | views 182 | 4.8s watch | saves 2 shares 0 | eng 6.3% | score 15.834 | https://www.instagram.com/reel/DdJtMwDBTnS/
+- 👤 20260911 | REELS | reach 146 | views 209 | 4.8s watch | saves 1 shares 0 | eng 8.2% | score 15.066 | https://www.instagram.com/reel/DdJt1HxBCU-/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.3s  ·  bot: 3.0s
-- avg reach — yours: 414.2  ·  bot: 137.0
+- avg reach — yours: 418.2  ·  bot: 137.0
 - avg saves — yours: 2.1  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
