@@ -13,7 +13,7 @@
 - 👤 20260911 | REELS | reach 396 | views 537 | 5.2s watch | saves 6 shares 1 | eng 8.1% | score 18.543 | https://www.instagram.com/reel/DdJsl4UBAhY/
 - 👤 20260911 | REELS | reach 834 | views 1670 | 8.0s watch | saves 4 shares 4 | eng 5.6% | score 16.555 | https://www.instagram.com/reel/DdJs08GBat6/
 - 👤 20260911 | REELS | reach 1148 | views 1566 | 5.0s watch | saves 8 shares 5 | eng 7.4% | score 15.805 | https://www.instagram.com/reel/DdJtMwDBTnS/
-- 👤 20260912 | REELS | reach 450 | views 525 | 4.3s watch | saves 2 shares 3 | eng 7.6% | score 15.19 | https://www.instagram.com/reel/DdMJiMIT5eU/
+- 👤 20260912 | REELS | reach 1242 | views 2201 | 6.7s watch | saves 7 shares 6 | eng 5.3% | score 15.183 | https://www.instagram.com/reel/DdMICGLh0NU/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.9s  ·  bot: 3.0s
-- avg reach — yours: 927.8  ·  bot: 137.0
+- avg reach — yours: 927.9  ·  bot: 137.0
 - avg saves — yours: 3.6  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
