@@ -6,11 +6,11 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260911 | REELS | reach 398 | views 540 | 5.2s watch | saves 7 shares 1 | eng 8.3% | score 19.524 | https://www.instagram.com/reel/DdJsl4UBAhY/
+- 👤 20260911 | REELS | reach 398 | views 542 | 5.2s watch | saves 7 shares 1 | eng 8.3% | score 19.539 | https://www.instagram.com/reel/DdJsl4UBAhY/
 - 👤 20260908 | REELS | reach 1054 | views 1318 | 6.1s watch | saves 9 shares 7 | eng 8.6% | score 19.27 | https://www.instagram.com/reel/DdB5W9NBl1O/
-- 👤 20260911 | REELS | reach 1400 | views 1871 | 7.2s watch | saves 12 shares 7 | eng 7.9% | score 19.175 | https://www.instagram.com/reel/DdJt1HxBCU-/
+- 👤 20260911 | REELS | reach 1400 | views 1871 | 7.2s watch | saves 12 shares 7 | eng 7.9% | score 19.17 | https://www.instagram.com/reel/DdJt1HxBCU-/
 - 👤 20260908 | REELS | reach 587 | views 838 | 6.3s watch | saves 8 shares 2 | eng 7.7% | score 19.038 | https://www.instagram.com/reel/DdB4INXBx9T/
-- 👤 20260912 | REELS | reach 1362 | views 1603 | 5.5s watch | saves 7 shares 14 | eng 8.3% | score 18.433 | https://www.instagram.com/reel/DdMImJmhTUS/
+- 👤 20260912 | REELS | reach 1362 | views 1603 | 5.5s watch | saves 7 shares 14 | eng 8.3% | score 18.458 | https://www.instagram.com/reel/DdMImJmhTUS/
 - 👤 20260911 | REELS | reach 834 | views 1670 | 8.0s watch | saves 4 shares 4 | eng 5.6% | score 16.555 | https://www.instagram.com/reel/DdJs08GBat6/
 - 👤 20260911 | REELS | reach 1152 | views 1570 | 5.0s watch | saves 8 shares 5 | eng 7.4% | score 15.766 | https://www.instagram.com/reel/DdJtMwDBTnS/
 - 👤 20260912 | REELS | reach 1252 | views 2217 | 6.7s watch | saves 7 shares 6 | eng 5.3% | score 15.123 | https://www.instagram.com/reel/DdMICGLh0NU/
@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.9s  ·  bot: 3.0s
-- avg reach — yours: 933.9  ·  bot: 137.0
+- avg reach — yours: 934.0  ·  bot: 137.0
 - avg saves — yours: 3.6  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
