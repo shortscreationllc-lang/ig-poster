@@ -6,14 +6,14 @@
 **Tracked:** 55 posts (15 auto-posted 🤖, 15 trial 🧪, 25 your own 👤)  ·  learning from 29 tagged posts
 
 ## 🏆 Top performers (by save/share/watch score)
-- 👤 20260911 | REELS | reach 1400 | views 1880 | 7.2s watch | saves 13 shares 8 | eng 8.2% | score 19.903 | https://www.instagram.com/reel/DdJt1HxBCU-/
+- 👤 20260911 | REELS | reach 1404 | views 1886 | 7.2s watch | saves 13 shares 8 | eng 8.2% | score 19.847 | https://www.instagram.com/reel/DdJt1HxBCU-/
+- 👤 20260914 | REELS | reach 284 | views 379 | 10.7s watch | saves 2 shares 1 | eng 5.6% | score 19.514 | https://www.instagram.com/reel/DdSAiGOhqwo/
 - 👤 20260912 | REELS | reach 1362 | views 1604 | 5.5s watch | saves 7 shares 14 | eng 8.3% | score 18.454 | https://www.instagram.com/reel/DdMImJmhTUS/
-- 👤 20260914 | REELS | reach 250 | views 338 | 10.9s watch | saves 2 shares 1 | eng 3.6% | score 18.125 | https://www.instagram.com/reel/DdSAiGOhqwo/
-- 👤 20260914 | REELS | reach 1339 | views 2568 | 9.2s watch | saves 10 shares 7 | eng 3.3% | score 16.313 | https://www.instagram.com/reel/DdSLnkDBWAn/
-- 👤 20260914 | REELS | reach 385 | views 444 | 5.4s watch | saves 5 shares 0 | eng 6.8% | score 16.078 | https://www.instagram.com/reel/DdSLJZcBvdV/
-- 👤 20260914 | REELS | reach 1202 | views 1467 | 8.3s watch | saves 7 shares 4 | eng 4.7% | score 15.709 | https://www.instagram.com/reel/DdSKqqkBIay/
-- 👤 20260912 | REELS | reach 1252 | views 2217 | 6.7s watch | saves 7 shares 6 | eng 5.3% | score 15.123 | https://www.instagram.com/reel/DdMICGLh0NU/
-- 👤 20260912 | REELS | reach 1631 | views 2551 | 5.7s watch | saves 2 shares 11 | eng 6.4% | score 14.497 | https://www.instagram.com/reel/DdMJxJPBwcO/
+- 👤 20260914 | REELS | reach 518 | views 598 | 5.6s watch | saves 6 shares 2 | eng 6.9% | score 17.156 | https://www.instagram.com/reel/DdSLJZcBvdV/
+- 👤 20260914 | REELS | reach 1403 | views 2671 | 9.2s watch | saves 11 shares 7 | eng 3.5% | score 16.547 | https://www.instagram.com/reel/DdSLnkDBWAn/
+- 👤 20260914 | REELS | reach 1303 | views 1582 | 8.3s watch | saves 7 shares 4 | eng 4.5% | score 15.301 | https://www.instagram.com/reel/DdSKqqkBIay/
+- 👤 20260912 | REELS | reach 1255 | views 2220 | 6.7s watch | saves 7 shares 6 | eng 5.3% | score 15.094 | https://www.instagram.com/reel/DdMICGLh0NU/
+- 👤 20260912 | REELS | reach 1638 | views 2562 | 5.7s watch | saves 2 shares 11 | eng 6.4% | score 14.456 | https://www.instagram.com/reel/DdMJxJPBwcO/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
@@ -22,8 +22,8 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 6.0s  ·  bot: 3.0s
-- avg reach — yours: 773.9  ·  bot: 137.0
-- avg saves — yours: 3.2  ·  bot: 0.3
+- avg reach — yours: 794.3  ·  bot: 137.0
+- avg saves — yours: 3.3  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
 _overall avg score: 5.075 · weights pull toward neutral until a tag has 3+ posts_
