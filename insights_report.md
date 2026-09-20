@@ -13,7 +13,7 @@
 - 👤 20260914 | REELS | reach 540 | views 623 | 5.5s watch | saves 6 shares 2 | eng 6.7% | score 16.657 | https://www.instagram.com/reel/DdSLJZcBvdV/
 - 👤 20260914 | REELS | reach 1414 | views 2692 | 9.2s watch | saves 11 shares 7 | eng 3.5% | score 16.487 | https://www.instagram.com/reel/DdSLnkDBWAn/
 - 👤 20260914 | REELS | reach 1309 | views 1602 | 8.3s watch | saves 7 shares 4 | eng 4.4% | score 15.237 | https://www.instagram.com/reel/DdSKqqkBIay/
-- 👤 20260919 | REELS | reach 299 | views 411 | 7.5s watch | saves 2 shares 0 | eng 5.4% | score 14.815 | https://www.instagram.com/reel/DdenfQEBUlR/
+- 👤 20260919 | REELS | reach 300 | views 411 | 7.4s watch | saves 2 shares 0 | eng 5.3% | score 14.769 | https://www.instagram.com/reel/DdenfQEBUlR/
 
 ## 🧊 Weakest (rework or retire these)
 - 🧪 20260630 | reel | reach 100 | views 114 | 2.0s watch | saves 0 shares 0 | eng 0.0% | score 1.992 | https://www.instagram.com/reel/DaOTij3l6kV/
