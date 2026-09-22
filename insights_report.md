@@ -22,7 +22,7 @@
 
 ## 👤 vs 🤖 benchmark (reels)
 - avg watch — yours: 5.4s  ·  bot: 3.0s
-- avg reach — yours: 645.6  ·  bot: 137.0
+- avg reach — yours: 645.7  ·  bot: 137.0
 - avg saves — yours: 3.6  ·  bot: 0.3
 
 ## 📈 What the loop is learning (weights → what we make more of)
