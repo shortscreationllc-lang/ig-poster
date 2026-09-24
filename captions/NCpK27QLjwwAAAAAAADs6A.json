@@ -1,12 +1,22 @@
 {
-  "video": "Video Jul 29 2026, 12 50 45.mp4",
-  "caption": "Straight from the client.\n\nRegular shirt, quick shoot, multiple looks and backgrounds without changing a thing.\n\nIf you need new headshots for your business, this is how easy it is.\n\nDM me HEADSHOTS and I'll send you the details.",
+  "caption": "Came to the headshot shoot in a gym shirt. Left with multiple outfits.\n\nAI backgrounds and outfit changes, no dressing up, done fast.\n\nComment HEADSHOTS and I'll send you the details.",
   "hashtags": [
-    "#headshots",
-    "#miamiheadshots",
+    "#smallbusiness",
     "#personalbranding",
-    "#businessheadshots",
-    "#clientreview"
+    "#miamibusiness",
+    "#businessowner",
+    "#headshots"
   ],
-  "written_by": "Claude, 2026-09-24, from the HQ transcript"
+  "cta_type": "comment",
+  "cta_keyword": "HEADSHOTS",
+  "search_keywords": [
+    "headshot shoot",
+    "AI headshots",
+    "business headshots"
+  ],
+  "why": "In this client testimonial about a fast headshot shoot, the client wore a gym shirt and AI added the backgrounds and outfit changes, so the HEADSHOTS offer fits.",
+  "video": "Video Jul 29 2026, 12 50 45.mp4",
+  "written_by": "claude-opus-5-5 via autopost_captions.py",
+  "written_at": "2026-09-24T18:32:06",
+  "open_problems": []
 }

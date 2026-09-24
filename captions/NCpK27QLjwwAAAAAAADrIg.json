@@ -1,12 +1,22 @@
 {
-  "video": "C9203.mp4",
-  "caption": "Why I build my personal brand, not just my business.\n\nThere are hundreds of companies that do what we do. People come to me because of how I treat them.\n\nDo the same with your content. Show the owner. Show the clients. Make characters out of your employees.\n\nSomeone told me yesterday, \"I don't trust a lot of people, but I trust you.\" That's the whole point.\n\nDM me REAL and I'll send you the 3 videos every owner should film with their own face.",
+  "caption": "I don't sell anymore. My personal brand does the selling for me.\n\nStop posting only your work. Show the owner, the clients, the employees. Make characters out of your team.\n\nComment IDEAS and I'll send you 10 video ideas you can film this week.",
   "hashtags": [
-    "#personalbrand",
+    "#smallbusiness",
+    "#instagramtips",
+    "#miamibusiness",
     "#businessowner",
-    "#brandbuilding",
-    "#contentmarketing",
-    "#entrepreneurlife"
+    "#personalbrand"
   ],
-  "written_by": "Claude, 2026-09-24, from the HQ transcript"
+  "cta_type": "comment",
+  "cta_keyword": "IDEAS",
+  "search_keywords": [
+    "personal brand for business owners",
+    "content for business owners",
+    "personal brand"
+  ],
+  "why": "Opens with Joseph's own claim that he doesn't have to sell anymore, then gives the practical tip from the video (show the owner and make characters out of employees), and IDEAS fits because the video teaches business owners what to post.",
+  "video": "C9203.mp4",
+  "written_by": "claude-opus-5-5 via autopost_captions.py",
+  "written_at": "2026-09-24T18:31:48",
+  "open_problems": []
 }

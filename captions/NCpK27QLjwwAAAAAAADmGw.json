@@ -1,12 +1,22 @@
 {
-  "video": "IMG_3581.mp4",
-  "caption": "How I made my first $100 on YouTube.\n\nWhen Shorts came out, you could post 100 a day. I had nothing else to do, so I did.\n\nAbout a thousand views each. Around 100K views a day. Ten days later, AdSense paid me my first $100.\n\nNot from a client. From YouTube.\n\nVolume got me here.\n\nComment VOLUME if you're posting every day right now.",
+  "caption": "I made my first $100 on YouTube by posting 100 Shorts a day.\n\nNot from a client. YouTube paid me. Volume is what got me there.\n\nComment IDEAS and I'll send you 10 video ideas you can film this week.",
   "hashtags": [
+    "#smallbusiness",
     "#youtubeshorts",
-    "#contentcreator",
-    "#postvolume",
-    "#creatorstory",
-    "#entrepreneur"
+    "#miamibusiness",
+    "#businessowner",
+    "#postingconsistency"
   ],
-  "written_by": "Claude, 2026-09-24, from the HQ transcript"
+  "cta_type": "comment",
+  "cta_keyword": "IDEAS",
+  "search_keywords": [
+    "YouTube Shorts",
+    "first $100 on YouTube",
+    "posting volume"
+  ],
+  "why": "The first line is a statement built on the only numbers Joseph says ($100 and 100 Shorts a day), and the IDEAS offer fits a video that teaches volume.",
+  "video": "IMG_3581.mp4",
+  "written_by": "claude-opus-5-5 via autopost_captions.py",
+  "written_at": "2026-09-24T18:30:51",
+  "open_problems": []
 }

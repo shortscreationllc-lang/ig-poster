@@ -1,12 +1,21 @@
 {
-  "video": "C9208.mp4",
-  "caption": "Your videos work like a casino.\n\nThe dopamine hits while people search for something good. It hits again when they find it.\n\nSo every video has to give them something. A lesson, a laugh, a feeling they want again.\n\nThat's why people follow you.\n\nComment VALUE and I'll tell you what your next video should give people.",
+  "caption": "Casinos and content for business owners work the same way. It's all dopamine.\n\nPost value based content so people feel rewarded when your video finds them. That feeling is why they follow.\n\nComment IDEAS and I'll send you 10 video ideas you can film this week.",
   "hashtags": [
-    "#contentcreation",
-    "#socialmediamarketing",
-    "#smallbusinessowner",
-    "#reels",
+    "#smallbusiness",
+    "#instagramtips",
+    "#miamibusiness",
+    "#businessowner",
     "#contentstrategy"
   ],
-  "written_by": "Claude, 2026-09-24, from the HQ transcript"
+  "cta_type": "comment",
+  "cta_keyword": "IDEAS",
+  "search_keywords": [
+    "content for business owners",
+    "value based content"
+  ],
+  "why": "It's a teaching video on why viewers who feel rewarded end up following, so it opens on Joseph's casino claim and uses the IDEAS offer.",
+  "video": "C9208.mp4",
+  "written_by": "claude-opus-5-5 via autopost_captions.py",
+  "written_at": "2026-09-24T18:32:19",
+  "open_problems": []
 }

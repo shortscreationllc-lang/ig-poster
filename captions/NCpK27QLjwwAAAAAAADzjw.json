@@ -1,12 +1,22 @@
 {
-  "video": "C9214 (1).mp4",
-  "caption": "You don't need a camera like this to make content.\n\nYou need your phone.\n\nYour business needs to be out there. Social media is only going to keep growing, and you have no idea how many people you can reach.\n\nJust record and post.\n\nComment PHONE if everything you post comes from your phone.",
+  "caption": "You don't need an expensive camera to make content for your business.\n\nIf you have a phone, just record. Get yourself out there on social media.\n\nComment IDEAS and I'll send you 10 video ideas you can film this week.",
   "hashtags": [
+    "#smallbusiness",
     "#contentcreation",
-    "#iphonevideo",
-    "#smallbusinessowner",
-    "#socialmedia",
-    "#postconsistently"
+    "#miamibusiness",
+    "#businessowner",
+    "#phonevideo"
   ],
-  "written_by": "Claude, 2026-09-24, from the HQ transcript"
+  "cta_type": "comment",
+  "cta_keyword": "IDEAS",
+  "search_keywords": [
+    "content for your business",
+    "expensive camera",
+    "social media"
+  ],
+  "why": "Joseph's point is that business owners should start posting with what they already have, so the caption opens with that statement and uses the IDEAS offer to give them something to film.",
+  "video": "C9214 (1).mp4",
+  "written_by": "claude-opus-5-5 via autopost_captions.py",
+  "written_at": "2026-09-24T18:33:02",
+  "open_problems": []
 }

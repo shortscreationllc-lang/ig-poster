@@ -1,12 +1,21 @@
 {
-  "video": "C9204.mp4",
-  "caption": "Content is an evolution.\n\nEvery video I make, for me and for my clients, has a base. The minimum we deliver.\n\nThen we try to beat it. If it performs, that's the new base. If it doesn't, we go back and keep building.\n\nThat's how MrBeast did it. Go look at my first video compared to now.\n\nFollow if you want to watch this get better every week.",
+  "caption": "Content for your business is an evolution. Every video has to beat the last one.\n\nSet a minimum you always deliver. If something new performs, it becomes the new base. If not, cut it.\n\nComment IDEAS and I'll send you 10 video ideas you can film this week.",
   "hashtags": [
-    "#contentcreator",
-    "#mrbeast",
-    "#contentstrategy",
-    "#growthmindset",
-    "#reels"
+    "#smallbusiness",
+    "#instagramtips",
+    "#miamibusiness",
+    "#businessowner",
+    "#contentstrategy"
   ],
-  "written_by": "Claude, 2026-09-24, from the HQ transcript"
+  "cta_type": "comment",
+  "cta_keyword": "IDEAS",
+  "search_keywords": [
+    "content for your business",
+    "content strategy for business owners"
+  ],
+  "why": "It opens with Joseph's main claim that content is an evolution, then gives his base-and-build method in plain words. IDEAS fits because this is a content strategy teaching video.",
+  "video": "C9204.mp4",
+  "written_by": "claude-opus-5-5 via autopost_captions.py",
+  "written_at": "2026-09-24T18:31:35",
+  "open_problems": []
 }

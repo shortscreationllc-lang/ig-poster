@@ -1,12 +1,22 @@
 {
-  "video": "C9215.mp4",
-  "caption": "You don't need a studio.\n\nYou don't need all this lighting. Sunlight and a camera. That's it.\n\nPull out your phone and start learning what works for you.\n\nWant to learn to make it yourself? I teach that in my Skool community. Want us to make it for you? We do that too.\n\nDM me START and tell me which one.",
+  "caption": "You don't need a studio or fancy lighting to make content for your business.\n\nSunlight and your phone. That's it. Pull it out and start recording.\n\nComment IDEAS and I'll send you 10 video ideas you can film this week.",
   "hashtags": [
-    "#contentcreation",
-    "#naturallight",
-    "#smallbusinessowner",
-    "#skoolcommunity",
-    "#videotips"
+    "#smallbusiness",
+    "#contentcreationtips",
+    "#miamibusiness",
+    "#businessowner",
+    "#phonevideo"
   ],
-  "written_by": "Claude, 2026-09-24, from the HQ transcript"
+  "cta_type": "comment",
+  "cta_keyword": "IDEAS",
+  "search_keywords": [
+    "content for your business",
+    "make content with your phone",
+    "no studio lighting"
+  ],
+  "why": "Joseph's point is that business owners can start with sunlight and a phone, so the IDEAS offer of 10 video ideas to film this week fits well.",
+  "video": "C9215.mp4",
+  "written_by": "claude-opus-5-5 via autopost_captions.py",
+  "written_at": "2026-09-24T18:32:49",
+  "open_problems": []
 }

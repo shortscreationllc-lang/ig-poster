@@ -1,12 +1,22 @@
 {
-  "video": "C9211.mp4",
-  "caption": "You don't have to be the best in your industry.\n\nYou have to be the most known.\n\nMarketing? You think Gary Vee. Self development? Tony Robbins. Are there people better than them? Probably. Nobody knows who they are.\n\nIf you're not posting, nobody will ever see how good you are.\n\nDM me AUDIT and I'll tell you the first 3 videos your business should post.",
+  "caption": "You don't need to be the best in your industry. You need to be the most known.\n\nWithout a social media presence, nobody sees how good you are.\n\nSend this to a business owner who's great at what they do but nobody knows it.",
   "hashtags": [
-    "#personalbrand",
+    "#smallbusiness",
+    "#socialmediamarketing",
+    "#miamibusiness",
     "#businessowner",
-    "#marketingtips",
-    "#contentmarketing",
-    "#entrepreneur"
+    "#personalbrand"
   ],
-  "written_by": "Claude, 2026-09-24, from the HQ transcript"
+  "cta_type": "share",
+  "cta_keyword": "",
+  "search_keywords": [
+    "social media presence",
+    "personal brand for business owners",
+    "most known in your industry"
+  ],
+  "why": "This is an opinion video with no offer that fits, so it opens with Joseph's main claim as a statement and ends with a share CTA that gives a reason.",
+  "video": "C9211.mp4",
+  "written_by": "claude-opus-5-5 via autopost_captions.py",
+  "written_at": "2026-09-24T18:32:35",
+  "open_problems": []
 }
