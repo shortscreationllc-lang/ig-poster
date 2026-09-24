@@ -1,0 +1,12 @@
+{
+  "mode": "practice",
+  "practice_source_folder": "/7. Personal Videos/3. Final Edited Video",
+  "queue_folder": "/7. Personal Videos/5. Auto-Post Queue",
+  "posted_folder": "/7. Personal Videos/4. Posted Content",
+  "every_n_days": 2,
+  "post_hour_miami": 16,
+  "max_mb": 300,
+  "cover_is_last_frame": false,
+  "cover_frame_from_end_ms": 150,
+  "temp_upload_path": "/7. Personal Videos/_autopost-temp/shrunk-for-instagram.mp4"
+}
