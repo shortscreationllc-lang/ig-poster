@@ -89,6 +89,18 @@ class Dropbox:
         vids = [e for e in entries if e[".tag"] == "file" and e["name"].lower().endswith(VIDEO_EXT)]
         return sorted(vids, key=lambda e: e.get("server_modified", ""))
 
+    def cover_for(self, video, folder):
+        """Joseph's thumbnail: an image in the same folder with the video's name
+        (C9208.jpg, or "C9208 cover.jpg")."""
+        stem = video["name"].rsplit(".", 1)[0].lower()
+        res = self.rpc("files/list_folder", {"path": folder})
+        for e in res["entries"]:
+            n = e["name"].lower()
+            if e[".tag"] == "file" and n.endswith((".jpg", ".jpeg", ".png")) and \
+                    n.rsplit(".", 1)[0] in (stem, f"{stem} cover", f"{stem}_cover", f"{stem}-cover"):
+                return e
+        return None
+
     def temp_link(self, path):
         link = self.rpc("files/get_temporary_link", {"path": path})["link"]
         mask(link)
@@ -161,8 +173,10 @@ def load_caption(entry):
         problems.append("caption has a dash (Joseph's rule: none)")
     if len(full) > 2200:
         problems.append(f"caption is {len(full)} chars (IG max 2,200)")
-    if len(c.get("hashtags", [])) > 30:
-        problems.append("more than 30 hashtags")
+    cap_rules = json.loads(CONFIG.read_text()).get("captions", {})
+    if len(c.get("hashtags", [])) > cap_rules.get("max_hashtags", 5):
+        problems.append(f"more than {cap_rules.get('max_hashtags', 5)} hashtags")
+    problems += [f"caption writer flagged: {p}" for p in c.get("open_problems", [])]
     return {"text": full, "problems": problems, "file": f.name}
 
 
@@ -180,10 +194,12 @@ def ig_check(user_id, token):
     return me.get("username", "?")
 
 
-def ig_publish_reel(user_id, token, video_url, caption, thumb_offset_ms=None):
+def ig_publish_reel(user_id, token, video_url, caption, thumb_offset_ms=None, cover_url=None):
     params = {"media_type": "REELS", "video_url": video_url, "caption": caption,
               "share_to_feed": "true", "access_token": token}
-    if thumb_offset_ms is not None:
+    if cover_url:
+        params["cover_url"] = cover_url      # his designed thumbnail wins over any frame
+    elif thumb_offset_ms is not None:
         params["thumb_offset"] = str(int(thumb_offset_ms))
     cid = ig_post(f"{user_id}/media", params).get("id")
     if not cid:
@@ -323,10 +339,19 @@ def run(mode, force, dry):
         else:
             problems += cap["problems"]
             notes.append("- Caption:\n\n" + "\n".join("  > " + l for l in cap["text"].splitlines()))
-        thumb = None
-        if cfg.get("cover_is_last_frame") and dur_ms:
+        thumb, cover_url = None, None
+        cover = dbx.cover_for(video, folder)
+        if cover:
+            cover_url = dbx.temp_link(cover["path_display"])
+            ci = probe(cover_url)
+            notes.append(f"- Cover: your thumbnail `{cover['name']}` ({ci.get('width')}x{ci.get('height')})")
+            if ci.get("width") and ci.get("height") and abs(ci["width"] / ci["height"] - 9 / 16) > 0.02:
+                notes.append("- Cover note: not 9:16, Instagram will crop it (design at 1080x1920)")
+        elif cfg.get("cover_is_last_frame") and dur_ms:
             thumb = max(0, dur_ms - cfg.get("cover_frame_from_end_ms", 150))
-        notes.append(f"- Cover: {'last frame at ' + str(round(thumb / 1000, 2)) + ' s' if thumb else 'Instagram default (thumbnail frame not in the edits yet)'}")
+            notes.append(f"- Cover: last frame at {round(thumb / 1000, 2)} s")
+        else:
+            notes.append("- Cover: Instagram default frame (no thumbnail image next to this video)")
 
     user_id = os.getenv("IG_USER_ID", "").strip()
     token = os.getenv("IG_ACCESS_TOKEN", "").strip()
@@ -362,7 +387,14 @@ def run(mode, force, dry):
         if oversize:
             link, new_mb = shrink(dbx, link, cfg["temp_upload_path"])
             notes.append(f"- Shrunk to {new_mb} MB")
-        media = ig_publish_reel(user_id, token, link, cap["text"], thumb)
+        try:
+            media = ig_publish_reel(user_id, token, link, cap["text"], thumb, cover_url)
+        except Exception as e:
+            if not cover_url:
+                raise
+            # a thumbnail problem must never block the post: retry once without it
+            notes.append(f"- Cover rejected by Instagram ({str(e)[:80]}), posted with the default frame")
+            media = ig_publish_reel(user_id, token, link, cap["text"], thumb)
     except Exception as e:
         lines = [f"## {stamp} · live · FAILED"] + notes + [f"- Error: {str(e)[:300]}"]
         log_entry(lines)
