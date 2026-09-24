@@ -81,25 +81,47 @@ class Dropbox:
                          {"Authorization": f"Bearer {self.token}", "Content-Type": "application/json"})
 
     def videos(self, folder):
-        res = self.rpc("files/list_folder", {"path": folder, "include_media_info": True})
+        """Posts waiting in a folder, oldest first. Two shapes work:
+          - a post folder:  <folder>/<any name>/  holding one video + one image (the cover)
+          - a loose video:  <folder>/C9208.mp4  (cover = C9208.jpg / "C9208 cover.jpg" beside it)
+        Each video entry gets "_post_folder" (or None) and "_cover" (image entry or None)."""
+        try:
+            res = self.rpc("files/list_folder", {"path": folder, "recursive": True, "include_media_info": True})
+        except RuntimeError as e:
+            if "not_found" in str(e):
+                return []                                      # queue folder not created yet
+            raise
         entries = res["entries"]
         while res.get("has_more"):
             res = self.rpc("files/list_folder/continue", {"cursor": res["cursor"]})
             entries += res["entries"]
-        vids = [e for e in entries if e[".tag"] == "file" and e["name"].lower().endswith(VIDEO_EXT)]
-        return sorted(vids, key=lambda e: e.get("server_modified", ""))
-
-    def cover_for(self, video, folder):
-        """Joseph's thumbnail: an image in the same folder with the video's name
-        (C9208.jpg, or "C9208 cover.jpg")."""
-        stem = video["name"].rsplit(".", 1)[0].lower()
-        res = self.rpc("files/list_folder", {"path": folder})
-        for e in res["entries"]:
-            n = e["name"].lower()
-            if e[".tag"] == "file" and n.endswith((".jpg", ".jpeg", ".png")) and \
-                    n.rsplit(".", 1)[0] in (stem, f"{stem} cover", f"{stem}_cover", f"{stem}-cover"):
-                return e
-        return None
+        root = folder.rstrip("/").lower()
+        files = [e for e in entries if e[".tag"] == "file"]
+        is_img = lambda e: e["name"].lower().endswith((".jpg", ".jpeg", ".png"))
+        parent = lambda e: e["path_lower"].rsplit("/", 1)[0]
+        out = []
+        for v in files:
+            if not v["name"].lower().endswith(VIDEO_EXT):
+                continue
+            par = parent(v)
+            if par == root:
+                stem = v["name"].rsplit(".", 1)[0].lower()
+                names = (stem, f"{stem} cover", f"{stem}_cover", f"{stem}-cover")
+                cover = next((e for e in files if parent(e) == root and is_img(e)
+                              and e["name"].lower().rsplit(".", 1)[0] in names), None)
+                v["_post_folder"] = None
+            elif par.count("/") == root.count("/") + 1:      # one level down = a post folder
+                siblings = [e for e in files if parent(e) == par]
+                if sum(e["name"].lower().endswith(VIDEO_EXT) for e in siblings) > 1:
+                    continue                                   # ambiguous folder: skip, reported below
+                cover = next((e for e in siblings if is_img(e)), None)
+                v["_post_folder"] = next((e["path_display"] for e in entries
+                                          if e[".tag"] == "folder" and e["path_lower"] == par), par)
+            else:
+                continue
+            v["_cover"] = cover
+            out.append(v)
+        return sorted(out, key=lambda e: e.get("server_modified", ""))
 
     def temp_link(self, path):
         link = self.rpc("files/get_temporary_link", {"path": path})["link"]
@@ -303,9 +325,12 @@ def run(mode, force, dry):
         return 0
 
     problems, notes = [], []
-    folder = cfg["practice_source_folder"] if mode == "practice" else cfg["queue_folder"]
     dbx = Dropbox()
+    folder = cfg["queue_folder"]
     videos = dbx.videos(folder)
+    if mode == "practice" and not videos:
+        folder = cfg["practice_source_folder"]           # nothing queued yet: rehearse on Finals
+        videos = dbx.videos(folder)
     if mode == "practice":
         done = set(state.get("rehearsed", []))
         if videos and all(v["id"] in done for v in videos):
@@ -340,7 +365,9 @@ def run(mode, force, dry):
             problems += cap["problems"]
             notes.append("- Caption:\n\n" + "\n".join("  > " + l for l in cap["text"].splitlines()))
         thumb, cover_url = None, None
-        cover = dbx.cover_for(video, folder)
+        cover = video.get("_cover")
+        if video.get("_post_folder"):
+            notes.insert(0, f"- Post folder: `{video['_post_folder']}`")
         if cover:
             cover_url = dbx.temp_link(cover["path_display"])
             ci = probe(cover_url)
@@ -402,7 +429,7 @@ def run(mode, force, dry):
         return 1
     moved_to = None
     try:
-        moved_to = dbx.move(video["path_display"], cfg["posted_folder"])
+        moved_to = dbx.move(video.get("_post_folder") or video["path_display"], cfg["posted_folder"])
     except Exception as e:
         notify_broken(f"{video['name']} posted but the file did not move to Posted: {str(e)[:60]}")
     state.setdefault("posted", {})[video["id"]] = {
