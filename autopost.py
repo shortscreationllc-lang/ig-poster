@@ -13,7 +13,7 @@ Modes (autopost_config.json "mode", or --mode):
   live      Posts the oldest captioned video in the queue folder as a Reel,
             reads it back from Instagram to prove it exists, moves the file to
             the posted folder, emails the permalink. Any failure exits non-zero
-            and texts Joseph (if the SMS gateway secret exists).
+            and messages Joseph on Telegram (if the bot is set up).
 
 Every other day at ~4:40 PM Miami time (his best reel hour from insights.json).
 Cron fires twice a day; this script decides whether today is a posting day.
@@ -275,11 +275,27 @@ def notify_ok(subject, body):
 
 
 def notify_broken(short):
-    """Text Joseph through his carrier's email-to-text address. Short, plain."""
+    """Joseph's phone, via his private Telegram bot (AT&T email-to-text died 2025-06-17).
+    TELEGRAM_CHAT_ID is optional: without it the bot messages whoever pressed Start on it."""
+    token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
+    if not token:
+        print(f"  (text not sent, Telegram bot not set up yet): {short}")
+        return
+    mask(token)
     try:
-        send_mail(os.getenv("SMS_GATEWAY", "").strip(), "", f"Auto-poster: {short}"[:150])
+        chat = os.getenv("TELEGRAM_CHAT_ID", "").strip()
+        if not chat:
+            ups = http_json(f"https://api.telegram.org/bot{token}/getUpdates").get("result", [])
+            chats = [u["message"]["chat"]["id"] for u in ups
+                     if u.get("message", {}).get("chat", {}).get("type") == "private"]
+            if not chats:
+                print("  WARN Telegram: nobody has pressed Start on the bot yet", file=sys.stderr)
+                return
+            chat = str(chats[-1])
+        http_json(f"https://api.telegram.org/bot{token}/sendMessage",
+                  urllib.parse.urlencode({"chat_id": chat, "text": f"Auto-poster: {short}"[:500]}).encode())
     except Exception as e:
-        print(f"  WARN text failed: {e}", file=sys.stderr)
+        print(f"  WARN Telegram failed: {e}", file=sys.stderr)
 
 
 # ---------- schedule ----------
