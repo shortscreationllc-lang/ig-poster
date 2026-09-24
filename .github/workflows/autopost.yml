@@ -17,6 +17,9 @@ on:
       mode:
         description: "Override mode for this run: practice | live (blank = config)"
         default: ""
+      test_alert:
+        description: "Only send a test Telegram alert (yes/no)"
+        default: "no"
 
 permissions:
   contents: write
@@ -50,7 +53,9 @@ jobs:
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           IN_FORCE: ${{ github.event.inputs.force }}
           IN_MODE: ${{ github.event.inputs.mode }}
+          IN_TEST: ${{ github.event.inputs.test_alert }}
         run: |
+          if [ "$IN_TEST" = "yes" ]; then python autopost.py --test-alert; exit 0; fi
           args=""
           [ "$IN_FORCE" = "yes" ] && args="$args --force"
           case "$IN_MODE" in practice|live) args="$args --mode $IN_MODE";; esac

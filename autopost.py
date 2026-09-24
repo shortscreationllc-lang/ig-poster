@@ -464,5 +464,10 @@ if __name__ == "__main__":
     ap.add_argument("--mode", choices=["practice", "live"])
     ap.add_argument("--force", action="store_true", help="ignore the schedule and run now")
     ap.add_argument("--dry", action="store_true", help="report only; do not save state or send notices")
+    ap.add_argument("--test-alert", action="store_true", help="send one test message to the Telegram bot and stop")
     a = ap.parse_args()
+    if a.test_alert:
+        load_env_file()
+        notify_broken("test alert. If you see this, failure alerts reach your phone.")
+        sys.exit(0)
     sys.exit(run(a.mode, a.force, a.dry))
