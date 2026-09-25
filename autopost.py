@@ -267,7 +267,7 @@ def ig_publish_reel(user_id, token, video, caption, thumb_offset_ms=None, cover_
 
 # ---------- notices ----------
 def send_mail(to, subject, body):
-    user = os.getenv("GMAIL_USER", "shortscreationllc@gmail.com").strip()
+    user = (os.getenv("GMAIL_USER") or "shortscreationllc@gmail.com").strip()
     pw = os.getenv("GMAIL_APP_PASSWORD", "").strip()
     if not (pw and to):
         print(f"  (notice not sent, Gmail app password not set up yet): {subject}")
@@ -284,7 +284,7 @@ def send_mail(to, subject, body):
 
 def notify_ok(subject, body):
     try:
-        send_mail(os.getenv("NOTIFY_EMAIL", "shortscreationllc@gmail.com"), subject, body)
+        send_mail(os.getenv("NOTIFY_EMAIL") or "shortscreationllc@gmail.com", subject, body)
     except Exception as e:
         print(f"  WARN email failed: {e}", file=sys.stderr)
 
