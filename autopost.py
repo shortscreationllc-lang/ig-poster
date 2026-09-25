@@ -103,6 +103,9 @@ class Dropbox:
         for v in files:
             if not v["name"].lower().endswith(VIDEO_EXT):
                 continue
+            rel = v["path_lower"][len(root) + 1:]
+            if any(part.startswith(("_", ".")) for part in rel.split("/")):
+                continue                                       # poster's own temp files, hidden files
             par = parent(v)
             if par == root:
                 stem = v["name"].rsplit(".", 1)[0].lower()
@@ -136,6 +139,10 @@ class Dropbox:
                          {"Authorization": f"Bearer {self.token}", "Dropbox-API-Arg": arg,
                           "Content-Type": "application/octet-stream"}, timeout=600)["path_display"]
 
+    def remove(self, path):
+        """Only ever used on the poster's own short-lived upload copy."""
+        self.rpc("files/delete_v2", {"path": path})
+
     def move(self, src, dest_folder):
         name = src.rsplit("/", 1)[-1]
         return self.rpc("files/move_v2", {"from_path": src, "to_path": f"{dest_folder}/{name}",
@@ -164,7 +171,8 @@ def probe(url):
 
 def shrink(dbx, link, tmp_path):
     """Oversized export (4K, 500 MB+): re-encode to 1080x1920 H.264 so Instagram takes it.
-    Uploads to one fixed temp file in Dropbox (overwritten each time) and returns its link."""
+    Instagram needs a link, so the copy goes to the queue's _uploading folder and is
+    removed as soon as Instagram has processed it (see the finally block in run())."""
     src, out = "/tmp/autopost_src", "/tmp/autopost_1080.mp4"
     urllib.request.urlretrieve(link, src)
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", src, "-vf",
@@ -216,7 +224,9 @@ def ig_check(user_id, token):
     return me.get("username", "?")
 
 
-def ig_publish_reel(user_id, token, video_url, caption, thumb_offset_ms=None, cover_url=None):
+def ig_container(user_id, token, video_url, caption, thumb_offset_ms=None, cover_url=None):
+    """Create the Reel container and wait until Instagram has fetched and processed the video.
+    (The Instagram Login API only takes a video URL; direct upload returns 'video_url is required'.)"""
     params = {"media_type": "REELS", "video_url": video_url, "caption": caption,
               "share_to_feed": "true", "access_token": token}
     if cover_url:
@@ -235,6 +245,11 @@ def ig_publish_reel(user_id, token, video_url, caption, thumb_offset_ms=None, co
         time.sleep(10)
     if status.get("status_code") != "FINISHED":
         raise RuntimeError(f"Instagram could not process the video: {json.dumps(status)[:200]}")
+    return cid
+
+
+def ig_publish_reel(user_id, token, video, caption, thumb_offset_ms=None, cover_url=None):
+    cid = ig_container(user_id, token, video, caption, thumb_offset_ms, cover_url)
     media_id = ig_post(f"{user_id}/media_publish", {"creation_id": cid, "access_token": token}).get("id")
     if not media_id:
         raise RuntimeError("Instagram publish returned no media id")
@@ -426,9 +441,11 @@ def run(mode, force, dry):
         print("\n".join(lines), file=sys.stderr)
         notify_broken(problems[0])
         return 1
+    tmp_copy = None
     try:
         if oversize:
-            link, new_mb = shrink(dbx, link, cfg["temp_upload_path"])
+            tmp_copy = cfg["queue_folder"] + "/_uploading/instagram-1080p.mp4"
+            link, new_mb = shrink(dbx, link, tmp_copy)
             notes.append(f"- Shrunk to {new_mb} MB")
         try:
             media = ig_publish_reel(user_id, token, link, cap["text"], thumb, cover_url)
@@ -443,6 +460,12 @@ def run(mode, force, dry):
         log_entry(lines)
         notify_broken(f"{video['name']} did not post to Instagram. {str(e)[:80]}")
         return 1
+    finally:
+        if tmp_copy:                      # Instagram has it (or it failed): the copy goes, always
+            try:
+                dbx.remove(tmp_copy.rsplit("/", 1)[0])
+            except Exception as e:
+                print(f"  WARN could not remove the upload copy: {e}", file=sys.stderr)
     moved_to = None
     try:
         moved_to = dbx.move(video.get("_post_folder") or video["path_display"], cfg["posted_folder"])
